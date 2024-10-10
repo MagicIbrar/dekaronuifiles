@@ -1,0 +1,34 @@
+<window>
+	name			siege_play_timewnd
+	enable			true
+	visible			true
+	layer			100
+	position 		right bottom
+	rect			-164 -312 0 -281
+	alwaysontop		true
+
+
+	<panel>
+		id			pan_base
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 164 31
+		intersect	false
+		<image>
+			key		0
+			screen	siege
+			index	20
+		</image>
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		8 8 158 14
+			margin		0 0
+			fonttype	2
+			color		FFFFFFFF		
+		</textbox>	
+	</panel>
+</window>

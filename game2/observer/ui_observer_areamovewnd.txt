@@ -1,0 +1,92 @@
+<window>
+	name			observer_areamovewnd
+	enable			true
+	visible			true
+	alwaysontop		true
+	layer			100
+	rect			300 300 532 657
+	titlerect		28 2 174 14
+	
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 232 357
+		<image>
+			key		none
+			screen	observer
+			index	1
+		</image>
+		
+		<label>
+			id		lbl_title
+			enable	true
+			visible true
+			layer	10
+			align	center
+			rect	28 2 174 14
+			<title>
+				color		ffffffff
+				fontindex	4
+				text2		2100 2	
+			</title>
+		</label>
+		
+		<button>
+			id				btn_exit
+			enable			true
+			visible			true
+			layer			100
+			rect		214 2 15 15
+
+			sound			0
+			<image>		
+				key			none
+				screen		etc_01
+				index		315
+
+			</image>			
+			<image>	
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>		
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		<textbox>
+			id				txt_area
+			enable			true
+			visible			true
+			layer			100
+			lineheight		16
+			autoline		true
+			margin			21	18	
+			rect			8 31 263 283
+			fonttype		2
+			color			ffffffff
+			buttonwidth		262
+			<title>
+				state 		none
+				color		ffffffff
+				fontIndex	2
+			</title>
+			<title>
+				state 		over
+				color		ffb1f43d
+				fontIndex	2
+			</title>
+			<title>
+				state 		down
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</textbox>
+	</panel>
+</window>

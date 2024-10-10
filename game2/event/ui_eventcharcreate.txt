@@ -1,0 +1,154 @@
+<window>
+	name			eventcharcreate
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	position		center center
+	rect			-116 -79 116 78
+	titlerect		0  0 232 26
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	87
+		</image>		
+	</panel>
+	
+	<label>
+		id			lbl_title
+		enable		true
+		visible		true
+		layer		10
+		align 		center
+		rect		0 5 232 18
+		<title>
+			state 		title
+			color		FFFFFFFF
+			fontIndex	4
+			text2		100 136
+		</title>
+	</label>
+
+	<label>
+		id		lbl_text
+		enable		true
+		visible		true
+		layer		10
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		5 45 222 50
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text2		2300 5
+		</title>
+	</label>
+
+	<button>
+		id		btn_event
+		enable		true
+		visible		true
+		layer		10
+		align		center
+		rect		6 128 65 20
+		<image>
+			key		none
+			screen	etc_01
+			index	88
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 3
+			text2 		2300 2
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>
+
+	<button>
+		id		btn_normal
+		enable		true
+		visible		true
+		layer		10
+		align		center
+		rect		83 128 65 20
+		<image>
+			key		none
+			screen	etc_01
+			index	88
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 3
+			text2		2300 4
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>
+	
+	<button>
+		id		btn_cancel
+		enable		true
+		visible		true
+		layer		10
+		align		center
+		rect		160 128 65 20
+		<image>
+			key			0
+			screen		etc_01
+			index		88
+		</image>	
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 3
+			text2		2000 14
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>
+</window>

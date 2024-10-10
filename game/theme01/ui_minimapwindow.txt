@@ -1,0 +1,279 @@
+window_layer	fixed
+window_size	190	230
+window_alignaxis	right	top
+window_position	0	0
+window_visible	true
+
+create_control	panel	pan_closebase
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\mainbar_01.dds	322	208	190	73
+	control_drawsize	190	73
+	control_drawpoint	0	0
+	control_visible	false
+
+	create_control	button	btn_open
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\mainbar_01.dds	151	385	19	20
+	control_drawdiv	xy	1
+	control_drawsize	19	20
+	control_drawpoint	168	34
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_mapnamec
+	{
+	control_group	0
+	control_text	4	3	""
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawsize	129	16
+	control_drawpoint	73	6
+	control_visible	true
+	}
+
+	create_control	text	txt_pcpositionc
+	{
+	control_group	0
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawsize	129	16
+	control_drawpoint	73	34
+	control_visible	true
+	}
+
+	create_control	panel	pan_ranse1
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\soket_gage.dds	0	360	60	62	
+	control_drawsize	60	62
+	control_drawpoint	14	1
+	control_visible	true
+	}
+}
+
+create_control	panel	pan_openbase
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\mainbar_01.dds	322	282	190	230
+	control_drawsize	190	230
+	control_drawpoint	0	0
+	control_visible	true
+
+	create_control	button	btn_close
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\mainbar_01.dds	132	385	19	20
+	control_drawdiv	xy	1
+	control_drawsize	19	20
+	control_drawpoint	168	34
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_ranse2
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\soket_gage.dds	0	360	60	62	
+	control_drawsize	60	62
+	control_drawpoint	14	1
+	control_visible	true
+	}
+
+	create_control	panel	pan_map
+	{
+	control_group	1
+	control_drawsize	160	160
+	control_drawpoint	23	64
+	control_visible	true
+	control_enable	true
+	}
+	
+	create_control	panel	pan_box
+	{
+	control_group	1
+	control_image	oxxx	UI\Game\theme01\mainbar_01.dds	352	47	160	160
+	control_drawsize	161	160
+	control_drawpoint	23	64
+	control_layerdelta	100
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_pc
+	{
+	control_group	1
+	control_image	oooo	UI\Game\theme01\mainbar_01.dds	498	0	14	21
+	control_drawsize	14	21
+	control_drawpoint	74	70
+	control_enable	true
+	control_visible	true
+	}
+	}
+
+	create_control	text	txt_mapnameo
+	{
+	control_group	0
+	control_text	4	3	""
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawsize	129	12
+	control_drawpoint	73	6
+	control_visible	true
+	}
+
+	create_control	text	txt_pcpositiono
+	{
+	control_group	0
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawsize	129	12
+	control_drawpoint	73	34
+	control_visible	true
+	}
+
+	create_control	panel	pan_sun0
+	{
+	control_group	1
+	control_image	oooo	UI\Game\theme01\minimap_01.dds	0	223	17	17
+	control_drawsize	17	17
+	control_drawpoint	3	202
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_sun1
+	{
+	control_group	1
+	control_image	oooo	UI\Game\theme01\minimap_01.dds	18	223	15	17
+	control_drawsize	15	17
+	control_drawpoint	24	202 
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_sun2
+	{
+	control_group	1
+	control_image	oooo	UI\Game\theme01\minimap_01.dds	34	223	12	17
+	control_drawsize	12	17
+	control_drawpoint	43	202
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_sun3
+	{
+	control_group	1
+	control_image	oooo	UI\Game\theme01\minimap_01.dds	47	223	10	17
+	control_drawsize	10	17
+	control_drawpoint	59	202
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_sun4
+	{
+	control_group	1
+	control_image	oooo	UI\Game\theme01\minimap_01.dds	79	223	9	17
+	control_drawsize	9	17
+	control_drawpoint	93	202
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_sun5
+	{
+	control_group	1
+	control_image	oooo	UI\Game\theme01\minimap_01.dds	89	223	13	17
+	control_drawsize	13	17
+	control_drawpoint	106	202
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_sun6
+	{
+	control_group	1
+	control_image	oooo	UI\Game\theme01\minimap_01.dds	103	223	16	17
+	control_drawsize	16	17
+	control_drawpoint	123	202
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_sun7
+	{
+	control_group	1
+	control_image	oooo	UI\Game\theme01\minimap_01.dds	120	223	22	17
+	control_drawsize	22	17
+	control_drawpoint	143	202
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control panel	pan_basemap1
+	{
+	control_group	3
+	control_image	oxxx	UI\Game\theme01\minimap_back1.dds	0	0	160	160
+	control_drawsize	160	160	
+	control_drawpoint	23	64
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control panel	pan_basemap2
+	{
+	control_group	3
+	control_image	oxxx	UI\Game\theme01\minimap_back2.dds	0	0	160	160
+	control_drawsize	160	160	
+	control_drawpoint	23	64
+	control_enable	true
+	control_visible	false
+	}
+}
+
+create_control	panel	pan_time1
+{
+control_group	3
+control_image	oxxx	UI\Game\theme01\soket_gage.dds	0	467	512	45
+control_drawsize	45	45
+control_drawpoint	20	7
+control_enable	true
+control_visible	false
+}
+
+
+create_control	panel	pan_time2
+{
+control_group	3
+control_image	oxxx	UI\Game\theme01\soket_gage.dds	0	422	512	45
+control_drawsize	45	45	
+control_drawpoint	20	7
+control_enable	true
+control_visible	false
+}
+
+create_control panel	pan_sun
+{
+control_group	3
+control_image	oxxx	UI\Game\theme01\soket_gage.dds	360	216	80	64
+control_drawsize	80	64	
+control_drawpoint	16	0
+control_enable	true
+control_visible	false
+}
+
+create_control panel	pan_moon
+{
+control_group	3
+control_image	oxxx	UI\Game\theme01\soket_gage.dds	440	216	70	64
+control_drawsize	70	64	
+control_drawpoint	16	0
+control_enable	true
+control_visible	false
+}
+

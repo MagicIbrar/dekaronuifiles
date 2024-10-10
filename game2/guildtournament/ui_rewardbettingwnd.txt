@@ -1,0 +1,221 @@
+<window>
+	name			rewardbettingwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-256 -164 256 164
+	titlerect		5 5 502 30
+	alwaysontop		true
+		
+	<panel>
+		id			pan
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 512 328
+		<image>
+			key	none
+			screen	guildtournament
+			index	69
+		</image>
+
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		30 13 452 30
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 160
+			</title>
+		</label>
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		480 9 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+
+
+		<label>
+			id			lbl_p_coin
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		150 148 100 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<label>
+			id			lbl_b_coin
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		150 210 100 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<button>
+			id			btn_receive_p_coin
+			enable		false
+			visible		false
+			layer		100
+			align 		center
+			rect		282 141 108 34
+			<image>
+				key		none
+				screen	guildtournament
+				index	70
+			</image>
+			<image>
+				key		over
+				screen	guildtournament
+				index	71
+			</image>
+			<image>
+				key		down
+				screen	guildtournament
+				index	72
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 161
+				position	0 8
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 8
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 10
+			</title>
+		</button>
+
+		<button>
+			id			btn_receive_b_coin
+			enable		false
+			visible		false
+			layer		100
+			align 		center
+			rect		282 203 108 34
+			<image>
+				key		none
+				screen	guildtournament
+				index	70
+			</image>
+			<image>
+				key		over
+				screen	guildtournament
+				index	71
+			</image>
+			<image>
+				key		down
+				screen	guildtournament
+				index	72
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 161
+				position	0 8
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 8
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 10
+			</title>
+		</button>
+
+		<button>
+			id			btn_close
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		400  288 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 143
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+	</panel>
+</window>

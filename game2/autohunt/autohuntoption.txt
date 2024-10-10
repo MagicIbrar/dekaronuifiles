@@ -1,0 +1,472 @@
+<window>
+	name			autohuntoption
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-110 -140 110 135
+	titlerect		0 3 205 14
+	alwaysontop		true
+
+	<panel>
+		id			pan_back
+		enable			true
+		visible			true
+		layer			100
+		rect			0 0 220 275
+		<panel>
+			id			pan_title
+			enable			true
+			visible			true
+			layer			100
+			rect			0 0 220 19
+			<label>
+				id			lbl_title
+				enable		true
+				visible		true
+				layer		50
+				align		center
+				rect		0 3 205 14
+				<title>
+					color		ffffffff
+					fontIndex	4
+					text	"AutoHunt Wnd"
+				</title>
+			</label>
+			<button>
+				id			btn_hide
+				enable		true
+				visible		true
+				layer		100
+				rect		205 3 12 12
+				<image>
+					key			0
+					screen		etc_01
+					index		19
+				</image>
+				<image>
+					key			over
+					screen		etc_01
+					index		20
+				</image>
+				<image>
+					key			down
+					screen		etc_01
+					index		21
+				</image>
+			</button>
+			<button>
+				id			btn_show
+				enable		true
+				visible		false
+				layer		100
+				rect		205 3 12 12
+				<image>
+					key			0
+					screen		etc_01
+					index		15
+				</image>
+				<image>
+					key			over
+					screen		etc_01
+					index		16
+				</image>
+				<image>
+					key			down
+					screen		etc_01
+					index		17
+				</image>
+			</button>
+		</panel>
+		
+		<panel>
+			id			pan_body
+			enable			true
+			visible			true
+			layer			100
+			rect			0 0 220 275
+			<panel>
+				id			pan_bodyback
+				enable			true
+				visible			true
+				layer			10
+				rect			0 19 220 256
+			</panel>
+			<label>
+				id			lbl_tagRadius
+				enable		true
+				visible		true
+				layer		50
+				rect		12 30 100 14
+				<title>
+					color		fff4be3d		
+					fontIndex	4
+					text	"Radius Setting"
+				</title>
+			</label>
+			<label>
+				id			lbl_tagPos
+				enable		true
+				visible		true
+				layer		50
+				rect		20 50 50 14
+				<title>
+					color		ffff0000
+					fontIndex	2
+					text	"cur pos"
+				</title>
+			</label>
+			<label>
+				id			lbl_Position
+				enable		true
+				visible		true
+				layer		50
+				rect		75 50 60 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			
+			<label>
+				id			lbl_tagLeft
+				enable		true
+				visible		true
+				layer		50
+				rect		20 70 35 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text	Left
+				</title>
+			</label>
+			<edit>
+				id			edit_left
+				enable		true
+				visible		true
+				layer		100
+				rect		60 70 30 14	
+				maxlength	2
+				font_type	2
+				input_type	2
+				align		0
+				color		ff00ff00
+				multiline   	false
+				<image>
+					key		none
+					screen	party
+					index	6
+				</image>			
+			</edit>
+			
+			<label>
+				id			lbl_tagTop
+				enable		true
+				visible		true
+				layer		50
+				rect		130 70 35 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text	Top
+				</title>
+			</label>
+			<edit>
+				id			edit_top
+				enable		true
+				visible		true
+				layer		100
+				rect		170 70 30 14	
+				maxlength	2
+				font_type	2
+				input_type	2
+				align		0
+				color		ff00ff00
+				multiline   	false
+				<image>
+					key		none
+					screen	party
+					index	6
+				</image>			
+			</edit>
+			
+			<label>
+				id			lbl_tagRight
+				enable		true
+				visible		true
+				layer		50
+				rect		20 90 35 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text	Right
+				</title>
+			</label>
+			<edit>
+				id			edit_right
+				enable		true
+				visible		true
+				layer		100
+				rect		60 90 30 14	
+				maxlength	2
+				font_type	2
+				input_type	2
+				align		0
+				color		ff00ff00
+				multiline   	false
+				<image>
+					key		none
+					screen	party
+					index	6
+				</image>			
+			</edit>
+			
+			<label>
+				id			lbl_tagBottom
+				enable		true
+				visible		true
+				layer		50
+				rect		130 90 35 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text	Bottom
+				</title>
+			</label>
+			<edit>
+				id			edit_bottom
+				enable		true
+				visible		true
+				layer		100
+				rect		170 90 30 14	
+				maxlength	2
+				font_type	2
+				input_type	2
+				align		0
+				color		ff00ff00
+				multiline   	false
+				<image>
+					key		none
+					screen	party
+					index	6
+				</image>
+			</edit>
+			<label>
+				id			lbl_tagResult
+				enable		true
+				visible		true
+				layer		50
+				rect		20 110 35 14
+				<title>
+					color		ffff0000
+					fontIndex	2
+					text	"result"
+				</title>
+			</label>
+			<label>
+				id			lbl_resultradius
+				enable		true
+				visible		true
+				layer		50
+				rect		55 110 125 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			
+			<button>
+				id			btn_radiusset
+				enable		true
+				visible		true
+				layer		100
+				rect		180 108 32 18
+				align		center
+				<image>
+					key			0
+					screen		etc_01
+					index		2
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	2
+					text2		2000 50
+					position	0 4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	2
+					position	0 4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	2
+					position	1 5
+				</title>
+			</button>
+			
+			<label>
+				id			lbl_tagSkillset
+				enable		true
+				visible		true
+				layer		50
+				rect		12 150 100 14
+				<title>
+					color		fff4be3d		
+					fontIndex	4
+					text	SkillSet
+				</title>
+			</label>
+			<label>
+				id			lbl_tagSkillslot
+				enable		true
+				visible		true
+				layer		50
+				rect		20 170 50 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text	Skillslot
+				</title>
+			</label>
+			<combobox>
+				id			com_skill
+				enable		true
+				visible		true
+				border 		false
+				layer		110
+				rect		70 168 75 20				
+				<iteminfo>		
+					rect 	5 0 65 20						
+				</iteminfo>
+				
+				<nodeinfo>
+					selrect		0 0 75 15 
+					btnrect		62 2 12 12
+					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>			
+			</combobox>
+			
+			<edit>
+				id			edit_second
+				enable		true
+				visible		true
+				layer		100
+				rect		150 170 30 14	
+				maxlength	2
+				font_type	2
+				input_type	2
+				align		0
+				color		ff00ff00
+				multiline   	false
+				<image>
+					key		none
+					screen	party
+					index	6
+				</image>			
+			</edit>
+			
+			<label>
+				id			lbl_tagSecond
+				enable		true
+				visible		true
+				layer		50
+				rect		185 170 20 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text	Sec
+				</title>
+			</label>
+			
+			<button>
+				id			btn_going
+				enable		true
+				visible		true
+				layer		100
+				rect		22 247 57 19
+				align		center
+				<image>
+					key			0
+					screen		etc_01
+					index		2
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	2
+					text2		2000 48
+					position	0 4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	2
+					position	0 4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	2
+					position	1 5
+				</title>
+			</button>
+			<button>
+				id			btn_cancel
+				enable		true
+				visible		true
+				layer		100
+				rect		133 247 57 19
+				align		center
+				<image>
+					key			0
+					screen		etc_01
+					index		2
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	2
+					text2		2000 23
+					position	0 4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	2
+					position	0 4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	2
+					position	1 5
+				</title>
+			</button>
+		</panel>		
+		
+	</panel>
+</window>

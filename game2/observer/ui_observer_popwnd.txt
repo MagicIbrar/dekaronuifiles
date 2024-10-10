@@ -1,0 +1,399 @@
+<window>
+	name			observerpop
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 86 84
+	alwaysontop		true
+	<button>
+		id			btn_eye
+		enable		true
+		visible		true
+		layer		101
+		type		0
+		align 		center
+		rect		0 0 33 33
+		<image>
+			key		none
+			screen	observer
+			index	10
+		</image>
+		<image>
+			key		over
+			screen	observer
+			index	11
+		</image>
+		<image>
+			key		down
+			screen	observer
+			index	12
+		</image>
+	</button>
+	
+	<panel>
+		id		pan_observerpop_partypvp
+		enable		true
+		visible		true
+		layer		100
+		rect		34 0 53 42
+		<button>
+			id			btn_UI_partypvp
+			enable		true
+			visible		true
+			layer		101
+			type		0
+			align 		center
+			rect		0 0 53 21
+			<image>
+				key		none
+				screen	pcpop
+				index	2
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	3
+			</image>
+			<image>
+				key		down
+				screen	pcpop
+				index	3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 5
+				text2		241 2
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>
+		<button>
+			id		btn_exit_partypvp
+			enable		true
+			visible		true
+			layer		101
+			type		0
+			align 		center
+			rect		0 20 53 21
+			<image>
+				key		none
+				screen	pcpop
+				index	2
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	3
+			</image>
+			<image>
+				key		down
+				screen	pcpop
+				index	3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 5
+				text2		241 3
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>
+	</panel>
+		
+	<panel>
+		id		pan_observerpop_guild
+		enable		true
+		visible		true
+		layer		100
+		rect		34 0 53 42
+		<button>
+			id			btn_UI_guild
+			enable		true
+			visible		true
+			layer		101
+			type		0
+			align 		center
+			rect		0 0 53 21
+			<image>
+				key		none
+				screen	pcpop
+				index	2
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	3
+			</image>
+			<image>
+				key		down
+				screen	pcpop
+				index	3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 5
+				text2		241 2
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>
+		<button>
+			id		btn_exit_guild
+			enable		true
+			visible		true
+			layer		101
+			type		0
+			align 		center
+			rect		0 20 53 21
+			<image>
+				key		none
+				screen	pcpop
+				index	2
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	3
+			</image>
+			<image>
+				key		down
+				screen	pcpop
+				index	3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 5
+				text2		241 3
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>
+	</panel>	
+	<panel>
+		id		pan_observerpop_siege
+		enable		true
+		visible		true
+		layer		100
+		rect		34 0 53 84
+		<button>
+			id		btn_warp
+			enable		true
+			visible		true
+			layer		101
+			type		0
+			align 		center
+			rect		0 0 53 21
+			<image>
+				key		none
+				screen	pcpop
+				index	2
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	3
+			</image>
+			<image>
+				key		down
+				screen	pcpop
+				index	3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 5
+				text2		241 0
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>
+		<button>
+			id		btn_follow
+			enable		true
+			visible		true
+			layer		101
+			type		0
+			align 		center
+			rect		0 20 53 21
+			<image>
+				key		none
+				screen	pcpop
+				index	2
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	3
+			</image>
+			<image>
+				key		down
+				screen	pcpop
+				index	3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 5
+				text2		241 1
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>
+		<button>
+			id			btn_UI
+			enable		true
+			visible		true
+			layer		101
+			type		0
+			align 		center
+			rect		0 40 53 21
+			<image>
+				key		none
+				screen	pcpop
+				index	2
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	3
+			</image>
+			<image>
+				key		down
+				screen	pcpop
+				index	3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 5
+				text2		241 2
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		101
+			type		0
+			align 		center
+			rect		0 60 53 21
+			<image>
+				key		none
+				screen	pcpop
+				index	2
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	3
+			</image>
+			<image>
+				key		down
+				screen	pcpop
+				index	3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 5
+				text2		241 3
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>
+	</panel>	
+</window>

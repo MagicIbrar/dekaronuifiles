@@ -1,0 +1,442 @@
+<window>
+	name			allzeolitestatewnd
+	enable			true
+	visible			true
+	layer			100
+	position		left top
+	rect			0 120 60 433
+
+	<panel>
+		id			pan_base
+		enable		true
+		visible		true
+		layer		10
+		intersect	false
+		rect		0 0 60 313
+		<image>
+			key		0
+			screen	siege
+			index	32
+		</image>
+		<panel>
+			id			pan_zeolite_0
+			enable		true
+			visible		true
+			layer		10
+			rect		16 22 27 39
+			<panel>
+				id			guildBg
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		2 1 24 24
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+				<panel>
+					id			guildicon
+					enable		true
+					visible		true
+					layer		10
+					intersect	false
+					rect		0 0 24 24
+					<image>
+						key		none
+						color 	0x00000000
+					</image>
+				</panel>
+			</panel>
+			<panel>
+				id			otherguildhide
+				enable		true
+				visible		true
+				layer		50
+				intersect	false
+				rect		2 1 24 24
+				<image>
+					key		none
+					screen 	siege
+					index 	37
+				</image>
+			</panel>
+			<panel>
+				id			ownerMark
+				enable		true
+				visible		true
+				layer		100
+				intersect	false
+				rect		1 0 26 26
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+			</panel>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		0 29 27 8
+				maxsize     27	
+				<image>
+					key	0
+					screen	siege
+					index	38
+				</image>				
+			</processbar>
+			<label>
+				id			lbl_percent
+				enable		true
+				visible		true
+				layer		50
+				intersect	false
+				align 		center
+				rect		1 27 26 12
+				<title>
+					state 		none
+					color		FFFFFFFF
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		<panel>
+			id			pan_zeolite_1
+			enable		true
+			visible		true
+			layer		10
+			rect		16 83 27 39
+			<panel>
+				id			guildBg
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		2 1 24 24
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+				<panel>
+					id			guildicon
+					enable		true
+					visible		true
+					layer		10
+					intersect	false
+					rect		0 0 24 24
+					<image>
+						key		none
+						color 	0x00000000
+					</image>
+				</panel>
+			</panel>
+			<panel>
+				id			otherguildhide
+				enable		true
+				visible		true
+				layer		50
+				intersect	false
+				rect		2 1 24 24
+				<image>
+					key		none
+					screen 	siege
+					index 	37
+				</image>
+			</panel>
+			<panel>
+				id			ownerMark
+				enable		true
+				visible		true
+				layer		100
+				intersect	false
+				rect		1 0 26 26
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+			</panel>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		0 29 27 8
+				maxsize     27	
+				<image>
+					key	0
+					screen	siege
+					index	38
+				</image>				
+			</processbar>
+			<label>
+				id			lbl_percent
+				enable		true
+				visible		true
+				layer		50
+				intersect	false
+				align 		center
+				rect		1 27 26 12
+				<title>
+					state 		none
+					color		FFFFFFFF
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		<panel>
+			id			pan_zeolite_2
+			enable		true
+			visible		true
+			layer		10
+			rect		16 142 27 39
+			<panel>
+				id			guildBg
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		2 1 24 24
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+				<panel>
+					id			guildicon
+					enable		true
+					visible		true
+					layer		10
+					intersect	false
+					rect		0 0 24 24
+					<image>
+						key		none
+						color 	0x00000000
+					</image>
+				</panel>
+			</panel>
+			<panel>
+				id			otherguildhide
+				enable		true
+				visible		true
+				layer		50
+				intersect	false
+				rect		2 1 24 24
+				<image>
+					key		none
+					screen 	siege
+					index 	37
+				</image>
+			</panel>
+			<panel>
+				id			ownerMark
+				enable		true
+				visible		true
+				layer		100
+				intersect	false
+				rect		1 0 26 26
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+			</panel>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		0 29 27 8
+				maxsize     27	
+				<image>
+					key	0
+					screen	siege
+					index	38
+				</image>				
+			</processbar>
+			<label>
+				id			lbl_percent
+				enable		true
+				visible		true
+				layer		50
+				intersect	false
+				align 		center
+				rect		1 27 26 12
+				<title>
+					state 		none
+					color		FFFFFFFF
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		<panel>
+			id			pan_zeolite_3
+			enable		true
+			visible		true
+			layer		10
+			rect		16 203 27 39
+			<panel>
+				id			guildBg
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		2 1 24 24
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+				<panel>
+					id			guildicon
+					enable		true
+					visible		true
+					layer		10
+					intersect	false
+					rect		0 0 24 24
+					<image>
+						key		none
+						color 	0x00000000
+					</image>
+				</panel>
+			</panel>
+			<panel>
+				id			otherguildhide
+				enable		true
+				visible		true
+				layer		50
+				intersect	false
+				rect		2 1 24 24
+				<image>
+					key		none
+					screen 	siege
+					index 	37
+				</image>
+			</panel>
+			<panel>
+				id			ownerMark
+				enable		true
+				visible		true
+				layer		100
+				intersect	false
+				rect		1 0 26 26
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+			</panel>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		0 29 27 8
+				maxsize     27	
+				<image>
+					key	0
+					screen	siege
+					index	38
+				</image>				
+			</processbar>
+			<label>
+				id			lbl_percent
+				enable		true
+				visible		true
+				layer		50
+				intersect	false
+				align 		center
+				rect		1 27 26 12
+				<title>
+					state 		none
+					color		FFFFFFFF
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		<panel>
+			id			pan_zeolite_4
+			enable		true
+			visible		true
+			layer		10
+			rect		16 264 27 39
+			<panel>
+				id			guildBg
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		2 1 24 24
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+				<panel>
+					id			guildicon
+					enable		true
+					visible		true
+					layer		10
+					intersect	false
+					rect		0 0 24 24
+					<image>
+						key		none
+						color 	0x00000000
+					</image>
+				</panel>
+			</panel>
+			<panel>
+				id			otherguildhide
+				enable		true
+				visible		true
+				layer		50
+				intersect	false
+				rect		2 1 24 24
+				<image>
+					key		none
+					screen 	siege
+					index 	37
+				</image>
+			</panel>
+			<panel>
+				id			ownerMark
+				enable		true
+				visible		true
+				layer		100
+				intersect	false
+				rect		1 0 26 26
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+			</panel>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		0 29 27 8
+				maxsize     27	
+				<image>
+					key	0
+					screen	siege
+					index	38
+				</image>				
+			</processbar>
+			<label>
+				id			lbl_percent
+				enable		true
+				visible		true
+				layer		50
+				intersect	false
+				align 		center
+				rect		1 27 26 12
+				<title>
+					state 		none
+					color		FFFFFFFF
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+	</panel>
+</window>

@@ -1,0 +1,152 @@
+<window>
+	name			death_wnd
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	rect			0 0 0 0
+	titlerect		0 0 0 0
+
+	<panel>
+		id			pan_confirm
+		enable		true
+		visible		true
+		position	center top
+		layer		1
+		rect		-103 100 232 157
+		<panel>
+			id			pan_back
+			enable		true
+			visible		true
+			layer		1
+			rect		0  0 232 157
+			<image>
+					key	none
+					screen	etc_01
+					index	1
+			</image>
+			
+			<label>
+				id			lbl_title
+				enable		true
+				visible		true
+				layer		60
+				rect		28 2 174 14
+				align 		center
+				<title>
+					color		ffffffff
+					fontIndex	4
+					text2 		160 25
+				</title>
+			</label>
+		</panel>
+	
+		<label>
+			id			lbl_msg
+			enable		true
+			visible		true
+			layer		60
+			align 		center
+			multiline 	true
+			rect		0 40 232 14
+			<title>
+				color		FFF9B600
+				fontIndex	2
+			</title>
+		</label>
+
+		<panel>
+			id			pan_progressBg
+			enable		true
+			visible		true
+			layer		101
+			rect		20 95 194 8
+			<image>
+				key 	none
+				screen	siege
+				index 	10
+			</image>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		101
+				rect		0 1 194 7
+				maxsize     194	
+				<image>
+					key	0
+					screen	siege
+					index	11
+				</image>				
+			</processbar>	
+		</panel>
+
+		<button>
+			id			btn_yes
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		40 132 57 19
+			<image>
+					key		none
+					screen	etc_01
+					index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				align 		center
+				position	0 3
+				text2		2000 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 5
+			</title>
+		</button>
+
+		<button>
+			id			btn_no
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		135 132 57 19
+			<image>
+					key		none
+					screen	etc_01
+					index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				align 		center
+				position	0 3
+				text2		2000 23
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 5
+			</title>
+		</button>
+	</panel>
+</window>

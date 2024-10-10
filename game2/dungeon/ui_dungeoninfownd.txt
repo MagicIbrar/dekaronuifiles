@@ -1,0 +1,437 @@
+
+<window>
+	name			dungeoninfo
+	enable			true
+	visible			true
+	layer			100
+	rect			10 166 325 480
+	titlerect		0 0 315 20
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 315 314
+		<image>
+			key		0
+			screen	indun
+			index	1
+		</image>
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		110
+			align		center
+			rect		28 2 257 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		2004 31
+			</title>
+		</label>
+		<button>
+			id		btn_close
+			enable		true
+			visible		true
+			layer		100
+			rect		297 2 15 15
+
+			<image>
+				key		none
+				screen  etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen  etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen  etc_01
+				index		317
+
+			</image>
+			<image>
+				key		check
+				screen  etc_01
+				index		316
+
+			</image>
+		</button>
+		<label>
+			id		lbl_dungeon_name1
+			enable		true
+			visible		true
+			layer		110
+			align		center
+			rect		6 32 62 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		2004 32
+			</title>
+		</label>
+		<label>
+			id		lbl_dungeon_name2
+			enable		true
+			visible		true
+			layer		110
+			rect		71 32 225 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text		"던젼명내용"
+			</title>
+		</label>
+		<label>
+			id		lbl_misson1
+			enable		true
+			visible		true
+			layer		110
+			align		center
+			rect		6 56 62 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		2004 33
+			</title>
+		</label>
+		<label>
+			id		lbl_misson2
+			enable		true
+			visible		true
+			layer		110
+			rect		71 56 225 40
+			multiline	true
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text		"임무내용"
+			</title>
+		</label>
+		<label>
+			id		lbl_limit_time1
+			enable		true
+			visible		true
+			layer		110
+			rect		6 106 62 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		2004 34
+			</title>
+		</label>
+		<label>
+			id			lbl_limit_time2
+			enable		true
+			visible		true
+			layer		110
+			rect		71 106 225 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text		"시간보일곳"
+			</title>
+		</label>
+		<label>
+			id			lbl_object
+			enable		true
+			visible		true
+			layer		110
+			rect		16 139 62 14
+			multiline	true
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		2004 35
+			</title>
+		</label>
+		<panel>
+			id		pan_object_check_0
+			enable		true
+			visible		false
+			layer		120
+			rect		17 155 18 18
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	26
+			</image>
+		</panel>
+		<panel>
+			id		pan_object_check_1
+			enable		true
+			visible		false
+			layer		120
+			rect		17 175 18 18
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	26
+			</image>
+		</panel>
+		<panel>
+			id		pan_object_check_2
+			enable		true
+			visible		false
+			layer		120
+			rect		17 195 18 18
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	26
+			</image>
+		</panel>
+		<panel>
+			id		pan_object_check_3
+			enable		true
+			visible		false
+			layer		120
+			rect		17 215 18 18
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	26
+			</image>
+		</panel>
+		<panel>
+			id		pan_object_check_4
+			enable		true
+			visible		false
+			layer		120
+			rect		17 235 18 18
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	26
+			</image>
+		</panel>
+		<panel>
+			id		pan_object_check_5
+			enable		true
+			visible		false
+			layer		120
+			rect		17 255 18 18
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	26
+			</image>
+		</panel>
+		<panel>
+			id		pan_object_fail_1
+			enable		true
+			visible		false
+			layer		120
+			rect		17 175 22 22
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	77
+			</image>
+		</panel>
+		<panel>
+			id		pan_object_fail_2
+			enable		true
+			visible		false
+			layer		120
+			rect		17 195 22 22
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	77
+			</image>
+		</panel>
+		<panel>
+			id		pan_object_fail_3
+			enable		true
+			visible		false
+			layer		120
+			rect		17 215 22 22
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	77
+			</image>
+		</panel>
+		<panel>
+			id		pan_object_fail_4
+			enable		true
+			visible		false
+			layer		120
+			rect		17 235 22 22
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	77
+			</image>
+		</panel>
+		<panel>
+			id		pan_object_fail_5
+			enable		true
+			visible		false
+			layer		120
+			rect		17 255 22 22
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	77
+			</image>
+		</panel>
+		<listbox>
+			id		list_objectlist
+			enable		true
+			visible		true
+			layer		110
+			rect		34 150 275 140
+			nodewidth   	252
+			nodeheight	20
+			offset		0
+			btnsize		20				
+			<title>
+				state		none
+				color		FFFFFFFF
+				fontIndex	4
+			</title>
+			<vscroll>
+				id		list_objectlist_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		263 0 12 132
+				maxvalue	0
+				buttontick  1
+				<button>
+					id		list_objectlist_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id		list_objectlist_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 120 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	14
+					</image>
+				</button>
+				<panel>
+					id		list_objectlist_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					noneimage 	true
+					<image>
+						key		none
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>
+		</listbox>
+		<button>
+			id		btn_dungeoninfo_ok
+			enable		true
+			visible		true
+			layer		100
+			rect		129 289 57 19
+			align		center
+			<title>
+				state		none
+				color		ffffffff
+				fontIndex	2
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ff76f856
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		ff76f856
+				fontIndex	2
+				position	2 2
+			</title>
+			<image>
+				key		none
+				screen  etc_01
+				index	2
+			</image>
+			<image>
+				key		over
+				screen  etc_01
+				index	2
+			</image>
+			<image>
+				key		down
+				screen  etc_01
+				index	2
+			</image>
+		</button>
+	</panel>
+</window>

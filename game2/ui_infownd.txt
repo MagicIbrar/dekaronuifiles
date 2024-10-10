@@ -1,0 +1,1660 @@
+<window>
+	name			info_win
+	enable			true
+	visible			true
+	intersect		true
+	layer			100
+	rect			0 0 744 471
+	titlerect		0 0 728 24
+	<panel>
+		id			pan_left_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 512 471
+		<image>
+			key		0
+			screen	help_01
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_right_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		512 0 232 471
+		<image>
+			key		0
+			screen	help_01
+			index	2
+		</image>
+	</panel>
+	
+	<label>
+		id			lbl_title
+		enable		true
+		visible		true
+		layer		60
+		rect		348 6 369 14
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2 		120 50
+		</title>
+	</label>
+	<button>
+		id			btn_exit
+		enable		true
+		visible		true
+		layer		100
+		rect		723 8 13 13
+		<image>
+			key		none
+			screen	etc_01
+			index	3
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	4
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	5
+		</image>
+	</button>
+	
+	<button>
+		id			btn_tab1
+		enable		true
+		visible		true
+		layer		100
+		type		0
+		rect		9 23 70 22
+		<image>
+			key		none
+			screen	help_01
+			index	4
+		</image>
+		<image>
+			key		check
+			screen	help_01
+			index	3
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	4 6
+			text2		120 51
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	4 6
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	5 7
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	2
+			position	4 4
+		</title>
+	</button>
+	<button>
+		id			btn_tab2
+		enable		true
+		visible		true
+		layer		100
+		type		0
+		rect		79 23 70 22
+		<image>
+			key		none
+			screen	help_01
+			index	4
+		</image>
+		<image>
+			key		check
+			screen	help_01
+			index	3
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	18 6
+			text2		120 52
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	18 6
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	19 7
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	2
+			position	18 4
+		</title>
+	</button>
+	<button>
+		id			btn_tab3
+		enable		true
+		visible		true
+		layer		100
+		type		0
+		rect		149 23 70 22
+		<image>
+			key		none
+			screen	help_01
+			index	4
+		</image>
+		<image>
+			key		check
+			screen	help_01
+			index	3
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	3 6
+			text2		120 53
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	3 6
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	4 7
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	2
+			position	3 4
+		</title>
+	</button>
+	<panel>
+		id			pan_tab1
+		enable		true
+		visible		true
+		layer		150
+		rect		8 50 150 368
+		<button>
+			id			btn_title_1
+			enable		false
+			visible		true
+			layer		100
+			type		0
+			rect		12 10 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<title>
+				state 		none
+				color		0xFF00FFed
+				fontIndex	2
+				position	0 2
+				text2		120 1
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_1
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 28 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 2
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_2
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 46 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 3
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_3
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 64 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 4
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_4
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 82 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 5
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_5
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 100 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 6
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_6
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 118 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 7
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_7
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 136 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 8
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+
+		<button>
+			id			btn_sub_1_8
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 154 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 15
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_9
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 172 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 16
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_10
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 190 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 17
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_title_2
+			enable		false
+			visible		true
+			layer		100
+			type		0
+			rect		12 226 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<title>
+				state 		none
+				color		0xFF00FFed
+				fontIndex	2
+				position	0 2
+				text2		120 9
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_11
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 244 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 10
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_12
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 262 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 11
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_13
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 280 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 12
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_14
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 298 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 13
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_1_15
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 316 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 22
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+	</panel>
+	<panel>
+		id			pan_tab2
+		enable		true
+		visible		false
+		layer		150
+		rect		8 50 150 368
+		<button>
+			id			btn_title_1
+			enable		false
+			visible		true
+			layer		100
+			type		0
+			rect		12 10 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<title>
+				state 		none
+				color		0xFF00FFe1
+				fontIndex	2
+				position	0 2
+				text2		120 14
+			</title>
+		</button>
+		<button>
+			id			btn_sub_2_1
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 28 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 18
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_2_2
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 46 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 19
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_2_3
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 64 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 35
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_2_4
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 82 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 20
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_2_5
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 100 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 21
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+
+		<button>
+			id			btn_sub_2_6
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 118 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 23
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_2_7
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 136 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 24
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+		<button>
+			id			btn_sub_2_8
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 154 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 25
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+		<button>
+			id			btn_sub_2_9
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 172 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 26
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+		<button>
+			id			btn_sub_2_10
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 190 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 27
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+		<button>
+			id			btn_sub_2_11
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 208 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 36
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+		<button>
+			id			btn_sub_2_12
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 226 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 34
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+		<button>
+			id			btn_sub_2_13
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 244 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 38
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+		<button>
+			id			btn_sub_2_14
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 262 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 39
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+		<button>
+			id			btn_sub_2_15
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 280 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 41
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+		<button>
+			id			btn_sub_2_16
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 298 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 40
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+
+	</panel>
+	<panel>
+		id			pan_tab3
+		enable		true
+		visible		false
+		layer		150
+		rect		8 50 150 368
+		<button>
+			id			btn_title_1
+			enable		false
+			visible		true
+			layer		100
+			type		0
+			rect		12 10 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<title>
+				state 		none
+				color		0xFF00FFe1
+				fontIndex	2
+				position	0 2
+				text2		120 28
+			</title>
+		</button>
+		<button>
+			id			btn_sub_3_1
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 28 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 29
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_3_2
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 46 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 30
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_3_3
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 64 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 31
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_3_4
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 82 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 32
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+		<button>
+			id			btn_sub_3_5
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 100 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 33
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+  		<button>
+			id			btn_sub_3_6
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		12 118 126 18
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		check
+				screen	new_Info
+				index	100
+			</image>
+			<title>
+				state 		none
+				color		0xFFff0c00
+				fontIndex	2
+				position	22 2
+				text2		120 37
+			</title>
+			<title>
+				state 		over
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state 		check
+				color		0xFFFFFFFF
+				fontIndex	3
+			</title>
+		</button>
+	</panel>
+	
+	<label>
+		id			lbl_subTitle
+		enable		true
+		visible		true
+		layer		100
+		rect		256 28 462 14
+		align 		center
+		<title>
+			color		FFF4BE3D
+			fontIndex	4
+		</title>
+	</label>
+	<textbox>
+		id			textbox
+		enable		true
+		visible		true
+		layer		100
+		rect		250 58 468 374
+		lineheight	16
+		margin		0 0
+		fonttype	2
+		color		FFFFFFFF
+	</textbox>
+	<button>
+		id			btn_leftArrow
+		enable		false
+		visible		true
+		layer		100
+		type		0
+		rect		459 445 12 12
+		<image>
+			key		none
+			screen	etc_01
+			index	47
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	48
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	49
+		</image>
+		<image>
+			key		disable
+			screen	etc_01
+			index	46
+		</image>
+	</button>
+	<label>
+		id			lbl_pageNum
+		enable		false
+		visible		true
+		layer		100
+		align		center
+		rect		471 443 32 14
+		<title>
+			color		ffffffff
+			fontIndex	2
+			text		"/"
+		</title>
+	</label>
+	<button>
+		id			btn_rightArrow
+		enable		false
+		visible		true
+		layer		100
+		type		0
+		rect		504 445 12 12
+		<image>
+			key		none
+			screen	etc_01
+			index	51
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	52
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	53
+		</image>
+		<image>
+			key		disable
+			screen	etc_01
+			index	50
+		</image>
+	</button>
+</window>

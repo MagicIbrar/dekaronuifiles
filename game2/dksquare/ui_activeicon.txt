@@ -1,0 +1,21 @@
+<window>
+	name			activeicon
+	enable			true
+	visible			true
+	alwaysontop		true
+	layer			100
+	position		inverse inverse
+	<button>
+		id			btn_active
+		enable		true
+		visible		true
+		layer		100
+		rect		130 60 30 30
+		position	left top
+		<image>
+			key		none
+			screen	DKSquare
+			index	64
+		</image>
+	</button>
+</window>

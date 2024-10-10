@@ -1,0 +1,817 @@
+<panel>
+	id			pan_etc
+	enable		true
+	visible		true
+	layer		10
+	rect		2 52 410 600
+// Bloom
+	<label>
+		id			lbl_bloom
+		enable		true
+		visible		true
+		layer		101
+		rect		100 5 100 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"Bloom"
+		</title>
+	</label>
+	<panel>
+		id			pan_bloom_line
+		enable		true
+		visible		true
+		layer		10
+		rect		103 40 210 2
+		<image>
+			key		0
+			screen	envtool_etc
+			index	1
+		</image>
+	</panel>
+	<label>
+		id			lbl_bloom_p
+		enable		true
+		visible		true
+		layer		101
+		rect		51 32 100 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"Power"
+		</title>
+	</label>
+	<label>
+		id			lbl_bloom_w
+		enable		true
+		visible		true
+		layer		101
+		rect		51 54 100 12
+		<title>
+			color		ff00ff00
+			fontIndex	2
+			text		"Weight"
+		</title>
+	</label>
+	<label>
+		id			lbl_bloom_f
+		enable		true
+		visible		true
+		layer		101
+		rect		51 76 100 12
+		<title>
+			color		ff0000ff
+			fontIndex	2
+			text		"Factor"
+		</title>
+	</label>
+// Bloom 수치 보기
+	<label>
+		id			sld_bloom_p_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 32 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			sld_bloom_w_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 54 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			sld_bloom_f_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 76 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+// Bloom slidebar
+	<slidebar>
+		id			sld_bloom_p
+		enable		true
+		visible		true
+		layer		100
+		rect		100 32 215 19
+		min			0
+		max			100
+		minmaxpos	0 200
+		<panel>
+			id			sld_bloom_p_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_etc
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_etc
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+	<slidebar>
+		id			sld_bloom_w
+		enable		true
+		visible		true
+		layer		100
+		rect		100 54 215 19
+		min			0
+		max			100
+		minmaxpos	0 200
+		<panel>
+			id			sld_bloom_w_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_etc
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_etc
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+	<slidebar>
+		id			sld_bloom_f
+		enable		true
+		visible		true
+		layer		100
+		rect		100 76 215 19
+		min			1
+		max			200
+		minmaxpos	0 200
+		<panel>
+			id			sld_bloom_f_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_etc
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_etc
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+// Size
+	<label>
+		id			lbl_size
+		enable		true
+		visible		true
+		layer		101
+		rect		50 98 50 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"Size"
+		</title>
+	</label>
+	<combobox>
+		id				combo_size
+		enable			true
+		visible			true
+		border 			false
+		layer			100
+		rect			100 98 132 27
+		<image>
+			key		0
+			screen	chat
+			index	1
+			color	90010101
+		</image>	
+		<iteminfo>
+			rect	 		5 0 99 20
+			<item>
+				index   0
+				data	0
+				text	"0"
+			</item>
+			<item>
+				index   1
+				data	64
+				text	"64"
+			</item>
+			<item>
+				index   2
+				data	128
+				text	"128"
+			</item>
+			<item>
+				index   3
+				data	256
+				text	"256"
+			</item>
+			<item>
+				index   4
+				data	512
+				text	"512"
+			</item>
+		</iteminfo>
+		<nodeinfo>
+			selrect	0 0 109 20 
+			btnrect	112 0 19 20
+			
+			<image>
+				key		board_body
+				screen	chat
+				index	1
+				color	90010101
+			</image>						
+			<image>
+				key	btn_none
+				screen	party
+				index	15
+			</image>
+			<image>
+				key	btn_over
+				screen	party
+				index	16
+			</image>
+			<image>
+				key	btn_down
+				screen	party
+				index	17
+			</image>
+		</nodeinfo>					
+	</combobox>	
+// Bloom Enable
+	<label>
+		id			lbl_bloom_enable
+		enable		true
+		visible		true
+		layer		101
+		rect		50 120 50 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"적용"
+		</title>
+	</label>
+	<panel>
+		id			pan_bloom_enable
+		enable		true
+		visible		true
+		layer		110
+		rect		110 120 16 16
+		<image>
+			key		0
+			screen	envtool_etc
+			index	4
+		</image>
+	</panel>
+	<panel>
+		id			pan_bloom_enable_check
+		enable		true
+		visible		false
+		layer		111
+		rect		110 120 16 16
+		intersect	false
+		<image>
+			key		0
+			screen	envtool_etc
+			index	5
+		</image>
+	</panel>
+// Weather
+	<label>
+		id			lbl_weather
+		enable		true
+		visible		true
+		layer		101
+		rect		50 146 100 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"Wheather"
+		</title>
+	</label>
+// Weather EffectID
+	<label>
+		id			lbl_weather_e
+		enable		true
+		visible		true
+		layer		101
+		rect		51 168 100 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"EffectID"
+		</title>
+	</label>
+	<label>
+		id			edit_weather_e
+		enable		true
+		visible		true
+		layer		101
+		rect		150 168 100 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"100"
+		</title>
+	</label>
+// Weather SceneID
+	<label>
+		id			lbl_weather_s
+		enable		true
+		visible		true
+		layer		101
+		rect		51 190 80 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"SceneID"
+		</title>
+	</label>
+	<combobox>
+		id				combo_weather_s
+		enable			true
+		visible			true
+		border 			false
+		layer			100
+		rect			110 190 132 27
+		<image>
+			key		0
+			screen	chat
+			index	1
+			color	90010101
+		</image>
+		<iteminfo>		
+			rect 		5 0 99 20
+			<item>
+				index   0
+				data	1
+				text	"rain"
+			</item>
+			<item>
+				index   1
+				data	2
+				text	"snow"
+			</item>
+			<item>
+				index   2
+				data	3
+				text	"sandstorm"
+			</item>
+			<item>
+				index   3
+				data	4
+				text	"underwater"
+			</item>
+		</iteminfo>
+		<nodeinfo>
+			selrect	0 0 109 20 
+			btnrect	112 0 19 20
+			
+			<image>
+				key		board_body
+				screen	chat
+				index	1
+				color	90010101
+			</image>							
+			<image>
+				key	btn_none
+				screen	party
+				index	15
+			</image>
+			<image>
+				key	btn_over
+				screen	party
+				index	16
+			</image>
+			<image>
+				key	btn_down
+				screen	party
+				index	17
+			</image>
+		</nodeinfo>					
+	</combobox>	
+// Weather Enable
+	<label>
+		id			lbl_weather_enable
+		enable		true
+		visible		true
+		layer		101
+		rect		51 234 50 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"적용"
+		</title>
+	</label>
+	<panel>
+		id			pan_weather_enable
+		enable		true
+		visible		true
+		layer		110
+		rect		110 234 16 16
+		<image>
+			key		0
+			screen	envtool_etc
+			index	4
+		</image>
+	</panel>
+	<panel>
+		id			pan_weather_enable_check
+		enable		true
+		visible		false
+		layer		111
+		rect		110 234 16 16
+		intersect	false
+		<image>
+			key		0
+			screen	envtool_etc
+			index	5
+		</image>
+	</panel>
+// SkyBox
+	<label>
+		id			lbl_skybox
+		enable		true
+		visible		true
+		layer		101
+		rect		50 258 100 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"SkyBox"
+		</title>
+	</label>
+// SkyBox Type
+	<label>
+		id			lbl_skybox_type
+		enable		true
+		visible		true
+		layer		101
+		rect		51 280 50 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"Type"
+		</title>
+	</label>
+	<combobox>
+		id				combo_skybox
+		enable			true
+		visible			true
+		border 			false
+		layer			100
+		rect			110 280 132 27
+		<image>
+			key		0
+			screen	chat
+			index	1
+			color	90010101
+		</image>	
+		<iteminfo>		
+			rect 		5 0 99 20			
+		</iteminfo>
+		<nodeinfo>
+			selrect	0 0 109 20 
+			btnrect	112 0 19 20
+			
+			<image>
+				key		board_body
+				screen	chat
+				index	1
+				color	90010101
+			</image>				
+			<image>
+				key	btn_none
+				screen	party
+				index	15
+			</image>
+			<image>
+				key	btn_over
+				screen	party
+				index	16
+			</image>
+			<image>
+				key	btn_down
+				screen	party
+				index	17
+			</image>
+		</nodeinfo>					
+	</combobox>
+// Skybox Enable
+	<label>
+		id			lbl_skybox_enable
+		enable		true
+		visible		true
+		layer		101
+		rect		51 302 50 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"적용"
+		</title>
+	</label>
+	<panel>
+		id			pan_skybox_enable
+		enable		true
+		visible		true
+		layer		110
+		rect		110 302 16 16
+		<image>
+			key		0
+			screen	envtool_etc
+			index	4
+		</image>
+	</panel>
+	<panel>
+		id			pan_skybox_enable_check
+		enable		true
+		visible		false
+		layer		111
+		rect		110 302 16 16
+		intersect	false
+		<image>
+			key		0
+			screen	envtool_etc
+			index	5
+		</image>
+	</panel>
+// Cloud
+	<label>
+		id			lbl_cloud
+		enable		true
+		visible		true
+		layer		101
+		rect		50 334 100 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"구름 설정"
+		</title>
+	</label>
+	<button>
+			id			btn_cloud
+			enable		true
+			visible		true
+			layer		100
+			rect		51 356 50 20
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		90000000
+				fontIndex	2
+				text		"구름"
+			</title>
+			<title>
+				state		over
+				color		90FFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		6F000000
+				fontIndex	2
+			</title>
+		</button>
+	
+	<label>
+		id			lbl_cloud
+		enable		true
+		visible		true
+		layer		101
+		rect		110 336 50 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"종류"
+		</title>
+	</label>
+	<edit>
+		id			edt_cloud_type
+		enable		true
+		visible		true
+		layer		100
+		rect		110 356 40 20
+		maxlength	7
+		font_type	2
+		input_type	2
+		align		1
+		color		ff444444
+		multiline   false
+		<image>
+			key		0
+			screen	common
+			index	1
+			color	ffaaaaaa
+		</image>
+	</edit>
+	<label>
+		id			lbl_cloud
+		enable		true
+		visible		true
+		layer		101
+		rect		160 336 50 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"방향"
+		</title>
+	</label>
+	<edit>
+		id			edt_cloud_dir
+		enable		true
+		visible		true
+		layer		100
+		rect		160 356 50 20
+		maxlength	7
+		font_type	2
+		input_type	2
+		align		1
+		color		ff444444
+		multiline   false
+		<image>
+			key		0
+			screen	common
+			index	1
+			color	ffaaaaaa
+		</image>
+	</edit>
+	<label>
+		id			lbl_cloud
+		enable		true
+		visible		true
+		layer		101
+		rect		220 336 50 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"속도"
+		</title>
+	</label>
+	<edit>
+		id			edt_cloud_speed
+		enable		true
+		visible		true
+		layer		100
+		rect		220 356 50 20
+		maxlength	7
+		font_type	2
+		input_type	2
+		align		1
+		color		ff444444
+		multiline   false
+		<image>
+			key		0
+			screen	common
+			index	1
+			color	ffaaaaaa
+		</image>
+	</edit>
+	<label>
+		id			lbl_cloud
+		enable		true
+		visible		true
+		layer		101
+		rect		280 336 50 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"Alpha"
+		</title>
+	</label>
+	<edit>
+		id			edt_cloud_alpha
+		enable		true
+		visible		true
+		layer		100
+		rect		280 356 50 20
+		maxlength	7
+		font_type	2
+		input_type	2
+		align		1
+		color		ff444444
+		multiline   false
+		<image>
+			key		0
+			screen	common
+			index	1
+			color	ffaaaaaa
+		</image>
+	</edit>
+	<label>
+		id			lbl_cloud
+		enable		true
+		visible		true
+		layer		101
+		rect		340 336 50 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"InOut"
+		</title>
+	</label>
+	<edit>
+		id			edt_cloud_inout
+		enable		true
+		visible		true
+		layer		100
+		rect		340 356 50 20
+		maxlength	7
+		font_type	2
+		input_type	2
+		align		1
+		color		ff444444
+		multiline   false
+		<image>
+			key		0
+			screen	common
+			index	1
+			color	ffaaaaaa
+		</image>
+	</edit>
+	
+// DayNight Enable
+	<label>
+		id			lbl_night
+		enable		true
+		visible		true
+		layer		101
+		rect		50 394 100 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"밤낮 설정"
+		</title>
+	</label>
+	<label>
+		id			lbl_night_enable
+		enable		true
+		visible		true
+		layer		101
+		rect		51 416 50 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"밤"
+		</title>
+	</label>
+	<panel>
+		id			pan_night_enable
+		enable		true
+		visible		true
+		layer		110
+		rect		110 416 16 16
+		<image>
+			key		0
+			screen	envtool_etc
+			index	4
+		</image>
+	</panel>
+	<panel>
+		id			pan_night_enable_check
+		enable		true
+		visible		false
+		layer		111
+		rect		110 416 16 16
+		intersect	false
+		<image>
+			key		0
+			screen	envtool_etc
+			index	5
+		</image>
+	</panel>
+</panel>

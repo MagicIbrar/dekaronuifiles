@@ -1,0 +1,154 @@
+<window>
+	name			dashboardwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			-496 40 528 240
+	titlerect		0 0 0 0
+
+	<panel>
+		id			pan_redsign
+		enable			true
+		visible			true
+		layer			100
+		rect			202 40 245 34
+		intersect 		false
+		<image>
+			key		none
+			screen		guildtournament
+			index		73
+		</image>
+
+		<panel>
+			id		pan_red_team_name
+			enable		true
+			visible		true
+			layer		10
+			rect		0 0 245 35
+			intersect 	false
+
+			<panel>
+				id		pan_image_alphabet
+				enable		true
+				visible		true
+				layer		101
+				rect		0 0 0 0	
+				intersect 	false
+	
+				<image>
+					key	none
+				</image>
+			</panel>
+		</panel>
+	</panel>
+
+	<panel>
+		id			pan_bluesign
+		enable			true
+		visible			true
+		layer			100
+		rect			542 40 245 34
+		intersect 		false
+		<image>
+			key		none
+			screen		guildtournament
+			index		74
+		</image>
+
+		<panel>
+			id		pan_blue_team_name
+			enable		true
+			visible		true
+			layer		10
+			rect		0 0 245 35
+			intersect 	false
+
+			<panel>
+				id		pan_image_alphabet
+				enable		true
+				visible		true
+				layer		101
+				rect		0 0 0 0	
+				intersect 	false
+	
+				<image>
+					key	none
+				</image>
+			</panel>
+		</panel>
+	</panel>
+
+	<imagenumber>
+		id		number_redkillcnt
+		enable		true
+		visible		true
+		fonttype	none
+		layer		100
+		space		15
+		align		center
+		imagecount 	12
+		rect		405 75 33 21
+		intersect 	false
+		<image>
+			key	0
+			color 	0x00ffffff
+			screen	common
+			index	0
+		</image>
+	</imagenumber>
+
+	<imagenumber>
+		id		number_bluekillcnt
+		enable		true
+		visible		true
+		fonttype	none
+		layer		100
+		space		15
+		align		center
+		imagecount 	12
+		rect		550 75 33 21
+		intersect 	false
+		<image>
+			key	0
+			color 	0x00ffffff
+			screen	common
+			index	0
+		</image>
+	</imagenumber>
+
+	<imagenumber>
+		id		number_timer
+		enable		true
+		visible		true
+		fonttype	none
+		numbertype	timer
+		layer		100
+		space		15
+		align		center
+		imagecount 	12
+		rect		425 52 140 21
+		intersect 	false
+		<image>
+			key	0
+			color 	0x00ffffff
+			screen	common
+			index	0
+		</image>
+	</imagenumber>
+
+	<panel>
+		id			pan_timer_name
+		enable			true
+		visible			true
+		layer			200
+		rect			367 95 256 52
+		intersect 		false
+		<image>
+			key		none
+			screen		guildtournament
+			index		88
+		</image>
+	</panel>
+
+</window>

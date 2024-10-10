@@ -1,0 +1,269 @@
+<window>
+	name					observer_optionwnd
+	enable					true
+	visible					true
+	alwaysontop				true
+	layer					100
+	rect					300 300 532 457
+	titlerect				28 2 174 14
+	
+	<panel>
+		id					pan_back
+		enable				true
+		visible				true
+		layer				1
+		rect				0 0 232 157
+		<image>
+			key				none
+			screen			etc_01
+			index			1
+		</image>
+		<label>
+			id				lbl_title
+			enable			true
+			visible 		true
+			layer			10
+			align			center
+			rect			28 2 174 14
+			<title>
+				color		ffffffff
+				fontindex	4
+				text2		2100 3
+			</title>
+		</label>
+		<button>
+			id				btn_exit
+			enable			true
+			visible			true
+			layer			100
+			rect		214 2 15 15
+
+			sound			0
+			<image>			
+				key			none
+				screen		etc_01
+				index		315
+
+			</image>				
+			<image>	
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>			
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		<panel>
+			id			pan_chatmode
+			enable		true
+			visible		true
+			layer		110
+			rect		43 46 15 15
+			<image>
+				key		0
+				screen	etc_01
+				index	59
+			</image>
+		</panel>
+		<panel>
+			id			pan_chatmode_check
+			enable		true
+			visible		true
+			layer		120
+			rect		45 41 18 18
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	26
+			</image>
+		</panel>		
+		<label>
+			id			lbl_chatmode
+			enable		true
+			visible		true
+			layer		10
+			rect		65 46 81 18
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		2100 18
+			</title>
+		</label>		
+		<panel>
+			id			pan_cameramode
+			enable		true
+			visible		true
+			layer		110
+			rect		43 66 15 15
+			<image>
+				key		0
+				screen	etc_01
+				index	59
+			</image>
+		</panel>
+		<panel>
+			id			pan_cameramode_check
+			enable		true
+			visible		true
+			layer		120
+			rect		45 61 18 18
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	26
+			</image>
+		</panel>		
+		<label>
+			id			lbl_cameramode
+			enable		true
+			visible		true
+			layer		10
+			rect		65 66 81 18
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		2100 19
+			</title>
+		</label>
+		<panel>
+			id			pan_situationmode
+			enable		true
+			visible		true
+			layer		110
+			rect		43 86 15 15
+			<image>
+				key		0
+				screen	etc_01
+				index	59
+			</image>
+		</panel>
+		<panel>
+			id			pan_situationmode_check
+			enable		true
+			visible		true
+			layer		120
+			rect		45 81 18 18
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	26
+			</image>
+		</panel>		
+		<label>
+			id			lbl_situationmode
+			enable		true
+			visible		true
+			layer		10
+			rect		65 86 81 18
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		2100 17
+			</title>
+		</label>					
+		<button>
+			id			btn_ok
+			enable		true
+			visible		true
+			layer		100
+			rect		21 132 56 18
+			sound  		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	16 3
+				text2 		2000 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	16 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	17 4
+			</title>
+		</button>
+		<button>
+			id			btn_apply
+			enable		true
+			visible		true
+			layer		100
+			rect		88 132 56 18
+			sound		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	16 3
+				text2 		2001 7
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	16 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	17 4
+			</title>
+		</button>		
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			rect		155 132 56 18
+			sound		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	16 3
+				text2 		2000 23
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	16 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	17 4
+			</title>
+		</button>	
+	</panel>
+</window>

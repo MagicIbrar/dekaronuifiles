@@ -1,0 +1,314 @@
+<window>
+	name			warState
+	enable			true
+	visible			true
+	layer			100
+	rect			671 146 901 527
+	titlerect		0 0 214 24
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 230 381
+		<image>
+			key		0
+			screen	siege
+			index	31
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		60
+			rect		28 2 172 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 75
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		212 2 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		
+		<button>
+			id			btn_tab0
+			enable		true
+			visible		true
+			layer		100
+			rect		9 23 65 22
+			align		center
+			<image>
+				key			0
+				screen		etc_01
+				index		60
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		61
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	2
+				text2		290 102
+				position	0 6
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	2
+				position	0 8
+			</title>
+			<title>
+				state		check
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>
+		<label>
+			id			lbl_msg
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		58 53 113 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				text2		290 104
+			</title>
+		</label>
+		<label>
+			id			lbl_serverInfo
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		16 74 92 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_time
+			enable		true
+			visible		true
+			layer		101
+			align		right
+			rect		121 74 92 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_state
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		16 102 197 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_defender
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		14 139 67 14
+			<title>
+				color		FF3DD8F4
+				fontIndex	4
+				text2 		290 105
+			</title>
+		</label>
+		<panel>
+			id			pan_defMarkBg
+			enable		true
+			visible		true
+			layer		100
+			rect		22 161 40 40
+			<image>
+				key		0
+				color 	0x00000000
+			</image>
+			<panel>
+				id			pan_defMark
+				enable		true
+				visible		true
+				layer		20
+				rect		0 0 40 40
+				<image>
+					key		0
+					color 	0x00000000
+				</image>
+			</panel>
+		</panel>
+		<label>
+			id			lbl_defenderName
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		72 173 143 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_attacker
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		14 210 67 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				text2 		290 106
+			</title>
+		</label>
+		<panel>
+			id			pan_attMarkBg_0
+			enable		true
+			visible		true
+			layer		100
+			rect		22 232 40 40
+			<image>
+				key		0
+				color 	0x00000000
+			</image>
+			<panel>
+				id			pan_attMark_0
+				enable		true
+				visible		true
+				layer		20
+				rect		0 0 40 40
+				<image>
+					key		0
+					color 	0x00000000
+				</image>
+			</panel>
+		</panel>
+		<label>
+			id			lbl_attackerName_0
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		72 244 143 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id			pan_attMarkBg_1
+			enable		true
+			visible		true
+			layer		100
+			rect		22 278 40 40
+			<image>
+				key		0
+				color 	0x00000000
+			</image>
+			<panel>
+				id			pan_attMark_1
+				enable		true
+				visible		true
+				layer		20
+				rect		0 0 40 40
+				<image>
+					key		0
+					color 	0x00000000
+				</image>
+			</panel>
+		</panel>
+		<label>
+			id			lbl_attackerName_1
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		72 290 143 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id			pan_attMarkBg_2
+			enable		true
+			visible		true
+			layer		100
+			rect		22 324 40 40
+			<image>
+				key		0
+				color 	0x00000000
+			</image>
+			<panel>
+				id			pan_attMark_2
+				enable		true
+				visible		true
+				layer		20
+				rect		0 0 40 40
+				<image>
+					key		0
+					color 	0x00000000
+				</image>
+			</panel>
+		</panel>
+		<label>
+			id			lbl_attackerName_2
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		72 336 143 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>
+	</panel>
+</window>

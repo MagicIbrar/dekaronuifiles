@@ -1,0 +1,61 @@
+window_layer	TOP
+window_size	256	244
+window_position	0	0
+window_visible	false
+
+create_control	panel	pan_request
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\message_01.dds	0	0	256	256
+	control_drawdiv	xy	2
+	control_drawsize	256	244
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_title_text
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\mainmenu_01.dds	268	239	51	17
+	control_drawdiv	xy	2
+	control_drawsize	51	17
+	control_drawpoint	39	40
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_ok
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooooo	UI\Game\theme01\mainmenu_01.dds	331	92	45	23
+	control_drawsize	45	23
+	control_drawpoint	70	190
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_cancel
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooooo	UI\Game\theme01\mainmenu_01.dds	285	92	45	23
+	control_drawsize	45	23
+	control_drawpoint	140	190
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	text_1
+	{
+	control_text	0	0	""
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawsize	256	30
+	control_drawpoint	0	80
+	control_enable	true
+	control_visible	true
+	}
+}
+
+

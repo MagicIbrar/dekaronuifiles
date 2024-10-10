@@ -1,0 +1,506 @@
+<window>
+	name			quest
+	enable			true
+	visible			true
+	layer			100
+	rect			0 95 690 633
+	titlerect		0 0 652 32
+	<panel>
+		id			pan_left
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 690 538
+		<image>
+			key	0
+			screen	renewalquest
+			index	1
+		</image>
+		<label>
+			id			lbl_tagtitle
+			enable		true
+			visible		true
+			align 		center
+			layer		60
+			align		center
+			rect		8 10 643 32
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 65
+			</title>
+		</label>
+		<button>
+			id			tab_quest_1
+			enable		true
+			visible		true
+			align 		center
+			layer		100
+			rect		9 39 79 22
+			<image>
+				key		none
+				screen	renewalquest
+				index	21
+			</image>
+			<image>
+				key		check
+				screen	renewalquest
+				index	20
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2		1002 16
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			tab_quest_2
+			enable		true
+			visible		true
+			align 		center
+			layer		100
+			rect		90 39 79 22
+			<image>
+				key		none
+				screen	renewalquest
+				index	21
+			</image>
+			<image>
+				key		check
+				screen	renewalquest
+				index	20
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2		1002 59
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+
+			
+		</button>
+		<treectrl>
+			id			quest_tree
+			enable		true
+			visible		true
+			layer		100
+			rect		12 65 330 460
+			nodewidth  	290
+			nodeheight	20
+			offset		18
+			btnsize		12
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	4
+			</title>
+			<title>
+				state		check
+				color		ffFFFFFF
+				fontIndex	4
+			</title>
+			<title>
+				state		head
+				color		ff74AEE4
+				fontIndex	4
+			</title>
+			<title>
+				state		sub
+				color		ffFFFF00
+				fontIndex	4
+			</title>
+			<title>
+				state		finish
+				color		ffff8000
+				fontIndex	4
+			</title>
+			<title>
+				state		unknown
+				color		ffBFBFBF
+				fontIndex	4
+			</title>
+			<title>
+				state		complete
+				color		ffffff00
+				fontIndex	4
+			</title>
+			<image>
+				key	0
+				color 	00FFFFFF
+				screen	common
+				index	1
+			</image>
+			<image>
+				key		check
+				screen	questwin
+				index	91
+			</image>
+			<image>
+				key		plus
+				screen	etc_01
+				index	7
+			</image>
+			<image>
+				key		minus
+				screen	etc_01
+				index	11
+			</image>
+			<vscroll>
+				id			quest_tree_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		310 0 12 460
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			quest_tree_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					type		1
+					<image>
+					key		0
+					screen	renewalquest
+					index	5
+				</image>
+				<image>
+					key		over
+					screen	renewalquest
+					index	6
+				</image>
+				<image>
+					key		down
+					screen	renewalquest
+					index	7
+				</image>
+				<image>
+					key		disable
+					screen	renewalquest
+					index	5
+				</image>
+				</button>
+				<button>
+					id			quest_tree_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 450 12 12
+					type		1
+					<image>
+					key		0
+					screen	renewalquest
+					index	8
+				</image>
+				<image>
+					key		over
+					screen	renewalquest
+					index	9
+				</image>
+				<image>
+					key		down
+					screen	renewalquest
+					index	10
+				</image>
+				<image>
+					key		disable
+					screen	renewalquest
+					index	8
+				</image>
+				</button>
+				<panel>
+					id			quest_tree_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					noneimage 	true
+					<image>
+					key		none
+					screen	renewalquest
+					index	11
+				</image>
+				<image>
+					key		over
+					screen	renewalquest
+					index	12
+				</image>
+				</panel>
+			</vscroll>
+		</treectrl>
+	</panel>
+	<panel>
+		id			pan_right
+		enable		true
+		visible		true
+		layer		1
+		rect		320 0 365 542
+		<label>
+			id			lbl_tagtitle
+			enable		true
+			visible		true
+			align 		center
+			layer		60
+			align		center
+			rect		0 40 370 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 113
+			</title>
+		</label>
+		<label>
+			id			lbl_subtitle
+			enable		true
+			visible		true
+			layer		60
+			rect		22 71 276 14
+			<title>
+				color		ffFFCA40
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_object
+			enable		true
+			visible		true
+			layer		60
+			multiline	true
+			rect		22 98 297 115
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		338 12 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		30
+			rect		22 168 350 342
+			lineheight	16
+			margin		6 19
+			fonttype	2
+			color		FFFFFFFF
+			<vscroll>
+				id			textbox_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		328 5 12 320
+				maxvalue	3
+				buttontick  1
+				<button>
+					id			textbox_scroll_upbtn
+					enable		true
+					visible		true
+					layer		30
+					rect		0 0 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id			textbox_scroll_downbtn
+					enable		true
+					visible		true
+					layer		30
+					rect		0 310 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	14
+					</image>
+				</button>
+				<panel>
+					id			textbox_scroll_bar
+					enable		true
+					visible		true
+					layer		30
+					rect		0 0 12 19
+					moveable	true
+					<image>
+						key		0
+						screen	etc_01
+						index	24
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+		<button>
+			id			btn_confirm
+			enable	true
+			visible		true
+			layer		100
+			rect		128 501 57 19
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	18 4
+				text2		2000 22
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	18 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	19 5
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	4
+				position	18 4
+			</title>
+		</button>
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			rect		192 501 57 19
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	18 4
+				text2		2000 26
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	18 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	19 5
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	4
+				position	18 4
+			</title>
+		</button>		
+	</panel>
+</window>

@@ -1,0 +1,562 @@
+<window>
+	id	productLean_win
+	enable	true
+	visible	true
+	layer	100
+	position	center center
+	rect	-164 -261 164 262
+	modal	false
+	alwaysontop	false
+	titlerect	8 9 749 25
+	<panel>
+		id	pan_back
+		enable	true
+		visible	true
+		layer	10
+		rect	0 0 328 444		
+		<image>
+			key	none
+			color	ffffffff
+			screen	production
+			index	27
+		</image>
+		<label>
+			id	lbl_title
+			enable	true
+			visible	true
+			layer	60
+			rect	8 13 312 24
+			align	center
+			<title>
+				state	none
+				color	ffffffff
+				fontIndex	4
+				text2	2900	200
+			</title>
+		</label>
+		<button>
+			id	btn_exit
+			enable	true
+			visible	true
+			layer	100
+			rect	299 14 15 15
+			sound	0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+				color	ffffffff
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+				color	ffffffff
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+				color	ffffffff
+			</image>
+		</button>
+		<button>
+			id	btn_close
+			enable	true
+			visible	true
+			layer	100
+			rect	132 410 65 20
+			sound	0
+			align	center
+			<image>
+				key			0
+				screen		etc_01
+				index		88
+				color	ffffffff
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		89
+				color	ffffffff
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		90
+				color	ffffffff
+			</image>
+		<title>
+			state	none
+			color	ff929292
+			fontIndex	2
+			text2	2900 40
+			position		0 3
+		</title>
+		<title>
+			state	over
+			color	ffffffff
+			fontIndex	2
+			position		0 3
+		</title>
+		<title>
+			state	down
+			color	ff929292
+			fontIndex	2
+			position		2 4
+		</title>
+		</button>
+		<textbox>		
+			id	textbox
+			enable	true
+			visible	true
+			layer	60
+			rect	14 44 300 105
+			lineheight	20			
+			margin		0 0		
+			fonttype	2			
+			color		FFFFFFFF	
+			autoline 	true
+			<title>
+				state	none
+				color	ffffffff
+				fontIndex	4
+				text2	2900	201
+			</title>
+				<vscroll>
+					id			textbox_scroll
+					enable		true
+					visible		true
+					layer		10
+					rect		290 0 13 105
+					maxvalue	0
+					buttontick  1
+					<button>
+						id			textbox_scroll_upbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 13 13
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	414
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	415
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	416
+						</image>
+					</button>
+					<button>
+						id			textbox_scroll_downbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 92 13 13
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	418
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	419
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	420
+						</image>
+					</button>
+					<panel>
+						id			textbox_scroll_bar
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 13 36
+						moveable	true
+						noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	422
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	423
+						</image>
+					</panel>
+				</vscroll>
+		</textbox>
+		<panel>
+			id	pan_resultItem1
+			enable	true
+			visible	true
+			layer	1
+			rect	8 159 306 77
+			<panel>
+				id	pan_item_back1
+				enable	true
+				visible	true
+				layer	1
+				rect	6 9 300 68
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	28
+				</image>
+			</panel>
+			<panel>
+				id	pan_job
+				enable	true
+				visible	true
+				layer	10
+				rect	17 20 46 46
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	31
+				</image>
+			</panel>
+			<panel>
+				id	pan_select
+				enable	true
+				visible	true
+				layer	11
+				rect	0 0 61 33
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	38
+				</image>
+			</panel>
+			<label>
+				id	lbl_req_lv
+				enable	true
+				visible	true
+				layer	60
+				rect	65 25 160 13
+				multiline	true
+				<title>
+					state	none
+					color	ffffffff
+					fontIndex	4
+					text2	2900	202
+				</title>
+			</label>
+			<label>
+				id	txt_req_lv
+				enable	true
+				visible	true
+				layer	60
+				rect	65 47 160 13
+				multiline	true
+				<title>
+					state	none
+					color	ffffffff
+					fontIndex	4
+					text2	2900	203
+				</title>
+			</label>
+			<button>
+				id	btn_select_1
+				enable	true
+				visible	true
+				layer	100
+				rect	250 53 54 22
+				sound	0
+				align	center
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	35
+				</image>
+				<image>
+					key	over
+					color	ffffffff
+					screen	production
+					index	36
+				</image>
+				<image>
+					key	down
+					color	ffffffff
+					screen	production
+					index	37
+				</image>
+		<title>
+			state	none
+			color	ff929292
+			fontIndex	2
+			text2	2900 208
+			position		0 3
+		</title>
+		<title>
+			state	over
+			color	ffffffff
+			fontIndex	2
+			position		0 3
+		</title>
+		<title>
+			state	down
+			color	ff929292
+			fontIndex	2
+			position		2 4
+		</title>
+			</button>
+		</panel>
+		<panel>
+			id	pan_resultItem2
+			enable	true
+			visible	true
+			layer	1
+			rect	8 237 306 77
+			<panel>
+				id	pan_item_back2
+				enable	true
+				visible	true
+				layer	1
+				rect	6 9 300 68		
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	28
+				</image>
+			</panel>
+			<panel>
+				id	pan_job
+				enable	true
+				visible	true
+				layer	10
+				rect	17 20 46 46
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	32
+				</image>
+			</panel>
+			<panel>
+				id	pan_select
+				enable	true
+				visible	true
+				layer	11
+				rect	0 0 61 33
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	38
+				</image>
+			</panel>
+			<label>
+				id	lbl_req_lv
+				enable	true
+				visible	true
+				layer	60
+				rect	65 25 160 13
+				multiline	true
+				<title>
+					state	none
+					color	ffffffff
+					fontIndex	4
+					text2	2900	204
+				</title>
+			</label>
+			<label>
+				id	txt_req_lv
+				enable	true
+				visible	true
+				layer	60
+				rect	65 47 160 13
+				multiline	true
+				<title>
+					state	none
+					color	ffffffff
+					fontIndex	4
+					text2	2900	205
+				</title>
+			</label>
+			<button>
+				id	btn_select_2
+				enable	true
+				visible	true
+				layer	100
+				rect	250 53 54 22
+				sound	0
+				align	center
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	35
+				</image>
+				<image>
+					key	over
+					color	ffffffff
+					screen	production
+					index	36
+				</image>
+				<image>
+					key	down
+					color	ffffffff
+					screen	production
+					index	37
+				</image>
+		<title>
+			state	none
+			color	ff929292
+			fontIndex	2
+			text2	2900 208
+			position		0 3
+		</title>
+		<title>
+			state	over
+			color	ffffffff
+			fontIndex	2
+			position		0 3
+		</title>
+		<title>
+			state	down
+			color	ff929292
+			fontIndex	2
+			position		2 4
+		</title>
+			</button>
+		</panel>
+		<panel>
+			id	pan_resultItem3
+			enable	true
+			visible	true
+			layer	1
+			rect	8 315 306 77
+			<panel>
+				id	pan_item_back3
+				enable	true
+				visible	true
+				layer	1
+				rect	6 9 300 68				
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	28
+				</image>
+			</panel>
+			<panel>
+				id	pan_job
+				enable	true
+				visible	true
+				layer	10
+				rect	17 20 46 46
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	33
+				</image>
+			</panel>
+			<panel>
+				id	pan_select
+				enable	true
+				visible	true
+				layer	11
+				rect	0 0 61 33
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	38
+				</image>
+			</panel>
+			<label>
+				id	lbl_req_lv
+				enable	true
+				visible	true
+				layer	60
+				rect	65 25 160 13
+				multiline	true
+				<title>
+					state	none
+					color	ffffffff
+					fontIndex	4
+					text2	2900	206
+				</title>
+			</label>
+			<label>
+				id	txt_req_lv
+				enable	true
+				visible	true
+				layer	60
+				rect	65 47 160 13
+				multiline	true
+				<title>
+					state	none
+					color	ffffffff
+					fontIndex	4
+					text2	2900	207
+				</title>
+			</label>
+			<button>
+				id	btn_select_3
+				enable	true
+				visible	true
+				layer	100
+				rect	250 53 54 22
+				sound	0
+				align	center
+				<image>
+					key	none
+					color	ffffffff
+					screen	production
+					index	35
+				</image>
+				<image>
+					key	over
+					color	ffffffff
+					screen	production
+					index	36
+				</image>
+				<image>
+					key	down
+					color	ffffffff
+					screen	production
+					index	37
+				</image>
+		<title>
+			state	none
+			color	ff929292
+			fontIndex	2
+			text2	2900 208
+			position		0 3
+		</title>
+		<title>
+			state	over
+			color	ffffffff
+			fontIndex	2
+			position		0 3
+		</title>
+		<title>
+			state	down
+			color	ff929292
+			fontIndex	2
+			position		2 4
+		</title>
+			</button>
+		</panel>
+	</panel>		
+</window>

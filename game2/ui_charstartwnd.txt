@@ -1,0 +1,119 @@
+<window>
+	name			char_start_win
+	enable			true
+	visible			true
+	layer			100
+	modal			true
+	position		inverse inverse
+	rect			0 0 0 0
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		100
+		position	center center
+		rect		-236 -202 472 401
+		<image>
+			key		0
+			screen	Character_new
+			index	101
+		</image>
+		<label>
+			id			lbl_start_title
+			enable		true
+			visible		true
+			layer		120
+			rect		190 8 90 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		30 19
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		437 10 21 21
+			sound  0
+			<image>
+				key		none
+				screen	questwin
+				index	61
+			</image>
+			<image>
+				key		over
+				screen	questwin
+				index	62
+			</image>
+			<image>
+				key		down
+				screen	questwin
+				index	63
+			</image>
+		</button>
+		<textbox>
+			id			textbox_briken
+			enable		true
+			visible		true
+			layer		99
+			rect		24 43 206 308
+			lineheight	16
+			fonttype	5
+			color		FFFFFFFF
+		</textbox>
+		<button>
+			id			btn_briken
+			enable		true
+			visible		true
+			layer		100
+			rect		24 43 206 308
+			<image>
+				key		none
+				color	0x01000000
+			</image>
+			<image>
+				key		over
+				screen	start_region
+				index	40
+			</image>
+			<image>
+				key		check
+				screen	start_region
+				index	40
+			</image>
+		</button>
+		<textbox>
+			id			textbox_loa
+			enable		true
+			visible		true
+			layer		99
+			rect		243 43 206 308
+			lineheight	16
+			fonttype	5
+			color		FFFFFFFF
+		</textbox>
+		<button>
+			id			btn_loa
+			enable		true
+			visible		true
+			layer		100
+			rect		243 43 206 308
+			<image>
+				key		none
+				color	0x01000000
+			</image>
+			<image>
+				key		over
+				screen	start_region
+				index	40
+			</image>
+			<image>
+				key		check
+				screen	start_region
+				index	40
+			</image>
+		</button>
+	</panel>
+</window>

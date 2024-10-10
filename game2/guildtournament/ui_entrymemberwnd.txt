@@ -1,0 +1,478 @@
+<window>
+	name			entrymemberwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-262 -196 263 196
+	titlerect		5 5 515 30
+	alwaysontop		true
+		
+	<panel>
+		id				pan_body
+		enable			true
+		visible			true
+		layer			1
+		rect			0 0 525 392
+		<image>
+			key			none
+			screen		guildtournament
+			index		22
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		20 13 485 30
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 141
+			</title>
+		</label>
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		498 12 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		
+		<label>
+			id			lbl_tag_calss
+			enable		true
+			visible		true
+			layer		50
+			intersect 	false
+			align		center
+			rect		20 55 45 20
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		360 39
+			</title>
+		</label>
+
+		<label>
+			id			lbl_tag_name
+			enable		true
+			visible		true
+			layer		50
+			intersect 	false
+			align		center
+			rect		65 55 115 20
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		360 40
+			</title>
+		</label>
+
+		<label>
+			id			lbl_tag_lv
+			enable		true
+			visible		true
+			layer		50
+			intersect 	false
+			align		center
+			rect		180 55 45 20
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		360 41
+			</title>
+		</label>
+
+		<panel>
+			id				pan_entry_
+			enable			false
+			visible			false
+			layer			1
+			rect			283 55 215 30
+			
+			<panel>
+				id				pan_entry_class_
+				enable			true
+				visible			true
+				layer			1
+				rect			5 4 26 20
+				<image>
+					key		none
+					screen	party
+					index	31
+				</image>
+			</panel>
+			
+			<label>
+				id			lbl_entry_name_
+				enable		true
+				visible		true
+				layer		50
+				intersect 	false
+				align		center
+				rect		35 5 100 20
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		360 19
+				</title>
+			</label>
+			
+			<label>
+				id			lbl_entry_lv_
+				enable		true
+				visible		true
+				layer		50
+				intersect 	false
+				align		center
+				rect		135 5 45 20
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		360 19
+				</title>
+			</label>
+			
+			<button>
+				id			btn_entry_cancel_
+				enable		true
+				visible		true
+				layer		100
+				rect		190 0 31 35
+				sound  0
+				<image>
+					key			0
+					screen		guildtournament
+					index		23
+				</image>
+				<image>
+					key			over
+					screen		guildtournament
+					index		24
+				</image>
+				<image>
+					key			down
+					screen		guildtournament
+					index		25
+				</image>
+			</button>
+		</panel>
+	</panel>
+
+	<panel>
+		id				pan_tail
+		enable			true
+		visible			true
+		layer			100
+		rect			120 350 270 40
+
+		<button>
+			id			btn_regist
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		5 5 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 142
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+
+		<button>
+			id			btn_init
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		95 5 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 135
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		185 5 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 143
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+	</panel>
+
+	<panel>
+		id				pan_memlist
+		enable			true
+		visible			true
+		layer			1
+		rect			19 76 525 392
+
+		<button>
+			id				btn_member_
+			enable			false
+			visible			false
+			layer			1
+			rect			0 0 207 26
+
+			<image>
+				key		none
+				color		000000ff
+				screen	party
+				index	5
+			</image>
+			<image>
+				key		over
+				color		ffffffff
+				screen	party
+				index	5
+			</image>
+			<image>
+				key		down
+				color		ff00ffff
+				screen	party
+				index	5
+			</image>
+
+			<panel>
+				id				pan_guild_class_
+				enable			true
+				visible			true
+				layer			1
+				rect			10 3 26 20
+				<image>
+					key		none
+					screen	party
+					index	31
+				</image>
+			</panel>
+			
+			<label>
+				id			lbl_member_name_
+				enable		true
+				visible		true
+				layer		50
+				intersect 	false
+				align		center
+				rect		45 5 115 20
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		360 19
+				</title>
+			</label>
+			
+			<label>
+				id			lbl_guild_lv_
+				enable		true
+				visible		true
+				layer		50
+				intersect 	false
+				align		center
+				rect		160 5 50 20
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		360 19
+				</title>
+			</label>
+		</button>
+
+		<vscroll>
+			id			scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		207 0 13 256
+			maxvalue	3
+			buttontick  1
+
+			<button>
+				id			scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 13
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	19
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	20
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	21
+				</image>
+			</button>
+
+			<button>
+				id			scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 245 13 13
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	17
+				</image>
+			</button>
+
+			<panel>
+				id			scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 13 13 20
+				moveable	true
+				noneimage 	true
+				<image>
+					key		none
+					screen	etc_01
+					index	24
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	25
+				</image>
+			</panel>
+		</vscroll>
+	</panel>
+</window>

@@ -1,0 +1,17 @@
+<window>
+	name			chat
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	alwaysontop		true
+	<panel>
+		id			pan_effect
+		enable		true
+		visible		true
+		layer		120
+		intersect 	false
+		position	center top
+		rect		-180 80 350 50
+	</panel>
+</window>

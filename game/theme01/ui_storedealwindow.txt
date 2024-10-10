@@ -1,0 +1,141 @@
+window_layer	auto
+window_size	256	256
+window_position	5	5
+window_visible	false
+
+create_control	grid2	Grid_Shop
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ui_inven_03.dds	142	0	69	55
+	control_drawdiv	xy	2
+	control_drawsize	320	411
+	control_drawpoint	4	75
+	control_enable	true
+	control_visible	true
+	control_build	
+}
+
+create_control	panel	base_cover1
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ui_storedeal_01.dds	0	0	256	256
+	control_drawdiv	xy	2
+	control_drawsize	256	256
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	title_bar
+	{
+		control_group	0
+		control_drawdiv	xy	2
+		control_drawsize	327	37
+		control_drawpoint	0	0
+		control_enable	true
+		control_visible	true
+
+		create_control	button	btn_close
+		{
+		control_group	0
+		control_image	ooox	UI\Game\theme01\ui_inven_03.dds	142	58	18	18
+		control_drawdiv	xy	1
+		control_drawsize	18	18
+		control_drawpoint	301	8
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	create_control	button	btn_sale
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ui_storedeal_03.dds	142	141	51	19
+	control_drawdiv	xy	1
+	control_drawsize	51	19
+	control_drawpoint	151	540
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_buy
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ui_storedeal_03.dds	193	141	51	19
+	control_drawdiv	xy	1
+	control_drawsize	51	19
+	control_drawpoint	209	540
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_end
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ui_inven_03.dds	144	167	51	19
+	control_drawdiv	xy	1
+	control_drawsize	51	19
+	control_drawpoint	267	540
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	panel	base_cover2
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ui_storedeal_02.dds	0	0	254	256
+	control_drawdiv	xy	2
+	control_drawsize	254	256
+	control_drawpoint	2	256
+	control_enable	true
+	control_visible	true
+}
+
+create_control	panel	base_cover3
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ui_storedeal_03.dds	0	0	72	256
+	control_drawdiv	xy	2
+	control_drawsize	72	256
+	control_drawpoint	256	0
+	control_enable	true
+	control_visible	true
+}
+
+create_control	panel	base_cover4
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ui_storedeal_03.dds	72	0	70	256
+	control_drawdiv	xy	2
+	control_drawsize	70	256
+	control_drawpoint	256	256
+	control_enable	true
+	control_visible	true
+}
+
+create_control	panel	base_cover5
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ui_inven_04.dds	0	116	256	58
+	control_drawdiv	xy	2
+	control_drawsize	256	58
+	control_drawpoint	0	512
+	control_enable	true
+	control_visible	true
+}
+
+create_control	panel	base_cover6
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ui_inven_03.dds	142	0	69	55
+	control_drawdiv	xy	2
+	control_drawsize	69	55
+	control_drawpoint	256	512
+	control_enable	true
+	control_visible	true
+}
+
+

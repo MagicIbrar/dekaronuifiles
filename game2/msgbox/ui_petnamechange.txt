@@ -1,0 +1,144 @@
+<window>
+	name			petawake_msgbox
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0 0 274 173
+	titlerect		0 0 274 24
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 274 173
+		<image>
+				key	none
+				screen	pet
+				index	9
+		</image>
+		
+	<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		28 2 216 14	
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		100 80
+			</title>
+		</label>
+	</panel>
+	<label>
+		id			lbl_text
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		25 41 223 14	
+		<title>
+			color		ffffffff
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			lbl_tagtext1
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		25 70 223 14
+		<title>
+			color		ffF4BE3D
+			fontIndex	2
+			text2		330 22
+		</title>
+	</label>
+	<label>
+		id			lbl_tagtext2
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		25 92 223 62
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text2		330 23
+		</title>
+	</label>
+	<button>
+		id		btn_yes
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		rect		58 148 56 18
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 3
+			text2 		2000 5
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>
+	<button>
+		id		btn_no
+		enable		true
+		visible		true
+		layer		100
+		align		center
+		rect		159 148 56 18
+		<image>
+			key			0
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			text2		2000 6
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 2
+		</title>
+	</button>
+</window>

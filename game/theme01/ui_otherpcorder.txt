@@ -1,0 +1,110 @@
+window_layer	auto
+window_visible	false
+
+create_control	panel	pan_otherpcorder
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\teleport.dds	310	225	67	7
+	control_drawsize	67	7
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_trade
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\teleport.dds	310	233	67	26
+	control_drawsize	67	27
+	control_drawpoint	0	7
+	control_enable	true
+	control_visible	true
+
+		create_control	button	btn_trade
+		{
+		control_group	0
+		control_drawdiv	xy	2
+		control_image	ooox	UI\Game\theme01\teleport.dds	310	75	56	25
+		control_drawsize	56	25
+		control_imagedivide	vertical
+		control_drawpoint	7	3
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	create_control	panel	pan_whisper
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\teleport.dds	310	233	67	26
+	control_drawsize	67	27
+	control_drawpoint	0	34
+	control_enable	true
+	control_visible	true
+
+		create_control	button	btn_whisper
+		{
+		control_group	0
+		control_drawdiv	xy	2
+		control_image	ooox	UI\Game\theme01\teleport.dds	422	75	56	25
+		control_drawsize	56	25
+		control_imagedivide	vertical
+		control_drawpoint	7	3
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	create_control	panel	pan_invite
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\teleport.dds	310	233	67	26
+	control_drawsize	67	27
+	control_drawpoint	0	61
+	control_enable	true
+	control_visible	true
+
+		create_control	button	btn_invite
+		{
+		control_group	0
+		control_drawdiv	xy	2
+		control_image	ooox	UI\Game\theme01\teleport.dds	366	75	56	25
+		control_drawsize	56	25
+		control_imagedivide	vertical
+		control_drawpoint	7	3
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	create_control	panel	pan_friend
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\teleport.dds	310	233	67	26
+	control_drawsize	67	27
+	control_drawpoint	0	88
+	control_enable	true
+	control_visible	true
+
+		create_control	button	btn_friend
+		{
+		control_group	0
+		control_drawdiv	xy	2
+		control_image	ooox	UI\Game\theme01\teleport.dds	422	0	56	25
+		control_drawsize	56	25
+		control_imagedivide	vertical
+		control_drawpoint	7	3
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	create_control	panel	pan_end
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\teleport.dds	310	261	67	7
+	control_drawsize	67	7
+	control_drawpoint	0	115
+	control_enable	true
+	control_visible	true
+	}
+}

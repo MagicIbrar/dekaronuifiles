@@ -1,0 +1,178 @@
+<window>
+	name			tutorial_provide
+	enable			true
+	visible			true
+	intersect		true
+	layer			100
+	rect			0 0 534 477
+	titlerect		29 12 504 36
+
+	<panel>				
+		id		pan_bg_left
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 30 477
+
+		<image>
+			key	0
+			screen	tutorialwindow
+			index	3
+		</image>
+
+	</panel>			
+
+	<panel>				
+		id		pan_bg_center
+		enable		true
+		visible		true
+		layer		10
+		rect		30 0 474 477
+
+		<image>
+			key	0
+			screen	tutorialwindow
+			index	4
+		</image>
+
+	</panel>			
+
+	<panel>				
+		id		pan_bg_right
+		enable		true
+		visible		true
+		layer		10
+		rect		504 0 30 477
+
+		<image>
+			key	0
+			screen	tutorialwindow
+			index	5
+		</image>
+
+	</panel>
+
+	<label>
+		id		lbl_title
+		enable		true
+		visible		true
+		layer		60
+		rect		19 16 504 36
+		align 		center
+		<title>
+			color		ffffffff
+			fontIndex	4
+		</title>
+	</label>
+
+
+	<button>
+		id		btn_exit
+		enable		true
+		visible		true
+		layer		100
+		rect		503 17 15 15
+
+		<image>
+			key		0
+			screen	etc_01
+			index		315
+
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index		316
+
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index		317
+
+		</image>
+	</button>	
+
+	<textbox>
+		id		textbox
+		enable		true
+		visible		true
+		layer		100
+		rect		11 39 522 405
+		lineheight	16
+		margin		0 0
+		fonttype	2
+		color		ffffffff
+	</textbox>
+
+	<button>
+		id			btn_leftArrow
+		enable		true
+		visible		true
+		layer		100
+		type		0
+		rect		225 450 12 12
+		<image>
+			key		none
+			screen	etc_01
+			index	47
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	48
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	49
+		</image>
+		<image>
+			key		disable
+			screen	etc_01
+			index	46
+		</image>
+	</button>
+	<label>
+		id			lbl_pageNum
+		enable		true
+		visible		true
+		layer		100
+		align		center
+		rect		248 450 40 14
+		<title>
+			color		ffffffff
+			fontIndex	2
+			text		"/"
+		</title>
+	</label>
+	<button>
+		id			btn_rightArrow
+		enable		false
+		visible		true
+		layer		100
+		type		0
+		rect		297 450 12 12
+		<image>
+			key		none
+			screen	etc_01
+			index	51
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	52
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	53
+		</image>
+		<image>
+			key		disable
+			screen	etc_01
+			index	50
+		</image>
+	</button>	
+
+</window>

@@ -1,0 +1,24 @@
+<window>
+	name			EventMessageWnd
+	enable			true
+	visible			true
+	layer			300
+	position		inverse inverse
+	alwaysontop		true
+	<label>
+		id			lbl_message
+		enable		true
+		visible		true
+		layer		224
+		position	center top
+		rect		-512 120 1024 300
+		multiline 	true
+		align		center
+		lineheight	24
+		intersect 	false
+		<title>
+			color		ffffffff
+			fontIndex	8
+		</title>
+	</label>
+</window>

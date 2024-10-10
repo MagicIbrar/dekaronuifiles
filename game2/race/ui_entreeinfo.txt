@@ -1,0 +1,202 @@
+<window>
+	name			entreeinfo
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-226 -251 226 252
+	titlerect		8 8 419 22
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 452 503
+		<image>
+			key		none
+			screen	race
+			index	1
+		</image>
+
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		8 12 419 16
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 128
+			</title>
+		</label>
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		10
+			rect		425 11 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		
+		<button>
+			id			btn_refresh
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		370 36 65 20
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+				text2 		210 7
+			</title>
+			<image>
+				key			0
+				screen		etc_01
+				index		88
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		89
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		90
+			</image>
+		</button>
+		
+		<panel>
+			id			pan_list
+			enable		true
+			visible		true
+			layer		10
+			rect		0 62 452 24
+			<label>
+				id			lbl_server
+				enable		true
+				visible		true
+				layer		20
+				align		center
+				rect		0 0 68 24
+				<title>
+					color		ffffffff
+					fontIndex	2
+					position	0 6
+					text2 		210 1
+				</title>
+			</label>
+			<label>
+				id			lbl_rank
+				enable		true
+				visible		true
+				layer		20
+				align		center
+				rect		68 0 62 24
+				<title>
+					color		ffffffff
+					fontIndex	2
+					position	0 6
+					text2 		210 2
+				</title>
+			</label>
+			<label>
+				id			lbl_level
+				enable		true
+				visible		true
+				layer		20
+				align		center
+				rect		130 0 130 24
+				<title>
+					color		ffffffff
+					fontIndex	2
+					position	0 6
+					text2 		210 3
+				</title>
+			</label>
+			<label>
+				id			lbl_usercount
+				enable		true
+				visible		true
+				layer		20
+				align		center
+				rect		260 0 62 24
+				<title>
+					color		ffffffff
+					fontIndex	2
+					position	0 6
+					text2 		210 4
+				</title>
+			</label>
+			<label>
+				id			lbl_status
+				enable		true
+				visible		true
+				layer		20
+				align		center
+				rect		322 0 62 24
+				<title>
+					color		ffffffff
+					fontIndex	2
+					position	0 6
+					text2 		210 5
+				</title>
+			</label>
+			<button>
+				id			btn_entry
+				enable		true
+				visible		false
+				layer		20
+				align		center
+				rect		388 1 53 20
+				<title>
+					color		ffffffff
+					fontIndex	2
+					position	0 5
+					text2 		210 6
+				</title>
+				<image>
+					key			0
+					screen		etc_01
+					index		91
+				</image>
+				<image>
+					key			over
+					screen		etc_01
+					index		92
+				</image>
+				<image>
+					key			down
+					screen		etc_01
+					index		93
+				</image>
+			</button>
+		</panel>	
+		
+	</panel>
+</window>

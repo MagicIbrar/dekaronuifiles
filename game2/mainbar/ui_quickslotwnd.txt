@@ -1,0 +1,294 @@
+<window>
+	name			quickslotwnd
+	enable			true
+	visible			true
+	layer			100
+	position		left bottom
+	rect			0 -153 582 -9
+	titlerect 		567 96 582 144
+	alwaysontop		true
+	<panel>
+		id			pan_handle
+		enable		true
+		visible		true
+		layer		1000
+		rect		567 96 15 48
+	</panel>
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0 0 582 144
+		<panel>
+			id			pan_dozen
+			enable		true
+			visible		false
+			layer		1
+			rect		0 0 550 48
+			<panel>
+				id			pan_front
+				enable		true
+				visible		true
+				layer		1
+				rect		0 0 3 48
+				<image>
+					key		none
+					screen	newMainbar
+					index	200
+				</image>
+			</panel>	
+			<button>
+				id			btn_exist
+				enable		true
+				visible		true
+				layer		100
+				rect		535 4 11 40
+				<image>
+					key		0
+					screen	newMainbar
+					index	205
+				</image>
+				<image>
+					key		check
+					screen	newMainbar
+					index	204
+				</image>
+			</button>
+			<panel>
+				id			pan_norear
+				enable		true
+				visible		true
+				layer		1
+				rect		531 0 19 48
+				<image>
+					key		none
+					screen	newMainbar
+					index	202
+				</image>
+			</panel>
+			<label>
+				id		lbl_slotNum
+				enable		true
+				visible		true
+				layer		104
+				align		center
+				intersect 	false
+				rect		535 18 7 13
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+		</panel>
+		<quickslot>
+			id			slot
+			enable		true
+			visible		false
+			layer		100
+			rect		3 0 44 48
+			<panel>
+				id			slot_base
+				enable		true
+				visible		true
+				layer		1
+				rect		0 0 44 48
+				<image>
+					key		none
+					screen	newMainbar
+					index	201
+				</image>
+			</panel>
+			<panel>
+				id			slot_cool
+				enable		true
+				visible		true
+				layer		3
+				rect		2 4 40 40
+			</panel>
+			<panel>
+				id			slot_skill
+				enable		true
+				visible		true
+				layer		2
+				rect		2 4 40 40
+			</panel>
+			<panel>
+				id			slot_grd
+				enable		true
+				visible		true
+				layer		4
+				rect		2 4 40 40
+			</panel>
+		</quickslot>
+		<label>
+			id		slot_label
+			enable		true
+			visible		false
+			layer		120
+			align		right
+			rect		2 102 44 15
+			intersect 	false
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0	
+			</title>
+		</label>
+		<combobox>
+			id			com_dozen
+			enable		true
+			visible		true
+			border 		false
+			intersect 	false
+			layer		120
+			position	left top
+			rect		549 0 19 48
+			<iteminfo>		
+				rect 	0 5 19 15
+				<item>
+					index   0
+					data	3
+					string 	231 3
+				</item>
+				<item>
+					index   1
+					data	2
+					string 	231 2
+				</item>
+				<item>
+					index   2
+					data	1
+					string 	231 1
+				</item>
+			</iteminfo>
+			<nodeinfo>
+				selrect		0 0 19 0
+				btnrect		0 0 0 0 				
+				<image>
+					key		board_body
+					screen	chat
+					index	8
+					color	90010101
+				</image>
+			</nodeinfo>		
+		</combobox>
+		<panel>
+			id			pan_rear
+			enable		true
+			visible		true
+			layer		5
+			rect		531 96 51 48
+			<image>
+				key		none
+				screen	newMainbar
+				index	203
+			</image>
+			<button>
+				id			btn_slot_up
+				enable		true
+				visible		true
+				layer		100
+				rect		4 4 11 11
+				sound		1
+				<image>
+					key		0
+					screen	newMainbar
+					index	101
+				</image>
+				<image>
+					key		over
+					screen	newMainbar
+					index	103
+				</image>
+				<image>
+					key		down
+					screen	newMainbar
+					index	102
+				</image>
+			</button>
+			<button>
+				id			btn_slot_down
+				enable		true
+				visible		true
+				layer		100
+				rect		4 33 11 11
+				sound		1
+				<image>
+					key		0
+					screen	newMainbar
+					index	111
+				</image>
+				<image>
+					key		over
+					screen	newMainbar
+					index	113
+				</image>
+				<image>
+					key		down
+					screen	newMainbar
+					index	112
+				</image>
+			</button>
+			<button>
+				id			btn_setting
+				enable		true
+				visible		true
+				layer		100
+				tooltip		231 6
+				rect		18 1 17 23
+					<image>
+						key		0
+						screen	newMainbar
+						index	80
+					</image>
+					<image>
+						key		over
+						screen	newMainbar
+						index	82
+					</image>
+					<image>
+						key		down
+						screen	newMainbar
+						index	81
+					</image>
+			</button>
+			<button>
+				id			btn_lock
+				enable		true
+				visible		true
+				layer		100
+				tooltip		231 7
+				rect		18 24 17 23
+					<image>
+						key		0
+						screen	newMainbar
+						index	70
+					</image>
+					<image>
+						key		over
+						screen	newMainbar
+						index	72
+					</image>
+					<image>
+						key		down
+						screen	newMainbar
+						index	71
+					</image>
+			</button>
+			<label>
+				id		lbl_controltype
+				enable		true
+				visible		true
+				layer		101
+				align		center
+				rect		36 16 12 14
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+		</panel>
+	</panel>
+</window>

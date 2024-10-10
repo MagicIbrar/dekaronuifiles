@@ -1,0 +1,261 @@
+<window>
+	name			exchangeshopwnd
+	enable			true
+	visible			true
+	layer			100
+	rect			0 150 406 432
+	titlerect		0 0 406 20
+	
+	<panel>
+		id				pan_main
+		enable			true
+		visible			true
+		layer			100
+		rect			0 0 406 282
+		<image>
+			key		0
+			screen	exchange
+			index	1
+		</image>
+		<label>
+			id				lbl_title
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			28 2 348 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		2006 1
+			</title>
+		</label>
+		
+		<label>
+			id				lbl_category
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			15 28 256 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		2006 2
+			</title>
+		</label>
+
+		<label>
+			id				lbl_pay_name
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			265 28 136 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<button>
+			id				btn_close
+			enable			true
+			visible			true
+			layer			100
+			rect		388 2 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+			</image>
+		</button>
+		
+		<listbox>
+			id				list_menu
+			enable			true
+			visible			true
+			layer			110
+			rect			15 42 256 250
+			nodewidth 	  	240
+			nodeheight		23
+			btnsize			23
+			align			center
+			<title>
+				state		none
+				color		FFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state		over
+				color		FF74AEE4
+				fontIndex	3
+			</title>
+			<title>
+				state		check
+				color		FFFFB900
+				fontIndex	3
+			</title>
+			<vscroll>
+				id				list_menu_scroll
+				enable			true
+				visible			true
+				layer			1
+				rect			103 5 0 0
+				maxvalue		0
+				buttontick  	1
+				<button>
+					id				list_menu_scroll_upbtn
+					enable			true
+					visible			true
+					layer			100
+					rect			0 0 0 0
+					type			1
+				</button>
+				<button>
+					id			list_menu_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 222 0 0
+					type		1
+				</button>
+				<panel>
+					id			list_menu_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 0 0
+					moveable	true
+					noneimage 	true
+				</panel>
+			</vscroll>
+		</listbox>
+
+		<listbox>
+			id				list_price
+			enable			true
+			visible			true
+			layer			110
+			rect			285 42 120 250
+			nodewidth   	90
+			nodeheight		23
+			btnsize			23
+			offset			0
+			align			center
+			<title>
+				state		none
+				color		FFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state		over
+				color		FF74AEE4
+				fontIndex	3
+			</title>
+			<title>
+				state		check
+				color		FFFFB900
+				fontIndex	3
+			</title>
+			<vscroll>
+				id				list_price_scroll
+				enable			true
+				visible			true
+				layer			1
+				rect			103 5 12 234
+				maxvalue		0
+				buttontick  	1
+				<button>
+					id				list_price_scroll_upbtn
+					enable			true
+					visible			true
+					layer			100
+					rect			0 0 12 12
+					type			1
+					<image>
+						key			0
+						screen		etc_01
+						index		19
+					</image>
+					<image>
+						key			over
+						screen		etc_01
+						index		20
+					</image>
+					<image>
+						key			down
+						screen		etc_01
+						index		21
+					</image>
+					<image>
+						key			disable
+						screen		etc_01
+						index		18
+					</image>
+				</button>
+				<button>
+					id			list_price_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 218 12 12
+					type		1
+					<image>
+						key			0
+						screen		etc_01
+						index		15
+					</image>
+					<image>
+						key			over
+						screen		etc_01
+						index		16
+					</image>
+					<image>
+						key			down
+						screen		etc_01
+						index		17
+					</image>
+					<image>
+						key			disable
+						screen		etc_01
+						index		14
+					</image>
+				</button>
+				<panel>
+					id			list_price_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					noneimage 	true
+					<image>
+						key			none
+						screen		etc_01
+						index		24
+					</image>
+					<image>
+						key			over
+						screen		etc_01
+						index		25
+					</image>
+				</panel>
+			</vscroll>
+		</listbox>
+	</panel>
+</window>

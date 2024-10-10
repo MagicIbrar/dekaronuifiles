@@ -1,0 +1,793 @@
+<window>
+	name			newcashshopWnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-349 -257 349 256
+	titlerect		0 0 698 24
+	<panel>
+		id			pan_main
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 698 513
+		<image>
+			key		none
+			screen	Itemshop_06
+			index	36
+		</image>
+		<button>
+			id			btn_exit
+			enable		true	
+			visible		true
+			layer		100
+			rect		679 2 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		29 2 638 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		171 9
+			</title>
+		</label>
+		<button>
+			id			btn_tab_0
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		17 31 124 22
+			<image>
+				key		none
+				screen	Itemshop_06
+				index 	37
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		171 10
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_1
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		151 31 124 22
+			<image>
+				key		none
+				screen	Itemshop_06
+				index 	37
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		171 11
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_2
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		285 31 124 22
+			<image>
+				key		none
+				screen	Itemshop_06
+				index 	37
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		171 12
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_3
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		419 31 124 22
+			<image>
+				key		none
+				screen	Itemshop_06
+				index 	37
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		171 13
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_4
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		553 31 124 22
+			<image>
+				key		none
+				screen	Itemshop_06
+				index 	37
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		171 14
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id				btn_tab_5
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			17 55 124 22
+			<image>
+				key			none
+				screen		Itemshop_06
+				index 		37
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		171 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id				btn_tab_6
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			151 55 124 22
+			<image>
+				key			none
+				screen		Itemshop_06
+				index 		37
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		171 16
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_7
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			285 55 124 22
+			<image>
+				key		none
+				screen		Itemshop_06
+				index 		37
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		171 17
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_8
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			419 55 124 22
+			<image>
+				key		none
+				screen		Itemshop_06
+				index 		37
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		171 18
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>	
+		<button>
+			id			btn_tab_9
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			553 55 124 22
+			<image>
+				key		none
+				screen		Itemshop_06
+				index 		37
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		171 19
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<panel>
+			id			pan_goods1
+			enable		false
+			visible		false
+			layer		1
+			rect		6 85 670 390
+			<panel>
+				id			pan_Text
+				enable		true
+				visible		true
+				layer		100
+				rect		61 30 242 190
+				<image>
+					key		none
+					screen	Itemshop_06
+					index	38
+				</image>
+				<textbox>
+					id			textbox_notice
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 242 190
+					lineheight	16
+					margin		13 8
+					fonttype	2
+					color		FFFFFFFF
+				</textbox>	
+			</panel>
+			<panel>
+				id			pan_banner1
+				enable		true
+				visible		true
+				layer		100
+				rect		365 30 242 86
+				noneimage	false
+				<image>
+					key		0
+					screen		dekashopicon_banner_01
+				</image>
+			</panel>
+			<panel>
+				id			pan_banner2
+				enable		true
+				visible		true
+				layer		100
+				rect		365 134 242 86
+				noneimage	false
+				<image>
+					key		0
+					screen		dekashopicon_banner_01
+				</image>
+			</panel>
+			<panel>
+				id			pan_bar
+				enable		true
+				visible		true
+				layer		1
+				rect		94 249 474 2
+				<image>
+					key		none
+					screen	itemshop_01
+					index	20
+				</image>
+			</panel>
+			<label>
+			id			lbl_tagrecommand
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		295 243 79 15
+			<title>
+				color		fff4be3d
+				fontIndex	4
+				text2 		171 20
+			</title>
+			</label>
+			<panel>
+				id			pan_list1
+				enable		false
+				visible		false
+				layer		100
+				rect		0 260 130 130
+				<panel>
+					id			pan_deco
+					enable		true
+					visible		true
+					layer		20
+					rect		30 29 45 19
+					intersect	false
+					<image>
+						key			0
+						screen		itemshop_01
+					</image>
+				</panel>
+				<button>
+					id			btn_itemlist
+					enable		true
+					visible		true
+					layer		10	
+					rect		35 33 60 60
+					<image>
+						key			none
+						screen		CashItemIcon
+						index		0
+					</image>
+				</button>
+				<panel>
+					id			pan_border
+					enable		true
+					visible		true
+					layer		5
+					rect		24 24 82 82
+					<image>
+						key			none
+						color		0x00000000
+						screen		common
+						index		0
+					</image>
+					<image>
+						key			over
+						color		0xffffffff
+						screen		Itemshop_03
+						index		4
+					</image>
+				</panel>				
+				<label>
+					id			lbl_itemlist
+					enable		true
+					visible		true
+					layer		10	
+					align 		center
+					rect		0 101 130 20
+					<title>
+						color		ffffffff
+						fontIndex	2
+						position	0 0						
+					</title>
+				</label>								
+			</panel>
+		</panel>
+		<panel>
+			id			pan_goods2
+			enable		false
+			visible		false
+			layer		1
+			rect		6 85 690 390
+			<panel>
+				id			pan_list2
+				enable		false
+				visible		false
+				layer		100
+				rect		0 0 130 130
+				<panel>
+					id			pan_deco
+					enable		true
+					visible		true
+					layer		20
+					rect		30 29 45 19
+					intersect	false
+					<image>
+						key			0
+						screen		itemshop_01
+					</image>
+				</panel>
+				<button>
+					id			btn_itemlist
+					enable		true
+					visible		true
+					layer		10	
+					rect		35 33 60 60
+					<image>
+						key			none
+						screen		CashItemIcon
+						index		0
+					</image>
+				</button>
+				<panel>
+					id			pan_border
+					enable		true
+					visible		true
+					layer		5
+					rect		24 24 82 82
+					<image>
+						key			none
+						color		0x00000000
+						screen		common
+						index		0
+					</image>
+					<image>
+						key			over
+						color		0xffffffff
+						screen		Itemshop_03
+						index		4
+					</image>
+				</panel>
+				<label>
+					id			lbl_itemlist
+					enable		true
+					visible		true
+					layer		10	
+					align 		center
+					rect		0 101 130 20
+					<title>
+						color		ffffffff
+						fontIndex	2
+						position	0 0						
+					</title>
+				</label>								
+			</panel>
+			<vscroll>
+				id			goods2_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		674 0 12 390
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			goods2_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id			goods2_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 378 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>s
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	14
+					</image>
+				</button>
+				<panel>
+					id			goods2_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					<image>
+						key		0
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>			
+		</panel>
+		<button>
+			id			btn_buyInfo
+			enable		true
+			visible		true
+			align 		center
+			layer		100
+			blink 		true
+			blinktime	1000
+			rect		19 488 83 18
+			<title>
+				state		none
+				color		FFFFFFFF
+				fontIndex	2
+				position 	0 3
+				text2 		171 21		
+			</title>
+			<title>
+				state		over
+				color		ff76f856
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		ff76f856
+				fontIndex	2
+				position 	2 4
+			</title>
+			<title>
+				state		blink
+				color		FFB7B7B7
+				fontIndex	2
+			</title>
+		</button>
+		<label>
+			id			lbl_curMycash
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		538 489 119 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>
+		</label>
+		<label>
+			id			lbl_tagDeca
+			enable		true
+			visible		true
+			layer		100
+			rect		655 489 27 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0
+				text2 		171 1
+			</title>
+		</label>
+	</panel>
+</window>

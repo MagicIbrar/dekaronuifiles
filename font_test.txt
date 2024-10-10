@@ -1,0 +1,252 @@
+
+control_add		panel		font1
+control_parent		font1		this
+control_group		font1		0
+control_drawsize	font1		700 12
+control_drawpoint	font1		10 50
+control_textfont	font1		small
+control_textcolor	font1		220 220 220
+control_text		font1		0 0 "12 / Small - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font1		true
+control_visible		font1		true
+
+control_add		panel		font2
+control_parent		font2		this
+control_group		font2		0
+control_drawsize	font2		700 12
+control_drawpoint	font2		10 64
+control_textfont	font2		smallbold
+control_textcolor	font2		220 220 220
+control_text		font2		0 0 "12 / SmallBold - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font2		true
+control_visible		font2		true
+
+control_add		panel		font3
+control_parent		font3		this
+control_group		font3		0
+control_drawsize	font3		700 14
+control_drawpoint	font3		10 78
+control_textfont	font3		normal
+control_textcolor	font3		220 220 220
+control_text		font3		0 0 "14 / Normal - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font3		true
+control_visible		font3		true
+
+control_add		panel		font4
+control_parent		font4		this
+control_group		font4		0
+control_drawsize	font4		700 14
+control_drawpoint	font4		10 94
+control_textfont	font4		normalbold
+control_textcolor	font4		220 220 220
+control_text		font4		0 0 "14 / NormalBold - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font4		true
+control_visible		font4		true
+
+control_add		panel		font5
+control_parent		font5		this
+control_group		font5		0
+control_drawsize	font5		700 16
+control_drawpoint	font5		10 110
+control_textfont	font5		large
+control_textcolor	font5		220 220 220
+control_text		font5		0 0 "16 / Large - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font5		true
+control_visible		font5		true
+
+control_add		panel		font6
+control_parent		font6		this
+control_group		font6		0
+control_drawsize	font6		700 16
+control_drawpoint	font6		10 128
+control_textfont	font6		largebold
+control_textcolor	font6		220 220 220
+control_text		font6		0 0 "16 / LargeBold - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font6		true
+control_visible		font6		true
+
+control_add		panel		font7
+control_parent		font7		this
+control_group		font7		0
+control_drawsize	font7		700 18
+control_drawpoint	font7		10 146
+control_textfont	font7		big
+control_textcolor	font7		220 220 220
+control_text		font7		0 0 "18 / Big - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font7		true
+control_visible		font7		true
+
+
+control_add		panel		font11
+control_parent		font11		this
+control_group		font11		0
+control_drawsize	font11		700 12
+control_drawpoint	font11		10 200
+control_color		font11		true 255 255 255
+control_textfont	font11		small
+control_textcolor	font11		0 0 255
+control_text		font11		0 0 "12 / Small - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font11		true
+control_visible		font11		true
+
+control_add		panel		font12
+control_parent		font12		this
+control_group		font12		0
+control_drawsize	font12		700 12
+control_drawpoint	font12		10 214
+control_color		font12		true 255 255 255
+control_textfont	font12		smallbold
+control_textcolor	font12		0 0 255
+control_text		font12		0 0 "12 / SmallBold - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font12		true
+control_visible		font12		true
+
+control_add		panel		font13
+control_parent		font13		this
+control_group		font13		0
+control_drawsize	font13		300 14
+control_drawpoint	font13		10 228
+control_color		font13		true 255 255 255
+control_textfont	font13		normal
+control_textcolor	font13		0 0 255
+control_text		font13		0 0 "14 / Normal - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font13		true
+control_visible		font13		true
+
+control_add		panel		font14
+control_parent		font14		this
+control_group		font14		0
+control_drawsize	font14		700 14
+control_drawpoint	font14		10 244
+control_color		font14		true 255 255 255
+control_textfont	font14		normalbold
+control_textcolor	font14		0 0 255
+control_text		font14		0 0 "14 / NormalBold - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font14		true
+control_visible		font14		true
+
+control_add		panel		font15
+control_parent		font15		this
+control_group		font15		0
+control_drawsize	font15		700 16
+control_drawpoint	font15		10 260
+control_color		font15		true 255 255 255
+control_textfont	font15		large
+control_textcolor	font15		0 0 255
+control_text		font15		0 0 "16 / Large - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font15		true
+control_visible		font15		true
+
+control_add		panel		font16
+control_parent		font16		this
+control_group		font16		0
+control_drawsize	font16		700 16
+control_drawpoint	font16		10 278
+control_color		font16		true 255 255 255
+control_textfont	font16		largebold
+control_textcolor	font16		0 0 255
+control_text		font16		0 0 "16 / LargeBold - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font16		true
+control_visible		font16		true
+
+control_add		panel		font17
+control_parent		font17		this
+control_group		font17		0
+control_drawsize	font17		700 18
+control_drawpoint	font17		10 296
+control_color		font17		true 255 255 255
+control_textfont	font17		big
+control_textcolor	font17		0 0 255
+control_text		font17		0 0 "18 / Big - abcdefghijklmnopqrstuvwxyz 가나다라마바사아자차카타파하 1234567890"
+control_enable		font17		true
+control_visible		font17		true
+
+
+control_add		panel		font31
+control_parent		font31		this
+control_group		font31		0
+control_drawsize	font31		700 12
+control_drawpoint	font31		10 350
+control_textfont	font31		small
+control_textcolor	font31		255 255 255
+control_text		font31		0 0 "유아독존: 님아~ 지발요 독좀 주셈~"
+control_enable		font31		true
+control_visible		font31		true
+
+control_add		panel		font32
+control_parent		font32		this
+control_group		font32		0
+control_drawsize	font32		700 12
+control_drawpoint	font32		10 364
+control_textfont	font32		small
+control_textcolor	font32		255 2255 2255
+control_text		font32		0 0 "유아독존: 님아~ 제발요"
+control_enable		font32		true
+control_visible		font32		true
+
+control_add		panel		font33
+control_parent		font33		this
+control_group		font33		0
+control_drawsize	font33		700 12
+control_drawpoint	font33		10 378
+control_textfont	font33		small
+control_textcolor	font33		33 243 11
+control_text		font33		0 0 "**유아독존이 오커니언에 의해 죽임을 당했습니다"
+control_enable		font33		true
+control_visible		font33		true
+
+control_add		panel		font34
+control_parent		font34		this
+control_group		font34		0
+control_drawsize	font34		700 12
+control_drawpoint	font34		10 392
+control_textfont	font34		small
+control_textcolor	font34		255 255 255
+control_text		font34		0 0 "유아독존: 아악..."
+control_enable		font34		true
+control_visible		font34		true
+
+
+control_add		panel		font41
+control_parent		font41		this
+control_group		font41		0
+control_drawsize	font41		700 14
+control_drawpoint	font41		10 450
+control_textfont	font41		normal
+control_textcolor	font41		255 255 255
+control_text		font41		0 0 "유아독존: 님아~ 지발요 독좀 주셈~"
+control_enable		font41		true
+control_visible		font41		true
+
+control_add		panel		font42
+control_parent		font42		this
+control_group		font42		0
+control_drawsize	font42		700 14
+control_drawpoint	font42		10 466
+control_textfont	font42		normal
+control_textcolor	font42		255 2255 2255
+control_text		font42		0 0 "유아독존: 님아~ 제발요"
+control_enable		font42		true
+control_visible		font42		true
+
+control_add		panel		font43
+control_parent		font43		this
+control_group		font43		0
+control_drawsize	font43		700 14
+control_drawpoint	font43		10 482
+control_textfont	font43		normal
+control_textcolor	font43		33 243 11
+control_text		font43		0 0 "**유아독존이 오커니언에 의해 죽임을 당했습니다"
+control_enable		font43		true
+control_visible		font43		true
+
+control_add		panel		font44
+control_parent		font44		this
+control_group		font44		0
+control_drawsize	font44		700 14
+control_drawpoint	font44		10 498
+control_textfont	font44		normal
+control_textcolor	font44		255 255 255
+control_text		font44		0 0 "유아독존: 아악..."
+control_enable		font44		true
+control_visible		font44		true

@@ -1,0 +1,35 @@
+window_layer	auto
+window_visible	false
+
+create_control	panel	pan_skill1
+{
+	control_group	0
+	control_image	oxxx	UI\Game\win_skillA.dds	0	0	341	373
+	control_drawdiv	xy	1
+	control_drawsize	341	373
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+}
+
+create_control	panel	pan_skill2
+{
+	control_group	0
+	control_image	oxxx	UI\Game\win_skillB.dds	0	0	341	155
+	control_drawdiv	xy	1
+	control_drawsize	341	155
+	control_drawpoint	0	374
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_sklcancel
+	{
+	control_group	0
+	control_image	oooo	UI\Game\3.dds	0	179	47	20
+	control_drawdiv	xy	1
+	control_drawsize	47	20
+	control_drawpoint	254	130
+	control_enable	true
+	control_visible	true
+	}
+}

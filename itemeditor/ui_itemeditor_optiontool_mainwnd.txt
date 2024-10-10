@@ -1,0 +1,983 @@
+window_layer	auto
+window_size	300	550
+window_alignaxis	center	top
+window_position	30	70
+window_visible	false
+
+create_control	panel	pan_optiontool
+{
+	control_group	56
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	300	550
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_optiontoolitle
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+		control_text	10	1	"Option Tool"
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	294	13
+		control_drawpoint	3	3
+		control_enable	true
+		control_visible	true
+
+		create_control	button	btn_optionclose
+		{
+		control_image	oooo	UI\Tool\ui_winbtn03.dds	65	11	11	11
+		control_drawdiv	xy	2
+		control_drawsize	11	11
+		control_drawpoint	283	1
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	create_control	panel	pan_separate0
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window02.jpg	7	18	2	2
+	control_drawdiv	xy	1
+	control_drawsize	280	2
+	control_drawpoint	10	266
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_separate01
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window02.jpg	7	18	2	2
+	control_drawdiv	xy	1
+	control_drawsize	280	2
+	control_drawpoint	10	386
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_separate02
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window02.jpg	7	18	2	2
+	control_drawdiv	xy	1
+	control_drawsize	280	2
+	control_drawpoint	10	446
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_separate03
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window02.jpg	7	18	2	2
+	control_drawdiv	xy	1
+	control_drawsize	280	2
+	control_drawpoint	10	506
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	combobox	cbb_optionhead
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	100	30
+	control_drawpoint	110	94
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_optionhead
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	14
+	control_drawpoint	110	80
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_optionhead
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	210	80
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	combobox	cbb_optiontype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	100	40
+	control_drawpoint	110	120
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_optiontype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	14
+	control_drawpoint	110	106
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_optiontype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	210	106
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_optionindex
+	{
+	control_text	0	0	"Option Index"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	23
+	control_drawpoint	20	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_optionname
+	{
+	control_text	0	0	Name
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	40	54
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_optiontype
+	{
+	control_text	0	0	소분류
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	35	80
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_optioncode
+	{
+	control_text	0	0	항목
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	40	106
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_createlevel
+	{
+	control_text	0	0	Create.Lv
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	23
+	control_drawpoint	30	138
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_optionlevel
+	{
+	control_text	0	0	SuitReq.Lv
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	23
+	control_drawpoint	30	164
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_optionmin
+	{
+	control_text	0	0	"Min Data"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	23
+	control_drawpoint	25	190
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_optionmax
+	{
+	control_text	0	0	"Max Data"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	23
+	control_drawpoint	25	216
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_optionstr
+	{
+	control_text	0	0	"Strong OP"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	23
+	control_drawpoint	25	240
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_weapon
+	{
+	control_text	0	0	무기
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	24	270
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check1
+	{
+	control_text	0	0	단검(도)
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	34	290
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check2
+	{
+	control_text	0	0	검(도)
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	134	290
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check3
+	{
+	control_text	0	0	장검(도)
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	234	290
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check4
+	{
+	control_text	0	0	메이스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	34	310
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check5
+	{
+	control_text	0	0	메이스-대
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	134	310
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check6
+	{
+	control_text	0	0	스피어
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	234	310
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check7
+	{
+	control_text	0	0	엑스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	34	330
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check8
+	{
+	control_text	0	0	엑스-대
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	134	330
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check9
+	{
+	control_text	0	0	활
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	234	330
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check10
+	{
+	control_text	0	0	석궁
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	34	350
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check11
+	{
+	control_text	0	0	폴암
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	134	350
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check12
+	{
+	control_text	0	0	지팡이
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	234	350
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check13
+	{
+	control_text	0	0	완드
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	34	370
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check14
+	{
+	control_text	0	0	방패
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	134	370
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_armor
+	{
+	control_text	0	0	방어구
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	24	390
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check15
+	{
+	control_text	0	0	투구
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	34	410
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check16
+	{
+	control_text	0	0	장갑
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	134	410
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check17
+	{
+	control_text	0	0	갑옷
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	234	410
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check18
+	{
+	control_text	0	0	바지
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	34	430
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check19
+	{
+	control_text	0	0	부츠
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	134	430
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_accessory
+	{
+	control_text	0	0	슬롯
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	24	450
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check20
+	{
+	control_text	0	0	반지
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	34	470
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check21
+	{
+	control_text	0	0	목걸이
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	134	470
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check22
+	{
+	control_text	0	0	팔찌
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	234	470
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check23
+	{
+	control_text	0	0	귀걸이
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	34	490
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_check24
+	{
+	control_text	0	0	앰블램
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	134	490
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	edit	edt_optionindex
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	110	23
+	control_tab	1
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_optionname
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	110	53
+	control_tab	2
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	16
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_createlevel
+	{
+	control_group	0
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	110	135
+	control_tab	3
+	control_enable	true
+	control_visible	true
+	control_build
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_optionlevel
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	110	161
+	control_tab	4
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_optionmin
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	110	187
+	control_tab	5
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_optionmax
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	110	213
+	control_tab	6
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_optionstr
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	110	239
+	control_tab	7
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	button	btn_optionprev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	25	21
+	control_drawdiv	xy	1
+	control_drawsize	25	21
+	control_drawpoint	230	23
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_optionnext
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	25	21
+	control_drawdiv	xy	1
+	control_drawsize	25	21
+	control_drawpoint	250	23
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_optionopen
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	30	520
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_optionsave
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Save
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	90	520
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check1
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	20	290
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check2
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	120	290
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check3
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	220	290
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check4
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	20	310
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check5
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	120	310
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check6
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	220	310
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check7
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	20	330
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check8
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	120	330
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check9
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	220	330
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check10
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	20	350
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check11
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	120	350
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check12
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	220	350
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check13
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	20	370
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check14
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	120	370
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check15
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	20	410
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check16
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	120	410
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check17
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	220	410
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check18
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	20	430
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check19
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	120	430
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check20
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	20	470
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check21
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	120	470
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check22
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	220	470
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check23
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	20	490
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check24
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	120	490
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+}
+

@@ -1,0 +1,281 @@
+window_layer	auto
+window_position	0	0
+window_size	800	600
+window_visible	true
+
+create_control	panel	category1
+{
+	control_group	0
+	control_alignaxis	left	top
+	control_color	true	0	0	0	0
+	control_drawsize	200	100
+	control_drawpoint	40	160
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_game
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	DeKaron(µ¥Ä«·Ð)
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	94	15
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_demo
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	Demo
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	28	15
+	control_drawpoint	0	24
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_exit
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	Exit
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	28	15
+	control_drawpoint	0	48
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	panel	category2
+{
+	control_group	0
+	control_alignaxis	left	top
+	control_color	true	0	0	0	0
+	control_drawsize	200	100
+	control_drawpoint	40	270
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_maptool
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"Map tool"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	3
+	control_drawsize	50	15
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_ObjPacktool
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"Object pack tool"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	98	15
+	control_drawpoint	0	24
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_ceviewer
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"Character/Effect viewer"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	144	15
+	control_drawpoint	0	48
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_effecttool
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	EffectTool
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	80	15
+	control_drawpoint	0	72
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	panel	category3
+{
+	control_group	0
+	control_alignaxis	left	top
+	control_color	true	0	0	0	0
+	control_drawsize	200	100
+	control_drawpoint	40	380
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_itemtable
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"Item table"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	66	15
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_montable
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"Monster table"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	84	15
+	control_drawpoint	0	24
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_skilltable
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"Skill table"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	72	15
+	control_drawpoint	0	48
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_exptable
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"Exp table"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	66	15
+	control_drawpoint	0	72
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_actionscr
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"Action Script"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	100	15
+	control_drawpoint	0	96
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_charactorInfo
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"charactor Info"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	100	15
+	control_drawpoint	0	120
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_peeragetable
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"PeerageTable"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	100	15
+	control_drawpoint	0	144
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_remotetable
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	"RemoteTable"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	100	15
+	control_drawpoint	0	168
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	panel	pan_logo
+{
+	control_group	0
+	control_alignaxis	left	top
+	control_image	oxxx	UI\Tool\ui_logo.dds	0	0	128	64
+	control_drawsize	128	64
+	control_drawpoint	40	40
+	control_enable	true
+	control_visible	true
+}
+
+create_control	panel	pan_logo2
+{
+	control_group	0
+	control_alignaxis	left	top
+	control_image	oxxx	UI\Tool\ui_logo.dds	0	0	128	64
+	control_drawsize	128	64
+	control_drawpoint	40	240
+	control_enable	true
+	control_visible	true
+}
+
+
+create_control	panel	pan_separate00
+{
+	control_group	0
+	control_alignaxis	left	top
+	control_color	true	255	200	200	200
+	control_drawsize	500	2
+	control_drawpoint	40	112
+	control_enable	true
+	control_visible	true
+}

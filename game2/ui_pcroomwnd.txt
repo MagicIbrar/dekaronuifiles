@@ -1,0 +1,108 @@
+<window>
+	name			pcroom_win
+	enable			true
+	visible			true
+	layer			100
+	rect			152 4 400 38
+	titlerect		0 0 0 0
+	layertype		normal
+	
+	<button>
+		id			btn_pcroom
+		enable		true
+		visible		true
+		layer		100
+		rect		0  0 47 38
+		tooltip 	1002 4
+		<image>
+			key		none
+			screen	pcroom
+			index	1
+		</image>
+		<image>
+			key		disable
+			screen	pcroom
+			index	21
+		</image>
+	</button>
+	<button>
+		id			btn_expRate
+		enable		true
+		visible		true
+		layer		100
+		rect		47 0 47 38
+		tooltip 	170 49
+		<image>
+			key		none
+			screen	pcroom
+			index	16
+		</image>
+		<image>
+			key		disable
+			screen	pcroom
+			index	17
+		</image>
+		<image>
+			key		over
+			screen	pcroom
+			index	18
+		</image>
+		<image>
+			key		down
+			screen	pcroom
+			index	19
+		</image>
+	</button>
+	<button>
+		id			btn_fishing
+		enable		true
+		visible		true
+		layer		100
+		rect		94 0 47 38
+		<image>
+			key		none
+			screen	pcroom
+			index	4
+		</image>
+		<image>
+			key		disable
+			screen	pcroom
+			index	5
+		</image>
+	</button>
+	<button>
+		id			btn_addpartyexp
+		enable		true
+		visible		true
+		layer		100
+		rect		141 0 47 38
+		<image>
+			key		none
+			screen	pcroom
+			index	13
+		</image>
+		<image>
+			key		disable
+			screen	pcroom
+			index	22
+		</image>
+	</button>
+	<button>
+		id			btn_partybonus
+		enable		true
+		visible		true
+		layer		100
+		rect		188 0 47 38
+		<image>
+			key		none
+			screen	pcroom
+			index	20
+		</image>
+		<image>
+			key		disable
+			screen	pcroom
+			index	23
+		</image>
+	</button>
+
+</window>

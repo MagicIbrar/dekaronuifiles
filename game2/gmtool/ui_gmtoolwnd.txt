@@ -1,0 +1,206 @@
+<window>
+	name			noticewnd
+	enable			true
+	visible			true
+	layer			100
+	rect			600  300 953 473
+	titlerect		0 0 287 24
+	alwaysontop		true
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		false
+		layer		1
+		rect		0  0 353 173
+		<image>
+			key		none
+			screen	notice
+			index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		28 2 295 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 44
+			</title>
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		335 2 15 15
+
+			sound  0
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		23 31 360 104
+			lineheight	16
+			inputmode 	true
+			input_type 	0
+			maxlength 	511
+			margin		0 1
+			fonttype	2
+			autoline 	true
+			widthcut	60
+			maxline		6
+			color		FFFFFFFF	
+		
+		</textbox>		
+		<button>
+			id			btn_allsend
+			enable		true
+			visible		true
+			layer		100
+			rect		60 148 56 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	5 3
+				text2 		1002 9
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	5 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	6 4
+			</title>
+			<image>
+				key	none
+				screen	etc_01
+				index	2
+			</image>
+		</button>
+		<button>
+			id			btn_mapsend
+			enable		true
+			visible		true
+			layer		100
+			rect		140 148 56 18
+			align		center
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		1002 10
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+			<image>
+				key	none
+				screen	etc_01
+				index	2
+			</image>
+		</button>
+		<button>
+			id			btn_delete
+			enable		true
+			visible		true
+			layer		100
+			rect		220 148 56 18
+			align		center
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		1002 11
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+			<image>
+				key	none
+				screen	etc_01
+				index	2
+			</image>
+		</button>
+	</panel>	
+	<button>
+		id			btn_view
+		enable		true
+		visible		true
+		layer		100
+		rect		200 0 100 15
+		<image>
+			key		0
+			color	ffffffff
+			screen	InitScreen
+			index	1
+		</image>
+		<title>
+			state		none
+			color		FF000000
+			fontIndex	2
+			text2		2000 19
+		</title>
+		<title>
+			state		over
+			color		ffFFB900
+			fontIndex	2
+		</title>
+		<title>
+			state		down
+			color		FF000000
+			fontIndex	2
+		</title>
+	</button>
+</window>

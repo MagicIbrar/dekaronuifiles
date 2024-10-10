@@ -1,0 +1,30 @@
+<window>
+	name			waitingtime
+	enable			true
+	visible			true
+	layer			100
+	rect			10 140 190 171
+	<panel>
+		id		pan_time
+		enable		true
+		visible		false
+		layer		100
+		rect		0 0 179 31
+		<image>
+			key	0
+			screen	indun
+			index	2
+		</image>
+		<textbox>
+			id		textbox_time
+			enable		true
+			visible		true
+			layer		100
+			rect		5 5 168 20
+			lineheight	16
+			margin		10 5
+			fonttype	2
+			color		FFFFFFFF
+		</textbox>
+	</panel>
+</window>

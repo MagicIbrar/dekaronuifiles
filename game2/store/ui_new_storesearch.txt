@@ -1,0 +1,771 @@
+<window>
+	name			new_storesearch
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-414 -302 414 303
+	titlerect		8 9 812 24
+	<panel>
+		id			pan_store
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 828 605
+		<image>
+			key		none
+			screen	new_StorePurchase
+			index	1
+		</image>
+	</panel>
+	<label>
+		id			lbl_title
+		enable		true
+		visible		true
+		align 		center
+		layer		60
+		rect		8 9 812 24
+		<title>
+			color		ffffffff
+			fontIndex	4
+			position	0 5
+			text2 		2009 5
+		</title>
+	</label>
+	<label>
+		id			lbl_treetitle
+		enable		true
+		visible		true
+		align 		center
+		layer		60
+		rect		7 123 301 19
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2 		2009 6
+		</title>
+	</label>
+	<label>
+		id			lbl_Boardtitle
+		enable		true
+		visible		true
+		align 		center
+		layer		60
+		rect		7 95 814 26
+		<title>
+			color		ffffffff
+			fontIndex	4
+			position	0 5
+			text2 		2009 7
+		</title>
+	</label>
+	<label>
+		id			lbl_tagLevel
+		enable		true
+		visible		true
+		align 		right
+		layer		60
+		rect		274 74 21 13
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2 		2009 2
+		</title>
+	</label>
+	<edit>
+			id		edit_minlevel
+			enable		true
+			visible		true
+			layer		100
+			rect		299 71 36 18	
+			maxlength	3
+			font_type	2
+			input_type	2
+			align		center
+			color		ffffffff
+			multiline   	false
+	</edit>
+	<edit>
+			id		edit_maxlevel
+			enable		true
+			visible		true
+			layer		100
+			rect		362 71 36 18	
+			maxlength	3
+			font_type	2
+			input_type	2
+			align		center
+			color		ffffffff
+			multiline   	false
+	</edit>
+	<label>
+		id			lbl_tagreinforce
+		enable		true
+		visible		true
+		align 		right
+		layer		60
+		rect		424 74 23 13
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2 		2009 87
+		</title>
+	</label>
+	<edit>
+		id		edit_minreinforce
+		enable		true
+		visible		true
+		layer		100
+		rect		451 71 36 18	
+		maxlength	2
+		font_type	2
+		input_type	2
+		align		center
+		color		ffffffff
+		multiline   	false
+	</edit>
+	<edit>
+		id		edit_maxreinforce
+		enable		true
+		visible		true
+		layer		100
+		rect		514 71 36 18	
+		maxlength	2
+		font_type	2
+		input_type	2
+		align		center
+		color		ffffffff
+		multiline   	false
+	</edit>
+	<label>
+		id		lbl_search_node
+		enable		true
+		visible		true
+		layer		100
+		rect		27 41 371 18 
+		<title>
+			color		ffffffff
+			fontIndex	4
+		</title>
+	</label>
+	<combobox>
+		id		com_itemgrade
+		enable		true
+		visible		true
+		border 		false
+		layer		101
+		rect		121 71 122 18
+			
+		<iteminfo>		
+			rect 	0 0 122 18									
+		</iteminfo>
+
+		<nodeinfo>
+			selrect		0 0 122 18 
+			btnrect		107 3 13 13
+			
+			<image>
+				key		board_body
+				screen	new_StorePurchase
+				index	38
+			</image>
+			<image>
+				key		btn_none
+				screen	new_StorePurchase
+				index	29
+			</image>
+			<image>
+				key		btn_over
+				screen	new_StorePurchase
+				index	30
+			</image>
+			<image>
+				key		btn_down
+				screen	new_StorePurchase
+				index	31
+			</image>
+		</nodeinfo>		
+	</combobox>	
+	<edit>
+		id		edit_search
+		enable		true
+		visible		true
+		layer		100
+		rect		451 42 297 18	
+		maxlength	50
+		font_type	2
+		input_type	0
+		align		left
+		color		ffffffff
+		multiline   	false
+	</edit>
+	<button>
+		id			btn_exit
+		enable		true
+		visible		true
+		layer		100
+		rect		799 12 19 19
+		<image>
+			key		none
+			screen	etc_01
+			index	315
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	316
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	317
+		</image>
+	</button>
+	<multitreectrl>
+		id		multi_tree
+		enable		true
+		visible		true
+		layer		100
+		rect		6 144 300 418
+		nodewidth   	300
+		nodeheight	20
+		offset		14
+		btnsize		13
+		autoopen	true
+		<title>
+			state		over
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		check
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		head
+			color		ff74AEE4
+			fontIndex	4
+		</title>
+		<title>
+			state		sub
+			color		ffFFCA40
+			fontIndex	4
+		</title>
+		<title>
+			state		finish
+			color		ffFFB900
+			fontIndex	4
+		</title>
+		<title>
+			state		unknown
+			color		ffBFBFBF
+			fontIndex	4
+		</title>
+		<title>
+			state		complete
+			color		ffEFEFEF
+			fontIndex	4
+		</title>
+		<image>
+			key	    none
+			color 	00FFFFFF
+			screen	common
+			index	1
+		</image>
+		<image>
+			key		check
+			screen	questwin
+			index	91
+		</image>
+		<image>
+			key		plus
+			screen	new_StorePurchase
+			index	32
+		</image>
+		<image>
+			key		minus
+			screen	new_StorePurchase
+			index	35
+		</image>
+		<vscroll>
+			id			multi_tree_scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		289 0 13 418
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			multi_tree_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 13
+				type		1
+				<image>
+					key		0
+					screen	new_StorePurchase
+					index	8
+				</image>
+				<image>
+					key		over
+					screen	new_StorePurchase
+					index	9
+				</image>
+				<image>
+					key		down
+					screen	new_StorePurchase
+					index	10
+				</image>
+				<image>
+					key		disable
+					screen	new_StorePurchase
+					index	8
+				</image>
+			</button>
+			<button>
+				id			multi_tree_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 405 13 13
+				type		1
+				<image>
+					key		0
+					screen	new_StorePurchase
+					index	11
+				</image>
+				<image>
+					key		over
+					screen	new_StorePurchase
+					index	12
+				</image>
+				<image>
+					key		down
+					screen	new_StorePurchase
+					index	13
+				</image>
+				<image>
+					key		disable
+					screen	new_StorePurchase
+					index	11
+				</image>
+			</button>
+			<panel>
+				id			multi_tree_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 36
+				moveable	true
+				noneimage 	true
+				<image>
+					key		none
+					screen	new_StorePurchase
+					index	14
+				</image>
+				<image>
+					key		over
+					screen	new_StorePurchase
+					index	15
+				</image>
+				<image>
+					key		down
+					screen	new_StorePurchase
+					index	16
+				</image>
+			</panel>
+		</vscroll>
+	</multitreectrl>
+	<freeboardctrl>
+		id		freeboard
+		enable		true
+		visible		true
+		layer		100
+		rect		310 125 510 440
+		nodeheight	20
+		titleheight	20
+		topmargin	0
+		offset		2
+		btnsize		12
+		<title>
+			state		over
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		check
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		head
+			color		ffFFCA40
+			fontIndex	4
+		</title>
+		<title>
+			state		sub
+			color		ff74AEE4
+			fontIndex	3
+		</title>
+		<title>
+			state		disable
+			color		ff929292
+			fontIndex	4
+		</title>
+		<title>
+			state		finish
+			color		ffFFB900
+			fontIndex	4
+		</title>
+		<title>
+			state		unknown
+			color		ffBFBFBF
+			fontIndex	4
+		</title>
+		<title>
+			state		complete
+			color		ffEFEFEF
+			fontIndex	4
+		</title>
+		<title>
+			state		page_none
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<title>
+			state		page_over
+			color		ff00ff00
+			fontIndex	4
+		</title>
+		<title>
+			state		page_check
+			color		ff00ff00
+			fontIndex	4
+		</title>
+		<image>
+			key	0
+			color 	00FFFFFF
+			screen	common
+			index	1
+		</image>
+		<image>
+			key		check
+			screen	questwin
+			index	91
+		</image>
+		<image>
+			key		plus
+			screen	etc_01
+			index	20
+		</image>
+		<image>
+			key		minus
+			screen	etc_01
+			index	16
+		</image>
+		<image>
+			key		disable
+			screen	etc_01
+			index	11
+		</image>
+		<image>
+			key		check_over
+			screen	StorePurchase
+			index	10
+		</image>
+		<image>
+			key		over
+			screen	StorePurchase
+			index	11
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	5
+		</image>		
+		<image>
+			key		tab1
+			screen	StorePurchase
+			index	2
+		</image>
+		<image>
+			key		tab2
+			screen	StorePurchase
+			index	3
+		</image>		
+		<node>
+			state		0
+			text2		2009 1
+			intersect	true
+			width		222
+			sort		true
+			<Element>
+				type		string
+				id		maintitle
+				align		left
+				intersect	false
+			</Element>
+		</node>
+		<node>
+			state		1
+			text2		2009 2
+			intersect	true
+			width		49
+			sort		true
+			<Element>
+				type		word
+				id		level
+				align		center
+				intersect	false
+			</Element>
+		</node>
+		<node>
+			state		2
+			text2		2009 85
+			intersect	false
+			width		49
+			sort		true
+			<Element>
+				type		word			
+				id		count
+				align		center
+				intersect	false
+			</Element>
+		</node>
+		<node>
+			state		3
+			text2		2009 3
+			intersect	true
+			width		110
+			tooltip		2009 24
+			sort		true
+			<Element>
+				type		dil			
+				id		price
+				align		right
+				intersect	false
+			</Element>
+		</node>
+		<node>
+			state		4
+			text2		2009 4
+			intersect	false
+			sort		false
+			width		90
+			<Element>
+				type		button
+				id			buy
+				align		center
+				intersect	false
+				size		64 21
+				width		100
+				<image>
+					key		none
+					screen	new_StorePurchase
+					index	23
+				</image>
+				<image>
+					key		over
+					screen	new_StorePurchase
+					index	24
+				</image>
+				<image>
+					key		down
+					screen	new_StorePurchase
+					index	25
+				</image>
+				<image>
+					key		disable
+					screen	new_StorePurchase
+					index	23
+				</image>
+				<title>
+					state 		none
+					color		ffBFBFBF
+					fontIndex	4
+					text2		2009 4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+				</title>
+			</Element>
+		</node>
+	</freeboardctrl>
+	<button>
+		id			btn_search
+		enable		true
+		visible		true
+		layer		100
+		rect		749 40 65 20
+		<image>
+			key		none
+			screen	new_StorePurchase
+			index	17
+		</image>
+		<image>
+			key		over
+			screen	new_StorePurchase
+			index	18
+		</image>
+		<image>
+			key		down
+			screen	new_StorePurchase
+			index	19
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	30 3
+			text2		2009 84
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	30 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	31 4
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	4
+			position	30 3
+		</title>
+	</button>
+	<button>
+		id			btn_refresh
+		enable		false
+		visible		false
+		layer		100
+		rect		749 40 65 20
+		<image>
+			key		none
+			screen	new_StorePurchase
+			index	20
+		</image>
+		<image>
+			key		over
+			screen	new_StorePurchase
+			index	21
+		</image>
+		<image>
+			key		down
+			screen	new_StorePurchase
+			index	22
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	17 3
+			text2		2009 8
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	17 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	18 4
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	4
+			position	17 3
+		</title>
+	</button>
+	<button>
+		id			btn_init
+		enable		true
+		visible		true
+		layer		100
+		tooltip		2009 60
+		rect		749 70 65 20
+		<image>
+			key		none
+			screen	etc_01
+			index	88
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	89
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	90
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	14 3
+			text2		2009 86
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	14 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	15 4
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	4
+			position	14 3
+		</title>
+	</button>
+	<label>
+		id			lbl_Moneytitle
+		enable		true
+		visible		true
+		layer		100
+		align		right
+		rect		590 574 50 14
+		<title>
+			color		FFFFFFFF
+			fontindex	4
+			text2		2009 10
+		</title>
+	</label>
+	<label>
+		id			lbl_Money
+		enable		true
+		visible		true
+		layer		100
+		align		right
+		rect		664 572 110 16
+		<title>
+			color		FFFFFFFF
+			fontindex	4
+			position	0 3
+		</title>
+	</label>
+</window>

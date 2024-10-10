@@ -1,0 +1,79 @@
+<window>
+	name			TerminateWnd
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	position		center center
+	rect			-116 -79 232 157
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		28 3 174 14
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+			</title>
+		</label>
+	</panel>
+
+	<label>
+		id		lbl_content
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		16 45 215 50
+		<title>
+			color		ffffffff
+			fontIndex	3
+		</title>
+	</label>
+	<panel>
+		id		pan_processBg
+		enable		true
+		visible		true
+		layer		1
+		rect		6 118 220 8
+		<image>
+				key	none
+				screen	etc_01
+				index	28
+		</image>
+
+		<processbar>	
+			id			processbar
+			enable		true
+			visible		true
+			layer		101
+			rect		1 1 218 7
+			maxsize     218	
+			<image>
+				key	0
+				screen	etc_01
+				index	29
+			</image>
+		</processbar>
+	</panel>
+	
+</window>

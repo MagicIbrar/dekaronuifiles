@@ -1,0 +1,35 @@
+<window>
+	name			towerswnd
+	enable			true
+	visible			true
+	layer			10
+	modal			false
+	rect			-235 56 195 118
+	position		right top
+	titlerect		0 0 0 0
+	<panel>
+		id		pan_progress
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 72 67
+		<image>
+				key	none
+				screen	towerdefence
+				index	1
+		</image>
+		<processbar>	
+			id     		pan_HorizenGage
+			enable		true
+			visible		true
+			layer		10
+			rect		44 12 12 40
+			maxsize     	40	
+			<image>
+					key	none
+					screen	towerdefence
+					index	2
+			</image>				
+		</processbar>
+	</panel>
+</window>

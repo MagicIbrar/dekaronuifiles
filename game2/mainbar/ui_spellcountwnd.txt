@@ -1,0 +1,65 @@
+<window>
+	name			spellcount
+	enable			true
+	visible			true
+	layer			100
+	position		right bottom
+	rect			-175 -105 0 60
+	
+	<panel>
+		id			pan_attack
+		enable		true
+		visible		false
+		layer		10
+		rect		0 0 30 30
+		<image>
+			key			0
+			screen		bow
+			index		1
+			color		ffffffff
+		</image>
+		
+		<label>
+			id			lbl_attack
+			enable		true
+			visible		true
+			layer		101
+			rect		3 3  27 22
+			align		right
+			intersect	false
+			multiline	true
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+	</panel>
+		<panel>
+		id			pan_defense
+		enable		true
+		visible		false
+		layer		10
+		rect		30 0 30 30
+		<image>
+			key			0
+			screen		bow
+			index		1
+			color		ffffffff
+		</image>
+		
+		<label>
+			id			lbl_defense
+			enable		true
+			visible		true
+			layer		101
+			rect		3 3  27 22
+			align		right
+			intersect	false
+			multiline	true
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+	</panel>
+</window>

@@ -1,0 +1,17 @@
+<window>
+	name			itemwnd
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 128 128
+	<item>
+		id		item
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 128 128	
+		cellsize 	32 32
+		moveable	true
+		type		suit
+	</item>	
+</window>

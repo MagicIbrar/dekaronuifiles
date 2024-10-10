@@ -1,0 +1,312 @@
+window_layer	auto
+window_size	220	352
+window_position	402	268
+window_visible	false   
+
+create_control	panel	pan_option
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\option_01.dds	0	0	220	352
+	control_drawdiv	xy	2
+	control_drawsize	220	352
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	title_bar
+	{
+		control_group	0
+		control_drawsize	220	23
+		control_drawpoint	0	0
+		control_enable	true
+		control_visible	true
+	
+		create_control	button	btn_x
+		{
+		control_group	0
+		control_imagedivide	vertical
+		control_image	oooo	UI\Game\theme01\ccs_02.dds	0	165	16	16
+		control_drawdiv	xy	2
+		control_drawsize	16	16
+		control_drawpoint	197	5
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	create_control	panel	panel_shadow
+	{
+	control_group	0
+	control_drawsize	15	15
+	control_drawpoint	20	120
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	panel_glow
+	{
+	control_group	0
+	control_drawsize	15	15
+	control_drawpoint	116	120
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	panel_water
+	{
+	control_group	0
+	control_drawsize	15	15
+	control_drawpoint	20	146
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	panel_bansa
+	{
+	control_group	0
+	control_drawsize	15	15
+	control_drawpoint	116	146
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	panel_trance_not
+	{
+		control_group	0
+		control_drawsize	15	15
+		control_drawpoint	19	194
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	panel	panel_trace_char
+	{
+		control_group	0
+		control_drawsize	15	15
+		control_drawpoint	79	194
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	panel	panel_trace_all
+	{
+		control_group	0
+		control_drawsize	15	15
+		control_drawpoint	144	194
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	panel	panel_minihelp
+	{
+		control_group	0
+		control_drawsize	15	15
+		control_drawpoint	19	218
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	panel	panel_typea
+	{
+		control_group	0
+		control_drawsize	15	15
+		control_drawpoint	19	270
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	panel	panel_typeb
+	{
+		control_group	0
+		control_drawsize	15	15
+		control_drawpoint	86	270
+		control_enable	true
+		control_visible	true
+	}	
+
+	create_control	panel	panel_shadowcheck
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\option_01.dds	220	20	19	18
+	control_drawdiv	xy	2
+	control_drawsize	19	18
+	control_drawpoint	20	117
+	control_intersectable	false
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	panel_glowcheck
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\option_01.dds	220	20	19	18
+	control_drawdiv	xy	2
+	control_drawsize	19	18
+	control_drawpoint	116	117
+	control_intersectable	false
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	panel_watercheck
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\option_01.dds	220	20	19	18
+	control_drawdiv	xy	2
+	control_drawsize	19	18
+	control_drawpoint	20	143
+	control_intersectable	false
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	panel_bansacheck
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\option_01.dds	220	20	19	18
+	control_drawdiv	xy	2
+	control_drawsize	19	18
+	control_drawpoint	116	143
+	control_intersectable	false
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	panel_trancecheck
+	{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\option_01.dds	220	20	19	18
+		control_drawdiv	xy	2
+		control_drawsize	19	18
+		control_drawpoint	19	190
+		control_intersectable	false
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	panel	panel_minihelpcheck
+	{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\option_01.dds	220	20	19	18
+		control_drawdiv	xy	2
+		control_drawsize	19	18
+		control_drawpoint	19	217
+		control_intersectable	false
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	panel	panel_controltype
+	{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\option_01.dds	220	20	19	18
+		control_drawdiv	xy	2
+		control_drawsize	19	18
+		control_drawpoint	19	269
+		control_intersectable	false
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	text	txt_backsound
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\option_01.dds	0	300	37	11
+	control_drawdiv	xy	2
+	control_drawsize	37	11
+	control_drawpoint	16	39
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	text	txt_effectsound
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\option_01.dds	37	300	37	11
+	control_drawdiv	xy	2
+	control_drawsize	37	11
+	control_drawpoint	16	60
+	control_enable	true
+	control_visible	false
+	}	
+
+	create_control	slidebar	vcbacksound
+	{
+		control_group	12
+		control_drawsize	132	1	
+		control_drawpoint	70	39
+		control_enable	true
+		control_visible	true
+		control_build	
+		addcontrol_image	btn	UI\Game\theme01\option_01.dds	220	0	14	19
+		addcontrol_drawsize	14	19
+		addcontrol_drawpoint	52	0
+		addcontrol_drawdiv	xy	1
+		addcontrol_check	btn	UI\Game\theme01\option_01.dds	234	0	14	19
+		cslidebar_type	vertical
+		cslidebar_length	127
+		cslidebar_value	0
+	}
+
+	create_control	slidebar	vcegamma
+	{
+		control_group	12
+		control_drawsize	132	1
+		control_drawpoint	70	80
+		control_enable	true
+		control_visible	true
+		control_build	
+		addcontrol_image	btn	UI\Game\theme01\option_01.dds	220	0	14	19
+		addcontrol_drawsize	14	19
+		addcontrol_drawpoint	52	0
+		addcontrol_drawdiv	xy	1
+		addcontrol_check	btn	UI\Game\theme01\option_01.dds	234	0	14	19
+		cslidebar_type	vertical
+		cslidebar_length	150
+		cslidebar_value	0
+	}
+	
+	create_control	slidebar	vceffectsound
+	{
+		control_group	12
+		control_drawsize	132	1
+		control_drawpoint	70	60
+		control_enable	true
+		control_visible	true
+		control_build	
+		addcontrol_image	btn	UI\Game\theme01\option_01.dds	220	0	14	19
+		addcontrol_drawsize	14	19
+		addcontrol_drawpoint	52	0
+		addcontrol_drawdiv	xy	1
+		addcontrol_check	btn	UI\Game\theme01\option_01.dds	234	0	14	19
+		cslidebar_type	vertical
+		cslidebar_length	127
+		cslidebar_value	0
+	}
+
+	create_control	button	btn_ok
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\sever-close_01.dds	0	130	55	25	
+	control_drawdiv	xy	2
+	control_drawsize	55	25
+	control_drawpoint	38	308
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_cancel
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\sever-close_01.dds	110	130	55	25
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	55	25
+	control_drawpoint	128	308
+	control_enable	true
+	control_visible	true
+	}
+}

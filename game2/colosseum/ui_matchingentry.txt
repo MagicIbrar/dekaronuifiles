@@ -1,0 +1,84 @@
+<window>
+	name			matchingentry
+	enable			true
+	visible			true
+	modal 			false
+	layer			110
+	position		center center
+	rect			-116  -78 116 79
+	titlerect		0 0 211 24
+	alwaysontop		true
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		10
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		60
+			rect		28 2 174 14
+			align 		center
+			<title>
+				color		ffF4BE3D
+				fontIndex	2
+				text2 		100 118
+			</title>
+		</label>
+	</panel>
+	<label>
+		id		lbl_text
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		5 35 220 50
+		<title>
+			color		ffffffff
+			fontIndex	3
+		</title>
+	</label>
+	<button>
+		id		btn_entry
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		rect		87 132 57 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 3
+			text2 		2000 45
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>	
+</window>

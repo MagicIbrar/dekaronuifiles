@@ -1,0 +1,16 @@
+window_layer	auto
+window_position	500	0
+window_size	200	20
+window_visible	true
+
+create_control	text	txt_state
+{
+	control_group	0
+	control_image	oooo	UI\Game\ui_main_01.tga	16	16	16	16
+	control_drawdiv	xy	2
+	control_drawsize	200	20
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	control_build	
+}

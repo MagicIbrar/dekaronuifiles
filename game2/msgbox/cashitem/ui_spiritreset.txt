@@ -1,0 +1,117 @@
+<window>
+	name			spiritreset
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	rect			0  0 280 167
+	titlerect		0 0 257 19
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 280 167
+		<image>
+				key		none
+				screen	item_shop_popup
+				index	21
+		</image>
+		
+		<label>
+			id			lbl_top
+			enable		true
+			visible		true
+			layer		50
+			rect		0 3 280 14
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0	
+				text2 		100 33
+			</title>					
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		257 3 13 13
+			<image>
+				key		none
+				screen	item_shop
+				index	71
+			</image>
+			<image>
+				key		over
+				screen	item_shop
+				index	72
+			</image>
+			<image>
+				key		down
+				screen	item_shop
+				index	73
+			</image>
+		</button>
+	</panel>
+	
+	<label>
+			id			multilbl_0
+			enable		true
+			visible		true
+			layer		60
+			rect		24 39 256 40
+			multiline 	true
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+			</title>
+	</label>
+	
+	<label>
+			id			multilbl_1
+			enable		true
+			visible		true
+			layer		60
+			rect		24 92 256 40
+			multiline 	true
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+			</title>
+	</label>
+	
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		95 132 95 23
+		<title>
+			color		ffffffff
+			fontIndex	3
+			position	35 5	
+			text2 		2000 22
+		</title>
+		<image>
+			key		none
+			screen	item_shop_popup
+			index	11
+		</image>
+		<image>
+			key		over
+			screen	item_shop_popup
+			index	12
+		</image>
+		<image>
+			key		down
+			screen	item_shop_popup
+			index	13
+		</image>
+	</button>	
+</window>

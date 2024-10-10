@@ -1,0 +1,1225 @@
+window_layer	auto
+window_size	500	520
+window_alignaxis	left	top
+window_position	30	70
+window_visible	false
+
+create_control	panel	pan_particle
+{
+	control_group	56
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	500	520
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_particletitle
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+		control_text	10	1	"particle Tool"
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	494	13
+		control_drawpoint	3	3
+		control_enable	true
+		control_visible	true
+
+		create_control	button	btn_particleclose
+		{
+		control_image	oooo	UI\Tool\ui_winbtn03.dds	65	11	11	11
+		control_drawdiv	xy	2
+		control_drawsize	11	11
+		control_drawpoint	483	1
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+// Type
+	create_control	combobox	cbb_particletype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	100	30
+	control_drawpoint	70	37
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_particletype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	14
+	control_drawpoint	70	23
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_particletype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	170	23
+	control_enable	true
+	control_visible	true
+	}
+	
+	// Blend
+	create_control	combobox	cbb_particleblend
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	100	30
+	control_drawpoint	300	37
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_particleblend
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	14
+	control_drawpoint	300	23
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_particleblend
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	400	23
+	control_enable	true
+	control_visible	true
+	}
+	
+	// SizeTimetype
+	create_control	combobox	cbb_particlesize_timetype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	40	30
+	control_drawpoint	70	276
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_particlesize_timetype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	14
+	control_drawpoint	70	262
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_particlesize_timetype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	110	262
+	control_enable	true
+	control_visible	true
+	}
+	
+	// AlphaTimetype
+	create_control	combobox	cbb_particlealpha_timetype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	40	30
+	control_drawpoint	70	328
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_particlealpha_timetype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	14
+	control_drawpoint	70	314
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_particlealpha_timetype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	110	314
+	control_enable	true
+	control_visible	true
+	}
+	
+	// ColorTimetype
+	create_control	combobox	cbb_particlecolor_timetype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	40	30
+	control_drawpoint	70	380
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_particlecolor_timetype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	14
+	control_drawpoint	70	366
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_particlecolor_timetype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	110	366
+	control_enable	true
+	control_visible	true
+	}
+	
+
+	create_control	text	txt_particletype
+	{
+	control_text	0	0	Type
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	20	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_particleblend
+	{
+	control_text	0	0	Blend
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	250	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_particletexture
+	{
+	control_text	0	0	Texture
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	100	23
+	control_drawpoint	10	54
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particletexture_time
+	{
+	control_text	0	0	Time
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	15	80
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particletexture_file
+	{
+	control_text	0	0	File
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	115	80
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_particlegravity
+	{
+	control_text	0	0	Gravity
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	10	106
+	control_enable	true
+	control_visible	true
+	}		
+
+	create_control	text	txt_particleemitrate
+	{
+	control_text	0	0	Emitrate
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	250	106
+	control_enable	true
+	control_visible	true
+	}		
+	
+	create_control	text	txt_particlelife
+	{
+	control_text	0	0	Life
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	50	23
+	control_drawpoint	10	132
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlelif_min
+	{
+	control_text	0	0	Min
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	158
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlelif_max
+	{
+	control_text	0	0	Max
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	250	158
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particledirection
+	{
+	control_text	0	0	Direction
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	100	23
+	control_drawpoint	10	184
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particledirection_x
+	{
+	control_text	0	0	X
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	23
+	control_drawpoint	15	210
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particledirection_y
+	{
+	control_text	0	0	Y
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	23
+	control_drawpoint	170	210
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particledirection_z
+	{
+	control_text	0	0	Z
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	23
+	control_drawpoint	340	210
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlesize
+	{
+	control_text	0	0	Size
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	40	23
+	control_drawpoint	10	236
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlesize_timetype
+	{
+	control_text	0	0	TimeType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	262
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlesize_period
+	{
+	control_text	0	0	Period
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	130	262
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlesize_animtime
+	{
+	control_text	0	0	AnimTime
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	230	262
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlesize_value
+	{
+	control_text	0	0	Value
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	340	262
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlealpha
+	{
+	control_text	0	0	Alpha
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	40	23
+	control_drawpoint	10	288
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlealpha_timetype
+	{
+	control_text	0	0	TimeType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	314
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlealpha_period
+	{
+	control_text	0	0	Period
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	130	314
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlealpha_animtime
+	{
+	control_text	0	0	AnimTime
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	230	314
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlealpha_value
+	{
+	control_text	0	0	Value
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	340	314
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlecolor
+	{
+	control_text	0	0	color
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	40	23
+	control_drawpoint	10	340
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlecolor_timetype
+	{
+	control_text	0	0	TimeType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	366
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlecolor_period
+	{
+	control_text	0	0	Period
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	130	366
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlecolor_animtime
+	{
+	control_text	0	0	AnimTime
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	230	366
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlecolor_r
+	{
+	control_text	0	0	R
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	23
+	control_drawpoint	340	366
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlecolor_g
+	{
+	control_text	0	0	G
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	23
+	control_drawpoint	390	366
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlecolor_b
+	{
+	control_text	0	0	B
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	23
+	control_drawpoint	440	366
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particleaccel
+	{
+	control_text	0	0	Accel
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	10	392
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlevelocity
+	{
+	control_text	0	0	Velocity
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	100	23
+	control_drawpoint	10	418
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlevelocity_min
+	{
+	control_text	0	0	Min
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	15	444
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_particlevelocity_max
+	{
+	control_text	0	0	Max
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	200	444
+	control_enable	true
+	control_visible	true
+	}
+			
+	create_control	button	btn_texture_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	54
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_texture_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	54
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_texture_add
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Add
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	390	54
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_texture_open
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	450	80
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_size_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	236
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_size_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	236
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_size_add
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Add
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	390	236
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_alpha_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	288
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_alpha_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	288
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_alpha_add
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Add
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	390	288
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_color_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	340
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_color_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	340
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_color_add
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Add
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	390	340
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_particle_open
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	10	490
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_particle_save
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Save
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	100	490
+	control_enable	true
+	control_visible	true
+	}
+	
+
+	create_control	edit	edt_texture_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	16
+	control_drawpoint	347	54
+	control_enable	true
+	control_visible	true
+	cedit_length	1
+	cedit_chartype	none
+	cedit_range	0	9
+	}
+	
+	create_control	edit	edt_particletexture_time
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	60	80
+	control_tab	0
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+		
+	create_control	edit	edt_particletexture_file
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	300	15
+	control_drawpoint	140	80
+	control_tab	1
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlegravity
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	70	106
+	control_tab	2
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particleemitrate
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	310	106
+	control_tab	3
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlelife_min
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	75	158
+	control_tab	4
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlelife_max
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	310	158
+	control_tab	5
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particledirection_x
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	30	210
+	control_tab	6
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particledirection_y
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	185	210
+	control_tab	7
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particledirection_z
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	355	210
+	control_tab	8
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlesize_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	15
+	control_drawpoint	347	236
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+	
+	create_control	edit	edt_particlesize_period
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	175	262
+	control_tab	9
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlesize_animtime
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	285	262
+	control_tab	10
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlesize_value
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	375	262
+	control_tab	11
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlealpha_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	15
+	control_drawpoint	347	288
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+	
+	create_control	edit	edt_particlealpha_period
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	175	314
+	control_tab	12
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlealpha_animtime
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	285	314
+	control_tab	13
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlealpha_value
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	375	314
+	control_tab	14
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlecolor_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	15
+	control_drawpoint	347	340
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+	
+	create_control	edit	edt_particlecolor_period
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	175	366
+	control_tab	15
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlecolor_animtime
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	285	366
+	control_tab	16
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlecolor_r
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	15
+	control_drawpoint	355	366
+	control_tab	17
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlecolor_g
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	15
+	control_drawpoint	405	366
+	control_tab	18
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlecolor_b
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	15
+	control_drawpoint	455	366
+	control_tab	19
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particleaccel
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	70	392
+	control_tab	20
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlevelocity_min
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	70	444
+	control_tab	21
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_particlevelocity_max
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	270	444
+	control_tab	22
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	
+}
+

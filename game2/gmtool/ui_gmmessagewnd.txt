@@ -1,0 +1,69 @@
+<window>
+	name			gmmessage
+	enable			true
+	visible			true
+	layer			100
+	rect			5 60 355 330
+	titlerect		0 0 0 0
+	alwaysontop		true
+	intersect		false
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 344 264
+		intersect	false
+		<image>
+			key		none
+			screen	notice
+			index	2
+		</image>
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		0 9 344 260
+			lineheight	16
+			inputmode 	false
+			margin		11 5
+			autoline	true
+			widthcut	32
+			maxline		13
+			fonttype	2
+			input_type 	0
+			color		ffedfc00
+			intersect	false
+					
+		</textbox>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		320 6 15 15
+
+			sound  0
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>		
+	</panel>	
+</window>

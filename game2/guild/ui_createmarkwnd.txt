@@ -1,0 +1,22 @@
+<window>
+	name			noticewnd
+	enable			true
+	visible			true
+	layer			100
+	rect			0  0 284 161
+	titlerect		70 0 210 36
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 317 213
+		<image>
+			key		none
+			screen	guild_a
+			index	1
+		</image>
+	</panel>
+	
+</window>

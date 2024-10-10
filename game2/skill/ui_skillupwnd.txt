@@ -1,0 +1,555 @@
+<window>
+	name			skillupwnd
+	enable			true
+	visible			true
+	layer			100
+	#rect			370 303 591 470
+	position		center center
+	rect			-366 -304 290 355
+	titlerect		0 0 598 40
+	alwaysontop		true
+	<panel>
+		id		pan_skillup_base
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 290 355
+		<image>
+			screen	skill_up_ko
+			index	17
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			rect		0 14 290 14
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 5
+			</title>
+		</label>
+		
+		<panel>
+			id		pan_info_base
+			enable		true
+			visible		true
+			layer		20
+			rect		4 50 280 300
+			
+			<label>
+				id			lbl_info_base
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 280 14
+				align		center
+				multiline	true
+				lineheight	15
+				<title>
+					color		ffffffff
+					fontIndex	4
+					text2		60 3
+				</title>
+			</label>
+			
+			<panel>
+				id			pan_skill_icon
+				enable		true
+				visible		false
+				layer		101
+				rect		6 29 40 40
+				<image>
+					key		none
+					screen	skill_up
+					index	13
+				</image>
+			</panel>
+			
+			<label>
+				id			lbl_name_base
+				enable		true
+				visible		true
+				layer		10
+				rect		52 32 240 14
+				align		left
+				multiline	true
+				lineheight	15
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<label>
+				id			lbl_res_base
+				enable		true
+				visible		true
+				layer		10
+				rect		52 52 100 14
+				align		left
+				multiline	true
+				lineheight	15
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<label>
+				id			lbl_cooltime_base
+				enable		true
+				visible		true
+				layer		10
+				rect		136 52 100 14
+				align		left
+				multiline	true
+				lineheight	15
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<label>
+				id			lbl_desc_base
+				enable		true
+				visible		true
+				layer		10
+				rect		0 86 282 14
+				align		left
+				multiline	true
+				lineheight	15
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		
+		<panel>
+			id		pan_info_next
+			enable		true
+			visible		true
+			layer		20
+			rect		346 50 280 300
+			
+			<label>
+				id			lbl_info_next
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 280 14
+				align		center
+				multiline	true
+				lineheight	15
+				<title>
+					color		ffffffff
+					fontIndex	4
+					text2		60 4
+				</title>
+			</label>
+			
+			<panel>
+				id			pan_skill_icon_next
+				enable		true
+				visible		true
+				layer		101
+				rect		6 29 40 40
+				<image>
+					key		none
+					screen	skill_up
+					index	13
+				</image>
+			</panel>
+			
+			<label>
+				id			lbl_name_next
+				enable		true
+				visible		true
+				layer		10
+				rect		52 32 240 14
+				align		left
+				multiline	true
+				lineheight	15
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<label>
+				id			lbl_res_next
+				enable		true
+				visible		true
+				layer		10
+				rect		52 52 100 14
+				align		left
+				multiline	true
+				lineheight	15
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<label>
+				id			lbl_cooltime_next
+				enable		true
+				visible		true
+				layer		10
+				rect		136 52 100 14
+				align		left
+				multiline	true
+				lineheight	15
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<label>
+				id			lbl_desc_next
+				enable		true
+				visible		true
+				layer		10
+				rect		0 86 282 14
+				align		left
+				multiline	true
+				lineheight	15
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		
+	<button>
+		id			btn_skillup_close
+		enable		true
+		visible		true
+		layer		101
+		type		0
+		rect		260 14 15 15
+		<image>
+			key		none
+			screen	skill_up
+			index	2
+		</image>
+		<image>
+			key		over
+			screen	skill_up
+			index	3
+		</image>
+		<image>
+			key		down
+			screen	skill_up
+			index	4
+		</image>
+	</button>
+	
+	<panel>
+		id		pan_target_level
+		enable		true
+		visible		false
+		layer		10
+		rect		220 270 300 40
+		<label>
+			id			lbl_target_level_desc
+			enable		true
+			visible		false
+			layer		40
+			rect		0 8 60 14
+			align		right
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		60 78
+			</title>
+		</label>
+		
+		<button>
+			id			btn_skillup_minus
+			enable		true
+			visible		false
+			layer		40
+			type		0
+			rect		60 6 20 20
+			<image>
+				key		none
+				screen	skill_up
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	skill_up
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	skill_up
+				index	13
+			</image>
+		</button>
+		
+		<panel>
+			id		pan_target_level
+			enable		true
+			visible		true
+			layer		40
+			rect	80 6 60 20
+			
+			<image>
+				screen	skill_up
+				index	16
+			</image>
+			
+			<label>
+				id			lbl_target_level
+				enable		true
+				visible		true
+				layer		40
+				rect		0 3 60 14
+				align		right
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		
+		<button>
+			id			btn_skillup_plus
+			enable		true
+			visible		true
+			layer		40
+			type		0
+			rect		140 6 20 20
+			<image>
+				key		none
+				screen	skill_up
+				index	8
+			</image>
+			<image>
+				key		over
+				screen	skill_up
+				index	9
+			</image>
+			<image>
+				key		down
+				screen	skill_up
+				index	10
+			</image>
+		</button>
+		
+		<button>
+			id			btn_skillup_max
+			enable		true
+			visible		true
+			layer		40
+			rect		170 6 40 20
+			align		center
+			<image>
+				key		none
+				screen	skill_up
+				index	15
+			</image>
+			<title>
+				state	none
+				position	0 4
+				color		ffffffff
+				fontIndex	2
+				text2 		60 2
+			</title>
+			<title>
+				state	over
+				position	0 4
+				color		ffb3913e
+				fontIndex	2
+				text2 		60 2
+			</title>
+			
+			<title>
+				state	down
+				position	0 5
+				color		ff777777
+				fontIndex	2
+				text2 		60 2
+			</title>
+		</button>
+	</panel>
+	
+	<panel>
+		id		pan_remain_point_info
+		enable		true
+		visible		false
+		layer		40
+		rect	0 302	 600 20
+		<label>
+			id			lbl_remain_point_desc
+			enable		true
+			visible		false
+			layer		40
+			rect		106 4 200 14
+			align		right
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		60 79
+			</title>
+		</label>
+		<panel>
+			id		pan_remain_point
+			enable		true
+			visible		false
+			layer		10
+			rect	300 0 60 20
+			
+			<image>
+				screen	skill_up
+				index	16
+			</image>
+			
+			<label>
+				id			lbl_remain_point
+				enable		true
+				visible		false
+				layer		40
+				rect		0 3 60 14
+				align		right
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+	</panel>
+	<panel>
+		id		pan_current_point_info
+		enable		true
+		visible		false
+		layer		40
+		rect	0 327	 600 20
+		<panel>
+			id		pan_current_point
+			enable		true
+			visible		false
+			layer		10
+			rect	300 0 60 20
+			
+			<image>
+				screen	skill_up
+				index	16
+			</image>
+			
+			<label>
+				id			lbl_current_point
+				enable		true
+				visible		false
+				layer		40
+				rect		0 3 60 14
+				align		right
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+	</panel>
+	
+	<label>
+		id			lbl_desc
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		rect		0 368 290 14
+		<title>
+			color		ffffffff
+			fontIndex	2
+		</title>
+	</label>
+	
+	<button>
+		id			btn_skillup_ok
+		enable		true
+		visible		true
+		layer		60
+		rect		70 291 145 25
+		align		center
+		<image>
+			key		none
+			screen	skill_up
+			index	5
+		</image>
+		<image>
+			key		over
+			screen	skill_up
+			index	6
+		</image>
+		<image>
+			key		down
+			screen	skill_up
+			index	7
+		</image>
+		<image>
+			key		disable
+			screen	skill_up
+			index	14
+		</image>
+		<title>
+			state	none
+			position	0 6
+			color		ffffffff
+			fontIndex	4
+			text2 		60 1
+		</title>
+		<title>
+			state	down
+			position	0 7
+			color		ffffffff
+			fontIndex	4
+			text2 		60 1
+		</title>
+	</button>
+
+			<panel>
+				id			pan_skill_icon
+				enable		true
+				visible		true
+				layer		101
+		        rect		11 80 40 40		
+				<image>
+					key		none
+					screen	skill_up
+					index	13
+				</image>
+			</panel>	
+		<label>
+		id			lbl_skillup
+		enable		true
+		visible		true
+		layer		101
+		multiline 	true
+		lineheight 	16
+		align		center
+		#rect		56 173 180 40
+		rect		61 84 200 14		
+		<title>
+			color		ffffffff
+			fontIndex	2
+		</title>
+	</label>
+		<label>
+			id			lbl_current_point_desc
+			enable		true
+			visible		true
+			layer		40
+			#rect		61 84 200 14
+			rect		56 173 180 40
+			multiline 	true
+			lineheight 	16
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		60 79
+			</title>
+		</label>	
+</window>

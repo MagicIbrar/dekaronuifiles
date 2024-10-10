@@ -1,0 +1,46 @@
+<window>
+	name			dungeon_alarm
+	enable			true
+	visible			true
+	alwaysontop		true
+	layer			100
+	position		inverse inverse
+	<button>
+		id		btn_alarm
+		enable		true
+		visible		true
+		layer		100
+		rect		130 60 30 30
+		position	left top
+		blink 		false
+		blinktime  	1000
+		<image>
+			key		none
+			screen	indun
+			index	4
+		</image>
+		<image>
+			key		over
+			screen	indun
+			index	5
+		</image>
+		<image>
+			key		down
+			screen	indun
+			index	5
+		</image>
+		<image>
+			key		blink
+			screen	indun
+			index	3
+		</image>
+	</button>
+	<panel>
+		id		pan_effect
+		enable		true
+		visible		true
+		layer		160
+		intersect 	false
+		rect		306 80 370 50
+	</panel>
+</window>

@@ -1,0 +1,353 @@
+<window>
+	name			battleroyalresultwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-419 -296 420 296
+	titlerect		6 7 832 33
+		
+	<panel>
+		id				pan_body
+		enable			true
+		visible			true
+		layer			100
+		rect			0 0 839 592
+		<image>
+			key			none
+			screen		colosseum
+			index		40
+		</image>
+
+		<panel>
+			id				pan_winner
+			enable			true
+			visible			true
+			layer			100
+			rect			325 111 321 22
+				<panel>
+					id				pan_winner_icon
+					enable			true
+					visible			true
+					layer			100
+					rect			0 0 22 22
+				</panel>
+				<label>
+					id				lbl_winner_name
+					enable			true
+					visible			true
+					layer			10
+					align			center
+					rect			31 4 140 14
+					<title>
+						color		ffffffff
+						fontIndex	2
+					</title>
+				</label>
+				<label>
+					id				lbl_winner_score
+					enable			true
+					visible			true
+					layer			10
+					align			center
+					rect			165 4 35 14
+					<title>
+						color		ffffffff
+						fontIndex	2
+					</title>
+				</label>
+				<label>
+					id				lbl_winner_coin
+					enable			true
+					visible			true
+					layer			10
+					align			center
+					rect			309 4 20 14
+					<title>
+						color		ffffffff
+						fontIndex	2
+					</title>
+				</label>
+		</panel>
+		
+		<panel>
+			id				pan_base
+			enable			true
+			visible			true
+			layer			100
+			rect			102 162 420 379
+		</panel>
+
+		<label>
+			id				lbl_final_coin
+			enable			true
+			visible			true
+			layer			10
+			align			center
+			rect			572 176 12 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<label>
+			id				lbl_round3_coin
+			enable			true
+			visible			true
+			layer			10
+			align			center
+			rect			572 236 12 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<label>
+			id				lbl_round2_coin
+			enable			true
+			visible			true
+			layer			10
+			align			center
+			rect			572 316 12 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<label>
+			id				lbl_round1_coin
+			enable			true
+			visible			true
+			layer			10
+			align			center
+			rect			572 436 12 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<label>
+			id				lbl_tagresult
+			enable			true
+			visible			true
+			layer			10
+			align			center
+			rect			601 166 120 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		360 10
+			</title>
+		</label>
+		<label>
+			id				lbl_totalkill
+			enable			true
+			visible			true
+			layer			10
+			align			center
+			rect			601 181 137 40
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<textbox>
+			id				text_result
+			enable			true
+			visible			true
+			layer			100
+			rect			601 181 137 400
+			lineheight		18
+			margin			5 42
+			color			ffffffff
+			fonttype		2
+			<vscroll>
+				id				text_result_scroll
+				enable			true
+				visible			true
+				layer			100
+				rect			123 3 12 356
+				maxvalue		0
+				buttontick  	1
+				<button>
+					id				text_result_scroll_upbtn
+					enable			true
+					visible			true
+					layer			100
+					rect			0 0 12 12
+					type			1
+					<image>
+						key				0
+						screen			etc_01
+						index			19
+					</image>
+					<image>
+						key				over
+						screen			etc_01
+						index			20
+					</image>
+					<image>
+						key				down
+						screen			etc_01
+						index			21
+					</image>
+					<image>
+						key				disable
+						screen			etc_01
+						index			18
+					</image>
+				</button>
+				<button>
+					id				text_result_scroll_downbtn
+					enable			true
+					visible			true
+					layer			100
+					position		left bottom
+					rect			0 -12 12 12
+					type			1
+					<image>
+						key				0
+						screen			etc_01
+						index			15
+					</image>
+					<image>
+						key				over
+						screen			etc_01
+						index			16
+					</image>
+					<image>
+						key				down
+						screen			etc_01
+						index			17
+					</image>
+					<image>
+						key				disable
+						screen			etc_01
+						index			14
+					</image>
+				</button>
+				<panel>
+					id				text_result_scroll_bar
+					enable			true
+					visible			true
+					layer			100
+					rect			0 12 12 19 
+					moveable		true
+					noneimage 		true
+					<image>
+						key				none
+						screen			etc_01
+						index			24
+					</image>
+					<image>
+						key				over
+						screen			etc_01
+						index			25
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+		
+		<label>
+			id				lbl_tagcoin
+			enable			true
+			visible			true
+			layer			10
+			align			center
+			rect			738 166 101 14
+			<title>
+				color			ffffffff
+				fontIndex		2
+				text2			360 11
+			</title>
+		</label>
+		
+		<imagenumber>
+			id				number_coin
+			enable			true
+			visible			true
+			fonttype		none
+			layer			100
+			space			15
+			align			center
+			imagecount 		10
+			rect			779 321 37 21
+			<image>	
+				key	0	
+				color 			0x00ffffff
+				screen			common
+				index			0
+			</image>
+		</imagenumber>
+		
+		<label>
+			id				lbl_tagpoint
+			enable			true
+			visible			true
+			layer			10
+			align			center
+			rect			738 382 101 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		360 12
+			</title>
+		</label>
+		<imagenumber>
+			id				number_point
+			enable			true
+			visible			true
+			fonttype		none
+			layer			100
+			space			15
+			align			center
+			imagecount 		10
+			rect			756 458 59 21
+			<image>	
+				key	0	
+				color 			0x00ffffff
+				screen			common
+				index			0
+			</image>
+		</imagenumber>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		700 554 94 18
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		2000 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	2 4
+			</title>
+		</button>
+	
+	</panel>
+</window>

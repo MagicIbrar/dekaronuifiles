@@ -1,0 +1,76 @@
+<window>
+	name			mypartyinfownd
+	enable			true
+	visible			true
+	layer			100
+	position		right top
+	rect			-353 0 -265 39
+	titlerect		0 0 0 0
+	alwaysontop 		true
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		99
+		rect		0 0 88 39
+		<image>
+			key 	none
+			screen	partywar
+			index 	2
+		</image>		
+		<label>
+			id		lbl_strPoint
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			intersect 	false
+			rect		3 4 38 14
+			<title>
+				color		FFFDB602
+				fontIndex	4
+				text2 		2008 1
+			</title>
+		</label>
+		<label>
+			id		lbl_strRank
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			intersect 	false
+			rect		46 4 38 14
+			<title>
+				color		FFFDB602
+				fontIndex	4
+				text2 		2008 2
+			</title>
+		</label>
+		<label>
+			id		lbl_point
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			intersect 	false
+			rect		3 21 38 12
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id		lbl_rank
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			intersect 	false
+			rect		46 21 38 12
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>
+	</panel>
+</window>

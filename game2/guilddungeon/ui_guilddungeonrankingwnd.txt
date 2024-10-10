@@ -1,0 +1,449 @@
+<window>
+	name		guilddungeonrankingwnd
+	enable		true
+	visible		true
+	layer		100
+	position	center center
+	rect		-160 -246 160 246
+	titlerect	7 8 306 25
+	alwaysontop	true
+	<button>
+		id		btn_tab_guildranking
+		enable		true
+		visible		true
+		align 		center
+		layer		101
+		rect		9 39 97 22
+		<image>
+			key		none
+			screen		guild_ranking
+			index		3
+		</image>
+		<image>
+			key		check
+			screen		guild_ranking
+			index		2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 6
+			text2 		132 2
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 6
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 7
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	4
+			position	2 7
+		</title>
+	</button>
+	<panel>
+		id		pan_guildranking
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 320 492
+		<image>
+			key		none
+			screen		guild_ranking
+			index		1
+		</image>
+		
+		<label>
+			id		lbl_tagtitle
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		7 8 306 25
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 7
+				text2		132 1
+			</title>
+		</label>
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		293 14 15 15
+
+			sound		0
+			<image>
+				key		none
+				color		ffffffff
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				color		ffffffff
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				color		ffffffff
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		<label>
+			id		lbl_tagrank
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		7 63 57 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+				text2		132 3
+			</title>
+		</label>
+		<label>
+			id		lbl_tagguildname
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		67 63 149 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+				text2		132 4
+			</title>
+		</label>
+		<label>
+			id		lbl_tagpoint
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		219 63 94 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+				text2		132 5
+			</title>
+		</label>
+		<panel>
+			id		pan_rankinglist
+			enable		true
+			visible		true
+			layer		100
+			rect		6 86 308 326
+			<button>
+				id		btn_prev
+				enable		false
+				visible		false
+				layer		100
+				rect		68 305 13 15
+				sound		0
+				<image>
+					key		none
+					color		ffffffff
+					screen		guild_ranking
+					index		11
+				</image>
+				<image>
+					key		over
+					color		ffffffff
+					screen		guild_ranking
+					index		12
+				</image>
+				<image>
+					key		down
+					color		ffffffff
+					screen		guild_ranking
+					index		13
+				</image>
+			</button>
+			<button>
+				id		btn_next
+				enable		false
+				visible		false
+				layer		100
+				rect		223 305 13 15
+				sound		0
+				<image>
+					key		none
+					color		ffffffff
+					screen		guild_ranking
+					index		14
+				</image>
+				<image>
+					key		over
+					color		ffffffff
+					screen		guild_ranking
+					index		15
+				</image>
+				<image>
+					key		down
+					color		ffffffff
+					screen		guild_ranking
+					index		16
+				</image>
+			</button>
+			<button>
+				id			btn_page
+				enable		false
+				visible		false
+				layer		100
+				rect		99 306 20 14
+				<title>
+					state 		none
+					color		ff929292
+					position	0 0
+					fontIndex	2
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					position	0 0
+					fontIndex	2
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					position	0 0
+					fontIndex	4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					position	0 0
+					fontIndex	2
+				</title>
+			</button>	
+			<panel>
+				id		pan_element
+				enable		true
+				visible		false
+				layer		100
+				rect		0 0 308 30
+				<label>
+					id		lbl_rank
+					enable		true
+					visible		true
+					layer		10
+					align		center
+					rect		4 0 32 30
+					<title>
+						color		ffffffff
+						fontIndex	4
+						position	0 6
+					</title>
+				</label>
+				<panel>
+					id			pan_markback
+					enable		true
+					visible		true
+					layer		10
+					rect		37 2 23 23
+					<image>
+						key		0
+						color	0x00000000
+					</image>
+				</panel>
+				<panel>
+					id			pan_markfront
+					enable		true
+					visible		true
+					layer		20
+					rect		37 2 23 23
+					<image>
+						key		0
+						color	0x00000000
+					</image>
+				</panel>
+				<label>
+					id		lbl_guildname
+					enable		true
+					visible		true
+					layer		10
+					align		center
+					rect		62 0 149 30
+					<title>
+						color		ffffffff
+						fontIndex	4
+						position	0 6
+					</title>
+				</label>
+				<label>
+					id		lbl_drpoint
+					enable		true
+					visible		true
+					layer		10
+					align		center
+					rect		214 0 94 30
+					<title>
+						color		ffffffff
+						fontIndex	4
+						position	0 6
+					</title>
+				</label>
+			</panel>
+		</panel>
+		<panel>
+			id		pan_myguild
+			enable		true
+			visible		true
+			layer		100
+			rect		6 416 308 30
+			<label>
+				id		lbl_myrank
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		4 0 32 30
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 6
+				</title>
+			</label>
+			<panel>
+				id			pan_mymarkback
+				enable		true
+				visible		true
+				layer		10
+				rect		37 2 23 23
+				<image>
+					key		0
+					color	0x00000000
+				</image>
+			</panel>
+			<panel>
+				id			pan_mymarkfront
+				enable		true
+				visible		true
+				layer		20
+				rect		37 2 23 23
+				<image>
+					key		0
+					color	0x00000000
+				</image>
+			</panel>
+			<label>
+				id		lbl_myguildname
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		62 0 149 30
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 6
+				</title>
+			</label>
+			<label>
+				id		lbl_mydrpoint
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		214 0 94 30
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 6
+				</title>
+			</label>
+		</panel>
+		<button>
+			id	btn_confirm
+			enable	true
+			visible	true
+			layer	100
+			align	center
+			rect	128 458 65 20
+			<image>
+				key	none
+				color	ffffffff
+				screen	etc_01
+				index	88
+			</image>
+			<image>
+				key	over
+				color	ffffffff
+				screen	etc_01
+				index	89
+			</image>
+			<image>
+				key	down
+				color	ffffffff
+				screen	etc_01
+				index	90
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	2 4
+				text2 		132 6
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	2 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	3 5
+			</title>
+		</button>
+		<button>
+			id		btn_help
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		276 456 28 29
+			<image>
+				key		none
+				color		ffffffff
+				screen		guild_ranking
+				index		8
+			</image>
+			<image>
+				key		over
+				color		ffffffff
+				screen		guild_ranking
+				index		9
+			</image>
+			<image>
+				key		down
+				color		ffffffff
+				screen		guild_ranking
+				index		10
+			</image>
+		</button>
+	</panel>		
+</window>

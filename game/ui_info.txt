@@ -1,0 +1,243 @@
+window_layer	auto
+window_visible	false
+
+create_control	panel	panel_Info1
+{
+	control_group	0
+	control_image	oooo	UI\Game\theme01\system.dds	0	445	104	15
+	control_drawdiv	xy	2
+	control_drawsize	140	15
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+}
+
+create_control	panel	panel_Info2
+{
+	control_group	0
+	control_image	oooo	UI\Game\theme01\system.dds	0	460	104	15
+	control_drawdiv	xy	2
+	control_drawsize	140	15
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+}
+
+create_control	panel	panel_Info3
+{
+	control_group	0
+	control_image	oooo	UI\Game\theme01\system.dds	0	475	104	15
+	control_drawdiv	xy	2
+	control_drawsize	140	15
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+}
+
+	create_control	edit	edit_info0
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	0	0
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+	
+	create_control	edit	edit_info1
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	20
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info2
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	40
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info3
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	55
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info4
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	75
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info5
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	90
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info6
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	110
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info7
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	125
+	control_drawpoint	800	110
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info8
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	145
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info9
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	160
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info10
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	175
+	control_intersectable	false	
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info11
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""	
+	control_drawsize	140	20
+	control_drawpoint	800	195
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info12
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	215
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info13
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	235
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info14
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	255
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	edit	edit_info15
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	0	0	0 
+	control_textfont	small
+	control_text	0	0	""
+	control_drawsize	140	20
+	control_drawpoint	800	275
+	control_intersectable	false
+	control_enable	false
+	control_visible	true
+	}	

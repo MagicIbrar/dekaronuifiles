@@ -1,0 +1,132 @@
+<window>
+	name			ServerTransferWnd
+	enable			true
+	visible			true
+	layer			100
+	position		left top
+	rect			59 100 324 200
+	titlerect		20 2 235 16
+	alwaysontop		true
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 265 100
+		<image>
+				key		none
+				screen	servertransfer
+				index	1
+		</image>	
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			rect		28 2 207 14
+			position	0 1
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 1
+			</title>
+		</label>
+		<button>
+			id			btn_servername
+			enable		false
+			visible		false
+			layer		10
+			align		center
+			rect		0 0 265 20
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 4
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>		
+		<button>
+			id			btn_transfer
+			enable		false
+			visible		true
+			layer		10
+			align		center
+			rect		53 75 56 18
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		360 2
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		155 75 56 18
+			<image>
+				key			0
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		210 24
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>
+	</panel>
+</window>

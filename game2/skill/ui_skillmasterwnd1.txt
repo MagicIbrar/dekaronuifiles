@@ -1,0 +1,106 @@
+<window>
+	name			skillmasterwnd
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 181 167
+	titlerect		0 0 181 14
+	alwaysontop		true
+	<panel>
+		id			pan_skillmaster_base
+		enable		true
+		visible		true
+		layer		99
+		rect		0 0 181 167
+		<image>
+			key	none
+			screen	skill_up
+			index	1
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			rect		0 3 181 14
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 4
+			</title>
+		</label>
+	</panel>
+	<button>
+		id			btn_skillmaster_close
+		enable		true
+		visible		true
+		layer		101
+		type		0
+		rect		156 3 13 13
+		<image>
+			key		none
+			screen	skill_up
+			index	21
+		</image>
+		<image>
+			key		over
+			screen	skill_up
+			index	22
+		</image>
+		<image>
+			key		down
+			screen	skill_up
+			index	23
+		</image>
+	</button>
+	<button>
+		id			btn_skillmaster_ok
+		enable		true
+		visible		true
+		layer		101
+		type		0
+		rect		43 133 95 23
+		<image>
+			key		none
+			screen	skill_up
+			index	11
+		</image>
+		<image>
+			key		over
+			screen	skill_up
+			index	12
+		</image>
+		<image>
+			key		down
+			screen	skill_up
+			index	13
+		</image>
+	</button>
+	<panel>
+		id			pan_skill_icon
+		enable		true
+		visible		true
+		layer		101
+		rect		71 31 40 40
+		<image>
+			key		none
+			screen	skill_up
+			index	13
+		</image>
+	</panel>
+	<label>
+		id			lbl_skillmaster
+		enable		true
+		visible		true
+		layer		101
+		multiline 	true
+		lineheight 	16
+		align		center
+		rect		0 78 180 40
+		<title>
+			color		ffffffff
+			fontIndex	2
+		</title>
+	</label>
+</window>

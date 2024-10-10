@@ -1,0 +1,1662 @@
+window_layer	auto
+window_visible	true
+
+create_control	panel	base
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	width	32
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_new
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	0	0	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	6	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_open
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	92	0	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	30	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_save
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	0	22	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	54	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	separate01
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	4	14	2	2
+	control_drawdiv	xy	1
+	control_drawsize	2	23
+	control_drawpoint	82	4
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_camerazoom
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	92	22	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	88	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_camerarot
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	0	44	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	112	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_camerapan
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	92	44	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	136	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	separate02
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	4	14	2	2
+	control_drawdiv	xy	1
+	control_drawsize	2	23
+	control_drawpoint	164	4
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_tile
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	0	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	170	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_vcolor
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	92	44	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	194	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_water
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	92	132	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	218	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	separate03
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	4	14	2	2
+	control_drawdiv	xy	1
+	control_drawsize	2	23
+	control_drawpoint	246	4
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_height
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	92	0	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	252	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_heightb
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	88	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	276	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_selector
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	92	88	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	300	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_height4
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	22	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	324	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_height4b
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	110	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	348	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_heightrand
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	92	22	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	372	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_heightlevel
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	44	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	396	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	separate04
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	4	14	2	2
+	control_drawdiv	xy	1
+	control_drawsize	2	23
+	control_drawpoint	424	4
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_attr01
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	92	110	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	430	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_attr02
+	{
+	control_group	1
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	92	110	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	454	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_attr03
+	{
+	control_group	1
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	92	110	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	478	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	separate05
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	4	14	2	2
+	control_drawdiv	xy	1
+	control_drawsize	2	23
+	control_drawpoint	506	4
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_objstamp
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	92	0	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	512	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_objmovexz
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	92	22	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	536	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_objmovey
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	0	44	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	560	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_objrotatey
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	92	44	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	584	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_objrotatex
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	0	66	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	608	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_objrotatez
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	92	66	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	632	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_objscale
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	0	88	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	656	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_objdelete
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	0	22	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	680	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	separate06
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	4	14	2	2
+	control_drawdiv	xy	1
+	control_drawsize	2	23
+	control_drawpoint	708	4
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_attr1on
+	{
+	control_group	1
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	132	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	714	5
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_wateron
+	{
+	control_group	1
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	154	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	738	5
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_effecton
+	{
+	control_group	1
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	154	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	762	5
+	control_style		checked
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	button	btn_objanion
+	{
+	control_group	1
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	0	110	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	786	5
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_objon
+	{
+	control_group	1
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	92	88	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	810	5
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_mapon
+	{
+	control_group	1
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	92	66	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	834	5
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_gridon
+	{
+	control_group	1
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	66	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	858	5
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_playeron
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	0	66	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	882	5
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_packlist
+	{
+	control_group	20
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	93	154	22	21
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	906	5
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_enviroment
+	{
+	control_group	20
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	1	2	ENV
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	20 15
+	control_drawpoint	945 10
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_exit
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	92	66	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	990	5
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	panel	heightwnd
+{
+	control_group	13
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	140	180
+	control_drawpoint	6	38
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	heightwnd_title
+	{
+	control_group	13
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	height
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	130	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	text	txt_heightb
+	{
+	control_group	13
+	control_text	0	0	Height:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	16
+	control_drawpoint	16	30
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_heightb
+	{
+	control_group	13
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	3	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	49	18
+	control_drawpoint	60	28
+	control_enable	true
+	control_visible	false
+	control_build	
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	64	32	16	8
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	64	48	16	8
+	addcontrol_drawsize	16	8
+	addcontrol_drawpoint	32	0
+	addcontrol_drawdiv	xy	2
+	cedit_length	4
+	cedit_chartype	nosymbol
+	cedit_range	-50	100
+	cedit_initvalue	0
+	spin_build
+	}
+		
+	create_control	text	txt_height_scale_brush
+	{
+	control_group	18
+	control_text	0	0	Brush:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	16
+	control_drawpoint	20	60
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_height_scale_brush
+	{
+	control_group	18
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	32	18
+	control_drawpoint	64	56
+	control_enable	true
+	control_visible	false
+	control_build	
+	cedit_length	2
+	cedit_chartype	numeric
+	cedit_range	1	50
+	cedit_initvalue	1
+	spin_build
+	}
+
+	create_control	slidebar	height_scale_brushbar
+	{
+	control_group	18
+	control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+	control_drawdiv	x	1
+	control_drawsize	120	2
+	control_drawpoint	10	78
+	control_enable	true
+	control_visible	false
+	control_build	
+	addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+	addcontrol_drawsize	12	7
+	addcontrol_drawpoint	0	3
+	addcontrol_drawdiv	xy	1
+	cslidebar_type	vertical
+	cslidebar_length	50
+	cslidebar_value	0
+	}	
+
+	create_control	text	txt_height_feather
+	{
+	control_group	18
+	control_text	0	0	Feather:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	16
+	control_drawpoint	10	104
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_height_feather
+	{
+	control_group	18
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	32	18
+	control_drawpoint	64	100
+	control_enable	true
+	control_visible	false
+	control_build	
+	cedit_length	2
+	cedit_chartype	numeric
+	cedit_range	1	50
+	cedit_initvalue	1
+	spin_build
+	}
+
+	create_control	slidebar	height_featherbar
+	{
+	control_group	18
+	control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+	control_drawdiv	x	1
+	control_drawsize	120	2
+	control_drawpoint	10	124
+	control_enable	true
+	control_visible	false
+	control_build	
+	addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+	addcontrol_drawsize	12	7
+	addcontrol_drawpoint	0	3
+	addcontrol_drawdiv	xy	1
+	cslidebar_type	vertical
+	cslidebar_length	50
+	cslidebar_value	0
+	}
+		
+	create_control	button	btn_const
+	{
+	control_group	40
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	∞Ì¡§
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	7	140
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_hup
+	{
+	control_group	40
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	up
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	33	140
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_hup2
+	{
+	control_group	40
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	u2
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	61	140
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_hdown
+	{
+	control_group	40
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	DN
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	89	140
+	control_style		radio
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	panel	pan_attrwnd
+{
+	control_group	14
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	120	60
+	control_drawpoint	6	38
+	control_enable	true
+	control_visible	false
+
+	create_control	title	attrwnd_title
+	{
+	control_group	14
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	attribute
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	114	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	text	txt_attrbrush
+	{
+	control_group	14
+	control_text	0	0	Brush:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	16
+	control_drawpoint	16	30
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_attrbrush
+	{
+	control_group	14
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	3	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	49	18
+	control_drawpoint	60	28
+	control_enable	true
+	control_visible	false
+	control_build		
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	64	32	16	8
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	64	48	16	8
+	addcontrol_drawsize	16	8
+	addcontrol_drawpoint	32	0
+	addcontrol_drawdiv	xy	2
+	cedit_length	2
+	cedit_chartype	number
+	cedit_range	1	10
+	cedit_initvalue	1
+	spin_build
+	}
+}
+
+create_control	panel	pan_colorwnd
+{
+	control_group	17
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	120	120
+	control_drawpoint	6	38
+	control_enable	true
+	control_visible	false
+
+	create_control	title	colorwnd_title
+	{
+	control_group	17
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	attribute
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	114	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	text	txt_color_r
+	{
+	control_group	17
+	control_text	0	0	R:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	16
+	control_drawpoint	16	30
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_color_r
+	{
+	control_group	17
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	3	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	49	18
+	control_drawpoint	60	28
+	control_enable	true
+	control_visible	false
+	control_build		
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	64	32	16	8
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	64	48	16	8
+	addcontrol_drawsize	16	8
+	addcontrol_drawpoint	32	0
+	addcontrol_drawdiv	xy	2
+	cedit_length	2
+	cedit_chartype	number
+	cedit_range	0	255
+	cedit_initvalue	0
+	spin_build
+	}
+	
+	create_control	text	txt_color_g
+	{
+	control_group	17
+	control_text	0	0	G:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	16
+	control_drawpoint	16	60
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_color_g
+	{
+	control_group	17
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	3	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	49	18
+	control_drawpoint	60	58
+	control_enable	true
+	control_visible	false
+	control_build		
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	64	32	16	8
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	64	48	16	8
+	addcontrol_drawsize	16	8
+	addcontrol_drawpoint	32	0
+	addcontrol_drawdiv	xy	2
+	cedit_length	2
+	cedit_chartype	number
+	cedit_range	0	255
+	cedit_initvalue	0
+	spin_build
+	}
+	
+	create_control	text	txt_color_b
+	{
+	control_group	17
+	control_text	0	0	B:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	16
+	control_drawpoint	16	90
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_color_b
+	{
+	control_group	17
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	3	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	49	18
+	control_drawpoint	60	88
+	control_enable	true
+	control_visible	false
+	control_build		
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	64	32	16	8
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	64	48	16	8
+	addcontrol_drawsize	16	8
+	addcontrol_drawpoint	32	0
+	addcontrol_drawdiv	xy	2
+	cedit_length	2
+	cedit_chartype	number
+	cedit_range	0	255
+	cedit_initvalue	0
+	spin_build
+	}
+}
+
+create_control	panel	tilewnd
+{
+	control_group	11
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	342	110
+	control_drawpoint	6	38
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	tilewnd_title
+	{
+	control_group	11
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	tile
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	336	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_tile01
+	{
+	control_group	11
+	control_image	oxxx	UI\Tool\ui_window01.dds	4	12	4	4
+	control_drawdiv	xy	1
+	control_drawsize	64	64
+	control_drawpoint	7	21
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_tile02
+	{
+	control_group	11
+	control_image	oxxx	UI\Tool\ui_window01.dds	4	12	4	4
+	control_drawdiv	xy	1
+	control_drawsize	64	64
+	control_drawpoint	73	21
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_tile03
+	{
+	control_group	11
+	control_image	oxxx	UI\Tool\ui_window01.dds	4	12	4	4
+	control_drawdiv	xy	1
+	control_drawsize	64	64
+	control_drawpoint	139	21
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_tile04
+	{
+	control_group	11
+	control_image	oxxx	UI\Tool\ui_window01.dds	4	12	4	4
+	control_drawdiv	xy	1
+	control_drawsize	64	64
+	control_drawpoint	205	21
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_tile05
+	{
+	control_group	11
+	control_image	oxxx	UI\Tool\ui_window01.dds	4	12	4	4
+	control_drawdiv	xy	1
+	control_drawsize	64	64
+	control_drawpoint	271	21
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_path
+	{
+	control_group	11
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	150	18
+	control_drawpoint	50	87
+	control_enable	true
+	control_visible	false
+	control_build	
+	cedit_length	10
+	cedit_chartype	none
+	}
+
+	create_control	panel	pan_tilemark
+	{
+	control_group	11
+	control_color	true	255	255	100	100
+	control_drawsize	0	0
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	false
+	}
+	
+	create_control	combobox	cbb_attribute
+	{
+	control_group	21
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	100	30
+	control_drawpoint	220	103
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+	
+	create_control	panel	pan_attribute
+	{
+	control_group	11
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	14
+	control_drawpoint	220	87
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_attribute
+	{
+	control_group	11
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	320	87
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	panel	pan_height
+{
+	control_group	16
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	110	110
+	control_drawpoint	6	38
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	height_title
+	{
+	control_group	16
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	Size
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	104	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	text	txt_height_brush
+	{
+	control_group	16
+	control_text	0	0	Brush:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	16
+	control_drawpoint	20	30
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_height
+	{
+	control_group	16
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	32	18
+	control_drawpoint	64	26
+	control_enable	true
+	control_visible	false
+	control_build	
+	cedit_length	2
+	cedit_chartype	numeric
+	cedit_range	1	10
+	cedit_initvalue	1
+	spin_build
+	}
+	
+	create_control	slidebar	heightbar
+	{
+	control_group	16
+	control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+	control_drawdiv	x	1
+	control_drawsize	90	2
+	control_drawpoint	10	54
+	control_enable	true
+	control_visible	false
+	control_build	
+	addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+	addcontrol_drawsize	12	7
+	addcontrol_drawpoint	0	3
+	addcontrol_drawdiv	xy	1
+	cslidebar_type	vertical
+	cslidebar_length	10
+	cslidebar_value	0
+	}
+}
+
+create_control	panel	vcolorwnd
+{
+	control_group	12
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	110	210
+	control_drawpoint	6	38
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	vcolorwnd_title
+	{
+	control_group	12
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	vertex
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	104	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	text	txt_vcbrush
+	{
+	control_group	12
+	control_text	0	0	Brush:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	16
+	control_drawpoint	20	30
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_vcbrush
+	{
+	control_group	12
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	32	18
+	control_drawpoint	64	26
+	control_enable	true
+	control_visible	false
+	control_build	
+	cedit_length	2
+	cedit_chartype	numeric
+	cedit_range	1	10
+	cedit_initvalue	1
+	spin_build
+	}
+
+	create_control	text	txt_vcopacity
+	{
+	control_group	12
+	control_text	0	0	Opacity:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	16
+	control_drawpoint	10	86
+	control_enable	true
+	control_visible	false
+	}
+	
+	create_control	slidebar	vcbrushbar
+	{
+	control_group	12
+	control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+	control_drawdiv	x	1
+	control_drawsize	90	2
+	control_drawpoint	10	54
+	control_enable	true
+	control_visible	false
+	control_build	
+	addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+	addcontrol_drawsize	12	7
+	addcontrol_drawpoint	0	3
+	addcontrol_drawdiv	xy	1
+	cslidebar_type	vertical
+	cslidebar_length	15
+	cslidebar_value	0
+	}
+
+	create_control	slidebar	vcopacitybar
+	{
+	control_group	12
+	control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+	control_drawdiv	x	1
+	control_drawsize	90	2
+	control_drawpoint	10	110
+	control_enable	true
+	control_visible	false
+	control_build	
+	addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+	addcontrol_drawsize	12	7
+	addcontrol_drawpoint	0	3
+	addcontrol_drawdiv	xy	1
+	cslidebar_type	vertical
+	cslidebar_length	100
+	cslidebar_value	1
+	}
+
+	create_control	edit	edt_vcopacity
+	{
+	control_group	12
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	32	18
+	control_drawpoint	64	82
+	control_enable	true
+	control_visible	false
+	control_build	
+	cedit_length	3
+	cedit_chartype	numeric
+	cedit_range	1	100
+	cedit_initvalue	40
+	spin_build
+	}
+
+	create_control	text	txt_vccolor
+	{
+	control_group	12
+	control_text	0	0	Color:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	16
+	control_drawpoint	10	142
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	vcolorborder
+	{
+	control_group	12
+	control_color	true	255	128	128	128
+	control_drawdiv	xy	1
+	control_drawsize	86	30
+	control_drawpoint	10	162
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	vertexcolor
+	{
+	control_group	12
+	control_color	true	255	255	255	255
+	control_drawsize	82	26
+	control_drawpoint	2	2
+	control_enable	true
+	control_visible	false
+	}
+	}
+}
+
+create_control	panel	waterwnd
+{
+	control_group	15
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	120	90
+	control_drawpoint	6	38
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	waterwnd_title
+	{
+	control_group	15
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	water
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	114	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	text	txt_waterbrush
+	{
+	control_group	15
+	control_text	0	0	Brush:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	16
+	control_drawpoint	20	30
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_waterbrush
+	{
+	control_group	15
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	3	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	49	18
+	control_drawpoint	64	27
+	control_enable	true
+	control_visible	false
+	control_build		
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	64	32	16	8
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	64	48	16	8
+	addcontrol_drawsize	16	8
+	addcontrol_drawpoint	32	0
+	addcontrol_drawdiv	xy	2
+	cedit_length	2
+	cedit_chartype	numeric
+	cedit_range	1	10
+	cedit_initvalue	1
+	spin_build
+	}
+
+	create_control	text	txt_waterheight
+	{
+	control_group	15
+	control_text	0	0	Height:
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	16
+	control_drawpoint	10	56
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	edit	edt_waterheight
+	{
+	control_group	15
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	3	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	49	18
+	control_drawpoint	64	55
+	control_enable	true
+	control_visible	false
+	control_build		
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	64	32	16	8
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	64	48	16	8
+	addcontrol_drawsize	16	8
+	addcontrol_drawpoint	32	0
+	addcontrol_drawdiv	xy	2
+	cedit_length	4
+	cedit_chartype	none
+	cedit_range	0	100
+	cedit_initvalue	0
+	spin_build
+	}
+}
+
+create_control	panel	effectwnd
+{
+	control_group	19
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	189	190
+	control_drawpoint	6	38
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	effectwnd_title
+	{
+	control_group	19
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	effect
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	183	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	text	txt_lifeTime
+	{
+	control_group	19
+	control_text	0	0	"LifeTime: "
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	20
+	control_drawpoint	10	23
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	edit	edt_lifeTime
+	{
+	control_group	19
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	90	20
+	control_drawpoint	80	23
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	8
+	cedit_chartype	numeric
+	cedit_range	0	90000000
+	}
+
+	create_control	text	txt_sceneId
+	{
+	control_group	19
+	control_text	0	0	"SceneId: "
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	20
+	control_drawpoint	10	50
+	control_enable	true
+	control_visible	true
+	}
+
+
+	create_control	list	lst_sceneId
+	{
+	control_group	19
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	90	50
+	control_drawpoint	80	50
+	control_enable	true
+	control_visible	true
+	control_build		
+	clist_size	1	3
+	clist_columnwidth	75
+	clist_columnheight	0
+	clist_lineheight	14
+	clist_color	select	210	210	210
+	clist_color	grid	100	100	100
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+	addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+	addcontrol_image	back	color	255	230	230	230
+	}
+
+	create_control	text	txt_positionX
+	{
+	control_group	19
+	control_text	0	0	"XYZ:"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	20
+	control_drawpoint	30	110
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	edit	edt_positionX
+	{
+	control_group	19
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	30	20
+	control_drawpoint	80	110
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	3
+	cedit_chartype	numeric
+	cedit_range	0	99
+	}
+	create_control	edit	edt_positionY
+	{
+	control_group	19
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	30	20
+	control_drawpoint	110	110
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	3
+	cedit_chartype	numeric
+	cedit_range	0	99
+	}
+	create_control	edit	edt_positionZ
+	{
+	control_group	19
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	30	20
+	control_drawpoint	140	110
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	3
+	cedit_chartype	numeric
+	cedit_range	0	99
+	}
+
+	create_control	text	txt_FlyTime
+	{
+	control_group	19
+	control_text	0	0	"FlyTime:"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	20
+	control_drawpoint	30	130
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	edit	edt_flytime
+	{
+	control_group	19
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	4	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	90	20
+	control_drawpoint	80	135
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	numeric
+	cedit_range	0	90000
+	}
+
+	create_control	button	btn_comfirm
+	{
+	control_group	19
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	1	2	Apply
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	20
+	control_drawpoint	20	160
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_refresh
+	{
+	control_group	19
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	1	2	Refresh
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	20
+	control_drawpoint	70	160
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_replay
+	{
+	control_group	19
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	1	2	RePlay
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	20
+	control_drawpoint	120	160
+	control_enable	true
+	control_visible	true
+	}
+}

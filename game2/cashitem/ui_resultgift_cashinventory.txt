@@ -1,0 +1,216 @@
+<window>
+	name			result_gift
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	rect			0  0 232 211
+	titlerect		0 0 216 24
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 211
+		<image>
+				key		none
+				screen	new_itemshop
+				index	17
+		</image>
+		
+		<label>
+			id			lbl_top
+			enable		true
+			visible		true
+			layer		50
+			rect		70 2 90 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0	
+				text2 		100 90
+			</title>					
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		216 3 13 13
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		3
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		4
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		5
+			</image>
+		</button>
+	</panel>
+	
+	<label>
+			id			lbl_tag0
+			enable		true
+			visible		true
+			layer		60
+			rect		15 32 46 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				position	0 0	
+				text2 		171 26
+			</title>
+	</label>
+	<label>
+			id			lbl_tag1
+			enable		true
+			visible		true
+			layer		60
+			rect		15 55 46 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				position	0 0	
+				text2 		171 27
+			</title>
+	</label>
+	<label>
+			id			lbl_tag2
+			enable		true
+			visible		true
+			layer		60
+			rect		15 78 46 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				position	0 0	
+				text2 		171 24
+			</title>
+	</label>
+	<label>
+			id			lbl_tag3
+			enable		true
+			visible		true
+			layer		60
+			rect		15 101 46 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				position	0 0	
+				text2 		171 23
+			</title>
+	</label>
+	
+	<label>
+			id			multilbl_0
+			enable		true
+			visible		true
+			layer		60
+			rect		71 32 143 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+			</title>
+	</label>
+
+	<label>
+			id			multilbl_1
+			enable		true
+			visible		true
+			layer		60
+			rect		71 55 143 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+			</title>
+	</label>
+	<label>
+			id			multilbl_2
+			enable		true
+			visible		true
+			layer		60
+			rect		71 78 143 14
+			align 		right
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+			</title>
+	</label>
+	<label>
+			id			multilbl_3
+			enable		true
+			visible		true
+			layer		60
+			rect		71 101 143 14
+			align 		right
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+			</title>
+	</label>
+	<label>
+			id			lbl_result
+			enable		true
+			visible		true
+			layer		60
+			rect		0 130 232 45
+			align 		center
+			lineheight 	16
+			multiline 	true
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+				text2 		171 43
+			</title>
+	</label>
+
+	<button>
+		id		btn_yes
+		enable		true
+		visible		true
+		layer		100
+		align 		center
+		rect		87 186 57 19
+		<image>
+			key			none
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state		none
+			color		ffb7b7b7
+			fontIndex	2
+			text2		2000 22
+			position	0 3
+		</title>
+		<title>
+			state		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state		down
+			color		ffb7b7b7
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>	
+</window>

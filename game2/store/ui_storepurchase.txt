@@ -1,0 +1,238 @@
+<window>
+	name			storepurchase
+	enable			true
+	visible			true
+	layer			110
+	rect			326 150 674 372
+	titlerect		28 2 290 14
+	<panel>
+		id			pan_store
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 348 222
+		<image>
+			key		none
+			screen	StorePurchase
+			index	20
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		28 2 290 14
+			<title>
+				color		ffffffff
+				fontindex	4
+				text2		2009 13
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		332 3 13 13
+			sound		0
+			<image>
+				key			0
+				screen		etc_01
+				index		3
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		4
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		5
+			</image>	
+		</button>
+		<label>
+			id			lbl_item
+			enable		true
+			visible		true
+			layer		60
+			align		center
+			rect		28 29 290 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<item>
+			id			select_item
+			enable		true
+			visible		true
+			layer		100
+			rect		37 57 63 127
+			cellsize 	32 32
+			moveable	true
+			type		suit
+		</item>
+		<label>
+			id			lbl_pricetitle
+			enable		true
+			visible		true
+			layer		60
+			align		right
+			rect		117 73 49 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		2009 14
+			</title>
+		</label>
+		<label>
+			id			lbl_taxtitle
+			enable		true
+			visible		true
+			layer		60
+			align		right
+			rect		117 92 49 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		2009 15
+			</title>
+		</label>
+		<label>
+			id			lbl_totalpricetitle
+			enable		true
+			visible		true
+			layer		60
+			align		right
+			rect		117 111 49 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		2009 16
+			</title>
+		</label>
+		<label>
+			id			lbl_Mycash
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		117 130 49 14
+			<title>
+				color		FFFFFFFF
+				fontindex	4
+				text2		2009 10
+			</title>
+		</label>
+		<label>
+			id			lbl_price
+			enable		true
+			visible		true
+			layer		60
+			align		right
+			rect		184 73 119 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_tax
+			enable		true
+			visible		true
+			layer		60
+			align		right
+			rect		184 92 119 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_totalprice
+			enable		true
+			visible		true
+			layer		60
+			align		right
+			rect		184 111 119 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_curMycash
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		184 130 119 14
+			<title>
+				color		FFFFFFFF
+				fontindex	4
+			</title>
+		</label>
+		<button>
+			id			btn_purchase
+			enable		true
+			visible		true
+			align		center
+			layer		100
+			rect		140 173 65 18
+			<title>
+				state		none
+				color		ffb7b7b7
+				fontIndex	2
+				text2		2009 12
+				position	0 3
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state		down
+				color		ffb7b7b7
+				fontIndex	2
+				position	1 4
+			</title>
+			<title>
+				state		disable
+				color		ff828282
+				fontIndex	2
+				position	0 3
+			</title>
+		</button>
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			align		center
+			layer		100
+			rect		231 173 65 18
+			<title>
+				state		none
+				color		ffb7b7b7
+				fontIndex	2
+				text2		2000 22
+				position	0 3
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state		down
+				color		ffb7b7b7
+				fontIndex	2
+				position	1 4
+			</title>
+		</button>		
+	</panel>
+</window>

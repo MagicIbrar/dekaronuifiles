@@ -1,0 +1,419 @@
+window_layer	auto
+window_size	600	450
+window_position	212	169
+window_visible	false   
+
+create_control	panel	pan_help1
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_01.dds	0	0	512	450
+	control_drawdiv	xy	2
+	control_drawsize	512	450
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	title_bar
+	{
+		control_group	0
+		control_drawsize	600	23
+		control_drawpoint	0	0
+		control_enable	true
+		control_visible	true
+	
+		create_control	button	btn_x
+		{
+		control_group	0
+		control_imagedivide	vertical
+		control_image	oooo	UI\Game\theme01\ccs_02.dds	0	165	16	16
+		control_drawdiv	xy	2
+		control_drawsize	16	16
+		control_drawpoint	577	5
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+
+	create_control	panel	pan_pagenum
+	{
+	control_group	0
+	control_drawsize	30	20
+	control_drawpoint	425	415
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_left
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\help_02.dds	171	381	55	25
+	control_drawdiv	xy	1
+	control_drawsize	55	25
+	control_drawpoint	361	411
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_right
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\help_02.dds	226	381	55	25
+	control_drawdiv	xy	1
+	control_drawsize	55	25
+	control_drawpoint	461	411
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_operator
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\help_05.dds	0	357	65	22
+	control_drawdiv	xy	1
+	control_drawsize	65	22
+	control_drawpoint	12	35
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_operatorcheck
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_02.dds	88	315	71	26
+	control_drawdiv	xy	2
+	control_drawsize	71	26
+	control_drawpoint	-3	-4
+	control_enable	true
+	control_visible	true
+	}
+	}
+
+	create_control	button	btn_camera
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\help_05.dds	65	357	55	22
+	control_drawdiv	xy	1
+	control_drawsize	55	22
+	control_drawpoint	77	35
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_cameracheck
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_02.dds	88	341	60	26
+	control_drawdiv	xy	2
+	control_drawsize	60	26
+	control_drawpoint	-2	-4
+	control_enable	true
+	control_visible	false
+	}
+	}
+
+	create_control	button	btn_itemslot
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\help_05.dds	120	357	78	22
+	control_drawdiv	xy	1
+	control_drawsize	78	22
+	control_drawpoint	132	35
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_itemslotcheck
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_02.dds	88	367	83	26
+	control_drawdiv	xy	2
+	control_drawsize	83	26
+	control_drawpoint	-2	-4
+	control_enable	true
+	control_visible	false
+	}
+	}
+
+	create_control	button	btn_trade
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\help_05.dds	198	357	55	22
+	control_drawdiv	xy	1
+	control_drawsize	55	22
+	control_drawpoint	210	35
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_tradecheck
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_02.dds	88	393	60	26
+	control_drawdiv	xy	2
+	control_drawsize	60	26
+	control_drawpoint	-2	-4
+	control_enable	true
+	control_visible	false
+	}
+	}
+
+	create_control	button	btn_skill
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\help_05.dds	253	357	55	22
+	control_drawdiv	xy	1
+	control_drawsize	55	22
+	control_drawpoint	265	35
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_skillcheck
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_02.dds	88	419	60	26
+	control_drawdiv	xy	2
+	control_drawsize	60	26
+	control_drawpoint	-2	-4
+	control_enable	true
+	control_visible	false
+	}
+	}
+
+	create_control	button	btn_hotkey
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\help_05.dds	306	357	55	22
+	control_drawdiv	xy	1
+	control_drawsize	55	22
+	control_drawpoint	320	35
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_hotkeycheck
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_02.dds	88	445	60	26
+	control_drawdiv	xy	2
+	control_drawsize	60	26
+	control_drawpoint	-2	-4
+	control_enable	true
+	control_visible	false
+	}
+	}
+
+	create_control	panel	pan_operatorcontentsbase
+	{
+	control_group	0
+	control_drawsize	424	315
+	control_drawpoint	25	68
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_mouseoper
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_02.dds	88	0	424	315
+	control_drawdiv	xy	2
+	control_drawsize	424	315
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+		create_control	panel	pan_operatorcontents1
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\help_03.dds	0	0	125	315
+		control_drawdiv	xy	2
+		control_drawsize	125	315
+		control_drawpoint	424	0
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	create_control	panel	pan_moveoper
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_04.dds	0	0	444	281
+	control_drawdiv	xy	2
+	control_drawsize	444	281
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_attackoper
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_05.dds	0	0	444	281
+	control_drawdiv	xy	2
+	control_drawsize	444	281
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	}
+	}
+
+	create_control	panel	pan_cameracontentsbase
+	{
+	control_group	0
+	control_drawsize	424	315
+	control_drawpoint	25	68
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	pan_zoom
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_06.dds	0	0	424	315
+	control_drawdiv	xy	2
+	control_drawsize	424	315
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	}
+	}
+
+	create_control	panel	pan_itemslotcontentsbase
+	{
+	control_group	0
+	control_drawsize	424	315
+	control_drawpoint	25	68
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	pan_slot
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_06.dds	0	282	444	189	
+	control_drawdiv	xy	2
+	control_drawsize	444	189
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	}
+	}
+	
+	create_control	panel	pan_tradecontentsbase
+	{
+	control_group	0
+	control_drawsize	424	315
+	control_drawpoint	25	68
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	pan_trade
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_07.dds	0	0	444	245	
+	control_drawdiv	xy	2
+	control_drawsize	444	245
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	}
+	}
+
+	create_control	panel	pan_hotkeycontentsbase
+	{
+	control_group	0
+	control_drawsize	424	315
+	control_drawpoint	25	68
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	pan_hotkey1
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_03.dds	125	0	358	202	
+	control_drawdiv	xy	2
+	control_drawsize	358	202
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_hotkey2
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_03.dds	125	202	358	238
+	control_drawdiv	xy	2
+	control_drawsize	358	238
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_hotkey3
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_07.dds	0	245	342	223	
+	control_drawdiv	xy	2
+	control_drawsize	342	223
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	false
+	}
+	}
+
+	create_control	panel	pan_skillcontentsbase
+	{
+	control_group	0
+	control_drawsize	424	315
+	control_drawpoint	25	68
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	pan_skill1
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_08.dds	0	0	504	311	
+	control_drawdiv	xy	2
+	control_drawsize	504	311
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_skill2
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\help_09.dds	0	0	495	310	
+	control_drawdiv	xy	2
+	control_drawsize	495	310
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	}
+	}
+}
+
+create_control	panel	pan_help2
+{
+control_group	0
+control_image	oxxx	UI\Game\theme01\help_02.dds	0	0	88	450
+control_drawdiv	xy	2
+control_drawsize	88	450
+control_drawpoint	512	0
+control_enable	true
+control_visible	true
+
+	create_control	button	btn_close
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_02.dds	113	265	55	25
+	control_drawdiv	xy	2
+	control_drawsize	55	25
+	control_drawpoint	13	411
+	control_enable	true
+	control_visible	true
+	}
+}
+
+

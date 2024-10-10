@@ -1,0 +1,127 @@
+<window>
+	name			clientquest
+	enable			true
+	visible			true
+	layer			100
+	rect			200 200 432 649
+	alwaysontop		true
+	titlerect		0 0 211 29
+	<panel>
+		id			pan_main
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 449
+		<image>
+			key		none
+			screen	new_quest_npc
+			index	0
+		</image>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		211 3 13 13
+			sound  0
+			<image>
+				key			0
+				screen		new_quest_npc
+				index		20
+			</image>
+			<image>
+				key			over
+				screen		new_quest_npc
+				index		21
+			</image>
+			<image>
+				key			down
+				screen		new_quest_npc
+				index		22
+			</image>
+		</button>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		65 2 105 14
+			<title>
+				color		ffffffff
+				text2		2001 48
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_state
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		9 28 20 12
+			<title>
+				color		ffffffff
+				text2		2001 45
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_level
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		45 28 20 12
+			<title>
+				color		ffffffff
+				text2		2001 46
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_questname
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		85 28 147 12
+			<title>
+				color		ffffffff
+				text2		2001 47
+				fontIndex	2
+			</title>
+		</label>
+		<maillist>
+			id			maillist
+			enable		true
+			visible		true
+			layer		100
+			rect		0 47 232 383
+			nodewidth   232
+			nodeheight	25
+			offset		0
+			topmargin	0
+			gab			1				
+			<casebox>
+				id			maillist_listcontent_0
+				enable		true
+				visible		false
+				layer		100
+				rect		0 0 218 25
+				icon		14 5 28 19
+				time		0 0 0 0
+				title		45 5 69 25
+				content		75 5 220 25
+				titlecolor	fffcb602
+				contentcolor ff00ff00
+				readcolor	ffb7b7b7
+				<iconimg>
+					key			0
+					screen		new_quest_npc
+					index		10
+				</image>
+			</casebox>
+		</maillist>			
+	</panel>
+</window>

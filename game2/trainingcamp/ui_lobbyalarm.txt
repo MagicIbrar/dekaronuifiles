@@ -1,0 +1,28 @@
+<window>
+	name			tcamplobby_alarm
+	enable			true
+	visible			true
+	alwaysontop		true
+	layer			100
+	position		inverse inverse
+	<button>
+		id			btn_alarm
+		enable		true
+		visible		true
+		layer		100
+		rect		54 60 30 30
+		position	left top
+		blink		true
+		blinktime	700
+		<image>
+			key		none
+			screen	TrainingCamp
+			index	52
+		</image>
+		<image>
+			key		blink
+			screen	TrainingCamp
+			index	53
+		</image>
+	</button>
+</window>

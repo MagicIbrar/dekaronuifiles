@@ -1,0 +1,39 @@
+<window>
+	name			onceloadwnd
+	enable			true
+	visible			true
+	layer			500
+	alwaysontop		true
+	position		inverse inverse
+	rect			0 0 0 0
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		100
+		intersect	false
+		position	inverse inverse
+		rect		0 0 0 0
+		<image>
+			key		0
+			color	ffffffff
+			screen	onceloading
+			index	1
+		</image>
+	</panel>
+	<label>
+		id		lbl_count
+		enable		true
+		visible		true
+		layer		200
+		intersect	false
+		align		center
+		position	center bottom
+		rect		-80 -70 160 40
+		<title>
+			color		ffffffff
+			fontIndex	5
+			text		"0%"
+		</title>
+	</label>
+</window>

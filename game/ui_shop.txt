@@ -1,0 +1,28 @@
+block begin
+
+window_layer	auto
+window_position	0 0
+window_size	330 532
+window_alignaxis	right center
+
+ui_style	title_edge_win	WinBase
+
+ui_style	close_button	btn_close
+control_parent	btn_close	WinBase
+
+ui_style	label		NPCLabel 6 30 318
+control_parent	NPCLabel	WinBase
+
+ui_style	grid_control	Grid_Shop 4 80 320 416
+control_parent	Grid_Shop	WinBase
+
+ui_style	text_button	SELL 173 502 46 21	ÆÈ±â
+control_parent	SELL		WinBase
+
+ui_style	text_button	BUY 224 502 46 21	»ç±â
+control_parent	BUY		WinBase
+
+ui_style	text_button	CLOSE 275 502 46 21	´Ý±â
+control_parent	CLOSE		WinBase
+
+block end

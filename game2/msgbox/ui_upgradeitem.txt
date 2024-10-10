@@ -1,0 +1,111 @@
+<window>
+	name			upgradeitem_msgbox
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0  0 284 161
+	titlerect		70 0 212 36
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 284 161
+		<image>
+				key	none
+				screen	msgbox01
+				index	1
+		</image>
+		<panel>
+			id		pan_top
+			enable		true
+			visible		true
+			layer		102
+			rect		75 6 132 24
+			<image>
+					key	0
+					screen	death
+					index	90
+			</image>					
+		</panel>
+	</panel>
+
+	<label>
+		id		pan_notifylabel
+		enable		true
+		visible		true
+		layer		50
+		multiline	true
+		align 		center
+		rect		20 50 280 60	
+		<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+				text2 		1001 20
+		</title>				
+	</label>
+	
+	<panel>
+		id		pan_btn
+		enable		true
+		visible		true
+		layer		50
+		rect		41 107 211 54	
+		<image>
+				key	0
+				screen	msgbox01
+				index	20
+		</image>			
+	</panel>
+
+	<button>
+		id		btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		48 121 94 32
+		<image>
+			key	none
+			screen	msgbox01
+			index	50
+		</image>
+		<image>
+			key	over
+			screen	msgbox01
+			index	51
+		</image>
+		<image>
+			key	down
+			screen	msgbox01
+			index	52
+		</image>
+	</button>	
+
+	<button>
+		id		btn_no
+		enable		true
+		visible		true
+		layer		100
+		rect		143 121 94 32
+		<image>
+			key		none
+			screen	msgbox01
+			index	60
+		</image>
+		<image>
+			key	over
+			screen	msgbox01
+			index	61
+		</image>
+		<image>
+			key	down
+			screen	msgbox01
+			index	62
+		</image>
+	</button>	
+	
+</window>

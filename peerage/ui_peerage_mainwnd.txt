@@ -1,0 +1,265 @@
+window_layer	auto
+window_position	0	0
+window_size	1024	600
+window_visible	true
+
+create_control	panel	base
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.jpg	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	width	32
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_new
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	0	0	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	6	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_open
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	92	0	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	30	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_save
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	0	22	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	54	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_separate01
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.jpg	4	14	2	2
+	control_drawdiv	xy	1
+	control_drawsize	2	23
+	control_drawpoint	82	4
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_exit
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	92	66	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	990	5
+	control_enable	true
+	control_visible	true
+	}
+}
+
+
+create_control	panel	pan_peerage
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	300	220
+	control_drawpoint	300	35
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_classprev
+	{
+		control_group	0
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	230	53
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_classnext
+	{
+		control_group	0
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	270	53
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_peerageprev
+	{
+		control_group	0
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	230	78
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_peeragenext
+	{
+		control_group	0
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	270	78
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	text	txt_class
+	{
+		control_group	0
+		control_color	true	64	60	60	255
+		control_text	0	0	클레스
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	100	21
+		control_drawpoint	10	55
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	text	txt_peerage
+	{
+		control_group	0
+		control_color	true	64	60	60	255
+		control_text	0	0	Peerage
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	100	21
+		control_drawpoint	10	80
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	text	txt_name
+	{
+		control_group	0
+		control_color	true	64	60	60	255
+		control_text	0	0	Name
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	100	21
+		control_drawpoint	10	105
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	text	txt_minlevel
+	{
+		control_group	0
+		control_color	true	64	60	60	255
+		control_text	0	0	"최소 레벨"
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	100	21
+		control_drawpoint	10	130
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	text	txt_minadv
+	{
+		control_group	0
+		control_color	true	64	60	60	255
+		control_text	0	0	"최소 모험치"
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	100	21
+		control_drawpoint	10	155
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	edit	edt_class
+	{
+		control_color	true	64	0	128	0
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	100	16
+		control_drawpoint	120	55
+		control_tab	0	
+		control_enable	true
+		control_visible	true
+		cedit_length	4
+		cedit_chartype	numeric
+		cedit_range	0	9999
+	}	
+	
+	create_control	edit	edt_peerage
+	{
+		control_color	true	64	0	128	0
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	100	16
+		control_drawpoint	120	80
+		control_tab	1	
+		control_enable	true
+		control_visible	true
+		cedit_length	4
+		cedit_chartype	numeric
+		cedit_range	0	9999
+	}	
+	
+	create_control	edit	edt_name
+	{
+		control_color	true	64	0	128	0
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	150	16
+		control_drawpoint	120	105
+		control_tab	2	
+		control_enable	true
+		control_visible	true
+		cedit_length	24
+		cedit_chartype	none
+	}
+	
+	create_control	edit	edt_minlevel
+	{
+		control_color	true	64	0	128	0
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	150	16
+		control_drawpoint	120	130
+		control_tab	3	
+		control_enable	true
+		control_visible	true
+		cedit_length	4
+		cedit_chartype	numeric
+		cedit_range	0	9999
+	}
+	
+	create_control	edit	edt_minadv
+	{
+		control_color	true	64	0	128	0
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	150	16
+		control_drawpoint	120	155
+		control_tab	4	
+		control_enable	true
+		control_visible	true
+		cedit_length	10
+		cedit_chartype	numeric
+		cedit_range	0	9999999999
+	}
+}

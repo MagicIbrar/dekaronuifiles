@@ -1,0 +1,29 @@
+window_layer	TOP
+window_size	255	173
+window_position	0	0
+window_visible	true
+
+create_control	panel	pan_base
+{
+	control_group	0
+	control_color	true	255	255	255	255
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	1024	768
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_logo
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\gamehi-logo.dds	0	0	256	256
+	control_drawsize	256	256
+	control_drawpoint	384	256
+	control_enable	true
+	control_visible	true
+	}
+}
+
+fade_in			255 0 -300 50
+

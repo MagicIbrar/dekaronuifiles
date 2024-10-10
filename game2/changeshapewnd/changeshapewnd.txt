@@ -1,0 +1,176 @@
+<window>
+	name			changeshapewnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-342 -285 3 46
+	titlerect		0 0 340 30
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 345 331
+		<image>
+				key	none
+				screen	change_weapon
+				index	1
+		</image>		
+	</panel>
+	<label>
+		id			lbl_title
+		enable		true
+		visible		true
+		layer		50
+		align		center
+		rect		7 13 330 24
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text3		101 199
+		</title>
+	</label>
+	<button>
+		id		btn_exit
+		enable		true
+		visible		true
+		layer		100
+		rect		318 14 15 15
+
+		<image>
+			key	none
+			screen	etc_01
+			index		315
+
+		</image>
+		<image>
+			key	over
+			screen	etc_01
+			index		316
+
+		</image>
+		<image>
+			key	down
+			screen	etc_01
+			index		317
+
+		</image>
+	</button>
+	<button>
+		id		btn_close
+		enable		true
+		visible		true
+		layer		100
+		align		center
+		rect		140 294 65 20
+		<image>
+			key		none
+			screen	change_weapon
+			index	2
+		</image>
+		<image>
+			key		over
+			screen	change_weapon
+			index	3
+		</image>
+		<image>
+			key		down
+			screen	change_weapon
+			index	4
+		</image>
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text2		2000 53
+		</title>
+	</button>
+	<label>
+		id			lbl_left
+		enable		true
+		visible		true
+		layer		50
+		align		center
+		rect		24 63 91 14
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text3		101 200
+		</title>
+	</label>
+	<label>
+		id			lbl_right
+		enable		true
+		visible		true
+		layer		50
+		align		center
+		rect		230 63 89 14
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text3		101 201
+		</title>
+	</label>
+	<item>
+		id		item_left
+		enable		true
+		visible		true
+		layer		10
+		rect		38 91 64 128	
+		cellsize 	32 32
+		moveable	true
+		type		suit
+	</item>
+	<item>
+		id		item_right
+		enable		true
+		visible		true
+		layer		10
+		rect		244 91 64 128
+		cellsize 	32 32
+		moveable	true
+		type		suit
+	</item>
+	<button>
+		id			btn_change
+		enable		true
+		visible		true
+		layer		100
+		align		center
+		rect		115 121 123 60
+		<image>
+			key		none
+			screen	change_weapon
+			index	5
+		</image>
+		<image>
+			key		over
+			screen	change_weapon
+			index	6
+		</image>
+		<image>
+			key		down
+			screen	change_weapon
+			index	7
+		</image>
+		<image>
+			key		disable
+			screen	change_weapon
+			index	7
+		</image>
+	</button>
+	<label>
+		id			lbl_cost
+		enable		true
+		visible		true
+		layer		50
+		align		right
+		rect		239 243 69 14
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text		0
+		</title>
+	</label>
+</window>

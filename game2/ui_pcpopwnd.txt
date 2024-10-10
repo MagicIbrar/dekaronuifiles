@@ -1,0 +1,108 @@
+<window>
+	name			pcpop
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			98 0 339 252
+	alwaysontop		true
+	
+	<panel>
+		id			pan_pcpop
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 70 252
+		<button>
+			id		btn_popup
+			enable		false
+			visible		false
+			layer		101
+			type		0
+			align 		center
+			rect		0 0 70 21
+			<image>
+				key		none
+				screen	pcpop
+				index	2
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	3
+			</image>
+			<image>
+				key		down
+				screen	pcpop
+				index	3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>
+	</panel>	
+	<panel>
+		id			pan_sentrypop
+		enable		true
+		visible		false
+		layer		100
+		rect		80 0 70 161
+		<button>
+			id		btn_recall
+			enable		true
+			visible		true
+			layer		101
+			type		0
+			rect		0 0 70 21
+			<image>
+				key		none
+				screen	pcpop
+				index	2
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	3
+			</image>
+			<image>
+				key		down
+				screen	pcpop
+				index	3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	12 5
+				text2		240 30
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	12 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	13 6
+			</title>
+		</button>
+	</panel>
+</window>

@@ -1,0 +1,468 @@
+<window>
+	name			requestseedwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-440 -347 440 348
+	titlerect		5 5 870 30
+	alwaysontop		true
+		
+	<panel>
+		id				pan_head
+		enable			true
+		visible			true
+		layer			1
+		rect			0 0 880 695
+		<image>
+			key			none
+			screen		guildtournament
+			index		10
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		200 13 480 30
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 128
+			</title>
+		</label>
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		853 12 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+
+	<panel>
+		id				pan_tag
+		enable			true
+		visible			true
+		layer			100
+		rect			5 48 870 23
+
+		<label>
+			id			lbl_tag1
+			enable		true
+			visible		false
+			layer		50
+			align		center
+			rect		0 5 105 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 129
+			</title>
+		</label>
+
+		<panel>
+			id			pan_separator1
+			enable		true
+			visible		true
+			layer		100
+			rect		100 0 2 23
+			<image>
+				key			none
+				screen		guildtournament
+				index		15
+			</image>
+		</panel>
+
+		<label>
+			id			lbl_tag2
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		105 5 185 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 130
+			</title>
+		</label>
+
+		<panel>
+			id			pan_separator2
+			enable		true
+			visible		true
+			layer		100
+			rect		285 0 2 23
+			<image>
+				key			none
+				screen		guildtournament
+				index		15
+			</image>
+		</panel>
+
+		<label>
+			id			lbl_tag3
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		290 5 200 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 131
+			</title>
+		</label>
+
+		<panel>
+			id			pan_separator3
+			enable		true
+			visible		true
+			layer		100
+			rect		485 0 2 23
+			<image>
+				key			none
+				screen		guildtournament
+				index		15
+			</image>
+		</panel>
+
+		<label>
+			id			lbl_tag4
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		490 5 210 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 132
+			</title>
+		</label>
+
+		<panel>
+			id			pan_separator4
+			enable		true
+			visible		true
+			layer		100
+			rect		695 0 2 23
+			<image>
+				key			none
+				screen		guildtournament
+				index		15
+			</image>
+		</panel>
+
+		<label>
+			id			lbl_tag5
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		700 5 170 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 133
+			</title>
+		</label>
+	</panel>
+
+	<panel>
+		id				pan_seedselect
+		enable			true
+		visible			true
+		layer			100
+		rect			10 87 90 570
+
+		<button>
+			id			btn_seed_
+			enable		false
+			visible		false
+			layer		100
+			align 		center
+			rect		5 8 87 43
+			sound  0
+			<image>
+				key			0
+				screen		guildtournament
+				index		12
+			</image>
+			<image>
+				key			over
+				screen		guildtournament
+				index		13
+			</image>
+			<image>
+				key			down
+				screen		guildtournament
+				index		14
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	0 15
+			</title>
+		</button>
+	</panel>
+
+	<panel>
+		id				pan_body
+		enable			true
+		visible			true
+		layer			50
+		rect			100 80 780 570
+
+		<panel>
+			id			pan_tournament
+			enable		true
+			visible		true
+			layer		50
+			rect		15 2 761 561
+			<image>
+				key			none
+				screen		guildtournament
+				index		11
+			</image>
+		</panel>
+		
+		<label>
+			id			lbl_16_
+			enable		false
+			visible		false
+			layer		100
+			multiline	true
+			align		center
+			rect		20 5 125 54
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 137
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_8_
+			enable		false
+			visible		false
+			layer		100
+			multiline	true
+			align		center
+			rect		224 40 125 54
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 137
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_4_0
+			enable		true
+			visible		true
+			layer		100
+			multiline	true
+			align		center
+			rect		428 110 125 54
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 137
+			</title>
+		</label>
+
+		<label>
+			id			lbl_4_1
+			enable		true
+			visible		true
+			layer		100
+			multiline	true
+			align		center
+			rect		428 390 125 54
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 137
+			</title>
+		</label>
+
+		
+		<label>
+			id			lbl_2_0
+			enable		true
+			visible		true
+			layer		100
+			multiline	true
+			align		center
+			rect		630 250 115 40
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 137
+			</title>
+		</label>
+	</panel>
+
+	<panel>
+		id				pan_tail
+		enable			true
+		visible			true
+		layer			100
+		rect			590 648 270 40
+
+		<button>
+			id			btn_requestseed
+			enable		true
+			visible		false
+			layer		100
+			align 		center
+			rect		5 5 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 134
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+		
+		<button>
+			id			btn_init
+			enable		true
+			visible		false
+			layer		100
+			align 		center
+			rect		95 5 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 135
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+		
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		185 5 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 136
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>	
+	</panel>
+</window>

@@ -1,0 +1,790 @@
+<window>
+	name			stateseting
+	enable			true
+	visible			true
+	layer			20
+	rect			0 0  800 432
+	modal			true
+	layertype		normal
+	<panel>
+		id			pan_state
+		enable		true
+		visible		true
+		layer		103
+		rect		130 0 396 432
+		<image>
+			key		0
+			screen	State
+			index	35
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		158 10 80 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 30
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		371 10 15 15
+
+			sound  0
+			<image>
+				key		0
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<label>
+			id			lbl_tagStr
+			enable		true
+			visible		true
+			layer		101
+			align 		center
+			rect		30 50 45 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 7
+			</title>
+		</label>
+		<label>
+			id			lbl_str
+			enable		true
+			visible		true
+			layer		110
+			rect		28 66 52 15
+			maxlength	4
+			font_type	2
+			input_type	2
+			align		center
+			color		ffffffff
+			multiline   	false
+	
+			<image>
+				key		none
+				screen	party
+				index	6
+				color 	80FFFFFF
+			</image>
+		</label>
+		<label>
+			id			lbl_str_add
+			enable		true
+			visible		true
+			layer		101
+			rect		28 91 52 15
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<button>
+			id			btn_str_up
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		84 66 14 14
+			
+			<image>
+				key		0
+				screen	State
+				index	41
+			</image>
+			<image>
+				key		over
+				screen	State
+				index	42
+			</image>
+			<image>
+				key		down
+				screen	State
+				index	43
+			</image>
+
+		</button>
+		<button>
+			id			btn_str_down
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		11 66 14 14
+			<image>
+				key		0
+				screen	State
+				index	38
+			</image>
+			<image>
+				key		over
+				screen	State
+				index	39
+			</image>
+			<image>
+				key		down
+				screen	State
+				index	40
+			</image>
+
+		</button>
+		<label>
+			id			lbl_tagDex
+			enable		true
+			visible		true
+			layer		101
+			align 		center
+			rect		127 50 45 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 8
+			</title>
+		</label>
+		<label>
+			id			lbl_dex
+			enable		true
+			visible		true
+			layer		110
+			rect		124 66 52 15
+			maxlength	4
+			font_type	2
+			input_type	2
+			align		center
+			color		ffffffff
+			multiline   	false	
+			<image>
+				key		none
+				screen	party
+				index	6
+				color 	80FFFFFF
+			</image>
+		</label>
+		<label>
+			id			lbl_dex_add
+			enable		true
+			visible		true
+			layer		101
+			rect		124 91 52 15
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<button>
+			id			btn_dex_up
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		180 67 14 14
+			<image>
+				key		0
+				screen	etc_01
+				index	19
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	20
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	21
+			</image>
+			<image>
+				key		disable
+				screen	etc_01
+				index	18
+			</image>
+		</button>
+		<button>
+			id			btn_dex_down
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		107 67 14 14		
+			<image>
+				key		0
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+			<image>
+				key		disable
+				screen	etc_01
+				index	14
+			</image>
+		</button>
+		<label>
+			id			lbl_tagCon
+			enable		true
+			visible		true
+			layer		101
+			align 		center
+			rect		223 50 45 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 9
+			</title>
+		</label>
+		<label>
+			id			lbl_con
+			enable		true
+			visible		true
+			layer		110
+			rect		220 66 52 15
+			maxlength	4
+			font_type	2
+			input_type	2
+			align		center
+			color		ffffffff
+			multiline   	false
+	
+			<image>
+				key		none
+				screen	party
+				index	6
+				color 	80FFFFFF
+			</image>
+		</label>
+		<label>
+			id			lbl_con_add
+			enable		true
+			visible		true
+			layer		101
+			rect		220 91 52 15
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<button>
+			id			btn_con_up
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		276 67 14 14
+			<image>
+				key		0
+				screen	etc_01
+				index	19
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	20
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	21
+			</image>
+			<image>
+				key		disable
+				screen	etc_01
+				index	18
+			</image>
+		</button>
+		<button>
+			id			btn_con_down
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		203 67 14 14
+			<image>
+				key		0
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+			<image>
+				key		disable
+				screen	etc_01
+				index	14
+			</image>
+		</button>
+		<label>
+			id			lbl_tagSpr
+			enable		true
+			visible		true
+			layer		101
+			align 		center
+			rect		319 50 52 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 10
+			</title>
+		</label>
+		<label>
+			id			lbl_spr
+			enable		true
+			visible		true
+			layer		110
+			rect		316 66 52 15
+			maxlength	4
+			font_type	2
+			input_type	2
+			align		center
+			color		ffffffff
+			multiline   	false	
+			<image>
+				key		none
+				screen	party
+				index	6
+				color 	80FFFFFF
+			</image>
+		</label>
+		<label>
+			id			lbl_spr_add
+			enable		true
+			visible		true
+			layer		101
+			rect		316 91 52 15
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<button>
+			id			btn_spr_up
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		372 67 14 14
+			<image>
+				key		0
+				screen	etc_01
+				index	19
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	20
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	21
+			</image>
+			<image>
+				key		disable
+				screen	etc_01
+				index	18
+			</image>
+		</button>
+		<button>
+			id			btn_spr_down
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		299 67 14 14
+			<image>
+				key		0
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+			<image>
+				key		disable
+				screen	etc_01
+				index	14
+			</image>
+		</button>		
+		<label>
+			id			lbl_tagStatPoint
+			enable		true
+			visible		true
+			layer		101
+			rect		150 117 52 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 31
+			</title>
+		</label>
+		<label>
+			id			lbl_statpoint
+			enable		true
+			visible		true
+			layer		101
+			align 		center
+			rect		220 117 52 15
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_tagPreview
+			enable		true
+			visible		true
+			layer		101
+			rect		156 165 83 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 32
+			</title>
+		</label>
+		<label>
+			id			lbl_tagHp
+			enable		true
+			visible		true
+			layer		101
+			align		right
+			rect		32 201 65 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 18
+			</title>
+		</label>
+		<label>
+			id			lbl_hp_before
+			enable		true
+			visible		true
+			layer		101
+			rect		102 201 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_hp_after
+			enable		true
+			visible		true
+			layer		101
+			rect		241 201 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_tagMp
+			enable		true
+			visible		true
+			layer		101
+			align		right
+			rect		32 225 65 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 19
+			</title>
+		</label>
+		<label>
+			id			lbl_mp_before
+			enable		true
+			visible		true
+			layer		101
+			rect		102 225 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_mp_after
+			enable		true
+			visible		true
+			layer		101
+			rect		241 225 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_tagShield
+			enable		true
+			visible		true
+			layer		101
+			align		right
+			rect		32 249 65 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 26
+			</title>
+		</label>
+		<label>
+			id			lbl_shield_before
+			enable		true
+			visible		true
+			layer		101
+			rect		102 249 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_shield_after
+			enable		true
+			visible		true
+			layer		101
+			rect		241 249 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_tagMeleeDamage
+			enable		true
+			visible		true
+			layer		101
+			align		right
+			rect		32 273 65 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 12
+			</title>
+		</label>
+		<label>
+			id			lbl_Meleedamage_before
+			enable		true
+			visible		true
+			layer		101
+			rect		102 273 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_Meleedamage_after
+			enable		true
+			visible		true
+			layer		101
+			rect		241 273 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+
+		<label>
+			id			lbl_tagRangeDamage
+			enable		true
+			visible		true
+			layer		101
+			align		right
+			rect		32 297 65 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 38
+			</title>
+		</label>
+		<label>
+			id			lbl_Rangedamage_before
+			enable		true
+			visible		true
+			layer		101
+			rect		102 297 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_Rangedamage_after
+			enable		true
+			visible		true
+			layer		101
+			rect		241 297 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_tagMagicDamage
+			enable		true
+			visible		true
+			layer		101
+			align		right
+			rect		32 321 65 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 13
+			</title>
+		</label>
+		<label>
+			id			lbl_magicdamage_before
+			enable		true
+			visible		true
+			layer		101
+			rect		102 321 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_magicdamage_after
+			enable		true
+			visible		true
+			layer		101
+			rect		241 321 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_tagDefense
+			enable		true
+			visible		true
+			layer		101
+			align		right
+			rect		32 346 65 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		270 14
+			</title>
+		</label>
+		<label>
+			id			lbl_defense_before
+			enable		true
+			visible		true
+			layer		101
+			rect		102 346 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_defense_after
+			enable		true
+			visible		true
+			layer		101
+			rect		241 346 99 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+				
+		<button>
+			id			btn_apply
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		156 384 57 17
+			<title>
+				state			none
+				color			ff929292
+				fontIndex		4
+				position 		0 3
+				text2 			270 33		
+			</title>
+			<title>
+				state			over
+				color			ff76f856
+				fontIndex		4
+				position		0 3
+			</title>
+			<title>
+				state			down
+				color			ff929292
+				fontIndex		4
+				position 		2 4
+			</title>
+			<title>
+				state			blink
+				color			FFFFFFFF
+				fontIndex		4
+			</title>
+			<image>
+				key				none
+				screen			State
+				index			57
+			</image>
+			<image>
+				key				over
+				screen			State
+				index			58
+			</image>
+			<image>
+				key				down
+				screen			State
+				index			59
+			</image>
+		</button>
+		
+	</panel>
+</window>

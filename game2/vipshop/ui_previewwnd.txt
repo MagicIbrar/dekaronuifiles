@@ -1,0 +1,77 @@
+<window>
+	name			preview
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 231 282
+	titlerect		0 0 0 0
+	alwaysontop		true
+	always_top_ui		true		
+	<panel>
+		id		pan_bg
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 231 282		
+		<image>
+			key		0
+			screen		common
+			color		ffffffff
+			index		65500
+		</image>
+		<panel>
+			id			pan_mark
+			enable		true
+			visible		true
+			layer		110
+			rect		100 100 40 38
+			align		center			
+		</panel>	
+		<button>
+			id			btn_leftrot
+			enable		true
+			visible		true
+			layer		110
+			rect		6 239 40 38
+			align		center
+			<image>
+				key		none
+				screen	cashshop
+				index	33
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	34
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	35
+			</image>
+		</button>
+		<button>
+			id			btn_rightrot
+			enable		true
+			visible		true
+			layer		110
+			rect		186 239 40 38
+			align		center
+			<image>
+				key		none
+				screen	cashshop
+				index	36
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	37
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	38
+			</image>
+		</button>		
+	</panel>	
+</window>

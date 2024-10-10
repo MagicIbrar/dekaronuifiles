@@ -1,0 +1,90 @@
+<window>
+	name			tutorialbasicwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			-167 100 167 441
+	titlerect		0 0 267 36
+	<panel>
+		id		pan
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 334 341
+		<image>
+			key	none
+			screen	tutorialwindow
+			index	1
+		</image>
+
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		60
+			rect		18 16 304 36
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		303 17 15 15
+
+			<image>
+				key		0
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		-3 20 318 324
+			lineheight	16
+			margin		21 18
+			fonttype	2
+			color		FFFFFFFF
+			buttonwidth	250
+			align		center center
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+			<title>
+				state		0
+				color		ff00FF00
+				fontIndex	2
+			</title>
+		</textbox>				
+	</panel>			
+</window>

@@ -1,0 +1,554 @@
+<window>
+	name			bettingwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-188 -265 189 264
+	titlerect		5 5 502 30
+	alwaysontop		true
+		
+	<panel>
+		id			pan_head
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 377 132
+		<image>
+			key	none
+			screen	guildtournament
+			index	60
+		</image>
+
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		30 13 320 30
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 151
+			</title>
+		</label>
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		343 9 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+
+		<button>
+			id			btn_p_coin
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		7 47 97 20
+			<image>
+				key		none
+				screen	guildtournament
+				index	68
+			</image>
+			<image>
+				key		check
+				screen	guildtournament
+				index	67
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 169
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 8
+			</title>
+		</button>
+		
+		<button>
+			id			btn_b_coin
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		106 47 97 20
+			<image>
+				key		none
+				screen	guildtournament
+				index	68
+			</image>
+			<image>
+				key		check
+				screen	guildtournament
+				index	67
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 170
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 8
+			</title>
+		</button>
+
+
+		<label>
+			id			lbl_guild_left
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		25 90 100 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<label>
+			id			lbl_guild_right
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		250 90 100 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+	</panel>
+
+	<panel>
+		id			pan_body
+		enable		true
+		visible		true
+		layer		1
+		rect		0 132 377 275
+		<image>
+			key	none
+			screen	guildtournament
+			index	61
+		</image>
+
+		<panel>
+			id			pan_score_
+			enable		false
+			visible		false
+			intersect	false
+			layer		1
+			rect		60 5 290 35
+
+			<button>
+				id			btn_score_
+				enable		true
+				visible		true
+				layer		100
+				align 		center
+				rect		3 0 172 35
+				<image>
+					key		none
+					screen	guildtournament
+					index	63
+				</image>
+				<image>
+					key		over
+					screen	guildtournament
+					index	64
+				</image>
+				<image>
+					key		down
+					screen	guildtournament
+					index	65
+				</image>
+				<image>
+					key		check
+					screen	guildtournament
+					index	64
+				</image>
+				<image>
+					key		disable
+					screen	guildtournament
+					index	79
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					position	0 8
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	0 8
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	0 10
+				</title>
+				<title>
+					state 		check
+					color		ff000000
+					fontIndex	4
+					position	0 10
+				</title>
+				<title>
+					state 		disable
+					color		ff555555
+					fontIndex	4
+					position	0 8
+				</title>
+			</button>
+
+			<panel>
+				id			pan_rate
+				enable		true
+				visible		true
+				layer		1
+				rect		182 0 77 35
+				<image>
+					key	none
+					screen	guildtournament
+					index	66
+				</image>
+			</panel>
+
+			<label>
+				id			lbl_rate_
+				enable		true
+				visible		true
+					layer		50
+				align		center
+				rect		207 7 40 20
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+
+			<panel>
+				id			pan_rate_disable
+				enable		false
+				visible		false
+				layer		1
+				rect		182 0 77 35
+				<image>
+					key	none
+					screen	guildtournament
+					index	80
+				</image>
+			</panel>
+		</panel>
+
+		<button>
+			id			btn_modify
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		242 245 77 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 168
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+	</panel>
+
+	<panel>
+		id			pan_tail
+		enable		true
+		visible		true
+		layer		1
+		rect		0 407 377 122
+		<image>
+			key	none
+			screen	guildtournament
+			index	62
+		</image>
+
+		<label>
+			id			lbl_betting_coin_title
+			enable		true
+			visible		true
+				layer		50
+			align		center
+			rect		45 30 70 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<label>
+			id			lbl_betting_coin
+			enable		true
+			visible		true
+				layer		50
+			align		center
+			rect		100 30 70 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<panel>
+			id			pan_updown
+			enable		true
+			visible		true
+			layer		1
+			rect		175 26 13 26
+			<button>
+				id			btn_betting_up
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 13
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	19
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	20
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	21
+				</image>
+			</button>
+
+			<button>
+				id			btn_betting_down
+				enable		true
+				visible		true
+				layer		100
+				rect		0 14 13 13
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	17
+				</image>
+			</button>
+		</panel>
+
+		<label>
+			id			lbl_usable_coin_title
+			enable		true
+			visible		true
+				layer		50
+			align		center
+			rect		190 30 75 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<label>
+			id			lbl_usable_coin
+			enable		true
+			visible		true
+				layer		50
+			align		center
+			rect		263 30 75 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<button>
+			id			btn_betting
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		180 82 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 151
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+
+		<button>
+			id			btn_close
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		275 82 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 143
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+	</panel>
+</window>

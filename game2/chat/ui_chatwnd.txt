@@ -1,0 +1,1083 @@
+<window>
+	name			chat
+	enable			true
+	visible			true
+	layer			100
+	position		left bottom
+	rect			0 -420 350 0
+	alwaysontop		true
+	<panel>
+		id			pan_effect
+		enable		true
+		visible		true
+		layer		120
+		intersect 	false
+		position	center top
+		rect		-180 80 350 50
+	</panel>
+	<panel>
+		id			pan_effect
+		enable		true
+		visible		true
+		layer		120
+		intersect 	false
+		rect		0 0 15 0
+	</panel>
+	<button>
+		id			btn_close
+		enable		true
+		visible		false
+		layer		500
+		blinktime	500
+		position	left bottom
+		rect		5 -77 15 15
+		<image>
+			key		0
+			screen	chat
+			index	18
+		</image>
+		<image>
+			key		down
+			screen	chat
+			index	19
+		</image>
+		<image>
+			key		blink
+			screen	chat
+			index	20
+		</image>
+	</button>
+	<panel>
+		id			pan_chatwindow
+		enable		true
+		visible		true
+		layer		120
+		position	left top
+		intersect 	false
+		rect		0 0 386 200
+		<button>
+			id			btn_contentsview
+			enable			true
+			visible			true
+			layer			10
+			rect			0 0 26 26
+			tooltip			23 53
+			<image>
+				key		0
+				screen		notice_3
+				index		4
+			</image>	
+			<image>
+				key		over
+				screen		notice_3
+				index		5
+			</image>
+			<image>
+				key		down
+				screen		notice_3
+				index		6
+			</image>
+		</button>
+		<button>
+			id			btn_mail
+			enable		true
+			visible		false
+			layer		100
+			blink 		true
+			blinktime	500
+			rect		0 0 26 26 
+			<image>
+				key		0
+				screen	chat
+				index	21
+			</image>
+			<image>
+				key		over
+				screen	chat
+				index	22
+			</image>
+			<image>
+				key		down
+				screen	chat
+				index	23
+			</image>			
+			<image>
+				key		blink
+				screen	chat
+				index	22
+			</image>
+		</button>
+		<button>
+			id			btn_messenger
+			enable		true
+			visible		false
+			layer		100
+			blink 		true
+			blinktime	500
+			rect		26 0 26 26 
+			
+			<image>
+				key		0
+				screen	chat
+				index	24
+			</image>
+			<image>
+				key		over
+				screen	chat
+				index	25
+			</image>	
+			<image>
+				key		down
+				screen	chat
+				index	26
+			</image>		
+			<image>
+				key		blink
+				screen	chat
+				index	25
+			</image>
+		</button>
+		<panel>
+			id		pan_text
+			enable		true
+			visible		false
+			layer		90
+			position	left bottom
+			rect		0 -18 344 18
+			<image>
+				key		0
+				screen	chat
+				index	13
+			</image>
+			<button>
+				id		btn_type
+				enable		true
+				visible		true
+				layer		100
+				rect		21 0 18 18
+				<image>
+					key	none
+					screen	IME
+					index	0
+				</image>
+				<image>
+					key		check
+					screen	IME
+					index	5
+				</image>	
+			</button>
+			<button>
+				id			btn_open
+				enable		true
+				visible		true
+				layer		100
+				rect		4 0 18 18
+				<image>
+					key		none
+					screen	chat
+					index	57
+				</image>
+				<image>
+					key		down
+					screen	chat
+					index	58
+				</image>
+				<image>
+					key		over
+					screen	chat
+					index	57
+				</image>
+			</button>
+			<edit>
+				id			edit_text
+				enable		true
+				visible		true
+				layer		100
+				rect		40 4 348 12
+				maxlength	160
+				font_type	2
+				input_type	0
+				align		over
+				color		ffffffff
+				multiline   	false
+			</edit>	
+		</panel>
+		<panel>
+			id			pan_back
+			enable		true
+			visible		true
+			intersect 	false
+			layer		90
+			position	left bottom
+			rect		0 -36 386 18
+			<button>
+				id			btn_normal
+				enable		true
+				visible		true
+				layer		100
+				align       center
+				rect		0 0 47 18
+				<image>
+					key		none
+					screen	chat
+					index	3
+				</image>
+				<image>
+					key		check
+					screen	chat
+					index	4
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					position	0 3
+					text2		230 35
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	2 4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+			</button>			
+			<button>
+				id			btn_party
+				enable		true
+				visible		true
+				layer		100
+				align       center
+				rect		48 0 47 18
+				<image>
+					key		none
+					screen	chat
+					index	3
+				</image>
+				<image>
+					key		check
+					screen	chat
+					index	4
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					position	0 3
+					text2		230 2
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	2 4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+			</button>
+			<button>
+				id			btn_guild
+				enable		true
+				visible		true
+				layer		100
+				align       center
+				rect		96 0 47 18
+				<image>
+					key		none
+					screen	chat
+					index	3
+				</image>
+				<image>
+					key		check
+					screen	chat
+					index	4
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					position	0 3
+					text2		230 3
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	2 4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+			</button>
+			<button>
+				id			btn_guildmember
+				enable		true
+				visible		true
+				layer		100
+				align       center
+				rect		144 0 47 18
+				<image>
+					key		none
+					screen	chat
+					index	3
+				</image>
+				<image>
+					key		check
+					screen	chat
+					index	4
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					position	0 3
+					text2		230 4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	2 4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+			</button>
+			<button>
+				id			btn_alliance
+				enable		true
+				visible		true
+				layer		100
+				align       center
+				rect		192 0 47 18
+				<image>
+					key		none
+					screen	chat
+					index	3
+				</image>
+				<image>
+					key		check
+					screen	chat
+					index	4
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					position	0 3
+					text2		230 13
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	2 4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+			</button>
+			<button>
+				id			btn_logsave
+				enable		true
+				visible		true
+				layer		100
+				align       	center
+				rect		240 0 26 18
+				tooltip		230 41
+				<image>
+					key		none
+					screen	chat
+					index	5
+				</image>
+				<image>
+					key		over
+					screen	chat
+					index	6
+				</image>
+			</button>
+			<button>
+				id			btn_action
+				enable		true
+				visible		true
+				layer		100
+				align       center
+				rect		266 0 26 18
+				tooltip		230 42
+				<image>
+					key		none
+					screen	chat
+					index	7
+				</image>
+				<image>
+					key		over
+					screen	chat
+					index	8
+				</image>
+			</button>
+			<button>
+				id			btn_help
+				enable		true
+				visible		true
+				layer		100
+				align       center
+				rect		292 0 26 18
+				tooltip		230 43
+				<image>
+					key		none
+					screen	chat
+					index	9
+				</image>
+				<image>
+					key		over
+					screen	chat
+					index	10
+				</image>
+			</button>
+			<button>
+				id			btn_option
+				enable		true
+				visible		true
+				layer		100
+				align       center
+				rect		318 0 26 18
+				tooltip		230 44
+				<image>
+					key		none
+					screen	chat
+					index	11
+				</image>
+				<image>
+					key		over
+					screen	chat
+					index	12
+				</image>
+			</button>
+		</panel>
+		<button>
+			id 		prev_action
+			enable		true
+			visible		false
+			layer		200
+			position	left bottom
+			rect		294 -52 13 13
+				<image>
+					key		none
+					screen	chat
+					index	51
+				</image>
+				<image>
+					key		over
+					screen	chat
+					index	53
+				</image>
+		</button>
+		<button>
+			id 		next_action
+			enable		true
+			visible		false
+			layer		200
+			position	left bottom
+			rect		312 -52 13 13
+				<image>
+					key		none
+					screen	chat
+					index	52
+				</image>
+				<image>
+					key		over
+					screen	chat
+					index	54
+				</image>
+		</button>
+		<combobox>
+			id		com_action_2
+			enable		true
+			visible		true
+			border 		false
+			intersect 	false
+			layer		198
+			position	left bottom
+			rect		261 -211 96 19 
+			<iteminfo>		
+				rect 	0 5 96 15		
+				<item>
+					index   0
+					data	10
+					string 	50 1
+					tooltip	50 4001
+				</item>
+				<item>
+					index   1
+					data	11
+					string 	50 2
+					tooltip	50 4002
+				</item>
+				<item>
+					index   2
+					data	15
+					string 	50 6
+					tooltip	50 4006
+				</item>
+				<item>
+					index   3
+					data	16
+					string 	50 7
+					tooltip	50 4007
+				</item>
+				<item>
+					index   4
+					data	17
+					string 	50 8
+					tooltip	50 4008
+				</item>
+				<item>
+					index   5
+					data	18
+					string 	50 9
+					tooltip	50 4009
+				</item>
+				<item>
+					index   6
+					data	19
+					string 	50 10
+					tooltip	50 4010
+				</item>
+				<item>
+					index   7
+					data	20
+					string 	50 11
+					tooltip	50 4011
+				</item>
+				<item>
+					index   8
+					data	21
+					string 	50 12
+					tooltip	50 4012
+				</item>
+			</iteminfo>
+			<nodeinfo>
+				selrect		0 0 96 0
+				btnrect		0 0 0 0 				
+				<image>
+					key		board_body
+					screen	chat
+					index	7
+					color	90010101
+				</image>
+			</nodeinfo>		
+		</combobox>
+		<combobox>
+			id		com_action_1
+			enable		true
+			visible		true
+			border 		false
+			intersect 	false
+			layer		198
+			position	left bottom
+			rect		261 -181 96 19 
+			<iteminfo>		
+				rect 	0 5 96 15		
+				<item>
+					index   0
+					data	23
+					string 	50 14
+					tooltip	50 4014
+				</item>
+				<item>
+					index   1
+					data	24
+					string 	50 15
+					tooltip	50 4015
+				</item>
+				<item>
+					index   2
+					data	25
+					string 	50 16
+					tooltip	50 4016
+				</item>
+				<item>
+					index   3
+					data	26
+					string 	50 17
+					tooltip	50 4017
+				</item>
+				<item>
+					index   4
+					data	27
+					string 	50 20
+					tooltip	50 4020
+				</item>
+				<item>
+					index   5
+					data	1001
+					string 	50 18
+					tooltip	50 4018
+				</item>
+				<item>
+					index   6
+					data	2001
+					string 	50 19
+					tooltip	50 4019
+				</item>
+			</iteminfo>
+			<nodeinfo>
+				selrect		0 0 96 0
+				btnrect		0 0 0 0 				
+				<image>
+					key		board_body
+					screen	chat
+					index	7
+					color	90010101
+				</image>
+			</nodeinfo>		
+		</combobox>
+		<combobox>
+			id		com_help
+			enable		true
+			visible		true
+			border 		false
+			intersect 	false
+			layer		198
+			position	left bottom
+			rect		261 -179 145 19 
+			
+			<iteminfo>		
+				rect 	0 5 145 15
+					
+				<item>
+					index   0
+					data	0
+					string 	230 21
+				</item>
+				<item>
+					index   1
+					data	1
+					string 	230 22
+				</item>
+				<item>
+					index   2
+					data	4
+					string 	230 23
+				</item>
+				<item>
+					index   3
+					data	4
+					string 	230 24
+				</item>
+				<item>
+					index   4
+					data	7
+					string 	230 25
+				</item>
+				<item>
+					index   5
+					data	10
+					string 	230 26
+				</item>
+				<item>
+					index   6
+					data	16
+					string 	230 73
+				</item>
+				<item>
+					index   7
+					data	3
+					string 	230 27
+				</item>
+			</iteminfo>
+			<nodeinfo>
+				selrect		0 0 145 0
+				btnrect		0 0 0 0 				
+				<image>
+					key		board_body
+					screen	chat
+					index	8
+					color	90010101
+				</image>
+			</nodeinfo>		
+		</combobox>	
+		<panel>
+			id		pan_gencolor
+			enable		true
+			visible		true
+			intersect 	false
+			layer		60
+			position	left bottom
+			rect		0 -162 344 144
+			<image>
+				key	0
+				screen	common
+				index	1
+				color	80010101
+			</image>
+			<panel>
+				id			pan_top1
+				enable		true
+				visible		true
+				intersect 	false
+				layer		100
+				rect		0 1 344 1
+				<image>
+					key	0
+					screen	chat
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_bottom1
+				enable		true
+				visible		true
+				intersect 	false
+				layer		100
+				position	left bottom
+				rect		0 -1 344 1
+				<image>
+					key	0
+					screen	chat
+					index	2
+				</image>
+			</panel>
+		</panel>
+		<textbox>
+			id			text_general
+			enable		true
+			visible		true
+			layer		100
+			position	left bottom
+			rect		0 -162 344 200
+			lineheight	12
+			margin		18 5
+			fonttype	2
+			chattype	1
+			color		FFEDFC00
+			intersect   false
+			<image>
+				key		0
+				screen	common
+				index	1
+				color	00010101
+			</image>
+			<vscroll>
+				id			text_general_scroll
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 12 144
+				maxvalue	0
+				buttontick  1
+				<panel>
+					id			pan_scrollLine
+					enable		true
+					visible		true
+					intersect 	false
+					layer		20
+					rect		5 0 2 800
+					<image>
+						key 	none
+						screen 	chat
+						index	30
+					</image>
+				</panel>
+				<button>
+					id		text_general_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					type		1
+					<image>
+						key	0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id			text_general_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					position	left bottom
+					rect		0 -12 12 12
+					blink 		true
+					blinktime	500
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	14
+					</image>
+					<image>
+						key		blink
+						screen	etc_01
+						index	14
+					</image>
+				</button>
+				<panel>
+					id			text_general_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 12 12 19 
+					moveable	true
+					noneimage 	true
+					<image>
+						key		none
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+		<panel>
+			id			pan_syscolor
+			enable		true
+			visible		true
+			intersect 	false
+			layer		60
+			position	left bottom
+			rect		0 -288 344 125
+			<image>
+				key	0
+				screen	common
+				index	1
+				color	80010101
+			</image>
+			<panel>
+				id			pan_top2
+				enable		true
+				visible		true
+				intersect 	false
+				layer		100
+				rect		0 1 344 1
+				<image>
+					key	0
+					screen	chat
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_bottom2
+				enable		true
+				visible		true
+				intersect 	false
+				layer		100
+				position	left bottom
+				rect		0 -1 344 1
+				<image>
+					key	0
+					screen	chat
+					index	2
+				</image>
+			</panel>
+		</panel>
+		<textbox>
+			id			text_system
+			enable		true
+			visible		true
+			layer		100
+			position	left bottom
+			rect		0 -288 344 125
+			lineheight	12
+			margin		18 5
+			fonttype	2
+			chattype	1
+			color		FFEDFC00
+			intersect 	false
+			<image>
+				key		0
+				screen	common
+				index	1
+				color	00010101
+			</image>
+			<vscroll>
+				id			text_system_scroll
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 12 125
+				maxvalue	0
+				buttontick  1
+				<panel>
+					id			pan_scrollLine
+					enable		true
+					visible		true
+					intersect 	false
+					layer		20
+					rect		5 0 2 125
+					<image>
+						key 	none
+						screen 	chat
+						index	30
+					</image>
+				</panel>
+				<button>
+					id		text_system_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					type		1
+					<image>
+						key	0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id			text_system_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					position	left bottom
+					rect		0 -12 12 12
+					blink 		true
+					blinktime	500
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	14
+					</image>
+					<image>
+						key		blink
+						screen	etc_01
+						index	14
+					</image>
+				</button>
+				<panel>
+					id			text_system_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 12 12 19 
+					moveable	true
+					noneimage 	true
+					<image>
+						key		none
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+	</panel>
+</window>

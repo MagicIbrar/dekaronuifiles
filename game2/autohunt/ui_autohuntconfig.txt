@@ -1,0 +1,2407 @@
+<window>
+	name			autohuntoption
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 448 620
+	center_h		0
+	center_v		0
+	titlerect		0 0 448 34
+	
+	<panel>
+		id			pan_autohuntoption
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0  448 620
+		
+		<panel>
+			id			pan_back_top
+			enable		true
+			visible		true
+			layer		101
+			rect		0 0  448 56
+			
+			<image>
+				key	0
+				screen	auto_hunt_config
+				index	1
+			</image>
+		</panel>
+		
+		<panel>
+			id			pan_back_center
+			enable		true
+			visible		true
+			layer		100
+			rect		0 54 448 570
+			
+			<image>
+				key	0
+				screen	auto_hunt_config
+				index	2
+			</image>
+		</panel>
+		
+		<panel>
+			id			pan_back_bottom
+			enable		true
+			visible		true
+			layer		100
+			rect		0 596 448 28
+			
+			<image>
+				key	0
+				screen	auto_hunt_config
+				index	3
+			</image>
+		</panel>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		110
+			align		center
+			rect		0 12 448 23
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 2
+				text2		370 1
+			</title>
+		</label>
+		
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		300
+			type		0
+			rect		418 14 15 15
+			<image>
+				key		0
+				screen	etc_01
+				index	315
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	316
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	317
+			</image>
+		</button>
+		
+		<label>
+			id			lbl_count
+			enable		true
+			visible		true
+			layer		120
+			align		center
+			rect		0 30 448 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+				text		"60 / 60"
+			</title>
+		</label>
+		
+		<processbar>
+			id			auto_hunt_time
+			enable		true
+			visible		true
+			layer		104
+			rect		7 36 432 16
+			maxsize     432
+			<image>
+				key		0
+				screen	auto_hunt_config
+				index	4				
+			</image>				
+		</processbar>
+		
+		<panel>
+			id			processbar_panel
+			enable		true
+			visible		true
+			layer		110
+			rect		7 36 432 16
+			
+			<image>
+				key	0
+				screen	auto_hunt_config
+				index	5
+			</image>
+		</panel>
+		
+		<button>
+			id			btn_skill_tab
+			enable		true
+			visible		true				
+			align 		center
+			layer		200
+			rect		9 56 71 22
+			<image>
+				key		none
+				screen	auto_hunt_config
+				index	6
+			</image>
+			<image>
+				key		check
+				screen	auto_hunt_config
+				index	7
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				position		0 6
+				fontIndex		2
+				text2		370 6
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				position		0 6
+				fontIndex		2
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				position		2 7
+				fontIndex		2
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				position		2 7
+				fontIndex		2
+			</title>
+		</button>
+		
+		<button>
+			id			btn_buff_tab
+			clone		btn_skill_tab
+			rect		82 56 71 22
+			<title>
+				text2		370 25
+			</title>
+		</button>
+		
+		<button>
+			id			btn_item_tab
+			clone		btn_skill_tab
+			rect		155 56 71 22
+			<title>
+				text2		370 7
+			</title>
+		</button>
+		
+		<combobox>
+			id			com_preset
+			enable		TRUE
+			visible		TRUE
+			border 		FALSE
+			layer		200
+			rect		308 60 120 16
+			<image>
+				key		board_body
+				screen	party
+				index	4
+			</image>
+			<iteminfo>
+				rect 	5 0 120 20
+				<item>
+					index   0
+					data	0
+					string 	370 16
+				</item>
+				<item>
+					index   1
+					data	1
+					string 	370 17
+				</item>
+				<item>
+					index   2
+					data	2
+					string 	370 18
+				</item>
+			</iteminfo>
+
+			<nodeinfo>
+				selrect		0 0 120 15 
+				btnrect		108 0 16 16
+
+				<image>
+					key		board_body
+					screen	party
+					index	4
+				</image>
+				<image>
+					key		btn_none
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		btn_over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		btn_down
+					screen	etc_01
+					index	17
+				</image>
+			</nodeinfo>
+		</combobox>
+		
+		<panel>
+			id				pan_hline1
+			enable			true
+			visible			true
+			layer			110
+			rect			8 77 430 2
+			<image>
+				key				0
+				screen			quest
+				index			12
+			</image>
+		</panel>
+		
+		<panel>
+			id				pan_option_bg
+			enable			true
+			visible			true
+			layer			110
+			rect			8 77 430 520
+			<image>
+				key				0
+				screen			quest
+				index			13
+				color			baffffff
+			</image>
+		</panel>
+		
+		<panel>
+			id				pan_hline2
+			enable			true
+			visible			true
+			layer			110
+			rect			8 166 430 2
+			<image>
+				key				0
+				screen			quest
+				index			12
+			</image>
+		</panel>
+		
+		<label>
+			id			lbl_startposname
+			enable		true
+			visible		true
+			layer		200
+			align		left
+			rect		110 88 200 20
+			<image>
+				screen	auto_hunt_config
+				index	8
+			</image>
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	4 4
+			</title>
+		</label>
+			
+		<label>
+			id			lbl_startpos
+			clone		lbl_startposname
+			rect		18 88 56 20
+			<title>
+				text2		370 12
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_radius
+			clone		lbl_startposname
+			rect		18 112 56 20
+			<title>
+				text2		370 2
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_config_name
+			clone		lbl_startposname
+			rect		18 168 200 20
+		</label>
+		
+		<combobox>
+			id			com_radius
+			enable		TRUE
+			visible		TRUE
+			border 		FALSE
+			layer		200
+			rect		110 114 120 16
+			<image>
+				key		board_body
+				screen	party
+				index	4
+			</image>
+			<iteminfo>
+				rect 	5 0 120 16
+				<item>
+					index   0
+					data	0
+					string 	370 13
+				</item>
+				<item>
+					index   1
+					data	1
+					string 	370 14
+				</item>
+				<item>
+					index   2
+					data	2
+					string 	370 15
+				</item>
+			</iteminfo>
+
+			<nodeinfo>
+				selrect		0 0 120 15 
+				btnrect		108 0 16 16
+
+				<image>
+					key		board_body
+					screen	party
+					index	4
+				</image>
+				<image>
+					key		btn_none
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		btn_over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		btn_down
+					screen	etc_01
+					index	17
+				</image>
+			</nodeinfo>
+		</combobox>
+			
+		<panel>
+			id			pan_btn_going_bg
+			enable		true
+			visible		true
+			layer		199
+			rect		346 92 63 63
+			
+			<image>
+				screen	auto_hunt_config
+				index	9
+			</image>
+		</panel>
+		
+		<button>
+			id			btn_going
+			enable		true
+			visible		true
+			layer		200
+			rect		350 96 55 55
+			align		center
+			<image>
+				key			none
+				screen		auto_hunt_config
+				index		10
+			</image>
+			<image>
+				key			check
+				screen		auto_hunt_config
+				index		11
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2		2000 48
+				position	0 20
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 20
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 21
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				position		0 20
+				fontIndex		2
+			</title>
+		</button>
+
+		<checkbox>
+			id			check_resetpos
+			enable		true
+			visible		true
+			layer		110
+			rect		16 134 90 20
+			align		left
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontIndex	2
+				color		ffffffff
+				position	5 6
+				text2		370 19
+			</title>
+			<title>
+				state			over
+				fontIndex	2
+				position	5 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+		
+		<checkbox>
+			id			check_normalattack
+			clone		check_resetpos
+			rect		120 134 90 20
+			<title>
+				text2		370 20
+			</title>
+		</checkbox>
+		
+		<checkbox>
+			id			check_selftarget
+			clone		check_resetpos
+			rect		222 134 90 20
+			<title>
+				text2		370 21
+			</title>
+		</checkbox>
+		
+		<checkbox>
+			id			check_returntofield
+			clone		check_resetpos
+			visible		true
+			rect		16 134 120 20
+			<title>
+				text2		370 22
+			</title>
+		</checkbox>
+		
+		<panel>
+			id			pan_skill
+			enable		true
+			visible		true
+			layer		200
+			rect		0 190 448 400
+			
+			<panel>
+				id			pan_skill_bg
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 448 400
+				
+				<panel>
+					id		pan_skill_list			
+					enable		true
+					visible		true
+					layer		100
+					rect		7 0 448 481
+					<panel>
+						id		pan_skill_0
+						enable		true
+						visible		true
+						layer		150
+						rect		17 5 44 44
+						
+						<quickslot>
+							id			skill_slot_0
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_0_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_0_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_0_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<panel>
+						id		pan_skill_1
+						enable		true
+						visible		true
+						layer		150
+						rect		17 63 44 44
+						
+						<quickslot>
+							id			skill_slot_1
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_1_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_1_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_1_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<panel>
+						id		pan_skill_2
+						enable		true
+						visible		true
+						layer		150
+						rect		17 121 44 44
+
+						<quickslot>
+							id			skill_slot_2
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_2_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_2_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_2_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>				
+
+					<panel>
+						id		pan_skill_3
+						enable		true
+						visible		true
+						layer		150
+						rect		17 179 44 44
+						
+						<quickslot>
+							id			skill_slot_3
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_3_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_3_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_3_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<panel>
+						id		pan_skill_4
+						enable		true
+						visible		true
+						layer		150
+						rect		17 237 44 44
+						
+						<quickslot>
+							id			skill_slot_4
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_4_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_4_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_4_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<panel>
+						id		pan_skill_5
+						enable		true
+						visible		true
+						layer		150
+						rect		17 295 44 44
+						
+						<quickslot>
+							id			skill_slot_5
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_5_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_5_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_5_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<panel>
+						id		pan_skill_6
+						enable		true
+						visible		true
+						layer		150
+						rect		17 353 44 44
+						
+						<quickslot>
+							id			skill_slot_6
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_6_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_6_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_6_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					
+					<panel>
+						id		pan_skill_7
+						enable		true
+						visible		true
+						layer		150
+						rect		226 5 44 44
+						
+						<quickslot>
+							id			skill_slot_7
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_7_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_7_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_7_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<panel>
+						id		pan_skill_8
+						enable		true
+						visible		true
+						layer		150
+						rect		226 63 44 44
+						
+						<quickslot>
+							id			skill_slot_8
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_8_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_8_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_8_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<panel>
+						id		pan_skill_9
+						enable		true
+						visible		true
+						layer		150
+						rect		226 121 44 44
+						
+						<quickslot>
+							id			skill_slot_9
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_9_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_9_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_9_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>				
+
+					<panel>
+						id		pan_skill_10
+						enable		true
+						visible		true
+						layer		150
+						rect		226 179 44 44
+						
+						<quickslot>
+							id			skill_slot_10
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_10_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_10_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_10_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<panel>
+						id		pan_skill_11
+						enable		true
+						visible		true
+						layer		150
+						rect		226 237 44 44
+						
+						<quickslot>
+							id			skill_slot_11
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_11_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_11_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_11_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<panel>
+						id		pan_skill_12
+						enable		true
+						visible		true
+						layer		150
+						rect		226 295 44 44
+						
+						<quickslot>
+							id			skill_slot_12
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_12_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_12_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_12_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<panel>
+						id		pan_skill_13
+						enable		true
+						visible		true
+						layer		150
+						rect		226 353 44 44
+						
+						<quickslot>
+							id			skill_slot_13
+							enable		true
+							visible		true
+							layer		150
+							rect		0 0 44 48
+							
+							<panel>
+								id			skill_slot_13_skill
+								enable		true
+								visible		true
+								layer		2
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_13_grd
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+							
+							<panel>
+								id			skill_slot_13_cool
+								enable		true
+								visible		true
+								layer		5
+								rect		2 2 40 40
+							</panel>
+						</quickslot>
+					</panel>
+					
+					<checkbox>
+						id		btn_skill_0
+						enable		false
+						visible		true
+						layer		150
+						rect		17 5 44 44
+						type		1
+						<image>
+							key	none
+							screen	auto_hunt_config
+							index	13
+						</image>
+						<image>
+							key	check
+							screen	auto_hunt_config
+							index	12
+						</image>
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_1
+						clone	btn_skill_0
+						rect	17 63 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_2
+						clone	btn_skill_0
+						rect	17 121 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_3
+						clone	btn_skill_0
+						rect	17 179 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_4
+						clone	btn_skill_0
+						rect	17 237 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_5
+						clone	btn_skill_0
+						rect	17 295 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_6
+						clone	btn_skill_0
+						rect	17 353 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_7
+						clone	btn_skill_0
+						rect	226 5 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_8
+						clone	btn_skill_0
+						rect	226 63 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_9
+						clone	btn_skill_0
+						rect	226 121 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_10
+						clone	btn_skill_0
+						rect	226 179 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_11
+						clone	btn_skill_0
+						rect	226 237 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_12
+						clone	btn_skill_0
+						rect	226 295 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_skill_13
+						clone	btn_skill_0
+						rect	226 353 44 44
+					</checkbox>
+
+					<label>
+						id			lbl_skill_name_0
+						enable		true
+						visible		true
+						layer		110
+						align		left
+						rect		64 2 151 14
+						<title>
+							color		ffffffff
+							fontIndex	4
+							position	0 2
+						</title>
+					</label>
+					
+					<label>
+						id			lbl_skill_name_1
+						clone		lbl_skill_name_0
+						rect		64 60 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_2
+						clone		lbl_skill_name_0
+						rect		64 118 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_3
+						clone		lbl_skill_name_0
+						rect		64 176 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_4
+						clone		lbl_skill_name_0
+						rect		64 234 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_5
+						clone		lbl_skill_name_0
+						rect		64 292 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_6
+						clone		lbl_skill_name_0
+						rect		64 353 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_7
+						clone		lbl_skill_name_0
+						rect		272 2 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_8
+						clone		lbl_skill_name_0
+						rect		272 60 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_9
+						clone		lbl_skill_name_0
+						rect		272 118 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_10
+						clone		lbl_skill_name_0
+						rect		272 176 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_11
+						clone		lbl_skill_name_0
+						rect		272 234 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_12
+						clone		lbl_skill_name_0
+						rect		272 292 151 14
+					</label>
+					
+					<label>
+						id			lbl_skill_name_13
+						clone		lbl_skill_name_0
+						rect		272 353 151 14
+					</label>
+					
+					<checkbox>
+						id			check_skill_0
+						enable		true
+						visible		true
+						layer		200
+						rect		0 14 20 20
+						<image>
+							key			none
+							screen		etc_01
+							index		303
+						</image>
+						<image>
+							key			check
+							screen		etc_01
+							index		304
+						</image>
+					</checkbox>
+					<checkbox>
+						id			check_skill_1
+						clone		check_skill_0
+						rect		0 72 20 20
+					</checkbox>
+					<checkbox>
+						id			check_skill_2
+						clone		check_skill_0
+						rect		0 130 20 20
+					</checkbox>
+					<checkbox>
+						id			check_skill_3
+						clone		check_skill_0
+						rect		0 188 20 20
+					</checkbox>
+					<checkbox>
+						id			check_skill_4
+						clone		check_skill_0
+						rect		0 246 20 20
+					</checkbox>
+					
+					<checkbox>
+						id			check_skill_5
+						clone		check_skill_0
+						rect		0 304 20 20
+					</checkbox>
+					
+					<checkbox>
+						id			check_skill_6
+						clone		check_skill_0
+						rect		0 362 20 20
+					</checkbox>
+					
+					<checkbox>
+						id			check_skill_7
+						clone		check_skill_0
+						rect		210 14 20 20
+					</checkbox>
+					<checkbox>
+						id			check_skill_8
+						clone		check_skill_0
+						rect		210 72 20 20
+					</checkbox>
+					<checkbox>
+						id			check_skill_9
+						clone		check_skill_0
+						rect		210 130 20 20
+					</checkbox>
+					<checkbox>
+						id			check_skill_10
+						clone		check_skill_0
+						rect		210 188 20 20
+					</checkbox>
+					<checkbox>
+						id			check_skill_11
+						clone		check_skill_0
+						rect		210 246 20 20
+					</checkbox>
+					
+					<checkbox>
+						id			check_skill_12
+						clone		check_skill_0
+						rect		210 304 20 20
+					</checkbox>
+					
+					<checkbox>
+						id			check_skill_13
+						clone		check_skill_0
+						rect		210 362 20 20
+					</checkbox>
+					
+					<edit>
+						id		edit_skill_0
+						enable		true
+						visible		true
+						layer		200
+						rect		114 38 30 18	
+						maxlength	4
+						font_type	2
+						input_type	2
+						align		center
+						color		ffffffff
+						multiline   false
+				
+						<image>
+							key		none
+							screen	smartwarp
+							index	5
+							color 	80FFFFFF
+						</image>
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_0
+						enable		true
+						visible		true
+						layer		110
+						align		left
+						rect		62 38 60 14
+						
+						<title>
+							color		ffffffff
+							fontIndex	2
+							position	0 2
+							text2		370 23
+						</title>
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_0
+						enable		true
+						visible		true
+						layer		110
+						align		left
+						rect		64 20 100 14
+						
+						<title>
+							color		ffffffff
+							fontIndex	2
+							position	0 2
+							text2		370 23
+						</title>
+					</label>
+					
+					<edit>
+						id		edit_skill_1
+						clone	edit_skill_0
+						rect	114 96 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_1
+						clone		lbl_skill_cool_0
+						rect		62 96 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_1
+						clone		lbl_skill_mp_0
+						rect		64 78 100 14
+					</label>
+										
+					<edit>
+						id		edit_skill_2
+						clone	edit_skill_0
+						rect	114 154 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_2
+						clone		lbl_skill_cool_0
+						rect		62 154 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_2
+						clone		lbl_skill_mp_0
+						rect		64 136 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_3
+						clone	edit_skill_0
+						rect	114 212 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_3
+						clone		lbl_skill_cool_0
+						rect		62 212 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_3
+						clone		lbl_skill_mp_0
+						rect		64 194 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_4
+						clone	edit_skill_0
+						rect	114 270 30 18
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_4
+						clone		lbl_skill_cool_0
+						rect		62 270 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_4
+						clone		lbl_skill_mp_0
+						rect		64 252 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_5
+						clone	edit_skill_0
+						rect	114 328 30 18
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_5
+						clone		lbl_skill_cool_0
+						rect		62 328 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_5
+						clone		lbl_skill_mp_0
+						rect		64 310 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_6
+						clone	edit_skill_0
+						rect	114 386 30 18
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_6
+						clone		lbl_skill_cool_0
+						rect		62 386 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_6
+						clone		lbl_skill_mp_0
+						rect		64 368 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_7
+						clone	edit_skill_0
+						rect	324 38 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_7
+						clone		lbl_skill_cool_0
+						rect		272 38 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_7
+						clone		lbl_skill_mp_0
+						rect		274 20 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_8
+						clone	edit_skill_0
+						rect	324 96 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_8
+						clone		lbl_skill_cool_0
+						rect		272 96 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_8
+						clone		lbl_skill_mp_0
+						rect		274 78 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_9
+						clone	edit_skill_0
+						rect	324 154 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_9
+						clone		lbl_skill_cool_0
+						rect		272 154 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_9
+						clone		lbl_skill_mp_0
+						rect		274 136 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_10
+						clone	edit_skill_0
+						rect	324 212 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_10
+						clone		lbl_skill_cool_0
+						rect		272 212 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_10
+						clone		lbl_skill_mp_0
+						rect		274 194 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_11
+						clone	edit_skill_0
+						rect	324 270 30 18
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_11
+						clone		lbl_skill_cool_0
+						rect		272 270 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_11
+						clone		lbl_skill_mp_0
+						rect		274 252 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_12
+						clone	edit_skill_0
+						rect	324 328 30 18
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_12
+						clone		lbl_skill_cool_0
+						rect		272 328 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_12
+						clone		lbl_skill_mp_0
+						rect		274 310 100 14
+					</label>
+					
+					<edit>
+						id		edit_skill_13
+						clone	edit_skill_0
+						rect	324 386 30 18
+					</edit>
+					
+					<label>
+						id			lbl_skill_cool_13
+						clone		lbl_skill_cool_0
+						rect		272 386 60 14
+					</label>
+					
+					<label>
+						id			lbl_skill_mp_13
+						clone		lbl_skill_mp_0
+						rect		274 368 100 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_0
+						enable		true
+						visible		true
+						layer		110
+						align		right
+						rect		1 2 20 14
+						<title>
+							color		ffffffff
+							fontIndex	2
+							position	0 2
+						</title>
+					</label>
+					
+					<label>
+						id			lbl_skill_num_1
+						clone		lbl_skill_num_0
+						rect		1 60 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_2
+						clone		lbl_skill_num_0
+						rect		1 118 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_3
+						clone		lbl_skill_num_0
+						rect		1 176 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_4
+						clone		lbl_skill_num_0
+						rect		1 234 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_5
+						clone		lbl_skill_num_0
+						rect		1 292 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_6
+						clone		lbl_skill_num_0
+						rect		1 353 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_7
+						clone		lbl_skill_num_0
+						rect		209 2 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_8
+						clone		lbl_skill_num_0
+						rect		209 60 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_9
+						clone		lbl_skill_num_0
+						rect		209 118 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_10
+						clone		lbl_skill_num_0
+						rect		209 176 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_11
+						clone		lbl_skill_num_0
+						rect		209 234 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_12
+						clone		lbl_skill_num_0
+						rect		209 292 20 14
+					</label>
+					
+					<label>
+						id			lbl_skill_num_13
+						clone		lbl_skill_num_0
+						rect		209 353 20 14
+					</label>
+				</panel>
+			</panel>		
+		</panel>
+		
+		
+		<panel>
+			id			pan_item
+			enable		true
+			visible		false
+			layer		200
+			rect		0 190 448 290
+			
+			<panel>
+				id			pan_item_bg
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 448 300
+				
+				<panel>
+					id		pan_item_list			
+					enable		true
+					visible		true
+					layer		100
+					rect		7 0 448 281		
+					
+					<panel>
+						id		pan_item_0
+						enable		true
+						visible		true
+						layer		150
+						rect		17 5 44 44
+						
+						<item>
+							id			item_0
+							enable		true
+							visible		true
+							layer		200
+							rect		0 0 44 44
+							cellsize	44 44
+							align 		center
+						</item>	
+					</panel>
+
+					<panel>
+						id		pan_item_1
+						enable		true
+						visible		true
+						layer		150
+						rect		17 63 44 44
+
+						<item>
+							id			item_1
+							enable		true
+							visible		true
+							layer		200
+							rect		0 0 44 44
+							cellsize	44 44
+							align 		center
+						</item>	
+					</panel>
+
+					<panel>
+						id		pan_item_2
+						enable		true
+						visible		true
+						layer		150
+						rect		17 121 44 44
+
+						<item>
+							id			item_2
+							enable		true
+							visible		true
+							layer		200
+							rect		0 0 44 44
+							cellsize	44 44
+							align 		center
+						</item>	
+					</panel>
+
+					<panel>
+						id		pan_item_3
+						enable		true
+						visible		true
+						layer		150
+						rect		17 179 44 44
+						
+						<item>
+							id			item_3
+							enable		true
+							visible		true
+							layer		200
+							rect		0 0 44 44
+							cellsize	44 44
+							align 		center
+						</item>	
+					</panel>
+					
+					<panel>
+						id		pan_item_4
+						enable		true
+						visible		true
+						layer		150
+						rect		17 237 44 44
+
+						<item>
+							id			item_4
+							enable		true
+							visible		true
+							layer		200
+							rect		0 0 44 44
+							cellsize	44 44
+							align 		center
+						</item>	
+					</panel>
+					
+					<panel>
+						id		pan_item_5
+						enable		true
+						visible		true
+						layer		150
+						rect		226 5 44 44
+						
+						<item>
+							id			item_5
+							enable		true
+							visible		true
+							layer		200
+							rect		0 0 44 44
+							cellsize	44 44
+							align 		center
+						</item>	
+					</panel>
+
+					<panel>
+						id		pan_item_6
+						enable		true
+						visible		true
+						layer		150
+						rect		226 63 44 44
+
+						<item>
+							id			item_6
+							enable		true
+							visible		true
+							layer		200
+							rect		0 0 44 44
+							cellsize	44 44
+							align 		center
+						</item>	
+					</panel>
+
+					<panel>
+						id		pan_item_7
+						enable		true
+						visible		true
+						layer		150
+						rect		226 121 44 44
+
+						<item>
+							id			item_7
+							enable		true
+							visible		true
+							layer		200
+							rect		0 0 44 44
+							cellsize	44 44
+							align 		center
+						</item>	
+					</panel>
+
+					<panel>
+						id		pan_item_8
+						enable		true
+						visible		true
+						layer		150
+						rect		226 179 44 44
+						
+						<item>
+							id			item_8
+							enable		true
+							visible		true
+							layer		200
+							rect		0 0 44 44
+							cellsize	44 44
+							align 		center
+						</item>	
+					</panel>
+					
+					<panel>
+						id		pan_item_9
+						enable		true
+						visible		true
+						layer		150
+						rect		226 237 44 44
+
+						<item>
+							id			item_9
+							enable		true
+							visible		true
+							layer		200
+							rect		0 0 44 44
+							cellsize	44 44
+							align 		center
+						</item>	
+					</panel>
+					
+					<checkbox>
+						id		btn_item_0
+						enable		false
+						visible		true
+						layer		150
+						rect		17 5 44 44
+						type		1
+						<image>
+							key	none
+							screen	auto_hunt_config
+							index	13
+						</image>
+						<image>
+							key	check
+							screen	auto_hunt_config
+							index	12
+						</image>
+					</checkbox>
+					
+					<checkbox>
+						id		btn_item_1
+						clone	btn_item_0
+						rect	17 63 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_item_2
+						clone	btn_item_0
+						rect	17 121 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_item_3
+						clone	btn_item_0
+						rect	17 179 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_item_4
+						clone	btn_item_0
+						rect	17 237 44 44
+					</checkbox>
+					
+					
+					<checkbox>
+						id		btn_item_5
+						clone	btn_item_0
+						rect	226 5 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_item_6
+						clone	btn_item_0
+						rect	226 63 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_item_7
+						clone	btn_item_0
+						rect	226 121 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_item_8
+						clone	btn_item_0
+						rect	226 179 44 44
+					</checkbox>
+					
+					<checkbox>
+						id		btn_item_9
+						clone	btn_item_0
+						rect	226 237 44 44
+					</checkbox>
+					
+					<combobox>
+						id			combobox_item_0
+						enable		true
+						visible		true
+						border 		false
+						layer		110
+						rect		54 18 100 20
+						
+						<iteminfo>		
+							rect 	0 0 100 20
+						</iteminfo>
+
+						<nodeinfo>
+							selrect		0 0 100 15 
+							btnrect		90 2 12 12
+							
+							<image>
+								key		board_body
+								screen	party
+								index	4
+							</image>
+							<image>
+								key		btn_none
+								screen	etc_01
+								index	15
+							</image>
+							<image>
+								key		btn_over
+								screen	etc_01
+								index	16
+							</image>
+							<image>
+								key		btn_down
+								screen	etc_01
+								index	17
+							</image>
+						</nodeinfo>		
+					</combobox>
+					
+					<combobox>
+						id			combobox_item_1
+						clone		combobox_item_0
+						rect		54 76 100 20
+					</combobox>	
+					
+					
+					
+					<combobox>
+						id			combobox_item_2
+						clone		combobox_item_0
+						rect		54 134 100 20
+					</combobox>	
+					
+					
+					
+					<combobox>
+						id			combobox_item_3
+						clone		combobox_item_0
+						rect		54 192 100 20
+					</combobox>
+					
+					
+					
+					<combobox>
+						id			combobox_item_4
+						clone		combobox_item_0
+						rect		54 250 100 20
+					</combobox>
+					
+					
+					<combobox>
+						id			combobox_item_5
+						clone		combobox_item_0
+						rect		263 18 100 20
+					</combobox>	
+					<combobox>
+						id			combobox_item_6
+						clone		combobox_item_0
+						rect		263 76 100 20
+					</combobox>	
+					<combobox>
+						id			combobox_item_7
+						clone		combobox_item_0
+						rect		263 134 100 20
+					</combobox>
+					<combobox>
+						id			combobox_item_8
+						clone		combobox_item_0
+						rect		263 192 100 20
+					</combobox>
+					<combobox>
+						id			combobox_item_9
+						clone		combobox_item_0
+						rect		263 250 100 20
+					</combobox>
+					
+					<label>
+						id			lbl_item_name_0
+						enable		true
+						visible		true
+						layer		110
+						align		left
+						rect		62 0 270 14
+						<title>
+							color		ffffffff
+							fontIndex	4
+							position	0 2
+						</title>
+					</label>
+					
+					<label>
+						id			lbl_item_name_1
+						clone		lbl_item_name_0
+						rect		62 58 270 14
+					</label>
+					
+					<label>
+						id			lbl_item_name_2
+						clone		lbl_item_name_0
+						rect		62 116 270 14
+					</label>
+					
+					<label>
+						id			lbl_item_name_3
+						clone		lbl_item_name_0
+						rect		62 174 270 14
+					</label>
+					
+					<label>
+						id			lbl_item_name_4
+						clone		lbl_item_name_0
+						rect		62 232 270 14
+					</label>
+					
+					<label>
+						id			lbl_item_name_5
+						clone		lbl_item_name_0
+						rect		271 0 270 14
+					</label>
+					<label>
+						id			lbl_item_name_6
+						clone		lbl_item_name_0
+						rect		271 58 270 14
+					</label>
+					<label>
+						id			lbl_item_name_7
+						clone		lbl_item_name_0
+						rect		271 116 270 14
+					</label>
+					<label>
+						id			lbl_item_name_8
+						clone		lbl_item_name_0
+						rect		271 174 270 14
+					</label>
+					<label>
+						id			lbl_item_name_9
+						clone		lbl_item_name_0
+						rect		271 232 270 14
+					</label>
+					
+					<edit>
+						id		edit_item_0
+						enable		true
+						visible		true
+						layer		200
+						rect		66 34 30 18	
+						maxlength	4
+						font_type	2
+						input_type	2
+						align		center
+						color		ffffffff
+						multiline   false
+				
+						<image>
+							key		none
+							screen	smartwarp
+							index	5
+							color 	80FFFFFF
+						</image>
+					</edit>
+					
+					<label>
+						id			lbl_item_cool_0
+						enable		true
+						visible		true
+						layer		110
+						align		left
+						rect		94 34 60 14
+						
+						<title>
+							color		ffffffff
+							fontIndex	2
+							position	0 2
+							text2		370 28
+						</title>
+					</label>
+					
+					<edit>
+						id		edit_item_1
+						clone	edit_item_0
+						rect	66 92 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_item_cool_1
+						clone		lbl_item_cool_0
+						rect		94 92 60 14
+					</label>
+					
+					<edit>
+						id		edit_item_2
+						clone	edit_item_0
+						rect	66 150 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_item_cool_2
+						clone		lbl_item_cool_0
+						rect		94 150 60 14
+					</label>
+					
+					<edit>
+						id		edit_item_3
+						clone	edit_item_0
+						rect	66 208 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_item_cool_3
+						clone		lbl_item_cool_0
+						rect		94 208 60 14
+					</label>
+					
+					<edit>
+						id		edit_item_4
+						clone	edit_item_0
+						rect	66 266 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_item_cool_4
+						clone		lbl_item_cool_0
+						rect		94 266 60 14
+					</label>
+					
+					<edit>
+						id		edit_item_5
+						clone	edit_item_0
+						rect	275 34 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_item_cool_5
+						clone		lbl_item_cool_0
+						rect		303 34 60 14
+					</label>
+					
+					<edit>
+						id		edit_item_6
+						clone	edit_item_0
+						rect	275 92 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_item_cool_6
+						clone		lbl_item_cool_0
+						rect		303 92 60 14
+					</label>
+					
+					<edit>
+						id		edit_item_7
+						clone	edit_item_0
+						rect	275 150 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_item_cool_7
+						clone		lbl_item_cool_0
+						rect		303 150 60 14
+					</label>
+					
+					<edit>
+						id		edit_item_8
+						clone	edit_item_0
+						rect	275 208 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_item_cool_8
+						clone		lbl_item_cool_0
+						rect		303 208 60 14
+					</label>
+					
+					<edit>
+						id		edit_item_9
+						clone	edit_item_0
+						rect	275 266 30 18	
+					</edit>
+					
+					<label>
+						id			lbl_item_cool_9
+						clone		lbl_item_cool_0
+						rect		303 266 60 14
+					</label>
+					
+					<checkbox>
+						id			check_item_0
+						enable		true
+						visible		true
+						layer		200
+						rect		0 14 20 20
+						<image>
+							key			none
+							screen		etc_01
+							index		303
+						</image>
+						<image>
+							key			check
+							screen		etc_01
+							index		304
+						</image>
+					</checkbox>
+					<checkbox>
+						id			check_item_1
+						clone		check_item_0
+						rect		0 72 20 20
+					</checkbox>
+					<checkbox>
+						id			check_item_2
+						clone		check_item_0
+						rect		0 130 20 20
+					</checkbox>
+					<checkbox>
+						id			check_item_3
+						clone		check_item_0
+						rect		0 188 20 20
+					</checkbox>
+					<checkbox>
+						id			check_item_4
+						clone		check_item_0
+						rect		0 246 20 20
+					</checkbox>
+					
+					<checkbox>
+						id			check_item_5
+						clone		check_item_0
+						rect		210 14 20 20
+					</checkbox>
+					<checkbox>
+						id			check_item_6
+						clone		check_item_0
+						rect		210 72 20 20
+					</checkbox>
+					<checkbox>
+						id			check_item_7
+						clone		check_item_0
+						rect		210 130 20 20
+					</checkbox>
+					<checkbox>
+						id			check_item_8
+						clone		check_item_0
+						rect		210 188 20 20
+					</checkbox>
+					<checkbox>
+						id			check_item_9
+						clone		check_item_0
+						rect		210 246 20 20
+					</checkbox>
+				</panel>
+			</panel>		
+		</panel>
+	</panel>
+</window>

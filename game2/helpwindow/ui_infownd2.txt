@@ -1,0 +1,1199 @@
+<window>						
+	name			info_win		
+	enable			TRUE		
+	visible			TRUE		
+	intersect		TRUE			
+	layer			100		
+	position		center center
+	rect			-382 -247 382 248		
+	titlerect		8 9 749 25			
+	<panel>					
+		id		pan_top_bg		
+		enable		TRUE		
+		visible		TRUE		
+		layer		10		
+		rect		0 0 764 63		
+		<image>				
+			key		0	
+			screen	new_help		
+			index	1		
+		</image>				
+	</panel>					
+	<panel>					
+		id		pan_middle_bg		
+		enable		TRUE		
+		visible		TRUE		
+		layer		10		
+		rect		0 63 764 407		
+		<image>				
+			key		0	
+			screen	new_help		
+			index	2		
+		</image>		
+	</panel>					
+	<panel>					
+		id		pan_bottom_bg		
+		enable		TRUE		
+		visible		TRUE		
+		layer		10		
+		rect		0 470 764 27		
+		<image>				
+			key		0	
+			screen	new_help		
+			index	3		
+		</image>				
+	</panel>					
+						
+	<label>					
+		id			lbl_title	
+		enable		TRUE		
+		visible		TRUE		
+		layer		60		
+		rect		348 14 369 14		
+		<title>				
+			color		ffffffff	
+			fontIndex	4		
+			text2 		120 1	
+		</title>				
+	</label>					
+	<button>					
+		id			btn_exit	
+		enable		TRUE		
+		visible		TRUE		
+		layer		100		
+		rect		734 12 15 15
+
+		<image>				
+			key		none	
+			screen	etc_01		
+			index		315
+
+		</image>				
+		<image>				
+			key		over	
+			screen	etc_01		
+			index		316
+
+		</image>				
+		<image>				
+			key		down	
+			screen	etc_01		
+			index		317
+
+		</image>				
+	</button>					
+						
+	<button>					
+		id			btn_tab1	
+		enable		TRUE		
+		visible		TRUE		
+		layer		100		
+		type		0		
+		rect		10 38 71 22		
+		<image>				
+			key		none	
+			screen	etc_01		
+			index	453		
+		</image>				
+		<image>				
+			key		check	
+			screen	etc_01
+			index	452		
+		</image>				
+		<title>				
+			state 		none	
+			color		ff929292	
+			fontIndex	2		
+			position	13 6		
+			text2		120 41	
+		</title>				
+		<title>				
+			state 		over	
+			color		ffffffff	
+			fontIndex	2		
+			position	13 6		
+		</title>				
+		<title>				
+			state 		down	
+			color		ff929292	
+			fontIndex	2		
+			position	13 7		
+		</title>				
+		<title>				
+			state 		check	
+			color		ffffffff	
+			fontIndex	2		
+			position	13 6		
+		</title>				
+	</button>					
+	<button>					
+		id			btn_tab2	
+		enable		TRUE		
+		visible		TRUE		
+		layer		100		
+		type		0		
+		rect		83 38 71 22		
+		<image>				
+			key		none	
+			screen	etc_01
+			index	453		
+		</image>				
+		<image>				
+			key		check	
+			screen	etc_01
+			index	452		
+		</image>				
+		<title>				
+			state 		none	
+			color		ff929292	
+			fontIndex	2		
+			position	9 6		
+			text2		120 42
+		</title>				
+		<title>				
+			state 		over	
+			color		ffffffff	
+			fontIndex	2		
+			position	9 6		
+		</title>				
+		<title>				
+			state 		down	
+			color		ff929292	
+			fontIndex	2		
+			position	10 7		
+		</title>				
+		<title>				
+			state 		check	
+			color		ffffffff	
+			fontIndex	2		
+			position	9 6		
+		</title>				
+	</button>					
+	<button>					
+		id			btn_tab3	
+		enable		TRUE		
+		visible		TRUE		
+		layer		100		
+		type		0		
+		rect		156 38 71 22		
+		<image>				
+			key		none	
+			screen	etc_01
+			index	453		
+		</image>				
+		<image>				
+			key		check	
+			screen	etc_01
+			index	452		
+		</image>				
+		<title>				
+			state 		none	
+			color		ff929292	
+			fontIndex	2		
+			position	9 6		
+			text2		120 43
+		</title>				
+		<title>				
+			state 		over	
+			color		ffffffff	
+			fontIndex	2		
+			position	9 6		
+		</title>				
+		<title>				
+			state 		down	
+			color		ff929292	
+			fontIndex	2		
+			position	10 7		
+		</title>				
+		<title>				
+			state 		check	
+			color		ffffffff	
+			fontIndex	2		
+			position	9 4		
+		</title>				
+	</button>				
+	<button>					
+		id			btn_tab4	
+		enable		TRUE		
+		visible		FALSE		
+		layer		100		
+		type		0		
+		rect		229 38 71 22		
+		<image>				
+			key		none	
+			screen	etc_01
+			index	453		
+		</image>				
+		<image>				
+			key		check	
+			screen	etc_01
+			index	452		
+		</image>				
+		<title>				
+			state 		none	
+			color		ff929292	
+			fontIndex	2		
+			position	9 6		
+			text2		120 44
+		</title>				
+		<title>				
+			state 		over	
+			color		ffffffff	
+			fontIndex	2		
+			position	9 6		
+		</title>				
+		<title>				
+			state 		down	
+			color		ff929292	
+			fontIndex	2		
+			position	10 7		
+		</title>				
+		<title>				
+			state 		check	
+			color		ffffffff	
+			fontIndex	2		
+			position	9 4		
+		</title>				
+	</button>
+	<button>					
+		id			btn_tab5	
+		enable		TRUE		
+		visible		FALSE
+		layer		100		
+		type		0		
+		rect		302 38 71 22		
+		<image>				
+			key		none	
+			screen	etc_01
+			index	453		
+		</image>				
+		<image>				
+			key		check	
+			screen	etc_01
+			index	452		
+		</image>				
+		<title>				
+			state 		none	
+			color		ff929292	
+			fontIndex	2		
+			position	9 6		
+			text2		120 45
+		</title>				
+		<title>				
+			state 		over	
+			color		ffffffff	
+			fontIndex	2		
+			position	9 6		
+		</title>				
+		<title>				
+			state 		down	
+			color		ff929292	
+			fontIndex	2		
+			position	10 7		
+		</title>				
+		<title>				
+			state 		check	
+			color		ffffffff	
+			fontIndex	2		
+			position	9 4		
+		</title>				
+	</button>	
+	<panel>					
+		id			pan_tab1
+		enable		TRUE		
+		visible		TRUE		
+		layer		150		
+		rect		10 63 220 425		
+	<multitreectrl>
+		id		multi_tree
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 215 426
+		nodewidth   	300
+		nodeheight	15
+		offset		14
+		btnsize		11
+		autoopen	true
+		treetype	1	
+		<title>
+			state		over
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		check
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		head
+			color		ff74AEE4
+			fontIndex	4
+		</title>
+		<title>
+			state		sub
+			color		ffFFCA40
+			fontIndex	4
+		</title>
+		<title>
+			state		finish
+			color		ffFFB900
+			fontIndex	4
+		</title>
+		<title>
+			state		unknown
+			color		ffBFBFBF
+			fontIndex	4
+		</title>
+		<title>
+			state		complete
+			color		ffEFEFEF
+			fontIndex	4
+		</title>
+		<image>
+			key	    none
+			color 	00FFFFFF
+			screen	common
+			index	1
+		</image>
+		<image>
+			key		check
+			screen	new_help
+			index	8
+		</image>
+		<image>
+			key		plus
+			screen	new_help
+			index	7
+		</image>
+		<image>
+			key		minus
+			screen	new_help
+			index	6
+		</image>
+		<vscroll>
+			id			multi_tree_scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		204 0 13 426
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			multi_tree_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 13
+				type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	414
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	415
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	416
+						</image>
+			</button>
+			<button>
+				id			multi_tree_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 414 13 13
+				type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	418
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	419
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	420
+						</image>
+			</button>
+			<panel>
+				id			multi_tree_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 36
+				moveable	true
+				noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	422
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	423
+						</image>
+			</panel>
+		</vscroll>
+	</multitreectrl>							
+	</panel>		
+	<panel>					
+		id			pan_tab2
+		enable		TRUE		
+		visible		FALSE
+		layer		150		
+		rect		10 63 220 425		
+	<multitreectrl>
+		id		multi_tree
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 215 426
+		nodewidth   	300
+		nodeheight	15
+		offset		14
+		btnsize		11
+		autoopen	true
+		treetype	1
+		<title>
+			state		over
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		check
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		head
+			color		ff74AEE4
+			fontIndex	4
+		</title>
+		<title>
+			state		sub
+			color		ffFFCA40
+			fontIndex	4
+		</title>
+		<title>
+			state		finish
+			color		ffFFB900
+			fontIndex	4
+		</title>
+		<title>
+			state		unknown
+			color		ffBFBFBF
+			fontIndex	4
+		</title>
+		<title>
+			state		complete
+			color		ffEFEFEF
+			fontIndex	4
+		</title>
+		<image>
+			key	    none
+			color 	00FFFFFF
+			screen	common
+			index	1
+		</image>
+		<image>
+			key		check
+			screen	new_help
+			index	8
+		</image>
+		<image>
+			key		plus
+			screen	new_help
+			index	7
+		</image>
+		<image>
+			key		minus
+			screen	new_help
+			index	6
+		</image>
+		<vscroll>
+			id			multi_tree_scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		204 0 13 426
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			multi_tree_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 13
+				type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	414
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	415
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	416
+						</image>
+			</button>
+			<button>
+				id			multi_tree_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 414 13 13
+				type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	418
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	419
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	420
+						</image>
+			</button>
+			<panel>
+				id			multi_tree_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 36
+				moveable	true
+				noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	422
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	423
+						</image>
+			</panel>
+		</vscroll>
+	</multitreectrl>							
+	</panel>	
+	<panel>					
+		id			pan_tab3
+		enable		TRUE		
+		visible		FALSE
+		layer		150		
+		rect		10 63 220 425		
+	<multitreectrl>
+		id		multi_tree
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 215 426
+		nodewidth   	300
+		nodeheight	15
+		offset		14
+		btnsize		11
+		autoopen	true
+		treetype	1
+		<title>
+			state		over
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		check
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		head
+			color		ff74AEE4
+			fontIndex	4
+		</title>
+		<title>
+			state		sub
+			color		ffFFCA40
+			fontIndex	4
+		</title>
+		<title>
+			state		finish
+			color		ffFFB900
+			fontIndex	4
+		</title>
+		<title>
+			state		unknown
+			color		ffBFBFBF
+			fontIndex	4
+		</title>
+		<title>
+			state		complete
+			color		ffEFEFEF
+			fontIndex	4
+		</title>
+		<image>
+			key	    none
+			color 	00FFFFFF
+			screen	common
+			index	1
+		</image>
+		<image>
+			key		check
+			screen	new_help
+			index	8
+		</image>
+		<image>
+			key		plus
+			screen	new_help
+			index	7
+		</image>
+		<image>
+			key		minus
+			screen	new_help
+			index	6
+		</image>
+		<vscroll>
+			id			multi_tree_scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		204 0 13 426
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			multi_tree_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 13
+				type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	414
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	415
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	416
+						</image>
+			</button>
+			<button>
+				id			multi_tree_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 414 13 13
+				type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	418
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	419
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	420
+						</image>
+			</button>
+			<panel>
+				id			multi_tree_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 36
+				moveable	true
+				noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	422
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	423
+						</image>
+			</panel>
+		</vscroll>
+	</multitreectrl>							
+	</panel>		
+	<panel>					
+		id			pan_tab4
+		enable		TRUE		
+		visible		FALSE
+		layer		150		
+		rect		10 63 220 425		
+	<multitreectrl>
+		id		multi_tree
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 215 426
+		nodewidth   	300
+		nodeheight	15
+		offset		14
+		btnsize		11
+		autoopen	true
+		treetype	1
+		<title>
+			state		over
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		check
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		head
+			color		ff74AEE4
+			fontIndex	4
+		</title>
+		<title>
+			state		sub
+			color		ffFFCA40
+			fontIndex	4
+		</title>
+		<title>
+			state		finish
+			color		ffFFB900
+			fontIndex	4
+		</title>
+		<title>
+			state		unknown
+			color		ffBFBFBF
+			fontIndex	4
+		</title>
+		<title>
+			state		complete
+			color		ffEFEFEF
+			fontIndex	4
+		</title>
+		<image>
+			key	    none
+			color 	00FFFFFF
+			screen	common
+			index	1
+		</image>
+		<image>
+			key		check
+			screen	new_help
+			index	8
+		</image>
+		<image>
+			key		plus
+			screen	new_help
+			index	7
+		</image>
+		<image>
+			key		minus
+			screen	new_help
+			index	6
+		</image>
+		<vscroll>
+			id			multi_tree_scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		204 0 13 426
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			multi_tree_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 13
+				type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	414
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	415
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	416
+						</image>
+			</button>
+			<button>
+				id			multi_tree_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 414 13 13
+				type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	418
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	419
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	420
+						</image>
+			</button>
+			<panel>
+				id			multi_tree_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 36
+				moveable	true
+				noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	422
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	423
+						</image>
+			</panel>
+		</vscroll>
+	</multitreectrl>							
+	</panel>		
+	<panel>					
+		id			pan_tab5
+		enable		TRUE		
+		visible		FALSE
+		layer		150		
+		rect		10 63 220 425		
+	<multitreectrl>
+		id		multi_tree
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 215 426
+		nodewidth   	300
+		nodeheight	15
+		offset		14
+		btnsize		11
+		autoopen	true
+		treetype	1
+		<title>
+			state		over
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		check
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		head
+			color		ff74AEE4
+			fontIndex	4
+		</title>
+		<title>
+			state		sub
+			color		ffFFCA40
+			fontIndex	4
+		</title>
+		<title>
+			state		finish
+			color		ffFFB900
+			fontIndex	4
+		</title>
+		<title>
+			state		unknown
+			color		ffBFBFBF
+			fontIndex	4
+		</title>
+		<title>
+			state		complete
+			color		ffEFEFEF
+			fontIndex	4
+		</title>
+		<image>
+			key	    none
+			color 	00FFFFFF
+			screen	common
+			index	1
+		</image>
+		<image>
+			key		check
+			screen	new_help
+			index	8
+		</image>
+		<image>
+			key		plus
+			screen	new_help
+			index	7
+		</image>
+		<image>
+			key		minus
+			screen	new_help
+			index	6
+		</image>
+		<vscroll>
+			id			multi_tree_scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		204 0 13 426
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			multi_tree_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 13
+				type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	414
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	415
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	416
+						</image>
+			</button>
+			<button>
+				id			multi_tree_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 414 13 13
+				type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	418
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	419
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	420
+						</image>
+			</button>
+			<panel>
+				id			multi_tree_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 13 36
+				moveable	true
+				noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	422
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	423
+						</image>
+			</panel>
+		</vscroll>
+	</multitreectrl>							
+	</panel>	
+	<label>					
+		id			lbl_subTitle	
+		enable		TRUE		
+		visible		TRUE		
+		layer		100		
+		rect		400 42 330 14		
+		align 		center		
+		<title>				
+			color		FFF4BE3D	
+			fontIndex	4		
+		</title>				
+	</label>
+	<panel>					
+		id		pan_textbox
+		enable		TRUE		
+		visible		TRUE		
+		layer		220		
+		rect		229 63 1505 424
+		<image>				
+			key	0	
+			screen	help		
+			index	10000		
+		</image>										
+	<textbox>					
+		id		textbox
+		enable		TRUE
+		visible		TRUE
+		layer		100		
+		rect		0 0 1500 425
+		lineheight	20			
+		margin		0 0		
+		fonttype	2			
+		color		FFFFFFFF	
+		autoline 	true
+		<title>				
+			state 		none	
+			color		ff929292	
+			fontIndex	2						
+		</title>				
+		<title>				
+			state 		over	
+			color		ffffffff	
+			fontIndex	2		
+		</title>				
+		<title>				
+			state 		down	
+			color		ff929292	
+			fontIndex	2		
+		</title>				
+				<vscroll>
+					id			textbox_scroll
+					enable		true
+					visible		true
+					layer		10
+					rect		515 0 13 426
+					maxvalue	0
+					buttontick  1
+					<button>
+						id			textbox_scroll_upbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 13 13
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	414
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	415
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	416
+						</image>
+					</button>
+					<button>
+						id			textbox_scroll_downbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 414 13 13
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	418
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	419
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	420
+						</image>
+					</button>
+					<panel>
+						id			textbox_scroll_bar
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 13 36
+						moveable	true
+						noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	422
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	423
+						</image>
+					</panel>
+				</vscroll>
+
+
+
+
+
+
+
+
+
+
+		</textbox>
+	</panel>	
+				<panel>					
+				id		pan_chart
+				enable		TRUE		
+				visible		TRUE		
+				layer		120		
+				rect		229 63 512 415			
+				<image>				
+					key	0	
+					screen	help		
+					index	10000		
+				</image>				
+				</panel>					
+
+</window>						

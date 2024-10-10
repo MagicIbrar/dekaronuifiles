@@ -1,0 +1,76 @@
+window_layer	TOP
+window_size	193	245
+window_alignaxis	center	center
+window_position	0	0
+window_visible	false
+
+create_control	panel	pan_systemmenu
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\menu_01.dds	0	0	193	245
+	control_drawdiv	xy	2
+	control_drawsize	193	245
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_game_option
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\storage_01.dds	366	0	146	32
+	control_drawdiv	xy	2
+	control_drawsize	146	32
+	control_drawpoint	24	30
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_game_char
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\storage_01.dds	366	128	146	32
+	control_drawdiv	xy	2
+	control_drawsize	146	32
+	control_drawpoint	24	69
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_logout
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\storage_01.dds	366	256	146	32
+	control_drawdiv	xy	2
+	control_drawsize	146	32
+	control_drawpoint	24	108
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_game_exit
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\storage_01.dds	366	384	146	32
+	control_drawdiv	xy	2
+	control_drawsize	146	32
+	control_drawpoint	24	147
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_end
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\system.dds	366	0	146	32
+	control_drawdiv	xy	1
+	control_drawsize	146	32
+	control_drawpoint	24	186
+	control_enable	true
+	control_visible	true
+	}
+}

@@ -1,0 +1,38 @@
+window_layer	auto
+window_size	259	125
+window_alignaxis	center	center
+window_position	0	0
+window_visible	false
+
+create_control	panel	pan_char_error
+{
+	control_group	0
+	control_image	oxxx	UI\Game\message_del_01.dds	0	125	256	125
+	control_drawdiv	xy	2
+	control_drawsize	256	125
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control text	txt_ex
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooooo	UI\Game\theme01\trade_message_01.dds	298	235	214	47
+	control_drawsize	214	47
+	control_drawpoint	24	16	
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_end
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooooo	UI\Game\message_del_01.dds	259	125	95	32
+	control_drawsize	95	32
+	control_drawpoint	83	76	
+	control_enable	true
+	control_visible	true
+	}
+}

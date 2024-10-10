@@ -1,0 +1,49 @@
+<window>
+	name			zeolitewnd
+	enable			true
+	visible			true
+	layer			1000
+	layertype		bottom
+	rect			0 0 1024 768
+	
+	<panel>
+		id			pan_zeolite_type
+		enable		true
+		visible		false
+		layer		10
+		intersect	false
+		rect		0 0 50 71
+		<image>
+			key	none
+			screen	war_occpuy
+			index	1101
+		</image>
+		<panel>
+			id			pan_guild_bg
+			enable		true
+			visible		false
+			layer		10
+			intersect	false
+			rect		5 26 40 40
+			<image>
+				key	none
+				screen	guildbg
+				index	0
+			</image>
+			<panel>
+				id			pan_guild
+				enable		true
+				visible		false
+				layer		10
+				intersect	false
+				rect		0 0 40 40
+				<image>
+					key	none
+					screen	guildicon
+					index	0
+				</image>
+			</panel>
+		</panel>
+	</panel>
+	
+</window>

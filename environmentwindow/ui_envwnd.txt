@@ -1,0 +1,1398 @@
+<window>
+	name			envwnd
+	enable			true
+	visible			true
+	layer			100
+	rect			100	100 700 767
+	titlerect		0 0 600 30
+	loadchild		UI/EnvironmentWindow/ui_envwnd_cam.txt
+	loadchild		UI/EnvironmentWindow/ui_envwnd_etc.txt
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 700 667
+		<image>
+			key		0
+			screen	Itemchoice
+			index	21
+			color	90010101
+		</image>
+		<combobox>
+			id				combo_select_type
+			enable			true
+			visible			true
+			border 			false
+			layer			100
+			rect			50 4 132 27
+			<image>
+				key		0
+				screen	chat
+				index	1
+				color	90010101
+			</image>	
+				
+			<iteminfo>
+				rect 		5 0 99 20
+				<item>
+					index   0
+					data	0
+					text	"Light"
+				</item>
+				<item>
+					index   1
+					data	1
+					text	"Camera"
+				</item>
+				<item>
+					index   2
+					data	2
+					text	"ETC"
+				</item>
+			</iteminfo>
+			<nodeinfo>
+				selrect	0 0 109 20 
+				btnrect	112 0 19 20
+				
+				<image>
+					key		board_body
+					screen	chat
+					index	1
+					color	90010101
+				</image>											
+				<image>
+					key	btn_none
+					screen	party
+					index	15
+				</image>
+				<image>
+					key	btn_over
+					screen	party
+					index	16
+				</image>
+				<image>
+					key	btn_down
+					screen	party
+					index	17
+				</image>
+			</nodeinfo>	
+		</combobox>	
+		<button>
+			id			btn_open
+			enable		true
+			visible		true
+			layer		100
+			rect		200 4 50 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		90000000
+				fontIndex	2
+				text		"Open"
+			</title>
+			<title>
+				state		over
+				color		90FFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		6F000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_save
+			enable		true
+			visible		true
+			layer		100
+			rect		260 4 50 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		90000000
+				fontIndex	2
+				text		"Save"
+			</title>
+			<title>
+				state		over
+				color		90FFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		6F000000
+				fontIndex	2
+			</title>
+		</button>	
+		<button>
+			id			btn_plus
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		361 4 19 20
+			<image>
+				key			none
+				screen		mapbuilder
+				index		10
+			</image>
+			<image>
+				key			over
+				screen		mapbuilder
+				index		10
+			</image>
+			<image>
+				key			down
+				screen		mapbuilder
+				index		12
+			</image>
+		</button>
+		<button>
+			id			btn_minus
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		390 4 19 20
+			<image>
+				key			none
+				screen		mapbuilder
+				index		20
+			</image>
+			<image>
+				key			over
+				screen		mapbuilder
+				index		20
+			</image>
+			<image>
+				key			down
+				screen		mapbuilder
+				index		22
+			</image>
+		</button>		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		420 4 21 21
+			sound  0
+			<image>
+				key			none
+				screen		mapbuilder
+				index		30
+			</image>
+			<image>
+				key			down
+				screen		mapbuilder
+				index		32
+			</image>
+		</button>
+		
+	// 라이트용 
+		<panel>
+			id			pan_light
+			enable		true
+			visible		true
+			layer		10
+			rect		2 52 410 462
+		// ambient
+			<label>
+				id			lbl_ambient
+				enable		true
+				visible		true
+				layer		101
+				rect		100 5 100 20
+				<title>
+					color		ff5566aa
+					fontIndex	6
+					text		"Ambient"
+				</title>
+			</label>
+			<panel>
+				id			pan_amb_line
+				enable		true
+				visible		true
+				layer		10
+				rect		103 40 210 2
+				<image>
+					key		0
+					screen	envtool
+					index	10
+				</image>
+			</panel>
+			<label>
+				id			lbl_amb_r
+				enable		true
+				visible		true
+				layer		101
+				rect		51 32 100 12
+				<title>
+					color		ffff0000
+					fontIndex	2
+					text		"Red"
+				</title>
+			</label>
+			<label>
+				id			lbl_amb_g
+				enable		true
+				visible		true
+				layer		101
+				rect		51 54 100 12
+				<title>
+					color		ff00ff00
+					fontIndex	2
+					text		"Green"
+				</title>
+			</label>
+			<label>
+				id			lbl_amb_b
+				enable		true
+				visible		true
+				layer		101
+				rect		51 76 100 12
+				<title>
+					color		ff0000ff
+					fontIndex	2
+					text		"Blue"
+				</title>
+			</label>
+		// ambient 수치 보기
+			<label>
+				id			sld_amb_r_lbl
+				enable		true
+				visible		true
+				layer		101
+				rect		350 32 100 12
+				<title>
+					color		ff000000
+					fontIndex	2
+				</title>
+			</label>
+			<label>
+				id			sld_amb_g_lbl
+				clone		sld_amb_r_lbl
+				rect		350 54 100 12
+			</label>
+			<label>
+				id			sld_amb_b_lbl
+				clone		sld_amb_r_lbl
+				rect		350 76 100 12
+			</label>
+		// ambient slidebar
+			<slidebar>
+				id			sld_amb_r
+				enable		true
+				visible		true
+				layer		100
+				rect		100 32 215 19
+				min			0
+				max			255
+				minmaxpos	0 200
+				<panel>
+					id			sld_amb_r_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_amb_g
+				enable		true
+				visible		true
+				layer		100
+				rect		100 54 215 19
+				min			0
+				max			255
+				minmaxpos	0 200
+				<panel>
+					id			sld_amb_g_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_amb_b
+				enable		true
+				visible		true
+				layer		100
+				rect		100 76 215 19
+				min			0
+				max			255
+				minmaxpos	0 200
+				<panel>
+					id			sld_amb_b_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+		// Directional
+			<label>
+				id			lbl_directional
+				clone		lbl_ambient
+				rect		100 105 100 20
+				<title>
+					text		"Directional"
+				</title>
+			</label>
+			<panel>
+				id			pan_dir_line
+				enable		true
+				visible		true
+				layer		10
+				rect		103 140 210 2
+				<image>
+					key		0
+					screen	envtool
+					index	10
+				</image>
+			</panel>
+			<label>
+				id			lbl_dir_r
+				clone		lbl_amb_r
+				rect		51 132 100 12
+			</label>
+			<label>
+				id			lbl_dir_g
+				clone		lbl_amb_g
+				rect		51 154 100 12
+			</label>	
+			<label>
+				id			lbl_dir_b
+				clone		lbl_amb_b
+				rect		51 176 100 12
+			</label>
+			<label>
+				id			lbl_dir_v
+				enable		true
+				visible		true
+				layer		101
+				rect		51 198 100 12
+				<title>
+					color		ff888888
+					fontIndex	2
+					text		"X"
+				</title>
+			</label>
+			<label>
+				id			lbl_dir_h
+				enable		true
+				visible		true
+				layer		101
+				rect		51 220 100 12
+				<title>
+					color		ff888888
+					fontIndex	2
+					text		"Y"
+				</title>
+			</label>
+			<label>
+				id			lbl_dir_z
+				enable		true
+				visible		true
+				layer		101
+				rect		51 242 100 12
+				<title>
+					color		ff888888
+					fontIndex	2
+					text		"Z"
+				</title>
+			</label>
+		// Directional Value
+			<label>
+				id			sld_dir_r_lbl
+				clone		sld_amb_r_lbl
+				rect		350 132 100 12
+			</label>
+			<label>
+				id			sld_dir_g_lbl
+				clone		sld_amb_r_lbl
+				rect		350 154 100 12
+			</label>
+			<label>
+				id			sld_dir_b_lbl
+				clone		sld_amb_r_lbl
+				rect		350 176 100 12
+			</label>
+			<label>
+				id			sld_dir_x_lbl
+				clone		sld_amb_r_lbl
+				rect		350 198 100 12
+			</label>
+			<label>
+				id			sld_dir_y_lbl
+				clone		sld_amb_r_lbl
+				rect		350 220 100 12
+			</label>
+			<label>
+				id			sld_dir_z_lbl
+				clone		sld_amb_r_lbl
+				rect		350 242 100 12
+			</label>
+		// Directional Slidebar
+			<slidebar>
+				id			sld_dir_r
+				enable		true
+				visible		true
+				layer		100
+				rect		100 132 215 19
+				min			0
+				max			255
+				minmaxpos	0 200
+				<panel>
+					id			sld_dir_r_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_dir_g
+				enable		true
+				visible		true
+				layer		100
+				rect		100 154 215 19
+				min			0
+				max			255
+				minmaxpos	0 200
+				<panel>
+					id			sld_dir_g_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_dir_b
+				enable		true
+				visible		true
+				layer		100
+				rect		100 176 215 19
+				min			0
+				max			255
+				minmaxpos	0 200
+				<panel>
+					id			sld_dir_b_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_dir_x
+				enable		true
+				visible		true
+				layer		100
+				rect		100 198 215 19
+				min			0
+				max			360
+				minmaxpos	0 200
+				<panel>
+					id			sld_dir_x_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_dir_y
+				enable		true
+				visible		true
+				layer		100
+				rect		100 220 215 19
+				min			0
+				max			360
+				minmaxpos	0 200
+				<panel>
+					id			sld_dir_y_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_dir_z
+				enable		true
+				visible		true
+				layer		100
+				rect		100 242 215 19
+				min			0
+				max			360
+				minmaxpos	0 200
+				<panel>
+					id			sld_dir_z_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+		// FOG
+			<label>
+				id			lbl_fog
+				clone		lbl_ambient
+				rect		100 271 100 20
+				<title>
+					text		"Fog"
+				</title>
+			</label>
+			<panel>
+				id			pan_fog_line
+				enable		true
+				visible		true
+				layer		10
+				rect		103 306 210 2
+				<image>
+					key		0
+					screen	envtool
+					index	10
+				</image>
+			</panel>
+			<label>
+				id			lbl_fog_r
+				clone		lbl_amb_r
+				rect		51 298 100 12
+			</label>
+			<label>
+				id			lbl_fog_g
+				clone		lbl_amb_g
+				rect		51 320 100 12
+			</label>	
+			<label>
+				id			lbl_fog_b
+				clone		lbl_amb_b
+				rect		51 342 100 12
+			</label>
+			<label>
+				id			lbl_fog_near
+				enable		true
+				visible		true
+				layer		101
+				rect		51 364 100 12
+				<title>
+					color		ff888888
+					fontIndex	2
+					text		"Near"
+				</title>
+			</label>
+			<label>
+				id			lbl_cam_far
+				enable		true
+				visible		true
+				layer		101
+				rect		51 386 100 12
+				<title>
+					color		ff888888
+					fontIndex	2
+					text		"Clip_Far"
+				</title>
+			</label>
+		// Fog Value
+			<label>
+				id			sld_fog_r_lbl
+				clone		sld_amb_r_lbl
+				rect		350 298 100 12
+			</label>
+			<label>
+				id			sld_fog_g_lbl
+				clone		sld_amb_r_lbl
+				rect		350 320 100 12
+			</label>
+			<label>
+				id			sld_fog_b_lbl
+				clone		sld_amb_r_lbl
+				rect		350 342 100 12
+			</label>
+			<label>
+				id			sld_fog_near_lbl
+				clone		sld_amb_r_lbl
+				rect		350 364 100 12
+			</label>
+			<label>
+				id			sld_cam_far_lbl
+				clone		sld_amb_r_lbl
+				rect		350 386 100 12
+			</label>
+		// Fog Slidebar
+			<slidebar>
+				id			sld_fog_r
+				enable		true
+				visible		true
+				layer		100
+				rect		100 298 215 19
+				min			0
+				max			255
+				minmaxpos	0 200
+				<panel>
+					id			sld_fog_r_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_fog_g
+				enable		true
+				visible		true
+				layer		100
+				rect		100 320 215 19
+				min			0
+				max			255
+				minmaxpos	0 200
+				<panel>
+					id			sld_fog_g_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_fog_b
+				enable		true
+				visible		true
+				layer		100
+				rect		100 342 215 19
+				min			0
+				max			255
+				minmaxpos	0 200
+				<panel>
+					id			sld_fog_b_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_fog_near
+				enable		true
+				visible		true
+				layer		100
+				rect		100 364 215 19
+				min			0
+				max			180
+				minmaxpos	0 200
+				<panel>
+					id			sld_fog_near_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<slidebar>
+				id			sld_cam_far
+				enable		true
+				visible		true
+				layer		100
+				rect		100 386 215 19
+				min			0
+				max			180
+				minmaxpos	0 200
+				<panel>
+					id			sld_cam_far_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+		// Shade Light
+			<label>
+				id			lbl_shadelight
+				clone		lbl_ambient
+				rect		100 415 100 20
+				<title>
+					text		"ShadeLight"
+				</title>
+			</label>
+			<panel>
+				id			pan_shade_line
+				enable		true
+				visible		true
+				layer		10
+				rect		103 450 210 2
+				<image>
+					key		0
+					screen	envtool
+					index	10
+				</image>
+			</panel>
+			<label>
+				id			lbl_shade_d
+				enable		true
+				visible		true
+				layer		101
+				rect		41 442 100 12
+				<title>
+					color		ff888888
+					fontIndex	2
+					text		"Distance"
+				</title>
+			</label>
+			<label>
+				id			sld_shade_d_lbl
+				clone		sld_amb_r_lbl
+				rect		350 442 100 12
+			</label>
+			<slidebar>
+				id			sld_shade_d
+				enable		true
+				visible		true
+				layer		100
+				rect		100 442 215 19
+				min			0
+				max			500
+				minmaxpos	0 200
+				<panel>
+					id			sld_shade_d_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+		</panel>
+		//time
+		<panel>
+			id			pan_time
+			enable		true
+			visible		true
+			layer		10
+			rect		2 514 410 200
+			<label>
+				id			lbl_time
+				clone		lbl_ambient
+				rect		50 0 100 12
+				<title>
+					text		"Time"
+				</title>
+			</label>
+			<listbox>
+				id			list_time
+				enable		true
+				visible		true
+				layer		100
+				rect		150 0 150 100
+				nodewidth   80
+				nodeheight	18
+				offset		6
+				btnsize		13				
+				<title>
+					state		over
+					color		ff74AEE4
+					fontIndex	4
+				</title>
+				<title>
+					state		check
+					color		ffFFB900
+					fontIndex	4
+				</title>
+				<title>
+					state		none
+					color		ff000000
+					fontIndex	4
+				</title>
+				<vscroll>
+					id			list_time_scroll
+					enable		true
+					visible		true
+					layer		1
+					rect		90 0 10  100
+					maxvalue	0
+					buttontick  1
+					<button>
+						id			list_time_scroll_upbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 10 10
+						type		1
+						<image>
+							key		0
+							screen	scroll
+							index	10
+						</image>
+						<image>
+							key		over
+							screen	scroll
+							index	11
+						</image>
+						<image>
+							key		down
+							screen	scroll
+							index	12
+						</image>
+						<image>
+							key		disable
+							screen	scroll
+							index	13
+						</image>
+					</button>
+					<button>
+						id			list_time_scroll_downbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 90 10 10
+						type		1
+						<image>
+							key		0
+							screen	scroll
+							index	20
+						</image>
+						<image>
+							key		over
+							screen	scroll
+							index	21
+						</image>
+						<image>
+							key		down
+							screen	scroll
+							index	22
+						</image>
+						<image>
+							key		disable
+							screen	scroll
+							index	23
+						</image>
+					</button>
+					<panel>
+						id			list_time_scroll_bar
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 10 5
+						moveable	true
+						<image>
+							key		0
+							screen	scroll
+							index	30
+						</image>
+					</panel>
+				</vscroll>
+			</listbox>
+			<edit>
+				id			edit_time
+				enable		true
+				visible		true
+				layer		100
+				rect		310 0 100 20
+				maxlength	7
+				font_type	2
+				input_type	2
+				align		1
+				color		ff444444
+				multiline   false
+				<image>
+					key		0
+					screen	mapbuilder
+					index	1
+					color	ffaaaaaa
+				</image>
+			</edit>
+			<button>
+				id			btn_add
+				enable		true
+				visible		true
+				layer		100
+				rect		310 28 30 15
+				<image>
+					key		0
+					color	ffffffff
+					screen	InitScreen
+					index	1
+				</image>
+				<title>
+					state		none
+					color		90000000
+					fontIndex	2
+					text		"ADD"
+				</title>
+				<title>
+					state		over
+					color		90FFB900
+					fontIndex	2
+				</title>
+				<title>
+					state		down
+					color		6F000000
+					fontIndex	2
+				</title>
+			</button>
+			<button>
+				id			btn_del
+				enable		true
+				visible		true
+				layer		100
+				rect		345 28 30 15
+				<image>
+					key		0
+					color	ffffffff
+					screen	InitScreen
+					index	1
+				</image>
+				<title>
+					state		none
+					color		90000000
+					fontIndex	2
+					text		"DEL"
+				</title>
+				<title>
+					state		over
+					color		90FFB900
+					fontIndex	2
+				</title>
+				<title>
+					state		down
+					color		6F000000
+					fontIndex	2
+				</title>
+			</button>
+			<button>
+				id			btn_modify
+				enable		true
+				visible		true
+				layer		100
+				rect		380 28 30 15
+				<image>
+					key		0
+					color	ffffffff
+					screen	InitScreen
+					index	1
+				</image>
+				<title>
+					state		none
+					color		90000000
+					fontIndex	2
+					text		"MOD"
+				</title>
+				<title>
+					state		over
+					color		90FFB900
+					fontIndex	2
+				</title>
+				<title>
+					state		down
+					color		6F000000
+					fontIndex	2
+				</title>
+			</button>
+			// DayNight Enable
+			<label>
+				id			lbl_anim
+				clone		lbl_ambient
+				rect		310 58 50 20
+				<title>
+					text		"Anim"
+				</title>
+			</label>
+			<edit>
+				id			edit_onetime
+				enable		true
+				visible		true
+				layer		100
+				rect		360 58 50 20
+				maxlength	7
+				font_type	2
+				input_type	2
+				align		1
+				color		ff444444
+				multiline   false
+				<image>
+					key		0
+					screen	common
+					index	1
+					color	ffaaaaaa
+				</image>
+			</edit>
+			<label>
+				id			lbl_anim_enable
+				enable		true
+				visible		true
+				layer		101
+				rect		310 78 50 12
+				<title>
+					color		ffff0000
+					fontIndex	2
+					text		"적용"
+				</title>
+			</label>
+			<panel>
+				id			pan_anim_enable
+				enable		true
+				visible		true
+				layer		110
+				rect		370 78 16 16
+				<image>
+					key		0
+					screen	envtool
+					index	20
+				</image>
+			</panel>
+			<panel>
+				id			pan_anim_enable_check
+				enable		true
+				visible		false
+				layer		111
+				rect		370 78 16 16
+				intersect	false
+				<image>
+					key		0
+					screen	mapbuilder
+					index	43
+				</image>
+			</panel>
+			
+			<panel>
+				id			pan_time_line
+				enable		true
+				visible		true
+				layer		10
+				rect		50 107 350 2
+				<image>
+					key		0
+					screen	envtool
+					index	10
+				</image>
+			</panel>
+			
+			<slidebar>
+				id			sld_time
+				enable		true
+				visible		true
+				layer		100
+				rect		50 100 350 19
+				min			0
+				max			240
+				minmaxpos	0 335
+				<panel>
+					id			sld_time_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		1 0 14 19
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		mapbuilder
+						index		40
+					</image>
+					<image>
+						key			down
+						screen		mapbuilder
+						index		41
+					</image>
+				</panel>
+			</slidebar>	
+			<label>
+				id			sld_time_lbl
+				enable		true
+				visible		true
+				layer		101
+				rect		50 122 100 12
+				<title>
+					color		ff888888
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		
+		<panel>
+			id			pan_interior_rect
+			enable		true
+			visible		true
+			layer		10
+			rect		440 52 410 462
+			
+			<label>
+				id			lbl_anim
+				clone		lbl_ambient
+				rect		0 0 100 20
+				<title>
+					text		"실내영역 설정"
+				</title>
+			</label>
+			
+			<label>
+				id			lbl_interior_x
+				enable		true
+				visible		true
+				layer		101
+				rect		0 26 8 12
+				<title>
+					color		ff888888
+					fontIndex	2
+					text		"X"
+				</title>
+			</label>
+			
+			<edit>
+				id			edit_interior_x_0
+				enable		true
+				visible		true
+				layer		100
+				rect		12 24 30 20
+				maxlength	3
+				font_type	2
+				input_type	2
+				align		center
+				color		ff444444
+				multiline   false
+				<image>
+					key		0
+					screen	mapbuilder
+					index	1
+					color	ffaaaaaa
+				</image>
+			</edit>
+			
+			<label>
+				id			lbl_interior_y
+				clone		lbl_interior_x
+				rect		46 26 8 12
+				<title>
+					text		"Y"
+				</title>
+			</label>
+			
+			<edit>
+				id			edit_interior_y_0
+				clone		edit_interior_x_0
+				rect		58 24 30 20
+			</edit>
+			
+			
+			<label>
+				id			lbl_interior_x1
+				clone		lbl_interior_x
+				rect		0 50 8 12
+			</label>
+			
+			<edit>
+				id			edit_interior_x_1
+				clone		edit_interior_x_0
+				rect		12 48 30 20
+			</edit>
+			
+			<label>
+				id			lbl_interior_y1
+				clone		lbl_interior_y
+				rect		46 50 8 12
+			</label>
+			
+			<edit>
+				id			edit_interior_y_1
+				clone		edit_interior_y_0
+				rect		58 48 30 20
+			</edit>
+			
+		</panel>
+		
+	</panel>
+</window>

@@ -1,0 +1,80 @@
+window_layer	auto
+window_size	1024	100
+window_position	0	0
+window_visible	true
+
+create_control	panel	basebar
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.jpg	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	width	32
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_new
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	0	0	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	6	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_open
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	92	0	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	30	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_save
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	0	22	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	54	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_separate01
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.jpg	4	14	2	2
+	control_drawdiv	xy	1
+	control_drawsize	2	23
+	control_drawpoint	82	4
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_exit
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	92	66	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	990	5
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	panel	pan_background
+{
+	control_group	0
+	control_color	true	255	255	0	0
+	control_drawsize	width	height
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	false
+}

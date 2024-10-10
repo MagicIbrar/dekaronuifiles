@@ -1,0 +1,22 @@
+<window>
+	name			petpreview
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 66 97
+	titlerect		0 0 0 0
+	alwaysontop		true
+	<panel>
+		id		pan_bg
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 66 97
+		<image>
+			key		0
+			screen		common
+			color		ffffffff
+			index		65500
+		</image>		
+	</panel>	
+</window>

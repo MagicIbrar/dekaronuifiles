@@ -1,0 +1,34 @@
+<window>
+	name			battleready_icon
+	enable			true
+	visible			true
+	alwaysontop		true
+	layer			100
+	position		inverse inverse
+
+	<button>
+		id			btn_show
+		enable		true
+		visible		true
+		layer		100
+		align 		center
+		rect		130 60 30 30
+		position 	left top
+		tooltip 	360 175
+		<image>
+			key		none
+			screen	guildtournament
+			index	85
+		</image>
+		<image>
+			key		over
+			screen	guildtournament
+			index	86
+		</image>
+		<image>
+			key		down
+			screen	guildtournament
+			index	87
+		</image>
+	</button>
+</window>

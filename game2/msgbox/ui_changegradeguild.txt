@@ -1,0 +1,112 @@
+<window>
+	name			changegrade_guild
+	enable			true
+	visible			true
+	layer			100
+	modal			true
+	rect			0  0 232 157
+	titlerect		28  2 204 16
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			rect		0 5 232 14
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0	
+				text2 		100 48
+			</title>					
+		</label>
+
+		<label>
+			id			lbl_disbandmsg
+			enable		true
+			visible		true
+			layer		50
+			rect		10 55 210 30
+			align		center
+			multiline	true
+			<title>
+				color		ffffffff
+				fontIndex	3	
+				text2 		130 146
+			</title>					
+		</label>
+
+		<button>
+			id			btn_yes
+			enable		true
+			visible		true
+			align		center
+			layer		100
+			rect		40 135 60 18
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 2	
+				text2 		2000 3
+			</title>
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+		</button>
+		
+		<button>
+			id			btn_no
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		130 135 60 18
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 2	
+				text2 		2000 4
+			</title>
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+		</button>	
+	</panel>
+</window>

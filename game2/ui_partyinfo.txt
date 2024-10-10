@@ -1,0 +1,506 @@
+<window>
+	name			party_info
+	enable			true
+	visible			true
+	layer			100
+	rect			383 261 700 534
+	titlerect		0 0 317 24
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 317 273
+		<image>
+			key		none
+			screen	party 
+			index	3
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		28 2 259 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 8
+			</title>
+		</label>
+	</panel>
+
+	<button>
+		id			btn_exit
+		enable		true
+		visible		true
+		layer		100
+		rect		299 2 15 15
+
+		sound  0
+		<image>
+			key		none
+			screen	etc_01
+			index		315
+
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index		316
+
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index		317
+
+		</image>
+	</button>	
+	
+	<label>
+		id			lbl_partyName
+		enable		true
+		visible		true
+		layer		100
+		rect		21 30 51 14
+		<title>
+			color		FFF4BE3D
+			fontIndex	4
+			text2 		70 27
+		</title>
+	</label>	
+		
+	<panel>
+		id		panel_partyname
+		enable		true
+		visible		true
+		layer		100
+		rect		93 29 131 14	
+		<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0				
+		</title>	
+	</panel>
+	
+	<button>
+		id			btn_partyname
+		enable		true
+		visible		false
+		layer		100
+		align 		center
+		rect		248 27 57 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 4
+			text2		2000 7
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	0 6
+		</title>
+	</button>
+	
+	<button>
+		id			btn_partyleadertrust
+		enable		true
+		visible		false
+		layer		100
+		align 		center
+		rect		29 248 57 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 4
+			text2		70 32
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	0 6
+		</title>
+	</button>
+		
+	<button>
+		id			btn_partyunion
+		enable		true
+		visible		false
+		layer		100
+		align 		center
+		rect		95 248 57 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 4
+			text2		70 33
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	0 6
+		</title>
+	</button>
+
+	<button>
+		id			btn_partydisband
+		enable		true
+		visible		false
+		layer		100
+		align 		center
+		rect		95 248 57 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 4
+			text2		70 34
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	0 6
+		</title>
+	</button>
+
+	<button>
+		id		btn_partysecession
+		enable		true
+		visible		false
+		layer		100
+		align 		center
+		rect		95 248 57 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 4
+			text2		70 35
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	0 6
+		</title>
+	</button>
+
+	<label>
+			id		lbl_partyitemway
+			enable		true
+			visible		false
+			layer		102
+			align		center
+			rect		182 249 94 14
+			<title>
+				color		ff00ff00
+				fontIndex	2	
+			</title>
+	</label>
+
+	<combobox>
+		id		combo_partyitemway
+		enable		true
+		visible		true
+		border 		false 	
+		layer		100
+		rect		182 249 106 20
+		
+		<iteminfo>		
+			rect 	5 0 96 20
+					
+			<item>
+				index   0
+				data	0
+				string 	70 16
+			</item>
+			<item>
+				index   1
+				data	1
+				string 	70 17
+			</item>
+			<item>
+				index   2
+				data	2
+				string 	70 18
+			</item>
+			<item>
+				index   3
+				data	3
+				string 	70 19
+			</item>
+		</iteminfo>
+
+		<nodeinfo>
+			selrect	0 0 106 20 
+			btnrect	94 3 12 12
+			
+			<image>
+				key	board_body
+				screen	party
+				index	4
+			</image>
+			<image>
+				key		btn_none
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		btn_over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		btn_down
+				screen	etc_01
+				index	17
+			</image>
+		</nodeinfo>		
+	</combobox>
+		
+	<slotctrl>	
+		id			pcinfoslot_0
+		enable		false
+		visible		false
+		layer		100
+		rect		5 54 307 27	
+		<image>
+			key		none
+			color 	0x00000000
+		</image>
+		<image>
+			key		over
+			screen	party
+			index	5
+		</image>
+		<image>
+			key		down
+			screen	party
+			index	5
+		</image>
+		<image>
+			key		check
+			screen	party
+			index	5
+		</image>
+		<classimage>
+			key		swordman
+			screen	etc_01
+			index	100	
+		</classimage>
+		<classimage>
+			key		archeress
+			screen	etc_01
+			index	101
+		</classimage>
+		<classimage>
+			key		sorceress
+			screen	etc_01
+			index	102
+		</classimage>
+		<classimage>
+			key		summoner
+			screen	etc_01
+			index	103
+		</classimage>	
+
+		<classimage>
+			key		segnalle
+			screen	etc_01
+			index	104
+		</classimage>
+		<classimage>
+			key		warrior
+			screen	etc_01
+			index	105
+		</classimage>
+		<classimage>
+			key		alloken
+			screen	etc_01
+			index	106
+		</classimage>
+			
+		<panel>
+			id			pcinfoslot_0_classtype_panel
+			enable		true
+			visible		true
+			layer		100
+			intersect	false
+			rect		2 2 27 24	
+			<image>
+				key		0
+				screen	etc_01
+				index	34
+			</image>	
+		</panel>				
+		
+		<panel>
+			id			pcinfoslot_0_pcname_panel
+			enable		true
+			visible		true
+			layer		100
+			intersect	false
+			rect		29 2 116 14		
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0				
+			</title>		
+		</panel>	
+		
+		<panel>
+			id			pcinfoslot_0_mapname_panel
+			enable		true
+			visible		true
+			layer		100
+			intersect	false
+			rect		149 2 139 14		
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0				
+			</title>		
+		</panel>
+		
+		<panel>
+			id			pcinfoslot_0_hp_bg
+			enable		true
+			visible		true
+			layer		50
+			intersect	false
+			rect		29 17 277 8			
+			<image>
+				key		0
+				screen	etc_01
+				index	56
+			</image>		
+		</panel>
+
+		<processbar>	
+			id			pcinfoslot_0_hp_processbar
+			enable		true
+			visible		true
+			layer		100
+			intersect	false
+			rect		29 18 277 7	
+			maxsize     	277
+			<image>
+				key		0
+				screen	etc_01
+				index	57
+			</image>				
+		</processbar>	
+
+		<button>
+			id				pcinfoslot_0_forceleave_btn
+			enable			true
+			visible			true
+			layer			100
+			rect		289 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>	
+	</slotctrl>
+	
+	<slotctrl>	
+		id			emptyslot_0
+		enable		false
+		visible		false
+		layer		100
+		rect		5 54 307 27
+		<image>
+			key		none
+			color 	0x00000000
+		</image>
+		<image>
+			key		over
+			screen	party
+			index	5
+		</image>			
+	</slotctrl>
+		
+</window>

@@ -1,0 +1,341 @@
+<window>
+	name			alliancemarkwnd
+	enable			true
+	visible			true
+	layer			100
+	rect			256 223 752 600
+	titlerect		0 0 480 24
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 496 377
+		<image>
+			key		none
+			screen	guild_mark
+			index	1
+		</image>
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		10
+			rect		220 1 53 16
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 104
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		478 2 15 15
+
+			sound  0
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+
+		<label>
+			id		lbl_alliancemark
+			enable		true
+			visible		true
+			layer		60
+			align 		center
+			rect		142 33 62 14
+			<title>
+				color		ffffff00
+				fontIndex	4
+				text2 		130 34
+			</title>
+		</label>
+		<panel>
+			id			pan_markframe_1
+			enable		true
+			visible		true
+			layer		10
+			rect		150 56 40 40
+			<image>
+				key		none
+				screen	guild_mark
+				index	3
+			</image>
+		</panel>		
+		<panel>
+			id			pan_alliancemarkbg
+			enable		true
+			visible		true
+			layer		50
+			rect		150 56 40 40
+			<image>
+				key		none
+				screen	guildbg
+				index	1
+			</image>
+		</panel>
+		<panel>
+			id			pan_alliancemark
+			enable		true
+			visible		true
+			layer		100
+			rect		150 56 40 40
+			<image>
+				key		none
+				screen	guildicon
+				index	1
+			</image>
+		</panel>
+
+		<label>
+			id		lbl_selectmark
+			enable		true
+			visible		true
+			layer		60
+			align 		center
+			rect		298 33 62 14
+			<title>
+				color		ffffff00
+				fontIndex	4
+				text2 		130 301
+			</title>
+		</label>
+		<panel>
+			id			pan_markframe_2
+			enable		true
+			visible		true
+			layer		10
+			rect		306 56 40 40
+			<image>
+				key		none
+				screen	guild_mark
+				index	3
+			</image>
+		</panel>
+		<panel>
+			id			pan_selectalliancemarkbg
+			enable		true
+			visible		true
+			layer		50
+			rect		306 56 40 40
+			<image>
+				key		none
+				screen	guildbg
+				index	1
+			</image>
+		</panel>
+		<panel>
+			id			pan_selectalliancemark
+			enable		true
+			visible		true
+			layer		100
+			rect		306 56 40 40
+			<image>
+				key		none
+				screen	guildicon
+				index	1
+			</image>
+		</panel>
+		
+		<label>
+			id		lbl_background
+			enable		true
+			visible		true
+			layer		60
+			rect		235 110 25 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		130 302
+			</title>
+		</label>
+		<button>
+			id			btn_bgLeft
+			enable		true
+			visible		true
+			layer		100
+			rect		219 112 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	47
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	48
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	49
+			</image>
+		</button>
+		<button>
+			id			btn_bgRight
+			enable		true
+			visible		true
+			layer		100
+			rect		264 112 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	51
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	52
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	53
+			</image>
+		</button>
+		
+		<panel>
+			id			pan_markbg
+			enable		true
+			visible		true
+			layer		100
+			rect		8 135 480 72
+			<panel>
+				id			pan_bgCursor
+				enable		true
+				visible		true
+				layer		110
+				rect		0 0 24 24
+				<image>
+					key		none
+					screen	guild_mark
+					index	2
+				</image>
+			</panel>
+		</panel>
+		<label>
+			id		lbl_icon
+			enable		true
+			visible		true
+			layer		60
+			rect		234 226 26 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		130 303
+			</title>
+		</label>
+		<button>
+			id			btn_iconLeft
+			enable		true
+			visible		true
+			layer		100
+			rect		219 228 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	47
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	48
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	49
+			</image>
+		</button>
+		<button>
+			id			btn_iconRight
+			enable		true
+			visible		true
+			layer		100
+			rect		264 228 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	51
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	52
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	53
+			</image>
+		</button>
+		
+		<panel>
+			id			pan_mark
+			enable		true
+			visible		true
+			layer		100
+			rect		8 251 480 72
+			<panel>
+				id			pan_iconCursor
+				enable		true
+				visible		true
+				layer		110
+				rect		0 0 24 24
+				<image>
+					key		none
+					screen	guild_mark
+					index	2
+				</image>
+			</panel>
+		</panel>
+	</panel>
+	<button>
+		id			btn_regist
+		enable		true
+		visible		true
+		layer		100
+		align		center	center
+		rect		219 353 56 18
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			text2		130 304
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	2 2
+		</title>
+	</button>
+</window>

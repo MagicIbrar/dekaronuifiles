@@ -1,0 +1,129 @@
+<window>
+	name			costum_wardrobe
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-106 -172 107 173
+	titlerect		0 0 213 30
+	<label>
+		id					lbl_title
+		enable				true
+		visible				true
+		layer				100
+		rect				8 9 213 24
+		align				center
+		<title>
+			color			ffffffff
+			fontIndex		4
+			position		0 7
+			text2 			28 3
+		</title>
+	</label>
+	<button>
+		id					btn_exit
+		enable				true
+		visible				true
+		layer				120
+		rect		184 12 15 15
+
+		sound				0
+		<image>
+			key				0
+			screen			etc_01
+			index		315
+
+		</image>
+		<image>
+			key				over
+			screen			etc_01
+			index		316
+
+		</image>
+		<image>
+			key				down
+			screen			etc_01
+			index		317
+
+		</image>
+	</button>
+
+	
+	<panel>
+		id				pan_bg_coustum_inven_BG1
+		enable				true
+		visible				true
+		layer				1
+		rect				0 0 107 345
+		<image>
+			key				0
+			screen			Inven_02
+			index			13
+		</image>
+	</panel>
+
+	<panel>
+		id				pan_bg_coustum_inven_BG2
+		enable				true
+		visible				true
+		layer				1
+		rect				107 0 106 345
+		<image>
+			key				0
+			screen			Inven_02
+			index			14
+		</image>
+	</panel>
+
+	<itemslot>
+		id					slotbag
+		enable				true
+		visible				true
+		layer				200
+		rect				8 37 198 264
+		cellsize			33 33
+	</itemslot>
+
+	<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			align		center	center
+			rect		74 310 65 20
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	91
+			</image>
+			<image>
+				key 	over
+				screen 	etc_01
+				index 	92
+			</image>
+			<image>
+				key 	down
+				screen 	etc_01
+				index 	93
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				text2		311 8
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 5
+			</title>
+		</button>
+</window>

@@ -1,0 +1,2111 @@
+<window>
+	name			chartradeWnd
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			-340 50 341 658
+	titlerect		7 3 670 30
+
+	<panel>
+		id		pan_trade
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 334 473 
+		<panel>
+			id		pan_trade_bg
+			enable		true
+			visible		true
+			layer		1
+			rect		0 0 333 473
+			<image>
+				key	0
+				screen	chartrade_01
+				index	0
+			</image>
+			<label>
+				id		lbl_title
+				enable		true
+				visible		true
+				layer		60
+				align 		center
+				rect		120 1 90 16
+				<title>
+					color		ffffffff
+					fontIndex	4
+					text2 		100 85
+				</title>	
+			</label>
+		</panel>
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		315 2 15 15
+
+			<image>
+				key	none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key	over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key	down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<panel>
+			id				pan_infoshield
+			enable				true
+			visible				false
+			layer				10
+			rect				6 25 321 184
+			<image>
+				key	0	
+				screen	chartrade_02
+				index	2
+			</image>
+		</panel>
+		<label>
+			id		lbl_targetname
+			enable		true
+			visible		true
+			layer		60
+			align 		center
+			rect		29 45 157 14
+			<image>
+				key 	none
+				screen 	party
+				index 	6				
+			</image>
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id		lbl_targettrade
+			enable		true
+			visible		true
+			layer		60
+			align 		center
+			rect		192 45 150 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>	
+		</label>
+		<panel>
+			id		pan_characterlist
+			enable		true
+			visible		true
+			layer		110
+			rect		24 78 186 15
+			<image>
+					key	0
+					screen	new_option_a
+					index	91
+			</image>	
+		</panel>
+		<combobox>
+			id		com_characterlist
+			enable		true
+			visible		true
+			border 		false
+			layer		400
+			rect		24 78 194 14
+			
+			<iteminfo>		
+				rect 	0 0 194 14
+			</iteminfo>
+
+			<nodeinfo>
+				selrect		0 0 182 14 
+				btnrect		170 2 12 12
+				
+				<image>
+					key		board_body
+					screen	party
+					index	4
+				</image>
+				<image>
+					key		btn_none
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		btn_over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		btn_down
+					screen	etc_01
+					index	17
+				</image>
+			</nodeinfo>			
+		</combobox>	
+
+		<panel>
+			id		pan_charInfo
+			enable		true
+			visible		true
+			layer		1
+			rect		24 94 187 51 			
+			<image>
+				key	btn_down
+				screen	chartrade_02
+				index	1
+			</image>
+			<label>
+				id		lbl_charInfo
+				enable		true
+				visible		true
+				multiline	true
+				layer		10
+				rect		0 7 187 51				
+				<title>
+					color		ffffffff
+					fontIndex	2					
+				</title>
+			</label>
+		</panel>
+		<button>
+			id		btn_viewdetail
+			enable		true
+			visible		true
+			layer		100
+			rect		223 94 87 20
+			<image>
+				key	none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state			none
+				color			ffb7b7b7
+				fontIndex		4
+				position		13 3
+				align			center
+				text2			556 2
+			</title>
+			<title>
+				state			over
+				color			ffffffff
+				fontIndex		4
+				align			center
+				position		12 3
+			</title>
+			<title>
+				state			down
+				color			ffb7b7b7
+				fontIndex		4
+				align			center
+				position		14 4
+			</title>			
+		</button>
+		<button>
+			id		btn_accept1
+			enable		true
+			visible		true
+			intersect 	false
+			layer		100
+			rect		246 217 13 13
+			<image>
+				key		none
+				screen		pcpop
+				index		12
+			</image>
+			<image>
+				key		check
+				screen		pcpop
+				index		9
+			</image>
+		</button>	
+		<label>
+			id				lbl_accept1
+			enable				true
+			visible				true
+			layer				101
+			align				right
+			rect				266 217 30 14
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>	
+		<panel>
+			id				pan_slotshield
+			enable				true
+			visible				false
+			layer				10
+			rect				7 248 319 160
+			<image>
+				key	0	
+				screen	new_trade
+				index	4
+			</image>
+		</panel>
+		<itemslot>
+			id				slottradeitem
+			enable				true
+			visible				true
+			layer				200
+			rect				7 248 319 160
+			cellsize			32 32
+		</itemslot>	
+		<label>
+			id			lbl_itemmessage
+			enable		true
+			visible		false
+			layer		1000
+			intersect 	false
+			align		center
+			rect		15 320 300 16
+			<image>
+				key		0
+				screen	trade
+				index	100
+			</image>
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_moneymessage
+			enable		true
+			visible		false
+			intersect 	false
+			layer		1000
+			align		center
+			rect		15 320 300 16	
+			<image>
+				key		0
+				screen	trade
+				index	100
+			</image>
+			<title>
+				color		ffffff00
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id		pan_money
+			enable		true
+			visible		true
+			layer		101	
+			align		right
+			rect		94 416 143 14
+			<image>
+				key	0
+				screen	new_option_a
+				index	91
+			</image>
+			<label>
+				id		lbl_trademoney
+				enable		true
+				visible		true
+				layer		101
+				align		right
+				rect		0 0 143 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<button>
+			id		btn_accept2
+			enable		true
+			visible		true
+			intersect 	false
+			layer		100
+			rect		246 416 13 13
+			<image>
+				key		none
+				screen		pcpop
+				index		12
+			</image>
+			<image>
+				key		check
+				screen		pcpop
+				index		9
+			</image>	
+		</button>
+		<label>
+			id				lbl_accept2
+			enable				true
+			visible				true
+			layer				101
+			align				right
+			rect				266 416 30 14
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<button>
+			id			btn_agree
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		92 446 57 19
+			<image>
+				key			0
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 4
+				text2		2000 9
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state		disable
+				color		ff828282
+				fontIndex	2
+				position	0 3
+			</title>
+		</button>
+	
+		<button>
+			id		btn_ok
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		16 446 57 19
+			<image>
+				key		0
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 4
+				text2		2000 22
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+			<title>
+				state		disable
+				color		ff828282
+				fontIndex	2
+				position	0 3
+			</title>
+		</button>	
+		<button>
+			id		btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		260 446 57 19
+			<image>
+				key		0
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 4
+				text2		2000 14
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 6
+			</title>
+		</button>					
+	</panel>
+	<panel>
+		id			pan_progressBg
+		enable		true
+		visible		true
+		layer		101
+		rect		154 452 99 8
+		<image>
+			key 	none
+			screen	new_trade
+			index 	2
+		</image>
+		<processbar>	
+			id		processbar
+			enable		true
+			visible		true
+			layer		101
+			rect		1 1 99 6
+			maxsize     99	
+			<image>
+				key	0
+				screen	new_trade
+				index	3
+			</image>
+		</processbar>
+	</panel>
+<window>
+	name					inven
+	enable					true
+	visible					true
+	layer					100
+	#position				right top
+	#position		                center center
+	rect					0 0 385 672
+	titlerect				0 0 360 38
+<label>
+	id					lbl_title
+	enable			true
+	visible				true
+	layer				100
+	rect				0 3 379 14
+	align				center
+	<title>
+		color			ffffffff
+		fontIndex		4
+		position		0 7
+		text2 			260 1
+	</title>
+</label>
+<button>
+	id					btn_exit
+	enable			true
+	visible				true
+	layer				150
+	rect		357 4 18 18
+
+	sound				0
+	<image>
+		key				0
+		screen			etc_01
+		index		315
+
+	</image>
+	<image>
+		key				over
+		screen			etc_01
+		index		316
+
+	</image>
+	<image>
+		key				down
+		screen			etc_01
+		index		317
+
+	</image>
+</button>
+
+<button>
+	id					btn_equip_item
+	enable			true
+	visible				true
+	align 				center
+	blinktime			500
+	layer				150
+	rect				1 32 72 23
+	<image>
+		key				none
+		screen			Inven_01
+		index			26
+	</image>
+	<image>
+		key				check
+		screen			Inven_01
+		index			25
+	</image>
+	<image>
+		key				blink
+		screen			Inven_01
+		index			25
+	</image>
+	
+	<title>
+		state 			none
+		color			ff929292
+		fontIndex		2
+		position		0 6
+		text2 			260 16
+	</title>
+	<title>
+		state 			over
+		color			ffffffff
+		fontIndex		2
+		position		0 6
+	</title>
+	<title>
+		state 			down
+		color			ff929292
+		fontIndex		2
+		position		0 7
+	</title>
+	<title>
+		state 			check
+		color			ffffffff
+		fontIndex		2
+		position		0 7
+	</title>
+	<title>
+		state 			blink
+		color			ffffffff
+		fontIndex		2
+		position		0 7
+	</title>
+</button>
+	<button>
+		id					btn_reserve_item
+	enable			true
+	visible				true
+	align 				center
+	blinktime			500
+	layer				150
+	tooltip			2000 33
+	rect				74 32 72 23
+	<image>
+		key				none
+		screen			Inven_01
+		index			26
+	</image>
+	<image>
+		key				check
+		screen			Inven_01
+		index			25
+	</image>
+	<image>
+		key				blink
+		screen			Inven_01
+		index			25
+	</image>
+	
+	<title>
+		state 			none
+		color			ff929292
+		fontIndex		2
+		position		0 6
+		text2 			260 4
+	</title>
+	<title>
+		state 			over
+		color			ffffffff
+		fontIndex		2
+		position		0 6
+	</title>
+	<title>
+		state 			down
+		color			ff929292
+		fontIndex		2
+		position		0 7
+	</title>
+	<title>
+		state 			check
+		color			ffffffff
+		fontIndex		2
+		position		0 7
+	</title>
+	<title>
+		state 			blink
+		color			ffffffff
+		fontIndex		2
+		position		0 7
+	</title>
+</button>
+	<button>
+		id					btn_cos_item
+	enable			true
+	visible				true
+	align 				center
+	blinktime			500
+	layer				150
+	rect				146 32 72 23
+	<image>
+		key				none
+		screen			Inven_01
+		index			26
+	</image>
+	<image>
+		key				check
+		screen			Inven_01
+		index			25
+	</image>
+	<image>
+		key				blink
+		screen			Inven_01
+		index			25
+	</image>
+	
+	<title>
+		state 			none
+		color			ff929292
+		fontIndex		2
+		position		0 6
+		text2 			260 5
+	</title>
+	<title>
+		state 			over
+		color			ffffffff
+		fontIndex		2
+		position		0 6
+	</title>
+	<title>
+		state 			down
+		color			ff929292
+		fontIndex		2
+		position		0 7
+	</title>
+	<title>
+		state 			check
+		color			ffffffff
+		fontIndex		2
+		position		0 7
+	</title>
+	<title>
+		state 			blink
+		color			ffffffff
+		fontIndex		2
+		position		0 7
+	</title>
+</button>
+
+<button>
+	id					btn_equip_unlock
+	enable				true
+	visible				false
+	layer				150
+	rect				346 32 22 23
+	tooltip				25 18
+	<image>
+		key				none
+		screen			Inven_01
+		index			5
+	</image>
+</button>
+<button>
+	id					btn_equip_lock
+	enable				true
+	visible				true
+	layer				150
+	rect				346 32 22 23
+	tooltip				25 18
+	<image>
+		key				none
+		screen			Inven_01
+		index			4
+	</image>
+</button>
+<button>
+	id					btn_link_suit
+	enable				true
+	visible				true
+	align 				center
+	layer				100
+	tooltip				2000 32
+	rect				306 32 26 22
+	<image>
+		key				none
+		screen			Inven_01
+		index			6
+	</image>
+	<image>
+		key				over
+		screen			Inven_01
+		index			7
+	</image>
+	<image>
+		key				down
+		screen			Inven_01
+		index			8
+	</image>
+</button>
+
+<panel>
+	id					pan_bg_equip
+	enable				true
+	visible				true
+	layer				1
+	rect				0 0 379 395
+	<image>
+		key				0
+		screen			Inven_01
+		index			1
+	</image>
+</panel>
+<panel>
+	id					pan_bg_itemstackup
+	enable			true
+	visible				false
+	layer				400
+	rect				5 376 336 226
+	<image>
+		key				0
+		screen			credit
+		index			6
+		color			80FFFFFF
+	</image>
+	
+	<label>
+		id				lbl_notice_itemstackup
+		enable				true
+		visible				true
+		layer				401
+		rect				0 90 336 20
+		align				center
+		<title>
+			color			ffffffff
+			fontIndex		2
+			position		0 0
+			text2 			260 27
+		</title>
+	</label>
+	
+	<button>
+		id					btn_cancel_itemstackup
+		enable				true
+		visible				true
+		align 				center
+		layer				401
+		rect				128 120 80 30
+		<title>
+			state			none
+			color			ffb7b7b7
+			fontIndex		4
+			position		0 8
+			text2			260 13
+		</title>
+		<title>
+			state			over
+			color			ffffffff
+			fontIndex		4
+			position		0 8		
+		</title>
+		<title>
+			state			down
+			color			ffb7b7b7
+			fontIndex		4
+			position		1 10
+		</title>
+		<image>
+			key				none
+			screen			Inven_01
+			index			29
+		</image>
+		<image>
+			key				over
+			screen			Inven_01
+			index			30
+		</image>
+		<image>
+			key				down
+			screen			Inven_01
+			index			31
+		</image>
+	</button>
+</panel>
+<panel>
+	id					pan_bg_inven
+	enable				true
+	visible				true
+	layer				1
+	rect				0 395 379 245
+	<image>
+		key				0
+		screen			Inven_01
+		index			2
+	</image>
+</panel>
+<panel>
+	id					pan_bg_cos
+	enable				true
+	visible				false
+	layer				120
+	rect				1 56 378 337
+	<image>
+		key				0
+		screen			Inven_02
+		index			1
+	</image>
+	<checkbox>
+		id				check_showcostume
+		enable			false
+		visible			false
+		layer			110
+		rect			14 252 317 20
+		align			left
+		<image>
+			key			none
+			screen		etc_01
+			index		303
+		</image>
+		<image>
+			key			check
+			screen		etc_01
+			index		304
+		</image>
+		<title>
+			state			none
+			fontIndex	2
+			color		ffffffff
+			position	5 6
+			text2		2001 100
+		</title>
+		<title>
+			state			over
+			fontIndex	2
+			position	5 6
+			color		ff00ff00
+		</title>
+	</checkbox>
+	<label>
+		id				lbl_viewcostume
+		enable				false
+		visible				false
+		layer				100
+		rect				11 235 317 20
+		align				center
+		<image>
+			key				0
+			screen			Inven_02
+			index			5
+		</image>
+		<title>
+			color			ffffffff
+			fontIndex		2
+			position		0 4
+			text2 			260 26
+		</title>
+	</label>
+	<item>
+		id				suititem_18
+		enable			true
+		visible			true
+		layer			100
+		rect			154 73 71 99
+		cellsize		31 31
+		type			suit
+	</item>
+
+	<panel>
+		id				pan_cos_suit_bg
+		enable				false
+		visible				false
+		layer				120
+		rect				70 74 63 90
+		intersect 			false
+		<image>
+			key				0
+			screen			Inven_02
+			index			6
+		</image>
+	</panel>
+
+
+	<item>
+		id				suititem_33
+		enable			true
+		visible			true
+		layer			100
+		rect			170 295 36 36
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_114
+		enable			false
+		visible			false
+		layer			100
+		rect			242 73 71 99
+		cellsize		31 31
+		type			suit
+	</item>
+
+	<button>
+		id				btn_cos
+		enable				false
+		visible				false
+		align 				center
+		layer				200
+		rect				360 80 25 68
+		tooltip				28 3
+		<image>
+			key				none
+			screen			Inven_02
+			index			10
+		</image>
+		<image>
+			key				over
+			screen			Inven_02
+			index			11
+		</image>
+		<image>
+			key				down
+			screen			Inven_02
+			index			12
+		</image>
+	</button>
+
+	<label>
+		id				lbl_cos_shortcut
+		enable				false
+		visible				false
+		layer				200
+		rect				144 200 94 20
+		align				center
+		tooltip				28 4
+		<title>
+			color			ffffffff
+			fontIndex		4
+		</title>
+	</label>
+
+	<button>
+		id				btn_cos_change
+		enable				false
+		visible				false
+		align 				center
+		layer				200
+		rect				166 102 48 44
+		tooltip				28 2
+		<image>
+			key				none
+			screen			Inven_02
+			index			7
+		</image>
+		<image>
+			key				over
+			screen			Inven_02
+			index			8
+		</image>
+		<image>
+			key				down
+			screen			Inven_02
+			index			9
+		</image>
+	</button>
+
+	<button>
+		id			btn_cos_shortcut
+		enable		false
+		visible		false
+		layer		200
+		rect		146 230 94 20
+		align 		center
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	1 3
+			text2 		2001 80
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	1 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	2 4
+		</title>
+		<image>
+			key			0
+			screen		new_option
+			index		4
+		</image>
+		<image>
+			key			over
+			screen		new_option
+			index		5
+		</image>
+		<image>
+			key			down
+			screen		new_option
+			index		6
+		</image>
+	</button>
+</panel>
+<panel>
+		id					pan_bg_cos_lock
+	enable				true
+	visible				false
+	layer				130
+	rect				153 127 74 100
+	<image>
+		key				0
+		screen			Inven_02
+		index			4
+		color			50ff3030
+	</image>
+</panel>
+
+<panel>
+	id					pan_bg_cos_lock2
+	enable				false
+	visible				false
+	layer				130
+	rect				240 127 74 100
+	<image>
+		key				0
+		screen			Inven_02
+		index			4
+		color			50ff3030
+	</image>
+</panel>
+<panel>
+	id					pan_equip_lock
+	enable				true
+	visible				false
+	layer				150
+	rect				0 54 386 346
+	<image>
+		key				0
+		screen			Inven_02
+		index			2
+		color			50ff3030
+	</image>
+</panel>
+<panel>
+	id					pan_reserve_lock
+	enable				true
+	visible				false
+	layer				150
+	rect				0 54 386 346
+	<image>
+		key				0
+		screen			Inven_02
+		index			3
+		color			50ff3030
+	</image>
+</panel>
+<panel>
+	id					pan_equip
+	enable				true
+	visible				true
+	layer				100
+	rect				0 0 379 414
+	<item>
+		id				suititem_0
+		enable			true
+		visible			true
+		layer			100
+		rect			100 251 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_1
+		enable			true
+		visible			true
+		layer			100
+		rect			242 251 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_2
+		enable			true
+		visible			true
+		layer			100
+		rect			100 300 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_3
+		enable			true
+		visible			true
+		layer			100
+		rect			242 300 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_4
+		enable			true
+		visible			true
+		layer			100
+		rect			12 111 72 140
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_5
+		enable			true
+		visible			true
+		layer			100
+		rect			293 111 72 140
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_6
+		enable			true
+		visible			true
+		layer			100
+		rect			12 64 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_7
+		enable			true
+		visible			true
+		layer			100
+		rect			63 63 72 36
+		cellsize		33 33
+		type			suit
+	</item>			
+	<item>
+		id				suititem_8
+		enable			true
+		visible			true
+		layer			100
+		rect			154 65 72 72
+		cellsize		31 31
+		type			suit
+	</item>		
+	<item>
+		id				suititem_9
+		enable			true
+		visible			true
+		layer			100
+		rect			154 152 72 99
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_10
+		enable			true
+		visible			true
+		layer			100
+		rect			152 262 72 72
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_11
+		enable			true
+		visible			true
+		layer			100
+		rect			12 262 72 72
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_12
+		enable			true
+		visible			true
+		layer			100
+		rect			293 262 72 72
+		cellsize		31 31
+		type			suit
+	</item>		
+	<item>
+		id				suititem_19
+		enable			true
+		visible			true
+		layer			100
+		rect			260 63 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_20
+		enable			true
+		visible			true
+		layer			100
+		rect			331 63 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_24
+		enable			true
+		visible			true
+		layer			100
+		rect			102 111 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_25
+		enable			true
+		visible			true
+		layer			100
+		rect			242 111 36 36
+		cellsize		33 33
+		type			suit
+	</item>	
+	<item>
+		id				suititem_26
+		enable			true
+		visible			true
+		layer			100
+		rect			83 353 36 36
+		cellsize		33 33
+		type			suit
+	</item>	
+	<item>
+		id				suititem_27
+		enable			true
+		visible			true
+		layer			100
+		rect			259 353 36 36
+		cellsize		33 33
+		type			suit
+	</item>	
+	<item>
+		id				suititem_28
+		enable			true
+		visible			true
+		layer			100
+		rect			154 353 72 36
+		cellsize		31 33
+		type			suit
+	</item>	
+	
+		<tab>
+			id				tab_chang_weapon
+			enable			true
+			visible			true
+			layer			100
+			type			false
+		    rect			86 162 15 50
+			<image>
+				key			tab1
+				screen		Inven_01
+				index		10
+			</image>
+			<image>
+				key			tab2
+				screen		Inven_01
+				index		11
+			</image>
+			<button>
+				id			tab_chang_weapon_tab1
+				enable		true
+				visible		true
+				layer		100
+				rect		0 1 13 20
+		<title>
+			state 			none
+			color			ff929292
+			fontIndex		4
+			position		4 6
+			text 			"I"
+		</title>
+		<title>
+			state 			over
+			color			ffffffff
+			fontIndex		4
+			position		4 6
+		</title>
+		<title>
+			state 			down
+			color			ff929292
+			fontIndex		4
+			position		4 7
+		</title>
+		<title>
+			state 			check
+			color			ffffffff
+			fontIndex		4
+			position		5 7
+		</title>
+			</button>
+			<button>
+				id			tab_chang_weapon_tab2
+				enable		true
+				visible		true
+				layer		100
+				rect		0 22 16 20
+		<title>
+			state 			none
+			color			ff929292
+			fontIndex		4
+			position		2 6
+			text 			"II"
+		</title>
+		<title>
+			state 			over
+			color			ffffffff
+			fontIndex		4
+			position		2 6
+		</title>
+		<title>
+			state 			down
+			color			ff929292
+			fontIndex		4
+			position		2 7
+		</title>
+		<title>
+			state 			check
+			color			ffffffff
+			fontIndex		4
+			position		3 7
+		</title>
+			</button>
+		</tab>
+		<tab>
+			id				tab_chang_shield
+			enable			true
+			visible			true
+			layer			100
+			type			false
+		    rect			275 162 15 50
+			<image>
+				key			tab1
+				screen		Inven_01
+			index		14
+			</image>
+			<image>
+				key			tab2
+				screen		Inven_01
+			index		15
+			</image>
+			<button>
+				id				tab_chang_shield_tab1
+				enable			true
+				visible			true
+				layer			100
+		        rect			275 162 15 50
+		<title>
+			state 			none
+			color			ff929292
+			fontIndex		4
+			position		6	6
+			text 			"I"
+		</title>
+		<title>
+			state 			over
+			color			ffffffff
+			fontIndex		4
+			position		6	6
+		</title>
+		<title>
+			state 			down
+			color			ff929292
+			fontIndex		4
+			position		6	7
+		</title>
+		<title>
+			state 			check
+			color			ffffffff
+			fontIndex		4
+			position		5	7
+		</title>
+			</button>
+			<button>
+				id				tab_chang_shield_tab2
+				enable			true
+				visible			true
+				layer			100
+				rect		    275 197 15 50
+		<title>
+			state 			none
+			color			ff929292
+			fontIndex		4
+			position		5 6
+			text 			"II"
+		</title>
+		<title>
+			state 			over
+			color			ffffffff
+			fontIndex		4
+			position		5 6
+		</title>
+		<title>
+			state 			down
+			color			ff929292
+			fontIndex		4
+			position		5 7
+		</title>
+		<title>
+			state 			check
+			color			ffffffff
+			fontIndex		4
+			position		4 7
+		</title>
+			</button>
+		</tab>
+		
+</panel>
+<panel>
+	id					pan_reserve
+	enable				true
+	visible				false
+	layer				100
+	rect				0 0 377 414
+	<panel>
+		id					pan_reserve_bg
+		enable			true
+		visible				true
+		intersect			false
+		layer				10
+		rect				1 55 377 339
+			<image>
+				key				0
+				screen			Inven_01
+				index			3
+			</image>
+	</panel>
+	<item>
+		id				suititem_100
+		enable			true
+		visible			true
+		layer			100
+		rect			100 251 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_101
+		enable			true
+		visible			true
+		layer			100
+		rect			242 251 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_102
+		enable			true
+		visible			true
+		layer			100
+		rect			100 300 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_103
+		enable			true
+		visible			true
+		layer			100
+		rect			242 300 36 36
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_104
+		enable			true
+		visible			true
+		layer			100
+		rect			154 65 72 72
+		cellsize		31 31
+		type			suit
+	</item>		
+	<item>
+		id				suititem_105
+		enable			true
+		visible			true
+		layer			100
+		rect			154 152 72 99
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_106
+		enable			true
+		visible			true
+		layer			100
+		rect			152 261 72 72
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_107
+		enable			true
+		visible			true
+		layer			100
+		rect			12 262 72 72
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_108
+		enable			true
+		visible			true
+		layer			100
+		rect			293 262 72 72
+		cellsize		31 31
+		type			suit
+	</item>
+	<item>
+		id				suititem_109
+		enable			true
+		visible			true
+		layer			100
+		rect			102 111 36 36
+		cellsize		33 33
+		type			suit
+	</item>
+	<item>
+		id				suititem_110
+		enable			true
+		visible			true
+		layer			100
+		rect			242 111 36 36
+		cellsize		33 33
+		type			suit
+	</item>	
+	<item>
+		id				suititem_111
+		enable			true
+		visible			true
+		layer			100
+		rect			83 353 36 36
+		cellsize		33 33
+		type			suit
+	</item>	
+	<item>
+		id				suititem_112
+		enable			true
+		visible			true
+		layer			100
+		rect			259 353 36 36
+		cellsize		36 33
+		type			suit
+	</item>	
+	<item>
+		id				suititem_113
+		enable			true
+		visible			true
+		layer			100
+		rect			154 353 72 36
+		cellsize		31 33
+		type			suit
+	</item>	
+</panel>
+<label>
+	id				lbl_tagSlot
+	enable			true
+	visible			true
+	layer			10
+	rect			2 400 70 14
+	<title>
+		color			ffffffff
+		fontIndex		4
+		text2 			260 3
+	</title>
+</label>	
+<panel>
+	id					pan_LockBag
+	enable			false
+	visible				false
+	intersect			false
+	layer				600
+	rect				6 424 368 180
+	<image>
+		key	1
+		screen	Inven_02
+		index	15
+		color			50ff3030
+	</image>
+</panel>
+<panel>
+	id				pan_bag
+	enable		true
+	visible			true
+	layer			100
+	rect			0 395 379 255
+	<button>
+		id				btn_alignment
+		enable			true
+		visible			false
+		layer			100
+		align       	center
+		tooltip			2000 60
+		rect			8 1 20 20
+		<image>
+			key				none
+			screen			Inven_01
+			index			32
+		</image>
+		<image>
+			key				over
+			screen			Inven_01
+			index			33
+		</image>
+		<image>
+			key				down
+			screen			Inven_01
+			index			34
+		</image>
+	</button>
+	<button>
+		id				btn_alignment_all
+		enable			true
+		visible			false
+		layer			100
+		align       	center
+		tooltip			2000 61
+		rect			38 1 20 20
+		<image>
+			key				none
+			screen			Inven_01
+			index			35
+		</image>
+		<image>
+			key				over
+			screen			Inven_01
+			index			36
+		</image>
+		<image>
+			key				down
+			screen			Inven_01
+			index			37
+		</image>
+	</button>
+	<button>
+		id					btn_changebag_0
+		enable				true
+		visible				true
+		align 				center
+		blinktime			500
+		layer				200
+		rect				76 0 60 23
+		<image>
+			key				none
+			screen			Inven_01
+			index			28
+		</image>
+		<image>
+			key				check
+			screen			Inven_01
+			index			27
+		</image>
+		<image>
+			key				blink
+			screen			Inven_01
+			index			27
+		</image>
+		<title>
+			state 			none
+			color			ff929292
+			fontIndex		4
+			position		0 5
+			text 			"I"
+		</title>
+		<title>
+			state 			over
+			color			ffffffff
+			fontIndex		4
+			position		0 5
+		</title>
+		<title>
+			state 			down
+			color			ff929292
+			fontIndex		4
+			position		0 6
+		</title>
+		<title>
+			state 			check
+			color			ffffffff
+			fontIndex		4
+			position		0 6
+		</title>
+		<title>
+			state 			blink
+			color			ffffffff
+			fontIndex		4
+			position		0 6
+		</title>
+	</button>
+	<button>
+		id					btn_changebag_1
+		enable				true
+		visible				true
+		align 				center
+		blinktime			500
+		layer				200
+		rect				136 0 60 23
+		<image>
+			key				none
+			screen			Inven_01
+			index			28
+		</image>
+		<image>
+			key				check
+			screen			Inven_01
+			index			27
+		</image>
+		<image>
+			key				blink
+			screen			Inven_01
+			index			27
+		</image>
+		<title>
+			state 			none
+			color			ff929292
+			fontIndex		4
+			position		0 5
+			text 			"II"
+		</title>
+		<title>
+			state 			over
+			color			ffffffff
+			fontIndex		4
+			position		0 5
+		</title>
+		<title>
+			state 			down
+			color			ff929292
+			fontIndex		4
+			position		0 6
+		</title>
+		<title>
+			state 			check
+			color			ffffffff
+			fontIndex		4
+			position		0 6
+		</title>
+		<title>
+			state 			blink
+			color			ffffffff
+			fontIndex		4
+			position		0 6
+		</title>
+	</button>
+	<button>
+		id					btn_changebag_2
+		enable				true
+		visible				true
+		align 				center
+		blinktime			500
+		layer				200
+		rect				196 0 60 23
+		<image>
+			key				none
+			screen			Inven_01
+			index			28
+		</image>
+		<image>
+			key				check
+			screen			Inven_01
+			index			27
+		</image>
+		<image>
+			key				blink
+			screen			Inven_01
+			index			27
+		</image>
+		<title>
+			state 			none
+			color			ff929292
+			fontIndex		4
+			position		0 5
+			text 			"III"
+		</title>
+		<title>
+			state 			over
+			color			ffffffff
+			fontIndex		4
+			position		0 5
+		</title>
+		<title>
+			state 			down
+			color			ff929292
+			fontIndex		4
+			position		0 6
+		</title>
+		<title>
+			state 			check
+			color			ffffffff
+			fontIndex		4
+			position		0 6
+		</title>
+		<title>
+			state 			blink
+			color			ffffffff
+			fontIndex		4
+			position		0 6
+		</title>
+	</button>
+	<button>
+		id					btn_changebag_3
+		enable				true
+		visible				true
+		align 				center
+		blinktime			500
+		layer				200
+		rect				256 0 60 23
+		<image>
+			key				none
+			screen			Inven_01
+			index			28
+		</image>
+		<image>
+			key				check
+			screen			Inven_01
+			index			27
+		</image>
+		<image>
+			key				blink
+			screen			Inven_01
+			index			27
+		</image>
+		<title>
+			state 			none
+			color			ff929292
+			fontIndex		4
+			position		0 5
+			text 			"IV"
+		</title>
+		<title>
+			state 			over
+			color			ffffffff
+			fontIndex		4
+			position		0 5
+		</title>
+		<title>
+			state 			down
+			color			ff929292
+			fontIndex		4
+			position		0 6
+		</title>
+		<title>
+			state 			check
+			color			ffffffff
+			fontIndex		4
+			position		0 6
+		</title>
+		<title>
+			state 			blink
+			color			ffffffff
+			fontIndex		4
+			position		0 6
+		</title>
+	</button>
+	<button>
+		id					btn_changebag_4
+		enable				true
+		visible				true
+		align 				center
+		blinktime			500
+		layer				200
+		rect				316 0 60 23
+		<image>
+			key				none
+			screen			Inven_01
+			index			28
+		</image>
+		<image>
+			key				check
+			screen			Inven_01
+			index			27
+		</image>
+		<image>
+			key				blink
+			screen			Inven_01
+			index			27
+		</image>
+		<title>
+			state 			none
+			color			ff929292
+			fontIndex		4
+			position		0 5
+			text 			"V"
+		</title>
+		<title>
+			state 			over
+			color			ffffffff
+			fontIndex		4
+			position		0 5
+		</title>
+		<title>
+			state 			down
+			color			ff929292
+			fontIndex		4
+			position		0 6
+		</title>
+		<title>
+			state 			check
+			color			ffffffff
+			fontIndex		4
+			position		0 6
+		</title>
+		<title>
+			state 			blink
+			color			ffffffff
+			fontIndex		4
+			position		0 6
+		</title>
+	</button>
+	<itemslot>
+		id					slotbag
+		enable				true
+		visible				true
+		layer				200
+		rect				5 28 370 180
+		cellsize			37 36
+	</itemslot>
+	
+	<button>
+		id				btn_LockBag
+		enable			true
+		visible			false
+		layer			100
+		align       	center
+		tooltip			2000 109
+		rect			12 219 20 20
+		<image>
+			key				none
+			screen			Inven_01
+			index			53
+		</image>
+		<image>
+			key				over
+			screen			Inven_01
+			index			54
+		</image>
+		<image>
+			key				down
+			screen			Inven_01
+			index			55
+		</image>
+	</button>
+	<panel>
+		id					pan_ppointmark
+		enable				true
+		visible				true
+		layer				101
+		#rect				36 222 126 17
+		rect				12 222 22 20		
+		<image>			
+			screen			Inven_01
+			index			576
+		</image>			
+	</panel>
+	<label>
+		id					lbl_ppoint
+		enable				true
+		visible				true
+		layer				101
+		align				right
+		rect				36 222 99 14
+		<image>			
+			screen			Inven_01
+			index			577
+		</image>		
+		<title>	
+			color			ffffffff
+			fontIndex		2
+		</title>
+	</label>
+	<panel>
+		id				pan_moneymark
+		enable				true
+		visible				true
+		layer				101
+		rect				194 220 22 20
+		<image>			
+			screen			Inven_01
+			index			56
+		</image>			
+	</panel>
+	<label>
+		id					lbl_money
+		enable				true
+		visible				true
+		layer				101
+		align				right
+		rect				217 222 98 15
+		<image>			
+			screen			Inven_01
+			index			57
+		</image>		
+		<title>
+			color			ffffffff
+			fontIndex		2
+		</title>
+	</label>
+	
+	<button>
+		id					btn_drop
+		enable				true
+		visible				true
+		align 				center
+		layer				200
+		rect				320 218 53 20
+		tooltip				25 21
+		<title>
+			state			none
+			color			ffb7b7b7
+			fontIndex		4
+			position		0 4
+			text2			260 7
+		</title>
+		<title>
+			state			over
+			color			ffffffff
+			fontIndex		4
+			position		0 4		
+		</title>
+		<title>
+			state			down
+			color			ffb7b7b7
+			fontIndex		4
+			position		1 6
+		</title>
+		<image>
+			key				none
+			screen			Inven_01
+			index			29
+		</image>
+		<image>
+			key				over
+			screen			Inven_01
+			index			30
+		</image>
+		<image>
+			key				down
+			screen			Inven_01
+			index			31
+		</image>
+	</button>
+</window>

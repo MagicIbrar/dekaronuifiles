@@ -1,0 +1,63 @@
+<window>
+	name			luaerror_msgbox
+	enable			true
+	visible			false
+	layer			6500
+	position		center center
+	rect			-400  -50 800 109
+	titlerect		0 0 0 0
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 800 109
+		<image>
+				key	none
+				color	ffffffff
+		</image>
+	</panel>
+	
+	<label>
+		id			lbl_text
+		enable		true
+		visible		true
+		layer		100
+		align		left
+		rect		40 41 755 32
+		<title>
+			color		ff010101
+			fontIndex	3
+			position	0 0
+		</title>
+	</label>		
+
+	<button>
+		id		btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		370 69 69 20
+		<image>
+			key			0
+			screen		login_a
+			index		41
+		</image>
+		<image>
+			key			over
+			screen		login_a
+			index		42
+		</image>
+		<image>
+			key			down
+			screen		login_a
+			index		43
+		</image>
+		<image>
+			key			disable
+			screen		login_a
+			index		43
+		</image>
+	</button>	
+</window>

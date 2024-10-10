@@ -1,0 +1,75 @@
+<window>
+	name			infodialog
+	enable			true
+	visible			true
+	layer			100
+	position			center top
+	rect			-193 100 193 359
+	titlerect			0 0 267 24
+	<panel>
+		id			pan
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 386 259
+		<image>
+			key	none
+			screen	notify
+			index	1
+		</image>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		363 7 15 15
+
+			<image>
+				key		0
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		22 8 341 217
+			lineheight	16
+			margin		21 18
+			fonttype	2
+			color		FFFFFFFF
+			buttonwidth	250
+			align		center center
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+			<title>
+				state		0
+				color		ff00FF00
+				fontIndex	2
+			</title>
+		</textbox>
+	</panel>			
+</window>

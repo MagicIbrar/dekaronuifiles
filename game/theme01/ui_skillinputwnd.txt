@@ -1,0 +1,36 @@
+window_layer	TOP
+window_size	218	75
+window_alignaxis	center	center
+window_visible	false
+
+create_control	panel	pan_skillinputbase
+{
+	control_group	0
+	control_image	oxxx	"UI\Game\theme01\trade_message_01.dds"	0	147	280	92	
+	control_drawsize	280	92
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_skilltext
+	{
+	control_group	0
+	control_image	oxxx	"UI\Game\theme01\skillinput.dds"	0	0	218	75	
+	control_drawsize	218	75
+	control_drawpoint	22	9
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_skillname
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_textcolor	255	255	255
+	control_textfont	smallbold
+	control_drawsize	144	13
+	control_drawpoint	45	38
+	control_enable	true
+	control_visible	true
+	}	
+}

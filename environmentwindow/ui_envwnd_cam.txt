@@ -1,0 +1,740 @@
+<panel>
+	id			pan_cam
+	enable		true
+	visible		true
+	layer		10
+	rect		2 52 410 400
+// Camera
+	<label>
+		id			lbl_camera
+		enable		true
+		visible		true
+		layer		101
+		rect		100 5 100 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"Camera"
+		</title>
+	</label>
+	<panel>
+		id			pan_cam_base_line
+		enable		true
+		visible		true
+		layer		10
+		rect		103 40 210 2
+		<image>
+			key		0
+			screen	envtool_cam
+			index	1
+		</image>
+	</panel>
+	<label>
+		id			lbl_cam_v
+		enable		true
+		visible		true
+		layer		101
+		rect		51 32 100 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"가로"
+		</title>
+	</label>
+	<label>
+		id			lbl_cam_h
+		enable		true
+		visible		true
+		layer		101
+		rect		51 54 100 12
+		<title>
+			color		ff00ff00
+			fontIndex	2
+			text		"세로"
+		</title>
+	</label>
+	<label>
+		id			lbl_cam_d
+		enable		true
+		visible		true
+		layer		101
+		rect		51 76 100 12
+		<title>
+			color		ff0000ff
+			fontIndex	2
+			text		"거리"
+		</title>
+	</label>
+// Camera 수치 보기
+	<label>
+		id			sld_cam_v_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 32 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			sld_cam_h_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 54 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			sld_cam_d_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 76 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+// ambient slidebar
+	<slidebar>
+		id			sld_cam_v
+		enable		true
+		visible		true
+		layer		100
+		rect		100 32 215 19
+		min			0
+		max			2
+		minmaxpos	0 200
+		<panel>
+			id			sld_cam_v_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+	<slidebar>
+		id			sld_cam_h
+		enable		true
+		visible		true
+		layer		100
+		rect		100 54 215 19
+		min			0
+		max			3
+		minmaxpos	0 200
+		<panel>
+			id			sld_cam_h_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		2
+			</image>
+		</panel>
+	</slidebar>	
+	<slidebar>
+		id			sld_cam_d
+		enable		true
+		visible		true
+		layer		100
+		rect		100 76 215 19
+		min			1
+		max			50
+		minmaxpos	0 200
+		<panel>
+			id			sld_cam_d_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+// Near
+	<label>
+		id			lbl_near
+		enable		true
+		visible		true
+		layer		101
+		rect		100 105 100 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"Near"
+		</title>
+	</label>
+	<panel>
+		id			pan_near_line
+		enable		true
+		visible		true
+		layer		10
+		rect		103 140 210 2
+		<image>
+			key		0
+			screen	envtool_cam
+			index	1
+		</image>
+	</panel>
+	<label>
+		id			lbl_near_d
+		enable		true
+		visible		true
+		layer		101
+		rect		51 132 100 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"거리"
+		</title>
+	</label>
+	<label>
+		id			lbl_near_min
+		enable		true
+		visible		true
+		layer		101
+		rect		51 154 100 12
+		<title>
+			color		ff00ff00
+			fontIndex	2
+			text		"최소"
+		</title>
+	</label>	
+	<label>
+		id			lbl_near_max
+		enable		true
+		visible		true
+		layer		101
+		rect		51 176 100 12
+		<title>
+			color		ff0000ff
+			fontIndex	2
+			text		"최대"
+		</title>
+	</label>
+	<label>
+		id			lbl_near_h
+		enable		true
+		visible		true
+		layer		101
+		rect		51 198 100 12
+		<title>
+			color		ff888888
+			fontIndex	2
+			text		"높이"
+		</title>
+	</label>
+// Near Value
+	<label>
+		id			sld_near_d_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 132 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			sld_near_min_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 154 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			sld_near_max_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 176 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			sld_near_h_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 198 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+// Near Slidebar
+	<slidebar>
+		id			sld_near_d
+		enable		true
+		visible		true
+		layer		100
+		rect		100 132 215 19
+		min			1
+		max			100
+		minmaxpos	0 200
+		<panel>
+			id			sld_near_d_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		2
+			</image>
+		</panel>
+	</slidebar>	
+	<slidebar>
+		id			sld_near_min
+		enable		true
+		visible		true
+		layer		100
+		rect		100 154 215 19
+		min			0
+		max			180
+		minmaxpos	0 200
+		<panel>
+			id			sld_near_min_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+	<slidebar>
+		id			sld_near_max
+		enable		true
+		visible		true
+		layer		100
+		rect		100 176 215 19
+		min			0
+		max			180
+		minmaxpos	0 200
+		<panel>
+			id			sld_near_max_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+	<slidebar>
+		id			sld_near_h
+		enable		true
+		visible		true
+		layer		100
+		rect		100 198 215 19
+		min			1
+		max			100
+		minmaxpos	0 200
+		<panel>
+			id			sld_near_h_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+
+// Far
+	<label>
+		id			lbl_far
+		enable		true
+		visible		true
+		layer		101
+		rect		100 227 100 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"Far"
+		</title>
+	</label>
+	<panel>
+		id			pan_far_line
+		enable		true
+		visible		true
+		layer		10
+		rect		103 262 210 2
+		<image>
+			key		0
+			screen	envtool
+			index	10
+		</image>
+	</panel>
+	<label>
+		id			lbl_far_d
+		enable		true
+		visible		true
+		layer		101
+		rect		51 256 100 12
+		<title>
+			color		ffff0000
+			fontIndex	2
+			text		"거리"
+		</title>
+	</label>
+	<label>
+		id			lbl_far_min
+		enable		true
+		visible		true
+		layer		101
+		rect		51 278 100 12
+		<title>
+			color		ff00ff00
+			fontIndex	2
+			text		"최소"
+		</title>
+	</label>	
+	<label>
+		id			lbl_far_max
+		enable		true
+		visible		true
+		layer		101
+		rect		51 300 100 12
+		<title>
+			color		ff0000ff
+			fontIndex	2
+			text		"최대"
+		</title>
+	</label>
+	<label>
+		id			lbl_far_h
+		enable		true
+		visible		true
+		layer		101
+		rect		51 322 100 12
+		<title>
+			color		ff888888
+			fontIndex	2
+			text		"높이"
+		</title>
+	</label>
+// Far Value
+	<label>
+		id			sld_far_d_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 256 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			sld_far_min_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 278 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			sld_far_max_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 300 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<label>
+		id			sld_far_h_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 322 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+// Far Slidebar
+	<slidebar>
+		id			sld_far_d
+		enable		true
+		visible		true
+		layer		100
+		rect		100 256 215 19
+		min			1
+		max			150
+		minmaxpos	0 200
+		<panel>
+			id			sld_far_d_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+	<slidebar>
+		id			sld_far_min
+		enable		true
+		visible		true
+		layer		100
+		rect		100 278 215 19
+		min			0
+		max			180
+		minmaxpos	0 200
+		<panel>
+			id			sld_far_min_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+	<slidebar>
+		id			sld_far_max
+		enable		true
+		visible		true
+		layer		100
+		rect		100 300 215 19
+		min			0
+		max			180
+		minmaxpos	0 200
+		<panel>
+			id			sld_far_max_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+	<slidebar>
+		id			sld_far_h
+		enable		true
+		visible		true
+		layer		100
+		rect		100 322 215 19
+		min			1
+		max			110
+		minmaxpos	0 200
+		<panel>
+			id			sld_far_h_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+	
+// Culling Distance
+	<label>
+		id			lbl_cull
+		enable		true
+		visible		true
+		layer		101
+		rect		100 356 100 20
+		<title>
+			color		ff5566aa
+			fontIndex	6
+			text		"Culling"
+		</title>
+	</label>
+	<label>
+		id			lbl_cull_d
+		enable		true
+		visible		true
+		layer		101
+		rect		51 378 100 12
+		<title>
+			color		ff888888
+			fontIndex	2
+			text		"거리"
+		</title>
+	</label>
+// Culling Value
+	<label>
+		id			sld_cull_d_lbl
+		enable		true
+		visible		true
+		layer		101
+		rect		350 378 100 12
+		<title>
+			color		ff000000
+			fontIndex	2
+		</title>
+	</label>
+	<panel>
+		id			pan_cull_line
+		enable		true
+		visible		true
+		layer		10
+		rect		103 383 210 2
+		<image>
+			key		0
+			screen	envtool
+			index	10
+		</image>
+	</panel>
+	<slidebar>
+		id			sld_cull_d
+		enable		true
+		visible		true
+		layer		100
+		rect		100 378 215 19
+		min			0
+		max			200
+		minmaxpos	0 200
+		<panel>
+			id			sld_cull_d_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		1 0 14 19
+			moveable	true
+			noneimage	true
+			<image>
+				key			none
+				screen		envtool_cam
+				index		2
+			</image>
+			<image>
+				key			down
+				screen		envtool_cam
+				index		3
+			</image>
+		</panel>
+	</slidebar>	
+</panel>

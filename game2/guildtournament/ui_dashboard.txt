@@ -1,0 +1,250 @@
+<window>
+	name			dashboardwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			-512 40 512 240
+	titlerect		0 0 0 0
+
+	<panel>
+		id			pan_demarcation
+		enable			true
+		visible			true
+		layer			100
+		rect			458 30 79 83
+		intersect 		false
+		<image>
+			key		none
+			screen		colosseum
+			index		19
+		</image>
+	</panel>
+	<panel>
+		id			pan_redsign
+		enable			true
+		visible			true
+		layer			100
+		rect			202 97 245 34
+		intersect 		false
+		<image>
+			key		none
+			screen		guildtournament
+			index		73
+		</image>
+
+		<label>
+			id			lbl_redsign
+			enable			true
+			visible			true
+			layer			150
+			align			right
+			rect			70 10 150 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+	</panel>
+
+	<panel>
+		id			pan_bluesign
+		enable			true
+		visible			true
+		layer			100
+		rect			542 97 245 34
+		intersect 		false
+		<image>
+			key		none
+			screen		guildtournament
+			index		74
+		</image>
+
+		<label>
+			id			lbl_bluesign
+			enable			true
+			visible			true
+			layer			150
+			align			left
+			rect			20 10 150 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+	</panel>
+
+	<panel>
+		id			pan_redflag_
+		enable			false
+		visible			false
+		layer			200
+		rect			136 100 22 28
+		intersect 		false
+		<image>
+			key		none
+			screen		guildtournament
+			index		75
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_blueflag_
+		enable			false
+		visible			false
+		layer			200
+		rect			839 100 22 28
+		intersect 		false
+		<image>
+			key		none
+			screen		guildtournament
+			index		76
+		</image>
+	</panel>
+	
+	<panel>
+		id			pan_redfirstkill
+		enable			false
+		visible			false
+		layer			200
+		rect			132 125 69 21
+		intersect 		false
+		<image>
+			key		none
+			screen		colosseum
+			index		154
+		</image>
+	</panel>	
+
+	<panel>
+		id			pan_bluefirstkill
+		enable			false
+		visible			false
+		layer			200
+		rect			792 125 69 21
+		intersect 		false
+		<image>
+			key		none
+			screen		colosseum
+			index		154
+		</image>
+	</panel>	
+	
+	<imagenumber>
+		id		number_redkillcnt
+		enable		true
+		visible		true
+		fonttype	none
+		layer		100
+		space		15
+		align		center
+		imagecount 	12
+		rect		405 130 33 21
+		intersect 		false
+		<image>
+			key	0
+			color 	0x00ffffff
+			screen	common
+			index	0
+		</image>
+	</imagenumber>
+
+	<imagenumber>
+		id		number_bluekillcnt
+		enable		true
+		visible		true
+		fonttype	none
+		layer		100
+		space		15
+		align		center
+		imagecount 	12
+		rect		550 130 33 21
+		intersect 		false
+		<image>
+			key	0
+			color 	0x00ffffff
+			screen	common
+			index	0
+		</image>
+	</imagenumber>
+	
+
+	<imagenumber>
+		id		number_timer
+		enable		true
+		visible		true
+		fonttype	none
+		numbertype	timer
+		layer		100
+		space		15
+		align		center
+		imagecount 	12
+		rect		425 107 140 21
+		intersect 		false
+		<image>
+			key	0
+			color 	0x00ffffff
+			screen	common
+			index	0
+		</image>
+	</imagenumber>
+
+	<panel>
+		id			pan_timer_name
+		enable			true
+		visible			true
+		layer			200
+		rect			367 150 256 52
+		intersect 		false
+		<image>
+			key		none
+			screen		guildtournament
+			index		88
+		</image>
+	</panel>
+
+	<panel>
+		id		pan_member
+		enable			false
+		visible			false
+		layer			100
+		rect			0 47 47 47
+		intersect 		false
+		<panel>
+			id		pan_class
+			enable			true
+			visible			true
+			layer			100
+			rect			0 0 47 47
+			<image>
+				key	none				
+				screen	colosseum
+				index	100
+			</image>
+		</panel>
+		<panel>
+			id		pan_shield
+			enable			true
+			visible			true
+			layer			90
+			rect			7 8 30 31
+			<image>
+				key	none				
+				screen	colosseum
+				index	27
+			</image>			
+		</panel>
+		<panel>
+			id		pan_hp
+			enable			true
+			visible			true
+			layer			80
+			rect			7 8 30 31
+			<image>
+				key	none				
+				screen	colosseum
+				index	28
+			</image>
+		</panel>
+	</panel>
+</window>

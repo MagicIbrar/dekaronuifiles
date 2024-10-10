@@ -1,0 +1,93 @@
+<window>
+	name			npcdialog_selectwait
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	position		inverse inverse
+	rect			0 0 0 0
+	titlerect		0 0 0 0
+	alwaysontop		true
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		position	center top
+		rect		-103 100 207 60
+		<image>
+			key 	none
+			screen	siege
+			index 	6
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		8 13 190 14
+			<title>
+				color		FFF9B600
+				fontIndex	2
+			</title>
+		</label>
+		
+		<button>
+			id				btn_exit
+			enable			true
+			visible			true
+			layer			101
+			rect		187 4 15 15
+
+			sound			0
+			<image>			
+				key			none
+				screen		etc_01
+				index		315
+
+			</image>				
+			<image>	
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>			
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		
+		<panel>
+			id			pan_processBg
+			enable		true
+			visible		true
+			layer		101
+			rect		6 37 194 8
+			<image>
+				key 	none
+				screen	siege
+				index 	10
+			</image>
+			
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		101
+				rect		0 1 194 7
+				maxsize     194	
+				<image>
+					key	0
+					screen	siege
+					index	11
+				</image>				
+			</processbar>	
+		</panel>	
+	</panel>
+</window>

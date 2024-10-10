@@ -1,0 +1,129 @@
+<window>
+	name			pvpdashboardwnd
+	enable			true
+	visible			true
+	layer			100
+	position		left top
+	rect			0 0 1024 200
+	titlerect		0 0 0 0
+		
+	<panel>
+		id			pan_demarcation
+		enable			true
+		visible			true
+		layer			100
+		rect			451 63 79 83
+		<image>
+			key		none
+			screen		colosseum
+			index		32
+		</image>
+	</panel>
+	<imagenumber>
+			id		number_timer
+			enable		true
+			visible		true
+			fonttype	none
+			numbertype	timer
+			layer		100
+			space		15
+			align		center
+			imagecount 	12
+			timerdigit	4
+			rect		426 63 140 21
+			<image>
+				key	0
+				color 	0x00ffffff
+				screen	common
+				index	0
+			</image>
+	</imagenumber>
+	<panel>
+		id		pan_member
+		enable			false
+		visible			false
+		layer			100
+		rect			0 88 48 47
+		<panel>
+			id		pan_class
+			enable			true
+			visible			true
+			layer			100
+			rect			0 0 47 47
+			<image>
+				key	none				
+				screen	colosseum
+				index	20
+			</image>
+		</panel>
+		<panel>
+			id		pan_shield
+			enable			true
+			visible			true
+			layer			20
+			rect			6 6 36 36
+			<panel>
+				id		pan_shild_attribute
+				enable			true
+				visible			true
+				layer			10
+				rect			1 1 30 30
+				<image>
+					key	none				
+					screen	colosseum
+					index	27
+				</image>			
+			</panel>
+		</panel>
+		<panel>
+			id		pan_hp
+			enable			true
+			visible			true
+			layer			10
+			rect			6 6 36 36
+			<panel>
+				id		pan_hp_attribute
+				enable			true
+				visible			true
+				layer			10
+				rect			1 1 30 30
+				<image>
+					key	none				
+					screen	colosseum
+					index	28
+				</image>			
+			</panel>
+		</panel>
+	</panel>
+	<panel>
+		id		pan_progress
+		enable			false
+		visible			false
+		layer			100
+		rect			0 134 48 8	
+		<panel>
+			id		pan_border
+			enable			true
+			visible			true
+			layer			100
+			rect			0 0 48 8
+			<image>
+				key	none				
+				screen	colosseum
+				index	30
+			</image>
+		</panel>
+		<panel>
+			id		pan_bar
+			enable			true
+			visible			true
+			layer			110
+			rect			1 1 46 6
+			<image>
+				key	none				
+				screen	colosseum
+				index	31
+			</image>
+		</panel>
+	</panel>
+</window>

@@ -1,0 +1,418 @@
+<window>
+	name			itemShopWnd
+	enable			true
+	visible			true
+	layer			100
+	rect			0  0 758 433
+	titlerect		0 0 732 29
+	<panel>
+		id			pan_left
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 422 433
+		<image>
+			key		none
+			screen	item_shop
+			index	1
+		</image>
+		<button>
+			id			btn_tab_0
+			enable		true
+			visible		true
+			layer		100
+			rect		18 36 79 23
+			<image>
+				key		none
+				screen	item_shop
+				index 	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop
+				index 	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop
+				index 	13
+			</image>
+			<image>
+				key		check
+				screen	item_shop
+				index 	14
+			</image>
+		</button>
+		<button>
+			id			btn_tab_1
+			enable		true
+			visible		true
+			layer		100
+			rect		95 36 79 23
+			<image>
+				key		none
+				screen	item_shop
+				index 	15
+			</image>
+			<image>
+				key		over
+				screen	item_shop
+				index 	16
+			</image>
+			<image>
+				key		down
+				screen	item_shop
+				index 	17
+			</image>
+			<image>
+				key		check
+				screen	item_shop
+				index 	18
+			</image>
+		</button>
+		<button>
+			id			btn_tab_2
+			enable		true
+			visible		true
+			layer		100
+			rect		172 36 79 23
+			<image>
+				key		none
+				screen	item_shop
+				index 	19
+			</image>
+			<image>
+				key		over
+				screen	item_shop
+				index 	20
+			</image>
+			<image>
+				key		down
+				screen	item_shop
+				index 	21
+			</image>
+			<image>
+				key		check
+				screen	item_shop
+				index 	22
+			</image>
+		</button>
+		<button>
+			id			btn_tab_3
+			enable		true
+			visible		true
+			layer		100
+			rect		249 36 79 23
+			<image>
+				key		none
+				screen	item_shop
+				index 	23
+			</image>
+			<image>
+				key		over
+				screen	item_shop
+				index 	24
+			</image>
+			<image>
+				key		down
+				screen	item_shop
+				index 	25
+			</image>
+			<image>
+				key		check
+				screen	item_shop
+				index 	26
+			</image>
+		</button>
+		
+		<panel>
+			id			pan_itemList
+			enable		true
+			visible		true
+			layer		1
+			rect		27  98 379 283
+		</panel>
+		<panel>
+			id			pan_pageNum
+			enable		true
+			visible		true
+			layer		100
+			rect		162 403 86 18
+			<button>
+				id			btn_leftArrow
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 19 18
+				<image>
+					key		none
+					screen	item_shop
+					index 	51
+				</image>
+				<image>
+					key		over
+					screen	item_shop
+					index 	52
+				</image>
+				<image>
+					key		down
+					screen	item_shop
+					index 	53
+				</image>
+			</button>
+			<label>
+				id			lbl_pageNum
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		19 3 48 13
+				<title>
+					color		ffffffff
+					fontIndex	2
+					position	0 0
+				</title>
+			</label>
+			<button>
+				id			btn_rightArrow
+				enable		true
+				visible		true
+				layer		100
+				rect		67 0 19 18
+				<image>
+					key		none
+					screen	item_shop
+					index 	54
+				</image>
+				<image>
+					key		over
+					screen	item_shop
+					index 	55
+				</image>
+				<image>
+					key		down
+					screen	item_shop
+					index 	56
+				</image>
+			</button>
+		</panel>
+	</panel>
+	<panel>
+		id			pan_right
+		enable		true
+		visible		true
+		layer		1
+		rect		422 0 336 433
+		<image>
+			key		none
+			screen	item_shop
+			index 	2
+		</image>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		310 3 13 13
+			<image>
+				key		none
+				screen	item_shop
+				index	71
+			</image>
+			<image>
+				key		over
+				screen	item_shop
+				index	72
+			</image>
+			<image>
+				key		down
+				screen	item_shop
+				index	73
+			</image>
+		</button>
+		
+		<item>
+			id			select_item
+			enable		true
+			visible		true
+			layer		1
+			rect		28 93 63 127	
+			cellsize 	32 32
+			moveable	true
+		</item>	
+		
+		<label>
+			id			lbl_itemName
+			enable		true
+			visible		true
+			layer		100
+			align		left
+			rect		98 81 198 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>
+		</label>
+			
+		<label>
+			id			lbl_cash
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		98 107 154 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>
+		</label>
+		<button>
+			id			btn_buy
+			enable		true
+			visible		true
+			layer		100
+			rect		151 143 95 23
+			<image>
+				key		none
+				screen	item_shop
+				index	31
+			</image>
+			<image>
+				key		over
+				screen	item_shop
+				index	32
+			</image>
+			<image>
+				key		down
+				screen	item_shop
+				index	33
+			</image>
+		</button>
+		<button>
+			id			btn_giftItem
+			enable		true
+			visible		true
+			layer		100
+			rect		151 174 95 23
+			<image>
+				key		none
+				screen	item_shop
+				index	34
+			</image>
+			<image>
+				key		over
+				screen	item_shop
+				index	35
+			</image>
+			<image>
+				key		down
+				screen	item_shop
+				index	36
+			</image>
+		</button>
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		18 240 297 152
+			lineheight	16
+			maxlength 	500
+			margin		15 20
+			fonttype	2
+			color		FFFFFFFF
+			<vscroll>
+				id			textbox_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		281 0 16 152
+				maxvalue	3
+				buttontick  1
+				<button>
+					id			textbox_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 16 19
+					type		1
+					<image>
+						key		0
+						screen	item_shop
+						index	41
+					</image>
+					<image>
+						key		over
+						screen	item_shop
+						index	42
+					</image>
+					<image>
+						key		down
+						screen	item_shop
+						index	43
+					</image>
+					<image>
+						key		disable
+						color 	0x00000000
+					</image>
+				</button>
+				<button>
+					id			textbox_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 133 16 19
+					type		1
+					<image>
+						key		0
+						screen	item_shop
+						index	44
+					</image>
+					<image>
+						key		over
+						screen	item_shop
+						index	45
+					</image>
+					<image>
+						key		down
+						screen	item_shop
+						index	46
+					</image>
+					<image>
+						key		disable
+						color 	0x00000000
+					</image>
+				</button>
+				<panel>
+					id			textbox_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 16 31
+					moveable	true
+					<image>
+						key		0
+						screen	item_shop
+						index	61
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+		
+		<label>
+			id			lbl_curMycash
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		149 405 132 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>
+		</label>
+	</panel>
+</window>

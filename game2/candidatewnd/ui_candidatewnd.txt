@@ -1,0 +1,82 @@
+<window>
+	name			candidatewnd
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	rect			0 0 0 0
+	alwaysontop		true
+		
+	<panel>
+		id			pan_candidate
+		enable			true
+		visible			true
+		layer			100
+		intersect		false
+		rect			0 0 14 14
+		<image>
+			screen		console
+			index		1
+		</image>
+		
+		<listbox>
+			id				list_candidate
+			enable			true
+			visible			true
+			layer			110
+			rect			0 0 500 160
+			nodewidth 	  	490
+			nodeheight		15
+			btnsize			15
+			<title>
+				state		none
+				color		FFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state		over
+				color		FFFFFFFF
+				fontIndex	3
+			</title>
+			<title>
+				state		check
+				color		FFFFB900
+				fontIndex	3
+			</title>
+			<vscroll>
+				id				list_candidate_scroll
+				enable			true
+				visible			true
+				layer			1
+				rect			3 5 0 0
+				maxvalue		0
+				buttontick  	1
+				<button>
+					id			list_candidate_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 0 0
+					type		1
+				</button>
+				<button>
+					id			list_candidate_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 100 0 0
+					type		1
+				</button>
+				<panel>
+					id			list_candidate_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 0 0
+					moveable	true
+					noneimage 	true
+				</panel>
+			</vscroll>
+		</listbox>
+	</panel>
+</window>

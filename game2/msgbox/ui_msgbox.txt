@@ -1,0 +1,76 @@
+<window>
+	name			msgbox
+	enable			true
+	visible			true
+	modal 			true
+	position		center center
+	layer			100
+	rect			-140  0 140 170
+	titlerect		0 0 280 20
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 280 170
+		<image>
+				key		none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			rect		0 3 280 14
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0	
+			</title>					
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		257 3 13 13
+			<image>
+				key		none
+				screen	item_shop
+				index	71
+			</image>
+			<image>
+				key		over
+				screen	item_shop
+				index	72
+			</image>
+			<image>
+				key		down
+				screen	item_shop
+				index	73
+			</image>
+		</button>
+	</panel>
+	
+	<label>
+		id		lbl_msg
+		enable		true
+		visible		true
+		layer		60
+		rect		15 40 265 80
+		lineheight 	25
+		multiline 	true
+		align 		center
+		<title>
+			color		ffffffff
+			fontIndex	3
+			position	0 0	
+		</title>
+	</label>
+</window>

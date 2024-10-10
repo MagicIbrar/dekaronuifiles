@@ -1,0 +1,412 @@
+<window>
+	name			increaseauction
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 333 511
+	titlerect		0 0 317 24
+	
+	<panel>
+		id			pan_store
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 333 375
+		<image>
+			key		0
+			screen	store_per
+			index	5
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		60
+			rect		28 2 174 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		210 11
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		317 3 13 13
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		3
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		4
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		5
+			</image>
+		</button>
+		<button>
+			id			btn_save
+			enable		true
+			visible		true
+			layer		100
+			rect		226 2 77  14
+			align 		center
+			sound  0
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2		230 28
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 6
+			</title>
+		</button>
+		<label>
+			id			lbl_pcname
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		19 26 282 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<itemslot>
+			id			itemlist
+			enable		true
+			visible		true
+			layer		100
+			rect		7 49 319 310
+			cellsize	32 32
+		</itemslot>
+	</panel>
+	<panel>
+		id			pan_chat
+		enable		true
+		visible		true
+		layer		1
+		rect		0 375 333 82
+		<image>
+			key		0
+			screen	store_per
+			index	4
+		</image>
+	</panel>
+	<textbox>
+		id			text_chat
+		enable		true
+		visible		true
+		layer		100
+		rect		0 381 333 70
+		lineheight	12
+		margin		18 5
+		fonttype	2
+		chattype	1
+		autoline	true
+		color		FFEDFC00
+		<vscroll>
+			id			text_chat_scroll
+			enable		true
+			visible		true
+			layer		100
+			rect		315 0 12 70
+			maxvalue	0
+			buttontick  1
+			<button>
+				id		text_chat_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 12 12
+				type		1
+				<image>
+					key	0
+					screen	etc_01
+					index	19
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	20
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	21
+				</image>
+				<image>
+					key		disable
+					screen	etc_01
+					index	18
+				</image>
+			</button>
+			<button>
+				id			text_chat_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				position	left bottom
+				rect		0 -12 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	17
+				</image>
+				<image>
+					key		disable
+					screen	etc_01
+					index	14
+				</image>
+			</button>
+			<panel>
+				id			text_chat_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 12 12 19 
+				moveable	true
+				noneimage 	true
+				<image>
+					key		none
+					screen	etc_01
+					index	24
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	25
+				</image>
+			</panel>
+		</vscroll>
+	</textbox>
+	<panel>
+		id			pan_store_2
+		enable		true
+		visible		true
+		layer		1
+		rect		0 457 333 54
+		<image>
+			key		0
+			screen	store_per
+			index	2
+		</image>
+		<label>
+			id			lbl_tagName
+			enable		true
+			visible		true
+			layer		101
+			align 		right
+			rect		21 8 52 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		210 12
+			</title>
+		</label>
+		<panel>
+			id			pan_storeName_bg
+			enable		true
+			visible		true
+			layer		50
+			rect		82 8 144 16
+			<image>
+				key		0
+				screen	store_per
+				index	3
+			</image>
+			<edit>
+				id			edt_storename
+				enable		true
+				visible		true
+				layer		100
+				rect		1 1 143 14	
+				maxlength	25
+				font_type	2
+				input_type	0
+				align		left
+				color		ffffffff
+				multiline   false			
+			</edit>
+		</panel>
+		<label>
+			id			lbl_tagMoney
+			enable		true
+			visible		true
+			layer		101
+			align 		right
+			rect		21 29 52 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		210 13
+			</title>
+		</label>
+		<panel>
+			id			pan_imcome_bg
+			enable		true
+			visible		true
+			layer		50
+			rect		82 30 144 16
+			<image>
+				key		0
+				screen	store_per
+				index	3
+			</image>
+			<label>
+				id			lbl_imcome
+				enable		true
+				visible		true
+				layer		101
+				align		right
+				rect		12 2 97 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<label>
+				id			lbl_tagUnit
+				enable		true
+				visible		true
+				layer		101
+				align		right
+				rect		116 1 28 14
+				<title>
+					color		ffffffff
+					fontIndex	4
+					text2 		210 14
+				</title>
+			</label>
+		</panel>
+		
+		<button>
+			id			btn_open
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		244 6 57 19
+			<image>
+				key			0
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2		210 15
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 6
+			</title>
+		</button>
+		<button>
+			id			btn_close
+			enable		true
+			visible		false
+			layer		100
+			align		center
+			rect		244 6 57 19
+			<image>
+				key			0
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2		210 16
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 6
+			</title>
+		</button>
+		<button>
+			id			btn_get
+			enable		true
+			visible		true
+			layer		100
+			rect		244 27 57 19
+			align		center
+			<image>
+				key			0
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2		210 17
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 6
+			</title>
+		</button>
+	</panel>
+</window>

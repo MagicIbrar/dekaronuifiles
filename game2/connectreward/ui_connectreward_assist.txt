@@ -1,0 +1,116 @@
+<window>
+	id	quest
+	enable	true
+	visible	true
+	layer	100
+	rect	0 0 120 120
+	modal	false
+	alwaysontop	false
+	titlerect	0 0 120 20
+	<panel>
+		id	pan_body
+		enable	true
+		visible	true
+		layer	1
+		rect	0 0 120 120
+		<image>
+			key	none
+			color	ffffffff
+			screen	newquest
+			index	5
+		</image>
+		<label>
+			id	lbl_tagtitle
+			enable	true
+			visible	true
+			layer	60
+			rect	0 4 118 14
+			align	center
+			<title>
+				state	none
+				color	ffffffff
+				fontindex	4
+				lienheight	0
+				text2	5000 14
+			</title>
+		</label>
+		<button>
+			id	btn_close
+			enable	true
+			visible	true
+			layer	100
+			rect		102 4 15 15
+
+			<image>
+				key	none
+				color	ffffffff
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key	over
+				color	ffffffff
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key	down
+				color	ffffffff
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<panel>
+			id	pan_object
+			enable	false
+			visible	false
+			layer	1
+			rect	0 0 120 60
+			<panel>
+				id	pan_gauge_base
+				enable	false
+				visible	true
+				layer	1
+				rect	5 5 108 21
+				<image>
+					key	none
+					color	ffffffff
+					screen	ConnectRewardwnd
+					index	13
+				</image>
+				<processbar>
+					id	pan_gauge
+					enable	true
+					visible	true
+					layer	2
+					rect	4 4 100 13
+					maxsize	100
+					<image>
+						key	none
+						color	ffffffff
+						screen	ConnectRewardwnd
+						index	14
+					</image>
+				</processbar>
+				<label>
+					id	lbl_gauge
+					enable	true
+					visible	true
+					layer	60
+					rect	2 3 104 18
+					multiline	true
+					align	center
+					<title>
+						state	none
+						color	ffffffff
+						fontindex	2
+						lienheight	0
+					</title>
+				</label>
+			</panel>
+		</panel>
+	</panel>
+</window>

@@ -1,0 +1,42 @@
+<window>
+	name			chatbubblewnd
+	enable			true
+	visible			true
+	layer			1000
+	layertype		bottom
+	rect			0 0 1024 768
+	<panel>
+		id			pan_middle
+		enable		true
+		visible		true
+		layer		1
+		intersect	false
+		rect		0 0 14 14
+		<image>
+			key	none
+			screen	pcpop
+			index	100
+		</image>
+	</panel>		
+	<textbox>
+		id			textbox
+		enable		false
+		visible		true
+		layer		100
+		rect		4 4 10 10
+		lineheight	16
+		margin		0 0
+		fonttype	2
+		color		FFFFFFFF
+		intersect	false
+		<panel>
+			id			pan_mark
+			enable		true
+			visible		false
+			layer		1
+			intersect	false
+			position	left bottom
+			rect		0 -24 24 24
+		</panel>		
+	</textbox>	
+</window>

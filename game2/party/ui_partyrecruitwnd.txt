@@ -1,0 +1,973 @@
+<window>
+	name			party_recruit
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-122 -145 122 145
+	titlerect		0 0 244 26
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 244 290
+		<image>
+			key		none
+			screen	party 
+			index	20
+		</image>		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		84 7 75 16
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 100
+			</title>
+		</label>
+	</panel>
+	<button>
+		id			btn_exit
+		enable		true
+		visible		true
+		layer		100
+		rect		221 8 15 15
+
+		sound  0
+		<image>
+			key		none
+			screen	etc_01
+			index		315
+
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index		316
+
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index		317
+
+		</image>
+	</button>
+	
+	<panel>
+		id		pan_setting
+		enable		true
+		visible		true
+		layer		10
+		rect		0 30 244 232
+		<label>
+				id			lbl_mapsetting
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		84 2 75 16
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		70 39
+				</title>
+		</label>
+		<label>
+			id			lbl_mapname
+			enable		true
+			visible		true
+			layer		100
+			rect		10 28 212 20
+			align		center
+			<image>
+				key		none
+				screen	party
+				index	23
+			</image>
+			<title>
+					color		ffffffff
+					fontIndex	2
+			</title>	
+		</label>
+		<button>
+			id			btn_showlist
+			enable		true
+			visible		true
+			layer		100
+			rect		220 29 16 16
+			<image>
+				key		none
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+		</button>
+		<panel>
+			id			pan_maplist
+			enable		true
+			visible		false
+			layer		110
+			rect		10 48 224 120
+			border		false
+			<listbox>
+				id			list_maplist
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 224 120
+				nodewidth   224
+				nodeheight	20
+				offset		5
+				btnsize		20			
+				<image>
+					key		none
+					screen	party
+					index	4
+				</image>
+				<title>
+					state		over
+					color		FF74AEE4
+					fontIndex	4
+				</title>
+				<title>
+					state		check
+					color		FFFFB900
+					fontIndex	4
+				</title>
+				<title>
+					state		none
+					color		FFFFFFFF
+					fontIndex	4
+				</title>
+				<vscroll>
+					id			list_maplist_scroll
+					enable		true
+					visible		true
+					layer		200
+					rect		210 0 12 120
+					maxvalue	0
+					buttontick  1
+					<button>
+						id			list_maplist_scroll_upbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 12 12
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	19
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	20
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	21
+						</image>
+					</button>
+					<button>
+						id			list_maplist_scroll_downbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 105 12 12
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	15
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	16
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	17
+						</image>
+					</button>
+					<panel>
+						id			list_maplist_scroll_bar
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 12 12
+						moveable	true
+						noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	24
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	25
+						</image>
+					</panel>
+				</vscroll>			
+			</listbox>
+		</panel>		
+		<label>
+				id			lbl_level_setting
+				enable		true
+				visible		true
+				layer		110
+				align		center
+				rect		4 60 235 20
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		70 40
+				</title>
+		</label>		
+		<label>
+				id			lbl_level_1
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		7 87 13 12
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		70 92
+				</title>
+		</label>
+		<label>
+				id			lbl_level_2
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		59 87 24 12
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		70 91
+				</title>
+		</label>
+		<edit>
+			id		edit_level_1
+			enable		true
+			visible		true
+			layer		100
+			rect		26 87 31 17
+			maxlength	6
+			font_type	2
+			input_type	2
+			maxlength	3
+			align		center
+			color		ffffffff
+			multiline   false
+			<image>
+				key		none
+				screen	party 
+				index	23
+			</image>
+		</edit>
+		<edit>
+			id		edit_level_2
+			enable		true
+			visible		true
+			layer		100
+			rect		91 87 31 17
+			maxlength	6
+			font_type	2
+			input_type	2
+			maxlength	3
+			align		center
+			color		ffffffff
+			multiline   false
+			<image>
+				key		none
+				screen	party 
+				index	23
+			</image>
+		</edit>
+		<label>
+				id			lbl_level_Limit
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		122 87 115 15
+				<title>
+					color		ffff0000
+					fontIndex	2
+				</title>
+		</label>
+		<label>
+				id			lbl_class_setting
+				enable		true
+				visible		true
+				layer		110
+				align		center
+				rect		4 119 235 20
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		70 90
+				</title>
+		</label>
+		<button>
+			id		btn_class_0
+			enable		true
+			visible		true
+			layer		100
+			rect		8 149 26 20
+			<image>
+				key		none
+				screen	party 
+				index	31
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	32
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	33
+			</image>
+		</button>
+		<panel>
+			id		pan_class_0
+			enable		true
+			visible		true
+			layer		110
+			rect		8 149 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_1
+			enable		true
+			visible		true
+			layer		100
+			rect		37 149 26 20
+			<image>
+				key		none
+				screen	party 
+				index	34
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	35
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	36
+			</image>
+		</button>
+		<panel>
+			id		pan_class_1
+			enable		true
+			visible		true
+			layer		110
+			rect		37 149 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_2
+			enable		true
+			visible		true
+			layer		100
+			rect		66 149 26 20
+			<image>
+				key		none
+				screen	party 
+				index	37
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	38
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	39
+			</image>
+		</button>
+		<panel>
+			id		pan_class_2
+			enable		true
+			visible		true
+			layer		110
+			rect		66 149 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_3
+			enable		true
+			visible		true
+			layer		100
+			rect		95 149 26 20
+			<image>
+				key		none
+				screen	party 
+				index	40
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	41
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	42
+			</image>
+		</button>
+		<panel>
+			id		pan_class_3
+			enable		true
+			visible		true
+			layer		110
+			rect		95 149 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_4
+			enable		true
+			visible		true
+			layer		100
+			rect		124 149 26 20
+			<image>
+				key		none
+				screen	party 
+				index	43
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	44
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	45
+			</image>
+		</button>
+		<panel>
+			id		pan_class_4
+			enable		true
+			visible		true
+			layer		110
+			rect		124 149 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_5
+			enable		true
+			visible		true
+			layer		100
+			rect		153 149 26 20
+			<image>
+				key		none
+				screen	party 
+				index	46
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	47
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	48
+			</image>
+		</button>
+		<panel>
+			id		pan_class_5
+			enable		true
+			visible		true
+			layer		110
+			rect		153 149 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_6
+			enable		true
+			visible		true
+			layer		100
+			rect		182 149 26 20
+			<image>
+				key		none
+				screen	party 
+				index	49
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	50
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	51
+			</image>
+		</button>
+		<panel>
+			id		pan_class_6
+			enable		true
+			visible		true
+			layer		110
+			rect		182 149 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_7
+			enable		true
+			visible		true
+			layer		100
+			rect		8 177 26 20
+			<image>
+				key		none
+				screen	party 
+				index	52
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	53
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	54
+			</image>
+		</button>
+		<panel>
+			id		pan_class_7
+			enable		true
+			visible		true
+			layer		110
+			rect		8 177 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_8
+			enable		true
+			visible		true
+			layer		100
+			rect		37 177 26 20
+			<image>
+				key		none
+				screen	party 
+				index	55
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	56
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	57
+			</image>
+		</button>
+		<panel>
+			id		pan_class_8
+			enable		true
+			visible		true
+			layer		110
+			rect		37 177 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_9
+			enable		true
+			visible		true
+			layer		100
+			rect		66 177 26 20
+			<image>
+				key		none
+				screen	party 
+				index	58
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	59
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	60
+			</image>
+		</button>
+		<panel>
+			id		pan_class_9
+			enable		true
+			visible		true
+			layer		110
+			rect		66 177 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_10
+			enable		true
+			visible		true
+			layer		100
+			rect		95 177 26 20
+			<image>
+				key		none
+				screen	party 
+				index	61
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	62
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	63
+			</image>
+		</button>
+		<panel>
+			id		pan_class_10
+			enable		true
+			visible		true
+			layer		110
+			rect		95 177 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_11
+			enable		true
+			visible		true
+			layer		100
+			rect		124 177 26 20
+			<image>
+				key		none
+				screen	party 
+				index	64
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	65
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	66
+			</image>
+		</button>
+		<panel>
+			id		pan_class_11
+			enable		true
+			visible		true
+			layer		110
+			rect		124 177 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_12
+			enable		true
+			visible		true
+			layer		100
+			rect		153 177 26 20
+			<image>
+				key		none
+				screen	party 
+				index	67
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	68
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	69
+			</image>
+		</button>
+		<panel>
+			id		pan_class_12
+			enable		true
+			visible		true
+			layer		110
+			rect		153 177 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_13
+			enable		true
+			visible		true
+			layer		100
+			rect		182 177 26 20
+			<image>
+				key		none
+				screen	party 
+				index	70
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	71
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	72
+			</image>
+		</button>
+		<panel>
+			id		pan_class_13
+			enable		true
+			visible		true
+			layer		110
+			rect		182 177 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_class_14
+			enable		true
+			visible		true
+			layer		100
+			rect		211 171 26 20
+			<image>
+				key		none
+				screen	party 
+				index	73
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	74
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	75
+			</image>
+		</button>
+		<panel>
+			id		pan_class_14
+			enable		true
+			visible		true
+			layer		110
+			rect		211 171 26 20
+			intersect 	false
+			<image>
+				key		none
+				screen	party 
+				index	110
+			</image>
+		</panel>
+		<button>
+			id		btn_all
+			enable		true
+			visible		false
+			layer		100
+			rect		211 177 26 20
+			tooltip		70 119
+			<image>
+				key		none
+				screen	party 
+				index	120
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	121
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	122
+			</image>
+		</button>
+		<button>
+			id		btn_nothing
+			enable		true
+			visible		false
+			layer		100
+			rect		211 177 26 20
+			tooltip		70 120
+			<image>
+				key		none
+				screen	party 
+				index	130
+			</image>
+			<image>
+				key		over
+				screen	party 
+				index	131
+			</image>
+			<image>
+				key		down
+				screen	party 
+				index	132
+			</image>
+		</button>
+		<checkbox>
+			id			check_auto
+			enable		true
+			visible		true
+			layer		110
+			rect		70 205 110 20
+			align		left
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontindex	2
+				color		ffffffff
+				position	5 6
+				text2		70 137
+			</title>
+			<title>
+				state			over
+				fontindex	2
+				position	5 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+	</panel>
+
+	<button>
+			id			btn_ok
+			enable		true
+			visible		true
+			layer		100
+			rect		98 262 57 19
+			align		center
+			sound		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		2000 22
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+	</button>	
+</window>

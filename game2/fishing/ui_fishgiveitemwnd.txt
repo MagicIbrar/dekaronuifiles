@@ -1,0 +1,55 @@
+<window>
+	name			fishgiveitem
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			-356 159 357 330
+	alwaysontop		true
+	
+	<panel>
+		id			pan_item_2
+		enable		true
+		visible		true
+		layer		100
+		intersect	false
+		rect		319 25 74 75
+		<image>
+			key		0
+			screen	fishing
+			index	10
+		</image>
+		<item>
+			id			giveitem_2
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		4 4 62 62
+			cellsize	31 31
+		</item>
+	</panel>
+	<panel>
+		id			pan_item_4
+		enable		true
+		visible		false
+		layer		100
+		intersect	false
+		rect		319 25 74 139
+		<image>
+			key		0
+			screen	fishing
+			index	9
+		</image>
+		<item>
+			id			giveitem_4
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		4 4 62 124
+			cellsize	31 31
+		</item>
+	</panel>
+	
+</window>

@@ -1,0 +1,403 @@
+<window>
+	name			trade
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-340 -304 340 304
+	titlerect		7 3 670 30
+		
+	<panel>
+		id			pan_trade
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 333 473
+		<panel>
+			id			pan_trade_bg
+			enable		true
+			visible		true
+			layer		1
+			rect		0 0 333 473
+			<image>
+				key		0
+				screen	new_trade
+				index	1
+			</image>
+			<panel>
+				id			pan_trader_bg_lock
+				enable		true
+				visible		false
+				layer		10
+				rect		7 46 319 159
+				<image>
+					key	0	
+					screen	new_trade
+					index	4
+				</image>
+			</panel>
+			<panel>
+				id			pan_my_bg_lock
+				enable		true
+				visible		false
+				layer		10
+				rect		7 246 319 159
+				<image>
+					key	0	
+					screen	new_trade
+					index	4
+				</image>
+			</panel>
+			<label>
+				id			lbl_title
+				enable		true
+				visible		true
+				layer		60
+				align 		center
+				rect		28 2 275 14
+				<title>
+					color		ffffffff
+					fontIndex	4
+					text2 		110 7
+				</title>
+			</label>
+			<button>
+				id			btn_exit
+				enable		true
+				visible		true
+				layer		100
+				rect		315 2 15 15
+
+				<image>
+					key		none
+					screen	etc_01
+					index		315
+
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index		316
+
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index		317
+
+				</image>
+			</button>
+		</panel>
+		<label>
+			id			lbl_tradername
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		70 25 144 16
+			<image>
+				key 	none
+				screen 	party
+				index 	6				
+			</image>
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_tagTrade
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		217 26 45 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		110 8
+			</title>
+		</label>
+		<itemslot>
+			id			slottrader
+			enable		true
+			visible		true
+			layer		100
+			rect		7 49 319 160
+			cellsize	32 32
+		</itemslot>
+		<itemslot>
+			id			slotme
+			enable		true
+			visible		true
+			layer		100
+			rect		7 248 319 160
+			cellsize	32 32
+		</itemslot>
+		<label>
+			id			lbl_tradermoney
+			enable		true
+			visible		true
+			layer		101
+			align 		right
+			rect		94 217 143 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id			pan_traderstate
+			enable		true
+			visible		true
+			layer		101
+			rect		246 217 15 15
+			<image>
+				key 	none
+				screen	pcpop
+				index 	8
+			</image>
+			<button>
+				id			btn_confirm
+				enable		true
+				visible		true
+				intersect 	false
+				layer		100
+				rect		1 1 13 13
+				<image>
+					key			none
+					color 		0x00000000
+				</image>
+				<image>
+					key			check
+					screen		pcpop
+					index		9
+				</image>
+			</button>
+		</panel>
+		<label>
+			id			lbl_tagstate1
+			enable		true
+			visible		true
+			layer		101
+			align 		right
+			rect		266 217 28 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		110 9
+			</title>
+		</label>
+		<label>
+			id			lbl_mymoney
+			enable		true
+			visible		true
+			layer		101
+			align 		right
+			rect		94 416 143 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id			pan_mystate
+			enable		true
+			visible		true
+			layer		101
+			rect		246 416 15 15
+			<image>
+				key 	none
+				screen	pcpop
+				index 	8
+			</image>
+			<button>
+				id			btn_myConfirm
+				enable		true
+				visible		true
+				intersect 	false
+				layer		100
+				rect		1 1 13 13
+				<image>
+					key			none
+					color 		0x00000000
+				</image>
+				<image>
+					key			check
+					screen		pcpop
+					index		9
+				</image>
+			</button>
+		</panel>
+		<label>
+			id			lbl_tagstate2
+			enable		true
+			visible		true
+			layer		101
+			align 		right
+			rect		266 416 28 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		110 9
+			</title>
+		</label>
+		<label>
+			id			lbl_itemmessage
+			enable		true
+			visible		false
+			layer		1000
+			intersect 	false
+			align		center
+			rect		15 100 300 16
+			<image>
+				key		0
+				screen	trade
+				index	100
+			</image>
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_moneymessage
+			enable		true
+			visible		false
+			intersect 	false
+			layer		1000
+			align		center
+			rect		15 120 300 16
+			<image>
+				key		0
+				screen	trade
+				index	100
+			</image>
+			<title>
+				color		ffffff00
+				fontIndex	2
+			</title>
+		</label>
+		<button>
+			id			btn_lastok
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		16 446 57 19
+			<image>
+				key			0
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 4
+				text2		2000 22
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+		<button>
+			id			btn_ok
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		92 446 57 19
+			<image>
+				key			0
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 4
+				text2		110 9
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+		<panel>
+			id			pan_progressBg
+			enable		true
+			visible		true
+			layer		101
+			rect		154 452 99 8
+			<image>
+				key 	none
+				screen	new_trade
+				index 	2
+			</image>
+			<processbar>	
+				id		processbar
+				enable		true
+				visible		true
+				layer		101
+				rect		1 1 99 6
+				maxsize     99	
+				<image>
+					key	0
+					screen	new_trade
+					index	3
+				</image>				
+			</processbar>	
+		</panel>		
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		260 446 57 19
+			<image>
+				key			0
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 4
+				text2		2000 14
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+	</panel>	
+</window>

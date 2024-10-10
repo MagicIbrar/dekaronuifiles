@@ -1,0 +1,120 @@
+<window>
+	name			loadwnd
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	alwaysontop		true
+	rect			0 0 0 0
+	<panel>
+		id			pan_map
+		enable		true
+		visible		true
+		layer		99
+		position	inverse inverse
+		rect		0 0 0 0
+		<image>
+			key		0
+			color	ffffffff
+			screen	loadingmap
+			index	0
+		</image>
+		
+		<panel>
+			id			pan_load1
+			enable		true
+			visible		true
+			layer		99
+			position	center bottom
+			rect		-344 -40 67 31
+			<image>
+				key		0
+				screen	Loading
+				index	1
+			</image>
+			<panel>
+				id			pan_bar1
+				enable		true
+				visible		true
+				layer		99
+				rect		36 7 30 16
+				<image>
+					key		0
+					screen	Loading
+					index	10
+				</image>
+			</panel>
+		</panel>
+		
+		<panel>
+			id			pan_loading
+			enable		true
+			visible		true
+			layer		99
+			position	center bottom
+			rect		-278 -40 554 31
+			<image>
+				key		0
+				screen	Loading
+				index	2
+			</image>
+		</panel>
+		<processbar>	
+			id			pro_loading
+			enable		true
+			visible		true
+			layer		100
+			position	center bottom
+			rect		-278 -33 557 16
+			maxsize     547	
+			<image>
+				key		0
+				screen	Loading
+				index	11
+			</image>				
+		</processbar>
+		
+		<panel>
+			id			pan_loadend
+			enable		true
+			visible		true
+			layer		99
+			position	center bottom
+			rect		237 -40 67 31
+			<image>
+				key		0
+				color	00000000
+				screen	Loading
+				index	3
+			</image>
+		</panel>
+
+		<panel>
+			id		pan_info
+			enable		true
+			visible		true
+			layer		99
+			position	center bottom
+			rect		-512 -133 1024 51
+			<image>
+				key		0
+				screen	movemaptip		
+				index	1
+			</image>
+			<label>
+				id		lbl_infostr
+				enable		true
+				visible		true
+				layer		101
+				align		center 
+				rect		0 0 1024 51
+				<title>
+					color		ffffffff
+					fontIndex	3
+					position	0 19
+					text2		100 150
+				</title>
+			</label>
+		</panel>
+	</panel>
+</window>

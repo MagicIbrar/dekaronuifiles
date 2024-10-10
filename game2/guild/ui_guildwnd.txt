@@ -1,0 +1,1258 @@
+<window>
+	name			guildWnd
+	enable			true
+	visible			true
+	layer			100
+	rect			350 146 735 681
+	titlerect		0 0 305 24
+	<panel>
+		id			pan_title
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 321 47
+		<image>
+			key		none
+			screen	guild_01
+			index	1
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		28 3 263 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 49
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		305 3 13 13
+			sound  0
+			<image>
+				key		none
+				screen	etc_01
+				index	3
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	4
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	5
+			</image>
+		</button>
+		<button>
+			id			btn_guild
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		4 23 70 22
+			align		center
+			<image>
+				key		0
+				screen	etc_01
+				index	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 6
+				text2 		130 321
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	4
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_alliance
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		74 23 70 22
+			align		center
+			<image>
+				key		0
+				screen	etc_01
+				index	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 6
+				text2 		140 1
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	4
+				position	0 4
+			</title>
+		</button>			
+	</panel>
+	
+	<panel>
+		id			pan_guildinfo
+		enable		true
+		visible		true
+		layer		1
+		rect		0 47 321 48
+		<image>
+			key		none
+			screen	guild_01
+			index	2
+		</image>
+		<label>
+			id			lbl_tagName
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		8 7 40 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		130 42
+			</title>
+		</label>
+		<label>
+			id			lbl_guildName
+			enable		true
+			visible		true
+			layer		100
+			rect		52 7 141 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_tagMemCnt
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		196 7 35 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		130 163
+			</title>
+		</label>
+		<label>
+			id			lbl_memberCnt
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		234 7 31 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_tagLev
+			enable		true
+			visible		true
+			layer		100
+			rect		8 25 41 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		130 43
+			</title>
+		</label>
+		<label>
+			id			lbl_guildLevel
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		52 25 31 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_tagAdvan
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		86 25 45 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		130 164
+			</title>
+		</label>
+		<label>
+			id			lbl_advanNum
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		124 25 141 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id			pan_markback
+			enable		true
+			visible		true
+			layer		10
+			rect		270 3 40 40
+			<image>
+				key		0
+				color	0x00000000
+			</image>
+		</panel>
+		<panel>
+			id			pan_markfront
+			enable		true
+			visible		true
+			layer		20
+			rect		270 3 40 40
+			<image>
+				key		0
+				color	0x00000000
+			</image>
+		</panel>
+	</panel>
+	
+	<panel>
+		id			pan_body
+		enable		true
+		visible		true
+		layer		1
+		rect		0 95 321 365
+		<image>
+			key		none
+			screen	guild_01
+			index	4
+		</image>
+		<panel>
+			id			pan_notice
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 315 155
+			<label>
+				id			lbl_notice
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		22 3 262 14
+				<title>
+					color		ffffffff
+					fontIndex	4
+					text2 		130 58
+				</title>
+			</label>
+			<textbox>
+				id			textbox
+				enable		true
+				visible		true
+				layer		100
+				rect		15 20 300 135
+				lineheight	16
+				margin		10 4
+				fonttype	2g
+				autoline 	true
+				widthcut	28
+				color		FFFFFFFF
+				<vscroll>
+					id			textbox_scroll
+					enable		true
+					visible		true
+					layer		1
+					rect		288 0 12 135
+					maxvalue	3
+					buttontick  1
+					<button>
+						id			textbox_scroll_upbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 12 12
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	19
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	20
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	21
+						</image>
+					</button>
+					<button>
+						id			textbox_scroll_downbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 123 12 12
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	15
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	16
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	17
+						</image>
+					</button>
+					<panel>
+						id			textbox_scroll_bar
+						enable		true
+						visible		true
+						layer		100
+						rect		0 12 12 19
+						moveable	true
+						noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	24
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	25
+						</image>
+					</panel>
+				</vscroll>
+			</textbox>			
+		</panel>		
+		<panel>
+			id			pan_memList
+			enable		true
+			visible		true
+			layer		10
+			rect		8 164 307 168
+			<panel>
+				id			pan_memColumn
+				enable		true
+				visible		true
+				layer		10
+				rect		14 0 263 14
+				<button>
+					id			btn_col_name
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 101 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	40 3
+						text2		130 151
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	40 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	41 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_name_asc
+					enable		true
+					visible		false
+					layer		10
+					rect		0 0 101 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	40 3
+						text2		130 152
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	40 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	41 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_name_desc
+					enable		true
+					visible		false
+					layer		10
+					rect		0 0 101 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	40 3
+						text2		130 153
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	40 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	41 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_class
+					enable		true
+					visible		true
+					layer		10
+					rect		114 0 41 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	10 3
+						text2		130 157
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	10 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	11 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_class_asc
+					enable		true
+					visible		false
+					layer		10
+					rect		114 0 41 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	10 3
+						text2		130 158
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	10 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	11 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_class_desc
+					enable		true
+					visible		false
+					layer		10
+					rect		114 0 41 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	10 3
+						text2		130 159
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	10 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	11 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_rank
+					enable		true
+					visible		true
+					layer		10
+					rect		168 0 41 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	10 3
+						text2		130 154
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	10 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	11 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_rank_asc
+					enable		true
+					visible		false
+					layer		10
+					rect		168 0 41 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	10 3
+						text2		130 155
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	10 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	11 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_rank_desc
+					enable		true
+					visible		false
+					layer		10
+					rect		168 0 41 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	10 3
+						text2		130 156
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	10 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	11 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_conn
+					enable		true
+					visible		true
+					layer		10
+					rect		222 0 41 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	10 3
+						text2		130 160
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	10 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	11 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_conn_asc
+					enable		true
+					visible		false
+					layer		10
+					rect		222 0 41 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	10 3
+						text2		130 161
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	10 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	11 4
+					</title>
+				</button>
+				<button>
+					id			btn_col_conn_desc
+					enable		true
+					visible		false
+					layer		10
+					rect		222 0 41 14
+					<title>
+						state 		none
+						color		ff929292
+						fontIndex	2
+						position	10 3
+						text2		130 162
+					</title>
+					<title>
+						state 		over
+						color		ffffffff
+						fontIndex	2
+						position	10 3
+					</title>
+					<title>
+						state 		down
+						color		ff929292
+						fontIndex	2
+						position	11 4
+					</title>
+				</button>
+			</panel>
+			<panel>
+				id			pan_separator1
+				enable		true
+				visible		true
+				layer		20
+				rect		120 5 2 172
+				intersect	false
+				<image>
+					key		none
+					screen	guild_01
+					index	7
+				</image>				
+			</panel>
+			<panel>
+				id			pan_separator2
+				enable		true
+				visible		true
+				layer		20
+				rect		174 5 2 172
+				intersect	false
+				<image>
+					key		none
+					screen	guild_01
+					index	7
+				</image>				
+			</panel>
+			<panel>
+				id			pan_separator3
+				enable		true
+				visible		true
+				layer		20
+				rect		228 5 2 172
+				intersect	false
+				<image>
+					key		none
+					screen	guild_01
+					index	7
+				</image>				
+			</panel>
+			<button>
+				id			btn_record
+				enable		false
+				visible		false
+				layer		10
+				rect		0 22 290 17
+				<label>
+					id			lbl_recName
+					enable		true
+					visible		true
+					layer		100
+					intersect 	false
+					rect		14 2 101 13
+					<title>
+						color		ffffffff
+						fontIndex	2
+						position	0 0
+					</title>
+				</label>
+				<label>
+					id			lbl_recClass
+					enable		true
+					visible		true
+					layer		100
+					intersect 	false
+					rect		128 2 40 13
+					<title>
+						color		ffffffff
+						fontIndex	2
+						position	0 0
+					</title>
+				</label>
+				<label>
+					id			lbl_recGrade
+					enable		true
+					visible		true
+					layer		100
+					intersect 	false
+					rect		182 2 41 13
+					<title>
+						color		ffffffff
+						fontIndex	2
+						position	0 0
+					</title>
+				</label>
+				<label>
+					id			lbl_recConn
+					enable		true
+					visible		true
+					layer		100
+					intersect 	false
+					rect		236 2 41 13
+					<title>
+						color		ffffffff
+						fontIndex	2
+						position	0 0
+					</title>
+				</label>
+			</button>				
+			<vscroll>
+				id			memList_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		295 20 12 148
+				maxvalue	3
+				buttontick  1
+				<button>
+					id			memList_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+				</button>
+				<button>
+					id			memList_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 136 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+				</button>
+				<panel>
+					id			memList_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					<image>
+						key		0
+						screen	etc_01
+						index	24
+					</image>
+				</panel>
+			</vscroll>			
+		</panel>
+		<button>
+			id			btn_manage
+			enable		true
+			visible		true
+			layer		10
+			rect		75 339 56 18
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	16 3
+				text2		130 40
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	16 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	17 4
+			</title>
+		</button>
+		<button>
+			id			btn_func
+			enable		true
+			visible		true
+			layer		10
+			rect		189 339 56 18
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	16 3
+				text2		130 41
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	16 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	17 4
+			</title>
+		</button>
+		<panel>
+			id			pan_managePop
+			enable		true
+			visible		false
+			layer		900
+			rect		61 283 75 56
+			<panel>
+				id			pan_popbg
+				enable		true
+				visible		true
+				layer		1
+				rect		0 0 75 56
+				<image>
+					key	none
+					screen	pcpop
+					index	100
+				</image>
+			</panel>
+			<button>
+				id			btn_power
+				enable		true
+				visible		true
+				layer		10
+				rect		0 8 75 20
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	10 2
+					fontIndex	2
+					text2		130 56
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+					position	10 2
+				</title>
+			</button>
+			<button>
+				id			btn_notice
+				enable		true
+				visible		true
+				layer		10
+				rect		0 28 75 20
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	10 2
+					fontIndex	2
+					text2		130 57
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+					position	10 2
+				</title>
+			</button>
+		</panel>
+		
+		<panel>
+			id			pan_funcPop
+			enable		true
+			visible		false
+			layer		900
+			rect		175 243 75 96
+			<panel>
+				id			pan_popbg
+				enable		true
+				visible		true
+				layer		1
+				rect		0 0 75 96
+				<image>
+					key	none
+					screen	pcpop
+					index	100
+				</image>
+			</panel>
+			<button>
+				id			btn_minilist
+				enable		true
+				visible		true
+				layer		10
+				rect		0 8 75 20
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	10 2
+					fontIndex	2
+					text2		130 52
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+				</title>
+			</button>
+			<button>
+				id			btn_state
+				enable		true
+				visible		true
+				layer		10
+				rect		0 28 75 20
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	10 2
+					fontIndex	2
+					text2		130 53
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+				</title>
+			</button>
+			<button>
+				id			btn_advanture
+				enable		true
+				visible		true
+				layer		10
+				rect		0 48 75 20
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	10 2
+					fontIndex	2
+					text2		130 54
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+				</title>
+			</button>
+			<button>
+				id			btn_secede
+				enable		true
+				visible		true
+				layer		10
+				rect		0 68 75 20
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	10 2
+					fontIndex	2
+					text2		130 55
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+				</title>
+			</button>
+		</panel>	
+	</panel>	
+	
+	<panel>
+		id			pan_memberPop
+		enable		true
+		visible		false
+		layer		900
+		rect		0 0 101 132
+		<image>
+			key	none
+			screen	pcpop
+			index	100
+		</image>
+			
+		<button>
+			id			btn_chgGrade
+			enable		true
+			visible		true
+			layer		10
+			rect		13 12 75 16
+			<title>
+				state 		none
+				color 		0xff7D7D7D
+				position	18 2
+				fontIndex	2
+				text2		130 74
+			</title>
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_kick
+			enable		true
+			visible		true
+			layer		10
+			rect		13 28 75 16
+			<title>
+				state 		none
+				color 		0xff7D7D7D
+				position	28 2
+				fontIndex	2
+				text2		130 75
+			</title>
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+		</button>
+		<panel>
+			id			pan_seperator_0
+			enable		true
+			visible		true
+			layer		10
+			rect		4 46 93 2
+			<image>
+				key		none
+				screen	guild
+				index	100
+			</image>
+		</panel>
+		<button>
+			id			btn_whisper
+			enable		true
+			visible		true
+			layer		10
+			rect		13 50 75 16
+			<title>
+				state 		none
+				color 		0xff7D7D7D
+				position	23 2
+				fontIndex	2
+				text2		130 76
+			</title>
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_curPos
+			enable		true
+			visible		true
+			layer		10
+			rect		13 66 75 16
+			<title>
+				state 		none
+				color 		0xff7D7D7D
+				position	18 2
+				fontIndex	2
+				text2		130 77
+			</title>
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_desc
+			enable		true
+			visible		true
+			layer		10
+			rect		13 82 75 16
+			<title>
+				state 		none
+				color 		0xff7D7D7D
+				position	18 2
+				fontIndex	2
+				text2		130 78
+			</title>
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+		</button>
+		<panel>
+			id			pan_seperator_1
+			enable		true
+			visible		true
+			layer		10
+			rect		4 100 93 2
+			<image>
+				key		none
+				screen	guild
+				index	100
+			</image>
+		</panel>
+		<button>
+			id			btn_delegate
+			enable		true
+			visible		true
+			layer		10
+			rect		13 104 75 16
+			<title>
+				state 		none
+				color 		0xff7D7D7D
+				position	18 2
+				fontIndex	2
+				text2		130 79
+			</title>
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+		</button>
+	</panel>
+</window>

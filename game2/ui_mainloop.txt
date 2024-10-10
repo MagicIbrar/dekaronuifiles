@@ -1,0 +1,9 @@
+<window>
+	name			luamainloop
+	enable			true
+	visible			false
+	layer			500
+	position		center center
+	rect			-400  -50 800 109
+	titlerect		0 0 0 0
+</window>

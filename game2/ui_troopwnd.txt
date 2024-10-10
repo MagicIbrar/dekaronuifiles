@@ -1,0 +1,143 @@
+<window>
+	name			Troopwnd
+	enable			true
+	visible			false
+	layer			100
+	rect			0 0 146 0
+	titlerect		0 0 146 16
+	<panel>
+		id			pan_select0
+		enable		true
+		visible		false
+		layer		102
+		rect		0 0 146 14
+		<button>
+			id			btn_state_show
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		132 2 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+		</button>
+	</panel>
+	<panel>
+		id			pan_select1
+		enable		true
+		visible		true
+		layer		102
+		rect		0 0 146 28
+		<image>   
+			key		none
+			screen	Combatplan_02
+			index	14
+		</image>
+		<button>
+			id			btn_state_hide
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		132 2 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	19
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	20
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	21
+			</image>
+		</button>
+		<button>
+			id			btn_state_plus
+			enable		true
+			visible		false
+			layer		100
+			type		0
+			rect		109 3 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	7
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	8
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	9
+			</image>
+		</button>
+		<button>
+			id			btn_state_minus
+			enable		true
+			visible		false
+			layer		100
+			type		0
+			rect		109 3 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	13
+			</image>
+		</button>
+	</panel>
+	<panel>
+		id			pan_select2
+		enable		true
+		visible		true
+		layer		102
+		rect		0 48 146 30
+		<image>   
+			key		none
+			screen	Combatplan_02
+			index	15
+		</image>
+	</panel>
+	<panel>
+		id			pan_select3
+		enable		true
+		visible		true
+		layer		102
+		rect		0 79 146 14
+		<image>
+			key		none
+			screen	Combatplan_02
+			index	16
+		</image>
+	</panel>
+</window>

@@ -1,0 +1,188 @@
+<window>
+	name			buy_info
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	rect			0  0 313 419
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 313 419
+		<image>
+				key		none
+				screen	new_itemshop
+				index	5
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align 		center
+			rect		28 2 255 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 87
+			</title>
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		295 2 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		3 25 304 363
+			margin		20 15
+			fonttype	2
+			color		FFFFFFFF
+			<vscroll>
+				id			textbox_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		292 0 12 363
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			textbox_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id			textbox_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 351 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	14
+					</image>
+				</button>
+				<panel>
+					id			textbox_scroll_bar
+					enable		true    
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					<image>
+						key		0
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+		
+		<button>
+			id			btn_yes
+			enable		true
+			visible		true
+			align 		center
+			layer		100
+			rect		128 394 57 19
+			<image>
+				key			none
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state		none
+				color		ffb7b7b7
+				fontIndex	4
+				text2		2000 22
+				position	0 3
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state		down
+				color		ffb7b7b7
+				fontIndex	4
+				position	2 4
+			</title>
+		</button>	
+	</panel>	
+</window>

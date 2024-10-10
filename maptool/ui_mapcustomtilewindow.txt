@@ -1,0 +1,50 @@
+window_layer	auto
+window_size	189	738
+window_alignaxis	right	top
+window_position	0	30
+window_visible	false
+
+create_control	panel	base
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	35	14	6	6
+	control_drawdiv	xy	2
+	control_drawsize	189	738
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_title
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_drawsize	183	15
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	list	lst_stilefile
+	{
+	control_group	11
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	170	704
+	control_drawpoint	10	10
+	control_enable	true
+	control_visible	true
+	control_build		
+	clist_size	1	50
+	clist_columnwidth	166
+	clist_columnheight	0
+	clist_lineheight	14
+	clist_color	select	210	210	210
+	clist_color	grid	100	100	100
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+	addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+	addcontrol_image	back	color	255	230	230	230
+	}
+}

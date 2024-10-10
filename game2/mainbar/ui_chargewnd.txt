@@ -1,0 +1,72 @@
+<window>
+	name			chargewnd
+	enable			true
+	visible			true
+	layer			100
+	position 		left bottom
+	rect			700 -100 870 -48
+	titlerect		162 0 170 28
+	alwaysontop		true
+	<button>
+		id			btn_icon
+		enable		true
+		visible		true
+		layer		100
+		tooltip		150 1
+		rect		0 0 32 32
+		<image>
+			key 	none
+			screen	pcpop
+			index 	124
+		</image>
+	</button>
+	<panel>
+		id			pan_base
+		enable		true
+		visible		true
+		layer		1
+		rect		32 0 131 32
+		<image>
+			key		none
+			screen	pcpop
+			index	125
+		</image>
+		<processbar>	
+			id			processbar
+			enable		true
+			visible		true
+			layer		2
+			rect		0 8 129 16
+			maxsize     129
+			<image>
+				key		none
+				screen	pcpop
+				index	126
+			</image>				
+		</processbar>	
+		<label>
+			id			lbl_charge
+			enable		true
+			visible		true
+			layer		120
+			align       center
+			rect		0 8 129 16
+			<title>
+				color		FFF9B600
+				fontIndex	2
+			</title>
+		</label>
+	</panel>
+	<panel>
+		id			pan_handle
+		enable		true
+		visible		true
+		layer		100
+		rect		162 0 8 32
+		<image>
+			key 	none
+			screen	pcpop
+			index 	127
+		</image>
+	</panel>
+</window>

@@ -1,0 +1,4 @@
+
+#itemeditorcommand create_itemtable	1	"create_itemtable [file_name]"
+#itemeditorcommand load_itemtable	1	"load_itemtable [file_name]"
+#itemeditorcommand save_itemtable	1	"save_itemtable [file_name]"

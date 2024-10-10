@@ -1,0 +1,75 @@
+<window>
+	name			channel_select_win
+	enable			true
+	visible			true
+	layer			110
+	#position	    right top		
+	#rect			0 0 218 400
+	position		inverse inverse
+	rect			0 0 0 0
+	titlerect		0 0 0 0
+	<panel>
+		id				channel_select_win
+		enable			true
+		visible			true
+		layer			110
+		position	    right top		
+		rect			-236 60 236 112
+		<panel>
+		    id			pan_class_select1
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 236 78
+			<image>   
+			    key		0
+				screen	Character_4
+				index	1
+			</image>
+			<label>
+				id		lbl_channel
+				enable		true
+				visible		true
+				layer		120
+				align       center
+			    rect		0 6 218 30
+				<title>
+					color		ffffffff
+					fontIndex	8
+					text2		2000 43
+				</title>
+			</label>
+		</panel>
+		<panel>
+		    id			pan_class_select2
+			enable		true
+			visible		true
+			layer		100
+			rect		0 49 236 47
+			<image>   
+			    key		0
+				screen	Character_4
+				index	2
+			</image>
+		</panel>
+		<panel>
+		    id			pan_class_select3
+			enable		true
+			visible		true
+			layer		100
+			rect		0 96 236 78
+			<image>   
+			    key		0
+				screen	Character_4
+				index	3
+			</image>
+		</panel>
+		<panel>
+		    id			pan_bg
+			enable		true
+			visible		true
+			layer		110
+			rect		0 38 236 400
+		</panel>
+	</panel>
+</window>

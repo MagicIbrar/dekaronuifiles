@@ -1,0 +1,203 @@
+window_layer	auto
+window_size	200	200
+window_alignaxis	left	top
+window_position	0	30
+window_visible	false
+
+create_control	panel	separate01
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	4	14	2	2
+	control_drawdiv	xy	1
+	control_drawsize	2	23
+	control_drawpoint	143	21
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_init
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	0	0	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	150	22
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_packheight
+	{
+	control_group	20
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	110	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	202	22
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	panel	pan_pack
+{
+	control_group	60
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	290	240
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_title
+	{
+	control_group	60
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	10	1	PackEdit
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	284	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_packnew
+	{
+	control_group	60
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	42	25	21
+	control_drawdiv	xy	1
+	control_drawsize	25	21
+	control_drawpoint	10	22
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_packsave
+	{
+	control_group	60
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	84	25	21
+	control_drawdiv	xy	1
+	control_drawsize	25	21
+	control_drawpoint	36	22
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_boxvisible
+	{
+	control_group	60
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	148	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	62	22
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_lock
+	{
+	control_group	60
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	170	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	88	22
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_packattr_visible
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	0	132	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	114	22
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_packattr01
+	{
+	control_group	10
+	control_image	oooo	UI\Tool\ui_mapbtn01.dds	92	110	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	176	22
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	edit	edt_packheight
+	{
+	control_group	80
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	3	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	49	18
+	control_drawpoint	231	24
+	control_enable	true
+	control_visible	false
+	control_build		
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	64	32	16	8
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	64	48	16	8
+	addcontrol_drawsize	16	8
+	addcontrol_drawpoint	32	0
+	addcontrol_drawdiv	xy	2
+	cedit_length	1
+	cedit_chartype	numeric
+	cedit_range	0	1
+	cedit_initvalue	1
+	}
+
+	create_control	edit	edt_packattr
+	{
+	control_group	90
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_text	2	3	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	49	18
+	control_drawpoint	231	24
+	control_enable	true
+	control_visible	false
+	control_build		
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	64	32	16	8
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	64	48	16	8
+	addcontrol_drawsize	16	8
+	addcontrol_drawpoint	32	0
+	addcontrol_drawdiv	xy	2
+	cedit_length	1
+	cedit_chartype	numeric
+	cedit_range	0	3
+	cedit_initvalue	0
+	spin_build
+	}
+
+	create_control	list	lst_pack
+	{
+	control_group	60
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	270	184
+	control_drawpoint	10	47
+	control_enable	true
+	control_visible	true
+	control_build		
+	clist_size	2	10
+	clist_columnwidth	170
+	clist_columnwidth	100
+	clist_columnheight	0
+	clist_lineheight	14
+	clist_color	select	210	210	210
+	clist_color	grid	100	100	100
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+	addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+	addcontrol_image	back	color	255	230	230	230
+	}
+}

@@ -1,0 +1,113 @@
+<window>
+	name			dialog
+	enable			true
+	visible			false
+	layer			100
+	position 		inverse top
+	rect			0 0 0 300
+	titlerect		0 0 0 0
+	layertype 		system
+	<panel>
+		id			pan_output
+		enable		true
+		visible		true
+		layer		10
+		position 	inverse inverse
+		rect		0 0 0 20
+		<image>
+			key	0
+			screen	console
+			index	1
+		</image>
+		<textbox>
+			id			text_out
+			enable		true
+			visible		true
+			layer		100
+			position 	inverse inverse
+			rect		0 0 0 0
+			lineheight	15
+			margin		2 2
+			fonttype	2
+			autoline 	false
+			color		FFFFFFFF
+		</textbox>
+	</panel>
+	<panel>
+		id			pan_command
+		enable		true
+		visible		true
+		layer		10
+		position 	inverse bottom
+		rect		0 -20 0 20
+		<image>
+			key		0
+			screen	console
+			index	1
+		</image>
+		<edit>
+			id			edit_command
+			enable		true
+			visible		true
+			layer		100
+			position 	inverse inverse
+			rect		0 0 0 0
+			maxlength	200
+			font_type	2
+			input_type	0
+			align		1
+			color		ffffffff
+			multiline   	false
+		</edit>	
+	</panel>
+	<panel>
+		id			pan_input
+		enable		true
+		visible		true
+		layer		10
+		rect		4 258 53 20
+		<button>
+			id			btn_enter
+			enable		true
+			visible		true
+			layer		101
+			type		0
+			rect		0 0 53 20
+			align		center
+			<image>
+				key		none
+				screen	etc_01
+				index	91
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	92
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	93
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text 		"ENTER"
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	2 4
+			</title>
+		</button>
+	</panel>
+</window>

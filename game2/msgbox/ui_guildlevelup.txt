@@ -1,0 +1,101 @@
+<window>
+	name			guildlevelup_msgbox
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0  0 232 157
+	titlerect		0 0 211 20
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key		none
+				screen	guild_lvup
+				index	2
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		0 3 232 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		130 184
+			</title>
+		</label>
+	</panel>
+		
+	<textbox>
+		id			textbox
+		enable		true
+		visible		true
+		layer		100
+		rect		0 40 130 70
+		lineheight	14
+		margin		0 0
+		fonttype	2
+		color		FFFFFFFF
+	</textbox>
+
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		37 132 56 18
+		<title>
+			state		none
+			color		ffb7b7b7
+			fontIndex	4
+			text2		130 187
+			position	15 2
+		</title>
+		<title>
+			state		over
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<title>
+			state		down
+			color		ffb7b7b7
+			fontIndex	4
+			position	16 3
+		</title>
+	</button>	
+
+	<button>
+		id			btn_no
+		enable		true
+		visible		true
+		layer		100
+		rect		138 132 56 18
+		<title>
+			state		none
+			color		ffb7b7b7
+			fontIndex	4
+			text2		130 186
+			position	15 2
+		</title>
+		<title>
+			state		over
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<title>
+			state		down
+			color		ffb7b7b7
+			fontIndex	4
+			position	16 3
+		</title>
+	</button>	
+</window>

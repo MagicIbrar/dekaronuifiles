@@ -1,0 +1,661 @@
+<window>
+	name			item_munzangwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-250 -290 130 275
+	titlerect		0 0 380 30
+	<panel>
+		id			pan_base
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 380 565
+		<image>
+			key		none
+			screen	itemsocket
+			index	1
+		</image>
+		<panel>
+			id			pan_munzang
+			enable		true
+			visible		true
+			layer		1
+			rect		7 36 366 330
+			<image>
+				key		none
+				screen	itemsocket
+				index	16
+			</image>
+		</panel>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		8 9 372 24
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		311 1
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		120
+			rect		351 12 13 13
+			sound  0
+			<image>
+    			key			0
+    			screen		etc_01
+    			index		3
+    		</image>
+    		<image>
+    			key			over
+    			screen		etc_01
+    			index		4
+    		</image>
+    		<image>
+    			key			down
+    			screen		etc_01
+    			index		5
+    		</image>
+		</button>
+		<button>
+			id					btn_tab_0
+			enable				true
+			visible				true
+			align 				center
+			layer				100
+			rect				9 39 54 22
+			<image>
+				key				none
+				screen			incuse
+				index			4
+			</image>
+			<image>
+				key				check
+				screen			incuse
+				index			3
+			</image>
+			<title>
+				state 			none
+				color			ff929292
+				fontIndex		2
+				position		0 5
+				text2 			311 2
+			</title>
+			<title>
+				state 			over
+				color			ffffffff
+				position		0 5
+				fontIndex		2
+			</title>
+			<title>
+				state 			down
+				color			ff929292
+				fontIndex		2
+				position		1 6
+			</title>
+			<title>
+				state 			check
+				color			ffffffff
+				fontIndex		4
+				position		1 6
+			</title>
+		</button>
+		<button>
+			id					btn_tab_1
+			enable				true
+			visible				true
+			align 				center
+			layer				100
+			rect				66 39 54 22
+			<image>
+				key				none
+				screen			incuse
+				index			4
+			</image>
+			<image>
+				key				check
+				screen			incuse
+				index			3
+			</image>
+			<title>
+				state 			none
+				color			ff929292
+				fontIndex		2
+				position		0 5
+				text2 			311 3
+			</title>
+			<title>
+				state 			over
+				color			ffffffff
+				fontIndex		2
+				position		0 5
+			</title>
+			<title>
+				state 			down
+				color			ff929292
+				fontIndex		2
+				position		1 6
+			</title>
+			<title>
+				state 			check
+				color			ffffffff
+				fontIndex		4
+				position		1 6
+			</title>
+		</button>
+		<button>
+			id					btn_tab_2
+			enable				false
+			visible				false
+			align 				center
+			layer				100
+			rect				123 39 54 22
+			<image>
+				key				none
+				screen			incuse
+				index			4
+			</image>
+			<image>
+				key				check
+				screen			incuse
+				index			3
+			</image>
+			<title>
+				state 			none
+				color			ff929292
+				fontIndex		2
+				text2 			311 4
+				position		0 5
+			</title>
+			<title>
+				state 			over
+				color			ffffffff
+				fontIndex		2
+				position		0 5
+			</title>
+			<title>
+				state 			down
+				color			ff929292
+				fontIndex		2
+				position		1 6
+			</title>
+			<title>
+				state 			check
+				color			ffffffff
+				fontIndex		4
+				position		1 6
+			</title>
+		</button>
+		<label>
+			id			lbl_coment
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		8 68 364 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		311 5
+			</title>
+		</label>
+		<item>
+			id			item_target
+			enable		true
+			visible		true
+			layer		10
+			rect		69 186 70 70
+			cellsize 	32 32
+			moveable	true
+			type		suit
+		</item>
+		<item>
+			id			itemsource_1
+			enable		true
+			visible		true
+			layer		12
+			rect		163 115 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			panel_lock1
+			enable		true
+			visible		false
+			layer		11
+			rect		163 115 32 32
+			<image>
+				key				none
+				screen			itemsocket
+				index			17
+			</image>
+		</panel>
+		<panel>
+			id			panel_select1
+			enable		true
+			visible		false
+			layer		10
+			rect		150 102 58 58
+			<image>
+				key				none
+				screen			itemsocket
+				index			20
+			</image>
+		</panel>
+		<item>
+			id			itemsource_2
+			enable		true
+			visible		true
+			layer		12
+			rect		250 115 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			panel_lock2
+			enable		true
+			visible		false
+			layer		11
+			rect		250 115 32 32
+			<image>
+				key				none
+				screen			itemsocket
+				index			17
+			</image>
+		</panel>
+		<panel>
+			id			panel_select2
+			enable		true
+			visible		false
+			layer		10
+			rect		237 102 58 58
+			<image>
+				key				none
+				screen			itemsocket
+				index			20
+			</image>
+		</panel>
+		<item>
+			id			itemsource_3
+			enable		true
+			visible		true
+			layer		12
+			rect		218 179 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			panel_lock3
+			enable		true
+			visible		false
+			layer		11
+			rect		218 179 32 32
+			<image>
+				key				none
+				screen			itemsocket
+				index			17
+			</image>
+		</panel>
+		<panel>
+			id			panel_select3
+			enable		true
+			visible		false
+			layer		10
+			rect		205 166 58 58
+			<image>
+				key				none
+				screen			itemsocket
+				index			20
+			</image>
+		</panel>
+		<item>
+			id			itemsource_4
+			enable		true
+			visible		true
+			layer		12
+			rect		305 179 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			panel_lock4
+			enable		true
+			visible		false
+			layer		11
+			rect		305 179 32 32
+			<image>
+				key				none
+				screen			itemsocket
+				index			17
+			</image>
+		</panel>
+		<panel>
+			id			panel_select4
+			enable		true
+			visible		false
+			layer		10
+			rect		292 166 58 58
+			<image>
+				key				none
+				screen			itemsocket
+				index			20
+			</image>
+		</panel>
+		<item>
+			id			itemsource_5
+			enable		true
+			visible		true
+			layer		12
+			rect		233 266 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			panel_lock5
+			enable		true
+			visible		false
+			layer		11
+			rect		233 266 32 32
+			<image>
+				key				none
+				screen			itemsocket
+				index			17
+			</image>
+		</panel>
+		<panel>
+			id			panel_select5
+			enable		true
+			visible		false
+			layer		10
+			rect		220 252 58 58
+			<image>
+				key				none
+				screen			itemsocket
+				index			20
+			</image>
+		</panel>
+		<item>
+			id			itemsource_6
+			enable		true
+			visible		true
+			layer		12
+			rect		156 310 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			panel_lock6
+			enable		true
+			visible		false
+			layer		11
+			rect		156 310 32 32
+			<image>
+				key				none
+				screen			itemsocket
+				index			17
+			</image>
+		</panel>
+		<panel>
+			id			panel_select6
+			enable		true
+			visible		false
+			layer		10
+			rect		143 297 58 58
+			<image>
+				key				none
+				screen			itemsocket
+				index			20
+			</image>
+		</panel>
+		<panel>
+			id			panel_cash
+			enable		true
+			visible		true
+			layer		10
+			rect		304 258 52 52
+			<image>
+				key				none
+				screen			itemsocket
+				index			21
+			</image>
+		</panel>
+		<item>
+			id			item_cash
+			enable		true
+			visible		true
+			layer		12
+			rect		314 268 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			pan_effect_successfail
+			enable		true
+			visible		true
+			layer		100
+			rect		150 157 63 127	
+		</panel>				
+		<label>
+			id			lbl_hint
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		13 375 354 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		311 5
+			</title>
+		</label>
+		<label>
+			id			lbl_result1
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		24 399 138 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_result2
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		24 416 138 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_result3
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		24 433 138 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_result4
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		24 450 138 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_result5
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		24 467 138 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_result6
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		24 484 138 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_result7
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		24 501 138 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id					lbl_money
+			enable				true
+			visible				true
+			layer				101
+			align				right
+			rect				291 338 70 14
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id					lbl_percent
+			enable				true
+			visible				true
+			layer				101
+			align				right
+			rect				260 411 98 14
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<button>
+			id		btn_munzang
+			enable		false
+			visible		true
+			align  		center
+			layer		100
+			rect		260 437 98 74
+			sound  0
+			blink		false
+			blinktime	1000
+			<image>
+				key				0
+				screen			itemsocket
+				index			2
+    			</image>
+			<image>
+				key				over
+				screen			itemsocket
+				index			3
+			</image>
+			<image>
+				key				down
+			screen			itemsocket
+				index			4
+			</image>
+			<image>
+				key			blink				
+				screen			itemsocket
+				index			3
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 30
+				text2		311 7
+    		</title>
+   	 		<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 30
+    		</title>
+    		<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 32
+    		</title>
+		</button>
+		<button>
+			id			btn_close
+			enable		true
+			visible		true
+			layer		100
+			align		center	center
+			rect		158 530 65 20
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	91
+			</image>
+			<image>
+				key 	over
+				screen 	etc_01
+				index 	92
+			</image>
+			<image>
+				key 	down
+				screen 	etc_01
+				index 	93
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				text2		311 8
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 5
+			</title>
+		</button>
+	</panel>
+</window>

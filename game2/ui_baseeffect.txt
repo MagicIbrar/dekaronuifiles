@@ -1,0 +1,46 @@
+<window>
+	id	pvp_base
+	enable	true
+	visible	true
+	layer	110
+	position	inverse inverse
+	rect	0 0 0 0
+	modal	false
+	alwaysontop	true
+	titlerect	0 0 0 0
+	<panel>
+		id	pan_back
+		enable	true
+		visible	true
+		layer	1
+		rect	430 200 10 10
+	</panel>
+	<panel>
+		id	pan_combo
+		enable	true
+		visible	true
+		layer	1
+		rect	430 250 10 10
+	</panel>
+	<panel>
+		id	pan_combo_num1
+		enable	true
+		visible	true
+		layer	1
+		rect	400 285 10 10
+	</panel>
+	<panel>
+		id	pan_combo_num2
+		enable	true
+		visible	true
+		layer	1
+		rect	425 285 10 10
+	</panel>
+	<panel>
+		id	pan_combo_num3
+		enable	true
+		visible	true
+		layer	1
+		rect	450 285 10 10
+	</panel>
+</window>

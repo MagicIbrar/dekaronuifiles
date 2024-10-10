@@ -1,0 +1,262 @@
+window_layer	auto
+window_size	500	320
+window_alignaxis	left	top
+window_position	600	70
+window_visible	false
+
+create_control	panel	pan_monstersettool
+{
+	control_group	56
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	500	320
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_monstersettoolitle
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+		control_text	10	1	Monsterset
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	494	13
+		control_drawpoint	3	3
+		control_enable	true
+		control_visible	true
+
+		create_control	button	btn_monstersetclose
+		{
+		control_image	oooo	UI\Tool\ui_winbtn03.dds	65	11	11	11
+		control_drawdiv	xy	2
+		control_drawsize	11	11
+		control_drawpoint	483	1
+		control_enable	true
+		control_visible	true
+		}
+	}
+	create_control	text	txt_drop
+	{
+	control_text	0	0	DROP
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	23
+	control_drawpoint	5	25
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_min
+	{
+	control_text	0	0	MIN
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	23
+	control_drawpoint	155	25
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_max
+	{
+	control_text	0	0	MAX
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	23
+	control_drawpoint	305	25
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_setindex0
+	{
+	control_text	0	0	Index
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	18
+	control_drawpoint	10	50
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_droprate0
+	{
+	control_text	0	0	Drop
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	18
+	control_drawpoint	49	50
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_setindex1
+	{
+	control_text	0	0	Index
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	18
+	control_drawpoint	103	50
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_droprate1
+	{
+	control_text	0	0	Drop
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	18
+	control_drawpoint	143	50
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_setindex2
+	{
+	control_text	0	0	Index
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	18
+	control_drawpoint	197	50
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_droprate2
+	{
+	control_text	0	0	Drop
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	18
+	control_drawpoint	238	50
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_setindex3
+	{
+	control_text	0	0	Index
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	18
+	control_drawpoint	292	50
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_droprate3
+	{
+	control_text	0	0	Drop
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	18
+	control_drawpoint	333	50
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_setindex4
+	{
+	control_text	0	0	Index
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	18
+	control_drawpoint	387	50
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_droprate4
+	{
+	control_text	0	0	Drop
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	18
+	control_drawpoint	428	50
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	edit	edt_drop
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	255	0	0
+	control_textfont	small
+	control_drawsize	80	15
+	control_drawpoint	35	25
+	control_tab	1
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	20
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_min
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	255	0	0
+	control_textfont	small
+	control_drawsize	80	15
+	control_drawpoint	185	25
+	control_tab	2
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	9
+	cedit_range	0	100000
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_max
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	255	0	0
+	control_textfont	small
+	control_drawsize	80	15
+	control_drawpoint	335	25
+	control_tab	3
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	9
+	cedit_range	0	100000
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_setindex00
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	255	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	10	65
+	control_tab	5
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_range	0	100000
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_setrate00
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	255	0	0
+	control_textfont	small
+	control_drawsize	45	15
+	control_drawpoint	49	65
+	control_tab	4
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	7
+	cedit_range	0	100000
+	cedit_chartype	none
+	}
+}
+

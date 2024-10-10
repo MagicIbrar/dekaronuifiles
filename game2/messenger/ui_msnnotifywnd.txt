@@ -1,0 +1,84 @@
+<window>
+	name			msn_notify
+	enable			true
+	visible			true
+	alwaysontop		true
+	layer			100
+	rect			8 41 95 81 
+		
+	<button>
+		id			btn_memo
+		enable		true
+		visible		false
+		layer		100
+		rect		0 0 87 19
+		<image>
+			key		none
+			screen	messenger_e
+			index	1
+		</image>
+		<image>
+			key		over
+			screen	messenger_e
+			index	2
+		</image>
+		<image>
+			key		down
+			screen	messenger_e
+			index	3
+		</image>
+		
+		<label>
+			id			lbl_memoNum
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			intersect 	false
+			rect		21 3 61 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>
+		</label>
+	</button>
+		
+	<button>
+		id			btn_message
+		enable		true
+		visible		false
+		layer		100
+		rect		0 20 87 19
+		<image>
+			key		none
+			screen	messenger_e
+			index	11
+		</image>
+		<image>
+			key		over
+			screen	messenger_e
+			index	12
+		</image>
+		<image>
+			key		down
+			screen	messenger_e
+			index	13
+		</image>
+		
+		<label>
+			id			lbl_msgNum
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			intersect 	false
+			rect		21 3 61 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>
+		</label>
+	</button>
+</window>

@@ -1,0 +1,73 @@
+window_layer	TOP
+window_size	256	244
+window_alignaxis	center	center
+window_position	0	0
+window_visible	false
+
+create_control	panel	pan_base
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\trade_message_01.dds	0	147	280	92
+	control_drawdiv	xy	2
+	control_drawsize	280	92
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	0
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\trade_message_01.dds	298	142	214	47
+	control_drawdiv	xy	2
+	control_drawsize	214	47
+	control_drawpoint	20	20
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	1
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\trade_message_01.dds	298	188	214	47
+	control_drawdiv	xy	2
+	control_drawsize	214	47
+	control_drawpoint	30	20
+	control_enable	true
+	control_visible	false
+	}
+	
+	create_control	panel	2
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\trade_message_01.dds	298	94	214	47
+	control_drawdiv	xy	2
+	control_drawsize	214	47
+	control_drawpoint	20	20
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	3
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\trade_message_01.dds	298	47	214	47
+	control_drawdiv	xy	2
+	control_drawsize	214	47
+	control_drawpoint	20	20
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	4
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\skill_icon_effect.dds	0	80	327	74
+	control_drawdiv	xy	2
+	control_drawsize	327	74
+	control_drawpoint	20	20
+	control_enable	true
+	control_visible	false
+	}
+}
+
+

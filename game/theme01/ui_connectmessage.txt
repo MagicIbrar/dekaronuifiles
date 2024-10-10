@@ -1,0 +1,58 @@
+window_layer	auto
+window_visible	true
+
+create_control	panel	pan_1
+{
+control_group	0
+control_image	oxxx	UI\Game\login-back_01.jpg	0	0	512	512
+control_drawsize	512	512
+control_drawpoint	0	0
+control_layerdelta	0
+control_enable	true
+control_visible	true
+}
+
+create_control	panel	pan_2
+{
+control_group	0
+control_image	oxxx	UI\Game\login-back_02.jpg	0	0	512	512
+control_drawsize	512	512
+control_drawpoint	512	0
+control_layerdelta	0
+control_enable	true
+control_visible	true
+}
+
+create_control	panel	pan_3
+{
+control_group	0
+control_image	oxxx	UI\Game\login-back_03.jpg	0	0	512	256
+control_drawsize	512	256
+control_drawpoint	0	512
+control_layerdelta	0
+control_enable	true
+control_visible	true
+}
+
+create_control	panel	pan_4
+{
+control_group	0
+control_image	oxxx	UI\Game\login-back_04.jpg	0	0	512	256
+control_drawsize	512	256
+control_drawpoint	512	512
+control_layerdelta	0
+control_enable	true
+control_visible	true
+}
+
+create_control	text	txt_message
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\MessageWnd.bmp	0	0	507	191
+	control_drawsize	507	191
+	control_drawpoint	258	288
+	control_enable	true
+	control_visible	true
+	ctext_info	0	0	4
+	control_build
+}

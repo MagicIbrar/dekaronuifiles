@@ -1,0 +1,33 @@
+<window>
+	name			reception_win
+	enable			true
+	visible			true
+	layer			100
+	rect			0 42 150 67
+	titlerect		0 0 0 0
+	layertype		normal
+	<panel>
+		id			pan_reception
+		enable		true
+		visible		true
+		layer		100
+		rect		16 4 33 11
+		<image>
+			key		0
+			screen	Pantheon
+			index	16
+		</image>
+	</panel>
+	<label>
+		id			lbl_ping
+		enable		true
+		visible		true
+		layer		50
+		align		right
+		rect		82 2 66 18
+		<title>
+			color		ffffffff
+			fontIndex	2
+		</title>
+	</label>
+</window>

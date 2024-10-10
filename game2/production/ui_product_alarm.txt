@@ -1,0 +1,44 @@
+<window>
+	id	qnotice_alarm
+	enable	true
+	visible	true
+	layer	100
+	position	inverse inverse
+	modal	false
+	titlerect	0 0 0 0
+	<button>
+		id	btn_alarm
+		enable	true
+		visible	true
+		layer	100
+		rect	130 60 30 30
+		blink	false
+		blinktime	1000
+		tooltip 	2901 200
+
+		<image>
+			key	none
+			color	ffffffff
+			screen	production
+			index	53
+		</image>
+		<image>
+			key	over
+			color	ffffffff
+			screen	production
+			index	55
+		</image>
+		<image>
+			key	down
+			color	ffffffff
+			screen	production
+			index	54
+		</image>
+		<image>
+			key	blink
+			color	ffffffff
+			screen	production
+			index	55
+		</image>
+	</button>
+</window>

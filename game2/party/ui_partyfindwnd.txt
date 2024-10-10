@@ -1,0 +1,621 @@
+<window>
+	name			party_find
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-122 -103 122 104
+	titlerect		0 0 244 26
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 244 207
+		<image>
+			key		none
+			screen	party 
+			index	20
+		</image>		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		84 7 75 16
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 99
+			</title>
+		</label>
+	</panel>
+	<button>
+		id			btn_exit
+		enable		true
+		visible		true
+		layer		100
+		rect		221 8 15 15
+
+		sound  0
+		<image>
+			key		none
+			screen	etc_01
+			index		315
+
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index		316
+
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index		317
+
+		</image>
+	</button>
+	
+	<panel>
+		id		pan_setting
+		enable		true
+		visible		true
+		layer		10
+		rect		0 30 244 130
+		<label>
+				id			lbl_mapsetting
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		84 4 75 16
+				<title>
+					color		ffffffff
+					fontIndex	4
+					text2 		70 39
+				</title>
+		</label>
+		<label>
+			id			lbl_mapname_0
+			enable		true
+			visible		true
+			layer		100
+			rect		10 28 212 20
+			align		center
+			<image>
+				key		none
+				screen	party
+				index	23
+			</image>
+			<title>
+					color		ffffffff
+					fontIndex	2
+			</title>	
+		</label>
+		<button>
+			id			btn_showlist_0
+			enable		true
+			visible		true
+			layer		100
+			rect		220 36 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+		</button>
+		<panel>
+			id			pan_maplist_0
+			enable		true
+			visible		false
+			layer		110
+			rect		10 48 224 120
+			border		false
+			<listbox>
+				id			list_maplist_0
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 224 120
+				nodewidth   224
+				nodeheight	20
+				offset		5
+				btnsize		20			
+				<image>
+					key		none
+					screen	party
+					index	4
+				</image>
+				<title>
+					state		over
+					color		FF74AEE4
+					fontIndex	4
+				</title>
+				<title>
+					state		check
+					color		FFFFB900
+					fontIndex	4
+				</title>
+				<title>
+					state		none
+					color		FFFFFFFF
+					fontIndex	4
+				</title>
+				<vscroll>
+					id			list_maplist_0_scroll
+					enable		true
+					visible		true
+					layer		200
+					rect		210 0 12 120
+					maxvalue	0
+					buttontick  1
+					<button>
+						id			list_maplist_0_scroll_upbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 12 12
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	19
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	20
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	21
+						</image>
+					</button>
+					<button>
+						id			list_maplist_0_scroll_downbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 105 12 12
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	15
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	16
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	17
+						</image>
+					</button>
+					<panel>
+						id			list_maplist_0_scroll_bar
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 12 12
+						moveable	true
+						noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	24
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	25
+						</image>
+					</panel>
+				</vscroll>			
+			</listbox>
+		</panel>
+		
+		<label>
+			id			lbl_mapname_1
+			enable		true
+			visible		true
+			layer		100
+			rect		10 63 212 20
+			align		center
+			<image>
+				key		none
+				screen	party
+				index	23
+			</image>
+			<title>
+					color		ffffffff
+					fontIndex	2
+			</title>	
+		</label>
+		<button>
+			id			btn_showlist_1
+			enable		true
+			visible		true
+			layer		100
+			rect		220 71 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+		</button>
+		<panel>
+			id			pan_maplist_1
+			enable		true
+			visible		false
+			layer		110
+			rect		10 83 224 120
+			border		false
+			<listbox>
+				id			list_maplist_1
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 224 120
+				nodewidth   224
+				nodeheight	20
+				offset		5
+				btnsize		20			
+				<image>
+					key		none
+					screen	party
+					index	4
+				</image>
+				<title>
+					state		over
+					color		FF74AEE4
+					fontIndex	4
+				</title>
+				<title>
+					state		check
+					color		FFFFB900
+					fontIndex	4
+				</title>
+				<title>
+					state		none
+					color		FFFFFFFF
+					fontIndex	4
+				</title>
+				<vscroll>
+					id			list_maplist_1_scroll
+					enable		true
+					visible		true
+					layer		200
+					rect		210 0 12 120
+					maxvalue	0
+					buttontick  1
+					<button>
+						id			list_maplist_1_scroll_upbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 12 12
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	19
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	20
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	21
+						</image>
+					</button>
+					<button>
+						id			list_maplist_1_scroll_downbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 105 12 12
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	15
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	16
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	17
+						</image>
+					</button>
+					<panel>
+						id			list_maplist_1_scroll_bar
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 12 12
+						moveable	true
+						noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	24
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	25
+						</image>
+					</panel>
+				</vscroll>			
+			</listbox>
+		</panel>
+		
+		<label>
+			id			lbl_mapname_2
+			enable		true
+			visible		true
+			layer		100
+			rect		10 98 212 20
+			align		center
+			<image>
+				key		none
+				screen	party
+				index	23
+			</image>
+			<title>
+					color		ffffffff
+					fontIndex	2
+			</title>	
+		</label>
+		<button>
+			id			btn_showlist_2
+			enable		true
+			visible		true
+			layer		100
+			rect		220 106 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+		</button>
+		<panel>
+			id			pan_maplist_2
+			enable		true
+			visible		false
+			layer		110
+			rect		10 118 224 120
+			border		false
+			<listbox>
+				id			list_maplist_2
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 224 120
+				nodewidth   224
+				nodeheight	20
+				offset		5
+				btnsize		20			
+				<image>
+					key		none
+					screen	party
+					index	4
+				</image>
+				<title>
+					state		over
+					color		FF74AEE4
+					fontIndex	4
+				</title>
+				<title>
+					state		check
+					color		FFFFB900
+					fontIndex	4
+				</title>
+				<title>
+					state		none
+					color		FFFFFFFF
+					fontIndex	4
+				</title>
+				<vscroll>
+					id			list_maplist_2_scroll
+					enable		true
+					visible		true
+					layer		200
+					rect		210 0 12 120
+					maxvalue	0
+					buttontick  1
+					<button>
+						id			list_maplist_2_scroll_upbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 12 12
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	19
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	20
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	21
+						</image>
+					</button>
+					<button>
+						id			list_maplist_2_scroll_downbtn
+						enable		true
+						visible		true
+						layer		100
+						rect		0 105 12 12
+						type		1
+						<image>
+							key		0
+							screen	etc_01
+							index	15
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	16
+						</image>
+						<image>
+							key		down
+							screen	etc_01
+							index	17
+						</image>
+					</button>
+					<panel>
+						id			list_maplist_2_scroll_bar
+						enable		true
+						visible		true
+						layer		100
+						rect		0 0 12 12
+						moveable	true
+						noneimage 	true
+						<image>
+							key		none
+							screen	etc_01
+							index	24
+						</image>
+						<image>
+							key		over
+							screen	etc_01
+							index	25
+						</image>
+					</panel>
+				</vscroll>			
+			</listbox>
+		</panel>
+	</panel>
+	
+	<button>
+			id			btn_list
+			enable		true
+			visible		true
+			layer		100
+			rect		50 170 57 19
+			align		center
+			sound		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		2000 40
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state 		disable
+				color		ff555555
+				fontIndex	4
+				position	0 3
+			</title>
+	</button>
+
+	<button>
+			id			btn_ok
+			enable		true
+			visible		true
+			layer		100
+			rect		145 170 57 19
+			align		center
+			sound		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		2000 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state 		disable
+				color		ff555555
+				fontIndex	4
+				position	0 3
+			</title>
+	</button>
+</window>

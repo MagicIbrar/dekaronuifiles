@@ -1,0 +1,128 @@
+<window>
+	name			tooltipwnd
+	enable			true
+	visible			true
+	layer			10000
+	rect			0 0 1024 768
+	alwaysontop		true
+	<panel>
+		id			pan_tooltip
+		enable		true
+		visible		true
+		layer		100
+		intersect	false
+		rect		0 0 16 16
+		<image>
+			key		none
+			screen	etc_01
+			index	66
+		</image>
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		5 5 150 80
+			lineheight	16
+			margin		10 6
+			fonttype	2
+			color		FFFFFFFF
+		</textbox>
+		<label>
+			id		lbl_tooltiptitle
+			enable		true
+			visible		false
+			layer		100
+			align		center
+			rect		5 7 150 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text		"title"
+				align		center
+			</title>
+		</label>
+		<panel>
+			id		pan_tooltiptitle
+			enable		true
+			visible		false
+			layer		100
+			intersect	false
+			rect		10 24 150 2
+			<image>
+				key	none
+				screen	etc_01
+				index	67
+			</image>		
+		</panel>
+	</panel>
+	<button>
+		id		btn_arrow
+		enable		true
+		visible		false
+		layer		200
+		intersect	false
+		rect		0 0 32 32
+		<image>
+			key	none
+			screen	etc_01
+			index	69
+		</image>
+		<image>
+			key	check
+			screen	etc_01
+			index	68
+		</image>
+	</button>
+	<panel>
+		id			pan_tooltipEx
+		enable		true
+		visible		false
+		layer		100
+		intersect	false
+		rect		0 0 16 16
+		<image>
+			key		none
+			screen	etc_01
+			index	66
+		</image>
+		<label>
+			id		lbl_tooltiptitleEx
+			enable		true
+			visible		false
+			layer		100
+			align		center
+			rect		5 7 150 14
+			<title>
+				color		ff00ff00
+				fontIndex	4
+				text		"tooltip"
+				align		center
+			</title>
+		</label>
+		<panel>
+			id		pan_tooltiptitleEx
+			enable		true
+			visible		false
+			layer		100
+			intersect	false
+			rect		10 24 150 2
+			<image>
+				key	none
+				screen	etc_01
+				index	67
+			</image>		
+		</panel>
+		<textbox>
+			id			textboxEx
+			enable		true
+			visible		true
+			layer		100
+			rect		5 5 150 80
+			lineheight	16
+			margin		10 6
+			fonttype	2
+			color		FFFFFFFF
+		</textbox>	
+	</panel>
+</window>

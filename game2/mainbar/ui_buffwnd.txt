@@ -1,0 +1,106 @@
+<window>
+	name			buffwnd
+	enable			true
+	visible			false
+	layer			100	
+	rect			-154 -45 155 45
+	position		center center
+	titlerect		300 60 309 90
+	alwaysontop		true
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 309 90
+		intersect	false
+		<panel>
+			id			pan_back
+			enable		true
+			visible		false
+			layer		1
+			rect		0 0 300 90
+			<image>
+				key		none
+				screen	newMainbar
+				index	92
+			</image>
+		</panel>		
+		<panel>
+			id			pan_title
+			enable		true
+			visible		true
+			noneimage	true
+			layer		10
+			rect		300 62 9 26
+			<image>
+				key		none
+				screen	newMainbar
+				index	93
+			</image>
+			<image>
+				key		over
+				screen	newMainbar
+				index	94
+			</image>
+			<image>
+				key		down
+				screen	newMainbar
+				index	95
+			</image>
+		</panel>
+		<label>
+			id			lbl_spellcount
+			enable		true
+			visible		true
+			layer		101
+			rect		0 0 30 30
+			align		right
+			intersect	false
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<timerpanel>
+			id			pan_bufficon
+			enable		true
+			visible		false
+			layer		10
+			rect		0 0 30 30
+			alphamax	254
+			alphamin	1
+			tempo		3
+			<image>
+				key		none
+				screen	buffer_b
+			</image>
+			<label>
+				id			lbl_stack
+				enable		true
+				visible		true
+				layer		101
+				rect		15 15 14 14
+				align		right
+				intersect	false
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+		</timerpanel>
+		<timerpanel>
+			id			pan_buffline
+			enable		true
+			visible		false
+			layer		100
+			intersect	false
+			rect		0 0 30 30
+			<image>
+				key		none
+				screen	etc_01
+				index	302
+			</image>
+		</timerpanel>
+	</panel>
+</window>

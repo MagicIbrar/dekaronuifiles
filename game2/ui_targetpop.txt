@@ -1,0 +1,338 @@
+<window>
+	name			target_pop
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			-68 20 217 140
+	titlerect		5 2 280 115
+	<panel>
+		id			pan_tot
+		enable		true
+		visible		true
+		layer		100
+		rect		54 0 152 23
+		<image>
+			key		none
+			screen	pcpop
+			index	41
+		</image>
+		<label>
+			id			lbl_tot_name
+			enable		true
+			visible		true
+			layer		101
+			align		center
+			rect		6 4 145 17
+			<title>
+				color		ffffffff
+				fontIndex	3
+			</title>
+		</label>
+	</panel>
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		100
+		rect		21 11 196 49
+		<image>
+			key	none
+			screen	pcpop
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_bg1
+		enable		true
+		visible		false
+		layer		100
+		rect		0 1 217 59
+		<image>
+			key	none
+			screen	pcpop
+			index	128
+		</image>
+	</panel>
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		100
+		rect		21 11 196 49
+		<label>
+			id		lbl_name
+			enable		true
+			visible		true
+			layer		102
+			align		center
+			rect		37 14 127 12
+			<title>
+				color		ffffffff
+				fontIndex	3
+			</title>
+		</label>
+		<panel>
+			id		pan_ownerBg
+			enable		true
+			visible		false
+			layer		110
+			rect		11 12 19 19
+			<image>
+				key		none
+				screen	pcpop
+				index	8
+			</image>
+		</panel>
+		<panel>
+			id		pan_owner1
+			enable		true
+			visible		false
+			layer		115
+			rect		11 12 19 19
+			<image>
+				key		none
+				screen	pcpop
+				index	9
+			</image>
+		</panel>
+		<panel>
+			id		pan_owner2
+			enable		true
+			visible		false
+			layer		115
+			rect		11 12 19 19
+			<image>
+				key		none
+				screen	pcpop
+				index	10
+			</image>
+		</panel>
+			<panel>
+			id		pan_owner3
+			enable		true
+			visible		false
+			layer		115
+			rect		11 12 19 19
+			<image>
+				key		none
+				screen	pcpop
+				index	11
+			</image>
+		</panel>
+		<panel>
+			id		pan_owner4
+			enable		true
+			visible		false
+			layer		115
+			rect		11 12 19 19
+			<image>
+				key		none
+				screen	pcpop
+				index	12
+			</image>
+		</panel>
+		<panel>
+			id		pan_owner5
+			enable		true
+			visible		false
+			layer		115
+			rect		11 12 19 19
+			<image>
+				key		none
+				screen	pcpop
+				index	27
+			</image>
+		</panel>
+		
+		<processbar>
+			id		processbar_hp
+			enable		true
+			visible		false
+			layer		102
+			rect		39 33 144 11	
+			maxsize		144
+			<image>
+				key		0
+				screen	pcpop
+				index	46
+			</image>
+		</processbar>
+				
+		<panel>
+			id		pan_showpcpop
+			enable		true
+			visible		false
+			layer		102
+			rect		167 16 13 14	
+			<button>
+				id	btn_showpcpop
+				enable	true
+				visible	false
+				layer	103
+				type	0
+				rect	0 0 13 14
+				<image>
+					key		none
+					screen	pcpop
+					index	47
+				</image>
+				<image>
+					key		over
+					screen	pcpop
+					index	48
+				</image>
+				<image>
+					key		down
+					screen	pcpop
+					index	49
+				</image>
+			</button>
+		
+			<button>
+				id	btn_closepcpop
+				enable	true
+				visible	false
+				layer	103
+				type	0
+				rect	0 0 13 14
+				<image>
+					key		none
+					screen	pcpop
+					index	50
+				</image>
+				<image>
+					key		over
+					screen	pcpop
+					index	51
+				</image>
+				<image>
+					key		down
+					screen	pcpop
+					index	52
+				</image>
+			</button>
+		</panel>
+	</panel>
+	<panel>
+			id			pan_tp_status_0
+			enable		true
+			visible		false
+			layer		100
+			rect		33 59 22 22
+			<image>
+				key		none
+				screen	buffer
+				index	1
+			</image>
+	</panel>
+	<panel>
+			id			pan_tp_status_1
+			enable		true
+			visible		false
+			layer		100
+			rect		54 59 22 22
+			<image>
+				key		none
+				screen	buffer
+				index	1
+			</image>
+	</panel>
+	<panel>
+			id			pan_tp_status_2
+			enable		true
+			visible		false
+			layer		100
+			rect		75 59 22 22
+			<image>
+				key		none
+				screen	buffer
+				index	1
+			</image>
+	</panel>
+	<panel>
+			id			pan_tp_status_3
+			enable		true
+			visible		false
+			layer		100
+			rect		96 59 22 22
+			<image>
+				key		none
+				screen	buffer
+				index	1
+			</image>
+	</panel>
+	<panel>
+			id			pan_tp_status_4
+			enable		true
+			visible		false
+			layer		100
+			rect		117 59 22 22
+			<image>
+				key		none
+				screen	buffer
+				index	1
+			</image>
+	</panel>
+	<panel>
+			id			pan_tp_status_5
+			enable		true
+			visible		false
+			layer		100
+			rect		138 59 22 22
+			<image>
+				key		none
+				screen	buffer
+				index	1
+			</image>
+	</panel>
+	<panel>
+			id			pan_tp_status_6
+			enable		true
+			visible		false
+			layer		100
+			rect		159 59 22 22
+			<image>
+				key		none
+				screen	buffer
+				index	1
+			</image>
+	</panel>
+	<panel>
+			id			pan_tp_status_7
+			enable		true
+			visible		false
+			layer		100
+			rect		180 59 22 22
+			<image>
+				key		none
+				screen	buffer
+				index	1
+			</image>
+	</panel>
+	<textbox>
+			id		textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		36 87 178 16
+			lineheight	16
+			margin		0 0
+			intersect	false
+			fonttype	2
+			color		FFFFFFFF
+	</textbox>	
+	<panel>
+			id		pan_middle
+			enable		true
+			visible		false
+			layer		1
+			intersect	false
+			rect		35 86 14 14
+			<image>
+				key	none
+				screen	pcpop
+				index	100
+			</image>
+	</panel>
+</window>

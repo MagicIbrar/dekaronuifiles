@@ -1,0 +1,164 @@
+<window>
+	name			testwnd
+	enable			true
+	visible			true
+	layer			200
+	position		center center
+	rect			0 0 400 400
+	titlerect		1 1 200 20
+	alwaysontop		true
+	<panel>
+		id		pan_testwnd
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 149 154
+		<image>
+			key		0
+			screen	login_a
+			index	2
+		</image>
+	</panel>
+	<button>
+		id		btn_testwnd
+		enable		true
+		visible		true
+		layer		110
+		rect		42 127 69 20
+		<image>
+			key		0
+			screen		login_a
+			index		41
+			effect		9 1 1000 0
+		</image>
+		<image>
+			key			over
+			screen		login_a
+			index		42
+			effect		8 1 1000 0
+		</image>
+		<image>
+			key			down
+			screen		login_a
+			index		43
+			effect		7 1 1000 0
+		</image>
+		<image>
+			key			disable
+			screen		login_a
+			index		43
+		</image>
+	</button>
+
+	<button>
+		id		btn_guild1
+		enable		false
+		visible		true
+		layer		110
+		rect		30 230 40 40
+		<image>
+			key			disable
+			screen		guildicon
+			index		1
+			effect		8 1 1000 0
+		</image>
+	</button>
+
+	<button>
+		id		btn_guild2
+		enable		false
+		visible		true
+		layer		110
+		rect		130 230 40 40
+		<image>
+			key			disable
+			screen		guildicon
+			index		1
+			effect		8 1 1000 0
+		</image>
+	</button>
+
+	<button>
+		id		btn_guild3
+		enable		false
+		visible		true
+		layer		110
+		rect		230 230 40 40
+		<image>
+			key			disable
+			screen		guildicon
+			index		1
+			effect		8 1 1000 0
+		</image>
+	</button>
+
+	<button>
+		id		btn_guild4
+		enable		false
+		visible		true
+		layer		110
+		rect		330 230 40 40
+		<image>
+			key			disable
+			screen		guildicon
+			index		1
+			effect		8 1 1000 0
+		</image>
+	</button>
+
+	<button>
+		id		btn_guild5
+		enable		false
+		visible		true
+		layer		110
+		rect		30 330 40 40
+		<image>
+			key			disable
+			screen		guildicon
+			index		1
+			effect		8 1 1000 0
+		</image>
+	</button>
+
+	<button>
+		id		btn_guild6
+		enable		false
+		visible		true
+		layer		110
+		rect		130 330 40 40
+		<image>
+			key			disable
+			screen		guildicon
+			index		1
+			effect		8 1 1000 0
+		</image>
+	</button>
+
+	<button>
+		id		btn_guild7
+		enable		false
+		visible		true
+		layer		110
+		rect		230 330 40 40
+		<image>
+			key			disable
+			screen		guildicon
+			index		1
+			effect		8 1 1000 0
+		</image>
+	</button>
+
+	<button>
+		id		btn_guild8
+		enable		false
+		visible		true
+		layer		110
+		rect		330 330 40 40
+		<image>
+			key			disable
+			screen		guildicon
+			index		1
+			effect		8 1 1000 0
+		</image>
+	</button>
+</window>

@@ -1,0 +1,24 @@
+<window>
+	name			fadewnd
+	enable			true
+	visible			true
+	layer			5000
+	alwaysontop		true
+	position		inverse inverse
+	rect			0 0 0 0
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		intersect	false
+		position	inverse inverse
+		rect		0 0 0 0
+		<image>
+			key	0
+			color	FF010101
+			screen	common
+			index	1
+		</image>
+	</panel>
+</window>

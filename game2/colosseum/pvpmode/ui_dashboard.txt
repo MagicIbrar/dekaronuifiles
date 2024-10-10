@@ -1,0 +1,113 @@
+<window>
+	name			pvpdashboardwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			-512 40 512 240
+	titlerect		0 0 0 0
+		
+	<panel>
+		id			pan_demarcation
+		enable			true
+		visible			true
+		layer			100
+		rect			451 63 79 83
+		intersect 		false
+		<image>
+			key		none
+			screen		colosseum
+			index		19
+		</image>
+	</panel>
+	<panel>
+		id			pan_redsign
+		enable			true
+		visible			true
+		layer			100
+		rect			291 57 160 34
+		intersect 		false
+		<image>
+			key		none
+			screen		colosseum
+			index		17
+		</image>
+	</panel>
+	<panel>
+		id			pan_bluesign
+		enable			true
+		visible			true
+		layer			100
+		rect			545 57 160 34
+		intersect 		false
+		<image>
+			key		none
+			screen		colosseum
+			index		18
+		</image>
+	</panel>
+	<imagenumber>
+		id		number_timer
+		enable		true
+		visible		true
+		fonttype	none
+		numbertype	timer
+		layer		100
+		space		15
+		align		center
+		imagecount 	12
+		timerdigit	4
+		rect		426 60 140 21
+		intersect 		false
+		<image>
+			key	0
+			color 	0x00ffffff
+			screen	common
+			index	0
+		</image>
+	</imagenumber>
+	<panel>
+		id		pan_member
+		enable			false
+		visible			false
+		layer			100
+		rect			0 88 48 47
+		intersect 		false
+		<panel>
+			id		pan_class
+			enable			true
+			visible			true
+			layer			100
+			rect			0 0 47 47
+			<image>
+				key	none				
+				screen	colosseum
+				index	100
+			</image>
+		</panel>
+		<panel>
+			id		pan_shield
+			enable			true
+			visible			true
+			layer			90
+			rect			7 8 30 31
+			<image>
+				key	none				
+				screen	colosseum
+				index	27
+			</image>			
+		</panel>
+		<panel>
+			id		pan_hp
+			enable			true
+			visible			true
+			layer			80
+			rect			7 8 30 31
+			<image>
+				key	none				
+				screen	colosseum
+				index	28
+			</image>
+		</panel>
+	</panel>
+</window>

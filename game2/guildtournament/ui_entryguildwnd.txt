@@ -1,0 +1,193 @@
+<window>
+	name			tournamententrywnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-207 -254 207 253
+	titlerect		0 0 414 35
+	alwaysontop		true
+
+	<panel>
+		id			pan_back_head
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 414 35
+		<image>
+			key		none
+			screen	guildtournament
+			index	6
+		</image>
+
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		100 13 214 30
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		360 127
+			</title>
+		</label>
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		387 12 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+
+	</panel>
+
+	<panel>
+		id			pan_back_slot_title
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0  34 414 26
+		<image>
+			key		none
+			screen	guildtournament
+			index	7
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_back_slot_
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0  59 414 52
+		<image>
+			key		none
+			screen	guildtournament
+			index	2
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_back_tail
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0  475 414 32
+		<image>
+			key		none
+			screen	guildtournament
+			index	8
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_slot_
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0  35 414 26
+
+		<label>
+			id			lbl_rank_
+			enable		true
+			visible		true
+			layer		50
+			intersect 	false
+			align		center
+			rect		6 6 40 26
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		360 19
+			</title>
+		</label>
+
+		<label>
+			id			lbl_server_
+			enable		true
+			visible		true
+			layer		50
+			intersect 	false
+			align		center
+			rect		50 6 50 26
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		360 20
+			</title>
+		</label>
+
+		<label>
+			id			lbl_guild_
+			enable		true
+			visible		true
+			layer		50
+			intersect 	false
+			align		center
+			rect		106 6 120 26
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		360 21
+			</title>
+		</label>
+
+		<label>
+			id			lbl_guildmaster_
+			enable		true
+			visible		true
+			layer		50
+			intersect 	false
+			align		center
+			rect		230 6 120 26
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		360 22
+			</title>
+		</label>
+
+		<label>
+			id			lbl_guildmember_
+			enable		true
+			visible		true
+			layer		50
+			intersect 	false
+			align		center
+			rect		355 6 50 26
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		360 23
+			</title>
+		</label>
+
+	</panel>
+</window>

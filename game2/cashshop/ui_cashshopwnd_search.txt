@@ -1,0 +1,1663 @@
+<window>
+	name			cashshop
+	enable			true
+	visible			true
+	layer			1
+	rect			0 0 994 752
+	center_h		0
+	center_v		0
+	alwaysontop		true
+	titlerect		0 0 0 0	
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 994 751
+		<panel>
+			id		pan_left_top
+			enable		true
+			visible		true
+			layer		10
+			rect		0 0 20 157
+			<image>
+				key		none
+				screen	cashshopwnd
+				index	1
+			</image>
+		</panel>
+		<panel>
+			id		pan_middle_top
+			enable		true
+			visible		true
+			layer		10
+			rect		20 0 724 157
+			<image>
+				key		none
+				screen	cashshopwnd
+				index	2
+			</image>
+		</panel>
+		<panel>
+			id		pan_right_top
+			enable		true
+			visible		true
+			layer		10
+			rect		744 0 250 157
+			<image>
+				key		none
+				screen	cashshopwnd
+				index	3
+			</image>
+		</panel>
+
+		<panel>
+			id		pan_left_mid
+			enable		true
+			visible		true
+			layer		10
+			rect		0 157 20 176
+			<image>
+				key		none
+				screen	cashshopwnd
+				index	4
+			</image>
+		</panel>
+		<panel>
+			id		pan_middle_mid
+			enable		true
+			visible		true
+			layer		10
+			rect		20 157 724 176
+			<image>
+				key		none
+				screen	cashshopwnd
+				index	5
+			</image>
+		</panel>
+		<panel>
+			id		pan_right_mid
+			enable		true
+			visible		true
+			layer		10
+			rect		744 157 250 176
+			<image>
+				key		none
+				screen	cashshopwnd
+				index	6
+			</image>
+		</panel>
+
+
+		<panel>
+			id		pan_left_bot
+			enable		true
+			visible		true
+			layer		10
+			rect		0 332 20 419
+			<image>
+				key		none
+				screen	cashshopwnd
+				index	7
+			</image>
+		</panel>
+		<panel>
+			id		pan_middle_bot
+			enable		true
+			visible		true
+			layer		10
+			rect		20 332 724 419
+			<image>
+				key		none
+				screen	cashshopwnd
+				index	8
+			</image>
+		</panel>
+		<panel>
+			id		pan_right_bot
+			enable		true
+			visible		true
+			layer		10
+			rect		744 332 250 419
+			<image>
+				key		none
+				screen	cashshopwnd
+				index	9
+			</image>
+		</panel>
+
+
+		<panel>
+			id		pan_web_banner
+			enable		true
+			visible		true
+			layer		100
+			rect		10 157 740 176
+			<image>
+				key		none
+				screen	banner
+				index	0
+			</image>			
+		</panel>
+
+	</panel>	
+	
+	<label>
+		id			lbl_title
+		enable		true
+		visible		true
+		layer		20
+		rect		0 10 994 20
+		align		center
+		<title>
+			color		ffffffff
+			fontIndex	5
+			position	0 5
+			text2		100 130
+		</title>					
+	</label>
+	
+	<button>
+		id			btn_exit
+		enable		true
+		visible		true
+		layer		20
+		rect		938 21 38 38
+		<image>
+			key		none
+			screen	cashshop
+			index	39
+		</image>
+		<image>
+			key		over
+			screen	cashshop
+			index	40
+		</image>
+		<image>
+			key		down
+			screen	cashshop
+			index	41
+		</image>
+	</button>
+
+	<combobox>
+		id			combobox_item_0
+		enable		true
+		visible		true
+		border 		false
+		layer		110
+		rect		26 48 100 20
+
+		<image>
+			key		none
+			screen	cashshop
+			index	42
+		</image>
+
+		
+		<iteminfo>		
+			rect 	0 0 100 20
+		</iteminfo>
+
+		<nodeinfo>
+			selrect		0 0 100 15 
+			btnrect		87 2 13 13
+			
+			<image>
+				key		board_body
+				screen	cashshop
+				index	42
+			</image>
+			<image>
+				key		btn_none
+				screen	cashshop
+				index	52
+			</image>
+			<image>
+				key		btn_over
+				screen	cashshop
+				index	53
+			</image>
+			<image>
+				key		btn_down
+				screen	cashshop
+				index	54
+			</image>
+		</nodeinfo>		
+	</combobox>
+	
+	<combobox>
+		id			combobox_item_1
+		enable		true
+		visible		true
+		border 		false
+		layer		110
+		rect		140 48 100 20
+
+		<image>
+			key		none
+			screen	cashshop
+			index	42
+		</image>
+		
+		<iteminfo>		
+			rect 	0 0 100 20
+								
+		</iteminfo>
+
+		<nodeinfo>
+			selrect		0 0 100 15 
+			btnrect		87 2 13 13
+			
+			<image>
+				key		board_body
+				screen	cashshop
+				index	42
+			</image>
+			<image>
+				key		btn_none
+				screen	cashshop
+				index	52
+			</image>
+			<image>
+				key		btn_over
+				screen	cashshop
+				index	53
+			</image>
+			<image>
+				key		btn_down
+				screen	cashshop
+				index	54
+			</image>
+		</nodeinfo>		
+	</combobox>
+	
+	<combobox>
+		id			combobox_item_2
+		enable		true
+		visible		true
+		border 		false
+		layer		110
+		rect		280 48 100 20
+
+		<image>
+			key		none
+			screen	cashshop
+			index	42
+		</image>
+		
+		<iteminfo>		
+			rect 	0 0 100 20
+								
+		</iteminfo>
+
+		<nodeinfo>
+			selrect		0 0 100 15 
+			btnrect		87 2 13 13
+			
+			<image>
+				key		board_body
+				screen	cashshop
+				index	42
+			</image>
+			<image>
+				key		btn_none
+				screen	cashshop
+				index	52
+			</image>
+			<image>
+				key		btn_over
+				screen	cashshop
+				index	53
+			</image>
+			<image>
+				key		btn_down
+				screen	cashshop
+				index	54
+			</image>
+		</nodeinfo>		
+	</combobox>
+	
+	<edit>
+		id		edit_search
+		enable		true
+		visible		true
+		layer		100
+		rect		420 48 297 18	
+		maxlength	50
+		font_type	2
+		input_type	0
+		align		left
+		color		ffffffff
+		multiline   	false
+
+		<image>
+			key		none
+			screen	cashshop
+			index	42
+		</image>
+
+	</edit>
+	
+	<button>
+		id			btn_search
+		enable		true
+		visible		true
+		layer		100
+		rect		749 48 65 20
+		<image>
+			key		none
+			screen	cashshop
+			index	55
+		</image>
+		<image>
+			key		over
+			screen	cashshop
+			index	56
+		</image>
+		<image>
+			key		down
+			screen	cashshop
+			index	57
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	30 3
+			text2		2009 84
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	30 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	31 4
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	4
+			position	30 3
+		</title>
+	</button>
+	<button>
+		id			btn_refresh
+		enable		true
+		visible		true
+		layer		100
+		rect		837 48 65 20
+		<image>
+			key		none
+			screen	cashshop
+			index	58
+		</image>
+		<image>
+			key		over
+			screen	cashshop
+			index	59
+		</image>
+		<image>
+			key		down
+			screen	cashshop
+			index	60
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	17 3
+			text2		2009 8
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	17 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	18 4
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	4
+			position	17 3
+		</title>
+	</button>
+		
+	<button>
+		id			btn_hot
+		enable		true
+		visible		true
+		layer		20
+		rect		26 81 80 28
+		<image>
+			key		none
+			screen	cashshop
+			index	4
+		</image>
+		<image>
+			key		over
+			screen	cashshop
+			index	5
+		</image>
+		<image>
+			key		down
+			screen	cashshop
+			index	6
+		</image>
+		<image>
+			key		check
+			screen	cashshop
+			index	5
+		</image>
+	</button>
+	
+	<button>
+		id			btn_item
+		enable		true
+		visible		true
+		layer		20
+		rect		152 81 80 28
+		<image>
+			key		none
+			screen	cashshop
+			index	7
+		</image>
+		<image>
+			key		over
+			screen	cashshop
+			index	8
+		</image>
+		<image>
+			key		down
+			screen	cashshop
+			index	9
+		</image>
+		<image>
+			key		check
+			screen	cashshop
+			index	8
+		</image>
+	</button>
+	
+	<button>
+		id			btn_petvehicle
+		enable		true
+		visible		true
+		layer		20
+		rect		278 81 80 28
+		<image>
+			key		none
+			screen	cashshop
+			index	10
+		</image>
+		<image>
+			key		over
+			screen	cashshop
+			index	11
+		</image>
+		<image>
+			key		down
+			screen	cashshop
+			index	12
+		</image>
+		<image>
+			key		check
+			screen	cashshop
+			index	11
+		</image>
+	</button>
+	
+	<button>
+		id			btn_costume
+		enable		true
+		visible		true
+		layer		20
+		rect		404 81 80 28
+		<image>
+			key		none
+			screen	cashshop
+			index	13
+		</image>
+		<image>
+			key		over
+			screen	cashshop
+			index	14
+		</image>
+		<image>
+			key		down
+			screen	cashshop
+			index	15
+		</image>
+		<image>
+			key		check
+			screen	cashshop
+			index	14
+		</image>
+	</button>
+	
+	<button>
+		id			btn_link
+		enable		true
+		visible		true
+		layer		30
+		rect		730 79 251 34
+		align		center
+		<title>
+			color		ffffffff
+			fontIndex	4
+			position	0 9
+			text2		220 47
+		</title>
+		<title>
+			state		down
+			color		ffffffff
+			fontIndex	4
+			position	0 10
+		</title>
+		<image>
+			key		none
+			screen	etc_01
+			index	455
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	456
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	457
+		</image>
+	</button>
+	
+	<panel>
+		id		pan_hot
+		enable		true
+		visible		false
+		layer		20
+		rect		10 107 739 55				
+		<button>
+			id			btn_all
+			enable		true
+			visible		true
+			layer		30
+			rect		16 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 1
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>				
+	</panel>
+	
+	<panel>
+		id		pan_item
+		enable		true
+		visible		false
+		layer		20
+		rect		10 107 739 55		
+		<button>
+			id			btn_reinforcement
+			enable		true
+			visible		true
+			layer		30
+			rect		16 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 2
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>	
+		<button>
+			id			btn_potion
+			enable		true
+			visible		true
+			layer		30
+			rect		120 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 3
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>
+		<button>
+			id			btn_grows
+			enable		true
+			visible		true
+			layer		30
+			rect		224 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 4
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>
+		<button>
+			id			btn_theme
+			enable		true
+			visible		true
+			layer		30
+			rect		328 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 5
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>	
+		<button>
+			id			btn_inventory
+			enable		true
+			visible		true
+			layer		30
+			rect		432 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 7
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>	
+		<button>
+			id			btn_itempreminum
+			enable		true
+			visible		true
+			layer		30
+			rect		536 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 8
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>		
+	</panel>
+	
+	<panel>
+		id		pan_petvehicle
+		enable		true
+		visible		false
+		layer		20
+		rect		10 107 739 55		
+		<button>
+			id			btn_pet
+			enable		true
+			visible		true
+			layer		30
+			rect		16 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 9
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>	
+		<button>
+			id			btn_petitem
+			enable		true
+			visible		true
+			layer		30
+			rect		142 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 10
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>
+		<button>
+			id			btn_vehicle
+			enable		true
+			visible		true
+			layer		30
+			rect		268 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 11
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>
+		<button>
+			id			btn_scroll
+			enable		true
+			visible		true
+			layer		30
+			rect		394 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 12
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>		
+	</panel>
+	
+	<panel>
+		id		pan_costume
+		enable		true
+		visible		false
+		layer		20
+		rect		10 107 739 55				
+		
+		<button>
+			id		btn_munjang
+			enable		true
+			visible		true
+			layer		30
+			rect		16 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 46
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>
+
+		<button>
+			id		btn_cospreminum
+			enable		true
+			visible		true
+			layer		30
+			rect		142 15 80 28
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		210 5
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	cashshop
+				index	17
+			</image>
+		</button>
+
+		
+		<combobox>
+			id			com_norclass
+			enable		true
+			visible		false
+			border 		false
+			layer		30
+			rect		630 20 100 17
+			
+			<iteminfo>		
+				rect 	0 0 100 17									
+			</iteminfo>
+
+			<nodeinfo>
+				selrect		0 0 100 15 
+				btnrect		86 2 12 12
+				
+				<image>
+					key		board_body
+					screen	party
+					index	4
+				</image>
+				<image>
+					key		btn_none
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		btn_over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		btn_down
+					screen	etc_01
+					index	17
+				</image>
+			</nodeinfo>		
+		</combobox>	
+		<combobox>
+			id			com_preclass
+			enable		true
+			visible		false
+			border 		false
+			layer		30
+			rect		630 20 100 17
+			
+			<iteminfo>		
+				rect 	0 0 100 17									
+			</iteminfo>
+
+			<nodeinfo>
+				selrect		0 0 100 15 
+				btnrect		86 2 12 12
+				
+				<image>
+					key		board_body
+					screen	party
+					index	4
+				</image>
+				<image>
+					key		btn_none
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		btn_over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		btn_down
+					screen	etc_01
+					index	17
+				</image>
+			</nodeinfo>		
+		</combobox>		
+	</panel>
+	
+	<panel>
+		id		pan_goodsinfo
+		enable		false
+		visible		false
+		layer		20
+		rect		15 217 242 121	
+		<image>
+				key		none
+				screen	cashshop
+				index	19
+		</image>
+		<item>
+			id			item_goods
+			enable		true
+			visible		true
+			layer		30
+			rect		11 12 60 60
+			cellsize	33 33
+			align 		center
+		</item>
+		<panel>
+			id		pan_event
+			enable		true
+			visible		false
+			layer		30
+			rect		106 4 130 18
+			<panel>
+				id		pan_eventback
+				enable		true
+				visible		true
+				layer		40
+				rect		0 0 130 18
+				<image>
+						key		none
+						screen	cashshop
+						index	29
+				</image>
+			</panel>
+			<label>
+				id			lbl_event
+				enable		true
+				visible		true
+				layer		50
+				rect		0 0 120 18
+				align		right
+				<title>
+					color		ffffffff
+					fontIndex	8
+				</title>					
+			</label>
+		</panel>
+		<label>
+			id			lbl_itemname
+			enable		true
+			visible		true
+			layer		30
+			rect		84 32 143 14
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text		"itemname"
+			</title>
+		</label>
+		<combobox>
+			id			com_item
+			enable		true
+			visible		true
+			border 		false
+			layer		30
+			rect		84 57 143 14
+			
+			<iteminfo>		
+				rect 	0 0 100 17									
+			</iteminfo>
+
+			<nodeinfo>
+				selrect		0 0 143 14 
+				btnrect		129 2 12 12
+				
+				<image>
+					key		board_body
+					screen	party
+					index	4
+				</image>
+				<image>
+					key		btn_none
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		btn_over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		btn_down
+					screen	etc_01
+					index	17
+				</image>
+			</nodeinfo>		
+		</combobox>
+		
+		<button>
+			id			btn_cart
+			enable		true
+			visible		true
+			layer		30
+			rect		12 84 104 27
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 25
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	45
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	46
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	47
+			</image>
+		</button>
+		
+		<button>
+			id			btn_preview
+			enable		true
+			visible		true
+			layer		30
+			rect		124 84 104 27
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 8
+				text2		220 16
+			</title>
+			<title>
+				state		disable
+				color		ff868686
+				fontIndex	4
+				position	0 8
+				text2		220 16
+			</title>
+			<image>
+				key		none
+				screen	cashshop
+				index	45
+			</image>
+			<image>
+				key		over
+				screen	cashshop
+				index	46
+			</image>
+			<image>
+				key		down
+				screen	cashshop
+				index	47
+			</image>
+			<image>
+				key		disable
+				screen	cashshop
+				index	48
+			</image>
+		</button>
+	</panel>
+	
+	<label>
+		id			lbl_tagCart
+		enable		true
+		visible		true
+		layer		20
+		rect		753 442 230 24
+		align		center
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2		220 25
+			position	0 8
+		</title>					
+	</label>
+	
+	<item>
+		id			item_cart
+		enable		false
+		visible		false
+		layer		20
+		rect		753 470 33 33
+		cellsize	33 33
+		align 		center
+	</item>	
+	
+	<label>
+		id			lbl_tagcurrentcash
+		enable		true
+		visible		true
+		layer		20
+		rect		758 615 75 14
+		align		right
+		<title>
+			color		ffffff00
+			fontIndex	4
+			text2		220 20
+		</title>					
+	</label>
+	<label>
+		id			lbl_currentcash
+		enable		true
+		visible		true
+		layer		20
+		rect		903 615 75 14
+		align		right
+		<title>
+			color		ffffff00
+			fontIndex	4
+		</title>					
+	</label>
+	
+	<label>
+		id			lbl_tagallpaycash
+		enable		true
+		visible		true
+		layer		20
+		rect		758 642 75 14
+		align		right
+		<title>
+			color		ffffff00
+			fontIndex	4
+			text2		220 21
+		</title>					
+	</label>
+	<label>
+		id			lbl_allpaycash
+		enable		true
+		visible		true
+		layer		20
+		rect		903 642 75 14
+		align		right
+		<title>
+			color		ffffff00
+			fontIndex	4
+		</title>					
+	</label>
+	
+	<label>
+		id			lbl_tagremaincash
+		enable		true
+		visible		true
+		layer		20
+		rect		758 668 75 14
+		align		right
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2		220 22
+		</title>					
+	</label>
+	<label>
+		id			lbl_remaincash
+		enable		true
+		visible		true
+		layer		20
+		rect		903 668 75 14
+		align		right
+		<title>
+			color		ffffffff
+			fontIndex	4
+		</title>					
+	</label>
+	
+	<button>
+		id			btn_allbuy
+		enable		true
+		visible		true
+		layer		20
+		rect		756 699 70 38
+		align		center
+		<title>
+			color		ffffffff
+			fontIndex	4
+			position	0 12
+			text2		220 17
+		</title>
+		<image>
+			key		none
+			screen	cashshop
+			index	20
+		</image>
+		<image>
+			key		over
+			screen	cashshop
+			index	21
+		</image>
+		<image>
+			key		down
+			screen	cashshop
+			index	22
+		</image>
+	</button>
+	<button>
+		id			btn_allgift
+		enable		true
+		visible		true
+		layer		20
+		rect		833 699 70 38
+		align		center
+		<title>
+			color		ffffffff
+			fontIndex	4
+			position	0 12
+			text2		220 18
+		</title>
+		<image>
+			key		none
+			screen	cashshop
+			index	23
+		</image>
+		<image>
+			key		over
+			screen	cashshop
+			index	24
+		</image>
+		<image>
+			key		down
+			screen	cashshop
+			index	25
+		</image>
+	</button>	
+	<button>
+		id			btn_cashcharge
+		enable		true
+		visible		true
+		layer		20
+		rect		910 699 70 38
+		align		center
+		<title>
+			color		ffffffff
+			fontIndex	4
+			position	0 12
+			text2		220 19
+		</title>
+		<image>
+			key		none
+			screen	cashshop
+			index	26
+		</image>
+		<image>
+			key		over
+			screen	cashshop
+			index	27
+		</image>
+		<image>
+			key		down
+			screen	cashshop
+			index	28
+		</image>
+	</button>
+	
+	<panel>
+		id		pan_page
+		enable	true
+		visible	true
+		layer	20
+		rect	325 708 94 20
+		<button>
+			id		btn_prev
+			enable	true
+			visible	true
+			layer	30
+			rect	0 0 21 24
+			<image>
+				key		none
+				screen	Character
+				index	14
+			</image>
+			<image>
+				key		over
+				screen	Character
+				index	15
+			</image>
+			<image>
+				key		down
+				screen	Character
+				index	16
+			</image>
+			<image>
+				key		disable
+				screen	Character
+				index	14
+			</image>
+		</button>
+		<button>
+			id		btn_next
+			enable	true
+			visible	true
+			layer	30
+			rect	73 0 21 24
+			<image>
+				key		none
+				screen	Character
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	Character
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	Character
+				index	13
+			</image>
+			<image>
+				key		disable
+				screen	Character
+				index	11
+			</image>
+		</button>
+		<label>
+			id			lbl_pagenumber
+			enable		true
+			visible		true
+			layer		30 
+			rect		21 4 52 16
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	2
+				postion		0 6
+				text		"0 / 0"
+			</title>					
+		</label>		
+	</panel>
+
+
+	<panel>
+		id		pan_searchpage
+		enable	true
+		visible	true
+		layer	20
+		rect	325 708 94 20
+
+		<button>
+			id		btn_searchprev
+			enable	true
+			visible	true
+			layer	100
+			rect	0 0 21 24
+			<image>
+				key		none
+				screen	Character
+				index	14
+			</image>
+			<image>
+				key		over
+				screen	Character
+				index	15
+			</image>
+			<image>
+				key		down
+				screen	Character
+				index	16
+			</image>
+			<image>
+				key		disable
+				screen	Character
+				index	14
+			</image>
+		</button>
+
+		<button>
+			id		btn_searchnext
+			enable	true
+			visible	true
+			layer	100
+			rect	73 0 21 24
+			<image>
+				key		none
+				screen	Character
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	Character
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	Character
+				index	13
+			</image>
+			<image>
+				key		disable
+				screen	Character
+				index	11
+			</image>
+		</button>
+
+		<label>
+			id			lbl_searchpagenumber
+			enable		true
+			visible		true
+			layer		30 
+			rect		21 4 52 16
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	2
+				postion		0 6
+				text		"0 / 0"
+			</title>					
+		</label>		
+	</panel>							
+
+</window>

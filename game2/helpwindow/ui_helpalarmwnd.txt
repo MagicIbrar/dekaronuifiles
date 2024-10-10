@@ -1,0 +1,41 @@
+<window>
+	name			helpwindow_alarm
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	<button>
+		id		btn_alarm
+		enable		true
+		visible		true
+		layer		100
+		rect		50 60 30 31
+		position	left top
+		blink 		false
+		blinktime  	1000
+		tooltip 	100 152
+			<image>
+				key		none
+				screen	new_help
+				index	9
+			</image>
+			<image>
+				key		down
+				screen	new_help
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	new_help
+				index	10
+			</image>
+	</button>
+	<panel>
+		id		pan_effect
+		enable		true
+		visible		true
+		layer		160
+		intersect 	false
+		rect		306 80 370 50
+	</panel>
+</window>

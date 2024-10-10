@@ -1,0 +1,1689 @@
+window_layer	auto
+window_size	435	692
+window_position	0	50
+window_visible	false
+
+create_control	panel	pan_list
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds 0	7	6	6
+	control_drawdiv	xy 2
+	control_drawsize	140 692
+	control_drawpoint	2	0
+	control_enable	true
+	control_visible	true
+	
+	create_control	list	lst_findlist
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	130	600
+	control_drawpoint	5	32
+	control_enable	true
+	control_visible	true
+	control_build		
+	clist_size	2	41
+	clist_columnwidth	30
+	clist_columnwidth	100
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_lineheight	14
+	clist_lineheight	14
+	clist_color	select	210	210	210
+	clist_color	grid	100	100	100
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+	addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+	addcontrol_image	back	color	255	230	230	230
+	}
+}
+
+create_control	panel	base
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	435	692
+	control_drawpoint	150	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_title
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	Moster
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	429	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_separate01
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	4	14	2	2
+	control_drawdiv	xy	1
+	control_drawsize	2	23
+	control_drawpoint	114	21
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_print
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	84	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	120	22
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	342	22
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	368	22
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	text	txt_header1
+{
+	control_color	true	192	128	128	128
+	control_text	30	0	항목
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	12
+	control_drawpoint	160	48
+	control_enable	true
+	control_visible	true
+
+	create_control	text	txt_index
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	인덱스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	14
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_name
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	이름
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_tribe
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	종족
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	42
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_class
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	계열
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	56
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_rank
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	등급
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	70
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	레벨
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	84
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_blocking
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	블러킹
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	98
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_rating
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	전투등급
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	112
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attribute
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	속성값
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	126
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_hp
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	체력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	140
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_exp
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	경험치
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	154
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_defense
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	방어력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	168
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_recovery
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	회복력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	182
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_damage
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	물리저항력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	196
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_lighting
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	라이트닝저항력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	210
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_fire
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	불저항력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	224
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_ice
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	얼음저항력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	238
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_poison
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	독저항력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	252
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_curse
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	저주저항력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	266
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack1_type
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	1번공격속성값
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	280
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack1_min
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	1번최소공격력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	294
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack1_max
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	1번최대공격력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	308
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_ranges1
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	1번공격사정거리
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	322
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack1_delay
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	1번공격딜레이
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	336
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack2_type
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	2번공격속성값
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	350
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack2_min
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	2번최소공격력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	364
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack2_max
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	2번최대공격력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	378
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_ranges2
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	2번공격사정거리
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	392
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack2_delay
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	2번공격딜레이
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	406
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_absolute1_damage
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	1번절대공격력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	420
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_absolute2_damage
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	2번절대공격력
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	434
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_alinfo_
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	몬스터AI정보
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	448
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_blood_info
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	몬스터피설정
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	462
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_cut_info
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	몬스터절삭정보
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	476
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_shapeinfo
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	외형정보
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	490
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_description_info
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	디스크립션
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	504
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_material_info
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	재질
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	518
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack_material
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	"공격 재질"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	532
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_mindamage
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	"Defeat최소데미지"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	546
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_maxdamage
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	"Defeat최대데미지"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	560
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_upper
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	"Upper"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	574
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_lower
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	"Lower"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	588
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_left
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	"Left"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	602
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_right
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	"Right"
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	base
+	control_drawpoint	0	616
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	text	txt_header2
+{
+	control_color	true	192	128	128	128
+	control_text	70	0	적용값
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	136	12
+	control_drawpoint	262	48
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_index
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	14
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_name
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_tribe
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	42
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_class
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	56
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_level
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	84
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_blocking
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	98
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_rating
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	112
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_hp
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	140
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_exp
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	154
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_defense
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	168
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_recovery
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	182
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_restist_damage
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	196
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_restist_lighting
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	210
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_restist_fire
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	224
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_restist_ice
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	238
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_restist_poison
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	252
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_restist_curse
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	266
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_attack1_type
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	280
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_attack1_min
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	294
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_attack1_max
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	308
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_ranges1
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	322
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_attack1_delay
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	336
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_attack2_type
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	350
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_attack2_min
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	364
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_attack2_max
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	378
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_ranges2
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	392
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_attack2_delay
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	406
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_absolute1damage
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	420
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_absolute2damage
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	434
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_alinfo
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	448
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_bloodinfo
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	462
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_cutinfo
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	476
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_shapeinfo
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	490
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_descriptioninfo
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	504
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_rank
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	12
+	control_drawpoint	0	70
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_attribute
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	12
+	control_drawpoint	0	126
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_material
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	518
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_attack_material
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	532
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_defeat_mindamage
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	546
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	panel	pan_defeat_maxdamage
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	560
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	panel	pan_defeat_upper
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	574
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	panel	pan_defeat_lower
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	588
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	panel	pan_defeat_left
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	602
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	panel	pan_defeat_right
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	616
+	control_enable	true
+	control_visible	true
+	}	
+}
+
+create_control	text	txt_header3
+{
+	control_color	true	192	128	128	128
+	control_text	48	0	비고
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	170	12
+	control_drawpoint	402	48
+	control_enable	true
+	control_visible	true
+
+	create_control	text	txt_indexd_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	자동부여
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	14
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_named_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	영문24자
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_tribe_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-99
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	42
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_class_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	56
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_rank_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	소형,중형,대형,보스,언데드
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	70
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-256
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	84
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_blocking_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-100
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	98
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_rating_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	112
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attribute_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	무속성,물,불,바람,대지
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	126
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_hp_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-999999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	140
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_exp_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-40000
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	154
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_defense_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-9999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	168
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_recovery_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-9999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	182
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_damage_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-100%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	196
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_lighting_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-100%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	210
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_fire_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-100%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	224
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_ice_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-100%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	238
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_poison_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-100%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	252
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_restist_curse_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-100%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	266
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack1_type_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-100
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	280
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack1_min_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-9999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	294
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack1_max_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-9999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	308
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_ranges1_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-99
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	322
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack1_delay_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	336
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack2_type_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-100
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	350
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack2_min_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-9999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	364
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack2_max_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-9999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	378
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_ranges2_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-99
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	392
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attack2_delay_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	406
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_absolute1damage
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-9999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	420
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_absolute2damage
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-9999
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	434
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_alinfo
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	1-50000
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	448
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_bloodinfo
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-99
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	462
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_cutinfo
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	0-99
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	476
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_shapeinfo_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	490
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_descriptioninfo
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	설명
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	504
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_material_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	518
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_attack_material_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	532
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_defeat_mindamage_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	546
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_maxdamage_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	560
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_upper_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	574
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_lower_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	588
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_left_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	602
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_defeat_right_ex
+	{
+	control_color	true	144	180	180	180
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	616
+	control_enable	true
+	control_visible	true
+	}
+}

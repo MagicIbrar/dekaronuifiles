@@ -1,0 +1,208 @@
+<window>
+	name			letterbox
+	enable			true
+	visible			true
+	layer			100
+	rect			0  0 321 392
+	titlerect		0 0 305 24
+	<panel>
+		id			pan_main
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 321 392
+		<image>
+			key		none
+			screen	mail
+			index	1
+		</image>
+		<label>
+			id			title_label
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		28 2 263 14
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		250 1
+			</title>
+		</label>
+		<button>
+			id			btn_close
+			enable		true
+			visible		true
+			layer		100
+			rect		305 3 13 13
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		3
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		4
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		5
+			</image>
+		</button>
+		<label>
+			id			lbl_tagMsg
+			enable		true
+			visible		true
+			layer		10
+			rect		10 30 61 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		250 2
+			</title>
+		</label>
+		<label>
+			id			lbl_message
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		75 30 233 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<maillist>
+			id			maillist
+			enable		true
+			visible		true
+			layer		100
+			rect		6 57 309 329
+			nodewidth   295
+			nodeheight	54
+			offset		0
+			topmargin	3
+			gab			9				
+			<casebox>
+				id			maillist_listcontent_0
+				enable		true
+				visible		false
+				layer		100
+				align 		left top
+				rect		0 0 295 53
+				icon		4 6 42 42
+				title		49 3 294 17
+				content		49 19 294 33
+				time		49 35 294 49
+				<iconimg>
+					key			none
+					screen		mail
+					index		2
+				</image>
+				<image>
+					key			none
+					color 		0x00000000
+				</image>
+				<image>
+					key			over
+					screen		mail
+					index		12
+				</image>
+				<image>
+					key			check
+					screen		mail
+					index		12
+				</image>
+			</casebox>
+			<vscroll>
+				id			maillist_scroll
+				enable		true
+				visible		true
+				layer		300
+				rect		297 0 12 329
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			maillist_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id			maillist_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 317 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	14
+					</image>
+				</button>
+				<panel>
+					id			maillist_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 12 12 19
+					moveable	true
+					noneimage 	true
+					<image>
+						key		none
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>
+		</maillist>			
+	</panel>
+</window>

@@ -1,0 +1,94 @@
+<window>
+	name			pvp_notrequest
+	enable			true
+	visible			true
+	layer			110
+	rect			0  0 232 82
+	titlerect		0 0 232 16
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 82
+		<image>
+				key	none
+				screen	autocheck
+				index	2
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		28 2 174 14
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		280 100
+			</title>
+		</label>
+	</panel>
+
+	<label>
+		id			lbl_text
+		enable		true
+		visible		true
+		layer		50
+		rect		75 31 255 20	
+		<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+		</title>				
+	</label>
+	
+	<panel>
+		id			pan_btn
+		enable		true
+		visible		true
+		layer		50
+		rect		41 107 211 54	
+		<image>
+				key	0
+				screen	msgbox01
+				index	20
+		</image>			
+	</panel>
+	
+	<processbar>	
+		id			processbar
+		enable		true
+		visible		true
+		layer		101
+		rect		1 1 218 7
+		maxsize     1		
+	</processbar>
+	
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		41 107 170 32
+		<image>
+			key		none
+			screen	death
+			index	10
+		</image>
+		<image>
+			key	over
+			screen	death
+			index	11
+		</image>
+		<image>
+			key	down
+			screen	death
+			index	12
+		</image>
+	</button>	
+</window>

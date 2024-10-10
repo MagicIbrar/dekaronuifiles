@@ -1,0 +1,765 @@
+window_layer	auto
+window_size	300	408
+window_position	23	80
+window_visible	false
+
+
+create_control	panel	base_cover1
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	45	300	408
+	control_drawdiv	xy	2
+	control_drawsize	300	408
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	title_bar
+	{
+		control_group	0
+		control_drawsize	300	25
+		control_drawpoint	0	0
+		control_enable	true
+		control_visible	true
+	
+		create_control	button	btn_x
+		{
+		control_group	0
+		control_imagedivide	vertical
+		control_image	oooo	UI\Game\theme01\ccs_02.dds	0	165	16	16
+		control_drawdiv	xy	2
+		control_drawsize	16	16
+		control_drawpoint	277	5
+		control_enable	true
+		control_visible	true
+		}
+
+		create_control	panel	pan_title_status
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\ccs_02.dds	35	165	88	14
+		control_drawdiv	xy	2
+		control_drawsize	88	14
+		control_drawpoint	26	7
+		control_enable	true
+		control_visible	false
+		}
+
+		create_control	panel	pan_title_skill
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\ccs_02.dds	35	179	88	14
+		control_drawdiv	xy	2
+		control_drawsize	88	14
+		control_drawpoint	26	7
+		control_enable	true
+		control_visible	false
+		}
+
+		create_control	panel	pan_title_action
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\ccs_02.dds	35	193	88	14
+		control_drawdiv	xy	2
+		control_drawsize	88	14
+		control_drawpoint	26	7
+		control_enable	true
+		control_visible	false
+		}
+
+		create_control	panel	pan_title_quest
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\ccs_02.dds	35	207	88	14
+		control_drawdiv	xy	2
+		control_drawsize	88	14
+		control_drawpoint	26	7
+		control_enable	true
+		control_visible	false
+		}
+
+		create_control	panel	pan_title_party
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\ccs_02.dds	35	221	88	14
+		control_drawdiv	xy	2
+		control_drawsize	88	14
+		control_drawpoint	26	7
+		control_enable	true
+		control_visible	false
+		}	
+	}
+
+	create_control	button	btn_status
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\ccs_02.dds	0	241	53	22
+	control_drawdiv	xy	2
+	control_drawsize	53	22
+	control_drawpoint	12	35
+	control_enable	true
+	control_visible	true
+
+		create_control	panel	pan_status
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\ccs_02.dds	53	241	60	26
+		control_drawdiv	xy	2
+		control_drawsize	60	26
+		control_drawpoint	-4	-4
+		control_enable	true
+		control_visible	false
+		}
+	}
+
+	create_control	button	btn_skill
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\ccs_02.dds	0	307	53	22	
+	control_drawdiv	xy	2
+	control_drawsize	53	22
+	control_drawpoint	65	35
+	control_enable	true
+	control_visible	true
+
+		create_control	panel	pan_skill
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\ccs_02.dds	53	267	60	26
+		control_drawdiv	xy	2
+		control_drawsize	60	26
+		control_drawpoint	-4	-4	
+		control_enable	true
+		control_visible	false
+		}
+	}
+
+	create_control	button	btn_action
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\ccs_02.dds	0	373	53	22
+	control_drawdiv	xy	2
+	control_drawsize	53	22	
+	control_drawpoint	120	35
+	control_enable	false
+	control_visible	true
+		
+		create_control	panel	pan_action
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\ccs_02.dds	53	293	60	26
+		control_drawdiv	xy	2
+		control_drawsize	60	26
+		control_drawpoint	-4	-4
+		control_enable	true
+		control_visible	false
+		}
+	}
+
+	create_control	button	btn_quest
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\ccs_02.dds	0	439	53	22
+	control_drawdiv	xy	2
+	control_drawsize	53	22
+	control_drawpoint	176	35
+	control_enable	false
+	control_visible	true
+		
+		create_control	panel	pan_quest
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\ccs_02.dds	53	319	60	26
+		control_drawdiv	xy	2
+		control_drawsize	60	26
+		control_drawpoint	-4	-4
+		control_enable	true
+		control_visible	false
+		}
+	}
+
+	create_control	button	btn_party
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooox	UI\Game\theme01\ccs_02.dds	53	371	53	22
+	control_drawdiv	xy	2
+	control_drawsize	53	22
+	control_drawpoint	231	35
+	control_enable	false
+	control_visible	true
+		
+		create_control	panel	pan_party
+		{
+		control_group	0
+		control_image	oxxx	UI\Game\theme01\ccs_02.dds	53	345	60	26
+		control_drawdiv	xy	2
+		control_drawsize	60	26
+		control_drawpoint	-4	-4
+		control_enable	true
+		control_visible	false
+		}
+	}
+
+	create_control	panel	base_skill
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\skill_01.dds	0	0	300	351
+	control_drawdiv	xy	2
+	control_drawsize	300	351
+	control_drawpoint	0	57
+	control_enable	true
+	control_visible	false
+
+		create_control  listimage listige_skill
+		{
+		control_group	0
+		control_drawsize	251	260
+		control_drawpoint	17	24
+		control_enable	true
+		control_visible	true
+		
+		lstige_image    up      oooo	UI\Game\theme01\skill_01.dds	372	16	16	16	254	0
+		lstige_image  	down    oooo	UI\Game\theme01\skill_01.dds	372	32	16	16	254	243
+		lstige_image  	panel   oxxx	UI\Game\theme01\skill_01.dds	436	0	14	40	254	15
+		}
+		
+		create_control	button	btn_add
+		{
+		control_group	0
+		control_imagedivide	vertical
+		control_image	oooo	UI\Game\theme01\skill_01.dds	310	0	55	25
+		control_drawdiv	xy	2
+		control_drawsize	55	25
+		control_drawpoint	170	306
+		control_enable	false
+		control_visible	true
+		}
+
+		create_control	button	btn_close
+		{
+		control_group	0
+		control_imagedivide	vertical
+		control_image	oooo	UI\Game\theme01\ccs_02.dds	113	265	55	25
+		control_drawdiv	xy	2
+		control_drawsize	55	25
+		control_drawpoint	228	306
+		control_enable	true
+		control_visible	true
+		}
+
+		create_control	button	btn_tab1
+		{
+		control_group	0
+		control_imagedivide	vertical
+		control_image	ooox	UI\Game\theme01\skill_01.dds	0	355	82	30
+		control_drawdiv	xy	2
+		control_drawsize	82	30
+		control_drawpoint	16	5
+		control_enable	true
+		control_visible	true
+
+			create_control	panel	panel_tab1
+			{
+			control_group	0
+			control_image	oxxx	UI\Game\theme01\skill_01.dds	0	415	82	30
+			control_drawdiv	xy	2
+			control_drawsize	82	30
+			control_drawpoint	0	0
+			control_intersectable	false
+			control_enable	true
+			control_visible	true
+			}
+		}
+		
+		create_control	button	btn_tab2
+		{
+		control_group	0
+		control_imagedivide	vertical
+		control_image	ooox	UI\Game\theme01\skill_01.dds	82	355	82	30
+		control_drawdiv	xy	2
+		control_drawsize	82	30	
+		control_drawpoint	98	5
+		control_enable	true
+		control_visible	true
+
+			create_control	panel	panel_tab2
+			{
+			control_group	0
+			control_image	oxxx	UI\Game\theme01\skill_01.dds	82	415	82	30
+			control_drawdiv	xy	2
+			control_drawsize	82	30
+			control_drawpoint	0	0
+			control_intersectable	false
+			control_enable	true
+			control_visible	false
+			}
+		}
+
+		create_control	button	btn_tab3
+		{
+		control_group	0
+		control_imagedivide	vertical
+		control_image	ooox	UI\Game\theme01\skill_01.dds	164	355	82	30
+		control_drawdiv	xy	2
+		control_drawsize	82	30
+		control_drawpoint	180	5
+		control_enable	true
+		control_visible	true
+
+			create_control	panel	panel_tab3
+			{
+			control_group	0
+			control_image	oxxx	UI\Game\theme01\skill_01.dds	164	415	82	30
+			control_drawdiv	xy	2
+			control_drawsize	82	30
+			control_drawpoint	0	0
+			control_intersectable	false
+			control_enable	true
+			control_visible	false
+			}
+		}
+
+		create_control	text	txt_skillpoint
+		{
+		control_group	0
+		control_color	true	0	255	255	255
+		control_text	0	0	"0"
+		control_textfont	small
+		control_drawsize	82	14
+		control_drawpoint	82	315
+		control_enable	true
+		control_visible	true
+		}	
+	}
+}
+
+create_control	panel	base_cover2
+{
+	control_group	0
+	control_drawsize	300	408
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	button	STR_Inc
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_02.dds	16	165	19	19
+	control_drawdiv	xy	2
+	control_drawsize	19	19
+	control_drawpoint	48	170
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	DEX_Inc
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_02.dds	16	165	19	19
+	control_drawdiv	xy	1
+	control_drawsize	19	19
+	control_drawpoint	102	170
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	CON_Inc
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_02.dds	16	165	19	19
+	control_drawdiv	xy	1
+	control_drawsize	19	19
+	control_drawpoint	155	170
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	SPR_Inc
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_02.dds	16	165	19	19
+	control_drawdiv	xy	1
+	control_drawsize	19	19
+	control_drawpoint	208	170
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	edit	STR
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	25	17
+	control_drawpoint	24	172
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	DEX
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	25	17
+	control_drawpoint	78	172
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	CON
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	25	17
+	control_drawpoint	132	172
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	SPR
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	25	17
+	control_drawpoint	185	172
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	BONUSPOINT
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	43	17
+	control_drawpoint	236	172
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	NAME
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_textcolor	255	255	255
+	control_text	2	3	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	126	13
+	control_drawpoint	59	68
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	LEVEL
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	3	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	36	13
+	control_drawpoint	237	68
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+
+	create_control	edit	GUILD
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	2	3	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	126	13
+	control_drawpoint	59	110
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	PEERAGE
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	2	3	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	126	13
+	control_drawpoint	59	90
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	}
+
+	create_control	edit	DEFENCE
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	74	10
+	control_drawpoint	59	223
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	DAMAGE
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	74	10
+	control_drawpoint	59	202
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	ADVENTURE
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	74	10
+	control_drawpoint	59	243
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	MAGICATTACK
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	"0"
+	control_textfont	small
+	control_drawdiv	xy	74	10
+	control_drawpoint	206	202
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	ATTACKRATING
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	74	10
+	control_drawpoint	206	223
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	RESIST_FIRE
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	42	11
+	control_drawpoint	99	349
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	RESIST_ICE
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	42	11
+	control_drawpoint	99	371
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	RESIST_LIGHTNING
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	42	11
+	control_drawpoint	240	329
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	RESIST_POISON
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	42	11
+	control_drawpoint	99	329
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	RESIST_CURSE
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	42	11	
+	control_drawpoint	240	349
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	HP
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	88	11
+	control_drawpoint	192	285
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	MP
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	88	11
+	control_drawpoint	192	307
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	edit	EXP
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	1	""
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	221	11
+	control_drawpoint	59	265
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+
+	create_control	progressbar	HP_Gauge
+	{
+	cprogress_image	"UI\Game\theme01\ccs_02.dds"	389	0	123	6	
+	control_drawpoint	58	290
+	cprogress_draw	58	290	123	6
+	control_visible	true
+	control_build	
+	}
+
+	create_control	progressbar	MP_Gauge
+	{
+	cprogress_image	"UI\Game\theme01\ccs_02.dds"	389	6	123	6
+	control_drawpoint	58	311
+	cprogress_draw	58	311	123	6
+	control_visible	true
+	control_build	
+	}
+}

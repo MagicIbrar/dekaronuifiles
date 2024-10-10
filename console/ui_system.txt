@@ -1,0 +1,166 @@
+<window>
+	name			dialog
+	enable			true
+	visible			true
+	layer			100
+	position		left bottom
+	rect			0 -420 600 0 
+	layertype 		system
+	titlerect		0 0 0 0	
+	<panel>
+		id			pan_output
+		enable		true
+		visible		true
+		intersect 	false
+		layer		10
+		rect		0 20 600 420
+		<image>
+			key	0
+			screen	console
+			index	1
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		102
+			align		center
+			rect		0 3 480 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text		"SYSTEM INFOMATION"
+			</title>
+		</label>
+		<button>
+			id			btn_title
+			enable		true
+			visible		true
+			layer		90
+			align		center
+			rect		500 3 80 15			
+			<image>
+				key	0
+				screen	console
+				index	1
+			</image>
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text		"refresh"
+			</title>
+		</button>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		102
+			align		center
+			rect		580 2 18 18
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text		" X"
+			</title>
+			<image>
+				key	0
+				screen	console
+				index	1
+			</image>
+		</button>
+		<textbox>
+			id			text_view
+			enable		true
+			visible		true
+			layer		100
+			rect		0 20 600 360
+			lineheight	14
+			margin		10 10
+			fonttype	2
+			color		FFFFFFFF
+			<vscroll>
+			id			text_view_scroll
+			enable		true
+			visible		true
+			layer		100
+			rect		580 0 18 360
+			maxvalue	0
+			buttontick  1
+			<button>
+				id		text_view_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 18 19
+				<image>
+					key		0
+					screen	console
+					index	1
+					color	90010101
+				</image>
+				<image>
+					key		disable
+					screen	console
+					index	1
+				</image>
+				<image>
+					key		over
+					screen	console
+					index	1
+					color	C0010101
+				</image>
+				<image>
+					key		down
+					screen	console
+					index	1
+					color	30010101
+				</image>
+			</button>
+			<button>
+				id			text_view_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 340 18 19
+				<image>
+					key		0
+					screen	console
+					index	1
+					color	90010101
+				</image>
+				<image>
+					key		disable
+					screen	console
+					index	1
+				</image>
+				<image>
+					key		over
+					screen	console
+					index	1
+					color	C0010101
+				</image>
+				<image>
+					key		down
+					screen	console
+					index	1
+					color	30010101
+				</image>
+			</button>
+			<panel>
+				id			text_view_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 22 18 40 
+				moveable	true
+				<image>
+					key		down
+					screen	console
+					index	1
+					color	C0010101
+				</image>
+			</panel>
+			</vscroll>
+		</textbox>
+	</panel>
+</window>

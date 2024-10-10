@@ -1,0 +1,170 @@
+<window>
+	name			chartradeinvite_msgbox
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0  0 232 157
+	titlerect		0 0 211 24
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key		none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		60
+			rect		28 2 174 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 38
+			</title>
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		209 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+
+	<panel>
+		id		pan_notifylabel
+		enable		true
+		visible		true
+		layer		50
+		rect		30 78 170 14	
+		<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0	
+				text2 		556 58
+		</title>				
+	</panel>
+
+	<panel>
+		id		pan_editBg
+		enable		true
+		visible		true
+		layer		50
+		rect		43 52 144 16	
+		<image>
+				key	0
+				screen	party
+				index	6
+		</image>
+	</panel>
+	
+	<label>
+		id		lbl_text
+		enable		true
+		visible		true
+		layer		100
+		align		center
+		rect		20 55 143 14
+		<title>
+			color		ff00ff00
+			fontIndex	2
+			position	0 0
+		</title>
+	</label>			
+
+	<button>
+		id		btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		37 132 57 19
+		<image>
+			key			0
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	18 4
+			text2		2000 24
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	18 4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	19 5
+		</title>
+	</button>	
+
+	<button>
+		id		btn_no
+		enable		true
+		visible		true
+		layer		100
+		rect		138 132 57 19
+		<image>
+			key			0
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	18 4
+			text2		2000 25
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	18 4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	19 5
+		</title>
+	</button>	
+	
+</window>

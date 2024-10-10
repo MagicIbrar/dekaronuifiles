@@ -1,0 +1,433 @@
+<window>
+	name			quest
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 614 354
+	titlerect		0 0 560 28
+	<panel>
+		id			pan_left
+		enable		true
+		visible		true
+		layer		100
+		rect		260 6 80 18
+		<image>
+			key		none
+			screen	questwin
+			index	95
+		</image>
+	</panel>
+	<panel>
+		id			pan_right
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 254 355
+		<image>
+			key		none
+			screen	questwin
+			index	11
+		</image>
+	</panel>
+	<panel>
+		id			pan_top
+		enable		true
+		visible		true
+		layer		1
+		rect		254 0 360 355
+		<image>
+			key	none
+			screen	questwin
+			index	12
+		</image>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		329 3 21 21
+			sound  0
+			<image>
+				key		none
+				screen	questwin
+				index	61
+			</image>
+			<image>
+				key		over
+				screen	questwin
+				index	62
+			</image>
+			<image>
+				key		down
+				screen	questwin
+				index	63
+			</image>
+		</button>
+	</panel>
+	<panel>
+		id			pan_left_body
+		enable		true
+		visible		true
+		layer		100
+		rect		0 28 254 285
+		<treectrl>
+			id			quest_tree
+			enable		true
+			visible		true
+			layer		100
+			rect		18 0 240 285
+			nodewidth   200
+			nodeheight	18
+			offset		25
+			btnsize		13
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	4
+			</title>
+			<title>
+				state		check
+				color		ffFFFFFF
+				fontIndex	4
+			</title>
+			<title>
+				state		head
+				color		ff74AEE4
+				fontIndex	4
+			</title>
+			<title>
+				state		sub
+				color		ffFFCA40
+				fontIndex	4
+			</title>
+			<title>
+				state		finish
+				color		ffFFB900
+				fontIndex	4
+			</title>
+			<title>
+				state		unknown
+				color		ffBFBFBF
+				fontIndex	4
+			</title>
+			<title>
+				state		complete
+				color		ffEFEFEF
+				fontIndex	4
+			</title>
+			<image>
+				key	0
+				color 	00FFFFFF
+				screen	common
+				index	1
+			</image>
+			<image>
+				key		check
+				screen	questwin
+				index	91
+			</image>
+			<image>
+				key		plus
+				screen	scroll
+				index	40
+			</image>
+			<image>
+				key		minus
+				screen	scroll
+				index	50
+			</image>
+			<vscroll>
+				id			quest_tree_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		212 0 22  281
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			quest_tree_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		3 0 18 19
+					type		1
+					<image>
+						key		0
+						screen	scroll
+						index	10
+					</image>
+					<image>
+						key		over
+						screen	scroll
+						index	11
+					</image>
+					<image>
+						key		down
+						screen	scroll
+						index	12
+					</image>
+					<image>
+						key		disable
+						screen	scroll
+						index	13
+					</image>
+				</button>
+				<button>
+					id			quest_tree_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		3 262 18 19
+					type		1
+					<image>
+						key		0
+						screen	scroll
+						index	20
+					</image>
+					<image>
+						key		over
+						screen	scroll
+						index	21
+					</image>
+					<image>
+						key		down
+						screen	scroll
+						index	22
+					</image>
+					<image>
+						key		disable
+						screen	scroll
+						index	23
+					</image>
+				</button>
+				<panel>
+					id			quest_tree_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		3 0 18 27
+					moveable	true
+					<image>
+						key		0
+						screen	scroll
+						index	30
+					</image>
+				</panel>
+			</vscroll>
+		</treectrl>
+	</panel>
+	<panel>
+		id			pan_right_body
+		enable		true
+		visible		true
+		layer		100
+		rect		254 29 360 285
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		10 0 340 285
+			lineheight	16
+			margin		15 30
+			fonttype	2
+			color		FFFFFFFF
+			<vscroll>
+				id			textbox_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		318 0 25 281
+				maxvalue	3
+				buttontick  1
+				<button>
+					id			textbox_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		3 0 18 19
+					type		1
+					<image>
+						key		0
+						screen	scroll
+						index	10
+					</image>
+					<image>
+						key		over
+						screen	scroll
+						index	11
+					</image>
+					<image>
+						key		down
+						screen	scroll
+						index	12
+					</image>
+					<image>
+						key		disable
+						screen	scroll
+						index	13
+					</image>
+				</button>
+				<button>
+					id			textbox_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		3 262 18 19
+					type		1
+					<image>
+						key		0
+						screen	scroll
+						index	20
+					</image>
+					<image>
+						key		over
+						screen	scroll
+						index	21
+					</image>
+					<image>
+						key		down
+						screen	scroll
+						index	22
+					</image>
+					<image>
+						key		disable
+						screen	scroll
+						index	23
+					</image>
+				</button>
+				<panel>
+					id			textbox_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		3 0 18 27
+					moveable	true
+					<image>
+						key		0
+						screen	scroll
+						index	30
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+	</panel>
+	<panel>
+		id			pan_left_bottom
+		enable		true
+		visible		true
+		check		true
+		layer		15
+		rect		0 313 274 40
+		<button>
+			id			tab_quest_1
+			enable		true
+			visible		true
+			layer		100
+			rect		8 0 85 30
+			<image>
+				key		none
+				screen	questwin
+				index	30
+			</image>
+			<image>
+				key		over
+				screen	questwin
+				index	31
+			</image>
+			<image>
+				key		down
+				screen	questwin
+				index	32
+			</image>
+			<image>
+				key		check
+				screen	questwin
+				index	33
+			</image>
+		</button>
+		<button>
+			id			tab_quest_2
+			enable		false
+			visible		true
+			layer		100
+			rect		92 0 85 30
+			<image>
+				key		none
+				screen	questwin
+				index	40
+			</image>
+			<image>
+				key		over
+				screen	questwin
+				index	41
+			</image>
+			<image>
+				key		down
+				screen	questwin
+				index	42
+			</image>
+			<image>
+				key		check
+				screen	questwin
+				index	43
+			</image>
+		</button>
+		<button>
+			id			tab_quest_3
+			enable		true
+			visible		true
+			layer		100
+			rect		176 0 85 30
+			<image>
+				key		none
+				screen	questwin
+				index	50
+			</image>
+			<image>
+				key		over
+				screen	questwin
+				index	51
+			</image>
+			<image>
+				key		down
+				screen	questwin
+				index	52
+			</image>
+			<image>
+				key		check
+				screen	questwin
+				index	53
+			</image>
+		</button>
+	</panel>
+	<panel>
+		id			pan_right_bottom
+		enable		true
+		visible		true
+		layer		14
+		rect		254 310 360 44
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			rect		258 0 91 34
+			<image>
+				key		none
+				screen	questwin
+				index	21
+			</image>
+			<image>
+				key		over
+				screen	questwin
+				index	22
+			</image>
+			<image>
+				key		down
+				screen	questwin
+				index	23
+			</image>
+		</button>
+	</panel>		
+</window>

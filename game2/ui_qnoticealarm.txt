@@ -1,0 +1,40 @@
+<window>
+	name			qnotice_alarm
+	enable			true
+	visible			true
+	alwaysontop		true
+	layer			100
+	rect			10 60 40 90
+		
+	<button>
+		id			btn_alarm
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 30 30
+		blink 		false
+		blinktime  	1000	
+		tooltip 	1002 13	
+
+		<image>
+			key		none
+			screen	quest 
+			index	9
+		</image>
+		<image>
+			key		over
+			screen	quest 
+			index	10
+		</image>
+		<image>
+			key		down
+			screen	quest 
+			index	9
+		</image>
+		<image>
+			key		blink
+			screen	quest 
+			index	10
+		</image>
+	</button>
+</window>

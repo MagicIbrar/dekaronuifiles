@@ -1,0 +1,781 @@
+<window>
+	name					petinven
+	enable					true
+	visible					true
+	layer					100
+	rect					0 0 333 397
+	titlerect				0 0 317 24
+	
+	<panel>
+		id					pan_bg_pet
+		enable				true
+		visible				true
+		layer				1
+		rect				0 0 333 397
+		<image>
+			key				0
+			screen			pet
+			index			1
+		</image>
+		<label>
+			id					lbl_title
+			enable				true
+			visible				true
+			layer				108
+			rect				147 2 42 14
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			100 81
+			</title>
+		</label>
+		<button>
+			id					btn_exit
+			enable				true
+			visible				true
+			layer				108
+			rect				317 3 13 13
+			sound				0
+			<image>
+				key				0
+				screen			etc_01
+				index			3
+			</image>
+			<image>
+				key				over
+				screen			etc_01
+				index			4
+			</image>
+			<image>
+				key				down
+				screen			etc_01
+				index			5
+			</image>
+		</button>
+		<button>
+			id			btn_tab_0
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		6 23 70 22
+			<image>
+				key		none
+				screen	etc_01
+				index 	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index 	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		330 7
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_1
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		70 23 70 22
+			<image>
+				key		none
+				screen	etc_01
+				index 	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index 	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		330 11
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<panel>
+				id			pan_setting1
+				enable		true
+				visible		true
+				layer		1
+				rect		6 48 321 318
+				<image>
+					key				0
+					screen			pet
+					index			2
+				</image>
+				<panel>
+					id					pan_petimage
+					enable				true
+					visible				true
+					layer				1
+					rect				36 43 88 88
+			   </panel>
+			<label>
+				id					lbl_tagname
+				enable				true
+				visible				true
+				align 				center
+				layer				108
+				rect				127 54 48 14
+				<title>
+					color			fff4be3d
+					fontIndex		2
+					text2 			330 27
+				</title>
+			</label>
+			<label>
+				id				lbl_name
+				enable				true
+				visible				true
+				align 				center
+				layer				100
+				rect				179 54 107 14
+				<title>
+					color			fff4be3d
+					fontIndex		2
+				</title>
+			</label>
+			<label>
+				id					lbl_taglife
+				enable				true
+				visible				true
+				layer				108
+				rect				127 102 48 14
+				<title>
+					color			fff4be3d
+					fontIndex		2
+					text2 			330 9
+				</title>
+			</label>
+			<label>
+				id					lbl_lifetime
+				enable				true
+				visible				true
+				layer				108
+				rect				179 102 107 14
+				<title>
+					color			fff4be3d
+					fontIndex		2
+				</title>
+			</label>
+			<button>
+				id					btn_setname
+				enable				true
+				visible				true
+				align 				center
+				layer				200
+				rect				204 72 70 22
+				<image>
+					key				none
+					screen			etc_01
+					index			2
+				</image>
+				<title>
+					state			none
+					color			ffb7b7b7
+					fontIndex		4
+					position		0 3
+					text2			330 51
+				</title>
+				<title>
+					state			over
+					color			ffffffff
+					fontIndex		4
+					position		0 3
+				</title>
+				<title>
+					state			down
+					color			ffb7b7b7
+					fontIndex		4
+					position		2 4
+				</title>
+			</button>
+			<itemslot>
+				id					slotbag
+				enable				true
+				visible				true
+				layer				200
+				rect				0 189 320 128
+				cellsize			32 32
+			</itemslot>
+		</panel>
+		<panel>
+				id					pan_setting2
+				enable				true
+				visible				true
+				layer				1
+				rect				6 48 321 318
+				<image>
+					key				0
+					screen			pet
+					index			3
+				</image>
+				<label>
+					id					lbl_AutoPick
+					enable				true
+					visible				true
+					layer				100
+					rect				3 31 159 22
+					<title>
+						color			fff4be3d
+						fontIndex		4
+						text2 			330 12
+					</title>
+				</label>
+				<panel>
+					id				pan_AutoPickOn
+					enable				true
+					visible				true
+					layer				110
+					rect				32 49 18 18
+				</panel>				
+				<panel>
+					id				pan_AutoPickOn_check
+					enable				true
+					visible				true
+					layer				120
+					rect				32 49 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_AutoPickOn
+					enable				true
+					visible				true
+					layer				100
+					rect				52 56 107 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 67
+					</title>
+				</label>
+				<panel>
+					id				pan_AutoPickOff
+					enable				true
+					visible				true
+					layer				110
+					rect				173 49 18 18
+				</panel>				
+				<panel>
+					id				pan_AutoPickOff_check
+					enable				true
+					visible				true
+					layer				120
+					rect				173 49 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_AutoPickOff
+					enable				true
+					visible				true
+					layer				100
+					rect				193 56 107 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 68
+					</title>
+				</label>
+				<label>
+					id				lbl_EquipSetting
+					enable				true
+					visible				true
+					layer				100
+					rect				4 94 185 14
+					<title>
+						color			fff4be3d
+						fontIndex		4
+						text2 			330 14
+					</title>
+				</label>
+				<panel>
+					id				pan_NormalItem
+					enable				true
+					visible				true
+					layer				110
+					rect				32 112 18 18
+				</panel>				
+				<panel>
+					id				pan_NormalItem_check
+					enable				true
+					visible				true
+					layer				120
+					rect				32 112 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_NormalItem
+					enable				true
+					visible				true
+					layer				100
+					rect				51 117 195 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 17
+					</title>
+				</label>
+				<panel>
+					id				pan_Accessory
+					enable				true
+					visible				true
+					layer				110
+					rect				173 112 18 18
+				</panel>					
+				<panel>
+					id				pan_Accessory_check
+					enable				true
+					visible				true
+					layer				120
+					rect				173 112 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_Accessory
+					enable				true
+					visible				true
+					layer				100
+					rect				192 117 195 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 16
+					</title>
+				</label>
+				<panel>
+					id				pan_MagicItem
+					enable				true
+					visible				true
+					layer				110
+					rect				32 135 18 18
+				</panel>					
+				<panel>
+					id				pan_MagicItem_check
+					enable				true
+					visible				true
+					layer				120
+					rect				32 135 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_MagicItem
+					enable				true
+					visible				true
+					layer				100
+					rect				51 140 195 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 18
+					</title>
+				</label>
+				<panel>
+					id				pan_NobleItem
+					enable				true
+					visible				true
+					layer				110
+					rect				173 135 18 18
+				</panel>					
+				<panel>
+					id				pan_NobleItem_check
+					enable				true
+					visible				true
+					layer				120
+					rect				173 135 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_NobleItem
+					enable				true
+					visible				true
+					layer				100
+					rect				192 140 195 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 19
+					</title>
+				</label>
+				<panel>
+					id				pan_DivineItem
+					enable				true
+					visible				true
+					layer				110
+					rect				32 158 18 18
+				</panel>
+				<panel>
+					id				pan_DivineItem_check
+					enable				true
+					visible				true
+					layer				120
+					rect				32 158 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_DivineItem
+					enable				true
+					visible				true
+					layer				100
+					rect				51 161 195 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 20
+					</title>
+				</label>
+				<panel>
+					id				pan_LegendItem
+					enable				true
+					visible				true
+					layer				110
+					rect				173 158 18 18
+				</panel>
+				<panel>
+					id				pan_LegendItem_check
+					enable				true
+					visible				true
+					layer				120
+					rect				173 158 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_LegendItem
+					enable				true
+					visible				true
+					layer				100
+					rect				192 161 195 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 21
+					</title>
+				</label>	
+				<label>
+					id				lbl_EtcSetting
+					enable				true
+					visible				true
+					layer				100
+					rect				4 206 205 14
+					<title>
+						color			fff4be3d
+						fontIndex		4
+						text2 			330 15
+					</title>
+				</label>
+				<panel>
+					id				pan_Acate
+					enable				true
+					visible				true
+					layer				110
+					rect				32 226 18 18
+				</panel>			
+				<panel>
+					id				pan_Acate_check
+					enable				true
+					visible				true
+					layer				120
+					rect				32 226 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_Acate
+					enable				true
+					visible				true
+					layer				100
+					rect				51 231 195 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 69
+					</title>
+				</label>					
+				<panel>
+					id				pan_Socket
+					enable				true
+					visible				true
+					layer				110
+					rect				173 249 18 18
+				</panel>			
+				<panel>
+					id				pan_Socket_check
+					enable				true
+					visible				true
+					layer				120
+					rect				173 249 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_Socket
+					enable				true
+					visible				true
+					layer				100
+					rect				192 254 195 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 70
+					</title>
+				</label>
+				<panel>
+					id				pan_Etc
+					enable				true
+					visible				true
+					layer				110
+					rect				32 249 18 18
+				</panel>			
+				<panel>
+					id				pan_Etc_check
+					enable				true
+					visible				true
+					layer				120
+					rect				32 249 18 18
+					intersect			false
+					<image>
+						key				0
+						screen			etc_01
+						index			26
+					</image>
+				</panel>				
+				<label>
+					id				lbl_Etc
+					enable				true
+					visible				true
+					layer				100
+					rect				51 254 195 14
+					<title>
+						color			ffffffff
+						fontIndex		2
+						text2 			330 72
+					</title>
+				</label>
+				<label>
+					id				lbl_Infomation
+					enable				true
+					visible				true
+					layer				100
+					align 				center
+					multiline   		true
+					lineheight 			16
+					rect				5 279 316 45
+					<title>
+						color			fff2f43d
+						fontIndex		2
+						text2 			330 73
+					</title>
+				</label>					
+		</panel>
+		<panel>
+			id					pan_button
+			enable				true
+			visible				true
+			layer				100
+			rect				6 366 321 31		
+			<button>
+				id			btn_confirm
+				enable		true
+				visible		true
+				layer		100
+				rect		66 6 57 19
+				sound  		0
+				<image>
+					key 	none
+					screen 	etc_01
+					index 	2
+				</image>
+				<title>
+					state		none
+					color		ffb7b7b7
+					fontIndex	2
+					text2		2000 15
+					position	16 3
+				</title>
+				<title>
+					state		over
+					color		ffffffff
+					fontIndex	2
+					position	16 3
+				</title>
+				<title>
+					state		down
+					color		ffb7b7b7
+					fontIndex	2
+					position	17 4
+				</title>
+				<title>
+					state		disable
+					color		ff828282
+					fontIndex	2
+					position	16 3
+				</title>
+			</button>
+			<button>
+				id			btn_apply
+				enable		true
+				visible		true
+				layer		100
+				rect		138 6 57 19
+				sound		0
+				<image>
+					key 	none
+					screen 	etc_01
+					index 	2
+				</image>
+				<title>
+					state		none
+					color		ffb7b7b7
+					fontIndex	2
+					text2		2001 7
+					position	16 3
+				</title>
+				<title>
+					state		over
+					color		ffffffff
+					fontIndex	2
+					position	16 3
+				</title>
+				<title>
+					state		down
+					color		ffb7b7b7
+					fontIndex	2
+					position	17 4
+				</title>
+				<title>
+					state		disable
+					color		ff828282
+					fontIndex	2
+					position	16 3
+				</title>
+			</button>
+			
+			<button>
+				id			btn_cancel
+				enable		true
+				visible		true
+				layer		100
+				rect		210 6 57 19
+				align		center
+				sound		0
+				<image>
+					key 	none
+					screen 	etc_01
+					index 	2
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					position	0 3
+					text2 		2000 23
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	1 4
+				</title>
+			</button>			
+		</panel>
+	</panel>
+</window>

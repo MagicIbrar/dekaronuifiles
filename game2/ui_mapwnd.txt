@@ -1,0 +1,994 @@
+<window>
+	name			map_win
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 789 558
+	titlerect		0 0 789 32
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 789 558
+		<panel>
+			id			pan_bg
+			enable		true
+			visible		true
+			layer		1
+			rect		0 0 789 558
+			<image>
+				key		0
+				screen	bigmap
+				index	1
+			</image>
+		</panel>
+	</panel>
+	<panel>
+		id			pan_title
+		enable		true
+		visible		true
+		layer		110
+		rect		0 0 543 32
+		<label>
+			id			lbl_mapName
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		0 12 543 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+	</panel>
+	<button>
+		id			btn_close
+		enable		true
+		visible		true
+		layer		110
+		type		0
+		rect		761 13 15 15
+
+		sound  0
+		<image>
+			key		none
+			screen	etc_01
+			index		315
+
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index		316
+
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index		317
+
+		</image>
+		</button>
+		<label>
+		id		lbl_notice
+		enable		false
+		visible		false
+		multiline	true
+		layer		500
+		rect		525 286 241 30
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2		1002 57
+		</title>
+	</label>
+
+	<label>
+		id			lbl_silde
+		enable		true
+		visible		true
+		layer		500
+		align		center
+		rect		525 530 65 12
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2		100 121
+		</title>
+	</label>
+	<panel>
+		id				pan_silde
+		enable			true
+		visible			true
+		layer			100
+		rect			645 532 124 12
+		<slidebar>
+			id			sld_alpha
+			enable		true
+			visible		true
+			layer		100
+			rect		12 0 100 12
+			min			0
+			max			100
+			minmaxpos	0	100
+			<panel>
+				id			sld_alpha_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		12 0 9 12
+				moveable	true
+				noneimage	true
+				<image>
+					key			none
+					screen		etc_01
+					index		22
+				</image>
+				<image>
+					key			over
+					screen		etc_01
+					index		23
+				</image>
+			</panel>
+		</slidebar>
+		<button>
+			id			btn_minus
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		0 0 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	13
+			</image>
+		</button>
+		<button>
+			id			btn_plus
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		112 0 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	7
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	8
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	9
+			</image>
+		</button>
+	</panel>
+
+	<button>
+		id			btn_npclist
+		enable		true
+		visible		true
+		layer		110
+		align		center
+		rect		526 37 128 28
+		<image>
+			key	none
+			screen	bigmap
+			index	73
+		</image>
+		<image>
+			key	over
+			screen	bigmap
+			index	74
+		</image>
+		<image>
+			key	check
+			screen	bigmap
+			index	75
+		</image>
+
+		<title>
+			state		none
+			color		ffb7b7b7
+			fontIndex	4
+			position	0 6
+			text2 		2000 64
+		</title>
+		<title>
+			state		over
+			color		ffffffff
+			fontIndex	4
+			position	0 6
+		</title>
+		<title>
+			state		down
+			color		FFFFB900
+			fontIndex	4
+			position	0 6
+		</title>
+		<title>
+			state		check
+			color		FFFFB900
+			fontIndex	4
+			position	0 6
+		</title>
+	</button>
+	
+	<button>
+		id			btn_teleportlist
+		enable		true
+		visible		false
+		layer		110
+		align		center	center
+		type		0
+		rect		602 15 90 17
+		<image>
+			key		0
+			screen	bigmap
+			index	55
+		</image>
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2 		2000 38
+		</title>
+	</button>
+
+	<button>
+		id			btn_responlist
+		enable		true
+		visible		false
+		layer		110
+		align		center	center
+		type		0
+		rect		692 15 90 17
+		<image>
+			key		0
+			screen	bigmap
+			index	55
+		</image>
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2 		2000 39
+		</title>
+	</button>
+	
+	<button>
+		id			btn_npc_move
+		enable		false
+		visible		false
+		layer		600
+		align		center
+		rect		32 6 34 15
+		<image>
+				key		none
+				screen	party
+				index	12
+		</image>
+		<image>
+				key		over
+				screen	party
+				index	13
+		</image>
+		<image>
+				key		down
+				screen	party
+				index	14
+		</image>
+		<title>
+			state		none
+			color		FFFFFFFF
+			fontIndex	2
+			position	0 1
+			text2 		2000 77
+		</title>
+	</button>
+	
+	<panel>
+		id			pan_npclist
+		enable		true
+		visible		true
+		layer		300
+		position	left top
+		rect		522 63 264 474
+		<listbox>
+			id			list_npclist
+			enable		true
+			visible		true
+			layer		500
+			position	inverse top
+			rect		2 2 2 473
+			nodewidth	234
+			nodeheight	16
+			offset		4
+			btnsize		16			
+			<image>
+				key		0
+				screen	bigmap
+				index	61
+			</image>	
+			<title>
+				state		over
+				color		FF74AEE4
+				fontIndex	4
+			</title>
+			<title>
+				state		check
+				color		FFFFB900
+				fontIndex	4
+			</title>
+			<title>
+				state		none
+				color		FFFFFFFF
+				fontIndex	4
+			</title>
+			<vscroll>
+			id			list_npclist_scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		0 0 258 456
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			list_npclist_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		246 0 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	19
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	20
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	21
+				</image>
+			</button>
+			<button>
+				id			list_npclist_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		246 444 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	17
+				</image>
+			</button>
+			<panel>
+				id			list_npclist_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		246 0 12 12
+				moveable	true
+				noneimage 	true
+				<image>
+					key		none
+					screen	etc_01
+					index	24
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	25
+				</image>
+			</panel>
+		</vscroll>
+		</listbox>
+	</panel>
+
+	<panel>
+		id			pan_teleportlist
+		enable		true
+		visible		false
+		layer		300
+		position	left top
+		rect		522 63 264 474
+		<listbox>
+			id			list_teleportlist
+			enable		true
+			visible		true
+			layer		500
+			position	inverse top
+			rect		2 2 2 473
+			nodewidth	380
+			nodeheight	16
+			offset		4
+			btnsize		16			
+			<image>
+				key		0
+				screen	bigmap
+				index	61
+			</image>	
+			<title>
+				state		over
+				color		FF74AEE4
+				fontIndex	4
+			</title>
+			<title>
+				state		check
+				color		FFFFB900
+				fontIndex	4
+			</title>
+			<title>
+				state		none
+				color		FFFFFFFF
+				fontIndex	4
+			</title>
+			<vscroll>
+			id			list_teleportlist_scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		0 0 258 456
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			list_teleportlist_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		246 0 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	19
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	20
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	21
+				</image>
+			</button>
+			<button>
+				id			list_teleportlist_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		246 444 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	17
+				</image>
+			</button>
+			<panel>
+				id			list_teleportlist_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		246 0 12 12
+				moveable	true
+				noneimage 	true
+				<image>
+					key		none
+					screen	etc_01
+					index	24
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	25
+				</image>
+			</panel>
+		</vscroll>
+		</listbox>
+	</panel>
+
+	<panel>
+		id			pan_responlist
+		enable		true
+		visible		false
+		layer		300
+		position	left top
+		rect		522 63 264 474
+		<listbox>
+			id			list_responlist
+			enable		true
+			visible		true
+			layer		500
+			position	inverse top
+			rect		2 2 2 473
+			nodewidth   234
+			nodeheight	16
+			offset		4
+			btnsize		16			
+			<image>
+				key		0
+				screen	bigmap
+				index	61
+			</image>	
+			<title>
+				state		over
+				color		FF74AEE4
+				fontIndex	4
+			</title>
+			<title>
+				state		check
+				color		FFFFB900
+				fontIndex	4
+			</title>
+			<title>
+				state		none
+				color		FFFFFFFF
+				fontIndex	4
+			</title>
+			<vscroll>
+				id			list_responlist_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		230 3 16 330
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			list_responlist_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 16 19
+					<image>
+						key		0
+						screen	item_shop_popup
+						index	33
+					</image>
+				</button>
+				<button>
+					id			list_responlist_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 311 16 19
+					<image>
+						key		0
+						screen	item_shop_popup
+						index	32
+					</image>
+				</button>
+				<panel>
+					id			list_responlist_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 19 16 32
+					moveable	true
+					<image>
+						key		0
+						screen	item_shop_popup
+						index	34
+					</image>
+				</panel>
+			</vscroll>
+		</listbox>
+	</panel>
+
+	<panel>
+		id		pan_responlist
+		enable		true
+		visible		false
+		layer		300
+		position	left top
+		rect		522 63 264 474
+	<listbox>
+		id		list_monsterpositionlist
+		enable		true
+		visible		false
+		layer		500
+		position	inverse top
+		align		left
+		rect		524 67 258 474
+		nodewidth	241
+		nodeheight	14
+		offset		2		
+		<title>
+			state		over
+			color		FF74AEE4
+			fontIndex	4
+		</title>
+		<title>
+			state		check
+			color		FFFFB900
+			fontIndex	4
+		</title>
+		<title>
+			state		none
+			color		FFFFFFFF
+			fontIndex	4
+		</title>
+		<vscroll>
+			id			list_monsterpositionlist_scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		0 0 258 456
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			list_monsterpositionlist_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		246 0 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	19
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	20
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	21
+				</image>
+			</button>
+			<button>
+				id			list_monsterpositionlist_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		246 444 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	17
+				</image>
+			</button>
+			<panel>
+				id			list_monsterpositionlist_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		246 0 12 12
+				moveable	true
+				noneimage 	true
+				<image>
+					key		none
+					screen	etc_01
+					index	24
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	25
+				</image>
+			</panel>
+		</vscroll>
+	</listbox>
+</panel>
+
+	<panel>
+		id			pan_body
+		enable		true
+		visible		true
+		layer		100
+		rect		8 37 512 512
+		<panel>
+			id			pan_map_bg
+			enable		true
+			visible		true
+			intersect 	false
+			layer		9
+			rect		0 0 512 512
+			<image>
+				key		0
+				screen	mainbar_minimap
+				index	121
+			</image>
+		</panel>
+		<panel>
+			id			pan_map
+			enable		true
+			visible		true
+			layer		10
+			rect		0 0 512 512
+			<image>
+				key		0
+				screen	minimap
+				index	0
+			</image>
+			<panel>
+				id			pan_sentryinfo
+				enable		true
+				visible		false
+				intersect 	false
+				layer		1000
+				rect		312 0 200 60
+				<image>
+					key		0
+					screen	siege
+					index	6
+				</image>
+				<label>
+					id			lbl_sentry_maxcount
+					enable		true
+					visible		true
+					layer		110
+					align 		center
+					rect		0 12 200 16
+					intersect	false
+					<title>
+						color		FFFFFFFF
+						fontIndex	2
+					</title>
+				</label>
+				<label>
+					id			lbl_sentry_count
+					enable		true
+					visible		true
+					layer		110
+					align 		center
+					rect		0 32 200 16
+					intersect	false
+					<title>
+						color		FFF9B600
+						fontIndex	2
+					</title>
+				</label>
+				<label>
+					id			lbl_sentry_fight
+					enable		true
+					visible		false
+					layer		110
+					align 		center
+					rect		0 22 200 16
+					intersect	false
+					<title>
+						color		FF76F756
+						fontIndex	2
+					</title>
+				</label>
+			</panel>
+			<panel>
+				id			pan_movetarget
+				enable		true
+				visible		false
+				layer		280
+				rect		100 100 34 38
+				<image>
+					key		0
+					screen	mainbar_minimap
+					index	32
+				</image>
+			</panel>			
+			<panel>
+				id			pan_pointArrow
+				enable		true
+				visible		true
+				layer		300
+				rect		100 100 14 21
+				<image>
+					key		0
+					screen	mainbar_minimap
+					index	30
+				</image>
+			</panel>
+			<panel>
+				id			pan_party
+				enable		true
+				visible		false
+				layer		290
+				rect		79 75 10 10
+				<image>
+					key		0
+					screen	mainbar_minimap
+					index	126
+				</image>
+			</panel>
+			<panel>
+				id			pan_troop_0
+				enable		true
+				visible		false
+				layer		500
+				rect		79 75 8 8
+				<image>
+					key		0
+					screen	TroopFooting
+					index	30
+				</image>
+			</panel>			
+			<panel>
+				id			pan_troop_1
+				enable		true
+				visible		false
+				layer		500
+				rect		79 75 8 8
+				<image>
+					key		0
+					screen	TroopFooting
+					index	31
+				</image>
+			</panel>			
+			<panel>
+				id			pan_troop_2
+				enable		true
+				visible		false
+				layer		500
+				rect		79 75 8 8
+				<image>
+					key		0
+					screen	TroopFooting
+					index	32
+				</image>
+			</panel>
+			<panel>
+				id			pan_selectednpc
+				enable		true
+				visible		false
+				layer		300
+				rect		100 100 12 14
+				<image>
+					key		0
+					screen	bigmap
+					index	59
+				</image>
+			</panel>
+			<panel>
+				id			pan_selectednpc_effect
+				enable		true
+				visible		false
+				layer		310
+				rect		100 100 12 14
+				<image>
+					key		0
+					screen	bigmap
+					index	60
+				</image>
+			</panel>
+
+			<panel>
+				id			pan_new_tooltip
+				enable		true
+				visible		false
+				layer		320
+				rect		200 200 300 37
+				<label>
+					id		lbl_new_tooltip
+					enable	true
+					visible	true
+					layer	340
+					rect	3 11 250 14
+					align	left
+					<title>
+						color		0xff1e165a
+						fontIndex	2
+					</title>
+				</label>
+				<panel>
+					id		pan_new_tooltip_left
+					enable	true
+					visible	true
+					layer	310
+					rect	0 8 17 21
+					<image>
+						key		0
+						screen	bigmap
+						index	5
+					</image>
+				</panel>
+				<panel>
+					id		pan_new_tooltip_mid
+					enable	true
+					visible	true
+					layer	310
+					rect	17 8 4 21
+					align	center center
+					<image>
+						key		0
+						screen	bigmap
+						index	6
+					</image>
+				</panel>
+				<panel>
+					id		pan_new_tooltip_right
+					enable	true
+					visible	true
+					layer	310
+					rect	21 8 6 21
+					<image>
+						key		0
+						screen	bigmap
+						index	7
+					</image>
+				</panel>
+				<panel>
+					id		pan_new_tooltip_uptag
+					enable	true
+					visible	false
+					layer	320
+					rect	8 0 9 10
+					<image>
+						key		0
+						screen	bigmap
+						index	9
+					</image>
+				</panel>
+				<panel>
+					id		pan_new_tooltip_downtag
+					enable	true
+					visible	false
+					layer	320
+					rect	8 26 9 10
+					<image>
+						key		0
+						screen	bigmap
+						index	8
+					</image>
+				</panel>
+			</panel>
+			
+		</panel>
+	</panel>
+</window>

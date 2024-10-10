@@ -1,0 +1,168 @@
+<window>
+	name			quest
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 186 120
+	titlerect		0 0 186 32
+	<button>
+		id			btn_redo
+		enable		true
+		visible		false
+		layer		1
+		rect		0 0 30 30
+		<image>
+			key		none
+			screen	renewalquest
+			index	26
+		</image>
+		<image>
+			key		over
+			screen	renewalquest
+			index	27
+		</image>
+		<image>
+			key		down
+			screen	renewalquest
+			index	28
+		</image>
+	</button>
+	<panel>
+		id			pan_body
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 186 120
+		<image>
+			key		none
+			screen	renewalquest
+			index	25
+		</image>
+		<label>
+			id			lbl_tagtitle
+			enable		true
+			visible		true
+			align 		center
+			layer		60
+			align		center
+			intersect	false
+			rect		0 9 186 32
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 117
+			</title>
+		</label>
+		<button>
+			id			btn_minimize
+			enable		true
+			visible		true
+			layer		100
+			rect		163 8 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<panel>
+			id			pan_object
+			enable		false
+			visible		false
+			layer		1
+			rect		0 0 168 60
+			<button>
+				id			btn_cancel
+				enable		true
+				visible		true
+				layer		100
+				rect		7 0 13 13
+				<image>
+					key		none
+					screen	newquest
+					index	6
+				</image>
+				<image>
+					key		over
+					screen	newquest
+					index	7
+				</image>
+				<image>
+					key		down
+					screen	newquest
+					index	8
+				</image>
+			</button>
+			<label>
+				id			lbl_object
+				enable		true
+				visible		true
+				layer		60
+				multiline	true
+				rect		20 0 148 60
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>						
+		</panel>
+		<button>
+			id			btn_up
+			enable		true
+			visible		true
+			layer		100
+			rect		169 33 13 13
+			<image>
+				key		none
+				screen	renewalquest
+				index	5
+			</image>
+			<image>
+				key		over
+				screen	renewalquest
+				index	6
+			</image>
+			<image>
+				key		down
+				screen	renewalquest
+				index	7
+			</image>
+		</button>			
+		<button>
+			id			btn_down
+			enable		true
+			visible		true
+			layer		100
+			rect		169 47 13 13
+			<image>
+				key		none
+				screen	renewalquest
+				index	8
+			</image>
+			<image>
+				key		over
+				screen	renewalquest
+				index	9
+			</image>
+			<image>
+				key		down
+				screen	renewalquest
+				index	10
+			</image>
+		</button>			
+	</panel>
+</window>

@@ -1,0 +1,725 @@
+window_layer	auto
+window_size	500	500
+window_alignaxis	left	top
+window_position	30	70
+window_visible	false
+
+create_control	panel	pan_effect
+{
+	control_group	56
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	500	500
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_effecttitle
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+		control_text	10	1	"Effect Tool"
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	494	13
+		control_drawpoint	3	3
+		control_enable	true
+		control_visible	true
+
+		create_control	button	btn_effectclose
+		{
+		control_image	oooo	UI\Tool\ui_winbtn03.dds	65	11	11	11
+		control_drawdiv	xy	2
+		control_drawsize	11	11
+		control_drawpoint	483	1
+		control_enable	true
+		control_visible	true
+		}
+	}
+	
+	// AnimType
+	create_control	combobox	cbb_effect_animtype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	100	30
+	control_drawpoint	100	224
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_effect_animtype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	14
+	control_drawpoint	100	210
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_effect_animtype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	200	210
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_effect_name
+	{
+	control_text	0	0	Name
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	10	54
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_effect_position
+	{
+	control_text	0	0	Position
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	80	23
+	control_drawpoint	10	80
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_offset
+	{
+	control_text	0	0	Offset
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	40	23
+	control_drawpoint	10	106
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_offset_x
+	{
+	control_text	0	0	x
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	15	132
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_offset_y
+	{
+	control_text	0	0	Y
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	170	132
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_offset_z
+	{
+	control_text	0	0	Z
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	340	132
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_trans
+	{
+	control_text	0	0	Trans_offset
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	150	23
+	control_drawpoint	10	158
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_trans_x
+	{
+	control_text	0	0	x
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	15	184
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_trans_y
+	{
+	control_text	0	0	Y
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	170	184
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_trans_z
+	{
+	control_text	0	0	Z
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	340	184
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_animtype
+	{
+	control_text	0	0	AnimType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	10	210
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_time
+	{
+	control_text	0	0	Time
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	50	23
+	control_drawpoint	10	236
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_timestart
+	{
+	control_text	0	0	Start
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	262
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_timeend
+	{
+	control_text	0	0	End
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	200	262
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_file
+	{
+	control_text	0	0	EffectFile
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	23
+	control_drawpoint	10	288
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_boneanim
+	{
+	control_text	0	0	Bone_Animation
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	150	23
+	control_drawpoint	10	314
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_bonename
+	{
+	control_text	0	0	BoneName
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	340
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_skelfile
+	{
+	control_text	0	0	SkelFile
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	366
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_animfile
+	{
+	control_text	0	0	AnimFile
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	23
+	control_drawpoint	12	392
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_start
+	{
+	control_text	0	0	Start
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	10	418
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_animtime
+	{
+	control_text	0	0	AnimTime
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	210	418
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_effect_cycle
+	{
+	control_text	0	0	Cycle
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	400	418
+	control_enable	true
+	control_visible	true
+	}
+	
+	
+	create_control	button	btn_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_effect_file
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	420	288
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_effect_skelfile
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	420	366
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_effect_animfile
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	420	392
+	control_enable	true
+	control_visible	true
+	}
+		
+	create_control	button	btn_effect_open
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	20	450
+	control_enable	true
+	control_visible	true
+	}	
+	
+	create_control	button	btn_effect_save
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Save
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	100	450
+	control_enable	true
+	control_visible	true
+	}	
+	
+	create_control	button	btn_effect_view
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	View
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	200	450
+	control_enable	true
+	control_visible	true
+	}	
+
+	create_control	button	btn_effect_insert
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	AddData
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	60	18
+	control_drawpoint	300	450
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_effect_make
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	¼öÁ¤
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	50	18
+	control_drawpoint	380	450
+	control_enable	true
+	control_visible	true
+	}
+		
+	create_control	edit	edt_effect_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	15	15
+	control_drawpoint	347	28
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_name
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	370	15
+	control_drawpoint	100	54
+	control_tab	0
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+		
+	create_control	edit	edt_effect_position
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	300	15
+	control_drawpoint	100	80
+	control_tab	1
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_offset_x
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	60	132
+	control_tab	2
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_offset_y
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	210	132
+	control_tab	3
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_offset_z
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	380	132
+	control_tab	4
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_trans_x
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	60	184
+	control_tab	5
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_trans_y
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	210	184
+	control_tab	6
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_trans_z
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	380	184
+	control_tab	7
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	nonee
+	}
+
+	create_control	edit	edt_effect_timestart
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	70	262
+	control_tab	8
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_timeend
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	255	262
+	control_tab	9
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_file
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	310	15
+	control_drawpoint	100	288
+	control_tab	10
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_bonename
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	310	15
+	control_drawpoint	100	340
+	control_tab	11
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_skelfile
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	310	15
+	control_drawpoint	100	366
+	control_tab	12
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_animfile
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	310	15
+	control_drawpoint	100	392
+	control_tab	13
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_start
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	80	418
+	control_tab	14
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_animtime
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	270	418
+	control_tab	15
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_effect_cycle
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	15
+	control_drawpoint	450	418
+	control_tab	16
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	1
+	cedit_chartype	numeric
+	cedit_range	0	1
+	}
+	
+	
+}
+

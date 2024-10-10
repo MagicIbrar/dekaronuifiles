@@ -1,0 +1,173 @@
+<window>
+	name			servercombinationWnd
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	position		center center
+	rect			-149 -121 298 243
+	titlerect		0 0 298 24
+	alwaysontop		true
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 298 243
+		<image>
+				key	none
+				screen	Integrate
+				index	4
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		60
+			rect		28 2 240 14	
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		275 300
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		280 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<label>
+			id			lbl_char_name
+			enable		true
+			visible		true
+			layer		100
+			rect		50 35 193 14
+			align 		center
+			multiline   		true
+			<title>
+				color		fffffc00
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_char_desc
+			enable		true
+			visible		true
+			layer		100
+			rect		50 55 193 14
+			align 		center
+			multiline   		true
+			<title>
+				color		ffffb400
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_char_map
+			enable		true
+			visible		true
+			layer		100
+			rect		50 75 193 14
+			align 		center
+			multiline   		true
+			<title>
+				color		ffffb400
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_tagmsg
+			enable		true
+			visible		true
+			layer		60
+			rect		23 118 251 14
+			lineheight 	16
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		275 310
+			</title>
+		</label>
+		<edit>
+			id			edt_charname
+			enable		true
+			visible		true
+			layer		100
+			rect		49 152 199 14	
+			maxlength	20
+			font_type	2
+			input_type	0
+			align		0
+			color		ff00ff00
+			multiline   	false
+			<image>
+				key		none
+				screen	party
+				index	6
+			</image>			
+		</edit>
+		
+		<label>
+			id			lbl_msg
+			enable		true
+			visible		true
+			layer		60
+			rect		50 182 193 14
+			lineheight 	16
+			align 		center
+			<title>
+				color		ffff0000
+				fontIndex	2
+			</title>
+		</label>
+		<button>
+			id			btn_apply
+			enable		true
+			visible		true
+			layer		100
+			align		center	center
+			rect		105 218 87 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				text2		2000 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	2 2
+			</title>
+		</button>	
+	</panel>
+</window>

@@ -1,0 +1,34 @@
+<window>
+	name			memorialday_win
+	enable			true
+	visible			true
+	layer			100
+	rect			34 49 92 117
+	titlerect		0 0 0 0
+	layertype		normal
+	<panel>
+		id			pan_mark
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 58 48
+		<image>
+			key	0
+			screen	memorialday
+			index	1
+		</image>
+	</panel>
+	<label>
+		id			lbl_ping
+		enable		true
+		visible		true
+		layer		50
+		align		center
+		rect		0 50 58 18
+		<title>
+			color		ffffffff
+			fontIndex	2
+			text2		1004 1
+		</title>
+	</label>
+</window>

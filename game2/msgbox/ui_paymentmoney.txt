@@ -1,0 +1,166 @@
+<window>
+	name			payment_msgbox
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0  0 232 157
+	titlerect		0 0 211 26
+	alwaysontop		true
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		20 2 202 16
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		2001 55
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		209 2 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+
+	<panel>
+		id			pan_notifylabel
+		enable		true
+		visible		true
+		layer		50
+		rect		103 46 24 14
+		<title>
+			color		ffffffff
+			fontIndex	2
+			position	0 0	
+			text2 		190 1
+		</title>				
+	</panel>
+	
+	<panel>
+		id			pan_focuslabel
+		enable		true
+		visible		true
+		layer		50
+		rect		44 65 142 19	
+		<image>
+				key	0
+				screen	etc_01
+				index	58
+		</image>			
+	</panel>
+
+	<edit>
+		id			edit_text
+		enable		true
+		visible		true
+		layer		100
+		rect		54 69 122 12	
+		maxlength	9
+		font_type	2
+		input_type	2
+		align		0
+		color		ff00ff00
+		multiline   	false			
+	</edit>
+
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		37 132 57 19
+		<image>
+			key			0
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state		none
+			color		ff929292
+			fontIndex	4
+			text2		2000 15
+			position	17 3
+		</title>
+		<title>
+			state		over
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<title>
+			state		down
+			color		ff929292
+			fontIndex	4
+		</title>
+	</button>	
+
+	<button>
+		id			btn_no
+		enable		true
+		visible		true
+		layer		100
+		rect		138 132 57 19
+		<image>
+			key			0
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state		none
+			color		ff929292
+			fontIndex	4
+			text2		2000 23
+			position	17 3
+		</title>
+		<title>
+			state		over
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<title>
+			state		down
+			color		ff929292
+			fontIndex	4
+		</title>
+	</button>	
+	
+</window>

@@ -1,0 +1,379 @@
+<window>
+	name			pvpmoderesultwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-427 -212 428 212
+	titlerect		6 6 849 32
+		
+	<panel>
+		id			pan_back
+		enable			true
+		visible			true
+		layer			100
+		rect			0 0 855 424
+		<image>
+			key		none
+			screen		colosseum
+			index		1
+		</image>
+		<panel>
+			id			pan_winlose
+			enable			true
+			visible			true
+			layer			100
+			rect			308 35 239 69
+			<image>
+				key		none
+				screen		colosseum
+				index		2
+			</image>
+		</panel>
+		<panel>
+			id			pan_board
+			enable			true
+			visible			false
+			layer			100
+			rect			6 156 415 206
+			<button>
+				id	btn_name
+				enable			true
+				visible			true
+				layer			100
+				rect			0 0 135 26
+				align			center
+				<title>
+					state 		none
+					color		ffffffff
+					fontIndex	4
+					position	0 6
+					text2 		160 104
+				</title>
+				<title>
+					state 		over
+					color		ffffffff					
+					fontIndex	4
+					position	0 6
+				</title>
+				<title>
+					state 		down
+					color		fffce750
+					fontIndex	4
+					position	1 7
+				</title>
+			</button>
+			<button>
+				id	btn_server
+				enable			true
+				visible			true
+				layer			100
+				rect			135 0 40 26
+				align			center
+				<title>
+					state 		none
+					color		ffffffff
+					fontIndex	4
+					position	0 6
+					text2 		160 106
+				</title>
+				<title>
+					state 		over
+					color		ffffffff					
+					fontIndex	4
+					position	0 6
+				</title>
+				<title>
+					state 		down
+					color		fffce750
+					fontIndex	4
+					position	1 7
+				</title>
+			</button>
+			<button>
+				id	btn_level
+				enable			true
+				visible			true
+				layer			100
+				rect			175 0 40 26
+				align			center
+				<title>
+					state 		none
+					color		ffffffff
+					fontIndex	4
+					position	0 6
+					text2 		160 107
+				</title>
+				<title>
+					state 		over
+					color		ffffffff					
+					fontIndex	4
+					position	0 6
+				</title>
+				<title>
+					state 		down
+					color		fffce750
+					fontIndex	4
+					position	1 7
+				</title>
+			</button>
+			<button>
+				id	btn_kills
+				enable			true
+				visible			true
+				layer			100
+				rect			215 0 32 26
+				align			center
+				<title>
+					state 		none
+					color		ffffffff
+					fontIndex	4
+					position	0 6
+					text2 		360 1
+				</title>
+				<title>
+					state 		over
+					color		ffffffff					
+					fontIndex	4
+					position	0 6
+				</title>
+				<title>
+					state 		down
+					color		fffce750
+					fontIndex	4
+					position	1 7
+				</title>
+			</button>
+			<button>
+				id	btn_ppoint
+				enable			true
+				visible			true
+				layer			100
+				rect			247 0 90 26
+				align			center
+				<title>
+					state 		none
+					color		ffffffff
+					fontIndex	4
+					position	0 6
+					text2 		360 2
+				</title>
+				<title>
+					state 		over
+					color		ffffffff					
+					fontIndex	4
+					position	0 6
+				</title>
+				<title>
+					state 		down
+					color		fffce750
+					fontIndex	4
+					position	1 7
+				</title>
+			</button>
+			<button>
+				id	btn_pcoin
+				enable			true
+				visible			true
+				layer			100
+				rect			337 0 40 26
+				align			center
+				<title>
+					state 		none
+					color		ffffffff
+					fontIndex	4
+					position	0 6
+					text2 		360 3
+				</title>
+				<title>
+					state 		over
+					color		ffffffff					
+					fontIndex	4
+					position	0 6
+				</title>
+				<title>
+					state 		down
+					color		fffce750
+					fontIndex	4
+					position	1 7
+				</title>
+			</button>
+			<button>
+				id	btn_victories
+				enable			true
+				visible			true
+				layer			100
+				rect			377 0 40 26
+				align			center
+				<title>
+					state 		none
+					color		ffffffff
+					fontIndex	4
+					position	0 6
+					text2 		360 4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff					
+					fontIndex	4
+					position	0 6
+				</title>
+				<title>
+					state 		down
+					color		fffce750
+					fontIndex	4
+					position	1 7
+				</title>
+			</button>
+			<panel>
+				id			pan_line
+				enable			true
+				visible			false
+				layer			100
+				rect			0 26 415 26		
+				<panel>
+					id			pan_job
+					enable			true
+					visible			true
+					layer			100
+					rect			0 0 28 26
+					<image>
+						key 	none
+						screen 	colosseum
+						index 	5
+					</image>
+				</panel>
+				<label>
+					id			lbl_name
+					enable			true
+					visible			true
+					layer			100
+					rect			28 0 107 26
+					align			center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	2
+						position	0 6					
+					</title>
+				</label>
+				<label>
+					id			lbl_server
+					enable			true
+					visible			true
+					layer			100
+					rect			135 0 40 26
+					align			center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	2
+						position	0 6
+					</title>
+				</label>
+				<label>
+					id			lbl_level
+					enable			true
+					visible			true
+					layer			100
+					rect			175 0 40 26
+					align			center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	2
+						position	0 6
+					</title>
+				</label>
+				<label>
+					id			lbl_kills
+					enable			true
+					visible			true
+					layer			100
+					rect			215 0 32 26
+					align			center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	2
+						position	0 6
+					</title>
+				</label>
+				<label>
+					id			lbl_ppoint
+					enable			true
+					visible			true
+					layer			100
+					rect			247 0 90 26
+					align			center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	2
+						position	0 6
+					</title>
+				</label>
+				<label>
+					id			lbl_pcoin
+					enable			true
+					visible			true
+					layer			100
+					rect			337 0 40 26
+					align			center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	2
+						position	0 6
+					</title>
+				</label>
+				<label>
+					id			lbl_victories
+					enable			true
+					visible			true
+					layer			100
+					rect			377 0 40 26
+					align			center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	2
+						position	0 6
+					</title>
+				</label>
+			</panel>
+		</panel>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		740 382 94 19
+			align		left
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	8 3
+				text2 		2000 46
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	8 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	9 4
+			</title>
+		</button>
+	</panel>
+</window>

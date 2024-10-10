@@ -1,0 +1,2793 @@
+<window>
+	name			option
+	enable			true
+	visible			true
+	layer			100
+	rect			396 155 628 612
+	titlerect		0 0 216 24
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 232 457		
+		<image>
+			key		0
+			screen	new_option
+			index	1
+		</image>		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			rect		28 2 174 14
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		2001 0
+			</title>
+		</label>		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		216 3 13 13
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		3
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		4
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		5
+			</image>
+		</button>
+		
+		<button>
+			id			btn_ok
+			enable		true
+			visible		true
+			layer		100
+			rect		16 432 57 19
+			sound  		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	16 3
+				text2 		2000 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	16 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	17 4
+			</title>
+		</button>
+
+		<button>
+			id			btn_apply
+			enable		true
+			visible		true
+			layer		100
+			rect		88 432 57 19
+			sound		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	16 3
+				text2 		2001 7
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	16 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	17 4
+			</title>
+		</button>
+		
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			rect		159 432 57 19
+			align		center
+			sound		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		2000 23
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+		</button>
+		
+		<button>
+			id			btn_screen
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		11 23 70 22
+			<image>
+				key		0
+				screen	etc_01
+				index	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	19 6
+				text2 		2001 1
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	19 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	20 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	19 4
+			</title>
+		</button>
+
+		<button>
+			id			btn_screen2
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			align		center
+			rect		81 23 70 22
+			<image>
+				key		0
+				screen	etc_01
+				index	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		2001 64
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		
+		<button>
+			id			btn_sound
+			enable		true
+			visible		true
+			layer		100
+			type		1
+			rect		151 23 70 22
+			<image>
+				key		0
+				screen	etc_01
+				index	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	18 6
+				text2 		2001 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	18 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	19 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	18 4
+			</title>
+		</button>
+		
+		<button>
+			id			btn_game
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		11 46 70 22
+			<image>
+				key		0
+				screen	etc_01
+				index	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	24 6
+				text2 		2001 2
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	24 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	25 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	24 4
+			</title>
+		</button>
+		
+		<button>
+			id			btn_see
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		81 46 70 22
+			<image>
+				key		0
+				screen	etc_01
+				index	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	24 7
+				text2 		2001 5
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	24 7
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	25 8
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	24 5
+			</title>
+		</button>
+		
+		<button>
+			id			btn_game2
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		151 46 70 22
+			<image>
+				key		0
+				screen	etc_01
+				index	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	24 7
+				text2 		2001 3
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	24 7
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	25 8
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	24 5
+			</title>
+		</button>
+		
+		<panel>
+			id			pan_screen
+			enable		true
+			visible		false
+			layer		100
+			rect		0 80 232 352	
+			<label>
+				id			lbl_gamma
+				enable		true
+				visible		true
+				layer		10
+				rect		20 1 63 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 10
+				</title>
+			</label>
+			<label>
+				id			lbl_gamma_des
+				enable		true
+				visible		true
+				layer		10
+				rect		123 1 88 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		2001 44
+				</title>
+			</label>	
+			<panel>
+				id			pan_gamma_line
+				enable		true
+				visible		true
+				layer		100
+				rect		32 29 168 2
+				<image>
+					key			none
+					screen		etc_01
+					index		30
+				</image>		
+			</panel>
+			<slidebar>
+				id			sld_gamma
+				enable		true
+				visible		true
+				layer		110
+				rect		20 24 192 12
+				min			0
+				max			100
+				minmaxpos	12 180
+				<panel>
+					id			sld_gamma_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		12 0 9 12
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		etc_01
+						index		22
+					</image>
+					<image>
+						key			over
+						screen		etc_01
+						index		23
+					</image>
+				</panel>
+				<button>
+					id			sld_gamma_minus
+					enable		true
+					visible		true
+					layer		100
+					type		0
+					rect		0 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	11
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	12
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	13
+					</image>
+				</button>
+				<button>
+					id			sld_gamma_plus
+					enable		true
+					visible		true
+					layer		100
+					type		0
+					rect		180 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	7
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	8
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	9
+					</image>
+				</button>					
+			</slidebar>
+			
+			<label>
+				id			lbl_display
+				enable		true
+				visible		true
+				layer		10
+				rect		20 44 66 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 11
+				</title>
+			</label>
+			
+			<panel>
+				id			pan_display
+				enable		true
+				visible		true
+				layer		100
+				rect		44 62 144 16
+				<image>
+					key		0
+					screen	new_option_a
+					index	91
+				</image>
+			</panel>
+			<combobox>
+				id			com_display
+				enable		true
+				visible		true
+				border 		false
+				layer		110
+				rect		44 62 144 20
+				
+				<iteminfo>		
+					rect 	0 0 144 20
+										
+				</iteminfo>
+
+				<nodeinfo>
+					selrect		0 0 144 15 
+					btnrect		130 2 12 12
+					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>		
+			</combobox>
+			<checkbox>
+				id			check_winmode
+				enable		true
+				visible		true
+				layer		110
+				rect		44 82 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 12
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			
+			<label>
+				id			lbl_effect
+				enable		true
+				visible		true
+				layer		10
+				rect		20 106 64 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 13
+				</title>
+			</label>
+			
+			<checkbox>
+				id			check_cloud
+				enable		true
+				visible		true
+				layer		110
+				rect		44 118 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 53
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_bloom
+				enable		true
+				visible		true
+				layer		110
+				rect		44 138 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 15
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_specular
+				enable		true
+				visible		true
+				layer		110
+				rect		44 158 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 16
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_bump
+				enable		true
+				visible		true
+				layer		110
+				rect		44 178 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 66
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_blood
+				enable		true
+				visible		true
+				layer		110
+				rect		44 198 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 40
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>			
+			<label>
+				id			lbl_shadow
+				enable		true
+				visible		true
+				layer		10
+				rect		20 252 62 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 14
+				</title>
+			</label>			
+			<panel>
+				id			pan_shadow
+				enable		true
+				visible		true
+				layer		100
+				rect		44 270 144 16
+				<image>
+					key		0
+					screen	new_option_a
+					index	91
+				</image>
+			</panel>
+			<combobox>
+				id			com_shadow
+				enable		true
+				visible		true
+				border 		false
+				layer		110
+				rect		44 270 144 20		
+				<iteminfo>		
+					rect 	5 0 134 20	
+					<item>
+						index   0
+						data	0
+						string 	2001 20
+					</item>
+					<item>
+						index   1
+						data	1
+						string 	2001 19
+					</item>
+					<item>
+						index   2
+						data	2
+						string 	2001 18
+					</item>	
+					<item>
+						index   3
+						data	3
+						string 	2001 65
+					</item>						
+				</iteminfo>
+				
+				<nodeinfo>
+					selrect		0 0 144 15 
+					btnrect		130 0 12 12
+					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>			
+			</combobox>
+			
+			<label>
+				id			lbl_water
+				enable		true
+				visible		true
+				layer		10
+				rect		20 295 60 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 17
+				</title>
+			</label>			
+			<panel>
+				id			pan_water
+				enable		true
+				visible		true
+				layer		100
+				rect		44 313 144 16
+				<image>
+					key		0
+					screen	new_option_a
+					index	91
+				</image>
+			</panel>
+			<combobox>
+				id			com_water
+				enable		true
+				visible		true
+				border 		false
+				layer		110
+				rect		44 313 144 20				
+				<iteminfo>		
+					rect 	5 0 134 20	
+					<item>
+						index   0
+						data	0
+						string 	2001 20
+					</item>
+					<item>
+						index   1
+						data	1
+						string 	2001 19
+					</item>
+					<item>
+						index   2
+						data	2
+						string 	2001 18
+					</item>						
+				</iteminfo>
+				
+				<nodeinfo>
+					selrect		0 0 144 15 
+					btnrect		130 0 12 12
+					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>			
+			</combobox>
+			
+			
+		</panel>
+
+		<panel>
+			id			pan_screen2
+			enable		true
+			visible		false
+			layer		100
+			rect		0 5 232 352
+			
+			<label>
+				id			lbl_trace
+				enable		true
+				visible		true
+				layer		10
+				rect		20 81 71 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 21
+				</title>
+			</label>
+			
+			<panel>
+				id			pan_trace
+				enable		true
+				visible		true
+				layer		100
+				rect		44 99 144 16
+				<image>
+					key		0
+					screen	new_option_a
+					index	91
+				</image>
+			</panel>
+			<combobox>
+				id			com_trace
+				enable		true
+				visible		true
+				border 		false
+				layer		100
+				rect		44 99 144 20				
+				<iteminfo>		
+					rect 	5 0 134 20	
+					<item>
+						index   0
+						data	0
+						string 	2001 22
+					</item>
+					<item>
+						index   1
+						data	1
+						string 	2001 23
+					</item>
+					<item>
+						index   2
+						data	2
+						string 	2001 24
+					</item>						
+				</iteminfo>
+				<nodeinfo>
+					selrect		0 0 144 15 
+					btnrect		130 0 12 12					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>		
+			</combobox>
+				
+			<label>
+				id			lbl_lod
+				enable		true
+				visible		true
+				layer		10
+				rect		20 124 54 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 62
+				</title>
+			</label>
+			<panel>
+				id			pan_lod
+				enable		true
+				visible		true
+				layer		99
+				rect		44 142 143 20
+				<image>
+					key		0
+					screen	new_option_a
+					index	91
+				</image>
+			</panel>
+			<combobox>
+				id			com_lod
+				enable		true
+				visible		true
+				border 		false
+				layer		100
+				rect		44 142 143 20
+				<iteminfo>		
+					rect 	5 0 143 20	
+					<item>
+						index   0
+						data	0
+						string 	2001 63
+					</item>
+					<item>
+						index   1
+						data	1
+						string 	2001 61
+					</item>
+					<item>
+						index   2
+						data	2
+						string 	2001 60
+					</item>
+					<item>
+						index   3
+						data	3
+						string 	2001 59
+					</item>
+				</iteminfo>
+				<nodeinfo>
+					selrect		0 0 143 14 
+					btnrect		130 0 12 12					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>		
+			</combobox>
+			<label>
+				id	lbl_graphicquality
+				enable	true
+				visible	true
+				layer	99
+				rect	20 167 100 14
+				<title>
+					state	none
+					color	fff4be3d
+					fontIndex	4
+					text2	2001 93
+				</title>
+			</label>
+			<button>
+				id	btn_levelgood
+				enable	true
+				visible	true
+				layer	100
+				rect	44 185 142 20
+				<image>
+					key	none
+					color	ffffffff
+					screen	etc_01
+					index	2
+				</image>
+				<title>
+					state	none
+					color	ff929292
+					fontIndex	4
+					position	34 3
+					text2	2001 61
+				</title>
+				<title>
+					state	over
+					color	ffffffff
+					fontIndex	4
+					position	34 3
+				</title>
+				<title>
+					state	down
+					color	ff929292
+					fontIndex	4
+					position	35 4
+				</title>
+			</button>
+			<button>
+				id	btn_levelaverage
+				enable	true
+				visible	true
+				layer	100
+				rect	44 210 142 20
+				sound	0
+				<image>
+					key	none
+					color	ffffffff
+					screen	etc_01
+					index	2
+				</image>
+				<title>
+					state	none
+					color	ff929292
+					fontIndex	4
+					position	34 3
+					text2	2001 60
+				</title>
+				<title>
+					state	over
+					color	ffffffff
+					fontIndex	4
+					position	34 3
+				</title>
+				<title>
+					state	down
+					color	ff929292
+					fontIndex	4
+					position	35 4
+				</title>
+			</button>
+			<button>
+				id	btn_levelpoor
+				enable	true
+				visible	true
+				layer	100
+				rect	44 235 142 20
+				sound	0
+				<image>
+					key	none
+					color	ffffffff
+					screen	etc_01
+					index	2
+				</image>
+				<title>
+					state	none
+					color	ff929292
+					fontIndex	4
+					position	34 3
+					text2	2001 59
+				</title>
+				<title>
+					state	over
+					color	ffffffff
+					fontIndex	4
+					position	34 3
+				</title>
+				<title>
+					state	down
+					color	ff929292
+					fontIndex	4
+					position	35 4
+				</title>
+			</button>
+		</panel>
+		<panel>
+			id			pan_sound
+			enable		true
+			visible		false
+			layer		100
+			rect		0 80 232 352
+			<checkbox>
+				id			check_mp3
+				enable		true
+				visible		true
+				layer		110
+				rect		44 2 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 25
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			
+			<label>
+				id			lbl_volum
+				enable		true
+				visible		true
+				layer		10
+				rect		21 34 80 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 26
+				</title>
+			</label>
+			
+			<label>
+				id			lbl_sound
+				enable		true
+				visible		true
+				layer		10
+				rect		22 58 32 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		2001 27
+				</title>
+			</label>
+			<panel>
+				id			pan_sound_line
+				enable		true
+				visible		true
+				layer		100
+				rect		32 81 159 2
+				<image>
+					key			none
+					screen		etc_01
+					index		30
+				</image>
+			</panel>		
+			<slidebar>
+				id			sld_sound
+				enable		true
+				visible		true
+				layer		110
+				rect		20 76 192 12
+				min			0
+				max			100
+				minmaxpos	12 180
+				<panel>
+					id			sld_sound_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		12 0 9 12
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		etc_01
+						index		22
+					</image>
+					<image>
+						key			over
+						screen		etc_01
+						index		23
+					</image>
+				</panel>
+				<button>
+					id			sld_sound_minus
+					enable		true
+					visible		true
+					layer		100
+					type		0
+					rect		0 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	11
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	12
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	13
+					</image>
+				</button>
+				<button>
+					id			sld_sound_plus
+					enable		true
+					visible		true
+					layer		100
+					type		0
+					rect		180 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	7
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	8
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	9
+					</image>
+				</button>
+			</slidebar>
+			
+			<checkbox>
+				id			check_nosound
+				enable		true
+				visible		true
+				layer		110
+				rect		44 90 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 28
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			
+			<label>
+				id			lbl_effect
+				enable		true
+				visible		true
+				layer		10
+				rect		22 132 110 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+					text2 		2001 29
+				</title>
+			</label>
+			<panel>
+				id			pan_effect_line
+				enable		true
+				visible		true
+				layer		100
+				rect		32 155 168 2
+				<image>
+					key			none
+					screen		etc_01
+					index		30
+				</image>
+			</panel>		
+			<slidebar>
+				id			sld_effect
+				enable		true
+				visible		true
+				layer		110
+				rect		20 150 192 12
+				min			0
+				max			100
+				minmaxpos	12 180
+				<panel>
+					id			sld_effect_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		12 0 9 12
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		etc_01
+						index		22
+					</image>
+					<image>
+						key			over
+						screen		etc_01
+						index		23
+					</image>
+				</panel>
+				<button>
+					id			sld_effect_minus
+					enable		true
+					visible		true
+					layer		100
+					type		0
+					rect		0 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	11
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	12
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	13
+					</image>
+				</button>
+				<button>
+					id			sld_effect_plus
+					enable		true
+					visible		true
+					layer		100
+					type		0
+					rect		180 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	7
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	8
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	9
+					</image>
+				</button>
+			</slidebar>
+			
+			<checkbox>
+				id			check_noeffect
+				enable		true
+				visible		true
+				layer		110
+				rect		44 164 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 28
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+		
+		</panel>
+		<panel>
+			id			pan_game
+			enable		true
+			visible		false
+			layer		100
+			rect		0 80 232 352
+			<label>
+				id			lbl_control
+				enable		true
+				visible		true
+				layer		10
+				rect		20 5 110 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 30
+				</title>
+			</label>
+			<checkbox>
+				id			check_control_0
+				enable		true
+				visible		true
+				layer		110
+				rect		44 20 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 81
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_control_1
+				enable		true
+				visible		true
+				layer		110
+				rect		44 40 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 82
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+					
+			<label>
+				id			lbl_limit
+				enable		true
+				visible		true
+				layer		10
+				rect		20 79 110 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 31
+				</title>
+			</label>	
+			
+			<checkbox>
+				id			check_trade
+				enable		true
+				visible		true
+				layer		110
+				rect		44 94 160 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 32
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_party
+				enable		true
+				visible		true
+				layer		110
+				rect		44 114 160 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 33
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_guild
+				enable		true
+				visible		true
+				layer		110
+				rect		44 134 160 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 34
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_friend
+				enable		true
+				visible		true
+				layer		110
+				rect		44 154 160 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 35
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_pvp
+				enable		true
+				visible		true
+				layer		110
+				rect		44 174 160 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 36
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_partypvp
+				enable		true
+				visible		true
+				layer		110
+				rect		44 194 160 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 77
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_alliance
+				enable		true
+				visible		true
+				layer		110
+				rect		44 214 160 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 85
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+				
+			<label>
+				id			lbl_keymap
+				enable		true
+				visible		true
+				layer		100
+				rect		20 247 60 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 79
+				</title>
+			</label>
+			<button>
+				id			btn_keymap
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		81 245 98 18
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					position	1 2
+					text2 		2001 80
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	1 2
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	2 3
+				</title>
+				<image>
+					key			0
+					screen		new_option
+					index		4
+				</image>
+				<image>
+					key			over
+					screen		new_option
+					index		5
+				</image>
+				<image>
+					key			down
+					screen		new_option
+					index		6
+				</image>
+			</button>		
+			<checkbox>
+				id			check_selftarget
+				enable		true
+				visible		true
+				layer		110
+				rect		44 268 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 83
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<label>
+				id			lbl_charname
+				enable		true
+				visible		true
+				layer		100
+				rect		20 302 100 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 92
+				</title>
+			</label>
+			<label>
+				id			lbl_charnamekey
+				enable		true
+				visible		true
+				layer		100
+				rect		120 302 60 14
+				<title>
+					color		FFFFFFFF
+					fontIndex	2
+					text2 		2001 86
+				</title>
+			</label>
+			<panel>
+				id			pan_charname
+				enable		true
+				visible		true
+				layer		100
+				rect		44 324 144 16
+				<image>
+					key		0
+					screen	new_option_a
+					index	91
+				</image>
+			</panel>
+			<combobox>
+				id			com_charname
+				enable		true
+				visible		true
+				border 		false
+				layer		110
+				rect		44 324 144 20		
+				<iteminfo>		
+					rect 	5 0 134 20	
+					<item>
+						index   0
+						data	0
+						string 	2001 87
+					</item>
+					<item>
+						index   1
+						data	1
+						string 	2001 88
+					</item>
+					<item>
+						index   2
+						data	2
+						string 	2001 89
+					</item>	
+					<item>
+						index   3
+						data	3
+						string 	2001 90
+					</item>	
+					<item>
+						index   4
+						data	4
+						string 	2001 91
+					</item>						
+				</iteminfo>
+				
+				<nodeinfo>
+					selrect		0 0 144 15 
+					btnrect		130 2 12 12
+					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>			
+			</combobox>				
+		</panel>			
+		
+		<panel>
+			id			pan_see
+			enable		true
+			visible		false
+			layer		100
+			rect		0 80 232 352
+			<checkbox>
+				id			check_server
+				enable		true
+				visible		true
+				layer		110
+				rect		44 26 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 38
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_reception
+				enable		true
+				visible		true
+				layer		110
+				rect		44 46 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 39
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<label>
+				id			lbl_damage_option
+				enable		true
+				visible		true
+				layer		100
+				rect		11 100 200 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2		2001 73
+				</title>
+			</label>
+			<panel>
+				id			pan_damage
+				enable		true
+				visible		true
+				layer		100
+				rect		44 119 144 16
+				<image>
+					key		0
+					screen	new_option_a
+					index	91
+				</image>
+			</panel>
+			<combobox>
+				id			com_damage
+				enable		true
+				visible		true
+				border 		false
+				layer		110
+				rect		44 119 144 20		
+				<iteminfo>		
+					rect 	5 0 134 20	
+					<item>
+						index   0
+						data	0
+						string 	2001 74
+					</item>
+					<item>
+						index   1
+						data	1
+						string 	2001 75
+					</item>
+					<item>
+						index   2
+						data	2
+						string 	2001 76
+					</item>			
+				</iteminfo>
+				
+				<nodeinfo>
+					selrect		0 0 144 15 
+					btnrect		130 0 12 12
+					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>			
+			</combobox>
+			<label>
+				id			lbl_tagstatus
+				enable		true
+				visible		false
+				layer		100
+				rect		11 160 80 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2		2001 86
+				</title>
+			</label>
+			<button>
+				id			btn_status
+				enable		true
+				visible		false
+				layer		100
+				align		center
+				rect		81 160 98 18
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					position	1 2
+					text2 		2001 85
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	1 2
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	2 3
+				</title>
+				<image>
+					key			0
+					screen		new_option
+					index		4
+				</image>
+				<image>
+					key			over
+					screen		new_option
+					index		5
+				</image>
+				<image>
+					key			down
+					screen		new_option
+					index		6
+				</image>
+			</button>
+			<label>
+				id			lbl_tagselection
+				enable		true
+				visible		false
+				layer		100
+				rect		11 180 80 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2		2001 87
+				</title>
+			</label>
+			<panel>
+				id			pan_selection
+				enable		true
+				visible		false
+				layer		100
+				rect		44 199 144 16
+				<image>
+					key		0
+					screen	new_option_a
+					index	91
+				</image>
+			</panel>
+			<combobox>
+				id			com_selection
+				enable		true
+				visible		false
+				border 		false
+				layer		110
+				rect		44 199 144 20		
+				<iteminfo>		
+					rect 	5 0 134 20	
+					<item>
+						index   0
+						data	0
+						string 	2001 88
+					</item>
+					<item>
+						index   1
+						data	1
+						string 	2001 89
+					</item>
+					<item>
+						index   2
+						data	2
+						string 	2001 90
+					</item>			
+				</iteminfo>
+				
+				<nodeinfo>
+					selrect		0 0 144 15 
+					btnrect		130 0 12 12
+					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>			
+			</combobox>
+			<label>
+				id			lbl_tagcondition
+				enable		true
+				visible		false
+				layer		100
+				rect		11 223 80 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2		2001 91
+				</title>
+			</label>
+			<panel>
+				id			pan_condition
+				enable		true
+				visible		false
+				layer		100
+				rect		44 242 144 16
+				<image>
+					key		0
+					screen	new_option_a
+					index	91
+				</image>
+			</panel>
+			<combobox>
+				id			com_condition
+				enable		true
+				visible		false
+				border 		false
+				layer		110
+				rect		44 242 144 20		
+				<iteminfo>		
+					rect 	5 0 134 20	
+					<item>
+						index   0
+						data	0
+						string 	2001 92
+					</item>
+					<item>
+						index   1
+						data	1
+						string 	2001 93
+					</item>
+					<item>
+						index   2
+						data	2
+						string 	2001 94
+					</item>			
+				</iteminfo>
+				
+				<nodeinfo>
+					selrect		0 0 144 15 
+					btnrect		130 0 12 12
+					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>			
+			</combobox>
+			<label>
+				id			lbl_tagexpression
+				enable		true
+				visible		false
+				layer		100
+				rect		11 266 80 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2		2001 95
+				</title>
+			</label>
+			<panel>
+				id			pan_expression
+				enable		true
+				visible		false
+				layer		100
+				rect		44 285 144 16
+				<image>
+					key		0
+					screen	new_option_a
+					index	91
+				</image>
+			</panel>
+			<combobox>
+				id			com_expression
+				enable		true
+				visible		false
+				border 		false
+				layer		110
+				rect		44 285 144 20		
+				<iteminfo>		
+					rect 	5 0 134 20	
+					<item>
+						index   0
+						data	0
+						string 	2001 96
+					</item>
+					<item>
+						index   1
+						data	1
+						string 	2001 97
+					</item>
+					<item>
+						index   2
+						data	2
+						string 	2001 98
+					</item>			
+				</iteminfo>
+				
+				<nodeinfo>
+					selrect		0 0 144 15 
+					btnrect		130 0 12 12
+					
+					<image>
+						key		board_body
+						screen	party
+						index	4
+					</image>
+					<image>
+						key		btn_none
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		btn_over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		btn_down
+						screen	etc_01
+						index	17
+					</image>
+				</nodeinfo>			
+			</combobox>
+			<checkbox>
+				id			check_inflow
+				enable		true
+				visible		false
+				layer		110
+				rect		44 300 180 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 99
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<checkbox>
+				id			check_outflow
+				enable		true
+				visible		false
+				layer		110
+				rect		44 320 180 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 100
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>			
+		</panel>
+		
+		<panel>
+			id			pan_game2
+			enable		true
+			visible		false
+			layer		100
+			rect		0 80 232 352
+			<label>
+				id			lbl_auto
+				enable		true
+				visible		true
+				layer		10
+				rect		21 5 110 14
+				<title>
+					color		FFF4BE3D
+					fontIndex	4
+					text2 		2001 41
+				</title>
+			</label>
+
+			<checkbox>
+				id			check_autodrink
+				enable		true
+				visible		true
+				layer		110
+				rect		44 24 140 20
+				align		left
+				<image>
+					key			none
+					screen		etc_01
+					index		303
+				</image>
+				<image>
+					key			check
+					screen		etc_01
+					index		304
+				</image>
+				<title>
+					state			none
+					fontIndex	2
+					color		ffffffff
+					position	5 6
+					text2		2001 42
+				</title>
+				<title>
+					state			over
+					fontIndex	2
+					position	5 6
+					color		ff00ff00
+				</title>
+			</checkbox>
+			<label>
+				id			lbl_hpLimit
+				enable		true
+				visible		true
+				layer		100
+				rect		37 49 181 13
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>			
+			<panel>
+				id			pan_hp_line
+				enable		true
+				visible		true
+				layer		100
+				rect		32 76 168 2
+				<image>
+					key			none
+					screen		etc_01
+					index		30
+				</image>	
+			</panel>	
+			<slidebar>
+				id			sld_hp
+				enable		true
+				visible		true
+				layer		10
+				rect		20 71 192 12
+				min			0
+				max			100
+				minmaxpos	12 180
+
+				<panel>
+					id			sld_hp_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		12 0 9 12
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		etc_01
+						index		22
+					</image>
+					<image>
+						key			over
+						screen		etc_01
+						index		23
+					</image>
+				</panel>
+				<button>
+					id			sld_hp_minus
+					enable		true
+					visible		true
+					layer		100
+					type		0
+					rect		0 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	11
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	12
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	13
+					</image>
+				</button>
+				<button>
+					id			sld_hp_plus
+					enable		true
+					visible		true
+					layer		100
+					type		0
+					rect		180 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	7
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	8
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	9
+					</image>
+				</button>
+			</slidebar>
+
+			<label>
+				id			lbl_mpLimit
+				enable		true
+				visible		true
+				layer		100
+				rect		37 100 181 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<panel>
+				id			pan_mp_back
+				enable		true
+				visible		true
+				layer		100
+				rect		32 127 168 2
+				<image>
+					key			none
+					screen		etc_01
+					index		30
+				</image>
+			</panel>
+					
+			<slidebar>
+				id			sld_mp
+				enable		true
+				visible		true
+				layer		10
+				rect		20 122 192 12
+				min			0
+				max			100
+				minmaxpos	12 180
+				<panel>
+					id			sld_mp_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		12 0 9 12
+					moveable	true
+					noneimage	true
+					<image>
+						key			none
+						screen		etc_01
+						index		22
+					</image>
+					<image>
+						key			over
+						screen		etc_01
+						index		23
+					</image>
+				</panel>
+				<button>
+					id			sld_mp_minus
+					enable		true
+					visible		true
+					layer		100
+					type		0
+					rect		0 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	11
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	12
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	13
+					</image>
+				</button>
+				<button>
+					id			sld_mp_plus
+					enable		true
+					visible		true
+					layer		100
+					type		0
+					rect		180 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	7
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	8
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	9
+					</image>
+				</button>
+			</slidebar>
+		</panel>
+	</panel>
+</window>

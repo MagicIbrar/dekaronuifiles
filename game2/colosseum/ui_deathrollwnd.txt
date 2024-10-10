@@ -1,0 +1,23 @@
+<window>
+	name			DeathRollWnd
+	enable			true
+	visible			true
+	layer			300
+	position		inverse inverse
+	alwaysontop		true
+	<label>
+		id			lbl_message
+		enable		true
+		visible		true
+		layer		224
+		position	left top
+		rect		40 217 400 105
+		multiline 	true
+		lineheight	14
+		intersect 	false
+		<title>
+			color		ffffffff
+			fontIndex	4
+		</title>
+	</label>
+</window>

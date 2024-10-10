@@ -1,0 +1,121 @@
+<window>
+	name			siegetimenotice
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0  0 232 157
+	titlerect		0  0 211 24
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		28 3 174 14
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		100 73
+			</title>
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		211 3 13 13
+			<image>
+				key		none
+				screen	etc_01
+				index	3
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	4
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	5
+			</image>
+		</button>
+	</panel>
+	
+	<label>
+		id		    lbl_text
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		rect		0 50 232 14
+		<title>
+			color		FFF4BE3D
+			fontIndex	4
+		</title>
+	</label>
+
+	<label>
+		id		    lbl_notifylabel
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		rect		0 80 232 14
+		<title>
+			color		ffffffff
+			fontIndex	2
+			text2		290 2
+		</title>
+	</label>
+
+	<button>
+		id		    btn_no
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		rect		87 132 57 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	0 3
+			text2 		2000 22
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	2 4
+		</title>
+	</button>		
+</window>

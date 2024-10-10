@@ -1,0 +1,123 @@
+<window>
+	name			StatusMSG
+	enable			true
+	visible			true
+	layer			100
+	position 		center top
+	rect			-100 0 100 150
+	titlerect		0 0 200 100
+	<panel>
+		id			pan_output
+		enable		true
+		visible		false
+		layer		10
+		position 	inverse inverse
+		rect		0 0 0 0
+		<image>
+			key	0
+			screen	console
+			index	1
+		</image>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		102
+			rect		186 0 14 14
+			<image>
+				key	0
+				screen	console
+				index	1
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 0
+				text		"X"
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 0
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 1
+			</title>
+		</button>
+	</panel>
+	<label>
+		id			lbl_status_0
+		enable		true
+		visible		false
+		layer		101
+		rect		0 0 200 30
+		align		center
+		multiline	true
+		intersect	false
+		<title>
+			color		ff00ff00
+			fontIndex	13
+		</title>
+	</label>
+	<label>
+		id			lbl_status_1
+		enable		true
+		visible		false
+		layer		101
+		rect		0 0 200 30
+		align		center
+		multiline	true
+		intersect	false
+		<title>
+			color		ff00ff00
+			fontIndex	13
+		</title>
+	</label>
+	<label>
+		id			lbl_status_2
+		enable		true
+		visible		false
+		layer		101
+		rect		0 0 200 30
+		align		center
+		multiline	true
+		intersect	false
+		<title>
+			color		ff00ff00
+			fontIndex	13
+		</title>
+	</label>
+	<label>
+		id			lbl_status_3
+		enable		true
+		visible		false
+		layer		101
+		rect		0 0 200 30
+		align		center
+		multiline	true
+		intersect	false
+		<title>
+			color		ff00ff00
+			fontIndex	13
+		</title>
+	</label>
+	<label>
+		id			lbl_status_4
+		enable		true
+		visible		false
+		layer		101
+		rect		0 0 200 30
+		align		center
+		multiline	true
+		intersect	false
+		<title>
+			color		ff00ff00
+			fontIndex	13
+		</title>
+	</label>
+</window>

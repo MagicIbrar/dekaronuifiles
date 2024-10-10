@@ -1,0 +1,113 @@
+<window>
+	name			error_password
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	rect			0  0 232 157
+	titlerect		0 0 211 24
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key		none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_top
+			enable		true
+			visible		true
+			layer		50
+			rect		89 2 52 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0	
+				text2 		100 92
+			</title>					
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		209 2 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+	
+	<label>
+			id			lbl_errMsg
+			enable		true
+			visible		true
+			layer		60
+			rect		0 54 232 34
+			multiline 	true
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+				text2 		171 30
+			</title>
+	</label>
+	
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		layer		100
+		align 		center
+		rect		87 132 57 19
+		<image>
+			key			none
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state		none
+			color		ffb7b7b7
+			fontIndex	2
+			text2		2000 22
+			position	0 3
+		</title>
+		<title>
+			state		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state		down
+			color		ffb7b7b7
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>	
+</window>

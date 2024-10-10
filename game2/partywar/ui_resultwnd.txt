@@ -1,0 +1,356 @@
+<window>
+	name			resultwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-158 -105 157 105
+	titlerect		0 0 216 24
+	alwaysontop 	true
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		99
+		rect		0 0 315 210
+		<image>
+			key 	none
+			screen	partywar
+			index 	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align       center
+			rect		28 2 257 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	4
+				text2       2008 5
+			</title>
+		</label>
+		<button>
+			id				btn_exit
+			enable			true
+			visible			true
+			layer			100
+			rect		297 2 15 15
+
+			sound			0
+			<image>			
+				key			none
+				screen		etc_01
+				index		315
+
+			</image>				
+			<image>	
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>			
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		<label>
+			id		lbl_strRank
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		7 28 35 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	2
+				text2 		2008 2
+			</title>
+		</label>
+		<label>
+			id			lbl_strParty
+			enable		true
+			visible		true
+			layer		100
+			align       center
+			rect		47 28 121 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	2
+				text2 		2008 3
+			</title>
+		</label>
+		<label>
+			id		lbl_strPoint
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		173 28 40 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	2
+				text2 		2008 1
+			</title>
+		</label>
+		<label>
+			id		lbl_strExp
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		218 28 89 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	2
+				text2 		2008 4
+			</title>
+		</label>
+		<label>
+			id		lbl_Rank1
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		7 51 35 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Party1
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		47 51 121 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Point1
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		173 51 40 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Exp1
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		218 51 89 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		
+		<label>
+			id		lbl_Rank2
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		7 74 35 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Party2
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		47 74 121 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Point2
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		173 74 40 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Exp2
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		218 74 89 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+
+		<label>
+			id		lbl_Rank3
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		7 97 35 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Party3
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		47 97 121 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Point3
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		173 97 40 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Exp3
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		218 97 89 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+
+		<label>
+			id		lbl_Rank4
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		7 120 35 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Party4
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		47 120 121 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Point4
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		173 120 40 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		<label>
+			id		lbl_Exp4
+			enable		true
+			visible		true
+			layer		100
+			align       	center
+			rect		218 120 89 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>		
+		
+		<label>
+			id		lbl_msg
+			enable		true
+			visible		true
+			layer		100
+			align       center
+			rect		12 152 290 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+				text2		2008 6
+			</title>
+		</label>		
+
+		<button>
+			id			btn_ok
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		129 185 56 18
+			sound  		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		2000 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+			</title>
+		</button>
+
+	</panel>
+</window>

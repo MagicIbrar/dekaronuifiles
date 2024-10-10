@@ -1,0 +1,173 @@
+<window>
+	name			allgatestatewnd
+	enable			true
+	visible			true
+	layer			100
+	position		right top
+	rect			-370 0 -245 39
+	alwaysontop		true
+
+	<panel>
+		id			pan_base
+		enable		true
+		visible		true
+		layer		10
+		intersect	false
+		rect		0 0 125 39
+		<image>
+			key		0
+			screen	siege
+			index	33
+		</image>
+		<panel>
+			id			pan_gate_0
+			enable		true
+			visible		true
+			layer		10
+			intersect	false
+			rect		6 2 36 38
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				align 		center
+				rect		0 2 35 14
+				<title>
+					state 		none
+					color		FFFFFFFF
+					fontIndex	2
+					text2 		290 113
+				</title>
+			</label>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		4 21 27 8
+				maxsize     27	
+				<image>
+					key	0
+					screen	siege
+					index	38
+				</image>				
+			</processbar>
+			<panel>
+				id			destroy
+				enable		true
+				visible		false
+				layer		20
+				intersect	false
+				rect		4 0 32 38
+				<image>
+					key		none
+					screen 	siege
+					index 	34
+				</image>
+			</panel>
+		</panel>
+		<panel>
+			id			pan_gate_1
+			enable		true
+			visible		true
+			layer		10
+			intersect	false
+			rect		45 2 36 38
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				align 		center
+				rect		0 2 35 14
+				<title>
+					state 		none
+					color		FFFFFFFF
+					fontIndex	2
+					text2 		290 114
+				</title>
+			</label>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		4 21 27 8
+				maxsize     27	
+				<image>
+					key	0
+					screen	siege
+					index	38
+				</image>				
+			</processbar>
+			<panel>
+				id			destroy
+				enable		true
+				visible		false
+				layer		20
+				intersect	false
+				rect		4 0 32 38
+				<image>
+					key		none
+					screen 	siege
+					index 	34
+				</image>
+			</panel>
+		</panel>
+		<panel>
+			id			pan_gate_2
+			enable		true
+			visible		true
+			layer		10
+			intersect	false
+			rect		83 2 36 38
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				align 		center
+				rect		0 2 35 14
+				<title>
+					state 		none
+					color		FFFFFFFF
+					fontIndex	2
+					text2 		290 115
+				</title>
+			</label>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		4 21 27 8
+				maxsize     27	
+				<image>
+					key	0
+					screen	siege
+					index	38
+				</image>				
+			</processbar>
+			<panel>
+				id			destroy
+				enable		true
+				visible		false
+				layer		20
+				intersect	false
+				rect		4 0 32 38
+				<image>
+					key		none
+					screen 	siege
+					index 	34
+				</image>
+			</panel>
+		</panel>
+	</panel>
+</window>

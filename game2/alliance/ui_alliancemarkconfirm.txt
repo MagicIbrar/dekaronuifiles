@@ -1,0 +1,177 @@
+<window>
+	name			markconfirmwnd
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	rect			370 303 602 460
+	titlerect		0 0 211 24
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		60
+			rect		28 2 174 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 105
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		209 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+	
+	<panel>
+		id			pan_mark
+		enable		true
+		visible		true
+		layer		10
+		rect		95 32 44 44	
+		<image>
+				key		none
+				screen	etc_01
+				index	58
+		</image>
+		<panel>
+			id			pan_markBg
+			enable		true
+			visible		true
+			layer		50
+			rect		2 2 40 40	
+			<image>
+					key		none
+					screen	guildbg
+					index	0
+			</image>		
+		</panel>
+		<panel>
+			id			pan_markIcon
+			enable		true
+			visible		true
+			layer		100
+			rect		2 2 40 40	
+			<image>
+					key		none
+					screen	guildicon
+					index	0
+			</image>		
+		</panel>		
+	</panel>
+	
+	<label>
+		id			lbl_msg
+		enable		true
+		visible		true
+		layer		60
+		rect		50 82 132 34
+		lineheight 	17
+		multiline 	true
+		<title>
+			color		ffffffff
+			fontIndex	2
+			text2 		130 230
+		</title>
+	</label>
+
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		layer		100
+		align		center	center
+		rect		37 132 56 18
+		<image>
+				key		none
+				screen	etc_01
+				index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			text2		2000 15
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	2 2
+		</title>
+	</button>	
+
+	<button>
+		id			btn_no
+		enable		true
+		visible		true
+		layer		100
+		align		center	center
+		rect		138 132 56 18
+		<image>
+				key		none
+				screen	etc_01
+				index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			text2		2000 23
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	2 2
+		</title>
+	</button>	
+	
+</window>

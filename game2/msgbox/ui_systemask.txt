@@ -1,0 +1,82 @@
+<window>
+	name			systemask_msgbox
+	enable			true
+	visible			true
+	modal 			true
+	alwaysontop		true
+	layer			300
+	rect			0  0 259 125
+	titlerect		76 8 206 28
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 259 125
+		<image>
+				key		none
+				screen	warning
+				index	1
+		</image>
+		
+		<panel>
+			id			pan_top
+			enable		true
+			visible		true
+			layer		101
+			rect		28 16 183 48
+			<image>
+					key	0
+					screen	warning
+					index	30
+			</image>					
+		</panel>
+	</panel>
+
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		31 76 88 33
+		<image>
+			key		none
+			screen	warning
+			index	10
+		</image>
+		<image>
+			key		over
+			screen	warning
+			index	11
+		</image>
+		<image>
+			key		down
+			screen	warning
+			index	12
+		</image>
+	</button>
+	<button>
+		id			btn_no
+		enable		true
+		visible		true
+		layer		101
+		rect		142 76 88 33
+		<image>
+			key		none
+			screen	warning
+			index	20
+		</image>
+		<image>
+			key	over
+			screen	warning
+			index	21
+		</image>
+		<image>
+			key	down
+			screen	warning
+			index	22
+		</image>
+	</button>	
+</window>

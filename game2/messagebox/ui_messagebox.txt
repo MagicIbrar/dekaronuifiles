@@ -1,0 +1,221 @@
+<window>
+	name			messagebox
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	position		center center
+	rect			-116 -40 116 117
+	titlerect		0  0 232 26
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	87
+		</image>		
+	</panel>
+	
+	<label>
+		id			lbl_title
+		enable		true
+		visible		true
+		layer		10
+		align 		center
+		rect		0 5 232 18
+		<title>
+			state 		title
+			position	0 4
+			color		FFFFFFFF
+			fontIndex	4
+		</title>
+	</label>
+
+	<label>
+		id		lbl_text
+		enable		true
+		visible		true
+		layer		10
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		5 45 222 50
+		<title>
+			color		ffffffff
+			fontIndex	3
+		</title>
+	</label>
+
+	<panel>
+		id		pan_processBg
+		enable		true
+		visible		false
+		layer		1
+		rect		5 100 222 10
+		<image>
+				key	none
+				screen	siege
+				index	10
+		</image>
+
+		<processbar>	
+			id			processbar
+			enable		true
+			visible		true
+			layer		101
+			rect		0 0 222 10
+			maxsize     	222	
+			<image>
+				key	0
+				screen	siege
+				index	11
+			</image>
+		</processbar>
+	</panel>
+
+	<panel>
+		id		pan_buttonbox
+		enable		true
+		visible		true
+		layer		10
+		rect		0  107 232 50
+
+		<button>
+			id		btn_yes
+			enable		true
+			visible		false
+			layer		20
+			align		center
+			rect		0 21 65 20
+			<image>
+				key		none
+				screen	etc_01
+				index	88
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2 		2000 5
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>
+	
+		<button>
+			id		btn_confirm
+			enable		true
+			visible		false
+			layer		20
+			align		center
+			rect		0 21 65 20
+			<image>
+				key		none
+				screen	etc_01
+				index	88
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2 		2000 22
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>
+		
+		<button>
+			id		btn_no
+			enable		true
+			visible		false
+			layer		20
+			align		center
+			rect		0 21 65 20
+			<image>
+				key			0
+				screen		etc_01
+				index		88
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		2000 6
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>
+		
+		<button>
+			id		btn_cancel
+			enable		true
+			visible		false
+			layer		20
+			align		center
+			rect		0 21 65 20
+			<image>
+				key			0
+				screen		etc_01
+				index		88
+			</image>	
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		2000 14
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>
+	</panel>
+</window>

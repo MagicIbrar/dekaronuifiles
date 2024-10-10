@@ -1,0 +1,4 @@
+
+#monstertablecommand create_monstertable	1	"create_monstertable [file_name]"
+#monstertablecommand load_monstertable		1	"load_monstertable [file_name]"
+#monstertablecommand save_monstertable		1	"save_monstertable [file_name]"

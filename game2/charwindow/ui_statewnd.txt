@@ -1,0 +1,1612 @@
+<window>
+	name			state
+	enable			true
+	visible			true
+	layer			100
+	rect			0 65 720 677
+	titlerect		0 0 396 32
+	alwaysontop		true
+	<label>
+		id					lbl_title
+		enable				true
+		visible				true
+		layer				300
+		align				center
+		rect				183 9 35 14
+		<title>
+			color				ffffffff
+			fontIndex			4
+			text2 				270 1
+		</title>
+	</label>
+	<button>
+		id					btn_exit
+		enable				true
+		visible				true
+		layer				300
+		rect		370 9 15 15
+		<image>
+			key					0
+			screen				etc_01
+			index		315
+		</image>
+		<image>
+			key					over
+			screen				etc_01
+			index		316
+		</image>
+		<image>
+			key					down
+			screen				etc_01
+			index		317
+		</image>
+	</button>
+	<panel>
+		id					pan_base
+		enable				true
+		visible				true
+		layer				200
+		rect				0 0 396 612
+		<image>
+			key					0
+			screen				State
+			index				32
+		</image>
+		<button>
+			id					btn_battle
+			enable				true
+			visible				true
+			layer				100
+			type				0
+			rect				7 33 72 23
+			align				center
+			<image>
+				key					0
+				screen				State
+				index				37
+			</image>
+			<image>
+				key					check
+				screen				State
+				index				36
+			</image>
+			<title>
+				state 				none
+				color				ff929292
+				fontIndex			2
+				position			0 6
+				text2 				270 44
+			</title>
+			<title>
+				state 				over
+				color				ffffffff
+				fontIndex			4
+				position			0 6
+			</title>
+			<title>
+				state 				down
+				color				ff929292
+				fontIndex			4
+				position			0 7
+			</title>
+			<title>
+				state 				check
+				color				ffffffff
+				fontIndex			4
+				position			0 4
+			</title>
+		</button>
+		<button>
+			id					btn_antipersonnel
+			enable				false
+			visible				false
+			layer				100
+			type				0
+			rect				80 33 72 23
+			align				center
+			<image>
+				key					0
+				screen				State
+				index				37
+			</image>
+			<image>
+				key					check
+				screen				State
+				index				36
+			</image>
+			<title>
+				state 				none
+				color				ff929292
+				fontIndex			2
+				position			0 6
+				text2 				2000 55
+			</title>
+			<title>
+				state 				over
+				color				ffffffff
+				fontIndex			4
+				position			0 6
+			</title>
+			<title>
+				state 				down
+				color				ff929292
+				fontIndex			4
+				position			0 7
+			</title>
+			<title>
+				state 				check
+				color				ffffffff
+				fontIndex			4
+				position			0 4
+			</title>
+		</button>
+		<button>
+			id					btn_score
+			enable				true
+			visible				true
+			layer				100
+			type				0
+			rect				153 33 72 23
+			align				center
+			<image>
+				key					0
+				screen				State
+				index				37
+			</image>
+			<image>
+				key					check
+				screen				State
+				index				36
+			</image>
+			<title>
+				state 				none
+				color				ff929292
+				fontIndex			2
+				position			0 6
+				text2 				270 45
+			</title>
+			<title>
+				state 				over
+				color				ffffffff
+				fontIndex			4
+				position			0 6
+			</title>
+			<title>
+				state 				down
+				color				ff929292
+				fontIndex			4
+				position			0 7
+			</title>
+			<title>
+				state 				check
+				color				ffffffff
+				fontIndex			4
+				position			0 4
+			</title>
+		</button>
+
+		<button>
+			id					btn_detail
+			enable				true
+			visible				true
+			layer				100
+			align				center
+			rect				370 32 23 23
+			<title>
+				state 				none
+				color				ff929292
+				fontIndex			4
+				position			0 3
+				text2 				270 47
+			</title>
+			<title>
+				state 				over
+				color				ff76f856
+				fontIndex			4
+				position			0 3
+			</title>
+			<title>
+				state 				down
+				color				ff929292
+				fontIndex			4
+				position			2 4
+			</title>
+			<image>
+				key					0
+				screen				State
+				index				69
+			</image>
+			<image>
+				key					over
+				screen				State
+				index				70
+			</image>
+			<image>
+				key					down
+				screen				State
+				index				71
+			</image>
+		</button>
+		<label>
+			id					lbl_tagname
+			enable				true
+			visible				true
+			layer				101
+			rect				18 88 32 15
+			<title>
+				color				ffffffff
+				fontIndex			4
+				text2 				270 2
+			</title>
+		</label>
+		<label>
+			id					lbl_name
+			enable				true
+			visible				true
+			layer				101
+			align				center
+			rect				52 88 137 15
+			<title>
+				color				ffffffff
+				fontIndex			2
+			</title>
+		</label>
+		<label>
+			id					lbl_taglevel
+			enable				true
+			visible				true
+			layer				101
+			rect				290 88 35 18
+			<title>
+				color				ffffffff
+				fontIndex			4
+				text2 				270 3
+			</title>
+		</label>
+		<label>
+			id					lbl_level
+			enable				true
+			visible				true
+			layer				101
+			align				center
+			rect				332 88 41 15
+			<title>
+				color				ffffffff
+				fontIndex			2
+			</title>
+		</label>
+		<label>
+			id					lbl_taggrade
+			enable				true
+			visible				true
+			layer				101
+			rect				18 112 32 15
+			<title>
+				color				ffffffff
+				fontIndex			4
+				text2 				270 4
+			</title>
+		</label>
+		<label>
+			id					lbl_grade
+			enable				true
+			visible				true
+			layer				101
+			align				center
+			rect				52 112 137 15
+			<title>
+				color				ffffffff
+				fontIndex			2
+			</title>
+		</label>
+		<label>
+			id					lbl_tagguild
+			enable				true
+			visible				true
+			layer				101
+			rect				18 136 32 15
+			<title>
+				color				ffffffff
+				fontIndex			4
+				text2 				270 5
+			</title>
+		</label>
+		<label>
+			id					lbl_guild
+			enable				true
+			visible				true
+			layer				101
+			align				center
+			rect				52 136 137 15
+			<title>
+				color				ffffffff
+				fontIndex			2
+			</title>
+		</label>
+			<label>
+			id					lbl_tagguildmark
+			enable				true
+			visible				true
+			layer				101
+			multiline 			true
+			rect				290 110 35 35
+			<title>
+				color				ffffffff
+				fontIndex			4
+				text2 				270 6
+			</title>
+		</label>
+		<panel>
+			id					pan_guildmarkbg
+			enable				true
+			visible				true
+			layer				100
+			rect				332 110 42 42
+			<image>
+				key					0
+				screen				guildbg_s
+			</image>
+		</panel>
+		<panel>
+			id					pan_guildmark
+			enable				true
+			visible				true
+			layer				103
+			rect				332 110 41 41
+			<image>
+				key					0
+				screen				guildicon_s
+			</image>
+		</panel>
+	</panel>
+
+	<panel>
+		id					pan_battle
+		enable				true
+		visible				false
+		layer				103
+		rect				0 166 394 445
+		<label>
+			id				lbl_tagstr
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			22 1 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 7
+			</title>
+		</label>
+		<label>
+			id				lbl_tagdex
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			84 1 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 8
+			</title>
+		</label>
+		<label>
+			id				lbl_tagcon
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			146 1 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 9
+			</title>
+		</label>
+		<label>
+			id				lbl_tagspr
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			208 1 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 10
+			</title>
+		</label>
+		<label>
+			id				lbl_tagstatpoint
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			321 1 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 1
+			</title>
+		</label>
+		<label>
+			id				lbl_str
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			22 21 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_dex
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			84 21 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_con
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			146 21 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_spr
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			208 21 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_statpoint
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			325 21 47 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_stradd
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			22 41 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_dexadd
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			84 41 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_conadd
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			146 41 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_spradd
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			208 41 52 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<button>
+			id				btn_statpoint
+			enable			true
+			visible			true
+			layer			200
+			blink 			true
+			align			center
+			rect			323 41 50 20
+			<title>
+				state			none
+				color			ff929292
+				fontIndex		4
+				position 		0 3
+				text2 			270 34		
+			</title>
+			<title>
+				state			over
+				color			ff76f856
+				fontIndex		4
+				position		0 3
+			</title>
+			<title>
+				state			down
+				color			ff929292
+				fontIndex		4
+				position 		2 4
+			</title>
+			<title>
+				state			blink
+				color			FFFFFFFF
+				fontIndex		4
+			</title>
+			<image>
+				key				none
+				screen			State
+				index			13
+			</image>
+			<image>
+				key				over
+				screen			State
+				index			14
+			</image>
+			<image>
+				key				down
+				screen			State
+				index			15
+			</image>
+		</button>
+		</label>
+		<label>
+			id				lbl_tagmelee
+			enable			true
+			visible			true
+			layer			200
+			align			right
+			rect			0 78 87 17
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 12
+			</title>
+		</label>
+		<label>
+			id				lbl_melee
+			enable			true
+			visible			true
+			layer			200
+			align			center
+			rect			91 78 99 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagrange
+			enable			true
+			visible			true
+			layer			200
+			align			right
+			rect			0 104 87 17
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 38
+			</title>
+		</label>
+		<label>
+			id				lbl_range
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			91 104 99 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagmagic
+			enable			true
+			visible			true
+			layer			200
+			align			right
+			rect			0 128 87 17
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 13
+			</title>
+		</label>
+		<label>
+			id				lbl_magic
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			91 128 99 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagdefense
+			enable			true
+			visible			true
+			layer			200
+			align			right
+			rect			196 78 74 17
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 14
+			</title>
+		</label>
+		<label>
+			id				lbl_defense
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			274 78 99 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagmagicresist
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			196 103 74 17
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 39
+			</title>
+		</label>
+		<label>
+			id				lbl_magicresist
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			274 103 99 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagfire
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			32 181 89 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 20
+			</title>
+		</label>
+		<label>
+			id				lbl_fire
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			138 181 52 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagice
+			enable			true
+			visible			true
+			layer		101
+			align			right
+			rect			32 209 89 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 22
+			</title>
+		</label>
+		<label>
+			id				lbl_ice
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			136 209 52 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_taglightning
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			32 237 89 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 21
+			</title>
+		</label>
+		<label>
+			id				lbl_lightning
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			138 237 52 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagpoison
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			32 265 89 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 24
+			</title>
+		</label>
+		<label>
+			id				lbl_poison
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			138 265 52 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagcurse
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			32 293 89 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 23
+			</title>
+		</label>
+		<label>
+			id				lbl_curse
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			138 293 52 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+
+		<label>
+			id				lbl_taghitrating
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			223 181 88 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 37
+			</title>
+		</label>
+		<label>
+			id				lbl_tagcriticalrating
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			223 265 89 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 40
+			</title>
+		</label>
+		<label>
+			id				lbl_tagblockrating
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			223 209 88 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 41
+			</title>
+		</label>
+		<label>
+			id				lbl_tagguardrating
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			223 237 88 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 42
+			</title>
+		</label>
+		<label>
+			id				lbl_tagvitality
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			223 293 89 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 43
+			</title>
+		</label>
+		<label>
+			id				lbl_hitrating
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			321 181 52 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_criticalrating
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			321 265 52 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_blockrating
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			321 209 52 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_guardrating
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			321 237 52 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_vitality
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			321 293 52 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+
+		<label>
+			id				lbl_tagHp
+			enable			true
+			visible			true
+			layer			101
+			rect			28 368 34 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 18
+			</title>
+		</label>
+		<processbar>	
+			id				pro_hp
+			enable			true
+			visible			true
+			layer			100
+			rect			71 368 303 12
+			maxsize     	303
+			<image>
+				key				0
+				screen			State
+				index			63
+			</image>				
+		</processbar>
+		<label>
+			id				lbl_hp
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			71 368 303 12
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		
+		<label>
+			id				lbl_tagMp
+			enable			true
+			visible			true
+			layer			101
+			rect			28 392 34 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 19
+			</title>
+		</label>
+		<processbar>	
+			id				pro_mp
+			enable			true
+			visible			true
+			layer			100
+			rect			71 392 303 12
+			maxsize     	303
+			<image>
+				key				0
+				screen			State
+				index			64
+			</image>				
+		</processbar>
+		<label>
+			id				lbl_mp
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			71 392 303 12
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		
+		<label>
+			id				lbl_tagShield
+			enable			true
+			visible			true
+			layer			101
+			rect			28 416 34 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 26
+			</title>
+		</label>
+		<processbar>	
+			id				pro_shield
+			enable			true
+			visible			true
+			layer			100
+			rect			71 416 303 12
+			maxsize     	303
+			<image>
+				key				0
+				screen			State
+				index			65
+			</image>				
+		</processbar>
+		<label>
+			id				lbl_shield
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			71 416 303 12
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>		
+	</panel>
+	
+	<panel>
+		id					pan_score
+		enable				true
+		visible				false
+		layer				103
+		rect				0 0 396 612
+		<image>
+			key					0
+			screen				State
+			index				33
+		</image>
+		<label>
+			id				lbl_tagexp
+			enable			true
+			visible			true
+			layer			105
+			rect			17 176 46 14
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 17
+			</title>
+		</label>
+		<label>
+			id				lbl_exp
+			enable			true
+			visible			true
+			layer			105
+			align			center
+			rect			71 178 303 12
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<processbar>
+			id				exp
+			enable			true
+			visible			true
+			layer			100
+			rect			71 178 303 12
+			maxsize     	303
+			<image>
+				key				0
+				screen			State
+				index			66
+			</image>
+		</processbar>
+		<label>
+			id				lbl_taggradeexp
+			enable			true
+			visible			true
+			layer			105
+			rect			17 217 46 12
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 35
+			</title>
+		</label>
+		<label>
+			id				lbl_gradeexp
+			enable			true
+			visible			true
+			layer			105
+			align			center
+			rect			71 217 303 12
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<processbar>
+			id				gradeexp
+			enable			true
+			visible			true
+			layer			100
+			rect			71 217 303 12
+			maxsize     	303
+			<image>
+				key				0
+				screen			State
+				index			67
+			</image>
+		</processbar>
+		<label>
+			id				lbl_tagppoint
+			enable			true
+			visible			true
+			layer			105
+			rect			17 254 99 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 36
+			</title>
+		</label>
+		<label>
+			id				lbl_ppoint
+			enable			true
+			visible			true
+			layer			105
+			align			center
+			rect			91 254 102 18
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_tagadvpoint
+			enable			true
+			visible			true
+			layer			105
+			rect			17 278 99 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 16
+			</title>
+		</label>
+		<label>
+			id				lbl_advpoint
+			enable			true
+			visible			true
+			layer			105
+			align			center
+			rect			91 277 102 18
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_tagdisposition
+			enable			true
+			visible			true
+			layer			105
+			rect			222 254 99 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 27
+			</title>
+		</label>
+		<label>
+			id				lbl_disposition
+			enable			true
+			visible			true
+			layer			105
+			align			center
+			rect			274 254 102 18
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_tagpk
+			enable			true
+			visible			true
+			layer			105
+			rect			222 302 46 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 28
+			</title>
+		</label>
+		<label>
+			id				lbl_pk
+			enable			true
+			visible			true
+			layer			105
+			align			center
+			rect			274 302 102 18
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_tagpvp
+			enable			true
+			visible			true
+			layer			105
+			rect			222 278 99 15
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 29
+			</title>
+		</label>
+		<label>
+			id				lbl_pvp
+			enable			true
+			visible			true
+			layer			105
+			align			center
+			rect			274 278 102 18
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+		<label>
+			id				lbl_tagcolosseum
+			enable			true
+			visible			true
+			layer			105
+			rect			17 302 88 18
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 48
+			</title>
+		</label>
+		<label>
+			id				lbl_colosseum
+			enable			true
+			visible			true
+			layer			105
+			align			center
+			rect			91 302 102 18
+			<title>
+				color			ffffffff
+				fontIndex		4
+			</title>
+		</label>
+	</panel>
+
+	<panel>
+		id					pan_antipersonnel
+		enable				false
+		visible				false
+		layer				1
+		rect				5 335 322 154
+		<image>
+			key					0
+			screen				State_dkr
+			index				1
+		</image>
+		<label>
+			id					lbl_antipersonneltitle
+			enable				false
+			visible				false
+			layer				2
+			align				center
+			rect				0 2 306 14
+			<title>
+				color				ffffffff
+				fontIndex			4
+				text2 				270 46
+			</title>
+		</label>
+		<button>
+			id					btn_hide
+			enable				true
+			visible				true
+			layer				2
+			rect				299 7 10 10
+			sound				0
+			<image>
+				key					0
+				screen				dkr_skill
+				index				8
+			</image>
+			<image>
+				key					over
+				screen			dkr_skill
+				index				9
+			</image>
+			<image>
+				key					down
+				screen			dkr_skill
+				index				10
+			</image>
+		</button>
+		<label>
+			id				lbl_tagantipersonnelmelee
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			8 33 66 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 12
+			</title>
+		</label>
+		<label>
+			id				lbl_antipersonnelmelee
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			76 33 82 16
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagantipersonnelrange
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			8 55 66 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 38
+			</title>
+		</label>
+		<label>
+			id				lbl_antipersonnelrange
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			76 55 82 16
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagantipersonnelmagic
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			8 77 66 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 13
+			</title>
+		</label>
+		<label>
+			id				lbl_antipersonnelmagic
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			76 77 82 16
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagantipersonneldefense
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			8 99 66 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 14
+			</title>
+		</label>
+		<label>
+			id				lbl_antipersonneldefense
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			76 99 82 16
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagantipersonnelmagicresist
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			8 121 66 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 39
+			</title>
+		</label>
+		<label>
+			id				lbl_antipersonnelmagicresist
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			76 121 82 16
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagantipersonnelfire
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			176 33 84 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 20
+			</title>
+		</label>
+		<label>
+			id				lbl_antipersonnelfire
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			261 33 45 16
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagantipersonnelice
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			176 55 84 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 22
+			</title>
+		</label>
+		<label>
+			id				lbl_antipersonnelice
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			261 55 45 16
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagantipersonnellightning
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			176 77 84 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 21
+			</title>
+		</label>
+		<label>
+			id				lbl_antipersonnellightning
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			261 77 45 16
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagantipersonnelpoison
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			176 99 84 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 24
+			</title>
+		</label>
+		<label>
+			id				lbl_antipersonnelpoison
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			261 99 45 16
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_tagantipersonnelcurse
+			enable			true
+			visible			true
+			layer			101
+			align			right
+			rect			176 121 84 16
+			<title>
+				color			ffffffff
+				fontIndex		4
+				text2 			270 23
+			</title>
+		</label>
+		<label>
+			id				lbl_antipersonnelcurse
+			enable			true
+			visible			true
+			layer			101
+			align			center
+			rect			261 121 45 16
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+	</panel>
+</window>

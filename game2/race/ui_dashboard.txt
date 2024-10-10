@@ -1,0 +1,22 @@
+<window>
+	name			dashboard
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-118 -35 119 36
+	titlerect		228 0 236 70
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 237 71
+		<image>
+			key		none
+			screen	race
+			index	2
+		</image>		
+	</panel>
+</window>

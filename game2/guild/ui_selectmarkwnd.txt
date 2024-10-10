@@ -1,0 +1,393 @@
+<window>
+	name			guildMarkwnd
+	enable			true
+	visible			true
+	layer			100
+	rect			0  0 337 258
+	titlerect		0 0 311 29
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 337 258
+		<image>
+			key		none
+			screen	guild_a
+			index	70
+		</image>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		311 3 21 21
+			sound  0
+			<image>
+				key		none
+				screen	scroll
+				index	60
+			</image>
+			<image>
+				key		over
+				screen	scroll
+				index	61
+			</image>
+			<image>
+				key		down
+				screen	scroll
+				index	62
+			</image>
+		</button>
+	</panel>
+	
+	<panel>
+		id			pan_markIcon
+		enable		true
+		visible		true
+		layer		100
+		rect		149  49 40 40
+		<image>
+			key		none
+			screen	guildicon
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_markBg
+		enable		true
+		visible		true
+		layer		50
+		rect		149  49 40 40
+		<image>
+			key		none
+			screen	guildbg
+			index	1
+		</image>
+	</panel>
+	<button>
+		id			btn_iconLeft
+		enable		true
+		visible		true
+		layer		100
+		rect		126 97 16 15
+		<image>
+			key		none
+			screen	guild_a
+			index	90
+		</image>
+		<image>
+			key		over
+			screen	guild_a
+			index	91
+		</image>
+		<image>
+			key		down
+			screen	guild_a
+			index	92
+		</image>
+	</button>
+	<button>
+		id			btn_iconRight
+		enable		true
+		visible		true
+		layer		100
+		rect		196 97 16 15
+		<image>
+			key		none
+			screen	guild_a
+			index	100
+		</image>
+		<image>
+			key		over
+			screen	guild_a
+			index	101
+		</image>
+		<image>
+			key		down
+			screen	guild_a
+			index	102
+		</image>
+	</button>
+	
+	<panel>
+		id			pan_mark
+		enable		true
+		visible		true
+		layer		100
+		rect		29  114 280 44
+		<panel>
+			id			pan_icon_0
+			enable		true
+			visible		true
+			layer		50
+			rect		0  2 40 40
+			<image>
+				key		none
+				screen	guildicon
+				index	1
+			</image>
+		</panel>
+		<panel>
+			id			pan_icon_1
+			enable		true
+			visible		true
+			layer		50
+			rect		40  2 40 40
+			<image>
+				key		none
+				screen	guildicon
+				index	2
+			</image>
+		</panel>
+		<panel>
+			id			pan_icon_2
+			enable		true
+			visible		true
+			layer		50
+			rect		80  2 40 40
+			<image>
+				key		none
+				screen	guildicon
+				index	3
+			</image>
+		</panel>
+		<panel>
+			id			pan_icon_3
+			enable		true
+			visible		true
+			layer		50
+			rect		120  2 40 40
+			<image>
+				key		none
+				screen	guildicon
+				index	4
+			</image>
+		</panel>
+		<panel>
+			id			pan_icon_4
+			enable		true
+			visible		true
+			layer		50
+			rect		160  2 40 40
+			<image>
+				key		none
+				screen	guildicon
+				index	5
+			</image>
+		</panel>
+		<panel>
+			id			pan_icon_5
+			enable		true
+			visible		true
+			layer		50
+			rect		200 2 40 40
+			<image>
+				key		none
+				screen	guildicon
+				index	6
+			</image>
+		</panel>
+		<panel>
+			id			pan_icon_6
+			enable		true
+			visible		true
+			layer		50
+			rect		240  2 40 40
+			<image>
+				key		none
+				screen	guildicon
+				index	7
+			</image>
+		</panel>
+		<panel>
+			id			pan_icon_sel
+			enable		true
+			visible		true
+			layer		100
+			rect		117  0 46 44
+			<image>
+				key		none
+				screen	guild_a
+				index	80
+			</image>
+		</panel>
+	</panel>
+	<button>
+		id			btn_bgLeft
+		enable		true
+		visible		true
+		layer		100
+		rect		126 165 16 15
+		<image>
+			key		none
+			screen	guild_a
+			index	90
+		</image>
+		<image>
+			key		over
+			screen	guild_a
+			index	91
+		</image>
+		<image>
+			key		down
+			screen	guild_a
+			index	92
+		</image>
+	</button>
+	<button>
+		id			btn_bgRight
+		enable		true
+		visible		true
+		layer		100
+		rect		196 165 16 15
+		<image>
+			key		none
+			screen	guild_a
+			index	100
+		</image>
+		<image>
+			key		over
+			screen	guild_a
+			index	101
+		</image>
+		<image>
+			key		down
+			screen	guild_a
+			index	102
+		</image>
+	</button>
+	
+	<panel>
+		id			pan_mark_bg
+		enable		true
+		visible		true
+		layer		100
+		rect		29  182 280 44
+		<panel>
+			id			pan_bg_0
+			enable		true
+			visible		true
+			layer		50
+			rect		0  2 40 40
+			<image>
+				key		none
+				screen	guildbg
+				index	1
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_1
+			enable		true
+			visible		true
+			layer		50
+			rect		40 2 40 40
+			<image>
+				key		none
+				screen	guildbg
+				index	2
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_2
+			enable		true
+			visible		true
+			layer		50
+			rect		80 2 40 40
+			<image>
+				key		none
+				screen	guildbg
+				index	3
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_3
+			enable		true
+			visible		true
+			layer		50
+			rect		120 2 40 40
+			<image>
+				key		none
+				screen	guildbg
+				index	4
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_4
+			enable		true
+			visible		true
+			layer		50
+			rect		160 2 40 40
+			<image>
+				key		none
+				screen	guildbg
+				index	5
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_5
+			enable		true
+			visible		true
+			layer		50
+			rect		200 2 40 40
+			<image>
+				key		none
+				screen	guildbg
+				index	6
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_6
+			enable		true
+			visible		true
+			layer		50
+			rect		240 2 40 40
+			<image>
+				key		none
+				screen	guildbg
+				index	7
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_sel
+			enable		true
+			visible		true
+			layer		100
+			rect		117  0 46 44
+			<image>
+				key		none
+				screen	guild_a
+				index	80
+			</image>
+		</panel>
+	</panel>
+	<button>
+		id			btn_regist
+		enable		true
+		visible		true
+		layer		100
+		rect		144 232 55 21
+		<image>
+			key		none
+			screen	guild_a
+			index	40
+		</image>
+		<image>
+			key		over
+			screen	guild_a
+			index	41
+		</image>
+		<image>
+			key		down
+			screen	guild_a
+			index	42
+		</image>
+		<image>
+			key		disable
+			screen	guild_a
+			index	43
+		</image>
+	</button>
+</window>

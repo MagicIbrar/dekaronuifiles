@@ -1,0 +1,113 @@
+<window>
+	name			upkeepstatuswnd
+	enable			true
+	visible			true
+	layer			100
+	position		right bottom
+	rect			-175 -200 0 90
+	<button>
+		id			btn_upkeepstatus_0
+		enable		true
+		visible		false
+		layer		10
+		rect		0 30 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_1
+		enable		true
+		visible		false
+		layer		10
+		rect		30 30 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_2
+		enable		true
+		visible		false
+		layer		10
+		rect		60 30 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_3
+		enable		true
+		visible		false
+		layer		10
+		rect		90 30 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_4
+		enable		true
+		visible		false
+		layer		10
+		rect		120 30 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_5
+		enable		true
+		visible		false
+		layer		10
+		rect		0 0 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_6
+		enable		true
+		visible		false
+		layer		10
+		rect		30 0 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_7
+		enable		true
+		visible		false
+		layer		10
+		rect		60 0 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_8
+		enable		true
+		visible		false
+		layer		10
+		rect		90 0 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_9
+		enable		true
+		visible		false
+		layer		10
+		rect		120 0 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_10
+		enable		true
+		visible		false
+		layer		10
+		rect		0 60 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_11
+		enable		true
+		visible		false
+		layer		10
+		rect		30 60 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_12
+		enable		true
+		visible		false
+		layer		10
+		rect		60 60 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_13
+		enable		true
+		visible		false
+		layer		10
+		rect		90 60 30 30
+	</button>
+	<button>
+		id			btn_upkeepstatus_14
+		enable		true
+		visible		false
+		layer		10
+		rect		120 60 30 30
+	</button>
+</window>

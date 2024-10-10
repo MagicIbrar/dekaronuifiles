@@ -1,0 +1,731 @@
+<window>
+	name			privatesupply
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-250 -309 250 309
+	titlerect		0 0 0 0
+	<panel>
+		id		pan_gaugeback
+		enable		true
+		visible		true
+		layer		0
+		rect		209 332 94 44		
+		<image>
+			key	none
+			screen	privatesupply
+			index	18
+		</image>
+	</panel>	
+	<button>
+		id		pan_gaugeback_dummy
+		enable		true
+		visible		true
+		layer		200
+		rect		209 332 94 44		
+		tooltip		96 108
+		<image>
+			key	none
+			screen	privatesupply
+			index	18
+			color	00ffffff
+		</image>
+	</button>	
+	<processbar>
+		id	pan_gauge
+		enable	true
+		visible	true
+		layer	1
+		rect	209 332 94 44
+		maxsize	44
+		<image>
+			key	none
+			screen	privatesupply
+			index	16
+		</image>
+	</processbar>
+	<button>
+		id		pan_Arrow
+		enable		true
+		visible		true
+		layer		100
+		rect		218 4 76 158
+		<image>
+			key	none
+			screen	privatesupply
+			index	3
+		</image>
+	</button>
+	<panel>
+		id		pan_dummy_center
+		enable		true
+		visible		false
+		layer		101
+		rect		251 309 10000 10
+		<image>
+			key	none
+			screen	privatesupply
+			index	17
+		</image>
+	</panel>		
+	<panel>
+		id		pan_blink
+		enable		true
+		visible		true
+		layer		101
+		rect		10000 310 12 12
+		<image>
+			key	none
+			screen	privatesupply
+			index	17
+		</image>
+	</panel>		
+	<panel>
+		id			pan_back
+		enable			true
+		visible			true
+		layer			5
+		rect			26 84 460 460
+		moveable		false
+		<image>
+			key		none
+			screen	privatesupply
+			index	1						
+		</image>		
+	</panel>	
+		<panel>
+			id			pan_roullete
+			enable			true
+			visible			true
+			layer			2
+			rect			85 143 342 342
+			moveable		false
+			<image>
+				key		none
+				screen	privatesupply
+				index	2						
+			</image>
+		</panel>		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		10
+			rect		303 101 37 41
+			<image>
+				key			0
+				screen		privatesupply
+				index		7
+			</image>
+			<image>
+				key			over
+				screen		privatesupply
+				index		8
+			</image>
+			<image>
+				key			down
+				screen		privatesupply
+				index		9
+			</image>
+		</button>
+		<button>
+			id			btn_help
+			enable		true
+			visible		true
+			layer		10
+			rect		173 101 37 41
+			HelpLink		true
+			HelpLink_TabIdx		0
+			HelpLink_CateIdx	1307
+			HelpLink_PageIdx	8
+			<image>
+				key			0
+				screen		privatesupply
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		privatesupply
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		privatesupply
+				index		6
+			</image>
+		</button>								
+		<button>
+			id			btn_sort
+			enable		true
+			visible		true
+			layer		10
+			rect		210 253 92 43
+			align		center
+			tooltip		96 107
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 20
+				text2 		96 106
+			</title>
+			<image>
+				key			0
+				screen		privatesupply
+				index		13
+			</image>
+			<image>
+				key			over
+				screen		privatesupply
+				index		14
+			</image>
+			<image>
+				key			down
+				screen		privatesupply
+				index		15
+			</image>
+		</button>
+		
+		<button>
+			id			btn_start
+			enable		true
+			visible		true
+			layer		10
+			rect		198 296 116 36
+			<image>
+				key			0
+				screen		privatesupply
+				index		10
+			</image>
+			<image>
+				key			over
+				screen		privatesupply
+				index		11
+			</image>
+			<image>
+				key			down
+				screen		privatesupply
+				index		12
+			</image>
+		</button>		
+		<label>
+			id			lbl_state
+			enable		true
+			visible		false
+			layer		10
+			rect		121 249 222 63
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 30
+			</title>
+		</label>			
+		<label>
+			id			lbl_needitemcount
+			enable		true
+			visible		false
+			layer		10
+			rect		147 338 169 12
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		90 5
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_remainsupplycount
+			enable		true
+			visible		true
+			layer		101
+			rect		220 345 80 30
+			align		center center
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		96 105
+			</title>
+		</label>
+		
+		<panel>
+			id				pan_messageback
+			enable			true
+			visible			false
+			layer			200
+			rect			67 150 330 35
+			intersect		false
+			<image>
+				key		0
+				screen	supplymachine_1
+				index	30
+			</image>
+			<label>
+				id			lbl_message
+				enable		true
+				visible		true
+				layer		30
+				rect		0 0 330 35
+				align		center
+				multiline	true
+				intersect	false
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 4
+				</title>
+			</label>
+		</panel>
+		
+		<panel>
+			id				pan_effect
+			enable			true
+			visible			true
+			layer			210
+			rect			67 150 330 35
+			intersect		false
+		</panel>
+		
+		<imagenumber>
+			id			num_remaingoods
+			enable		true
+			visible		true
+			fonttype	largegold
+			numbertype	normal
+			layer		10
+			space		22
+			align		center
+			imagecount 	10
+			rect		176 190 110 34
+			<image>
+				key	0
+				color 	0x00ffffff
+				screen	common
+				index	0
+			</image>
+		</imagenumber>
+		
+		<button>
+			id				btn_roulette
+			enable			false
+			visible			false
+			layer			10
+			rect			0 0 89 89
+			<panel>
+				id			pan_rouletteeffect
+				enable		true
+				visible		true
+				layer		20
+				rect		0 0 89 89
+				intersect	false
+			</panel>
+			<button>
+				id			btn_border
+				enable		true
+				visible		false
+				layer		20
+				rect		0 0 89 89
+				intersect	false
+				<image>
+					key		none
+					screen	supplymachine_1
+					index	16
+				</image>
+				<image>
+					key		check
+					screen	supplymachine_1
+					index	17
+				</image>
+			</button>			
+			<panel>
+				id			pan_goods
+				enable		true
+				visible		true
+				layer		30
+				rect		0 0 89 79
+				intersect	false
+				<image>
+					key		none
+					screen	supplymachine_goods
+					index	0
+				</image>
+			</panel>
+			<label>
+				id			lbl_remaingoodscount
+				enable		true
+				visible		true
+				layer		40
+				rect		23 65 44 12
+				align		center
+				intersect	false
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>			
+		</button>
+		<panel>
+			id		pan_itemDummy
+			enable		true
+			visible		true
+			layer		100
+			rect		240 299 122 161
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+		</panel>	
+		<panel>
+			id		pan_item1
+			enable		true
+			visible		true
+			layer		300
+			rect		240 177 32 32
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+			<item>
+				id	item_1
+				enable	true
+				visible	true
+				layer	10
+				rect	0 0 32 32
+				cellsize	32 32
+				align	center
+				moveable	true
+			</item>
+			<label>
+				id		lbl_item1
+				enable		true
+				visible		true
+				layer		10
+				rect		0 20 35 15
+				align		center
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>				
+		<panel>
+			id		pan_item2
+			enable		true
+			visible		true
+			layer		300
+			rect		311 200 32 32
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+			<item>
+				id	item_2
+				enable	true
+				visible	true
+				layer	10
+				rect	0 0 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<label>
+				id		lbl_item2
+				enable		true
+				visible		true
+				layer		10
+				rect		0 20 35 15
+				align		center
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id		pan_item3
+			enable		true
+			visible		true
+			layer		300
+			rect		355 261 32 32
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+			<item>
+				id	item_3
+				enable	true
+				visible	true
+				layer	10
+				rect	0 0 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<label>
+				id		lbl_item3
+				enable		false
+				visible		true
+				layer		10
+				rect		0 20 35 15
+				align		center
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id		pan_item4
+			enable		true
+			visible		true
+			layer		300
+			rect		355 335 32 32
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+			<item>
+				id	item_4
+				enable	true
+				visible	true
+				layer	10
+				rect	0 0 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<label>
+				id		lbl_item4
+				enable		true
+				visible		true
+				layer		11
+				rect		0 20 35 15
+				align		center
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id		pan_item5
+			enable		true
+			visible		true
+			layer		300
+			rect		311 396 32 32
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+			<item>
+				id	item_5
+				enable	true
+				visible	true
+				layer	10
+				rect	0 0 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<label>
+				id		lbl_item5
+				enable		true
+				visible		true
+				layer		10
+				rect		0 20 35 15
+				align		center
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id		pan_item6
+			enable		true
+			visible		true
+			layer		300
+			rect		240 420 32 32
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+			<item>
+				id	item_6
+				enable	true
+				visible	true
+				layer	10
+				rect	0 0 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<label>
+				id		lbl_item6
+				enable		true
+				visible		true
+				layer		10
+				rect		0 20 35 15
+				align		center
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id		pan_item7
+			enable		true
+			visible		true
+			layer		300
+			rect		169 396 32 32
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+			<item>
+				id	item_7
+				enable	true
+				visible	true
+				layer	10
+				rect	0 0 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<label>
+				id		lbl_item7
+				enable		true
+				visible		true
+				layer		10
+				rect		0 20 35 15
+				align		center
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id		pan_item8
+			enable		true
+			visible		true
+			layer		300
+			rect		125 335 32 32
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+			<item>
+				id	item_8
+				enable	true
+				visible	true
+				layer	10
+				rect	0 0 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<label>
+				id		lbl_item8
+				enable		true
+				visible		true
+				layer		10
+				rect		0 20 35 15
+				align		center
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		<panel>
+			id		pan_item9
+			enable		true
+			visible		true
+			layer		300
+			rect		125 261 32 32
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+			<item>
+				id	item_9
+				enable	true
+				visible	true
+				layer	10
+				rect	0 0 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<label>
+				id		lbl_item9
+				enable		true
+				visible		true
+				layer		10
+				rect		0 20 35 15
+				align		center
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id		pan_item10
+			enable		true
+			visible		true
+			layer		300
+			rect		169 200 32 32
+			intersect	false
+			<image>
+				key		none
+				screen	supplymachine_1
+				index	10000
+			</image>
+			<item>
+				id	item_10
+				enable	true
+				visible	true
+				layer	10
+				rect	0 0 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<label>
+				id		lbl_item10
+				enable		true
+				visible		true
+				layer		10
+				rect		0 20 35 15
+				align		center
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+</window>

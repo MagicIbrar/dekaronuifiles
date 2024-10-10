@@ -1,0 +1,31 @@
+window_layer	auto
+window_position	0	0
+window_size	507	191
+window_alignaxis	center	center
+window_visible	true
+
+create_control	panel	panel_message
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\MessageWnd.bmp	0	0	507	191
+	control_drawsize	base	base
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	edit	edt_message
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_text	0	3	""
+	control_textfont	big
+	control_drawdiv	xy	2
+	control_drawsize	507	191
+	control_drawpoint	0	70
+	control_enable	false
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+}

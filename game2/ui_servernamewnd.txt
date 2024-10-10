@@ -1,0 +1,36 @@
+<window>
+	name			servername_win
+	enable			true
+	visible			true
+	layer			100
+	rect			8 8 142 26
+	titlerect		0 0 0 0
+	layertype		normal
+
+	<panel>
+		id			pan_server
+		enable		true
+		visible		true
+		layer		100
+		position 		inverse inverse
+		rect		0 0 0 0
+		<image>
+			key		0
+			screen	Pantheon
+			index	2
+		</image>
+		<label>
+			id			lbl_server
+			enable		true
+			visible		true
+			layer		50
+			position 		inverse inverse
+			align		center
+			rect		0 2 0 0
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+	</panel>
+</window>

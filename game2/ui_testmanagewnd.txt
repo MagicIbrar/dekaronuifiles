@@ -1,0 +1,85 @@
+<window>
+	name			test_manWnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-116 -78 116 79
+	titlerect		0 0 215 24
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 232 157
+		<image>
+			key		none
+			screen	etc_01
+			index	1
+		</image>
+	</panel>
+	<label>
+		id			lbl_text
+		enable		true
+		visible		true
+		layer		100
+		align		center
+		rect		20 46 192 20
+		<title>
+			color		ffffffff
+			fontIndex	3
+		</title>
+	</label>
+	<button>
+		id			btn_exit
+		enable		true
+		visible		true
+		layer		100
+		rect		215 2 15 15
+
+		<image>
+			key		none
+			screen	etc_01
+			index		315
+
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index		316
+
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index		317
+
+		</image>
+	</button>
+	<button>
+		id			btn_cancel
+		enable		true
+		visible		true
+		layer		100
+		align		center	center
+		rect		87 132 56 18
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			text2		2000 23
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	2 2
+		</title>
+
+	</button>
+</window>

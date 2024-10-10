@@ -1,0 +1,120 @@
+<window>
+	name			quest
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 162 120
+	titlerect		0 0 162 20
+	<button>
+		id			btn_redo
+		enable		true
+		visible		false
+		layer		1
+		rect		0 0 30 30
+		<image>
+			key		none
+			screen	newquest
+			index	9
+		</image>
+		<image>
+			key		over
+			screen	newquest
+			index	10
+		</image>
+		<image>
+			key		down
+			screen	newquest
+			index	11
+		</image>
+	</button>
+	<panel>
+		id			pan_body
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 162 120
+		<image>
+			key		none
+			screen	newquest
+			index	5
+		</image>
+		<label>
+			id			lbl_tagtitle
+			enable		true
+			visible		true
+			align 		center
+			layer		60
+			align		center
+			intersect	false
+			rect		0 4 162 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 117
+			</title>
+		</label>
+		<button>
+			id			btn_minimize
+			enable		true
+			visible		true
+			layer		100
+			rect		144 5 13 13
+			<image>
+				key		none
+				screen	etc_01
+				index	3
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	4
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	5
+			</image>
+		</button>
+		<panel>
+			id			pan_object
+			enable		false
+			visible		false
+			layer		1
+			rect		0 0 156 60
+			<button>
+				id			btn_cancel
+				enable		true
+				visible		true
+				layer		100
+				rect		3 0 13 13
+				<image>
+					key		none
+					screen	newquest
+					index	6
+				</image>
+				<image>
+					key		over
+					screen	newquest
+					index	7
+				</image>
+				<image>
+					key		down
+					screen	newquest
+					index	8
+				</image>
+			</button>
+			<label>
+				id			lbl_object
+				enable		true
+				visible		true
+				layer		60
+				multiline	true
+				rect		16 0 144 60
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+	</panel>
+</window>

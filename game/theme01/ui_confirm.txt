@@ -1,0 +1,51 @@
+window_layer	TOP
+window_size	259	125
+window_alignaxis	center	center
+window_position	0	0
+window_visible	false
+
+create_control	panel	pan_base
+{
+	control_group	0
+	control_image	oxxx	UI\Game\message_del_01.dds	0	125	259	125
+	control_drawdiv	xy	2
+	control_drawsize	259	125
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_ok
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooooo	UI\Game\theme01\system.dds	414	128	88	33
+	control_drawsize	88	33
+	control_drawpoint	31	76
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_cancel
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooooo	UI\Game\theme01\system.dds	326	260	88	33
+	control_drawsize	88	33
+	control_drawpoint	142	76
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_text
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\trade_message_01.dds	0	464	183	48
+	control_drawdiv	xy	2
+	control_drawsize	183	48
+	control_drawpoint	28	16
+	control_enable	true
+	control_visible	true
+	}
+}
+
+

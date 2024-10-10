@@ -1,0 +1,167 @@
+<window>
+	name			delegateguild_win
+	modal 			true
+	enable			true
+	visible			true
+	layer			110
+	rect			0 0 232 157
+	titlerect		0 0 211 24
+	alwaysontop		true
+
+	<panel>
+		id			pan_bg
+		enable		false
+		visible		true
+		layer		10
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		60
+			rect		0 3 235 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 54
+			</title>
+		</label>
+	</panel>
+	<button>
+		id			btn_exit
+		enable		true
+		visible		true
+		layer		200
+		rect		209 2 15 15
+
+		<image>
+			key		none
+			screen	etc_01
+			index		315
+
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index		316
+
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index		317
+
+		</image>
+	</button>		
+	<label>
+		id			lbl_text
+		enable		true
+		visible		true
+		layer		60
+		rect		40 35 151 34
+		lineheight 	17
+		multiline 	true
+		<title>
+			color		ffffffff
+			fontIndex	2
+			text2 		130 225
+		</title>
+	</label>
+	
+	<panel>
+		id			pan_editBg
+		enable		false
+		visible		true
+		layer		10
+		rect		43 84 144 16
+		<image>
+				key	none
+				screen	party
+				index	6
+		</image>
+		<edit>
+			id			edit_text
+			enable		true
+			visible		true
+			layer		100
+			rect		22 1 101 13
+			maxlength	20
+			font_type	2
+			input_type	0
+			align		1
+			color		ffffffff
+			multiline   false
+		</edit>	
+	</panel>
+	
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		37 132 57 19
+		<image>
+				key		none
+				screen	etc_01
+				index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	16 3
+			text2		2000 15
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	16 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	17 4
+		</title>
+	</button>	
+
+	<button>
+		id			btn_no
+		enable		true
+		visible		true
+		layer		100
+		rect		138 132 57 19
+		<image>
+				key		none
+				screen	etc_01
+				index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	16 3
+			text2		2000 23
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	16 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	17 4
+		</title>
+	</button>	
+</window>

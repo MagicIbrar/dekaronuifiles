@@ -1,0 +1,43 @@
+<window>
+	name			death_win
+	modal 			true
+	enable			true
+	visible			true
+	layer			100
+	rect			50 100 263 120
+	titlerect		0 0 0 0
+	<panel>
+		id			pan_bg
+		enable		false
+		visible		true
+		layer		10
+		rect		0 0 263 120
+		<image>
+			key		0
+			screen	death
+			index	1
+		</image>
+	</panel>
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		41 53 170 32
+		<image>
+			key		none
+			screen	death
+			index	10
+		</image>
+		<image>
+			key	over
+			screen	death
+			index	11
+		</image>
+		<image>
+			key	down
+			screen	death
+			index	12
+		</image>
+	</button>	
+</window>

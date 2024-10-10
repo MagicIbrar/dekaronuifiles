@@ -1,0 +1,202 @@
+<window>
+	name			AutoQuestionwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			-116 350 116 517
+	titlerect		0 0 232 18
+	alwaysontop		true
+
+	<panel>
+		id			pan_base
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 232 167
+		<image>
+			key		0
+			screen	autocheck
+			index	1
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		101
+			multiline	true		
+			intersect	false
+			align 		center
+			rect		28 2 174 14
+			<title>
+				position	0 0
+				color		FFF4BE3D
+				fontIndex	4
+				text2		280 101
+			</title>
+		</label>
+		<label>
+			id			lbl_descript
+			enable		true
+			visible		true
+			layer		101
+			multiline	true		
+			intersect	false
+			align 		center
+			rect		12 28 207 14
+			<title>
+				position	0 0
+				color		FFF4BE3D
+				fontIndex	4
+				text2		280 102
+			</title>
+		</label>
+		<panel>
+			id			pan_question_base
+			enable		true
+			visible		true
+			layer		101
+			rect		12 48 207 43
+			<image>
+				key		0
+				screen	autocheck
+				index	110
+			</image>
+			<panel>
+				id			pan_question_0
+				enable		true
+				visible		true
+				layer		100
+				rect		30 11 22 21
+				<image>
+					key		0
+					screen	autocheck
+					index	11
+				</image>
+			</panel>
+			<panel>
+				id			pan_question_1
+				enable		true
+				visible		true
+				layer		100
+				rect		55 11 22 21
+				<image>
+					key		0
+					screen	autocheck
+					index	12
+				</image>
+			</panel>
+			<panel>
+				id			pan_question_2
+				enable		true
+				visible		true
+				layer		100
+				rect		108 11 22 21
+				<image>
+					key		0
+					screen	autocheck
+					index	15
+				</image>
+			</panel>
+		</panel>
+		<panel>
+			id			pan_fail_0
+			enable		true
+			visible		true
+			layer		100
+			rect		84 97 13 13
+			<image>
+				key		0
+				screen	pcpop
+				index	12
+			</image>
+		</panel>
+		<panel>
+			id			pan_fail_1
+			enable		true
+			visible		true
+			layer		100
+			rect		107 97 13 13
+			<image>
+				key		0
+				screen	pcpop
+				index	12
+			</image>
+		</panel>
+		<panel>
+			id			pan_fail_2
+			enable		true
+			visible		true
+			layer		100
+			rect		130 97 13 13
+			<image>
+				key		0
+				screen	pcpop
+				index	12
+			</image>
+		</panel>
+		<label>
+			id			lbl_failcount
+			enable		true
+			visible		true
+			layer		101
+			multiline	true		
+			intersect	false
+			align 		center
+			rect		12 117 207 14
+			<title>
+				position	0 0
+				color		FFF4BE3D
+				fontIndex	4
+				text2		280 103
+			</title>
+		</label>
+		<edit>
+			id			edit_answer
+			enable		true
+			visible		true
+			layer		100
+			rect		43 143 75 14
+			maxlength	4
+			font_type	2
+			input_type	2
+			align		1
+			color		ffffffff
+			multiline   false
+		</edit>	
+		<button>
+			id			btn_answer
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		132 142 56 18
+			sound  0
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		280 104
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>	
+		
+	</panel>	
+</window>

@@ -1,0 +1,134 @@
+<window>
+	name			addfriend_msgbox
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0  0 232 157
+	titlerect		0  0 211 24
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		28 3 174 14
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		100 60
+			</title>
+		</label>
+	</panel>
+
+	<label>
+		id		lbl_text
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		5 35 220 50
+		<title>
+			color		ffffffff
+			fontIndex	3
+		</title>
+	</label>
+	<label>
+		id		lbl_askMsg
+		enable		true
+		visible		true
+		layer		60
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		10 55 212 30
+		<title>
+			color		ffffffff
+			fontIndex	3
+			position 0 0
+			text2 1006 1
+		</title>
+	</label>
+
+	<button>
+		id		btn_yes
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		rect		37 132 57 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 3
+			text2 		2000 5
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>
+	<button>
+		id		btn_no
+		enable		true
+		visible		true
+		layer		100
+		align		center
+		rect		138 132 57 19
+		<image>
+			key			0
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 3
+			text2		2000 6
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>
+</window>

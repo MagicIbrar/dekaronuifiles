@@ -1,0 +1,684 @@
+<window>
+	name			skill_reinforce
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-366 -304 366 304
+	titlerect		7 3 358 33
+
+	<panel>
+		id		pan_skill_reinforce
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0  366 457
+
+		<image>
+			key	0
+			screen	skill_reinforce
+			index	1
+		</image>
+
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		150
+			align		center
+			rect		7 9 323 33
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+				text2 		150 200
+			</title>
+		</label>
+
+
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		200
+			type		0
+			rect		338 14 15 15
+
+			<image>
+				key	0
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key	over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key	down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+
+		<label>
+			id			lbl_subtitle1
+			enable		true
+			visible		true
+			layer		150
+			align		left
+			rect		16 41 358 33
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+				text2 		150 201
+			</title>
+		</label>
+		
+		<panel>
+			id		pan_skill_list
+			enable		true
+			visible		true
+			layer		150
+			rect		28 72 310 140
+
+
+			<panel>
+				id		pan_effect
+				enable		true
+				visible		true
+				layer		300
+				intersect 	false
+				rect		120 60 48 72	
+			</panel>	
+
+			<panel>
+				id		pan_skill_0
+				enable		true
+				visible		true
+				layer		150
+				rect		18 15 58 58
+
+				<button>
+					id		btn_skill_0
+					enable		true
+					visible		true
+					layer		150
+					rect		0 0 58 58
+					type		1
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	over
+						screen	renewalskillwnd
+						index	8
+					</image>
+					<image>
+						key	down
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	disable
+						screen	renewalskillwnd
+						index	7
+					</image>
+
+				</button>
+
+			</panel>
+
+			<panel>
+				id		pan_skill_1
+				enable		true
+				visible		true
+				layer		150
+				rect		90 15 58 58
+
+				<button>
+					id		btn_skill_1
+					enable		true
+					visible		true
+					layer		150
+					rect		0 0 58 58
+					type		1
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	over
+						screen	renewalskillwnd
+						index	8
+					</image>
+					<image>
+						key	down
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	disable
+						screen	renewalskillwnd
+						index	7
+					</image>
+
+				</button>
+
+			</panel>
+
+			<panel>
+				id		pan_skill_2
+				enable		true
+				visible		true
+				layer		150
+				rect		162 15 58 58
+
+				<button>
+					id		btn_skill_2
+					enable		true
+					visible		true
+					layer		150
+					rect		0 0 58 58
+					type		1
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	over
+						screen	renewalskillwnd
+						index	8
+					</image>
+					<image>
+						key	down
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	disable
+						screen	renewalskillwnd
+						index	7
+					</image>
+
+				</button>
+
+			</panel>
+
+			<panel>
+				id		pan_skill_3
+				enable		true
+				visible		true
+				layer		150
+				rect		234 15 58 58
+
+				<button>
+					id		btn_skill_3
+					enable		true
+					visible		true
+					layer		150
+					rect		0 0 58 58
+					type		1
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	over
+						screen	renewalskillwnd
+						index	8
+					</image>
+					<image>
+						key	down
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	disable
+						screen	renewalskillwnd
+						index	7
+					</image>
+
+				</button>
+
+			</panel>
+
+			<panel>
+				id		pan_skill_4
+				enable		true
+				visible		true
+				layer		150
+				rect		18 78 58 58
+
+				<button>
+					id		btn_skill_4
+					enable		true
+					visible		true
+					layer		150
+					rect		0 0 58 58
+					type		1
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	over
+						screen	renewalskillwnd
+						index	8
+					</image>
+					<image>
+						key	down
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	disable
+						screen	renewalskillwnd
+						index	7
+					</image>
+
+				</button>
+
+			</panel>
+
+			<panel>
+				id		pan_skill_5
+				enable		true
+				visible		true
+				layer		150
+				rect		90 78 58 58
+
+				<button>
+					id		btn_skill_5
+					enable		true
+					visible		true
+					layer		150
+					rect		0 0 58 58
+					type		1
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	over
+						screen	renewalskillwnd
+						index	8
+					</image>
+					<image>
+						key	down
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	disable
+						screen	renewalskillwnd
+						index	7
+					</image>
+
+				</button>
+
+			</panel>
+
+			<panel>
+				id		pan_skill_6
+				enable		true
+				visible		true
+				layer		150
+				rect		162 78 58 58
+
+				<button>
+					id		btn_skill_6
+					enable		true
+					visible		true
+					layer		150
+					rect		0 0 58 58
+					type		1
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	over
+						screen	renewalskillwnd
+						index	8
+					</image>
+					<image>
+						key	down
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	disable
+						screen	renewalskillwnd
+						index	7
+					</image>
+
+				</button>
+
+			</panel>
+
+			<panel>
+				id		pan_skill_7
+				enable		true
+				visible		true
+				layer		150
+				rect		234 78 58 58
+
+				<button>
+					id		btn_skill_7
+					enable		true
+					visible		true
+					layer		150
+					rect		0 0 58 58
+					type		1
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	over
+						screen	renewalskillwnd
+						index	8
+					</image>
+					<image>
+						key	down
+						screen	renewalskillwnd
+						index	7
+					</image>
+					<image>
+						key	disable
+						screen	renewalskillwnd
+						index	7
+					</image>
+
+				</button>
+
+			</panel>
+
+			<vscroll>
+				id		skill_tree_scroll
+				enable		true
+				visible		true
+				layer		100
+				rect		297 0 13  140
+				maxvalue	2
+				buttontick  1
+
+				<button>
+					id		skill_tree_scroll_upbtn
+					enable		true
+					visible		true
+					layer		150
+					rect		0 0 13 13
+					type		1
+					<image>
+						key	0
+						screen	skill_reinforce
+						index	11
+					</image>
+					<image>
+						key	over
+						screen	skill_reinforce
+						index	12
+					</image>
+					<image>
+						key	down
+						screen	skill_reinforce
+						index	13
+					</image>
+				</button>
+
+				<button>
+					id		skill_tree_scroll_downbtn
+					enable		true
+					visible		true
+					layer		150
+					rect		0 127 13 13
+					type		1
+					<image>
+						key	0
+						screen	skill_reinforce
+						index	14
+					</image>
+					<image>
+						key	over
+						screen	skill_reinforce
+						index	15
+					</image>
+					<image>
+						key	down
+						screen	skill_reinforce
+						index	16
+					</image>
+				</button>
+
+				<panel>
+					id		skill_tree_scroll_bar
+					enable		true
+					visible		true
+					layer		150
+					rect		0 13 13 36
+					moveable	true
+					<image>
+						key	0
+						screen	skill_reinforce
+						index	17
+					</image>
+				</panel>
+			</vscroll>			
+		</panel>	
+
+		<panel>
+			id		pan_choice_skill
+			enable		true
+			visible		true
+			layer		1
+			rect		110 253 40 40
+			<image>
+				key	none
+				screen	renewalskillwnd
+				index	9
+			</image>
+		</panel>
+
+		<label>
+			id			lbl_level
+			enable		true
+			visible		true
+			layer		150
+			align		left
+			rect		158 256 100 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0
+				text2 		100 5
+			</title>
+		</label>
+
+		<label>
+			id			lbl_skillname
+			enable		true
+			visible		true
+			layer		150
+			align		left
+			rect		158 278 100 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0
+				text2 		100 5
+			</title>
+		</label>
+
+		<label>
+			id			lbl_subtitle2
+			enable		true
+			visible		true
+			layer		100
+			align		left
+			rect		16 311 358 33
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+				text2 		150 202
+			</title>
+		</label>
+
+		<panel>
+			id		pan_item_slot
+			enable		true
+			visible		true
+			layer		150
+			rect		20 345 57 57
+	
+			<image>
+				key	0
+				screen	skill_reinforce
+				index	20
+			</image>
+
+			<item>
+				id		skill_item
+				enable		true
+				visible		true
+				layer		10
+				rect		12 11 33 33
+				cellsize	33 33
+				align 		center
+			</item>
+		</panel>
+
+		<panel>
+			id		pan_cach_item
+			enable		true
+			visible		true
+			layer		150
+			rect		87 345 57 57
+	
+			<image>
+				key	0
+				screen	skill_reinforce
+				index	20
+			</image>
+
+			<item>
+				id		cash_item
+				enable		true
+				visible		true
+				layer		10
+				rect		12 11 33 33
+				cellsize	33 33
+				align 		center
+			</item>
+		</panel>
+
+		<label>
+			id		lbl_ratio
+			enable		true
+			visible		true
+			layer		150
+			align		left
+			rect		175 354 109 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0
+			</title>
+		</label>
+
+		<label>
+			id			lbl_need_money
+			enable		true
+			visible		true
+			layer		150
+			align		left
+			rect		181 376 69 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0
+				text2 		100 5
+			</title>
+		</label>
+
+		<button>
+			id		btn_upgrad
+			enable		true
+			visible		true
+			layer		150
+			align       	center
+			rect		280 354 70 38
+			<image>
+				key	0
+				screen	skill_reinforce
+				index	5
+			</image>
+			<image>
+				key	over
+				screen	skill_reinforce
+				index	6
+			</image>
+			<image>
+				key	down
+				screen	skill_reinforce
+				index	7
+			</image>
+			<image>
+				key	disable
+				screen	skill_reinforce
+				index	5
+			</image>
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 10
+				text2 		150 203
+			</title>
+		</button>
+
+		<button>
+			id		btn_close
+			enable		true
+			visible		true
+			layer		200
+			align       	center
+			rect		151 422 65 20
+			<image>
+				key	0
+				screen	skill_reinforce
+				index	8
+			</image>
+			<image>
+				key	over
+				screen	skill_reinforce
+				index	9
+			</image>
+			<image>
+				key	down
+				screen	skill_reinforce
+				index	10
+			</image>
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+				text2 		2000 53
+			</title>
+		</button>
+	</panel>
+</window>

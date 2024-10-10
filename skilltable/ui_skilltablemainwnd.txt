@@ -1,0 +1,449 @@
+window_layer	auto
+window_size	base	base
+//window_alignaxis	left	top
+//window_position	0	0
+window_visible	true
+
+create_control	button	btn_open
+{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	OPEN
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	32	15
+	control_drawpoint	80	28
+	control_enable	true
+	control_visible	true
+}
+
+create_control	button	btn_save
+{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	SAVE
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	32	15
+	control_drawpoint	140	28
+	control_enable	true
+	control_visible	true
+}
+
+create_control	button	btn_exit
+{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	2	2	Close
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	36	15
+	control_drawpoint	200	28
+	control_enable	true
+	control_visible	true
+}
+
+create_control	panel	pan_skilllist
+{
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	160	660
+	control_drawpoint	5	100
+	control_enable	true
+	control_visible	true
+	
+	create_control	panel	pan_skilltitle
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	50	1	SkillList
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	148	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	list	lst_skilllist
+	{
+	control_group	13
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	150	600
+	control_drawpoint	5	20
+	control_enable	true
+	control_visible	true
+	control_build		
+	clist_size	2	41
+	clist_columnwidth	50
+	clist_columnwidth	100
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_lineheight	14
+	clist_color	select	210	210	210
+	clist_color	grid	100	100	100
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+	addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+	addcontrol_image	back	color	255	230	230	230
+	}
+
+	create_control	button	btn_listdel
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	5	2	Del
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	30 15
+		control_drawpoint	15 630
+		control_enable	true
+		control_visible	true
+	}	
+	
+	create_control	button	btn_listadd
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	5	2	Add
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	30 15
+		control_drawpoint	60 630
+		control_enable	true
+		control_visible	true
+	}
+}
+
+create_control	panel	pan_combolist
+{
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	100	400
+	control_drawpoint	170	100
+	control_enable	true
+	control_visible	true
+	
+	create_control	panel	pan_combottitle
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	10	1	combolist
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	92	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	list	lst_combolist
+	{
+	control_group	13
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	90	360
+	control_drawpoint	5	20
+	control_enable	true
+	control_visible	true
+	control_build		
+	clist_size	2	25
+	clist_columnwidth	50
+	clist_columnwidth	40
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_lineheight	14
+	clist_color	select	210	210	210
+	clist_color	grid	100	100	100
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+	addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+	addcontrol_image	back	color	255	230	230	230
+	}
+}
+
+create_control	panel	pan_Levellist
+{
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	100	250
+	control_drawpoint	170	500
+	control_enable	true
+	control_visible	true
+	
+	create_control	panel	pan_Levelttitle
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	10	1	Levellist
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	92	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	list	lst_Levellist
+	{
+	control_group	13
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	90	220
+	control_drawpoint	5	20
+	control_enable	true
+	control_visible	true
+	control_build		
+	clist_size	2	15
+	clist_columnwidth	50
+	clist_columnwidth	40
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_lineheight	14
+	clist_color	select	210	210	210
+	clist_color	grid	100	100	100
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+	addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+	addcontrol_image	back	color	255	230	230	230
+	}
+}
+
+create_control	panel	pan_datalist
+{
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	730	250
+	control_drawpoint	280	100
+	control_enable	true
+	control_visible	true
+	
+	create_control	panel	pan_datattitle
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	10	1	datalist
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	722	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	list	lst_datalist
+	{
+	control_group	13
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	720	220
+	control_drawpoint	5	25
+	control_enable	true
+	control_visible	true
+	control_build		
+	clist_size	13	15
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnwidth	50
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_lineheight	14
+	clist_color	select	210	210	210
+	clist_color	grid	100	100	100
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+	addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+	addcontrol_image	back	color	255	230	230	230
+	}
+}
+
+create_control	panel	pan_list
+{
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	730	250
+	control_drawpoint	280	350
+	control_enable	true
+	control_visible	true
+	
+	create_control	panel	pan_title
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	10	1	list
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	722	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_list
+	{
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	13
+	control_drawpoint	5	20
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	list	lst_list
+	{
+	control_group	13
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	720	200
+	control_drawpoint	5	35
+	control_enable	true
+	control_visible	true
+	control_build		
+	clist_size	11	15
+	clist_columnwidth	67
+	clist_columnwidth	67
+	clist_columnwidth	67
+	clist_columnwidth	67
+	clist_columnwidth	67
+	clist_columnwidth	67
+	clist_columnwidth	67
+	clist_columnwidth	67
+	clist_columnwidth	67
+	clist_columnwidth	67
+	clist_columnwidth	67
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_lineheight	14
+	clist_color	select	210	210	210
+	clist_color	grid	100	100	100
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+	addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+	addcontrol_image	back	color	255	230	230	230
+	}
+}
+
+create_control	panel	pan_elelist
+{
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	730	100
+	control_drawpoint	280	600
+	control_enable	true
+	control_visible	true
+	
+	create_control	panel	pan_eletitle
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	10	1	Element
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	722	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	list	lst_elelist
+	{
+	control_group	13
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	720	60
+	control_drawpoint	5	35
+	control_enable	true
+	control_visible	true
+	control_build		
+	clist_size	16	15
+	clist_columnwidth	30
+	clist_columnwidth	30
+	clist_columnwidth	75
+	clist_columnwidth	30
+	clist_columnwidth	30
+	clist_columnwidth	80
+	clist_columnwidth	46
+	clist_columnwidth	25
+	clist_columnwidth	25
+	clist_columnwidth	46
+	clist_columnwidth	60
+	clist_columnwidth	28
+	clist_columnwidth	28
+	clist_columnwidth	28S
+	clist_columnwidth	25
+	clist_columnwidth	110
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_columnheight	0
+	clist_lineheight	14
+	clist_color	select	210	210	210
+	clist_color	grid	100	100	100
+	addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+	addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+	addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+	addcontrol_image	back	color	255	230	230	230
+	}
+}

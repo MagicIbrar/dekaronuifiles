@@ -1,0 +1,291 @@
+<window>
+
+	name					vaccine_event
+	enable					true
+	visible					true
+	layer					100
+	position				left top
+	rect					0 0 347 251
+	titlerect				7 9 315 33
+
+	<panel>
+		id				pan_bg_event
+		enable				true
+		visible				true
+		layer				1
+		rect				0 0 347 251
+
+		<image>
+			key			0
+			screen			eventcard
+			index			1
+		</image>
+
+	</panel>
+
+	<label>
+		id				lbl_title
+		enable				true
+		visible				true
+		layer				10
+		rect				7 9 315 24
+		align				center
+
+		<title>
+			color			ffffffff
+			fontIndex		4
+			position		0 7
+			text2 			2300 9
+		</title>
+
+	</label>
+
+	<button>
+		id				btn_exit
+		enable				true
+		visible				true
+		layer				100
+		rect		313 14 15 15
+
+		sound				0
+
+		<image>
+			key				0
+			screen			etc_01
+			index		315
+
+		</image>
+
+		<image>
+			key				over
+			screen			etc_01
+			index		316
+
+		</image>
+
+		<image>
+			key				down
+			screen			etc_01
+			index		317
+
+		</image>
+
+	</button>
+
+	<button>
+		id				btn_reward
+		enable				true
+		visible				true
+		align 				center
+		layer				100
+		rect				141 216 64 19
+
+		<image>
+			key			disable
+			screen			eventcard
+			index			3
+		</image>
+
+		<image>
+			key			none
+			screen			eventcard
+			index			4
+		</image>
+
+		<image>
+			key			over
+			screen			eventcard
+			index			5
+		</image>
+
+		<image>
+			key			down
+			screen			eventcard
+			index			6
+		</image>
+
+		<title>
+			state 			disable
+			color			ff929292
+			fontIndex		4
+			position		0 4
+			text2 			2300 10
+		</title>
+
+		<title>
+			state 			none
+			color			ffffffff
+			fontIndex		4
+			position		0 4
+			text2 			2300 10
+		</title>
+
+		<title>
+			state 			over
+			color			ffffffff
+			fontIndex		4
+			position		0 4
+			text2 			2300 10
+		</title>
+
+		<title>
+			state 			down
+			color			ff929292
+			fontIndex		4
+			position		2 7
+			text2 			2300 10
+		</title>
+
+	</button>
+
+	<panel>
+		id		point_1
+		enable		true
+		visible		true
+		layer		120
+		rect		19 55 52 52
+
+		<image>   
+			key	0
+			screen	eventcard
+			index	2
+		</image>
+
+	</panel>
+
+	<panel>
+		id		point_2
+		enable		true
+		visible		true
+		layer		120
+		rect		83 55 52 52
+
+		<image>   
+			key	0
+			screen	eventcard
+			index	2
+		</image>
+
+	</panel>
+
+	<panel>
+		id		point_3
+		enable		true
+		visible		true
+		layer		120
+		rect		147 55 52 52
+
+		<image>   
+			key	0
+			screen	eventcard
+			index	2
+		</image>
+
+	</panel>
+
+	<panel>
+		id		point_4
+		enable		true
+		visible		true
+		layer		120
+		rect		211 55 52 52
+
+		<image>   
+			key	0
+			screen	eventcard
+			index	2
+		</image>
+
+	</panel>
+
+	<panel>
+		id		point_5
+		enable		true
+		visible		true
+		layer		120
+		rect		275 55 52 52
+
+		<image>   
+			key	0
+			screen	eventcard
+			index	2
+		</image>
+
+	</panel>
+
+	<panel>
+		id		point_6
+		enable		true
+		visible		true
+		layer		120
+		rect		19 135 52 52
+
+		<image>   
+			key	0
+			screen	eventcard
+			index	2
+		</image>
+
+	</panel>
+
+	<panel>
+		id		point_7
+		enable		true
+		visible		true
+		layer		120
+		rect		83 135 52 52
+
+		<image>   
+			key	0
+			screen	eventcard
+			index	2
+		</image>
+
+	</panel>
+
+	<panel>
+		id		point_8
+		enable		true
+		visible		true
+		layer		120
+		rect		147 135 52 52
+
+		<image>   
+			key	0
+			screen	eventcard
+			index	2
+		</image>
+
+	</panel>
+
+	<panel>
+		id		point_9
+		enable		true
+		visible		true
+		layer		120
+		rect		211 135 52 52
+
+		<image>   
+			key	0
+			screen	eventcard
+			index	2
+		</image>
+
+	</panel>
+
+	<panel>
+		id		point_10
+		enable		true
+		visible		true
+		layer		120
+		rect		275 135 52 52
+
+		<image>   
+			key	0
+			screen	eventcard
+			index	2
+		</image>
+
+	</panel>
+
+</window>

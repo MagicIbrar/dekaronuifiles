@@ -1,0 +1,365 @@
+<window>
+	name			tilewnd
+	enable			true
+	visible			true
+	layer			100
+	rect			5 40 550 600
+	titlerect		0 0 336 20
+		
+	<panel>
+		id		pan_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 360 135
+		<image>
+			key		none
+			screen	toolbar
+			index	1
+		</image>		
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		102
+			align		center
+			rect		0 0 342 18
+			<title>
+				color		ffFFFFFF
+				fontIndex	4
+				text		"Tile Property"
+			</title>
+			<image>
+				key		none
+				screen	common
+				index	1
+				color	90010101
+			</image>			
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		110
+			align		center
+			rect		342 0 18 18
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text		"X"
+			</title>
+			<image>
+				key		none
+				screen	common
+				index	1
+				color	90010101
+			</image>
+		</button>		
+	</panel>		
+	<panel>
+		id		pan_edit
+		enable		true
+		visible		true
+		layer		100
+		rect		0 20 360 38
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		102
+			align		center
+			rect		10 3 35 15
+			<title>
+				color		ff080808
+				fontIndex	2
+				text		"Path:"
+			</title>			
+		</label>
+		<edit>
+			id			edit_text
+			enable		true
+			visible		true
+			layer		100
+			rect		45 3 100 15
+			maxlength	30
+			font_type	2
+			input_type	0
+			align		1
+			color		ff080808
+			multiline   	false
+			<image>
+				key		none
+				screen	common
+				index	1
+				color	90909090
+			</image>
+		</edit>	
+		<combobox>
+			id			com_type
+			enable		true
+			visible		true
+			border 		false
+			layer		90
+			rect		220 1 130 19	
+			<image>
+				key		1
+				screen	common
+				index	1
+				color	90FFFFFF
+			</image>		
+			<iteminfo>		
+				rect 	0 0 130 18					
+			</iteminfo>			
+			<nodeinfo>
+				selrect		1 1 128 16 
+				btnrect		112 0 18 18			
+				<image>
+					key		board_body
+					screen	common
+					index	1
+					color	DF707070
+				</image>
+				<image>
+					key		board_tag
+					screen	common
+					index	1
+					color	DF808080
+				</image>
+				<image>
+					key		btn_over
+					screen	common
+					index	1
+					color	90c09090
+				</image>
+				<image>
+					key		btn_none
+					screen	common
+					index	1
+					color	90808080
+				</image>
+				<image>
+					key		btn_down
+					screen	common
+					index	1
+					color	90404040
+				</image>				
+			</nodeinfo>		
+		</combobox>
+	</panel>
+	<panel>
+		id		pan_bar1
+		enable		true
+		visible		true
+		layer		90
+		rect		0 40 360 90	
+		<combobox>
+			id			com_list
+			enable		true
+			visible		true
+			border 		false
+			layer		98
+			rect		120 75 230 19 
+			<image>
+				key		1
+				screen	common
+				index	1
+				color	90FFFFFF
+			</image>
+			<iteminfo>		
+				rect 	0 0 230 18	
+			</iteminfo>			
+			<nodeinfo>
+				selrect		1 1 228 16
+				btnrect		212 0 18 18			
+				<image>
+					key		board_body
+					screen	common
+					index	1
+					color	DF707070
+				</image>
+				<image>
+					key		board_tag
+					screen	common
+					index	1
+					color	DF808080
+				</image>
+				<image>
+					key		btn_over
+					screen	common
+					index	1
+					color	90c09090
+				</image>
+				<image>
+					key		btn_none
+					screen	common
+					index	1
+					color	90808080
+				</image>
+				<image>
+					key		btn_down
+					screen	common
+					index	1
+					color	90404040
+				</image>
+			</nodeinfo>		
+		</combobox>
+		
+		<button>
+			id		btn_tile1
+			enable		true
+			visible		true
+			layer		100
+			rect		5 5 68 68 
+			<image>
+				key		none
+				screen	common
+				index	1
+				color	90010101
+			</image>
+			<image>
+				key		over
+				screen	common
+				index	1
+				color	F03030F0
+			</image>
+			<image>
+				key		down
+				screen	common
+				index	1
+				color	90909090
+			</image>
+			<image>
+				key		check
+				screen	common
+				index	1
+				color	FF0000A0
+			</image>
+		</button>
+		<button>
+			id		btn_tile2
+			enable		true
+			visible		true
+			layer		100
+			rect		75 5 68 68 
+			<image>
+				key		none
+				screen	common
+				index	1
+				color	90010101
+			</image>
+			<image>
+				key		over
+				screen	common
+				index	1
+				color	F03030F0
+			</image>
+			<image>
+				key		down
+				screen	common
+				index	1
+				color	90909090
+			</image>
+			<image>
+				key		check
+				screen	common
+				index	1
+				color	FF0000A0
+			</image>
+		</button>
+		<button>
+			id		btn_tile3
+			enable		true
+			visible		true
+			layer		100
+			rect		145 5 68 68 
+			<image>
+				key		none
+				screen	common
+				index	1
+				color	90010101
+			</image>
+			<image>
+				key		over
+				screen	common
+				index	1
+				color	F03030F0
+			</image>
+			<image>
+				key		down
+				screen	common
+				index	1
+				color	90909090
+			</image>
+			<image>
+				key		check
+				screen	common
+				index	1
+				color	FF0000A0
+			</image>
+		</button>
+		<button>
+			id		btn_tile4
+			enable		true
+			visible		true
+			layer		100
+			rect		215 5 68 68 
+			<image>
+				key		none
+				screen	common
+				index	1
+				color	90010101
+			</image>
+			<image>
+				key		over
+				screen	common
+				index	1
+				color	F03030F0
+			</image>
+			<image>
+				key		down
+				screen	common
+				index	1
+				color	90909090
+			</image>
+			<image>
+				key		check
+				screen	common
+				index	1
+				color	FF0000A0
+			</image>
+		</button>
+		<button>
+			id		btn_tile5
+			enable		true
+			visible		true
+			layer		100
+			rect		285 5 68 68 
+			<image>
+				key		none
+				screen	common
+				index	1
+				color	90010101
+			</image>
+			<image>
+				key		over
+				screen	common
+				index	1
+				color	F03030F0
+			</image>
+			<image>
+				key		down
+				screen	common
+				index	1
+				color	90909090
+			</image>
+			<image>
+				key		check
+				screen	common
+				index	1
+				color	FF0000A0
+			</image>
+		</button>
+		
+		
+	</panel>
+</window>

@@ -1,0 +1,813 @@
+window_layer	auto
+window_size	174	500
+window_alignaxis	right	top
+window_position	-10	230
+window_visible	false
+
+create_control	panel	base
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	174	500
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_title
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	요구
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	168	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_separate00
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	7	18	2	2
+	control_drawdiv	xy	1
+	control_drawsize	170	2
+	control_drawpoint	0	470
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_0
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	18
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_1
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	32
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_2
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	46
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_3
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	60
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_4
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	74
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_5
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	88
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_6
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	102
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_7
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	116
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_8
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	130
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_9
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	144
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_10
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	158
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_11
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	172
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_12
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	186
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_13
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	200
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_14
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	214
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_15
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	228
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_16
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	242
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_17
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	256
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_18
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	270
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_19
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	284
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_20
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	298
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_21
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	312
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_22
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	326
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_23
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	340
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_24
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	354
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_25
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	368
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_26
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	382
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_27
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	396
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_28
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	410
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_29
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	424
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_30
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	438
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_31
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	452
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_apply
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	5	3	Apply
+	control_textcolor	0	0	0
+	control_drawdiv	xy	2
+	control_drawsize	55	20
+	control_drawpoint	100	475
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_check_all
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	4	478
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	text	txt_view2_0
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	기사
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	18
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_1
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	궁사
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	32
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_10
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	법사
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	46
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_11
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	소환수
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	60
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_12
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	74
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_13
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	88
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_14
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	102
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_15
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	116
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_16
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	130
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_17
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	144
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_18
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	158
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_19
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	172
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_2
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	186
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_20
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	200
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_21
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	214
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_22
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	228
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_23
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	242
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_24
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	256
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_25
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	270
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_26
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	284
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_27
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	298
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_28
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	312
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_29
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	326
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_3
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	340
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_30
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	354
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_31
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	368
+	control_enable	true
+	control_visible	true
+
+	create_control	text	txt_view2_all
+	{
+	control_color	true	0	0	0	0
+	control_text	0	0	All
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	44	13
+	control_drawpoint	20	28
+	control_enable	true
+	}
+}
+
+create_control	text	txt_view2_4
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	382
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_5
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	396
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_6
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	410
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_7
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	424
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_8
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	438
+	control_enable	true
+	control_visible	true
+}
+
+create_control	text	txt_view2_9
+{
+	control_color	true	0	0	0	0
+	control_text	0	0	클래스
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	144	13
+	control_drawpoint	20	452
+	control_enable	true
+	control_visible	true
+}

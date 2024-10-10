@@ -1,0 +1,677 @@
+<window>
+	name			login
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	rect			0 0 0 0
+	titlerect		0 0 0 0
+	<panel>
+		id			pan_qrcode
+		enable		false
+		visible		false
+		layer		123
+		position	left bottom
+		rect		10 -151 115 141
+		<image>
+			key	0
+			color	ffffffff
+			screen	login_a
+			index	52
+		</image>
+	</panel>
+	<panel>
+		id			pan_dekaron_logo
+		enable		true
+		visible		true
+		layer		123
+		position	left top
+		#rect		-100 100 340 177
+		#rect		55 -80 170 158		
+		rect		55 20 170 158	
+		<image>
+			key	0
+			color	ffffffff
+			screen	login_a
+			index	51
+		</image>
+	</panel>	
+	<panel>
+		id			pan_widebackup
+		enable		true
+		visible		false
+		layer		113
+		position	inverse top
+		rect		0 0 0 78
+		<image>
+			key	0
+			color	ff010101
+			screen	common
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_widebackup_1
+		enable		true
+		visible		false
+		layer		113
+		position	inverse top
+		rect		0 78 0 32
+		<image>
+			key	0
+			color	ff010101
+			screen	login_wide
+			index	2
+		</image>
+	</panel>
+	<panel>
+		id			pan_widebackdown
+		enable		true
+		visible		false
+		layer		113
+		position	inverse bottom
+		rect		0 -78 0 78
+		<image>
+			key	0
+			color	ff010101
+			screen	common
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_widebackdown_1
+		enable		true
+		visible		false
+		layer		113
+		position	inverse bottom
+		rect		0 -110 0 32
+		<image>
+			key	0
+			color	ff010101
+			screen	login_wide
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_15
+		enable		true
+		visible		true
+		layer		123
+		position	right top
+		rect		-372 19 172 81
+		<image>
+			key	0
+			screen	rank
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_18
+		enable		true
+		visible		true
+		layer		123
+		position	right top
+		rect		-186 19 172 80
+		<image>
+			key	0
+			screen	rank
+			index	2
+		</image>
+	</panel>
+	<panel>
+		id			pan_selectgroup
+		enable		true
+		visible		true
+		layer		200
+		position	center bottom
+		rect		-512 -300 1024 262 
+		<panel>
+			id			pan_bg_title
+			enable		true
+			visible		true
+			layer		100
+			position	center top
+			rect		-61 22 122 19
+			<image>
+				key	0
+				screen	loginselect
+				index	7
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_title_eng
+			enable		true
+			visible		false
+			layer		100
+			position	center top
+			rect		-81 22 162 15
+			<image>
+				key	0
+				screen	loginselect
+				index	8
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_left
+			enable		true
+			visible		true
+			layer		10
+			position	center top
+			rect		-164 0 164 262
+			<image>
+				key	0
+				screen	loginselect
+				index	1
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_right
+			enable		true
+			visible		true
+			layer		10
+			position	center top
+			rect		0 0 164 262
+			<image>
+				key	0
+				screen	loginselect
+				index	2
+			</image>
+		</panel>
+		<label>
+			id			lbl_tagserverlist
+			enable		true
+			visible		false
+			layer		60
+			align 		center
+			position	center top
+			rect		-512 18 1024 24
+			<title>
+				color		ffffffff
+				fontIndex	14
+				text2 		30 31
+			</title>
+		</label>
+		<panel>
+			id			pan_serverlist
+			enable		false
+			visible		false
+			layer		15
+			position	left top
+			rect		0 58 146 162
+			<image>
+				key	0
+				screen	loginselect
+				index	3
+			</image>
+			<title>
+				color		ffff0000
+				fontIndex	4
+				position	44 60
+				text		"Text Only"
+			</title>
+			<label>
+				id			lbl_serverlist
+				enable		true
+				visible		true
+				layer		20
+				align 		center
+				rect		0 12 146 20
+				<title>
+					color		ff828282
+					fontIndex	8
+				</title>
+			</label>
+			<timerpanel>
+				id			tpan_serverlist
+				enable		true
+				visible		false
+				layer		15
+				intersect	false
+				position	center center
+				rect		-61 -69 122 138 
+			</timerpanel>
+			<button>
+				id			btn_serverlist
+				enable		true
+				visible		true
+				layer		10
+				align 		center
+				position	center center
+				rect		-61 -69 122 138 
+			</button>
+		</panel>
+		<button>
+			id			select_ok
+			enable		true
+			visible		true
+			layer		110
+			align 		center
+			position	center top
+			rect		-45 224 90 29
+			<image>
+				key		none
+				screen	loginselect
+				index	4
+			</image>
+			<image>
+				key		over
+				screen	loginselect
+				index	5
+			</image>
+			<image>
+				key		down
+				screen	loginselect
+				index	6
+			</image>
+			<title>
+				state 		none
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+				text2		2000 15
+			</title>
+		</button>
+	</panel>
+	<panel>
+		id			pan_login
+		enable		true
+		visible		false
+		layer		200
+		position	center bottom 
+		rect		-108 -177 217 128  
+		<image>
+			key		0
+			screen	login
+			index	1
+		</image>
+		<label>
+			id			lbl_login
+			enable		true
+			visible		false
+			layer		60
+			align 		center
+			rect		28 2 159 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		30 26
+			</title>
+		</label>
+		<label>
+			id			pan_pantheon
+			enable		true
+			visible		true
+			layer		103
+			align		center
+			rect		18 30 180 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_tagID
+			enable		true
+			visible		true
+			layer		60
+			rect		10 53 40 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		30 27
+			</title>
+		</label>
+		<edit>
+			id			edt_account
+			enable		true
+			visible		true
+			layer		110
+			rect		55 53 143 14
+			maxlength	20
+			font_type	2
+			input_type	0
+			align		1
+			color		ffffffff
+			multiline   	false
+		</edit>	
+		
+		<label>
+			id			lbl_tagPW
+			enable		true
+			visible		true
+			layer		60
+			rect		10 76 40 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		30 28
+			</title>
+		</label>
+		<edit>
+			id			edt_password
+			enable		true
+			visible		true
+			layer		110
+			rect		55 76 143 14
+			maxlength	16
+			font_type	2
+			input_type	0
+			align		1
+			passwd		true
+			color		ffffffff
+			multiline   	false
+		</edit>	
+		<button>
+			id			btn_login
+			enable		true
+			visible		true
+			layer		110
+			align 		center
+			rect		17 103 57 19
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		30 26
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state		disable
+				color		ff828282
+				fontIndex	2
+				position	0 3
+			</title>
+		</button>
+		<button>
+			id			btn_pantheon
+			enable		true
+			visible		true
+			layer		110
+			align 		center
+			rect		80 103 57 19
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		30 29
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_quit
+			enable		true
+			visible		true
+			layer		110
+			align 		center
+			rect		143 103 57 19
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		30 30
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_homepage
+			enable		true
+			visible		false
+			layer		110
+			align 		center
+			rect		80 95 57 19
+			<image>
+				key		none
+				screen	loginselect
+				index	9
+			</image>
+			<image>
+				key		over
+				screen	loginselect
+				index	10
+			</image>
+			<image>
+				key		down
+				screen	loginselect
+				index	11
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text		"Home"
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_vk
+			enable		true
+			visible		true
+			layer		110
+			align 		center
+			rect		189 2 26 16
+			tooltip		2000 31
+			<image>
+				key		none
+				screen	login
+				index	4
+			</image>
+			<image>
+				key		down
+				screen	login
+				index	5
+			</image>
+			<image>
+				key		over
+				screen	login
+				index	6
+			</image>
+			<image>
+				key		check
+				screen	login
+				index	6
+			</image>
+		</button>
+	</panel>
+
+	<label>
+		id			lbl_tag_copyright
+		enable		true
+		visible		true
+		layer		123
+		align		center
+		position	inverse bottom
+		rect		0 -25 0 20  
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text		" "
+		</title>
+	</label>
+
+	<panel>
+		id			pan_message
+		enable		true
+		visible		false
+		layer		200
+		position	center bottom
+		rect		-170 -230 339 48
+		<image>
+			key		0
+			screen	login_a
+			index	3
+		</image>
+		<label>
+			id			lbl_message
+			enable		true
+			visible		true
+			layer		210
+			position	center
+			align		center
+			rect		15 15 318 27
+			<title>
+				color		ffffffff
+				fontIndex	3
+				text		" "
+			</title>
+		</label>
+	</panel>
+
+	<panel>
+		id			pan_msg_22
+		enable		true
+		visible		false
+		layer		103
+		position	center bottom
+		rect		-150 -28 300 13  
+		<label>
+			id			lbl_warningMsg_22
+			enable		true
+			visible		true
+			layer		103
+			align		center
+			position	center top
+			rect		-150 0 300 13
+			<title>
+				color		ffffffff
+				fontIndex	3
+				text		"abc"
+			</title>
+		</label>
+	</panel>
+
+	<panel>
+		id			pan_message2
+		enable		true
+		visible		false
+		layer		300
+		position		center top
+		rect		-145 175 290 349
+		<image>
+			key		0
+			screen	login
+			index	3
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		210
+			align		center
+			rect		0 2 290 16
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2		30 32
+			</title>
+		</label>
+		<label>
+			id			lbl_message1
+			enable		true
+			visible		true
+			layer		210
+			rect		23 38 242 264
+			multiline		true
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text		" "
+			</title>
+		</label>
+		<button>
+			id			btn_OK
+			enable		true
+			visible		true
+			layer		500
+			align 		center
+			rect		116 324  56 18
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		2000 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292	
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+	</panel>
+	
+</window>

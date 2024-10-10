@@ -1,0 +1,13 @@
+
+#maptoolcommand	create_map	3	"create_map [file_name] [size_x] [size_z]
+#maptoolcommand	load_map	1	"load_map [file_name]"
+#maptoolcommand	load_object	1	"load_object [file_name]"
+#maptoolcommand	load_effect	1	"load_effect [file_name]"
+#maptoolcommand	load_attribute	1	"save_attribute [file_name]"
+#maptoolcommand	load_objectpack	1	"load_objectpack [file_name]"
+#maptoolcommand	save_map	1	"save_map [file_name]"
+#maptoolcommand	save_object	1	"save_object [file_name]"
+#maptoolcommand	save_effect	1	"save_effect [file_name]"
+#maptoolcommand	save_attribute	1	"save_attribute [file_name]"
+#maptoolcommand	save_objectpack	1	"save_objectpack [file_name]"
+#maptoolcommand	maptexturepath	1	"maptexturepath [path name]"

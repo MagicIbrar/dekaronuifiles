@@ -1,0 +1,479 @@
+<window>
+	name			guilddungeondeliverywnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-334 -304 334 304
+	titlerect		7 8 306 25
+	alwaysontop		true
+	<panel>
+		id				pan_guilddelivery
+		enable			true
+		visible			true
+		layer			100
+		rect			0 0 320 492
+		<image>
+			key			none
+			screen		guild_delivery
+			index		1
+		</image>
+		
+		<label>
+			id			lbl_tagtitle
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		7 8 306 25
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 7
+				text2		132 200
+			</title>
+		</label>
+		<label>
+			id			lbl_tagitemname
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		7 53 186 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+				text2		132 201
+			</title>
+		</label>
+		<label>
+			id			lbl_tagpoint
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		196 53 116 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+				text2		132 5
+			</title>
+		</label>
+		<button>
+			id	btn_exit
+			enable	true
+			visible	true
+			layer	100
+			rect		293 14 15 15
+
+			sound	0
+			<image>
+				key	none
+				color	ffffffff
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key	over
+				color	ffffffff
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key	down
+				color	ffffffff
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<panel>
+			id			pan_deliveryitemlist
+			enable			true
+			visible			true
+			layer			100
+			rect			6 75 308 250
+			<panel>
+				id			pan_deliveryitem
+				enable		false
+				visible		false
+				layer		10
+				align		center
+				rect		0 0 292 25
+				<label>
+					id		lbl_itemname
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 190 25
+					<title>
+						color		ffffffff
+						fontIndex	4
+						position	15 7
+					</title>
+				</label>
+				<label>
+					id		lbl_itempoint
+					enable		true
+					visible		true
+					layer		10
+					align		center
+					rect		190 0 102 25
+					<title>
+						color		ffffffff
+						fontIndex	4
+						position	0 7
+					</title>
+				</label>
+			</panel>
+			<vscroll>
+				id		body_scroll
+				enable		true
+				visible		true
+				layer		100
+				rect		294 0 13 250
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			body_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 13 13
+					type		1
+					<image>
+						key		0
+						screen	guild_delivery
+						index	2
+					</image>
+					<image>
+						key		over
+						screen	guild_delivery
+						index	3
+					</image>
+					<image>
+						key		down
+						screen	guild_delivery
+						index	4
+					</image>
+				</button>
+				<button>
+					id			body_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 237 13 13
+					type		1
+					<image>
+						key		0
+						screen	guild_delivery
+						index	5
+					</image>
+					<image>
+						key		over
+						screen	guild_delivery
+						index	6
+					</image>
+					<image>
+						key		down
+						screen	guild_delivery
+						index	7
+					</image>	
+				</button>
+				<panel>
+					id			body_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					noneimage 	true
+					<image>
+						key		none
+						screen	guild_delivery
+						index	8
+					</image>
+					<image>
+						key		over
+						screen	guild_delivery
+						index	9
+					</image>
+					<image>
+						key		down
+						screen	guild_delivery
+						index	10
+					</image>
+				</panel>
+			</vscroll>			
+		</panel>
+		<label>
+			id		lbl_tagitemregister
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		7 328 156 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+				text2		132 202
+			</title>
+		</label>
+		<item>
+			id			delivery_item_0
+			enable		true
+			visible		true
+			layer		10
+			rect		19 367 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<item>
+			id			delivery_item_1
+			enable		true
+			visible		true
+			layer		10
+			rect		53 367 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<item>
+			id			delivery_item_2
+			enable		true
+			visible		true
+			layer		10
+			rect		87 367 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<item>
+			id			delivery_item_3
+			enable		true
+			visible		true
+			layer		10
+			rect		121 367 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<item>
+			id			delivery_item_4
+			enable		true
+			visible		true
+			layer		10
+			rect		19 401 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<item>
+			id			delivery_item_5
+			enable		true
+			visible		true
+			layer		10
+			rect		53 401 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<item>
+			id			delivery_item_6
+			enable		true
+			visible		true
+			layer		10
+			rect		87 401 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<item>
+			id			delivery_item_7
+			enable		true
+			visible		true
+			layer		10
+			rect		121 401 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<label>
+			id		lbl_tagrewordinfo
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		166 328 148 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+				text2		132 203
+			</title>
+		</label>
+		<label>
+			id		lbl_tagdrpoint
+			enable		true
+			visible		true
+			layer		10
+			align		right
+			rect		170 365 56 12
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		132 204
+			</title>
+		</label>
+		<label>
+			id		lbl_drpoint
+			enable		true
+			visible		true
+			layer		10
+			align		right
+			rect		231 365 77 12
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id		lbl_tagcontribution
+			enable		true
+			visible		true
+			layer		10
+			align		right
+			rect		170 391 56 12
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		132 205
+			</title>
+		</label>
+		<label>
+			id		lbl_contribution
+			enable		true
+			visible		true
+			layer		10
+			align		right
+			rect		231 391 77 12
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id		lbl_tagexp
+			enable		true
+			visible		true
+			layer		10
+			align		right
+			rect		170 417 56 12
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		132 206
+			</title>
+		</label>
+		<label>
+			id		lbl_exp
+			enable		true
+			visible		true
+			layer		10
+			align		right
+			rect		231 417 77 12
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<button>
+			id	btn_confirm
+			enable	true
+			visible	true
+			layer	100
+			align	center
+			rect	66 458 65 20
+			<image>
+				key	none
+				color	ffffffff
+				screen	etc_01
+				index	88
+			</image>
+			<image>
+				key	over
+				color	ffffffff
+				screen	etc_01
+				index	89
+			</image>
+			<image>
+				key	down
+				color	ffffffff
+				screen	etc_01
+				index	90
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	2 4
+				text2 		132 210
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	2 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	3 5
+			</title>
+		</button>
+		<button>
+			id	btn_cancel
+			enable	true
+			visible	true
+			layer	100
+			align	center
+			rect	190 458 65 20
+			<image>
+				key	none
+				color	ffffffff
+				screen	etc_01
+				index	88
+			</image>
+			<image>
+				key	over
+				color	ffffffff
+				screen	etc_01
+				index	89
+			</image>
+			<image>
+				key	down
+				color	ffffffff
+				screen	etc_01
+				index	90
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	2 4
+				text2 		132 211
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	2 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	3 5
+			</title>
+		</button>
+	</panel>		
+</window>

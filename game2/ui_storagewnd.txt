@@ -1,0 +1,370 @@
+<window>
+	name			storage
+	enable			true
+	visible			true
+	layer			100
+	rect			0 165 333 595
+	titlerect		0 0 310 20
+	
+	<panel>
+		id			pan_storage
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 333 430
+		<image>
+			key		0
+			screen	new_storage
+			index	1
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		0 3 333 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 9
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		315 2 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		<button>
+			id			btn_tab_0
+			enable		true
+			visible		false
+			layer		100
+			rect		7 23 60 23
+			align		center
+			<image>
+				key			0
+				screen		new_storage
+				index		10
+			</image>
+			<image>
+				key			check
+				screen		new_storage
+				index		11
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	3 5
+			</title>
+			<title>
+				state		check
+				color		ffffffff
+				fontIndex	4
+			</title>
+			
+		</button>
+		<button>
+			id			btn_tab_1
+			enable		true
+			visible		false
+			layer		100
+			rect		67 23 60 23
+			align		center
+			<image>
+				key			0
+				screen		new_storage
+				index		10
+			</image>
+			<image>
+				key			check
+				screen		new_storage
+				index		11
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	3 5
+			</title>
+			<title>
+				state		check
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_2
+			enable		true
+			visible		false
+			layer		100
+			rect		127 23 60 23
+			align		center
+			<image>
+				key			0
+				screen		new_storage
+				index		10
+			</image>
+			<image>
+				key			check
+				screen		new_storage
+				index		11
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	3 5
+			</title>
+			<title>
+				state		check
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_3
+			enable		true
+			visible		false
+			layer		100
+			rect		187 23 60 23
+			align		center
+			<image>
+				key			0
+				screen		new_storage
+				index		10
+			</image>
+			<image>
+				key			check
+				screen		new_storage
+				index		11
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	3 5
+			</title>
+			<title>
+				state		check
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_4
+			enable		true
+			visible		false
+			layer		100
+			rect		247 23 60 23
+			align		center
+			<image>
+				key			0
+				screen		new_storage
+				index		10
+			</image>
+			<image>
+				key			check
+				screen		new_storage
+				index		11
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	3 5
+			</title>
+			<title>
+				state		check
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_5
+			enable		true
+			visible		false
+			layer		100
+			rect		307 23 60 23
+			align		center
+			<image>
+				key			0
+				screen		new_storage
+				index		10
+			</image>
+			<image>
+				key			check
+				screen		new_storage
+				index		11
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 4
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	3 5
+			</title>
+			<title>
+				state		check
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</button>
+		<itemslot>
+			id			slotitem
+			enable		true
+			visible		true
+			layer		100
+			rect		7 49 319 319
+			cellsize	32 32
+		</itemslot>
+		
+		<button>
+			id			btn_payment
+			enable		true
+			visible		true
+			layer		100
+			rect		138 405 57 19
+			<image>
+				key			0
+				screen		new_storage
+				index		20
+			</image>
+			<image>
+				key			over
+				screen		new_storage
+				index		21
+			</image>
+			<image>
+				key			down
+				screen		new_storage
+				index		22
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				text2		190 18
+				position	17 3
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+			</title>
+		</button>
+		
+		<label>
+			id			lbl_money
+			enable		true
+			visible		true
+			layer		101
+			rect		190 378 140 14
+			align		right
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text		"500000000000"
+			</title>
+		</label>
+	</panel>
+</window>

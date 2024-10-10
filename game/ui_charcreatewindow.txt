@@ -1,0 +1,273 @@
+window_layer	auto
+window_visible	true
+
+create_control	panel	base
+{
+	control_group	0
+	control_drawdiv	xy	2
+	control_drawsize	0	0
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_prev
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	0	0	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	25	675
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_charname
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_01.dds	300	440	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	437	675
+	control_enable	true
+	control_visible	true
+
+		create_control	edit	edt_charname
+		{
+		control_color	true	0	255	255	255
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawsize	150	80
+		control_drawpoint	10	9
+		control_tab	0
+		control_enable	true
+		control_visible	true
+		control_build	
+		cedit_length	20
+		cedit_chartype	none
+		cedit_type	account
+		}
+	}
+
+	create_control	button	btn_create
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	300	300	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	850	675
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_classselect
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_01.dds	0	465	169	21
+	control_drawdiv	xy	2
+	control_drawsize	169	21
+	control_drawpoint	841	41
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_classex
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_01.dds	0	443	169	21
+	control_drawdiv	xy	2
+	control_drawsize	169	21
+	control_drawpoint	42	41
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_n
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	150	0	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	850	83
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_a
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	150	140	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	850	133
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_m
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	300	160	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	850	183
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_s
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	150	280	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	850	233
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_charleft
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	460	0	35	35
+	control_drawdiv	xy	2
+	control_drawsize	35	35
+	control_drawpoint	387	675
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_charright
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	460	140	35	35
+	control_drawdiv	xy	2
+	control_drawsize	35	35
+	control_drawpoint	602	675
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_n
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\message_info_01.dds	0	0	201	252	
+	control_drawdiv	xy	2
+	control_drawsize	201	252
+	control_drawpoint	25	71
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_a
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\message_info_01.dds	201	0	201	252	
+	control_drawdiv	xy	2
+	control_drawsize	201	252
+	control_drawpoint	25	71
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_s
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\message_info_01.dds	0	252	201	252	
+	control_drawdiv	xy	2
+	control_drawsize	201	252
+	control_drawpoint	25	71
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_m
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\message_info_01.dds	201	252	201	252	
+	control_drawdiv	xy	2
+	control_drawsize	201	252
+	control_drawpoint	25	71
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_btnn
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_01.dds	150	70	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	850	83
+	control_layerdelta 1000	
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_btna
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_01.dds	150	210	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	850	133
+	control_layerdelta 1000
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_btnm
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_01.dds	300	230	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	850	183
+	control_layerdelta 1000
+	control_enable	true
+	control_visible	false
+	}
+	
+	create_control	panel	pan_btns
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_01.dds	150	350	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	850	233
+	control_layerdelta 1000
+	control_enable	true
+	control_visible	false
+	}
+
+
+	create_control	panel	pan_fadein
+	{
+	control_group	0
+	control_color	true	0	0	0	0
+	control_drawsize	1024	768
+	control_drawpoint	0	0
+	control_layerdelta -1000
+	control_enable	true
+	control_visible	false
+	}
+	
+	
+	create_control	panel	pan_fadeout
+	{
+	control_group	0
+	control_color	true	255	0	0	0
+	control_drawsize	1024	768
+	control_drawpoint	0	0
+	control_layerdelta -1000
+	control_enable	true
+	control_visible	false
+	}					
+}

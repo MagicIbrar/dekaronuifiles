@@ -1,0 +1,162 @@
+<window>
+	name				eventinfo
+	enable				true
+	visible				true
+	layer				100
+	position			inverse inverse
+	alwaysontop			true
+	<button>
+		id					btn_show
+		enable				true
+		visible				true
+		layer				100
+		position			right top
+		rect				-240 0 56 56
+		sound				0
+		<image>
+			key				0
+			screen			eventinfo
+			index			1
+		</image>
+		<image>
+			key				over
+			screen			eventinfo
+			index			3
+		</image>
+		<image>
+			key				down
+			screen			eventinfo
+			index			2
+		</image>
+	</button>
+	<panel>
+		id					pan_bg
+		enable				true
+		visible				false
+		layer				101
+		position			center center
+		rect				-512 -384 1024 768
+		<image>
+			key				0
+			screen			eventinfo
+			index			13
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		9 10 1004 24
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<panel>
+			id					pan_content
+			enable				true
+			visible				false
+			layer				1
+			rect				9 37 986 722
+		</panel>
+		<button>
+			id					btn_hide
+			enable				true
+			visible				true
+			layer				100
+			rect				953 19 38 38
+			sound				0
+			<image>
+				key				0
+				screen			eventinfo
+				index			14
+			</image>
+			<image>
+				key				over
+				screen			eventinfo
+				index			15
+			</image>
+			<image>
+				key				down
+				screen			eventinfo
+				index			16
+			</image>
+		</button>
+		<vscroll>
+			id				scroll
+			enable			true
+			visible			true
+			layer			150
+			rect			996 37 19 723
+			maxvalue		0
+			buttontick 		1
+			<button>
+				id				scroll_upbtn
+				enable			true
+				visible			true
+				layer			100
+				rect			0 0 19 19
+				type			1
+				<image>
+					key				0
+					screen			eventinfo
+					index			4
+				</image>
+				<image>
+					key				over
+					screen			eventinfo
+					index			5
+				</image>
+				<image>
+					key				down
+					screen			eventinfo
+					index			6
+				</image>
+			</button>
+			<button>
+				id				scroll_downbtn
+				enable			true
+				visible			true
+				layer			100
+				position		left bottom
+				rect			0 -19 19 19
+				type			1
+				<image>
+					key				0
+					screen			eventinfo
+					index			7
+				</image>
+				<image>
+					key				over
+					screen			eventinfo
+					index			8
+				</image>
+				<image>
+					key				down
+					screen			eventinfo
+					index			9
+				</image>
+			</button>
+			<panel>
+				id				scroll_bar
+				enable			true
+				visible			true
+				layer			100
+				rect			0 19 19 40
+				moveable		true
+				noneimage 		true
+				<image>
+					key				none
+					screen			eventinfo
+					index			10
+				</image>
+				<image>
+					key				over
+					screen			eventinfo
+					index			11
+				</image>
+			</panel>
+		</vscroll>
+	</panel>
+</window>

@@ -1,0 +1,1619 @@
+<window>
+	name			vkeyboard
+	enable			true
+	visible			false
+	layer			100
+	alwaysontop		true
+	position		center center
+	rect			-190 -100 190 40
+	titlerect		0 0 0 0
+	<panel>
+		id			pan_vkeyboard
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 373 137
+		<image>
+			key	0
+			color	ffffffff
+			screen	login_02
+			index	9
+		</image>
+		<button>
+			id			btn_key1
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		5 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key2
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		37 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key3
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		69 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key4
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		101 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key5
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		133 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key6
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		165 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key7
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		197 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				align		center
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key8
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		229 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key9
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		261 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key10
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		293 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key11
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		5 36 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key12
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		37 36 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key13
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		69 36 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key14
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		101 36 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key15
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		133 36 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key16
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		165 36 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key17
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		197 36 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key18
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		229 36 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key19
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		261 36 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key20
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		293 36 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key21
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		5 68 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key22
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		37 68 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key23
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		69 68 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key24
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		101 68 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key25
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		133 68 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key26
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		165 68 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key27
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		197 68 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key28
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		229 68 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key29
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		261 68 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key30
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		69 100 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key31
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		101 100 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key32
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		133 100 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key33
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		165 100 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key34
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		197 100 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key35
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		229 100 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_key36
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		261 100 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_back
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		325 4 32 32
+			<image>
+				key			none
+				screen		login_02
+				index		4
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		5
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		5
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	1 10
+				text		<-
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	1 10
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	2 12
+			</title>
+		</button>
+		<button>
+			id			btn_enter
+			enable		true
+			visible		true
+			layer		99
+			rect		293 36 64 64
+			<image>
+				key			none
+				screen		login_02
+				index		7
+			</image>
+			<image>
+				key			over
+				screen		login_02
+				index		8
+			</image>
+			<image>
+				key			down
+				screen		login_02
+				index		8
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	7 42
+				text2		2000 15
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	7 42
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	8 43
+			</title>
+		</button>
+	</panel>
+</window>

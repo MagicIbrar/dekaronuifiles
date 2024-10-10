@@ -1,0 +1,241 @@
+<window>
+	id	smartwarp_wnd
+	enable	true
+	visible	true
+	layer	100
+	position	right	bottom
+	rect	-363 -289 0 -55
+	titlerect	0 11 354 35
+	<panel>
+		id		pan_smartwarp_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 363 234
+		<image>
+			key	0
+			screen	smartwarp
+			index	19
+		</image>
+	</panel>	
+
+
+	<label>
+		id	lbl_title
+		enable	true
+		visible	true
+		layer	50
+		rect	0 11 354 35
+		align	center
+		<title>
+			state	none
+			color	ffffffff
+			fontindex	3
+			lienheight	0
+			position	0 7
+			text2	6000 0
+		</title>
+	</label>	
+
+	<label>
+		id	lbl_name_text
+		enable	true
+		visible	true
+		layer	50
+		align	        center
+		type		0
+		rect	7 60 349 20
+		<title>
+			state	none
+			color	ffffffff
+			fontindex	7
+			text2	6000 10
+		</title>
+	</label>
+
+	<label>
+		id	lbl_move_text
+		enable	true
+		visible	true
+		layer	50
+		align	        center
+		rect	7 80 349 14
+		<title>
+			state	none
+			color	ffffffff
+			fontindex	3
+			text2	6000 6
+		</title>
+	</label>
+
+
+	<button>
+		id		btn_move
+		enable		true
+		visible		true
+		layer		100
+		align	        center
+		rect		58 109 249 28
+		<image>
+			key	none
+			screen	smartwarp
+			index	5
+		</image>
+		<image>
+			key	over
+			screen	smartwarp
+			index	6
+		</image>
+		<image>
+			key	down
+			screen	smartwarp
+			index	7
+		</image>
+		<image>
+			key	disable
+			screen	smartwarp
+			index	8
+		</image>
+		<title>
+    			state 		none
+	    		color		ffffffff
+			position	0 6
+    			fontIndex	4
+    		</title>
+    		<title>
+    			state 		over
+    			color		ffffff00
+			position	0 6
+    			fontIndex	4    		
+    		</title>
+    		<title>
+    			state 		down
+    			color		ffffff00
+			position	0 6
+    			fontIndex	4
+    		</title>
+    		<title>
+    			state 		disable
+    			color		ffffffff
+			position	0 6
+    			fontIndex	4
+    		</title>
+	</button>
+
+	<button>
+		id		btn_help
+		enable		true
+		visible		true
+		layer		100
+		align	        center
+		rect		309 109 28 29
+		tooltip 	6000 21
+		HelpLink		true
+		HelpLink_TabIdx		0
+		HelpLink_CateIdx	1305
+		HelpLink_PageIdx	4
+		<image>
+			key	none
+			screen	smartwarp
+			index	14
+		</image>
+		<image>
+			key	over
+			screen	smartwarp
+			index	15
+		</image>
+		<image>
+			key	down
+			screen	smartwarp
+			index	16
+		</image>
+	</button>
+
+	<label>
+		id	lbl_needitem
+		enable	true
+		visible	true
+		layer	50
+		align	left
+		rect	150 158 140 14
+		<title>
+			state	none
+			color	ffffffff
+			fontindex	3
+			text2	6000 4
+		</title>
+	</label>
+
+	<panel>
+		id		pan_needitem_img
+		enable		true
+		visible		true
+		layer		100
+		rect		291 154 54 26
+		<image>
+			key	0
+			screen	smartwarp
+			index	17
+		</image>
+	</panel>
+
+	<label>
+		id	lbl_needitem_count
+		enable	true
+		visible	true
+		layer	150
+		align	center
+		rect	316 159 25 11
+		<title>
+			state	none
+			color	ffffffff
+			fontindex	3
+			text	1
+		</title>
+	</label>
+
+	<button>
+		id		btn_close
+		enable		true
+		visible		true
+		layer		100
+		align	        center
+		rect		282 191 61 25
+		<image>
+			key	none
+			screen	smartwarp
+			index	11
+		</image>
+		<image>
+			key	over
+			screen	smartwarp
+			index	12
+		</image>
+		<image>
+			key	down
+			screen	smartwarp
+			index	13
+		</image>
+		<title>
+    			state 		none
+	    		color		ffffffff
+    			fontIndex	4
+    			position	0 4
+			text2		6000 3
+    		</title>
+    		<title>
+    			state 		over
+    			color		ffffffff
+    			fontIndex	4
+    			position	0 4
+			text2		6000 3
+    		</title>
+    		<title>
+    			state 		down
+    			color		ffffff00
+    			fontIndex	4
+    			position	0 4
+			text2		6000 3
+    		</title>
+	</button>
+</window>

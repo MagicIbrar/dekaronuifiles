@@ -1,0 +1,1068 @@
+<window>
+	name			ToolBar
+	enable			true
+	visible			true
+	layer			100
+	position		inverse top
+	rect			0 0 0 300
+	alwaysontop		true	
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		110
+		position	inverse top
+		rect		0 0 0 30
+		<image>
+			key		none
+			screen	toolbar
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id		pan_bar1
+		enable		true
+		visible		true
+		layer		110
+		rect		0 0 87 28
+		<button>
+			id		btn_new
+			enable		true
+			visible		true
+			layer		100
+			rect		6 5 23 22 
+			tooltip		20000 1
+			<image>
+				key		none
+				screen	toolbar
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	13
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	13
+			</image>
+		</button>
+		<button>
+			id		btn_open
+			enable		true
+			visible		true
+			layer		100
+			rect		30 5 23 22 
+			tooltip		20000 2
+			<image>
+				key		none
+				screen	toolbar
+				index	16
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	17
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	18
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	18
+			</image>
+		</button>
+		<button>
+			id		btn_save
+			enable		true
+			visible		true
+			layer		100
+			rect		54 5 23 22 
+			tooltip		20000 3
+			<image>
+				key		none
+				screen	toolbar
+				index	21
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	22
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	23
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	23
+			</image>
+		</button>
+		<panel>
+			id		pan_sep1
+			enable		true
+			visible		true
+			layer		110
+			rect		82 4 2 23
+			<image>
+				key		none
+				screen	toolbar
+				index	3
+			</image>	
+		</panel>
+	</panel>
+
+	<panel>
+		id		pan_bar2
+		enable		true
+		visible		true
+		layer		110
+		rect		82 0 87 28
+		<button>
+			id		btn_camerazoom
+			enable		true
+			visible		true
+			layer		100
+			rect		6 5 23 22 
+			tooltip		20000 4
+			<image>
+				key		none
+				screen	toolbar
+				index	26
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	27
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	28
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	28
+			</image>
+		</button>
+		<button>
+			id		btn_camerarot
+			enable		true
+			visible		true
+			layer		100
+			rect		30 5 23 22 
+			tooltip		20000 5
+			<image>
+				key		none
+				screen	toolbar
+				index	31
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	32
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	33
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	33
+			</image>
+		</button>
+		<button>
+			id		btn_camerapan
+			enable		true
+			visible		true
+			layer		100
+			rect		54 5 23 22 
+			tooltip		20000 6
+			<image>
+				key		none
+				screen	toolbar
+				index	36
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	37
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	38
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	38
+			</image>
+		</button>
+		<panel>
+			id		pan_sep2
+			enable		true
+			visible		true
+			layer		110
+			rect		82 4 2 23
+			<image>
+				key		none
+				screen	toolbar
+				index	3
+			</image>	
+		</panel>
+	</panel>
+	<panel>
+		id		pan_bar3
+		enable		true
+		visible		true
+		layer		110
+		rect		164 0 120 28
+		<button>
+			id		btn_tile
+			enable		true
+			visible		true
+			layer		100
+			rect		6 5 23 22 
+			tooltip		20000 7
+			<image>
+				key		none
+				screen	toolbar
+				index	41
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	42
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	43
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	43
+			</image>
+		</button>
+		<button>
+			id		btn_vcolor
+			enable		true
+			visible		true
+			layer		100
+			rect		30 5 23 22 
+			tooltip		20000 8
+			<image>
+				key		none
+				screen	toolbar
+				index	46
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	47
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	48
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	48
+			</image>
+		</button>
+		<button>
+			id		btn_water
+			enable		true
+			visible		true
+			layer		100
+			rect		54 5 23 22 
+			tooltip		20000 9
+			<image>
+				key		none
+				screen	toolbar
+				index	51
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	52
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	53
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	53
+			</image>
+		</button>
+		<button>
+			id		btn_attr
+			enable		true
+			visible		true
+			layer		100
+			rect		78 5 23 22 
+			tooltip		20000 10
+			<image>
+				key		none
+				screen	toolbar
+				index	91
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	92
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	93
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	93
+			</image>
+		</button>		
+		<panel>
+			id		pan_sep3
+			enable		true
+			visible		true
+			layer		110
+			rect		125 4 2 23
+			<image>
+				key		none
+				screen	toolbar
+				index	3
+			</image>	
+		</panel>
+	</panel>
+	
+	<panel>
+		id		pan_bar4
+		enable		true
+		visible		true
+		layer		110
+		rect		275 0 120 28		
+		<button>
+			id		btn_height
+			enable		true
+			visible		true
+			layer		100
+			rect		6 5 23 22 
+			tooltip		20000 11
+			<image>
+				key		none
+				screen	toolbar
+				index	56
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	57
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	58
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	58
+			</image>
+		</button>
+		<button>
+			id		btn_heightb
+			enable		true
+			visible		true
+			layer		100
+			rect		30 5 23 22 
+			tooltip		20000 12
+			<image>
+				key		none
+				screen	toolbar
+				index	66
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	67
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	68
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	68
+			</image>
+		</button>
+		
+		<button>
+			id		btn_selector
+			enable		true
+			visible		true
+			layer		100
+			rect		54 5 23 22 
+			tooltip		20000 13
+			<image>
+				key		none
+				screen	toolbar
+				index	76
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	77
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	78
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	78
+			</image>
+		</button>	
+		<button>
+			id		btn_brush
+			enable		true
+			visible		true
+			layer		100
+			rect		78 5 23 22 
+			tooltip		20000 14
+			<image>
+				key		none
+				screen	toolbar
+				index	206
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	207
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	208
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	208
+			</image>
+		</button>		
+		<panel>
+			id		pan_sep4
+			enable		true
+			visible		true
+			layer		110
+			rect		102 4 2 23
+			<image>
+				key		none
+				screen	toolbar
+				index	3
+			</image>	
+		</panel>
+	</panel>
+	<panel>
+		id		pan_bar6
+		enable		true
+		visible		true
+		layer		110
+		rect		375 0 289 28
+				
+		<combobox>
+				id			com_type
+				enable		true
+				visible		true
+				border 		false
+				layer		110
+				rect		6 5 88 22
+				tooltip		20000 15
+				<image>
+					key		1
+					screen	common
+					index	1
+					color	90FFFFFF
+				</image>	
+				<iteminfo>		
+					rect 	0 0 70 18
+										
+				</iteminfo>
+
+				<nodeinfo>
+					selrect		1 1 70 18 
+					btnrect		70 0 18 22			
+					<image>
+						key		board_body
+						screen	common
+						index	1
+						color	DF707070
+					</image>
+					<image>
+						key		board_tag
+						screen	common
+						index	1
+						color	DF808080
+					</image>
+					<image>
+						key		btn_over
+						screen	common
+						index	1
+						color	90c09090
+					</image>
+					<image>
+						key		btn_none
+						screen	common
+						index	1
+						color	90808080
+					</image>
+					<image>
+						key		btn_down
+						screen	common
+						index	1
+						color	90404040
+					</image>		
+				</nodeinfo>		
+			</combobox>
+		
+		<button>
+			id		btn_objstamp
+			enable		true
+			visible		true
+			layer		100
+			rect		95 5 23 22 
+			tooltip		20000 16
+			<image>
+				key		none
+				screen	toolbar
+				index	106
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	107
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	108
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	108
+			</image>
+		</button>
+		<button>
+			id		btn_objmovexz
+			enable		true
+			visible		true
+			layer		100
+			rect		119 5 23 22 
+			tooltip		20000 17
+			<image>
+				key		none
+				screen	toolbar
+				index	111
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	112
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	113
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	113
+			</image>
+		</button>
+		<button>
+			id		btn_objmovey
+			enable		true
+			visible		true
+			layer		100
+			rect		143 5 23 22 
+			tooltip		20000 18
+			<image>
+				key		none
+				screen	toolbar
+				index	116
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	117
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	118
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	118
+			</image>
+		</button>
+		<button>
+			id		btn_objrotatey
+			enable		true
+			visible		true
+			layer		100
+			rect		167 5 23 22 
+			tooltip		20000 19
+			<image>
+				key		none
+				screen	toolbar
+				index	121
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	122
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	123
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	123
+			</image>
+		</button>
+		<button>
+			id		btn_objrotatex
+			enable		true
+			visible		true
+			layer		100
+			rect		191 5 23 22 
+			tooltip		20000 20
+			<image>
+				key		none
+				screen	toolbar
+				index	126
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	127
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	128
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	128
+			</image>
+		</button>
+		<button>
+			id		btn_objrotatez
+			enable		true
+			visible		true
+			layer		100
+			rect		215 5 23 22 
+			tooltip		20000 21
+			<image>
+				key		none
+				screen	toolbar
+				index	131
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	132
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	133
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	133
+			</image>
+		</button>
+		<button>
+			id		btn_objscale
+			enable		true
+			visible		true
+			layer		100
+			rect		239 5 23 22 
+			tooltip		20000 22
+			<image>
+				key		none
+				screen	toolbar
+				index	136
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	137
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	138
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	138
+			</image>
+		</button>
+		<button>
+			id		btn_objdelete
+			enable		true
+			visible		true
+			layer		100
+			rect		263 5 23 22 
+			tooltip		20000 23
+			<image>
+				key		none
+				screen	toolbar
+				index	141
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	142
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	143
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	143
+			</image>
+		</button>		
+		<panel>
+			id		pan_sep6
+			enable		true
+			visible		true
+			layer		110
+			rect		287 4 2 23
+			<image>
+				key		none
+				screen	toolbar
+				index	3
+			</image>
+		</panel>
+	</panel>
+
+	<panel>
+		id		pan_bar7
+		enable		true
+		visible		true
+		layer		110
+		rect		711 0 298 28
+		<button>
+			id		btn_creatureon
+			enable		true
+			visible		true
+			layer		100
+			rect		6 5 23 22 
+			tooltip		20000 24
+			<image>
+				key		none
+				screen	toolbar
+				index	146
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	147
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	148
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	148
+			</image>
+		</button>
+		
+		<button>
+			id		btn_attron
+			enable		true
+			visible		true
+			layer		100
+			rect		30 5 23 22 
+			tooltip		20000 25
+			<image>
+				key		none
+				screen	toolbar
+				index	146
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	147
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	148
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	148
+			</image>
+		</button>
+		<button>
+			id		btn_wateron
+			enable		true
+			visible		true
+			layer		100
+			rect		54 5 23 22 
+			tooltip		20000 26
+			<image>
+				key		none
+				screen	toolbar
+				index	151
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	152
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	153
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	153
+			</image>
+		</button>		
+		<button>
+			id		btn_objon
+			enable		true
+			visible		true
+			layer		100
+			rect		78 5 23 22 
+			tooltip		20000 27
+			<image>
+				key		none
+				screen	toolbar
+				index	166
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	167
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	168
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	168
+			</image>
+		</button>
+		<button>
+			id		btn_mapon
+			enable		true
+			visible		true
+			layer		100
+			rect		102 5 23 22 
+			tooltip		20000 28
+			<image>
+				key		none
+				screen	toolbar
+				index	171
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	172
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	173
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	173
+			</image>
+		</button>
+		<button>
+			id		btn_effecton
+			enable		true
+			visible		true
+			layer		100
+			rect		126 5 23 22 
+			tooltip		20000 29
+			<image>
+				key		none
+				screen	toolbar
+				index	151
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	152
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	153
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	153
+			</image>
+		</button>
+		<button>
+			id		btn_gridon
+			enable		true
+			visible		true
+			layer		100
+			rect		150 5 23 22 
+			tooltip		20000 30
+			<image>
+				key		none
+				screen	toolbar
+				index	176
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	177
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	178
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	178
+			</image>
+		</button>
+		
+		<button>
+			id		btn_playeron
+			enable		true
+			visible		true
+			layer		100
+			rect		174 5 23 22 
+			tooltip		20000 31
+			<image>
+				key		none
+				screen	toolbar
+				index	181
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	182
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	183
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	183
+			</image>
+		</button>
+		<button>
+			id		btn_objanion
+			enable		true
+			visible		true
+			layer		100
+			rect		198 5 23 22 
+			tooltip		20000 32
+			<image>
+				key		none
+				screen	toolbar
+				index	156
+			</image>
+			<image>
+				key		over
+				screen	toolbar
+				index	157
+			</image>
+			<image>
+				key		down
+				screen	toolbar
+				index	158
+			</image>
+			<image>
+				key		check
+				screen	toolbar
+				index	158
+			</image>
+		</button>	
+		
+		<panel>
+			id		pan_sep7
+			enable		true
+			visible		true
+			layer		110
+			rect		270 4 2 23
+			<image>
+				key		none
+				screen	toolbar
+				index	3
+			</image>	
+		</panel>
+	</panel>
+	
+</window>

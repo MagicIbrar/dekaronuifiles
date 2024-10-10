@@ -1,0 +1,305 @@
+<window>
+	name			cashinvenwnd
+	enable			true
+	visible			true
+	layer			100
+	rect			335 165 655 765
+	titlerect		0 0 310 20
+
+	<panel>
+		id			pan_back_head
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 320 51
+		<image>
+			key		none
+			screen	cashinventory
+			index	0
+		</image>
+
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		25 3 270 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		900 1
+			</title>
+		</label>
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		305 3 13 13
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		3
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		4
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		5
+			</image>
+		</button>
+
+		<button>
+			id			btn_receiveall
+			enable		true
+			visible		true
+			layer		100
+			rect		140 25 175 20
+			<image>
+				key			0
+				screen		item_shop_popup
+				index		11
+			</image>
+			<image>
+				key			over
+				screen		item_shop_popup
+				index		12
+			</image>
+			<image>
+				key			down
+				screen		item_shop_popup
+				index		13
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				text2		900 3
+				position	10 5
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+			</title>
+		</button>	
+	</panel>
+
+	<panel>
+		id			pan_back_slot0
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0  51 320 66
+		<image>
+			key		none
+			screen	cashinventory
+			index	1
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_back_slot1
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0  117 320 66
+		<image>
+			key		none
+			screen	cashinventory
+			index	1
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_back_slot2
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0  183 320 66
+		<image>
+			key		none
+			screen	cashinventory
+			index	1
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_back_slot3
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0  249 320 66
+		<image>
+			key		none
+			screen	cashinventory
+			index	1
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_back_slot4
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0  315 320 66
+		<image>
+			key		none
+			screen	cashinventory
+			index	1
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_back_tail
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		rect		0  381 320 97
+		<image>
+			key		none
+			screen	cashinventory
+			index	2
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_slot_
+		enable		false
+		visible		false
+		layer		100
+		rect		0  51 320 66
+
+		<panel>
+			id			pan_item_icon_
+			enable		true
+			visible		true
+			layer		1
+			rect		6  0 65 65
+			<image>
+				key		none
+				screen	CashItemIcon
+				index	0
+			</image>
+		</panel>
+
+		<label>
+			id			lbl_title_
+			enable		true
+			visible		true
+			layer		50
+			intersect 	false
+			multiline	true
+			align		center
+			rect		80 5 230 55
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		900 2
+			</title>
+		</label>
+	</panel>
+
+	<vscroll>
+		id			slot_scroll
+		enable		true
+		visible		true
+		layer		150
+		rect		300 51 15 395
+		maxvalue	0
+		buttontick  1
+		<button>
+			id			slot_scroll_upbtn
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 15 15
+			type		1
+			<image>
+				key		0
+				screen	etc_01
+				index	19
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	20
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	21
+			</image>
+			<image>
+				key		disable
+				screen	etc_01
+				index	18
+			</image>
+		</button>
+		<button>
+			id			slot_scroll_downbtn
+			enable		true
+			visible		true
+			layer		100
+			rect		0 380 15 15
+			type		1
+			<image>
+				key		0
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+			<image>
+				key		disable
+				screen	etc_01
+				index	14
+			</image>
+		</button>
+		<panel>
+			id			slot_scroll_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		0 15 15 20
+			moveable	true
+			noneimage 	true
+			<image>
+				key		none
+				screen	etc_01
+				index	24
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	25
+			</image>
+		</panel>
+	</vscroll>
+</window>

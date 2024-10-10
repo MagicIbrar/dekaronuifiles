@@ -1,0 +1,38 @@
+window_layer	auto
+window_size	84	162
+window_alignaxis	right	top
+window_position	-10	50
+window_visible	false
+
+create_control	panel	pan_view
+{
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	84	162
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+}
+
+	create_control	title	pan_title
+	{
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	"Item view"
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	78	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	item	itm_view
+	{
+	control_color	true	255	64	64	64
+	control_drawsize	64	128
+	control_drawpoint	10	24
+	control_enable	true
+	control_visible	true
+	}
+

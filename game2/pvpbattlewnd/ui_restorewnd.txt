@@ -1,0 +1,106 @@
+<window>
+	name			pvp_restore
+	enable			true
+	visible			true
+	layer			110
+	position		inverse inverse
+	rect			0 0 0 0
+	titlerect		0 0 0 0
+	<panel>
+		id			pan_waittime
+		enable		true
+		visible		true
+		layer		99
+		position	center top
+		rect		-103 100 207 60
+		<image>
+			key 	none
+			screen	siege
+			index 	6
+		</image>
+		
+		<label>
+			id			lbl_waittime
+			enable		true
+			visible		true
+			layer		100
+			align       center
+			rect		8 13 190 14
+			<title>
+				color		FFF9B600
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id			pan_progressBg
+			enable		true
+			visible		true
+			layer		101
+			rect		6 37 194 8
+			<image>
+				key 	none
+				screen	siege
+				index 	10
+			</image>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		101
+				rect		0 1 194 7
+				maxsize     194	
+				<image>
+					key	0
+					screen	siege
+					index	11
+				</image>				
+			</processbar>	
+		</panel>
+	</panel>
+	<panel>
+		id			pan_respawn
+		enable		true
+		visible		false
+		layer		1
+		rect		50  100 232 77
+		<panel>
+			id			pan_back
+			enable		true
+			visible		true
+			layer		1
+			rect		0  0 232 77
+			<image>
+					key	none
+					screen	pvp
+					index	3
+			</image>
+			<button>
+				id			btn_accept
+				enable		true
+				visible		true
+				layer		101
+				rect		54 27 124 18
+				align		center
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	2
+					position	0 3
+					text2 		280 4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	2
+					position	0 3
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	2
+					position	2 4
+				</title>
+			</button>		
+		</panel>
+	</panel>	
+</window>

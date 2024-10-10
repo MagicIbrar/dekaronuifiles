@@ -1,0 +1,295 @@
+<window>
+	id	productCatalyst_win
+	enable	true
+	visible	true
+	layer	100
+	position	center center
+	rect	-164 -261 164 262
+	modal	false
+	alwaysontop	false
+	titlerect	8 9 749 25
+	<panel>
+		id	pan_back
+		enable	true
+		visible	true
+		layer	10
+		rect	0 0 320 244
+		<image>
+			key	none
+			color	ffffffff
+			screen	production
+			index	43
+		</image>
+		<label>
+			id	lbl_title
+			enable	true
+			visible	true
+			layer	60
+			rect	8 13 304 24
+			align	center
+			<title>
+				state	none
+				color	ffffffff
+				fontIndex	4
+				text2	2900 219
+			</title>
+		</label>
+		<button>
+			id	btn_exit
+			enable	true
+			visible	true
+			layer	100
+			rect	290 11 15 15
+			sound	0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+		<button>
+			id	btn_ok
+			enable	true
+			visible	true
+			layer	100
+			rect	128 210 65 20
+			align	center
+			type	1
+			<image>
+				key	none
+				color	ffffffff
+				screen	etc_01
+				index	88
+			</image>
+			<image>
+				key	over
+				color	ffffffff
+				screen	etc_01
+				index	89
+			</image>
+			<image>
+				key	down
+				color	ffffffff
+				screen	etc_01
+				index	90
+			</image>
+		<title>
+			state	none
+			color	ff929292
+			fontIndex	2
+			text2	2900 41
+			position		0 3
+		</title>
+		<title>
+			state	over
+			color	ffffffff
+			fontIndex	2
+			position		0 3
+		</title>
+		<title>
+			state	down
+			color	ff929292
+			fontIndex	2
+			position		2 4
+		</title>
+		</button>
+			<item>
+				id	useitem
+				enable	true
+				visible	true
+				layer	1
+				rect	42 135 32 32
+				cellsize	32 32
+				align	center
+				moveable	true
+			</item>
+		<label>
+			id	lbl_count
+			enable	true
+			visible	true
+			layer	100
+			rect	161 115 37 15
+			align	center
+			<title>
+				state	none
+				color	fff4be3d
+				fontIndex	4
+			</title>
+		</label>
+		<button>
+			id	btn_minus
+			enable	true
+			visible	false
+			layer	100
+			rect	134 113 24 22
+			type	1
+			<image>
+				key	none
+				color	ffffffff
+				screen	production
+				index	5
+			</image>
+			<image>
+				key	over
+				color	ffffffff
+				screen	production
+				index	6
+			</image>
+			<image>
+				key	down
+				color	ffffffff
+				screen	production
+				index	7
+			</image>
+		</button>
+		<button>
+			id	btn_plus
+			enable	true
+			visible	false
+			layer	100
+			rect	205 113 24 22
+			type	1
+			<image>
+				key	none
+				color	ffffffff
+				screen	production
+				index	8
+			</image>
+			<image>
+				key	over
+				color	ffffffff
+				screen	production
+				index	9
+			</image>
+			<image>
+				key	down
+				color	ffffffff
+				screen	production
+				index	10
+			</image>
+		</button>
+		<button>
+			id	btn_max
+			enable	true
+			visible	false
+			layer	100
+			rect	249 113 44 20
+			type	1
+			align	center
+			<image>
+				key	none
+				color	ffffff00
+				screen	production
+				index	11
+			</image>
+			<image>
+				key	over
+				color	ffffff00
+				screen	production
+				index	12
+			</image>
+			<image>
+				key	down
+				color	ffffff00
+				screen	production
+				index	13
+			</image>
+		<title>
+			state	none
+			color	ffffff00
+			fontIndex	2
+			text2	2900 6
+			position		0 3
+		</title>
+		<title>
+			state	over
+			color	ffffffff
+			fontIndex	2
+			position		0 3
+		</title>
+		<title>
+			state	down
+			color	ff929292
+			fontIndex	2
+			position		2 4
+		</title>
+		</button>
+		<label>
+			id	txt_memo
+			enable	true
+			visible	true
+			layer	60
+			rect	13 43 294 44
+			autoline	true			
+			<title>
+				state	none
+				color	ffffffff
+				fontIndex	4
+				text2	2900 220
+			</title>
+		</label>
+		<label>
+			id	lbl_short_time
+			enable	true
+			visible	true
+			layer	60
+			rect	134 146 45 13
+			<title>
+				state	none
+				color	ffffffff
+				fontIndex	2
+				text2	2900 118
+			</title>
+		</label>
+		<label>
+			id	lbl_have_time
+			enable	true
+			visible	true
+			layer	60
+			rect	134 175 45 13
+			<title>
+				state	none
+				color	ffffffff
+				fontIndex	2
+				text2	2900 119
+			</title>
+		</label>
+		<label>
+			id	txt_short_time
+			enable	true
+			visible	true
+			layer	60
+			rect	186 146 106 13
+			<title>
+				state	none
+				color	ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id	txt_have_time
+			enable	true
+			visible	true
+			layer	60
+			rect	186 175 106 13
+			<title>
+				state	none
+				color	ffffffff
+				fontIndex	4
+			</title>
+		</label>
+	</panel>
+</window>

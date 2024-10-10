@@ -1,0 +1,47 @@
+<window>
+	name			battleroyaltimerWnd
+	enable			true
+	visible			true
+	layer			300
+	position		inverse inverse
+	alwaysontop		true
+	<panel>
+		id				pan_body
+		enable			true
+		visible			true
+		layer			100
+		position		center top
+		rect			-101 50 202 105
+		<panel>
+			id				pan_penalty
+			enable			true
+			visible			false
+			layer			100
+			rect			0 0 202 50
+			<image>
+				key			none
+				screen		colosseum
+				index		49
+			</image>
+		</panel>
+		<imagenumber>
+				id			number_timer
+				enable		true
+				visible		true
+				fonttype	none
+				numbertype	timer
+				layer		100
+				space		15
+				align		center
+				imagecount 	12
+				timerdigit	4
+				rect		31 60 140 21
+				<image>
+					key	0
+					color 	0x00ffffff
+					screen	common
+					index	0
+				</image>
+		</imagenumber>
+	</panel>
+</window>

@@ -1,0 +1,119 @@
+<window>
+	name			superchatwnd
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 1024 80
+	<panel>
+		id			pan_output
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 0 20
+		position	inverse top
+		intersect 	false
+		<image>
+			key	0
+			screen	console
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_pop
+		enable		true
+		visible		false
+		layer		100
+		rect		0 20 145 62
+		<image>
+			key	none
+			screen	pcpop
+			index	100
+		</image>
+				
+		<label>
+			id			lbl_name
+			enable		true
+			visible		true
+			intersect 	false
+			layer		100
+			align		center
+			rect		0 0 140 15
+			<title>
+				color		FFF9B600
+				fontIndex	4
+			</title>
+		</label>
+		<button>
+			id			btn_invite
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		0 15 140 15
+			<title>
+				state 		none
+				color		FF74AEE4
+				fontIndex	4
+				text2		240 4
+			</title>
+			<title>
+				state 		over
+				color		FF00FF00
+				fontIndex	4
+			</title>
+			<title>
+				state 		down
+				color		FFF9B600
+				fontIndex	4
+			</title>
+		</button>
+		<button>
+			id			btn_whisper
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		0 30 140 15
+			<title>
+				state 		none
+				color		FF74AEE4
+				fontIndex	4
+				text2		240 3
+			</title>
+			<title>
+				state 		over
+				color		FF00FF00
+				fontIndex	4
+			</title>
+			<title>
+				state 		down
+				color		FFF9B600
+				fontIndex	4
+			</title>
+		</button>
+		<button>
+			id			btn_friend
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		0 45 140 15
+			<title>
+				state 		none
+				color		FF74AEE4
+				fontIndex	4
+				text2		240 1
+			</title>
+			<title>
+				state 		over
+				color		FF00FF00
+				fontIndex	4
+			</title>
+			<title>
+				state 		down
+				color		FFF9B600
+				fontIndex	4
+			</title>
+		</button>
+	</panel>
+</window>

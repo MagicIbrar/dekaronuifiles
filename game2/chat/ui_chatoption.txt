@@ -1,0 +1,657 @@
+<window>
+	name			chat
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-62 -145 62 145
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		110
+		rect		0 0 124 291
+		<panel>
+			id			pan_top
+			enable		true
+			visible		true
+			layer		1
+			rect		0 0 124 243
+			<image>
+				key		none
+				screen	chat
+				index	27
+			</image>
+		</panel>
+		<panel>
+			id			pan_bottom
+			enable		true
+			visible		true
+			layer		1
+			rect		0 243 124 47
+			<image>
+				key		none
+				screen	chat
+				index	46
+			</image>
+		</panel>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		4 7 116 16
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		230 9
+			</title>
+		</label>
+		<checkbox>
+			id			check_alwaysontop
+			enable		true
+			visible		true
+			layer		110
+			rect		8 25 80 20
+			align		center
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontindex	2
+				color		ffffffff
+				position	0 6
+				text2		230 37
+			</title>
+			<title>
+				state			over
+				fontindex	2
+				position	0 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+		<checkbox>
+			id			check_chatfixed
+			enable		true
+			visible		true
+			layer		110
+			rect		8 46 100 20
+			align		center
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontindex	2
+				color		ffffffff
+				position	0 6
+				text2		230 70
+			</title>
+			<title>
+				state			over
+				fontindex	2
+				position	0 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+		<button>
+			id			btn_chatwndtab
+			enable		true
+			visible		true
+			layer		110
+			rect		8 74 49 19
+			align		center
+			<image>
+				key			0
+				color		0x00ffffff
+				screen		common
+				index		1
+			</image>
+			<image>
+				key			check
+				color		0xff000000
+				screen		chat
+				index		29
+			</image>
+			<title>
+				state 		none
+				color		0xff929292				
+				fontIndex	2
+				position	0 3
+				text2 		230 39
+			</title>
+			<title>
+				state 		over
+				color		0xffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		0xff929292
+				fontIndex	2
+				position	1 4
+			</title>
+			<title>
+				state 		check
+				color		0xffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+		</button>
+		<button>
+			id			btn_syswndtab
+			enable		true
+			visible		true
+			layer		110
+			rect		67 74 49 19
+			align		center
+			<image>
+				key			0
+				color		0x00ffffff
+				screen		common
+				index		1
+			</image>
+			<image>
+				key			check
+				color		0xff000000
+				screen		chat
+				index		29
+			</image>
+			<title>
+				state 		none
+				color		0xff929292				
+				fontIndex	2
+				position	0 3
+				text2 		230 40
+			</title>
+			<title>
+				state 		over
+				color		0xffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		0xff929292
+				fontIndex	2
+				position	1 4
+			</title>
+			<title>
+				state 		check
+				color		0xffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+		</button>
+		<label>
+			id			lbl_transparency
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		7 102 110 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		230 10
+			</title>
+		</label>
+		<slidebar>
+			id			sld_set
+			enable		true
+			visible		true
+			layer		10
+			rect		6 120 112 12
+			min			0
+			max			255
+			minmaxpos	12 	100
+			<panel>
+				id			sld_set_bar
+				enable		true
+				visible		true
+				layer		10
+				rect		12 0 9 12
+				moveable	true
+				noneimage	true
+				<image>
+					key			none
+					screen		etc_01
+					index		22
+				</image>
+				<image>
+					key			over
+					screen		etc_01
+					index		23
+				</image>
+			</panel>
+			<button>
+				id			sld_set_minus
+				enable		true
+				visible		true
+				layer		100
+				type		0
+				rect		0 0 12 12
+				<image>
+					key		0
+					screen	etc_01
+					index	11
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	12
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	13
+				</image>
+			</button>
+			<button>
+				id			sld_set_plus
+				enable		true
+				visible		true
+				layer		100
+				type		0
+				rect		100 0 12 12
+				<image>
+					key		0
+					screen	etc_01
+					index	7
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	8
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	9
+				</image>
+			</button>	
+		</slidebar>
+		<label>
+			id			lbl_textsize
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		6 147 60 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		230 20
+			</title>
+		</label>
+		<button>
+			id			btn_up
+			enable		true
+			visible		true
+			layer		100
+			rect		69 142 12 12
+			type		1
+			<image>
+				key	0
+				screen	etc_01
+				index	19
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	20
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	21
+			</image>
+			<image>
+				key		disable
+				screen	etc_01
+				index	18
+			</image>
+		</button>
+		<button>
+			id			btn_down
+			enable		true
+			visible		true
+			layer		100
+			rect		69 154 12 12
+			type		1
+			<image>
+				key	0
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+			<image>
+				key		disable
+				screen	etc_01
+				index	14
+			</image>
+		</button>
+		<label>
+			id			lbl_chatwndsize
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		83 144 35 18
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_showchatmsg
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		7 174 109 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		230 30
+			</title>
+		</label>
+		<checkbox>
+			id			check_normal
+			enable		true
+			visible		true
+			layer		110
+			rect		8 190 55 20
+			align		center
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontindex	2
+				color		ffffffff
+				position	0 6
+				text2		230 1
+			</title>
+			<title>
+				state			over
+				fontindex	2
+				position	0 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+		<checkbox>
+			id			check_party
+			enable		true
+			visible		true
+			layer		110
+			rect		67 190 55 20
+			align		center
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontindex	2
+				color		ffffffff
+				position	0 6
+				text2		230 16
+			</title>
+			<title>
+				state			over
+				fontindex	2
+				position	0 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+		<checkbox>
+			id			check_guild
+			enable		true
+			visible		true
+			layer		110
+			rect		8 206 55 20
+			align		center
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontindex	2
+				color		ffffffff
+				position	0 6
+				text2		230 17
+			</title>
+			<title>
+				state			over
+				fontindex	2
+				position	0 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+		<checkbox>
+			id			check_shout
+			enable		true
+			visible		true
+			layer		110
+			rect		67 206 55 20
+			align		center
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontindex	2
+				color		ffffffff
+				position	0 6
+				text2		230 29
+			</title>
+			<title>
+				state			over
+				fontindex	2
+				position	0 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+		<checkbox>
+			id			check_whisper
+			enable		true
+			visible		true
+			layer		110
+			rect		8 222 55 20
+			align		center
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontindex	2
+				color		ffffffff
+				position	0 6
+				text2		230 15
+			</title>
+			<title>
+				state			over
+				fontindex	2
+				position	0 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+		<checkbox>
+			id			check_guildleader
+			enable		true
+			visible		true
+			layer		110
+			rect		67 222 55 20
+			align		center
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontindex	2
+				color		ffffffff
+				position	0 6
+				text2		230 18
+			</title>
+			<title>
+				state			over
+				fontindex	2
+				position	0 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+		<checkbox>
+			id			check_alliance
+			enable		true
+			visible		true
+			layer		110
+			rect		8 238 55 20
+			align		center
+			<image>
+				key			none
+				screen		etc_01
+				index		303
+			</image>
+			<image>
+				key			check
+				screen		etc_01
+				index		304
+			</image>
+			<title>
+				state			none
+				fontindex	2
+				color		ffffffff
+				position	0 6
+				text2		230 19
+			</title>
+			<title>
+				state			over
+				fontindex	2
+				position	0 6
+				color		ff00ff00
+			</title>
+		</checkbox>
+		<button>
+			id			btn_confirm
+			enable		true
+			visible		true
+			layer		100
+			rect		8 265 47 17
+			align		center
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		2000 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 4
+			</title>
+		</button>
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			rect		67 265 47 19
+			align		center
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		2000 23
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 4
+			</title>
+		</button>
+	</panel>
+</window>	

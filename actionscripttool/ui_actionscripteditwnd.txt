@@ -1,0 +1,388 @@
+window_layer	auto
+window_size	505	210
+window_position	330	200
+window_visible	false
+
+create_control	panel	base
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	505	210
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_title
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	Edit
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	499	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_insert
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	2	2	적용
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	36	15
+		control_drawpoint	20	17
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	button	btn_end
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	2	2	EXIT
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	36	15
+		control_drawpoint	150	17
+		control_enable	true
+		control_visible	true
+	}
+}
+
+create_control	text	txt_header1
+{
+	control_color	true	192	128	128	128
+	control_text	24	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	72	12
+	control_drawpoint	10	48
+	control_enable	true
+	control_visible	true
+
+	create_control	text	txt_anim
+	{
+	control_group	2
+	control_color	true	64	60	60	255
+	control_text	0	0	Animfile
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	14
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_interpolate
+	{
+	control_group	2
+	control_color	true	64	60	60	255
+	control_text	0	0	Interpolate
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_timelength
+	{
+	control_group	2
+	control_color	true	64	60	60	255
+	control_text	0	0	Timelength
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	42
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_defeat
+	{
+	control_group	2
+	control_color	true	64	60	60	255
+	control_text	0	0	DefeatEffect
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	56
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_split
+	{
+	control_group	2
+	control_color	true	64	60	60	255
+	control_text	0	0	Split
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	70
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_splittime
+	{
+	control_group	2
+	control_color	true	64	60	60	255
+	control_text	0	0	SplitTiming
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	84
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_swingdir
+	{
+	control_group	2
+	control_color	true	64	60	60	255
+	control_text	0	0	SwindDir
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	98
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_striketype
+	{
+	control_group	2
+	control_color	true	64	60	60	255
+	control_text	0	0	StrikeType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	112
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_attackeff
+	{
+	control_group	2
+	control_color	true	64	60	60	255
+	control_text	0	0	AttackEffect
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	126
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_hittime
+	{
+	control_group	2
+	control_color	true	64	60	60	255
+	control_text	0	0	HitTiming
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	140
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	text	txt_header2
+{
+	control_color	true	192	128	128	128
+	control_text	64	0	적용값
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	12
+	control_drawpoint	84	48
+	control_enable	true
+	control_visible	true
+
+	create_control	edit	edt_anim
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	base
+	control_drawpoint	0	14
+	control_tab	0
+	control_enable	true
+	control_visible	true
+	cedit_length	60
+	cedit_chartype	none
+	}
+	
+	create_control	button	btn_anim
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	2	2	Open
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	36	15
+		control_drawpoint	340	14
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	edit	edt_interpolate
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	base
+	control_drawpoint	0	28
+	control_tab	1
+	control_enable	true
+	control_visible	true
+	cedit_length	20
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_timelength
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	base
+	control_drawpoint	0	42
+	control_tab	2
+	control_enable	true
+	control_visible	true
+	cedit_length	20
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_defeateff
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	base
+	control_drawpoint	0	56
+	control_tab	3
+	control_enable	true
+	control_visible	true
+	cedit_length	30
+	cedit_chartype	none
+	}
+	
+	create_control	button	btn_defeat
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	2	2	Open
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	40	15
+		control_drawpoint	340	56
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	edit	edt_split
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	base
+	control_drawpoint	0	70
+	control_tab	4
+	control_enable	true
+	control_visible	true
+	cedit_length	1
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_splittime
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	base
+	control_drawpoint	0	84
+	control_tab	5
+	control_enable	true
+	control_visible	true
+	cedit_length	20
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_swingdir
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	base
+	control_drawpoint	0	98
+	control_tab	6
+	control_enable	true
+	control_visible	true
+	cedit_length	20
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_striketype
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	base
+	control_drawpoint	0	112
+	control_tab	7
+	control_enable	true
+	control_visible	true
+	cedit_length	20
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_attackeff
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	base
+	control_drawpoint	0	126
+	control_tab	8
+	control_enable	true
+	control_visible	true
+	cedit_length	30
+	}
+	
+	create_control	button	btn_attackeff
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	2	2	Open
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	40	15
+		control_drawpoint	340	126
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	edit	edt_hittime
+	{
+	control_group	2
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	330	base
+	control_drawpoint	0	140
+	control_tab	9
+	control_enable	true
+	control_visible	true
+	cedit_length	20
+	cedit_chartype	none
+	}
+}

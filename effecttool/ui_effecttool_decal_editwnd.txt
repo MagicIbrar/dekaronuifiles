@@ -1,0 +1,738 @@
+window_layer	auto
+window_size	500	290
+window_alignaxis	left	top
+window_position	30	70
+window_visible	false
+
+create_control	panel	pan_decal
+{
+	control_group	56
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	500	290
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_decaltitle
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+		control_text	10	1	"Decal Tool"
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	494	13
+		control_drawpoint	3	3
+		control_enable	true
+		control_visible	true
+
+		create_control	button	btn_decalclose
+		{
+		control_image	oooo	UI\Tool\ui_winbtn03.dds	65	11	11	11
+		control_drawdiv	xy	2
+		control_drawsize	11	11
+		control_drawpoint	483	1
+		control_enable	true
+		control_visible	true
+		}
+	}
+	
+	// Blend
+	create_control	combobox	cbb_decal_blend
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	40	30
+	control_drawpoint	70	68
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_decal_blend
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	14
+	control_drawpoint	70	54
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_decal_blend
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	110	54
+	control_enable	true
+	control_visible	true
+	}
+
+	// Timetype
+	create_control	combobox	cbb_decalradius_timetype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	40	30
+	control_drawpoint	70	120
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_decalradius_timetype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	14
+	control_drawpoint	70	106
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_decalradius_timetype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	110	106
+	control_enable	true
+	control_visible	true
+	}
+	
+	// AlphaTimetype
+	create_control	combobox	cbb_decalalpha_timetype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	40	30
+	control_drawpoint	70	172
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_decalalpha_timetype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	14
+	control_drawpoint	70	158
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_decalalpha_timetype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	110	158
+	control_enable	true
+	control_visible	true
+	}
+	
+	// RotateTimetype
+	create_control	combobox	cbb_decalrotate_timetype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	40	30
+	control_drawpoint	70	224
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_decalrotate_timetype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	14
+	control_drawpoint	70	210
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_decalrotate_timetype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	110	210
+	control_enable	true
+	control_visible	true
+	}
+	
+
+	create_control	text	txt_decal_texturefile
+	{
+	control_text	0	0	TextureFile
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	23
+	control_drawpoint	10	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_decal_blend
+	{
+	control_text	0	0	Blend
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	10	54
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalradius
+	{
+	control_text	0	0	Radius
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	80	23
+	control_drawpoint	10	80
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalradius_timetype
+	{
+	control_text	0	0	TimeType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	106
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalradius_period
+	{
+	control_text	0	0	Period
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	130	106
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalradius_animtime
+	{
+	control_text	0	0	AnimTime
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	240	106
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalradius_value
+	{
+	control_text	0	0	Value
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	350	106
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalalpha
+	{
+	control_text	0	0	Alpha
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	40	23
+	control_drawpoint	10	132
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalalpha_timetype
+	{
+	control_text	0	0	TimeType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	158
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalalpha_period
+	{
+	control_text	0	0	Period
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	130	158
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalalpha_animtime
+	{
+	control_text	0	0	AnimTime
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	240	158
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalalpha_value
+	{
+	control_text	0	0	Value
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	350	158
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalrotate
+	{
+	control_text	0	0	Rotate
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	80	23
+	control_drawpoint	10	184
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalrotate_timetype
+	{
+	control_text	0	0	TimeType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	210
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalrotate_period
+	{
+	control_text	0	0	Period
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	130	210
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalrotate_animtime
+	{
+	control_text	0	0	AnimTime
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	240	210
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_decalrotate_value
+	{
+	control_text	0	0	Value
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	350	210
+	control_enable	true
+	control_visible	true
+	}
+		
+	create_control	button	btn_decal_texturefile_open
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	430	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_radius_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	80
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_radius_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	80
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_radius_add
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Add
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	390	80
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_alpha_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	132
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_alpha_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	132
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_alpha_add
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Add
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	390	132
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_rotate_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	184
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_rotate_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	184
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_rotate_add
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Add
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	390	184
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_decal_open
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	10	240
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_decal_save
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Save
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	100	240
+	control_enable	true
+	control_visible	true
+	}
+	
+	
+	create_control	edit	edt_decal_texturefile
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	300	15
+	control_drawpoint	110	28
+	control_tab	0
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_decalradius_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	15
+	control_drawpoint	347	80
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+	
+	create_control	edit	edt_decalradius_period
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	175	106
+	control_tab	1
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_decalradius_animtime
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	295	106
+	control_tab	2
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_decalradius_value
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	385	106
+	control_tab	3
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_decalalpha_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	15
+	control_drawpoint	347	132
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+	
+	create_control	edit	edt_decalalpha_period
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	175	158
+	control_tab	4
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_decalalpha_animtime
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	295	158
+	control_tab	5
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_decalalpha_value
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	385	158
+	control_tab	6
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_decalrotate_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	15
+	control_drawpoint	347	184
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+	
+	create_control	edit	edt_decalrotate_period
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	175	210
+	control_tab	7
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_decalrotate_animtime
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	295	210
+	control_tab	8
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_decalrotate_value
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	385	210
+	control_tab	9
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+}
+

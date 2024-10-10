@@ -1,0 +1,36 @@
+<window>
+	name			tcamp_msgbox
+	enable			true
+	visible			true
+	layer			110
+	modal			true
+	position		center top
+	rect			-116 350 116 427
+	<panel>
+		id			pan_msgbox
+		enable		true
+		visible		true
+		layer		1
+		intersect	false
+		rect		0 0 232 77
+		<image>
+			key		0
+			screen	pvp
+			index	1
+		</image>
+		<label>
+			id			lbl_text
+			enable		true
+			visible		true
+			layer		50
+			rect		0 21 232 14
+			intersect	false
+			align		center
+			<title>
+					color		ffffffff
+					fontIndex	3
+					position	0 0	
+			</title>				
+		</label>
+	</panel>
+</window>

@@ -1,0 +1,33 @@
+<window>
+	name			party_alarm
+	enable			true
+	visible			true
+	alwaysontop		true
+	layer			100
+	position		inverse inverse
+	<button>
+		id		btn_alarm
+		enable		true
+		visible		true
+		layer		100
+		rect		150 60 30 30
+		position	left top
+		blink 		false
+		blinktime  	1000
+		<image>
+			key		none
+			screen	party
+			index	100
+		</image>
+		<image>
+			key		over
+			screen	party
+			index	101
+		</image>
+		<image>
+			key		down
+			screen	party
+			index	102
+		</image>
+	</button>
+</window>

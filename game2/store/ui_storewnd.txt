@@ -1,0 +1,442 @@
+<window>
+	id	store
+	enable	true
+	visible	true
+	layer	100
+	rect	335 165 680 636
+	modal	false
+	alwaysontop	false
+	titlerect	0 0 310 30
+	<panel>
+		id	pan_store
+		enable	true
+		visible	true
+		layer	1
+		rect	0 0 345 471
+		<image>
+			key	none
+			color	ffffffff
+			screen	store_npc_normal
+			index	1
+		</image>
+		<label>
+			id	lbl_title
+			enable	true
+			visible	true
+			layer	50
+			rect	7 12 333 14
+			align	center
+			<title>
+				state	none
+				color	ffffffff
+				fontIndex	4
+				lienheight	0
+				text2	2001 57
+			</title>
+		</label>
+		<button>
+			id	btn_exit
+			enable	true
+			visible	true
+			layer	100
+			rect		315 14 15 15
+
+			sound	0
+			<image>
+				key	none
+				color	ffffffff
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key	over
+				color	ffffffff
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key	down
+				color	ffffffff
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<button>
+			id	btn_tab0
+			enable	true
+			visible	true
+			layer	100
+			rect	9 39 63 22
+			align	center
+			<image>
+				key	none
+				color	ffffffff
+				screen	store_npc_normal
+				index	3
+			</image>
+			<image>
+				key	check
+				color	ffffffff
+				screen	store_npc_normal
+				index	2
+			</image>
+			<title>
+				state	none
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	0 6
+				text2	2001 520
+			</title>
+			<title>
+				state	over
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				position	0 6
+			</title>
+			<title>
+				state	down
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	2 7
+			</title>
+			<title>
+				state	check
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				position	2 7
+			</title>
+		</button>
+		<button>
+			id	btn_tab1
+			enable	true
+			visible	true
+			layer	100
+			rect	74 39 63 22
+			align	center
+			<image>
+				key	none
+				color	ffffffff
+				screen	store_npc_normal
+				index	3
+			</image>
+			<image>
+				key	check
+				color	ffffffff
+				screen	store_npc_normal
+				index	2
+			</image>
+			<title>
+				state	none
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	0 6
+				text2	260 4
+			</title>
+			<title>
+				state	over
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				position	0 6
+			</title>
+			<title>
+				state	down
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	2 7
+			</title>
+			<title>
+				state	check
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				position	2 7
+			</title>
+		</button>
+		<button>
+			id	btn_tab2
+			enable	true
+			visible	true
+			layer	100
+			rect	139 39 63 22
+			align	center
+			<image>
+				key	none
+				color	ffffffff
+				screen	store_npc_normal
+				index	3
+			</image>
+			<image>
+				key	check
+				color	ffffffff
+				screen	store_npc_normal
+				index	2
+			</image>
+			<title>
+				state	none
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	0 6
+				text2	2001 520
+			</title>
+			<title>
+				state	over
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				position	0 6
+			</title>
+			<title>
+				state	down
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	2 7
+			</title>
+			<title>
+				state	check
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				position	2 7
+			</title>
+		</button>
+		<button>
+			id	btn_tab3
+			enable	true
+			visible	true
+			layer	100
+			rect	204 39 63 22
+			align	center
+			<image>
+				key	none
+				color	ffffffff
+				screen	store_npc_normal
+				index	3
+			</image>
+			<image>
+				key	check
+				color	ffffffff
+				screen	store_npc_normal
+				index	2
+			</image>
+			<title>
+				state	none
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	0 6
+				text2	2001 520
+			</title>
+			<title>
+				state	over
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				position	0 6
+			</title>
+			<title>
+				state	down
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	2 7
+			</title>
+			<title>
+				state	check
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				position	2 7
+			</title>
+		</button>
+		<button>
+			id	btn_tab4
+			enable	true
+			visible	true
+			layer	100
+			rect	269 39 63 22
+			align	center
+			<image>
+				key	none
+				color	ffffffff
+				screen	store_npc_normal
+				index	3
+			</image>
+			<image>
+				key	check
+				color	ffffffff
+				screen	store_npc_normal
+				index	2
+			</image>
+			<title>
+				state	none
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	0 6
+				text2	2001 520
+			</title>
+			<title>
+				state	over
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				position	0 6
+			</title>
+			<title>
+				state	down
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	2 7
+			</title>
+			<title>
+				state	check
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				position	2 7
+			</title>
+		</button>
+		<itemslot>
+			id	slotitemlist
+			enable	true
+			visible	true
+			layer	100
+			rect	8 66 327 358
+			cellsize	33 33
+		</itemslot>
+		<button>
+			id	btn_close
+			enable	true
+			visible	true
+			layer	100
+			rect	210 436 65 20
+			align	center
+			<image>
+				key	none
+				color	ffffffff
+				screen	store_npc_normal
+				index	4
+			</image>
+			<title>
+				state	none
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	1 3
+				text2	2000 68
+			</title>
+			<title>
+				state	over
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+			</title>
+			<title>
+				state	down
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	2 5
+			</title>
+		</button>
+		<button>
+			id	btn_rebuy
+			enable	true
+			visible	true
+			layer	100
+			rect	67 436 65 20
+			align	center
+			<image>
+				key	none
+				color	ffffffff
+				screen	store_npc_normal
+				index	4
+			</image>
+			<title>
+				state	none
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	1 3
+				text2	2000 67
+			</title>
+			<title>
+				state	over
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+			</title>
+			<title>
+				state	down
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	2 5
+			</title>
+		</button>
+		<button>
+			id	btn_shop
+			enable	true
+			visible	false
+			layer	100
+			rect	67 436 65 20
+			align	center
+			<image>
+				key	none
+				color	ffffffff
+				screen	store_npc_normal
+				index	4
+			</image>
+			<title>
+				state	none
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	1 3
+				text2	2000 66
+			</title>
+			<title>
+				state	over
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+			</title>
+			<title>
+				state	down
+				color	ff929292
+				fontIndex	2
+				lienheight	0
+				position	2 5
+			</title>
+		</button>
+		<label>
+			id	lbl_Infomation
+			enable	true
+			visible	false
+			layer	100
+			rect	15 312 321 45
+			multiline	true
+			align	left
+			<title>
+				state	none
+				color	ffffffff
+				fontIndex	2
+				lienheight	0
+				text2	340 29
+			</title>
+		</label>
+	</panel>
+</window>

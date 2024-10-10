@@ -1,0 +1,183 @@
+<window>
+	name			gatestatewnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-116 -78 116 79
+	alwaysontop		true
+	titlerect		0 0 202 24
+	<panel>
+		id			pan_base
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 232 157
+		<image>
+			key		0
+			screen	siege
+			index	5
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align 		center
+			rect		20 2 202 16
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		100 77
+			</title>
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		209 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+	<label>
+		id			lbl_title_str
+		enable		true
+		visible		true
+		layer		50	
+		rect		53 31 125 14
+		<title>			
+			color		FFF4BE3D
+			fontIndex	2
+			text2		320 31
+		</title>
+	</label>	
+	<label>
+		id			lbl_east_str
+		enable		true
+		visible		true
+		layer		50		
+		rect		14 56 53 14
+		<title>
+			color		FFF4BE3D
+			fontIndex	2	
+			text2		320 34		
+		</title>
+	</label>
+	<label>
+		id			lbl_west_str
+		enable		true
+		visible		true
+		layer		50		
+		rect		14 76 53 14
+		<title>
+			color		FFF4BE3D
+			fontIndex	2	
+			text2		320 33
+		</title>
+	</label>
+		
+	<label>
+		id			lbl_south_str
+		enable		true
+		visible		true
+		layer		50	
+		rect		14 96 53 14
+		<title>			
+			color		FFF4BE3D
+			fontIndex	2
+			text2		320 32
+		</title>
+	</label>	
+	
+	<label>
+		id			lbl_east_value
+		enable		true
+		visible		true
+		layer		50		
+		align		center
+		rect		70 56 143 14
+		<title>
+			color		FFFFFFFF
+			fontIndex	2	
+		</title>
+	</label>
+	<label>
+		id			lbl_west_value
+		enable		true
+		visible		true
+		layer		50	
+		align		center	
+		rect		70 76 143 14
+		<title>
+			color		FFFFFFFF
+			fontIndex	2	
+		</title>
+	</label>
+		
+	<label>
+		id			lbl_south_value
+		enable		true
+		visible		true
+		layer		50	
+		align		center
+		rect		70 96 143 14
+		<title>			
+			color		FFFFFFFF
+			fontIndex	2
+		</title>
+	</label>	
+	
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		layer		100
+		rect		87 132 56 18
+		<image>
+				key		none
+				screen	etc_01
+				index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	16 3
+			text2		2000 15
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	16 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	17 4
+		</title>
+	</button>	
+	
+</window>

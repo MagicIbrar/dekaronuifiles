@@ -1,0 +1,2665 @@
+window_layer	auto
+window_size	500	400
+window_alignaxis	left	top
+window_position	300	70
+window_visible	false
+
+create_control	panel	pan_itemsettool
+{
+	control_group	56
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	520	570
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_itemsettoolitle
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+		control_text	10	1	ItemSet
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	514	13
+		control_drawpoint	3	3
+		control_enable	true
+		control_visible	true
+
+		create_control	button	btn_itemsetclose
+		{
+		control_image	oooo	UI\Tool\ui_winbtn03.dds	65	11	11	11
+		control_drawdiv	xy	2
+		control_drawsize	11	11
+		control_drawpoint	503	1
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	create_control	button	btn_find
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	°Ë»ö
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	100	43
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_itemsetopen
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	200	500
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_itemsetsave
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Save
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	300	500
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetindex
+	{
+	control_text	0	0	ItemSet
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	23
+	control_drawpoint	10	23
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetdrop
+	{
+	control_text	0	0	Drop
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	170	23
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetdroper
+	{
+	control_text	0	0	/
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	273	23
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnodrop
+	{
+	control_text	0	0	No
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	170	43
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_name
+	{
+	control_text	0	0	Name
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	23
+	control_drawpoint	330	23
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnodroper
+	{
+	control_text	0	0	/
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	273	43
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum
+	{
+	control_text	0	0	No.
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	23
+	control_drawpoint	10	65
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemindex
+	{
+	control_text	0	0	Index
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	35	65
+	control_enable	true
+	control_visible	true
+	}
+
+//	create_control	text	txt_itemname
+//	{
+//	control_text	0	0	Name
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	40	23
+//	control_drawpoint	80	65
+//	control_enable	true
+//	control_visible	true
+//	}
+
+	create_control	text	txt_itemdroprat
+	{
+	control_text	0	0	Drop
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	170	65
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble
+	{
+	control_text	0	0	Noble
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	280	65
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine
+	{
+	control_text	0	0	Divine
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	23
+	control_drawpoint	395	65
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum1
+	{
+	control_text	0	0	1
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	85
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum2
+	{
+	control_text	0	0	2
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	105
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum3
+	{
+	control_text	0	0	3
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	125
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum4
+	{
+	control_text	0	0	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	145
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum5
+	{
+	control_text	0	0	5
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	165
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum6
+	{
+	control_text	0	0	6
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	185
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum7
+	{
+	control_text	0	0	7
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	205
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum8
+	{
+	control_text	0	0	8
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	225
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum9
+	{
+	control_text	0	0	9
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	245
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum10
+	{
+	control_text	0	0	10
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	265
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum11
+	{
+	control_text	0	0	11
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	285
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum12
+	{
+	control_text	0	0	12
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	305
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum13
+	{
+	control_text	0	0	13
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	325
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum14
+	{
+	control_text	0	0	14
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	345
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum15
+	{
+	control_text	0	0	15
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	365
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum16
+	{
+	control_text	0	0	16
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	385
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum17
+	{
+	control_text	0	0	17
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	405
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum18
+	{
+	control_text	0	0	18
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	425
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum19
+	{
+	control_text	0	0	19
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	445
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemsetnum20
+	{
+	control_text	0	0	20
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	30	20
+	control_drawpoint	10	465
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat1
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	85
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble1
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	85
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine1
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	85
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat2
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	105
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble2
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	105
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine2
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	105
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat3
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	125
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble3
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	125
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine3
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	125
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat4
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	145
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble4
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	145
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine4
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	145
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat5
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	165
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble5
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	165
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine5
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	165
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat6
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	185
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble6
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	185
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine6
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	185
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat7
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	205
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble7
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	205
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine7
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	205
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat8
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	225
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble8
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	225
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine8
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	225
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat9
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	245
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble9
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	245
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine9
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	245
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat10
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	265
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble10
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	265
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine10
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	265
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat11
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	285
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble11
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	285
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine11
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	285
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat12
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	305
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble12
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	305
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine12
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	305
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat13
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	325
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble13
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	325
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine13
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	325
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat14
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	345
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble14
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	345
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine14
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	345
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat15
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	365
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble15
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	365
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine15
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	365
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat16
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	385
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble16
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	385
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine16
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	385
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat17
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	405
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble17
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	405
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine17
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	405
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat18
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	425
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble18
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	425
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine18
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	425
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat19
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	445
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble19
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	445
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine19
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	445
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdroprat20
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	225	465
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemnoble20
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	335	465
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_itemdivine20
+	{
+	control_text	0	0	0.0000%
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	45	23
+	control_drawpoint	450	465
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	edit	edt_itemsetindex
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	100	23
+	control_tab	1
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemsetdrop
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	218	23
+	control_tab	2
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_name
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	15
+	control_drawpoint	360	23
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_find
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	80	15
+	control_drawpoint	10	43
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	20
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemsetnodrop
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	218	43
+	control_tab	3
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex1
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	85
+	control_tab	4
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname1
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	85
+//	control_tab	5
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat1
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	85
+	control_tab	6
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble1
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	85
+	control_tab	7
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine1
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	85
+	control_tab	 8
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex2
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	105
+	control_tab	9
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname2
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	105
+//	control_tab	10
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat2
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	105
+	control_tab	11
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble2
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	105
+	control_tab	12
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine2
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	105
+	control_tab	13
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex3
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	125
+	control_tab	14
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname3
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	125
+//	control_tab	15
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat3
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	125
+	control_tab	16
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble3
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	125
+	control_tab	17
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine3
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	125
+	control_tab	18
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex4
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	145
+	control_tab	19
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname4
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	145
+//	control_tab	20
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat4
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	145
+	control_tab	21
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble4
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	145
+	control_tab	22
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine4
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	145
+	control_tab	23
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex5
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	165
+	control_tab	24
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	7
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname5
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	165
+//	control_tab	25
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat5
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	165
+	control_tab	26
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble5
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	165
+	control_tab	27
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine5
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	165
+	control_tab	28
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex6
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	185
+	control_tab	29
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname6
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	185
+//	control_tab	30
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat6
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	185
+	control_tab	31
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble6
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	185
+	control_tab	32
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine6
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	185
+	control_tab	33
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex7
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	205
+	control_tab	34
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname7
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	205
+//	control_tab	35
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat7
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	205
+	control_tab	36
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble7
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	205
+	control_tab	37
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine7
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	205
+	control_tab	38
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex8
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	225
+	control_tab	39
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname8
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	225
+//	control_tab	40
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat8
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	225
+	control_tab	41
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble8
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	225
+	control_tab	42
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine8
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	225
+	control_tab	43
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex9
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	245
+	control_tab	44
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname9
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	245
+//	control_tab	45
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat9
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	245
+	control_tab	46
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble9
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	245
+	control_tab	47
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine9
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	245
+	control_tab	48
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex10
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	265
+	control_tab	49
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname10
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	265
+//	control_tab	50
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat10
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	265
+	control_tab	51
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble10
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	265
+	control_tab	52
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine10
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	265
+	control_tab	53
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex11
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	285
+	control_tab	54
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname11
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	285
+//	control_tab	55
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat11
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	285
+	control_tab	56
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble11
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	285
+	control_tab	57
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine11
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	285
+	control_tab	58
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex12
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	305
+	control_tab	59
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname12
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	305
+//	control_tab	60
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat12
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	305
+	control_tab	61
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble12
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	305
+	control_tab	62
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine12
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	305
+	control_tab	63
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex13
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	325
+	control_tab	64
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname13
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	325
+//	control_tab	65
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat13
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	325
+	control_tab	66
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble13
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	325
+	control_tab	67
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine13
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	325
+	control_tab	68
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex14
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	345
+	control_tab	69
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname14
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	345
+//	control_tab	70
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat14
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	345
+	control_tab	71
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble14
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	345
+	control_tab	72
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine14
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	345
+	control_tab	73
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex15
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	365
+	control_tab	74
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname15
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	365
+//	control_tab	75
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat15
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	365
+	control_tab	76
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble15
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	365
+	control_tab	77
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine15
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	365
+	control_tab	78
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex16
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	385
+	control_tab	79
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname16
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	385
+//	control_tab	80
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat16
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	385
+	control_tab	81
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble16
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	385
+	control_tab	82
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine16
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	385
+	control_tab	83
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex17
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	405
+	control_tab	84
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname17
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	405
+//	control_tab	85
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat17
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	405
+	control_tab	86
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble17
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	405
+	control_tab	87
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine17
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	405
+	control_tab	88
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex18
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	425
+	control_tab	89
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname18
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	425
+//	control_tab	90
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat18
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	425
+	control_tab	91
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble18
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	425
+	control_tab	92
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine18
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	425
+	control_tab	93
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex19
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	445
+	control_tab	94
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname19
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	445
+//	control_tab	95
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat19
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	445
+	control_tab	96
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble19
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	445
+	control_tab	97
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine19
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	445
+	control_tab	98
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemindex20
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	35	15
+	control_drawpoint	35	465
+	control_tab	99
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+//	create_control	edit	edt_itemname20
+//	{
+//	control_color	true	255	255	255	255
+//	control_textcolor	0	0	0
+//	control_textfont	small
+//	control_drawsize	80	15
+//	control_drawpoint	77	465
+//	control_tab	100
+//	control_enable	true
+//	control_visible	true
+//	control_build	
+//	cedit_length	10
+//	cedit_chartype	none
+//	}
+
+	create_control	edit	edt_itemdroprat20
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	170	465
+	control_tab	101
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemnoble20
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	280	465
+	control_tab	102
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_itemdivine20
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	395	465
+	control_tab	103
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	0
+	cedit_chartype	none
+	}
+}
+

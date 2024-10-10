@@ -1,0 +1,93 @@
+window_layer	auto
+window_size	550	120
+window_position	450	580
+window_visible	false
+
+create_control	panel	pan_noticebase
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	550	120
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	edit	edt_notice1
+	{
+		control_group	0
+		control_color	true	64	0	128	0
+		control_text	0	0	""
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	530	14
+		control_drawpoint	10	10
+		control_tab	0
+		control_enable	true
+		control_visible	true
+		cedit_length	50
+		cedit_chartype	none
+	}
+
+	create_control	edit	edt_notice2
+	{
+		control_group	0
+		control_color	true	64	0	128	0
+		control_text	0	0	""
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	530	14
+		control_drawpoint	10	29
+		control_tab	1
+		control_enable	true
+		control_visible	true
+		cedit_length	50
+		cedit_chartype	none
+	}
+
+	create_control	edit	edt_notice3
+	{
+		control_group	0
+		control_color	true	64	0	128	0
+		control_text	0	0	""
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	530	14
+		control_drawpoint	10	49
+		control_tab	2
+		control_enable	true
+		control_visible	true
+		cedit_length	50
+		cedit_chartype	none
+	}
+
+	create_control	edit	edt_consol
+	{
+		control_group	0
+		control_color	true	64	0	128	0
+		control_text	0	0	""
+		control_textcolor	0	0	0
+		control_textfont	normal
+		control_drawsize	530	14
+		control_drawpoint	10	100
+		control_tab	3
+		control_enable	true
+		control_visible	true
+		cedit_length	50
+		cedit_chartype	none
+	}
+
+	create_control	button	btn_noticeapply
+	{
+		control_group	1
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	6	4	APPLY
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	45	18
+		control_drawpoint	10	70
+		control_enable	true
+		control_visible	true
+	}	
+}

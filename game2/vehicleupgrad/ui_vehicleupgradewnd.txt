@@ -1,0 +1,410 @@
+<window>
+	name			vehicle_upgradwnd
+	enable			true
+	visible			true
+	layer			1
+	position		center center
+	rect			-172 -128 173 128
+	titlerect		0 0 345 34
+	<panel>
+		id		pan_base
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 345 256
+		
+		<panel>
+			id		pan_vehicle_upgradwnd_top
+			enable		true
+			visible		true
+			layer		10
+			rect		0 0 345 63
+			<image>
+				key	none
+				screen	vehicle
+				index	1
+			</image>
+
+			<label>
+				id		lbl_title
+				enable		true
+				visible		true
+				layer		100
+				align 		center
+				rect		8 9 329 24
+				<title>
+					state 		title
+					color		FFFFFFFF
+					fontIndex	4
+					text2		2005 1001
+				</title>
+			</label>
+
+			<button>
+				id		btn_exit
+				enable		true
+				visible		true
+				layer		120
+				rect		316 12 19 19
+				sound  0
+				<image>
+    					key		0
+    					screen		etc_01
+   	 				index		315
+    				</image>
+    				<image>
+    					key		over
+    					screen		etc_01
+   	 				index		316
+    				</image>
+    				<image>
+    					key		down
+    					screen		etc_01
+    					index		316
+    				</image>
+			</button>
+
+			<button>
+				id				btn_tab_0
+				enable				true
+				visible				true
+				align 				center
+				layer				100
+				rect				9 39 81 22
+				<image>
+					key				none
+					screen			vehicle
+					index			6
+				</image>
+				<image>
+					key				check
+					screen			vehicle
+					index			5
+				</image>
+				<title>
+					state 			none
+					color			ff929292
+					fontIndex		2
+					position		0 5
+					text2 			2005 1004
+				</title>
+				<title>
+					state 			over
+					color			ffffffff
+					position		0 5
+					fontIndex		2
+				</title>
+				<title>
+					state 			down
+					color			ff929292
+					fontIndex		2
+					position		1 6
+				</title>
+				<title>
+					state 			check
+					color			ffffffff
+					fontIndex		4
+					position		1 6
+				</title>
+			</button>
+			<button>
+				id				btn_tab_1
+				enable				true
+				visible				true
+				align 				center
+				layer				100
+				rect				92 39 81 22
+				<image>
+					key			none
+					screen			vehicle
+					index			6
+				</image>
+				<image>
+					key			check
+					screen			vehicle
+					index			5
+				</image>
+				<title>
+					state 			none
+					color			ff929292
+					fontIndex		2
+					position		0 5
+					text2 			2005 1003
+				</title>
+				<title>
+					state 			over
+					color			ffffffff
+					fontIndex		2
+					position		0 5
+				</title>
+				<title>
+					state 			down
+					color			ff929292
+					fontIndex		2
+					position		1 6
+				</title>
+				<title>
+					state 			check
+					color			ffffffff
+					fontIndex		4
+					position		1 6
+				</title>
+			</button>
+		</panel>
+
+		<panel>
+			id		pan_vehicle_upgradwnd_disassemble
+			enable		true
+			visible		true
+			layer		10
+			rect		0 63 345 149
+			<image>
+				key	none
+				screen	vehicle
+				index	2
+			</image>
+			<item>
+				id			slot_0
+				enable			true
+				visible			true
+				layer			100
+				rect			23 25 33 33
+				cellsize		33 33	
+				moveable		true
+				type			suit			
+			</item>
+			<item>
+				id			slot_1
+				enable			true
+				visible			true
+				layer			100
+				rect			56 25 33 33
+				cellsize		33 33				
+			</item>
+			<item>
+				id			slot_2
+				enable			true
+				visible			true
+				layer			100
+				rect			89 25 33 33
+				cellsize		33 33
+			</item>
+			<item>
+				id			slot_3
+				enable			true
+				visible			true
+				layer			100
+				rect			122 25 33 33
+				cellsize		33 33
+			</item>
+			<item>
+				id			slot_4
+				enable			true
+				visible			true
+				layer			100
+				rect			155 25 33 33
+				cellsize		33 33
+			</item>
+			<item>
+				id			slot_5
+				enable			true
+				visible			true
+				layer			100
+				rect			23 58 33 33
+				cellsize		33 33
+			</item>
+			<item>
+				id			slot_6
+				enable			true
+				visible			true
+				layer			100
+				rect			56 58 33 33
+				cellsize		33 33
+			</item>
+			<item>
+				id			slot_7
+				enable			true
+				visible			true
+				layer			100
+				rect			89 58 33 33
+				cellsize		33 33
+			</item>
+			<item>
+				id			slot_8
+				enable			true
+				visible			true
+				layer			100
+				rect			122 58 33 33
+				cellsize		33 33
+			</item>
+			<item>
+				id			slot_9
+				enable			true
+				visible			true
+				layer			100
+				rect			155 58 33 33
+				cellsize		33 33
+			</item>
+
+			<item>
+				id			disassembleslot
+				enable			true
+				visible			true
+				layer			100
+				rect			276 41 32 32
+				cellsize		33 33
+			</item>
+		</panel>
+		<panel>
+			id		pan_vehicle_upgradwnd_evolution
+			enable		false
+			visible		false
+			layer		10
+			rect		0 63 345 149
+			<image>
+				key	none
+				screen	vehicle
+				index	4
+			</image>
+
+			<item>
+				id			target_slot
+				enable			true
+				visible			true
+				layer			100
+				rect			35 41 32 32 
+				cellsize		33 33				
+				tooltip			2005 1015
+			</item>
+			<item>
+				id			material_slot
+				enable			true
+				visible			true
+				layer			100
+				rect			135 41 32 32
+				cellsize		33 33	
+			</item>
+			<item>
+				id			result_slot
+				enable			true
+				visible			true
+				layer			100
+				rect			276 41 32 32
+				cellsize		33 33	
+			</item>			
+		</panel>
+
+		<button>
+			id				btn_result
+			enable				true
+			visible				true
+			align 				center center
+			layer				100
+			rect				257 163 66 38
+			<image>
+				key 	none
+				screen 	vehicle
+				index 	7
+			</image>
+			<image>
+				key 	over
+				screen 	vehicle
+				index 	9
+			</image>
+			<image>
+				key 	down
+				screen 	vehicle
+				index 	8
+			</image>
+			<image>
+				key	disable
+				screen	etc_01
+				index	91
+			</image>
+			<title>
+				state 			none
+				color			ffffffff
+				fontIndex		2
+				position		0 10
+				text2 			311 3
+			</title>
+			<title>
+				state 			over
+				color			ffffffff
+				fontIndex		2
+				position		0 10
+			</title>
+			<title>
+				state 			down
+				color			ff929292
+				fontIndex		2
+				position		1 11
+			</title>
+		</button>
+
+		<panel>
+			id		pan_vehicle_upgradwnd_bottom
+			enable		true
+			visible		true
+			layer		10
+			rect		0 212 345 44
+			<image>
+				key	none
+				screen	vehicle
+				index	3
+			</image>
+
+			<button>
+				id		btn_close
+				enable		true
+				visible		true
+				layer		100
+				align		center	center
+				rect		141 7 65 20
+				<image>
+					key 	none
+					screen 	etc_01
+					index 	91
+				</image>
+				<image>
+					key 	over
+					screen 	etc_01
+					index 	92
+				</image>
+				<image>
+					key 	down
+					screen 	etc_01
+					index 	93
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					text2		311 8
+					position	0 4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	0 4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	1 5
+				</title>
+			</button>
+		</panel>
+
+		<panel>
+			id		pan_effect_successfail
+			enable		false
+			visible		true
+			intersect 	false
+			layer		500
+			rect		150 157 63 127	
+		</panel>			
+	</panel>
+</window>

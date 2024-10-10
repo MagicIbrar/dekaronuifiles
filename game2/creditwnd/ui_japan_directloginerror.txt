@@ -1,0 +1,23 @@
+<window>
+	name			direct_loginerror
+	enable			true
+	visible			true
+	layer			100
+	alwaysontop		true
+	position		inverse inverse
+	rect			0 0 0 0
+	<panel>
+		id			pan_map
+		enable		true
+		visible		true
+		layer		80
+		position	inverse inverse
+		rect		0 0 0 0
+		<image>
+			key		0
+			color	ffffffff
+			screen	credit
+			index	101
+		</image>
+	</panel>
+</window>

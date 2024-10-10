@@ -1,0 +1,278 @@
+<window>
+	name			losthorizon
+	enable			true
+	visible			true
+	layer			100
+	position		left top
+	rect			0 100 418 173
+	titlerect		0 0 418 73
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		100
+		position	left top
+		rect		0 0 418 73
+		<panel>
+			id		pan_back
+			enable		true
+			visible		true
+			layer		100
+			position	left top
+			rect		0 0 418 73
+			<image>
+				key	0
+				screen	lhcount
+				index	1
+			</image>
+		</panel>
+		<processbar>
+			id		bar_left
+			enable		true
+			visible		true
+			layer		101
+			rect		7 15 202 15
+			maxsize     	202
+			minsize     	7
+			<image>
+				key	0
+				screen	lhcount
+				index	2
+			</image>
+		</processbar>		
+		<imagenumber>
+			id		num_left
+			enable		false
+			visible		true
+			fonttype	gold
+			numbertype	normal
+			layer		110
+			space		12
+			align		center
+			imagecount 	10
+			rect		7 16 202 16
+			<image>
+				key	0
+				color 	0x00ffffff
+				screen	common
+				index	0
+			</image>
+		</imagenumber>
+		<processbar>
+			id		bar_left_combo
+			enable		true
+			visible		true
+			layer		101
+			rect		7 37 202 15
+			maxsize     	202
+			minsize     	7
+			<image>
+				key	0
+				screen	lhcount
+				index	4
+			</image>
+		</processbar>
+		<processbar>
+			id		bar_left_timer
+			enable		true
+			visible		true
+			layer		101
+			rect		7 37 202 5
+			maxsize     	202
+			minsize     	7
+			<image>
+				key	0
+				screen	lhcount
+				index	6
+			</image>
+		</processbar>
+
+		<imagenumber>
+			id		left_combo_num
+			enable		false
+			visible		true
+			fonttype	green_s
+			numbertype	normal
+			layer		110
+			space		12
+			align		center
+			imagecount 	10
+			rect		135 37 70 15
+			<image>
+				key	0
+				color 	0x00ffffff
+				screen	common
+				index	0
+			</image>
+		</imagenumber>
+
+		<imagenumber>
+			id		left_attack_num
+			enable		false
+			visible		true
+			fonttype	gold_s
+			numbertype	normal
+			layer		110
+			space		12
+			align		center
+			imagecount 	10
+			rect		183 55 22 12
+			<image>
+				key	0
+				color 	0x00ffffff
+				screen	common
+				index	0
+			</image>
+		</imagenumber>
+		<processbar>
+			id		bar_right
+			enable		false
+			visible		true
+			layer		101
+			rect		210 15 202 15
+			maxsize     	202
+			<image>
+				key	0
+				screen	lhcount
+				index	3
+			</image>
+		</processbar>
+		<imagenumber>
+			id		num_right
+			enable		false
+			visible		true
+			fonttype	gold
+			numbertype	normal
+			layer		110
+			space		12
+			align		center
+			imagecount 	10
+			rect		210 16 202 18
+			<image>
+				key	0
+				color 	0x00ffffff
+				screen	common
+				index	0
+			</image>
+		</imagenumber>
+		<processbar>
+			id		bar_right_combo
+			enable		true
+			visible		true
+			layer		101
+			rect		210 37 202 15
+			maxsize     	202
+			minsize     	7
+			<image>
+				key	0
+				screen	lhcount
+				index	4
+			</image>
+		</processbar>
+		<processbar>
+			id		bar_right_timer
+			enable		true
+			visible		true
+			layer		101
+			rect		210 37 202 5
+			maxsize     	202
+			minsize     	7
+			<image>
+				key	0
+				screen	lhcount
+				index	6
+			</image>
+		</processbar>
+		<imagenumber>
+			id		right_combo_num
+			enable		false
+			visible		true
+			fonttype	green_s
+			numbertype	normal
+			layer		110
+			space		12
+			align		center
+			imagecount 	10
+			rect		210 37 70 15
+			<image>
+				key	0
+				color 	0x00ffffff
+				screen	common
+				index	0
+			</image>
+		</imagenumber>
+
+		<imagenumber>
+			id		right_attack_num
+			enable		false
+			visible		true
+			fonttype	gold_s
+			numbertype	normal
+			layer		110
+			space		12
+			align		center
+			imagecount 	10
+			rect		281 55 24 12
+			<image>
+				key	0
+				color 	0x00ffffff
+				screen	common
+				index	0
+			</image>
+		</imagenumber>
+		<panel>
+			id		pan_top
+			enable		true
+			visible		true
+			layer		120
+			position	left top
+			rect		0 0 418 54
+			<image>
+				key	0
+				screen	lhcount
+				index	5
+			</image>
+		</panel>	
+
+
+		<button>
+			id		tooltip_lt
+			enable		true
+			visible		true
+			layer		15000
+			align   	center
+			rect		7 15 206 15
+			tooltip		26 1
+		</button>
+		<button>
+			id		tooltip_rt
+			enable		true
+			visible		true
+			layer		15000
+			align   	center
+			rect		213 15 206 15
+			tooltip		26 3
+		</button>
+		<button>
+			id		tooltip_lb
+			enable		true
+			visible		true
+			layer		111
+			align   	center
+			rect		5 25 206 15
+			tooltip		26 2
+		</button>
+		<button>
+			id		tooltip_rb
+			enable		true
+			visible		true
+			layer		111
+			align   	center
+			rect		208 25 206 15
+			tooltip		26 4
+
+		</button>
+
+
+	</panel>
+</window>

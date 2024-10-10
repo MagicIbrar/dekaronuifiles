@@ -1,0 +1,211 @@
+<window>
+	name			Fishing
+	enable			true
+	visible			true
+	layer			100
+	rect			50 99 512 768 
+	<panel>
+		id			pan_casting
+		enable		true
+		visible		false
+		layer		1
+		intersect	false
+		rect		0 0 462 59
+		<panel>
+			id		pan_castingbg
+			enable		true
+			visible		true
+			layer		10
+			intersect	false
+			rect		8 0 458 59
+			<image>
+				key		0
+				screen	fishing
+				index	1
+			</image>
+		</panel>
+		<panel>
+			id		pan_back
+			enable		true
+			visible		true
+			layer		1
+			intersect	false
+			rect		22 25 343 21
+			<image>
+				key		0
+				screen	fishing
+				index	3
+			</image>
+		</panel>
+		<processbar>	
+			id			pro_casting
+			enable		true
+			visible		true
+			layer		5
+			rect		22 25 6 21
+			maxsize    	343	
+			<image>
+				key		0
+				screen	fishing
+				index	6
+			</image>				
+		</processbar>
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			rect		370 25 26 26
+			tooltip 	23 54
+			<image>
+				key		none
+				screen	fishing
+				index	13
+			</image>
+			<image>
+				key		over
+				screen	fishing
+				index	14
+			</image>
+			<image>
+				key		down
+				screen	fishing
+				index	15
+			</image>
+	</button>
+	</panel>
+	<panel>
+		id			pan_fighting
+		enable		true
+		visible		false
+		layer		100
+		intersect	false
+		rect		0 0 462 70
+		<panel>
+			id		pan_fightingbg
+			enable		true
+			visible		true
+			layer		100
+			intersect	false
+			rect		8 0 458 59
+			<image>
+				key		0
+				screen	fishing
+				index	1
+			</image>
+		</panel>
+		<panel>
+			id		pan_back
+			enable		true
+			visible		true
+			layer		1
+			intersect	false
+			rect		22 25 343 21
+			<image>
+				key		0
+				screen	fishing
+				index	3
+			</image>
+		</panel>
+		<panel>
+			id		pan_centerline
+			enable		true
+			visible		true
+			layer		1
+			intersect	false
+			rect		21 34 345 3
+			<image>
+				key		0
+				screen	fishing
+				index	2
+			</image>
+		</panel>
+		<processbar>	
+			id			pro_line
+			enable		true
+			visible		true
+			layer		10
+			rect		22 25 6 10
+			maxsize     343	
+			<image>
+				key		0
+				screen	fishing
+				index	7
+			</image>				
+		</processbar>
+		<processbar>	
+			id			pro_fish
+			enable		true
+			visible		true
+			layer		10
+			rect		22 36 6 10
+			maxsize     343	
+			<image>
+				key		0
+				screen	fishing
+				index	8
+			</image>				
+		</processbar>
+		<panel>
+			id			pan_line
+			enable		true
+			visible		true
+			layer		101
+			intersect	false
+			rect		0 1 44 23
+			<image>
+				key		0
+				screen	fishing
+				index	11
+			</image>
+		</panel>
+		<panel>
+			id			pan_fish
+			enable		true
+			visible		true
+			layer		102
+			intersect	false
+			rect		0 47 44 23
+			<image>
+				key		0
+				screen	fishing
+				index	12
+			</image>
+			<panel>
+				id			pan_fish_rank
+				enable		true
+				visible		true
+				layer		102
+				intersect	false
+				rect		33 12 7 8
+				<image>
+					key		0
+					screen	fishing_rank
+					index	1
+				</image>
+			</panel>
+		</panel>
+		<panel>
+			id			pan_fighting_eff
+			enable		true
+			visible		true
+			layer		110
+			intersect	false
+			rect		0 0 458 31
+		</panel>
+		<panel>
+			id		pan_reel
+			enable		true
+			visible		true
+			layer		101
+			intersect	false
+			rect		367 22 32 32
+			<image>
+				key		0
+				screen	fishing
+				index	4
+			</image>
+		</panel>
+	</panel>
+	
+</window>

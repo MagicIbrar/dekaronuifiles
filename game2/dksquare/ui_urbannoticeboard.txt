@@ -1,0 +1,1395 @@
+<window>
+	name			loa_war_result
+	enable			true
+	visible			true
+	layer			100
+	modal			false
+	rect			-373 -262 374 261
+	position		center center
+	titlerect		28 2 717 16
+
+	<panel>
+		id		pan_info_top
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 747 150
+
+		<image>
+				key		none
+				screen	loa_battle
+				index	1
+		</image>
+
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		10
+			rect		28 2 689 14
+			position	0 1
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		160 618
+			</title>
+		</label>
+
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		729 2 15 15
+
+			<image>
+				key	none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key	over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key	down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+
+		<panel>
+			id		pan_top_win
+			enable		false
+			visible		false
+			layer		101
+			align		center
+			rect		336 64 74 23
+	
+			<image>
+					key	none
+					screen	loa_battle
+					index	3
+			</image>
+		</panel>
+		<panel>
+			id		pan_top_lose
+			enable		false
+			visible		false
+			layer		102
+			align		center
+			rect		336 64 74 23	
+	
+			<image>
+					key	none
+					screen	loa_battle
+					index	4
+			</image>
+		</panel>
+		<panel>
+			id		pan_top_draw
+			enable		false
+			visible		false
+			layer		102
+			align		center
+			rect		328 64 90 23	
+	
+			<image>
+					key	none
+					screen	loa_battle
+					index	5
+			</image>
+		</panel>
+		<panel>
+			id		pan_top_blue_gauge_bar
+			enable		true
+			visible		true
+			layer		101
+			align		left
+			rect		374 117 233 10	
+	
+			<image>
+					key	none
+					screen	loa_battle
+					index	6
+			</image>
+		</panel>
+		<panel>
+			id		pan_top_blade
+			enable		true
+			visible		true
+			layer		102
+			align		center
+			rect		350 100 47 44	
+	
+			<image>
+					key	none
+					screen	loa_battle
+					index	2
+			</image>
+		</panel>
+		<panel>
+			id		pan_top_blue_domi_score
+			enable		true
+			visible		true
+			layer		102
+			align		center
+			rect		668 31 32 38	
+	
+			<image>
+					key	none
+					screen	ImageNumber_02
+					index	0
+			</image>
+		</panel>
+
+		<panel>
+			id		pan_top_blue_dominate
+			enable		true
+			visible		true
+			layer		10
+			rect		515 36 150 35
+
+			<panel>
+				id		pan_top_b_i_a_dominate
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 150 35
+
+				<panel>
+					id		pan_image_alphabet
+					enable		true
+					visible		true
+					layer		102	
+					rect		0 0 20 27	
+	
+					<image>
+						key	none
+					</image>
+				</panel>
+			</panel>
+			<label>
+				id		lbl_domiate
+				enable		false
+				visible		false
+				layer		10
+				rect		90 110 130 24
+				align		center
+				<title>
+					text 		Dominate
+				</title>
+			</label>
+		</panel>
+
+
+
+
+		<panel>
+			id		pan_top_blue_kill_score
+			enable		true
+			visible		true
+			layer		102
+			rect		616 80 80 22	
+	
+			<panel>
+				id		pan_top_blue_kill_score_01
+				enable		true
+				visible		true
+				layer		102
+				rect		0 0 18 22	
+	
+				<image>
+						key	none
+						screen	ImageNumber_02
+						index	0
+				</image>
+			</panel>
+			<panel>
+				id		pan_top_blue_kill_score_02
+				enable		true
+				visible		true
+				layer		102
+				rect		20 0 18 22	
+	
+				<image>
+						key	none
+						screen	ImageNumber_02
+						index	0
+				</image>
+			</panel>
+			<panel>
+				id		pan_top_blue_kill_score_03
+				enable		true
+				visible		true
+				layer		102
+				rect		40 0 18 22	
+	
+				<image>
+						key	none
+						screen	ImageNumber_02
+						index	0
+				</image>
+			</panel>
+			<panel>
+				id		pan_top_blue_kill_score_04
+				enable		true
+				visible		true
+				layer		102
+				rect		60 0 18 22	
+	
+				<image>
+						key	none
+						screen	ImageNumber_02
+						index	0
+				</image>
+			</panel>
+		</panel>
+
+		<panel>
+			id		pan_top_blue_kill
+			enable		true
+			visible		true
+			layer		10
+			rect		560 75 50 35
+
+			<panel>
+				id		pan_top_b_i_a_kill
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 50 35
+
+				<panel>
+					id		pan_image_alphabet
+					enable		true
+					visible		true
+					layer		102	
+					rect		0 0 20 27	
+	
+					<image>
+						key	none
+					</image>
+				</panel>
+			</panel>
+			<label>
+				id		lbl_kill
+				enable		false
+				visible		false
+				layer		10
+				rect		0 0 130 24
+				align		center
+				<title>
+					text 		Kill
+				</title>
+			</label>
+		</panel>
+
+		<panel>
+			id		pan_top_blue_world_name
+			enable		true
+			visible		true
+			layer		10
+			rect		605 105 138 35
+
+			<panel>
+				id		pan_top_b_i_a_world_name
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 138 35
+				<panel>
+					id		pan_image_alphabet
+					enable		false
+					visible		false
+					layer		102
+					rect		0 0 20 27	
+		
+					<image>
+							key	none
+					</image>
+				</panel>
+			</panel>
+			<label>
+				id		lbl_top_blue_team
+				enable		false
+				visible		false
+				layer		10
+				rect		605 110 138 24
+				align		center
+				<title>
+					state 		none
+					color		ff00aaff
+					fontIndex	24
+					position	0 0
+					text2 		160 102
+				</title>
+			</label>
+		</panel>
+
+		<panel>
+			id		pan_top_red_domi_score
+			enable		true
+			visible		true
+			layer		102
+			rect		48 31 32 38	
+	
+			<image>
+					key	none
+					screen	ImageNumber_03
+					index	0
+			</image>
+		</panel>
+
+
+		<panel>
+			id		pan_top_red_dominate
+			enable		true
+			visible		true
+			layer		10
+			rect		80 36 150 35
+
+			<panel>
+				id		pan_top_r_i_a_dominate
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 150 35
+
+				<panel>
+					id		pan_image_alphabet
+					enable		true
+					visible		true
+					layer		102	
+					rect		0 0 20 27	
+	
+					<image>
+						key	none
+					</image>
+				</panel>
+			</panel>
+			<label>
+				id		lbl_domiate
+				enable		false
+				visible		false
+				layer		10
+				rect		0 0 130 24
+				align		center
+				<title>
+					text 		Dominate
+				</title>
+			</label>
+		</panel>
+
+
+
+
+
+		<panel>
+			id		pan_top_red_kill_score
+			enable		true
+			visible		true
+			layer		102
+			rect		48 80 80 22	
+	
+			<panel>
+				id		pan_top_red_kill_score_04
+				enable		true
+				visible		true
+				layer		102
+				rect		0 0 18 22	
+	
+				<image>
+						key	none
+						screen	ImageNumber_03
+						index	0
+				</image>
+			</panel>
+			<panel>
+				id		pan_top_red_kill_score_03
+				enable		true
+				visible		true
+				layer		102
+				rect		20 0 18 22	
+	
+				<image>
+						key	none
+						screen	ImageNumber_03
+						index	0
+				</image>
+			</panel>
+			<panel>
+				id		pan_top_red_kill_score_02
+				enable		true
+				visible		true
+				layer		102
+				rect		40 0 18 22	
+	
+				<image>
+						key	none
+						screen	ImageNumber_03
+						index	0
+				</image>
+			</panel>
+			<panel>
+				id		pan_top_red_kill_score_01
+				enable		true
+				visible		true
+				layer		102
+				rect		60 0 18 22	
+	
+				<image>
+						key	none
+						screen	ImageNumber_03
+						index	0
+				</image>
+			</panel>
+		</panel>
+
+
+		<panel>
+			id		pan_top_red_kill
+			enable		true
+			visible		true
+			layer		10
+			rect		130 75 50 35
+
+			<panel>
+				id		pan_top_r_i_a_kill
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 50 35
+
+				<panel>
+					id		pan_image_alphabet
+					enable		true
+					visible		true
+					layer		102	
+					rect		0 0 20 27	
+	
+					<image>
+						key	none
+					</image>
+				</panel>
+			</panel>
+			<label>
+				id		lbl_kill
+				enable		false
+				visible		false
+				layer		10
+				rect		0 0 130 24
+				align		center
+				<title>
+					text 		Kill
+				</title>
+			</label>
+		</panel>
+
+		<panel>
+			id		pan_top_red_world_name
+			enable		true
+			visible		true
+			layer		10
+			rect		4 105 138 35
+
+			<panel>
+				id		pan_top_r_i_a_world_name
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 138 35
+
+				<panel>
+					id		pan_image_alphabet
+					enable		true
+					visible		true
+					layer		102	
+					rect		0 0 20 27	
+	
+					<image>
+						key	none
+					</image>
+				</panel>
+			</panel>
+			<label>
+				id		lbl_top_red_team
+				enable		false
+				visible		false
+				layer		10
+				rect		15 110 130 24
+				align		center
+				<title>
+					state 		none
+					color		ffff00aa
+					fontIndex	24
+					position	0 0
+					text2 		160 102
+				</title>
+			</label>
+		</panel>
+	</panel>
+
+
+
+	<panel>
+		id		pan_info_middle
+		enable		true
+		visible		true
+		layer		100
+		rect		0 150 747 100
+		<image>
+				key	none
+				screen	loa_battle
+				index	7
+		</image>
+	
+		<panel>
+			id		pan_middle_header
+			enable		true
+			visible		true
+			layer		100
+			rect		13 6 721 20
+			<image>
+					key	none
+					screen	loa_battle
+					index	10
+			</image>
+			<panel>
+				id		pan_header_achievement
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 123 20
+
+				<panel>
+					id		pan_h_a_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		120 0 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id			lbl_h_achievement
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 120 20
+					align		center
+					<title>
+						state 		none
+						color		ffc0c000
+						fontIndex	4
+						position	0 4
+						text2 		160 611
+					</title>
+				</label>					
+			</panel>
+			<panel>
+				id		pan_header_name
+				enable		true
+				visible		true
+				layer		100
+				rect		125 0 180 20
+
+				<panel>
+					id		pan_h_n_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		177 0 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id			lbl_h_name
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 180 20
+					align		center
+					<title>
+						state 		none
+						color		ffc0c000
+						fontIndex	4
+						position	0 4
+						text2 		160 104
+					</title>
+				</label>								
+			</panel>
+			<panel>
+				id		pan_header_class
+				enable		true
+				visible		true
+				layer		100
+				rect		305 0 120 20
+
+				<panel>
+					id		pan_h_c_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		118 0 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>		
+				<label>
+					id			lbl_h_class
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 120 20
+					align		center
+					<title>
+						state 		none
+						color		ffc0c000
+						fontIndex	4
+						position	0 4
+						text2 		160 105
+					</title>
+				</label>								
+			</panel>
+			<panel>
+				id		pan_header_server
+				enable		true
+				visible		true
+				layer		100
+				rect		425 0 120 20
+
+				<panel>
+					id		pan_h_s_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		118 0 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id			lbl_h_server
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 120 20
+					align		center
+					<title>
+						state 		none
+						color		ffc0c000
+						fontIndex	4
+						position	0 4
+						text2 		160 106
+					</title>
+				</label>									
+			</panel>
+			<panel>
+				id		pan_header_level
+				enable		true
+				visible		true
+				layer		100
+				rect		545 0 50 20
+
+				<panel>
+					id		pan_h_l_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		48 0 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id			lbl_h_level
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 50 20
+					align		center
+					<title>
+						state 		none
+						color		ffc0c000
+						fontIndex	4
+						position	0 4
+						text2 		160 107
+					</title>
+				</label>
+			</panel>
+			<panel>
+				id		pan_header_occupation
+				enable		true
+				visible		true
+				layer		100
+				rect		595 0 50 20
+
+				<panel>
+					id		pan_h_l_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		48 0 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id			lbl_h_occupation
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 50 20
+					align		center
+					<title>
+						state 		none
+						color		ffc0c000
+						fontIndex	4
+						position	0 4
+						text2 		160 613
+					</title>
+				</label>					
+			</panel>
+			<panel>
+				id		pan_header_kill
+				enable		true
+				visible		true
+				layer		100
+				rect		645 0 75 20
+				
+				<label>
+					id		lbl_h_kill
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 75 20
+					align		center
+					<title>
+						state 		none
+						color		ffc0c000
+						fontIndex	4
+						position	0 4
+						text2 		160 612
+					</title>
+				</label>
+				
+			</panel>
+		</panel>
+
+
+
+		<panel>
+			id		pan_middle_detail
+			enable		false
+			visible		false
+			layer		100
+			rect		13 30 721 66
+			<image>
+					key	none
+					screen	loa_battle
+					index	12
+			</image>
+			<panel>
+				id		pan_detail_achievement
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 123 20
+
+				<panel>
+					id		pan_d_a_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		120 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id		lbl_d_achievement
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 120 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 611
+					</title>
+				</label>					
+					
+			</panel>
+			<panel>
+				id		pan_detail_name
+				enable		true
+				visible		true
+				layer		100
+				rect		125 0 180 20
+
+				<panel>
+					id		pan_d_n_h_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		177 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id			lbl_d_name
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 180 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 104
+					</title>
+				</label>														
+			</panel>
+			<panel>
+				id		pan_detail_class
+				enable		true
+				visible		true
+				layer		100
+				rect		305 0 120 20
+
+				<panel>
+					id		pan_d_c_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		118 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id			lbl_d_class
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 120 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 105
+					</title>
+				</label>								
+			</panel>
+			<panel>
+				id		pan_detail_server
+				enable		true
+				visible		true
+				layer		100
+				rect		425 0 120 20
+
+				<panel>
+					id		pan_d_s_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		118 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id			lbl_d_server
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 120 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 106
+					</title>
+				</label>									
+			</panel>
+			<panel>
+				id		pan_detail_level
+				enable		true
+				visible		true
+				layer		100
+				rect		545 0 50 20
+
+				<panel>
+					id		pan_d_l_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		48 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id			lbl_d_level
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 50 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 107
+					</title>
+				</label>
+			</panel>
+			<panel>
+				id		pan_detail_occupation
+				enable		true
+				visible		true
+				layer		100
+				rect		595 0 50 20
+
+				<panel>
+					id		pan_d_o_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		48 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>
+				<label>
+					id			lbl_d_occupation
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 50 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 613
+					</title>
+				</label>				
+			</panel>
+			<panel>
+				id		pan_detail_kill
+				enable		true
+				visible		true
+				layer		100
+				rect		645 0 50 20
+		
+				<label>
+					id			lbl_d_kill
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 75 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 612
+					</title>
+				</label>
+			</panel>
+
+			<panel>
+				id		pan_detail_separate_v_buttom
+				enable		true
+				visible		true
+				layer		102
+				rect		10 20 721 2
+				<image>
+					key	none
+					screen	loa_battle
+					index	9
+				</image>		
+			</panel>
+
+		</panel>
+
+		<panel>
+			id		pan_middle_separate_h_top
+			enable		true
+			visible		true
+			layer		101
+			rect		23 4 721 2
+			<image>
+					key	none
+					screen	loa_battle
+					index	9
+			</image>		
+		</panel>
+		<panel>
+			id		pan_middle_separate_h_buttom
+			enable		true
+			visible		true
+			layer		102
+			rect		23 27 721 2
+			<image>
+					key	none
+					screen	loa_battle
+					index	9
+			</image>		
+		</panel>
+	</panel>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<panel>
+		id			pan_info_buttom
+		enable		true
+		visible		true
+		layer		100
+		rect		0 250 747 70
+		<image>
+				key	none
+				screen	loa_battle
+				index	7
+		</image>
+		<title>
+			state 		none
+			color		ffc0c000
+			fontIndex	4
+			position	15 7
+			text2 		160 113
+		</title>
+
+		<panel>
+			id		pan_buttom_myinfo
+			enable		true
+			visible		true
+			layer		100
+			rect		13 30 721 20
+			<image>
+					key	none
+					screen	loa_battle
+					index	12
+			</image>
+			<panel>
+				id		pan_myinfo_achievement
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 123 20
+
+				<panel>
+					id		pan_my_a_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		120 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>		
+				<label>
+					id		lbl_my_achievement
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 120 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 611
+					</title>
+				</label>					
+			</panel>
+			<panel>
+				id		pan_myinfo_name
+				enable		true
+				visible		true
+				layer		100
+				rect		125 0 180 20
+
+				<panel>
+					id		pan_my_n_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		177 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>		
+				<label>
+					id			lbl_my_name
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 180 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 104
+					</title>
+				</label>														
+			</panel>
+			<panel>
+				id		pan_myinfo_class
+				enable		true
+				visible		true
+				layer		100
+				rect		305 0 120 20
+
+				<panel>
+					id		pan_my_class_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		118 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>		
+				<label>
+					id			lbl_my_class
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 120 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 105
+					</title>
+				</label>			</panel>
+			<panel>
+				id		pan_myinfo_server
+				enable		true
+				visible		true
+				layer		100
+				rect		425 0 120 20
+
+				<panel>
+					id		pan_my_s_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		118 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>		
+				<label>
+					id			lbl_my_server
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 120 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 106
+					</title>
+				</label>			</panel>
+			<panel>
+				id		pan_myinfo_level
+				enable		true
+				visible		true
+				layer		100
+				rect		545 0 50 20
+
+				<panel>
+					id		pan_my_l_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		48 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>		
+				<label>
+					id			lbl_my_level
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 50 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 107
+					</title>
+				</label>			</panel>
+			<panel>
+				id		pan_myinfo_occupation
+				enable		true
+				visible		true
+				layer		100
+				rect		595 0 50 20
+
+				<panel>
+					id		pan_my_o_separate
+					enable		true
+					visible		true
+					layer		100
+					rect		48 1 2 20
+					<image>
+						key	none
+						screen	loa_battle
+						index	11
+					</image>
+				</panel>		
+				<label>
+					id			lbl_my_occupation
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 50 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 612
+					</title>
+				</label>			</panel>
+			<panel>
+				id		pan_myinfo_kill
+				enable		true
+				visible		true
+				layer		100
+				rect		645 0 50 20
+				
+				<label>
+					id			lbl_my_kill
+					enable		true
+					visible		true
+					layer		10
+					rect		0 0 75 20
+					align		center
+					<title>
+						state 		none
+						color		ffffffff
+						fontIndex	4
+						position	0 4
+						text 		160 613
+					</title>
+				</label>				
+			</panel>
+		</panel>
+		<panel>
+			id		pan_middle_separate_v_top
+			enable		true
+			visible		true
+			layer		101
+			rect		10 27 721 2
+			<image>
+					key	none
+					screen	loa_battle
+					index	9
+			</image>		
+		</panel>
+		<panel>
+			id		pan_middle_separate_v_buttom
+			enable		true
+			visible		true
+			layer		102
+			rect		10 51 721 2
+			<image>
+					key	none
+					screen	loa_battle
+					index	9
+			</image>		
+		</panel>
+	</panel>
+</window>

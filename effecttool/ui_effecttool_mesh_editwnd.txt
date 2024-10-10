@@ -1,0 +1,902 @@
+window_layer	auto
+window_size	500	370
+window_alignaxis	left	top
+window_position	30	70
+window_visible	false
+
+create_control	panel	pan_mesh
+{
+	control_group	56
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	0	6	6
+	control_drawdiv	xy	2
+	control_drawsize	500	370
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_meshtitle
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+		control_text	10	1	"Mesh Tool"
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	494	13
+		control_drawpoint	3	3
+		control_enable	true
+		control_visible	true
+
+		create_control	button	btn_meshclose
+		{
+		control_image	oooo	UI\Tool\ui_winbtn03.dds	65	11	11	11
+		control_drawdiv	xy	2
+		control_drawsize	11	11
+		control_drawpoint	483	1
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	// SizeTimetype
+	create_control	combobox	cbb_meshsize_timetype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	40	30
+	control_drawpoint	70	209
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_meshsize_timetype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	14
+	control_drawpoint	70	205
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_meshsize_timetype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	110	205
+	control_enable	true
+	control_visible	true
+	}
+	
+	// AlphaTimetype
+	create_control	combobox	cbb_meshalpha_timetype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	40	30
+	control_drawpoint	70	266
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_meshalpha_timetype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	14
+	control_drawpoint	70	252
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_meshalpha_timetype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	110	252
+	control_enable	true
+	control_visible	true
+	}
+	
+	// ColorTimetype
+	create_control	combobox	cbb_meshcolor_timetype
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window01.dds	0	0	4	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	1
+	control_drawsize	40	30
+	control_drawpoint	70	318
+	control_enable	true
+	control_visible	false
+	control_build	
+	ccombobox_edge	2	2	2	2
+	ccombobox_size	10
+	ccombobox_lineheight	12
+	ccombobox_color	select	210	210	210
+	}
+
+	create_control	panel	pan_meshcolor_timetype
+	{
+	control_group	0
+	control_color	true	64	0	128	0
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	14
+	control_drawpoint	70	304
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_meshcolor_timetype
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	0	8	16	12
+	control_drawdiv	xy	3
+	control_drawsize	16	14
+	control_drawpoint	110	304
+	control_enable	true
+	control_visible	true
+	}
+	
+
+	create_control	text	txt_meshtwoside
+	{
+	control_text	0	0	TwoSide
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	10	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_mesh_skel
+	{
+	control_text	0	0	Skel
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	10	54
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_mesh_anim
+	{
+	control_text	0	0	Anim
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	10	80
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_mesh_mesh
+	{
+	control_text	0	0	Mesh
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	10	106
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_mesh_tpack
+	{
+	control_text	0	0	TPack
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	10	132
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_mesh_animlength
+	{
+	control_text	0	0	AnimLength
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	60	23
+	control_drawpoint	10	158
+	control_enable	true
+	control_visible	true
+	}
+		
+	create_control	text	txt_meshsize
+	{
+	control_text	0	0	Size
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	40	23
+	control_drawpoint	10	180
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshsize_timetype
+	{
+	control_text	0	0	TimeType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	15	205
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshsize_period
+	{
+	control_text	0	0	Period
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	130	205
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshsize_animtime
+	{
+	control_text	0	0	AnimTime
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	230	205
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshsize_value
+	{
+	control_text	0	0	Value
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	340	205
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshalpha
+	{
+	control_text	0	0	Alpha
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	40	23
+	control_drawpoint	10	226
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshalpha_timetype
+	{
+	control_text	0	0	TimeType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	15	252
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshalpha_period
+	{
+	control_text	0	0	Period
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	130	252
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshalpha_animtime
+	{
+	control_text	0	0	AnimTime
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	230	252
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshalpha_value
+	{
+	control_text	0	0	Value
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	340	252
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshcolor
+	{
+	control_text	0	0	color
+	control_textcolor	0	0	0
+	control_textfont	normal
+	control_drawsize	40	23
+	control_drawpoint	10	278
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshcolor_timetype
+	{
+	control_text	0	0	TimeType
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	15	304
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshcolor_period
+	{
+	control_text	0	0	Period
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	40	23
+	control_drawpoint	130	304
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshcolor_animtime
+	{
+	control_text	0	0	AnimTime
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	23
+	control_drawpoint	230	304
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshcolor_r
+	{
+	control_text	0	0	R
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	23
+	control_drawpoint	340	304
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshcolor_g
+	{
+	control_text	0	0	G
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	23
+	control_drawpoint	390	304
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	text	txt_meshcolor_b
+	{
+	control_text	0	0	B
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	23
+	control_drawpoint	440	304
+	control_enable	true
+	control_visible	true
+	}
+	
+	
+	create_control	button	btn_twoside
+	{
+	control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+	control_drawdiv	xy	2
+	control_drawsize	13	13
+	control_drawpoint	70	28
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_mesh_skelopen
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	440	54
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_mesh_animopen
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	440	80
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_mesh_meshopen
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	440	106
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_mesh_tpackopen
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	440	132
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_size_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	180
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_size_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	180
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_size_add
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Add
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	390	180
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_alpha_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	226
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_alpha_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	226
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_alpha_add
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Add
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	390	226
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_color_prev
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	322	278
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_color_next
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	24	21
+	control_drawdiv	xy	1
+	control_drawsize	24	21
+	control_drawpoint	360	278
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_color_add
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Add
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	390	278
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_mesh_open
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Open
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	10	340
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_mesh_save
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Save
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	18
+	control_drawpoint	100	340
+	control_enable	true
+	control_visible	true
+	}
+	
+	
+	create_control	edit	edt_mesh_skel
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	370	15
+	control_drawpoint	60	54
+	control_tab	0
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_mesh_anim
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	370	15
+	control_drawpoint	60	80
+	control_tab	1
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_mesh_mesh
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	370	15
+	control_drawpoint	60	106
+	control_tab	2
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_mesh_tpack
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	370	15
+	control_drawpoint	60	132
+	control_tab	3
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	100
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_mesh_animlength
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	100	15
+	control_drawpoint	100	158
+	control_tab	4
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	20
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_meshsize_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	15
+	control_drawpoint	347	180
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+	
+	create_control	edit	edt_meshsize_period
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	175	205
+	control_tab	5
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_meshsize_animtime
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	285	205
+	control_tab	6
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_meshsize_value
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	375	205
+	control_tab	7
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_meshalpha_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	15
+	control_drawpoint	347	226
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+	
+	create_control	edit	edt_meshalpha_period
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	175	252
+	control_tab	8
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_meshalpha_animtime
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	285	252
+	control_tab	9
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_meshalpha_value
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	375	252
+	control_tab	10
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_meshcolor_count
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	10	15
+	control_drawpoint	347	278
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+	
+	create_control	edit	edt_meshcolor_period
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	175	304
+	control_tab	11
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_meshcolor_animtime
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	50	15
+	control_drawpoint	285	304
+	control_tab	12
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_meshcolor_r
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	15
+	control_drawpoint	355	304
+	control_tab	13
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_meshcolor_g
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	15
+	control_drawpoint	405	304
+	control_tab	14
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}
+	
+	create_control	edit	edt_meshcolor_b
+	{
+	control_color	true	255	255	255	255
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	20	15
+	control_drawpoint	455	304
+	control_tab	16
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	5
+	cedit_chartype	none
+	}	
+}
+

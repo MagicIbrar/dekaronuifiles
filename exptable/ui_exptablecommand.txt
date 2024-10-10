@@ -1,0 +1,4 @@
+
+#exptablecommand create_exptable	1	"create_exptable [file_name]"
+#exptablecommand load_exptable		1	"load_exptable[file_name]"
+#exptablecommand save_exptable		1	"save_exptable [file_name]"

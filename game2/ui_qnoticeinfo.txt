@@ -1,0 +1,204 @@
+<window>
+	name			qnotice_info
+	enable			true
+	visible			true
+	layer			100
+	rect			10 60 293 239
+	titlerect		0 0 267 24
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 283 179
+		<image>
+			key		none
+			screen	quest
+			index	3
+		</image>
+		
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		28 2 225 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 64
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		265 2 15 15
+
+			sound  0
+			<image>
+				key		none
+				screen	etc_01 
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01 
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01 
+				index		317
+
+			</image>
+		</button>
+	</panel>	
+
+	<label>
+			id		lbl_empty
+			enable		true
+			visible		false
+			layer		110
+			align		center
+			rect		6 79 257 20
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		1002 14
+			</title>
+	</label>
+	
+	<vscroll>
+		id			scroll_notice
+		enable		true
+		visible		true
+		layer		100
+		rect		265 25 12 148
+		maxvalue	0
+		buttontick  1
+		<button>
+			id			scroll_notice_upbtn
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 12 12
+			type		1
+			<image>
+				key		none
+				screen	etc_01
+				index	19
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	20
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	21
+			</image>			
+		</button>
+		<button>
+			id			scroll_notice_downbtn
+			enable		true
+			visible		true
+			layer		100
+			rect		0 136 12 12
+			type		1
+			<image>
+				key		none
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>	
+		</button>
+		<panel>
+			id			scroll_notice_bar
+			enable		true
+			visible		true
+			layer		100
+			rect		0 12 12 19
+			moveable	true
+			noneimage 	true
+			<image>
+				key		none
+				screen	etc_01
+				index	24
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	25
+			</image>
+		</panel>
+	</vscroll>
+			
+	<noticectrl>	
+		id		noticectrl_0
+		enable		false
+		visible		false
+		layer		100
+		rect		6 25 257 50
+		<image>
+			key		none
+			screen	quest 
+			index	4
+		</image>				
+			
+			<label>
+				id			noticectrl_0_result_label
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		0 4 46 14
+				<title>
+					color		ff76f756
+					fontIndex	2			
+				</title>	
+			</label>	
+			
+			<label>
+				id			noticectrl_0_subtitle_label
+				enable		true
+				visible		true
+				layer		100
+				align		left
+				rect		57 4 194 14
+				<title>
+					color		fffcb602
+					fontIndex	2			
+				</title>	
+			</label>
+
+			<label>
+				id			noticectrl_0_npctitle_label
+				enable		true
+				visible		true
+				layer		100
+				align		right
+				rect		10 29 236 14
+				<title>
+					color		ffffffff
+					fontIndex	2			
+				</title>	
+			</label>				
+	</noticectrl>
+		
+</window>

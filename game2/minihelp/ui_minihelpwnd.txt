@@ -1,0 +1,30 @@
+<window>
+	name			minihelp
+	enable			true
+	visible			true
+	layer			210
+	layertype		bottom
+	position		left bottom
+	rect			0 -300 344 -262
+	<label>
+		id			lbl_help
+		enable		true
+		visible		true
+		layer		224
+		rect		0 0 344 38
+		multiline 	true
+		intersect	false
+		<title>
+			color		ffffffff
+			fontIndex	2
+			position	1 1
+			text		"0"
+		</title>
+		<image>
+			key		0
+			screen	common
+			index	1
+			color	40010101
+		</image>
+	</label>
+</window>

@@ -1,0 +1,22 @@
+<window>
+	name			maptitlewnd
+	enable			true
+	visible			false
+	layer			100
+	alwaysontop		true
+	position		center top
+	rect			-256 148 256 238
+	<panel>
+		id			pan_maptitle
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 512 85
+		intersect 	false
+		<image>
+			key		0
+			screen	maptitle
+			index	0
+		</image>
+	</panel>
+</window>

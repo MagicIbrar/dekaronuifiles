@@ -1,0 +1,38 @@
+window_layer	auto
+window_size	385	125
+window_alignaxis	center	center
+window_position	0	0
+window_visible	false
+
+create_control	panel	pan_char_delete
+{
+	control_group	0
+	control_image	oxxx	UI\Game\message_del_01.dds	0	0	385	125
+	control_drawdiv	xy	2
+	control_drawsize	385	125
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_delete
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooooo	UI\Game\message_del_01.dds	354	128	95	32
+	control_drawsize	95	32
+	control_drawpoint	199	76	
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_cancel
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	ooooo	UI\Game\message_del_01.dds	385	0	95	32
+	control_drawsize	95	32
+	control_drawpoint	92	76
+	control_enable	true
+	control_visible	true
+	}
+}

@@ -1,0 +1,138 @@
+<window>
+	id	quickslotwnd
+	enable	true
+	visible	true
+	layer	100
+	position	left bottom
+	rect	0 -65 330 -9
+	modal	false
+	alwaysontop	true
+	titlerect	294 5 309 53
+	<panel>
+		id	pan_handle
+		enable	true
+		visible	true
+		layer	1000
+		rect	294 101 15 48
+	</panel>
+	<panel>
+		id	pan_bg
+		enable	true
+		visible	true
+		layer	1
+		rect	0 0 330 56
+		<panel>
+			id	pan_dozen
+			enable	true
+			visible	false
+			layer	1
+			rect	0 0 330 56
+		</panel>
+		<quickslot>
+			id	slot
+			enable	true
+			visible	false
+			layer	100
+			rect	20 4 44 40
+			<panel>
+				id	slot_base
+				enable	true
+				visible	true
+				layer	1
+				rect	0 0 44 40
+				<image>
+					key	none
+					color	ffffffff
+					screen	newMainbar
+					index	201
+				</image>
+			</panel>
+			<panel>
+				id	slot_cool
+				enable	true
+				visible	true
+				layer	3
+				rect	2 4 40 40
+			</panel>
+			<panel>
+				id	slot_skill
+				enable	true
+				visible	true
+				layer	2
+				rect	2 4 40 40
+			</panel>
+			<panel>
+				id	slot_grd
+				enable	true
+				visible	true
+				layer	5
+				rect	2 4 40 40
+			</panel>
+		</quickslot>
+		<label>
+			id	slot_label
+			enable	true
+			visible	false
+			layer	120
+			rect	20 6 44 15
+			align	right
+			<title>
+				state	none
+				color	ffffffff
+				fontindex	4
+			</title>
+		</label>
+		<panel>
+			id	pan_rear
+			enable	true
+			visible	true
+			layer	5
+			rect	0 0 330 56
+			<image>
+				key	none
+				color	ffffffff
+				screen	monster_quickslot
+				index	1
+			</image>
+			<button>
+				id	btn_close
+				enable	true
+				visible	true
+				layer	100
+				tooltip	23 55
+				rect	242 9 49 41
+				<image>
+					key	none
+					color	ffffffff
+					screen	monster_quickslot
+					index	2
+				</image>
+				<image>
+					key	over
+					color	ffffffff
+					screen	monster_quickslot
+					index	3
+				</image>
+				<image>
+					key	down
+					color	ffffffff
+					screen	monster_quickslot
+					index	4
+				</image>
+			</button>
+			<label>
+				id	lbl_controltype
+				enable	true
+				visible	true
+				layer	101
+				rect	295 20 12 14
+				align	center
+				<title>
+					state	none
+					color	ffffffff
+					fontindex	4
+				</title>
+			</label>
+		</panel>
+	</panel>
+</window>

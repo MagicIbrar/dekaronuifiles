@@ -1,0 +1,38 @@
+<window>
+	name			targetbuff
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			164 93 218 147
+	alwaysontop		true
+	<button>
+		id		btn_targetbuff
+		enable		true
+		visible		true
+		layer		101
+		rect		0 0 54 54
+		blink 		true
+		blinktime  	1000
+		<image>
+			key		none
+			screen	etc_01
+			index	84
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	86
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	85
+		</image>
+		<image>
+			key		blink
+			screen	etc_01
+			index	86
+		</image>
+	</button>
+</window>

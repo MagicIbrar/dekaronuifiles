@@ -1,0 +1,2995 @@
+<window>
+	name			stonegamblewnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-347 -304 347 304
+	titlerect		7 3 670 30
+	<panel>
+		id			pan_crusher
+		enable		true
+		visible		false
+		layer		1
+		rect		0 0 345 496
+		<image>
+			key				0
+			screen			stonegamble
+			index			1
+		</image>
+		<label>
+			id				lbl_tagtitle
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			7 9 330 24
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		4
+				position		0 7
+				text2			350 100
+			</title>
+		</label>
+		<label>
+			id				lbl_tagtarget
+			enable			true
+			visible			true
+			layer			100
+			rect			21 46 316 19
+			<title>
+				state 			title
+				color			FFFFE08C
+				fontIndex		4
+				position		0 3
+				text2			350 101
+			</title>
+		</label>
+		<label>
+			id				lbl_tagcashitem
+			enable			true
+			visible			true
+			layer			100
+			rect			21 191 316 19
+			<title>
+				state 			title
+				color			FFFFE08C
+				fontIndex		4
+				position		0 3
+				text2			350 102
+			</title>
+		</label>
+		<label>
+			id				lbl_tagresult
+			enable			true
+			visible			true
+			layer			100
+			rect			21 305 316 19
+			<title>
+				state 			title
+				color			FFFFE08C
+				fontIndex		4
+				position		0 3
+				text2			350 103
+			</title>
+		</label>
+		<item>
+			id				stoneslot_0
+			enable			true
+			visible			true
+			layer			100
+			rect			90 83 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<item>
+			id				stoneslot_1
+			enable			true
+			visible			true
+			layer			100
+			rect			123 83 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<item>
+			id				stoneslot_2
+			enable			true
+			visible			true
+			layer			100
+			rect			156 83 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<item>
+			id				stoneslot_3
+			enable			true
+			visible			true
+			layer			100
+			rect			189 83 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<item>
+			id				stoneslot_4
+			enable			true
+			visible			true
+			layer			100
+			rect			222 83 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<item>
+			id				stoneslot_5
+			enable			true
+			visible			true
+			layer			100
+			rect			90 116 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<item>
+			id				stoneslot_6
+			enable			true
+			visible			true
+			layer			100
+			rect			123 116 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<item>
+			id				stoneslot_7
+			enable			true
+			visible			true
+			layer			100
+			rect			156 116 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<item>
+			id				stoneslot_8
+			enable			true
+			visible			true
+			layer			100
+			rect			189 116 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<item>
+			id				stoneslot_9
+			enable			true
+			visible			true
+			layer			100
+			rect			222 116 33 33
+			cellsize		33 33
+			type			suit
+		</item>	
+		<timerpanel>
+			id				timer_stone
+			enable			true
+			visible			false
+			layer			10
+			rect			58 70 229 92
+			alphamax		255
+			alphamin		0
+			tempo			6
+			<image>
+				key			none
+				screen		stonegamble
+				index		18
+			</image>
+		</timerpanel>
+		<item>
+			id				premiumstone
+			enable			true
+			visible			true
+			layer			100
+			rect			72 230 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<timerpanel>
+			id				timer_premium
+			enable			true
+			visible			false
+			layer			10
+			rect			58 216 229 60
+			alphamax		255
+			alphamin		0
+			tempo			6
+			<image>
+				key			none
+				screen		stonegamble
+				index		18
+			</image>
+		</timerpanel>
+		<timerpanel>
+			id				timer_tagbonus
+			enable			true
+			visible			false
+			layer			10
+			rect			85 355 65 21
+			alphamax		255
+			alphamin		1
+			tempo			6
+			<image>
+				key			none
+				screen		stonegamble
+				index		19
+			</image>
+		</timerpanel>
+		<timerpanel>
+			id				timer_tagpremium
+			enable			true
+			visible			false
+			layer			10
+			rect			189 355 90 21
+			alphamax		255
+			alphamin		1
+			tempo			6
+			<image>
+				key			none
+				screen		stonegamble
+				index		20
+			</image>
+		</timerpanel>
+		<label>
+			id				lbl_premium
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			129 235 134 23
+			<title>
+				state 			title
+				color			ffffffff
+				fontIndex		2
+				position		0 6
+				text2			350 113
+			</title>
+		</label>
+		<item>
+			id				resultstone
+			enable			true
+			visible			true
+			layer			100
+			rect			154 347 33 33
+			cellsize		33 33
+			type			suit
+		</item>
+		<timerpanel>
+			id				timer_result
+			enable			true
+			visible			false
+			layer			10
+			rect			58 331 229 108
+			alphamax		255
+			alphamin		0
+			tempo			6
+			<image>
+				key			none
+				screen		stonegamble
+				index		18
+			</image>
+		</timerpanel>
+		<label>
+			id				lbl_result
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			90 392 164 14
+			<title>
+				state 			title
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_premiumresult
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			90 414 164 14
+			<title>
+				state 			title
+				color			FFFFE08C
+				fontIndex		2
+			</title>
+		</label>
+		<button>
+			id					btn_producewnd
+			enable				true
+			visible				true
+			align 				center
+			layer				100
+			rect				19 459 95 20
+			<image>
+				key				none
+				screen			stonegamble
+				index			2
+			</image>
+			<image>
+				key				over
+				screen			stonegamble
+				index			3
+			</image>
+			<image>
+				key				down
+				screen			stonegamble
+				index			4
+			</image>
+			<title>
+				state 			none
+				color			ffffffff
+				fontIndex		2
+				position		0 3
+				text2 			350 104
+			</title>
+			<title>
+				state 			over
+				color			ffffffff
+				fontIndex		2
+				position		0 3
+			</title>
+			<title>
+				state 			down
+				color			ff929292
+				fontIndex		2
+				position		1 4
+			</title>
+			<title>
+				state 			disable
+				color			ff929292
+				fontIndex		2
+				position		0 3
+			</title>
+		</button>
+		<button>
+			id					btn_crusher
+			enable				true
+			visible				true
+			align 				center
+			layer				100
+			rect				125 459 95 20
+			<image>
+				key				none
+				screen			stonegamble
+				index			2
+			</image>
+			<image>
+				key				over
+				screen			stonegamble
+				index			3
+			</image>
+			<image>
+				key				down
+				screen			stonegamble
+				index			4
+			</image>
+			<title>
+				state 			none
+				color			ffffffff
+				fontIndex		2
+				position		0 3
+				text2 			350 105
+			</title>
+			<title>
+				state 			over
+				color			ffffffff
+				fontIndex		2
+				position		0 3
+			</title>
+			<title>
+				state 			down
+				color			ff929292
+				fontIndex		2
+				position		1 4
+			</title>
+			<title>
+				state 			disable
+				color			ff929292
+				fontIndex		2
+				position		0 3
+			</title>
+		</button>
+		<button>
+			id					btn_close
+			enable				true
+			visible				true
+			align 				center
+			layer				100
+			rect				231 459 95 20
+			<image>
+				key				none
+				screen			stonegamble
+				index			2
+			</image>
+			<image>
+				key				over
+				screen			stonegamble
+				index			3
+			</image>
+			<image>
+				key				down
+				screen			stonegamble
+				index			4
+			</image>
+			<title>
+				state 			none
+				color			ffffffff
+				fontIndex		2
+				position		0 3
+				text2 			350 106
+			</title>
+			<title>
+				state 			over
+				color			ffffffff
+				fontIndex		2
+				position		0 3
+			</title>
+			<title>
+				state 			down
+				color			ff929292
+				fontIndex		2
+				position		1 4
+			</title>
+			<title>
+				state 			disable
+				color			ff929292
+				fontIndex		2
+				position		0 3
+			</title>
+		</button>
+	</panel>
+	<panel>
+		id			pan_produce
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 345 558
+		<image>
+			key				0
+			screen			stonegamble
+			index			5
+		</image>
+		<label>
+			id				lbl_tagtitle
+			enable			true
+			visible			true
+			layer			100
+			align 			center
+			rect			7 9 330 24
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		4
+				position		0 7
+				text2			350 107
+			</title>
+		</label>
+		<button>
+			id					btn_tab
+			enable				true
+			visible				false
+			align 				center
+			layer				100
+			rect				9 39 70 22
+			<image>
+				key				none
+				screen			stonegamble
+				index			10
+			</image>
+			<image>
+				key				check
+				screen			stonegamble
+				index			9
+			</image>
+			<title>
+				state 			none
+				color			ff929292
+				fontIndex		2
+				position		0 6
+			</title>
+			<title>
+				state 			over
+				color			ffffffff
+				fontIndex		2
+				position		0 6
+			</title>
+			<title>
+				state 			down
+				color			ff929292
+				fontIndex		2
+				position		2 7
+			</title>
+			<title>
+				state 			check
+				color			ffffffff
+				fontIndex		4
+				position		2 7
+			</title>
+		</button>
+		<item>
+			id					gamblewin
+			enable				true
+			visible				true
+			layer				100
+			rect				158 159 33 33
+			cellsize			33 33
+			type				suit
+		</item>
+		<panel>
+			id					pan_effect
+			enable				true
+			visible				true
+			layer				210
+			rect				30 150 300 35
+			intersect			false
+		</panel>
+		<timerpanel>
+			id					timer_gamblewin
+			enable				true
+			visible				false
+			layer				10
+			rect				142 144 63 61
+			alphamax			255
+			alphamin			0
+			tempo				6
+			<image>
+				key				none
+				screen			stonegamble
+				index			18
+			</image>
+		</timerpanel>
+		<button>
+			id					btn_produce
+			enable				true
+			visible				true
+			align 				center
+			layer				100
+			rect				119 217 111 45
+			<image>
+				key				none
+				screen			stonegamble
+				index			14
+			</image>
+			<image>
+				key				over
+				screen			stonegamble
+				index			15
+			</image>
+			<image>
+				key				down
+				screen			stonegamble
+				index			16
+			</image>
+		</button>
+		<label>
+			id				lbl_tagcashlock
+			enable			true
+			visible			true
+			layer			100
+			rect			25 343 117 20
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+				position		0 4
+				text2			350 108
+			</title>
+		</label>
+		<label>
+			id				lbl_tagcashmax
+			enable			true
+			visible			true
+			align 			center
+			layer			100
+			rect			150 343 35 20
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+				position		0 4
+				text2			350 109
+			</title>
+		</label>
+		<label>
+			id				lbl_cashmax
+			enable			true
+			visible			true
+			align 			right
+			layer			100
+			rect			193 343 40 20
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+				position		0 4
+			</title>
+		</label>
+		<label>
+			id				lbl_tagcashuse
+			enable			true
+			visible			true
+			align 			center
+			layer			100
+			rect			245 343 35 20
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+				position		0 4
+				text2			350 110
+			</title>
+		</label>
+		<label>
+			id				lbl_cashuse
+			enable			true
+			visible			true
+			align 			right
+			layer			100
+			rect			282 343 40 20
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+				position		0 4
+			</title>
+		</label>
+		<label>
+			id				lbl_tagnormallock
+			enable			true
+			visible			true
+			layer			100
+			rect			25 374 117 20
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+				position		0 4
+				text2			350 111
+			</title>
+		</label>
+		<label>
+			id				lbl_tagnormalmax
+			enable			true
+			visible			true
+			align 			center
+			layer			100
+			rect			150 374 35 20
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+				position		0 4
+				text2			350 109
+			</title>
+		</label>
+		<label>
+			id				lbl_normalmax
+			enable			true
+			visible			true
+			align 			right
+			layer			100
+			rect			193 374 40 20
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+				position		0 4
+			</title>
+		</label>
+		<label>
+			id				lbl_tagnormaluse
+			enable			true
+			visible			true
+			align 			center
+			layer			100
+			rect			245 374 35 20
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+				position		0 4
+				text2			350 110
+			</title>
+		</label>
+		<label>
+			id				lbl_normaluse
+			enable			true
+			visible			true
+			align 			right
+			layer			100
+			rect			282 374 40 20
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+				position		0 4
+			</title>
+		</label>
+		<label>
+			id				lbl_cost
+			enable			true
+			visible			true
+			align 			right
+			layer			100
+			rect			75 406 79 14
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id				lbl_meal
+			enable			true
+			visible			true
+			align 			right
+			layer			100
+			rect			244 406 79 14
+			<title>
+				state 			title
+				color			FFFFFFFF
+				fontIndex		2
+			</title>
+		</label>
+		<button>
+			id					btn_crusherwnd
+			enable				true
+			visible				true
+			align 				center
+			layer				100
+			rect				36 521 120 20
+			<image>
+				key				none
+				screen			stonegamble
+				index			6
+			</image>
+			<image>
+				key				over
+				screen			stonegamble
+				index			7
+			</image>
+			<image>
+				key				down
+				screen			stonegamble
+				index			8
+			</image>
+			<title>
+				state 			none
+				color			ffffffff
+				fontIndex		2
+				position		0 3
+				text2 			350 112
+			</title>
+			<title>
+				state 			over
+				color			ffffffff
+				fontIndex		2
+				position		0 3
+			</title>
+			<title>
+				state 			down
+				color			ff929292
+				fontIndex		2
+				position		1 4
+			</title>
+			<title>
+				state 			disable
+				color			ff929292
+				fontIndex		2
+				position		0 3
+			</title>
+		</button>
+		<button>
+			id					btn_close
+			enable				true
+			visible				true
+			align 				center
+			layer				100
+			rect				190 521 120 20
+			<image>
+				key				none
+				screen			stonegamble
+				index			6
+			</image>
+			<image>
+				key				over
+				screen			stonegamble
+				index			7
+			</image>
+			<image>
+				key				down
+				screen			stonegamble
+				index			8
+			</image>
+			<title>
+				state 			none
+				color			ffffffff
+				fontIndex		2
+				position		0 3
+				text2 			350 106
+			</title>
+			<title>
+				state 			over
+				color			ffffffff
+				fontIndex		2
+				position		0 3
+			</title>
+			<title>
+				state 			down
+				color			ff929292
+				fontIndex		2
+				position		1 4
+			</title>
+			<title>
+				state 			disable
+				color			ff929292
+				fontIndex		2
+				position		0 3
+			</title>
+		</button>
+		<textbox>
+			id				text_result
+			enable			true
+			visible			true
+			layer			100
+			rect			9 436 327 74
+			lineheight		14
+			margin			5 1
+			color			ffffffff
+			fonttype		2
+			<vscroll>
+				id				text_result_scroll
+				enable			true
+				visible			true
+				layer			100
+				rect			317 0 12 74
+				maxvalue		0
+				buttontick  	1
+				<button>
+					id				text_result_scroll_upbtn
+					enable			true
+					visible			true
+					layer			100
+					rect			0 0 12 12
+					type			1
+					<image>
+						key				0
+						screen			etc_01
+						index			19
+					</image>
+					<image>
+						key				over
+						screen			etc_01
+						index			20
+					</image>
+					<image>
+						key				down
+						screen			etc_01
+						index			21
+					</image>
+					<image>
+						key				disable
+						screen			etc_01
+						index			18
+					</image>
+				</button>
+				<button>
+					id				text_result_scroll_downbtn
+					enable			true
+					visible			true
+					layer			100
+					position		left bottom
+					rect			0 -12 12 12
+					type			1
+					<image>
+						key				0
+						screen			etc_01
+						index			15
+					</image>
+					<image>
+						key				over
+						screen			etc_01
+						index			16
+					</image>
+					<image>
+						key				down
+						screen			etc_01
+						index			17
+					</image>
+					<image>
+						key				disable
+						screen			etc_01
+						index			14
+					</image>
+				</button>
+				<panel>
+					id				text_result_scroll_bar
+					enable			true
+					visible			true
+					layer			100
+					rect			0 12 12 19 
+					moveable		true
+					noneimage 		true
+					<image>
+						key				none
+						screen			etc_01
+						index			24
+					</image>
+					<image>
+						key				over
+						screen			etc_01
+						index			25
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+		<item>
+			id				gambleslot_0
+			enable			true
+			visible			true
+			layer			100
+			rect			55 85 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_1
+			enable			true
+			visible			true
+			layer			100
+			rect			95 85 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_2
+			enable			true
+			visible			true
+			layer			100
+			rect			135 85 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_3
+			enable			true
+			visible			true
+			layer			100
+			rect			175 85 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_4
+			enable			true
+			visible			true
+			layer			100
+			rect			215 85 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_5
+			enable			true
+			visible			true
+			layer			100
+			rect			255 85 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_6
+			enable			true
+			visible			true
+			layer			100
+			rect			255 125 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_7
+			enable			true
+			visible			true
+			layer			100
+			rect			255 165 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_8
+			enable			true
+			visible			true
+			layer			100
+			rect			255 205 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_9
+			enable			true
+			visible			true
+			layer			100
+			rect			255 245 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_10
+			enable			true
+			visible			true
+			layer			100
+			rect			255 285 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_11
+			enable			true
+			visible			true
+			layer			100
+			rect			215 285 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_12
+			enable			true
+			visible			true
+			layer			100
+			rect			175 285 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_13
+			enable			true
+			visible			true
+			layer			100
+			rect			135 285 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_14
+			enable			true
+			visible			true
+			layer			100
+			rect			95 285 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_15
+			enable			true
+			visible			true
+			layer			100
+			rect			55 285 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_16
+			enable			true
+			visible			true
+			layer			100
+			rect			55 245 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_17
+			enable			true
+			visible			true
+			layer			100
+			rect			55 205 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_18
+			enable			true
+			visible			true
+			layer			100
+			rect			55 165 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+		<item>
+			id				gambleslot_19
+			enable			true
+			visible			true
+			layer			100
+			rect			55 125 34 34
+			cellsize		34 34
+			type			suit
+			blinktime		500
+			<button>
+				id				btn_gambleslot
+				enable			true
+				visible			true
+				layer			1
+				rect			0 0 34 34
+				<image>
+					key				normal
+					screen			stonegamble
+					index			17
+				</image>
+				<image>
+					key				check
+					screen			stonegamble
+					index			11
+				</image>
+				<image>
+					key				disable
+					screen			stonegamble
+					index			12
+				</image>
+				<image>
+					key				blink
+					screen			stonegamble
+					index			13
+				</image>
+			</button>
+			<panel>
+				id				pan_highlight
+				enable			true
+				visible			false
+				layer			1
+				rect			0 0 34 34
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			21						
+				</image>
+			</panel>
+			<timerpanel>
+				id				timer_gambleslot
+				enable			true
+				visible			false
+				layer			10
+				rect			0 0 34 34
+				alphamax		255
+				alphamin		0
+				tempo			4
+				intersect		false
+				<image>
+					key				none
+					screen			stonegamble
+					index			13
+				</image>
+			</timerpanel>
+		</item>
+	</panel>
+	<panel>
+		id				pan_inven
+		enable			true
+		visible			true
+		layer			1
+		rect			347 0 347 608
+		<label>
+			id				lbl_title
+			enable			true
+			visible			true
+			layer			108
+			rect			7 7 317 23
+			align			center
+			<title>
+				color			ffffffff
+				fontIndex		4
+				position		0 7
+				text2 			260 1
+			</title>
+    	</label>
+		<button>
+			id				btn_exit
+			enable			true
+			visible			true
+			layer			108
+			rect			324 15 13 13
+			sound			0
+			<image>
+				key				0
+				screen			etc_01
+				index			3
+			</image>
+			<image>
+				key				over
+				screen			etc_01
+				index			4
+			</image>
+			<image>
+				key				down
+				screen			etc_01
+				index			5
+			</image>
+		</button>   
+		<button>
+			id				btn_equip_item
+			enable			true
+			visible			true
+			align 			center
+			layer			100
+			rect			10 40 81 22
+			<image>
+				key				none
+				screen			Inven_01
+				index			25
+			</image>
+			<image>
+				key				check
+				screen			Inven_01
+				index			25
+			</image>
+			<title>
+				state 			none
+				color			ffffffff
+				fontIndex		2
+				position		2 7
+				text2 			260 16
+			</title>
+		</button>
+		<button>
+			id				btn_reserve_item
+			enable			false
+			visible			true
+			align 			center
+			layer			100
+			tooltip			1001 122
+			rect			93 40 81 22
+			<image>
+				key				none
+				screen			Inven_01
+				index			26
+			</image>
+			<title>
+				state 			none
+				color			ff929292
+				fontIndex		2
+				position		0 6
+				text2 			260 4
+			</title>
+		</button>
+    	<button>
+			id				btn_cos_item
+			enable			false
+			visible			true
+			align 			center
+			layer			100
+			tooltip			1001 122
+			rect			176 40 81 22
+			<image>
+				key				none
+				screen			Inven_01
+				index			26
+			</image>
+			<title>
+				state 			none
+				color			ff929292
+				fontIndex		2
+				position		0 6
+				text2 			260 5
+			</title>
+		</button>
+		<button>
+			id				btn_equip_lock
+			enable			true
+			visible			true
+			layer			100
+			tooltip			1001 122
+			rect			310 37 22 23
+			<image>
+				key				none
+				screen			Inven_01
+				index			4
+			</image>
+		</button>
+		<button>
+			id				btn_link_suit
+			enable			true
+			visible			true
+			align 			center
+			layer			100
+			tooltip			1001 122
+			rect			272 38 26 22
+			<image>
+				key				none
+				screen			Inven_01
+				index			6
+			</image>
+			<image>
+				key				over
+				screen			Inven_01
+				index			7
+			</image>
+			<image>
+				key				down
+				screen			Inven_01
+				index			8
+			</image>
+		</button>
+		<panel>
+			id				pan_bg_equip
+			enable			true
+			visible			true
+			layer			1
+			rect			0 0 347 376
+			<image>
+				key				0
+				screen			Inven_01
+				index			1
+			</image>
+		</panel>
+    	<panel>
+			id				pan_bg_inven
+			enable			true
+			visible			true
+			layer			1
+			rect			0 376 347 232
+			<image>
+				key				0
+				screen			Inven_01
+				index			2
+			</image>
+		</panel>
+		<panel>
+			id				pan_equip_lock
+			enable			true
+			visible			true
+			layer			150
+			rect			4 61 339 316
+			<image>
+				key				0
+				screen			Inven_02
+				index			2
+			</image>
+		</panel>
+   		<panel>
+			id				pan_equip
+			enable			true
+			visible			true
+			layer			100
+			rect			0 0 347 376
+			<item>
+				id				suititem_0
+				enable			true
+				visible			true
+				layer			100
+				rect			95 239 33 33
+				cellsize		33 33
+				type			suit
+			</item>
+			<item>
+				id				suititem_1
+				enable			true
+				visible			true
+				layer			100
+				rect			219 239 33 33
+				cellsize		33 33
+				type			suit
+			</item>
+			<item>
+				id				suititem_2
+				enable			true
+				visible			true
+				layer			100
+				rect			95 281 33 33
+				cellsize		33 33
+				type			suit
+			</item>
+			<item>
+				id				suititem_3
+				enable			true
+				visible			true
+				layer			100
+				rect			219 281 33 33
+				cellsize		33 33
+				type			suit
+			</item>
+			<item>
+				id				suititem_4
+				enable			true
+				visible			true
+				layer			100
+				rect			21 117 63 117
+				cellsize		31 31
+				type			suit
+			</item>
+			<item>
+				id				suititem_5
+				enable			true
+				visible			true
+				layer			100
+				rect			262 117 63 117
+				cellsize		31 31
+				type			suit
+			</item>
+			<item>
+				id				suititem_6
+				enable			true
+				visible			true
+				layer			100
+				rect			17 72 33 33
+				cellsize		33 33
+				type			suit
+			</item>
+			<item>
+				id				suititem_7
+				enable			true
+				visible			true
+				layer			100
+				rect			64 72 63 33
+				cellsize		33 33
+				type			suit
+			</item>			
+			<item>
+				id				suititem_8
+				enable			true
+				visible			true
+				layer			100
+				rect			142 72 63 63
+				cellsize		31 31
+				type			suit
+			</item>		
+			<item>
+				id				suititem_9
+				enable			true
+				visible			true
+				layer			100
+				rect			142 148 63 90
+				cellsize		31 31
+				type			suit
+			</item>
+			<item>
+				id				suititem_10
+				enable			true
+				visible			true
+				layer			100
+				rect			141 251 63 63
+				cellsize		31 31
+				type			suit
+			</item>
+			<item>
+				id				suititem_11
+				enable			true
+				visible			true
+				layer			100
+				rect			17 251 63 63
+				cellsize		31 31
+				type			suit
+			</item>
+			<item>
+				id				suititem_12
+				enable			true
+				visible			true
+				layer			100
+				rect			266 251 63 63
+				cellsize		31 31
+				type			suit
+			</item>		
+			<item>
+				id				suititem_19
+				enable			true
+				visible			true
+				layer			100
+				rect			234 72 33 33
+				cellsize		33 33
+				type			suit
+			</item>
+			<item>
+				id				suititem_20
+				enable			true
+				visible			true
+				layer			100
+				rect			296 72 33 33
+				cellsize		33 33
+				type			suit
+			</item>
+			<item>
+				id				suititem_24
+				enable			true
+				visible			true
+				layer			100
+				rect			95 121 33 33
+				cellsize		33 33
+				type			suit
+			</item>
+			<item>
+				id				suititem_25
+				enable			true
+				visible			true
+				layer			100
+				rect			219 121 33 33
+				cellsize		33 33
+				type			suit
+			</item>	
+			<item>
+				id				suititem_26
+				enable			true
+				visible			true
+				layer			100
+				rect			31 334 33 33
+				cellsize		33 33
+				type			suit
+			</item>	
+			<item>
+				id				suititem_27
+				enable			true
+				visible			true
+				layer			100
+				rect			281 334 33 33
+				cellsize		33 33
+				type			suit
+			</item>	
+			<item>
+				id				suititem_28
+				enable			true
+				visible			true
+				layer			100
+				rect			142 334 63 33
+				cellsize		31 33
+				type			suit
+			</item>	
+			
+			<button>
+				id				btn_weapontab_0
+				enable			true
+				visible			true
+				layer			100
+				tooltip			1001 122
+				rect			84 165 21 30
+				<image>
+					key			none
+					screen		Inven_01
+					index		11
+				</image>
+				<image>
+					key			over
+					screen		Inven_01
+					index		12
+				</image>
+				<image>
+					key			down
+					screen		Inven_01
+					index		13
+				</image>
+				<image>
+					key			check
+					screen		Inven_01
+					index		9
+				</image>
+			</button>
+			<button>
+				id				btn_weapontab_1
+				enable			true
+				visible			true
+				layer			100
+				tooltip			1001 122
+				rect			84 197 21 30
+				<image>
+					key			none
+					screen		Inven_01
+					index		14
+				</image>
+				<image>
+					key			over
+					screen		Inven_01
+					index		15
+				</image>
+				<image>
+					key			down
+					screen		Inven_01
+					index		16
+				</image>
+				<image>
+					key			check
+					screen		Inven_01
+					index		10
+				</image>
+			</button>
+			
+			<button>
+				id				btn_shieldtab_0
+				enable			true
+				visible			true
+				layer			100
+				rect			241 165 21 30
+				<image>
+					key			none
+					screen		Inven_01
+					index		19
+				</image>
+				<image>
+					key			over
+					screen		Inven_01
+					index		20
+				</image>
+				<image>
+					key			down
+					screen		Inven_01
+					index		21
+				</image>
+				<image>
+					key			check
+					screen		Inven_01
+					index		17
+				</image>
+			</button>
+			<button>
+				id				btn_shieldtab_1
+				enable			true
+				visible			true
+				layer			100
+				rect			241 197 21 30
+				<image>
+					key			none
+					screen		Inven_01
+					index		22
+				</image>
+				<image>
+					key			over
+					screen		Inven_01
+					index		23
+				</image>
+				<image>
+					key			down
+					screen		Inven_01
+					index		24
+				</image>
+				<image>
+					key			check
+					screen		Inven_01
+					index		18
+				</image>
+			</button>			
+		</panel>
+    	<label>
+			id			lbl_tagSlot
+			enable		true
+			visible		true
+			layer		10
+			rect		16 380 70 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				psotion		0 3
+				text2 		260 3
+			</title>
+		</label>
+		<button>
+			id			btn_changebag_0
+			enable		true
+			visible		true
+			align 		center
+			blinktime	500					
+			layer		200
+			rect		96 378 46 21
+			<image>
+				key			none
+				screen		Inven_01
+				index		28
+			</image>
+			<image>
+				key			check
+				screen		Inven_01
+				index		27
+			</image>
+			<image>
+				key				blink
+				screen			Inven_01
+				index			41
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 6
+				text 		"I"
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	2 7
+			</title>
+		</button>
+		<button>
+			id			btn_changebag_1
+			enable		true
+			visible		true
+			align 		center
+			blinktime	500					
+			layer		200
+			rect		144 378 46 21
+			<image>
+				key			none
+				screen		Inven_01
+				index		28
+			</image>
+			<image>
+				key			check
+				screen		Inven_01
+				index		27
+			</image>
+			<image>
+				key				blink
+				screen			Inven_01
+				index			41
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 6
+				text 		"II"
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	2 7
+			</title>
+		</button>
+		<button>
+			id			btn_changebag_2
+			enable		true
+			visible		true
+			align 		center
+			blinktime	500					
+			layer		200
+			rect		192 378 46 21
+			<image>
+				key			none
+				screen		Inven_01
+				index		28
+			</image>
+			<image>
+				key			check
+				screen		Inven_01
+				index		27
+			</image>
+			<image>
+				key				blink
+				screen			Inven_01
+				index			41
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 6
+				text 		"III"
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	2 7
+			</title>
+		</button>
+		<button>
+			id			btn_changebag_3
+			enable		true
+			visible		true
+			align 		center
+			blinktime	500					
+			layer		200
+			rect		240 378 46 21
+			<image>
+				key			none
+				screen		Inven_01
+				index		28
+			</image>
+			<image>
+				key			check
+				screen		Inven_01
+				index		27
+			</image>
+			<image>
+				key				blink
+				screen			Inven_01
+				index			41
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 6
+				text 		"IV"
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	2 7
+			</title>
+		</button>
+		<button>
+			id			btn_changebag_4
+			enable		true
+			visible		true
+			align 		center
+			blinktime	500					
+			layer		200
+			rect		288 378 46 21
+			<image>
+				key			none
+				screen		Inven_01
+				index		28
+			</image>
+			<image>
+				key			check
+				screen		Inven_01
+				index		27
+			</image>
+			<image>
+				key				blink
+				screen			Inven_01
+				index			41
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 6
+				text 		"V"
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	2 7
+			</title>
+		</button>
+    	<itemslot>
+			id			slotbag
+			enable		true
+			visible		true
+			layer		200
+			rect		9 405 330 165
+			cellsize	33 33
+		</itemslot>
+		<label>
+			id			lbl_ppoint
+			enable		true
+			visible		true
+			layer		101
+			align		right
+			rect		36 578 99 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+    	<label>
+			id			lbl_money
+			enable		true
+			visible		true
+			layer		101
+			align		right
+			rect		178 578 98 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+	</panel>
+</window>

@@ -1,0 +1,405 @@
+<window>
+	name			dialog
+	enable			true
+	visible			true
+	layer			100
+	rect			191 4 764 558
+	titlerect		0 0 382 35
+	
+	<panel>
+		id		pan_quest_info
+		enable		true
+		visible		false
+		layer		100
+		intersect	false
+		rect		382 0 382 558
+		<image>
+			key	none
+			screen	renewalquest
+			index	4
+		</image>
+		<label>
+			id		lbl_questinfo_title
+			enable		true
+			visible		true
+			align 		center
+			layer		60
+			align		center
+			rect		0 14 382 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 113
+			</title>
+		</label>		
+		<textbox>
+			id		textbox_questinfo
+			enable		true
+			visible		true
+			layer		30
+			rect		16 35 360 480
+			lineheight	16
+			margin		6 19
+			fonttype	2
+			color		FFFFFFFF
+			<vscroll>
+				id		textbox_questinfo_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		347 0 13 480
+				maxvalue	3
+				buttontick  1
+				<button>
+					id		textbox_questinfo_scroll_upbtn
+					enable		true
+					visible		true
+					layer		30
+					rect		0 0 13 13
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id			textbox_questinfo_scroll_downbtn
+					enable		true
+					visible		true
+					layer		30
+					rect		0 465 13 13
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	14
+					</image>
+				</button>
+				<panel>
+					id			textbox_questinfo_scroll_bar
+					enable		true
+					visible		true
+					layer		30
+					rect		0 0 13 36
+					moveable	true
+					<image>
+						key		0
+						screen	etc_01
+						index	24
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+	</panel>
+
+	<panel>
+		id		pan_dialog
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 382 558
+		<image>
+			key	none
+			screen	renewalquest
+			index	4
+		</image>
+		<button>
+			id		btn_init
+			enable		false
+			visible		false
+			layer		100
+			rect		20 523 75 20
+
+			<image>
+				key		0
+				screen	renewalquest
+				index		41
+			</image>
+			<image>
+				key		over
+				screen	renewalquest
+				index		42
+			</image>
+			<image>
+				key		down
+				screen	renewalquest
+				index		43
+			</image>
+			
+			<title>
+				state		none
+				position	20 3
+				color		ffffffff
+				fontIndex	2
+				text2 		2000 99
+			</title>
+			<title>
+				state		over
+				position	20 3
+				color		ffffffff
+				fontIndex	2
+				text2 		2000 99
+			</title>
+			<title>
+				state		down
+				position	20 4
+				color		ffffffff
+				fontIndex	2
+				text2 		2000 99
+			</title>
+		</button>
+		<button>
+			id		btn_close
+			enable		false
+			visible		false
+			layer		100
+			rect		290 523 75 20
+			align		center
+			<image>
+				key		0
+				screen	renewalquest
+				index		47
+
+			</image>
+			<image>
+				key		over
+				screen	renewalquest
+				index		48
+
+			</image>
+			<image>
+				key		down
+				screen	renewalquest
+				index		49
+
+			</image>
+			
+			<title>
+				state		none
+				position	20 3
+				color		ffffffff
+				fontIndex	2
+				text2 		2000 100
+			</title>
+			<title>
+				state		over
+				position	20 3
+				color		ffffffff
+				fontIndex	2
+				text2 		2000 100
+			</title>
+			<title>
+				state		down
+				position	20 4
+				color		ffffffff
+				fontIndex	2
+				text2 		2000 100
+			</title>
+		</button>
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		356 14 15 15
+
+			<image>
+				key		0
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+			</image>
+		</button>
+		<button>
+			id		btn_info
+			enable		false
+			visible		false
+			layer		100
+			align		center
+			rect		295 104 55 20
+
+			<image>
+				key			0
+				screen		etc_01
+				index		89
+			</image>
+			<title>
+				state 		none
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+				text2		2000 101
+			</title>
+			<title>
+				state 		over
+				color		ff929292
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 5
+			</title>
+		</button>		
+
+		<label>
+			id			title_label
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		8 14 382 32
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		230 39
+			</title>
+		</label>
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		16 46 360 462
+			lineheight	18
+			margin		10 10
+			widthcut	25
+			fonttype	2
+			color		FFFFFFFF
+			buttonwidth	270
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+			<title>
+				state		0
+				color		ff00FF00
+				fontIndex	2
+			</title>
+			<vscroll>
+				id		textbox_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		347 0 13 462
+				maxvalue	0
+				buttontick  1
+				<button>
+					id		textbox_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 13 13
+					type		1
+					<image>
+						key		0
+						screen	renewalquest
+						index	5
+					</image>
+					<image>
+						key		over
+						screen	renewalquest
+						index	6
+					</image>
+					<image>
+						key		down
+						screen	renewalquest
+						index	7
+					</image>
+				</button>
+				<button>
+					id			textbox_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 449 13 13
+					type		1
+					<image>
+						key		0
+						screen	renewalquest
+						index	8
+					</image>
+					<image>
+						key		over
+						screen	renewalquest
+						index	9
+					</image>
+					<image>
+						key		down
+						screen	renewalquest
+						index	10
+					</image>
+				</button>
+				<panel>
+					id			textbox_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 13 36
+					moveable	true
+					noneimage 	true
+					<image>
+						key		none
+						screen	renewalquest
+						index	11
+					</image>
+					<image>
+						key		over
+						screen	renewalquest
+						index	12
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+	</panel>		
+</window>

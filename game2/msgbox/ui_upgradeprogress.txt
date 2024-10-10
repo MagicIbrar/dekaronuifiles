@@ -1,0 +1,36 @@
+<window>
+	name			upgradeitem_progress
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0  0 233 25
+	alwaysontop		true
+
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		50
+		rect		0 0 233 25	
+		<image>
+				key	0
+				screen	itemStrength
+				index	4
+		</image>
+		<processbar>	
+			id			processbar
+			enable		true
+			visible		true
+			layer		100
+			rect		7 7 218 12
+			maxsize     	218	
+			<image>
+				key	0
+				screen	itemStrength
+				index	5
+			</image>				
+		</processbar>			
+	</panel>
+		
+</window>

@@ -1,0 +1,36 @@
+<window>
+	name			login
+	enable			true
+	visible			true
+	layer			300
+	alwaysontop		true
+	position		center center
+	rect			-145 -175 290 350
+	titlerect		0 0 0 0
+	<panel>
+		id			pan_error
+		enable		true
+		visible		true
+		layer		221
+		rect		0 0  290 350
+		<image>
+			key		0	
+			screen	login
+			index	3
+		</image>
+	</panel>
+	<label>
+		id			lbl_message
+		enable		true
+		visible		true
+		layer		224
+		rect		23 38 242 264
+		multiline 	true
+		<title>
+			color		ffffffff
+			fontIndex	2
+			position	1 1
+			text		"0"
+		</title>
+	</label>
+</window>

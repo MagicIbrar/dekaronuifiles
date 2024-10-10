@@ -1,0 +1,1554 @@
+<window>
+	name			bestguildWnd
+	enable			true
+	visible			true
+	layer			100
+	rect			300 100 566 593
+	titlerect		0 0 266 24
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 266 493
+		<image>
+			key		none
+			screen	guildwar_apply
+			index	1
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		8 11 250 21
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		130 440
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		239 12 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<label>
+			id			lbl_msg
+			enable		true
+			visible		true
+			layer		10
+			multiline 	true
+			lineheight 	15
+			align		center
+			rect		8 40 257 40
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		130 441
+			</title>
+		</label>
+		<button>
+			id			btnmainlist_0
+			enable		true
+			visible		true
+			layer		100
+			rect		7 77 252 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<button>
+				id			btn_garbage_0
+				enable		true
+				visible		true
+				layer		10
+				rect		228 0 24 24
+				<image>
+					key		none
+					screen	guildwar_apply
+					index	7
+				</image>
+				<image>
+					key		over
+					screen	guildwar_apply
+					index	8
+				</image>
+				<image>
+					key		down
+					screen	guildwar_apply
+					index	9
+				</image>			
+			</button>
+		</button>
+		<button>
+			id			btnmainlist_1
+			enable		true
+			visible		true
+			layer		100
+			rect		7 102 252 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<button>
+				id			btn_garbage_1
+				enable		true
+				visible		true
+				layer		10
+				rect		228 0 24 24
+				<image>
+					key		none
+					screen	guildwar_apply
+					index	7
+				</image>
+				<image>
+					key		over
+					screen	guildwar_apply
+					index	8
+				</image>
+				<image>
+					key		down
+					screen	guildwar_apply
+					index	9
+				</image>			
+			</button>
+		</button>
+		<button>
+			id			btnmainlist_2
+			enable		true
+			visible		true
+			layer		100
+			rect		7 127 252 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<button>
+				id			btn_garbage_2
+				enable		true
+				visible		true
+				layer		10
+				rect		228 0 24 24
+				<image>
+					key		none
+					screen	guildwar_apply
+					index	7
+				</image>
+				<image>
+					key		over
+					screen	guildwar_apply
+					index	8
+				</image>
+				<image>
+					key		down
+					screen	guildwar_apply
+					index	9
+				</image>			
+			</button>
+		</button>
+		<button>
+			id			btnmainlist_3
+			enable		true
+			visible		true
+			layer		100
+			rect		7 152 252 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<button>
+				id			btn_garbage_3
+				enable		true
+				visible		true
+				layer		10
+				rect		228 0 24 24
+				<image>
+					key		none
+					screen	guildwar_apply
+					index	7
+				</image>
+				<image>
+					key		over
+					screen	guildwar_apply
+					index	8
+				</image>
+				<image>
+					key		down
+					screen	guildwar_apply
+					index	9
+				</image>			
+			</button>
+		</button>
+		<button>
+			id			btnmainlist_4
+			enable		true
+			visible		true
+			layer		100
+			rect		7 177 252 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<button>
+				id			btn_garbage_4
+				enable		true
+				visible		true
+				layer		10
+				rect		228 0 24 24
+				<image>
+					key		none
+					screen	guildwar_apply
+					index	7
+				</image>
+				<image>
+					key		over
+					screen	guildwar_apply
+					index	8
+				</image>
+				<image>
+					key		down
+					screen	guildwar_apply
+					index	9
+				</image>			
+			</button>
+		</button>
+		<button>
+			id			btnmainlist_5
+			enable		true
+			visible		true
+			layer		100
+			rect		7 202 252 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<button>
+				id			btn_garbage_5
+				enable		true
+				visible		true
+				layer		10
+				rect		228 0 24 24
+				<image>
+					key		none
+					screen	guildwar_apply
+					index	7
+				</image>
+				<image>
+					key		over
+					screen	guildwar_apply
+					index	8
+				</image>
+				<image>
+					key		down
+					screen	guildwar_apply
+					index	9
+				</image>			
+			</button>
+		</button>
+		<button>
+			id			btnmainlist_6
+			enable		true
+			visible		true
+			layer		100
+			rect		7 227 252 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<button>
+				id			btn_garbage_6
+				enable		true
+				visible		true
+				layer		10
+				rect		228 0 24 24
+				<image>
+					key		none
+					screen	guildwar_apply
+					index	7
+				</image>
+				<image>
+					key		over
+					screen	guildwar_apply
+					index	8
+				</image>
+				<image>
+					key		down
+					screen	guildwar_apply
+					index	9
+				</image>			
+			</button>
+		</button>
+		<button>
+			id			btn_col_class
+			enable		true
+			visible		true
+			layer		10
+			rect		3 252 54 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	15 3
+				text2		130 157
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	15 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	16 4
+			</title>
+		</button>
+		<button>
+			id			btn_col_class_h
+			enable		true
+			visible		false
+			layer		10
+			rect		3 252 54 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	15 3
+				text2		130 158
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	15 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	16 4
+			</title>
+		</button>
+		<button>
+			id			btn_col_class_l
+			enable		true
+			visible		false
+			layer		10
+			rect		3 252 54 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	15 3
+				text2		130 159
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	15 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	16 4
+			</title>
+		</button>
+		<button>
+			id			btn_col_lv
+			enable		true
+			visible		true
+			layer		10
+			rect		54 252 50 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	12 3
+				text2		130 437
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	12 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	13 4
+			</title>
+		</button>
+		<button>
+			id			btn_col_lv_h
+			enable		true
+			visible		false
+			layer		10
+			rect		54 252 50 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	12 3
+				text2		130 438
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	12 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	13 4
+			</title>
+		</button>
+		<button>
+			id			btn_col_lv_l
+			enable		true
+			visible		false
+			layer		10
+			rect		54 252 50 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	12 3
+				text2		130 439
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	12 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	13 4
+			</title>
+		</button>
+		<button>
+			id			btn_col_name
+			enable		true
+			visible		true
+			layer		10
+			rect		100 252 145 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	60 3
+				text2		130 151
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	60 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	61 4
+			</title>
+		</button>
+		<button>
+			id			btn_col_name_h
+			enable		true
+			visible		false
+			layer		10
+			rect		100 252 145 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	60 3
+				text2		130 152
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	60 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	61 4
+			</title>
+		</button>
+		<button>
+			id			btn_col_name_l
+			enable		true
+			visible		false
+			layer		10
+			rect		100 252 145 18
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	60 3
+				text2		130 153
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	60 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	61 4
+			</title>
+		</button>
+		<button>
+			id			btnsublist_0
+			enable		true
+			visible		true
+			layer		100
+			rect		7 275 238 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+		</button>
+		<button>
+			id			btnsublist_1
+			enable		true
+			visible		true
+			layer		100
+			rect		7 300 238 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+		</button>
+		<button>
+			id			btnsublist_2
+			enable		true
+			visible		true
+			layer		100
+			rect		7 325 238 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+		</button>
+		<button>
+			id			btnsublist_3
+			enable		true
+			visible		true
+			layer		100
+			rect		7 350 238 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+		</button>
+		<button>
+			id			btnsublist_4
+			enable		true
+			visible		true
+			layer		100
+			rect		7 375 238 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+		</button>
+		<button>
+			id			btnsublist_5
+			enable		true
+			visible		true
+			layer		100
+			rect		7 400 238 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+		</button>
+		<button>
+			id			btnsublist_6
+			enable		true
+			visible		true
+			layer		100
+			rect		7 425 238 24
+			<title>
+				state 		none
+				color 		0xffffffff
+				position	0 1
+				fontIndex	2
+			</title>
+			<image>
+				key		none
+				color	0x00000000
+			</image>
+			<image>
+				key		over
+				color	0x551e90ff
+			</image>
+			<image>
+				key		check
+				color	0x551e90ff
+			</image>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		11 1 26 22
+				<image>
+					key		none
+					screen	guildwar_apply
+					index 	11
+				</image>
+			</panel>
+			<label>
+				id			lbl_lv
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				intersect	false
+				rect		46 2 54 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				intersect	false
+				rect		91 2 147 24
+				<title>
+					color		ffffffff
+					fontIndex	4
+					position	0 2
+				</title>
+			</label>
+		</button>
+		<vscroll>
+			id			vscroll
+			enable		true
+			visible		true
+			layer		1
+			rect		246 275 12 173
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			vscroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	19
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	20
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	21
+				</image>
+				<image>
+					key		disable
+					screen	etc_01
+					index	18
+				</image>
+			</button>
+			<button>
+				id			vscroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 161 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	17
+				</image>
+				<image>
+					key		disable
+					screen	etc_01
+					index	14
+				</image>
+			</button>
+			<panel>
+				id			vscroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 12 19
+				moveable	true
+				noneimage 	true
+				<image>
+					key		none
+					screen	etc_01
+					index	24
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	25
+				</image>
+			</panel>
+		</vscroll>
+		<button>
+			id			btn_ok
+			enable		true
+			visible		true
+			layer		100
+			align		center	center
+			rect		48 458 56 18
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	91
+			</image>
+			<image>
+				key 	over
+				screen 	etc_01
+				index 	92
+			</image>
+			<image>
+				key 	down
+				screen 	etc_01
+				index 	93
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				text2		130 385
+				position	0 2
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 2
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			align		center	center
+			rect		153 458 56 18
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	91
+			</image>
+			<image>
+				key 	over
+				screen 	etc_01
+				index 	92
+			</image>
+			<image>
+				key 	down
+				screen 	etc_01
+				index 	93
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				text2		130 386
+				position	0 2
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 2
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	0 4
+			</title>
+		</button>
+	</panel>
+</window>

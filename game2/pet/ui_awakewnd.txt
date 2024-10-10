@@ -1,0 +1,130 @@
+<window>
+	name			petawake
+	enable			true
+	visible			true
+	modal 			false
+	layer			100
+	position		center center
+	rect			-116 -79 116 78
+	titlerect		0  0 232 26
+	alwaysontop		true
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	87
+		</image>		
+	</panel>
+	
+	<label>
+		id			lbl_title
+		enable		true
+		visible		true
+		layer		10
+		align 		center
+		rect		0 5 232 18
+		<title>
+			state 		title
+			color		FFFFFFFF
+			fontIndex	4
+			text2		100 82
+		</title>
+	</label>
+
+	<panel>
+		id			pan_petsoket
+		enable		true
+		visible		true
+		layer		20
+		rect		98  60 36 36
+		<image>
+				key	none
+				screen	etc_01
+				index	306
+		</image>		
+	</panel>
+
+	<item>
+		id				petsleepitem
+		enable			true
+		visible			true
+		layer			30
+		rect			98  60 32 32
+		cellsize		32 32
+		type			suit
+	</item>		
+	
+	<button>
+		id		btn_confirm
+		enable		true
+		visible		true
+		layer		20
+		align		center
+		rect		26 128 65 20
+		<image>
+			key		none
+			screen	etc_01
+			index	88
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 3
+			text2 		2000 22
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>
+	
+
+	<button>
+		id			btn_cancel
+		enable		true
+		visible		true
+		layer		20
+		align		center
+		rect		142 128 65 20
+		<image>
+			key			0
+			screen		etc_01
+			index		88
+		</image>	
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 3
+			text2		2000 14
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	2 4
+		</title>
+	</button>
+
+</window>

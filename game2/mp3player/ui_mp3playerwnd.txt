@@ -1,0 +1,589 @@
+<window>
+	name			mp3player
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			0 30 261 187
+	titlerect		0 0 261 20
+	<button>
+		id			btn_mp3note
+		enable		true
+		visible		false
+		layer		110
+		type		0
+		rect		0 0 14 14
+		<image>
+			key		disable
+			screen	Mp_3
+			index	151
+		</image>
+		<image>
+			key		over
+			screen	Mp_3
+			index	152
+		</image>
+		<image>
+			key		0
+			screen	Mp_3
+			index	151
+		</image>
+		<image>
+			key		down
+			screen	Mp_3
+			index	153
+		</image>
+	</button>
+	<panel>
+		id			pan_mp3back
+		enable		true
+		visible		true
+		layer		99
+		position	left top
+		rect		0 0 261 33
+		<image>
+			key		0
+			screen	Mp_3
+			index	1
+		</image>
+		<label>
+			id			lbl_mp3file_title
+			enable		true
+			visible		true
+			layer		110
+			rect		10 8 110 19
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<button>
+			id			btn_mp3play
+			enable		true
+			visible		true
+			layer		110
+			type		0
+			rect		150 8 12 12
+			<image>
+				key		disable
+				screen	Mp_3
+				index	21
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	22
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	21
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	23
+			</image>
+		</button>
+		<button>
+			id			btn_mp3pause
+			enable		true
+			visible		false
+			layer		110
+			type		0
+			rect		150 8 12 12
+			<image>
+				key		disable
+				screen	Mp_3
+				index	31
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	32
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	31
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	33
+			</image>
+		</button>
+		<button>
+			id			btn_mp3stop
+			enable		true
+			visible		true
+			layer		110
+			type		0
+			rect		162 8 12 12
+			<image>
+				key		disable
+				screen	Mp_3
+				index	41
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	42
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	41
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	43
+			</image>
+		</button>
+		<button>
+			id			btn_mp3prev
+			enable		true
+			visible		true
+			layer		110
+			type		0
+			rect		137 8 12 12
+			<image>
+				key		disable
+				screen	Mp_3
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	12
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	11
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	13
+			</image>
+		</button>
+		<button>
+			id			btn_mp3next
+			enable		true
+			visible		true
+			layer		110
+			type		0
+			rect		175 8 12 12
+			<image>
+				key		disable
+				screen	Mp_3
+				index	51
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	52
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	51
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	53
+			</image>
+		</button>
+		<button>
+			id			btn_playtype1
+			enable		true
+			visible		false
+			layer		110
+			type		0
+			rect		192 8 15 12
+			<image>
+				key		disable
+				screen	Mp_3
+				index	71
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	72
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	71
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	73
+			</image>
+		</button>
+		<button>
+			id			btn_playtype2
+			enable		true
+			visible		false
+			layer		110
+			type		0
+			rect		192 8 15 12
+			<image>
+				key		disable
+				screen	Mp_3
+				index	81
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	82
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	81
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	83
+			</image>
+		</button>
+		<button>
+			id			btn_playtype3
+			enable		true
+			visible		true
+			layer		110
+			type		0
+			rect		192 8 15 12
+			<image>
+				key		disable
+				screen	Mp_3
+				index	91
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	92
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	91
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	93
+			</image>
+		</button>
+		<button>
+			id			btn_mp3list
+			enable		true
+			visible		true
+			layer		110
+			type		0
+			rect		209 8 12 12
+			<image>
+				key		disable
+				screen	Mp_3
+				index	61
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	62
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	61
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	63
+			</image>
+		</button>
+		<button>
+			id			btn_mp3min
+			enable		true
+			visible		true
+			layer		110
+			type		0
+			rect		226 7 14 13
+			<image>
+				key		disable
+				screen	Mp_3
+				index	101
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	102
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	101
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	103
+			</image>
+		</button>
+		<button>
+			id			btn_mp3close
+			enable		true
+			visible		true
+			layer		110
+			type		0
+			rect		240 7 13 13
+			<image>
+				key		disable
+				screen	Mp_3
+				index	111
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	112
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	111
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	113
+			</image>
+		</button>
+		<processbar>
+			id			probar_play
+			enable		true
+			visible		true
+			layer		100
+			rect		7 24 122 1
+			maxsize     115
+			<image>
+				key		0
+				screen	Mp_3
+				index	141
+			</image>
+		</processbar>
+		<slidebar>
+			id			sld_play
+			enable		true
+			visible		true
+			layer		110
+			rect		7 22 125 3
+			min			0
+			max			118
+			minmaxpos	0 	118
+			<panel>
+				id			sld_play_bar
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 6 3
+				moveable	true
+				noneimage	true
+				intersect	false
+				<image>
+					key			none	
+					screen		Mp_3
+					index		131
+				</image>
+			</panel>
+		</slidebar>
+		<processbar>
+			id			probar_volume
+			enable		true
+			visible		true
+			layer		100
+			rect		217 24 35 1
+			maxsize     35
+			<image>
+				key		0
+				screen	Mp_3
+				index	141
+			</image>
+		</processbar>
+		<slidebar>
+			id			sld_volume
+			enable		true
+			visible		true
+			layer		111
+			rect		217 22 35 3
+			min			0
+			max			35
+			minmaxpos	0	35
+			<panel>
+				id			sld_volume_bar
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 6 3
+				moveable	true
+				noneimage	true
+				<image>
+					key			none	
+					screen		Mp_3
+					index		131
+				</image>
+			</panel>
+		</slidebar>
+	</panel>
+	<panel>
+		id			pan_mp3list
+		enable		true
+		visible		true
+		layer		100
+		position	left top
+		rect		0 29 261 124
+		<image>
+			key		0
+			screen	Mp_3
+			index	2
+		</image>
+		<button>
+			id			btn_listclose
+			enable		true
+			visible		true
+			layer		110
+			type		0
+			rect		241 1 13 13
+			<image>
+				key		disable
+				screen	Mp_3
+				index	111
+			</image>
+			<image>
+				key		over
+				screen	Mp_3
+				index	112
+			</image>
+			<image>
+				key		0
+				screen	Mp_3
+				index	111
+			</image>
+			<image>
+				key		down
+				screen	Mp_3
+				index	113
+			</image>
+		</button>
+		<listbox>
+			id			list_mp3list
+			enable		true
+			visible		true
+			layer		100
+			rect		12 5 261 108
+			nodewidth   210
+			nodeheight	16
+			offset		0
+			btnsize		16				
+			<title>
+				state		over
+				color		FF74AEE4
+				fontIndex	4
+			</title>
+			<title>
+				state		check
+				color		FFFFB900
+				fontIndex	4
+			</title>
+			<title>
+				state		none
+				color		FFFFFFFF
+				fontIndex	4
+			</title>
+			<vscroll>
+				id			list_mp3list_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		231 9 16 99
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			list_mp3list_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 1 9 13
+					type		1
+					<image>
+						key		0
+						screen	Mp_3
+						index	161
+					</image>
+					<image>
+						key		over
+						screen	Mp_3
+						index	163
+					</image>
+					<image>
+						key		down
+						screen	Mp_3
+						index	161
+					</image>
+					<image>
+						key		disable
+						screen	Mp_3
+						index	165
+					</image>
+				</button>
+				<button>
+					id			list_mp3list_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 85 9 13
+					type		1
+					<image>
+						key		0
+						screen	Mp_3
+						index	162
+					</image>
+					<image>
+						key		over
+						screen	Mp_3
+						index	164
+					</image>
+					<image>
+						key		down
+						screen	Mp_3
+						index	162
+					</image>
+					<image>
+						key		disable
+						screen	Mp_3
+						index	166
+					</image>
+				</button>
+				<panel>
+					id			list_mp3list_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 15 9 13
+					moveable	true
+					<image>
+						key		0
+						screen	Mp_3
+						index	121
+					</image>
+				</panel>
+			</vscroll>
+		</listbox>
+	</panel>
+</window>

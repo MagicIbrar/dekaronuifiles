@@ -1,0 +1,114 @@
+<window>
+	name			exitwaittime_msgbox
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0  0 232 157
+	titlerect		0  0 211 24
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		28 3 174 14
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		1002 2
+			</title>
+		</label>
+	</panel>
+
+	<label>
+		id		lbl_notifylabel
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		16 45 215 50
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text2		1002 1
+		</title>
+	</label>
+
+	<button>
+		id		btn_no
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		rect		87 132 57 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	0 3
+			text2 		2000 23
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	2 4
+		</title>
+	</button>	
+	<panel>
+		id		pan_processBg
+		enable		true
+		visible		true
+		layer		1
+		rect		6 118 220 8
+		<image>
+				key	none
+				screen	etc_01
+				index	28
+		</image>
+
+		<processbar>	
+			id			processbar
+			enable		true
+			visible		true
+			layer		101
+			rect		1 1 218 7
+			maxsize     218	
+			<image>
+				key	0
+				screen	etc_01
+				index	29
+			</image>
+		</processbar>
+	</panel>
+	
+</window>

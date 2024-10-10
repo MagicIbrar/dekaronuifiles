@@ -1,0 +1,625 @@
+<window>
+	name					partypvp_resultwnd
+	enable					true
+	visible					true
+	layer					100
+	rect					326 150 657 521
+	titlerect				0 0 304 24
+			
+	<panel>
+		id					pan_bg_member
+		enable				true
+		visible				true
+		layer				1
+		rect				0 0 331 299 
+		<image>
+			key				0
+			screen			Partypvp
+			index			7
+		</image>
+		
+		<label>
+			id				lbl_tagblue
+			enable			true
+			visible			true
+			align 			center
+			layer			108
+			rect			55 22 70 12
+			<title>
+				color		fff4be3d
+				fontIndex	2
+				text2 		280 22
+			</title>
+		</label>
+
+		<label>
+			id				lbl_tagred
+			enable			true
+			visible			true
+			align 			center
+			layer			108
+			rect			212 22 63 12
+			<title>
+				color		fff4be3d
+				fontIndex	2
+				text2 		280 23
+			</title>
+		</label>
+
+		<panel>
+			id				pan_classimg_0
+			enable			true
+			visible			true
+			layer			100
+			rect			12 53 19 19 
+		</panel>
+		<panel>
+			id				pan_namelist_0
+			enable			true
+			visible			true
+			layer			100
+			rect			30 55 98 14
+		</panel>
+		<label>
+			id				lbl_score_0
+			enable			true
+			visible			true
+			align 			center
+			layer			108
+			rect			129 54 31 15
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id					pan_classimg_1
+			enable				true
+			visible				true
+			layer				100
+			rect				12 82 19 19 
+		</panel>
+		<panel>
+			id					pan_namelist_1
+			enable				true
+			visible				true
+			layer				100
+			rect				30 82 98 14
+		</panel>
+		<label>
+			id					lbl_score_1
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				128 81 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<panel>
+			id					pan_classimg_2
+			enable				true
+			visible				true
+			layer				100
+			rect				12 107 19 19 
+		</panel>
+		<panel>
+			id					pan_namelist_2
+			enable				true
+			visible				true
+			layer				100
+			rect				30 109 98 14
+		</panel>
+		<label>
+			id					lbl_score_2
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				129 108 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		
+		<panel>
+			id					pan_classimg_3
+			enable				true
+			visible				true
+			layer				100
+			rect				12 134 19 19 
+		</panel>
+		<panel>
+			id					pan_namelist_3
+			enable				true
+			visible				true
+			layer				100
+			rect				30 136 98 14
+		</panel>
+		<label>
+			id					lbl_score_3
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				129 135 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<panel>
+			id					pan_classimg_4
+			enable				true
+			visible				true
+			layer				100
+			rect				12 161 19 19 
+		</panel>
+		<panel>
+			id					pan_namelist_4
+			enable				true
+			visible				true
+			layer				100
+			rect				30 163 98 14
+		</panel>
+		<label>
+			id					lbl_score_4
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				129 162 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<panel>
+			id					pan_classimg_5
+			enable				true
+			visible				true
+			layer				100
+			rect				12 188 19 19 
+		</panel>
+		<panel>
+			id					pan_namelist_5
+			enable				true
+			visible				true
+			layer				100
+			rect				30 190 98 14
+		</panel>
+		<label>
+			id					lbl_score_5
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				129 189 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<panel>
+			id					pan_classimg_6
+			enable				true
+			visible				true
+			layer				100
+			rect				12 215 19 19 
+		</panel>
+		<panel>
+			id					pan_namelist_6
+			enable				true
+			visible				true
+			layer				100
+			rect				30 217 98 14
+		</panel>
+		<label>
+			id					lbl_score_6
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				129 216 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		
+		<panel>
+			id					pan_Enemyclassimg_0
+			enable				true
+			visible				true
+			layer				100
+			rect				169 53 19 19 
+		</panel>
+		<panel>
+			id					pan_Enemynamelist_0
+			enable				true
+			visible				true
+			layer				100
+			rect				187 55 98 14
+		</panel>
+		<label>
+			id					lbl_Enemyscroe_0
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				286 54 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<panel>
+			id					pan_Enemyclassimg_1
+			enable				true
+			visible				true
+			layer				100
+			rect				169 80 19 19 
+		</panel>
+		<panel>
+			id					pan_Enemynamelist_1
+			enable				true
+			visible				true
+			layer				100
+			rect				187 82 98 14
+		</panel>
+		<label>
+			id					lbl_Enemyscroe_1
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				286 81 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<panel>
+			id					pan_Enemyclassimg_2
+			enable				true
+			visible				true
+			layer				100
+			rect				169 107 19 19 
+		</panel>
+		<panel>
+			id					pan_Enemynamelist_2
+			enable				true
+			visible				true
+			layer				100
+			rect				187 109 98 14
+		</panel>
+		<label>
+			id					lbl_Enemyscroe_2
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				286 108 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<panel>
+			id					pan_Enemyclassimg_3
+			enable				true
+			visible				true
+			layer				100
+			rect				169 134 19 19 
+		</panel>
+		<panel>
+			id					pan_Enemynamelist_3
+			enable				true
+			visible				true
+			layer				100
+			rect				187 136 98 14
+		</panel>
+		<label>
+			id					lbl_Enemyscroe_3
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				286 135 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<panel>
+			id					pan_Enemyclassimg_4
+			enable				true
+			visible				true
+			layer				100
+			rect				169 161 19 19 
+		</panel>
+		<panel>
+			id					pan_Enemynamelist_4
+			enable				true
+			visible				true
+			layer				100
+			rect				187 163 98 14
+		</panel>
+		<label>
+			id					lbl_Enemyscroe_4
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				286 162 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<panel>
+			id					pan_Enemyclassimg_5
+			enable				true
+			visible				true
+			layer				100
+			rect				169 188 19 19 
+		</panel>
+		<panel>
+			id					pan_Enemynamelist_5
+			enable				true
+			visible				true
+			layer				100
+			rect				187 190 98 14
+		</panel>
+		<label>
+			id					lbl_Enemyscroe_5
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				286 189 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+		<panel>
+			id					pan_Enemyclassimg_6
+			enable				true
+			visible				true
+			layer				100
+			rect				169 215 19 19 
+		</panel>
+		<panel>
+			id					pan_Enemynamelist_6
+			enable				true
+			visible				true
+			layer				100
+			rect				187 217 98 14
+		</panel>
+		<label>
+			id					lbl_Enemyscroe_6
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				286 216 31 15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>
+
+		<label>
+			id					lbl_tagbluepoint
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				9 255 72 14
+			<title>
+				color			fff4be3d
+				fontIndex		2
+				text2 			280 24
+			</title>
+		</label>
+
+		<label>
+			id					lbl_bluepoint
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				91 255 63 15
+			<title>
+				color			fff4be3d
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id					lbl_tagblueuser
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				20 277 50 18
+			<title>
+				color			fff4be3d
+				fontIndex		2
+				text2 			280 25
+			</title>
+		</label>
+		<label>
+			id					lbl_blueuser
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				91 277 63 15
+			<title>
+				color			fff4be3d
+				fontIndex		2
+			</title>
+		</label>
+		
+		<label>
+			id					lbl_tagredpoint
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				172 255 72 14
+			<title>
+				color			fff4be3d
+				fontIndex		2
+				text2 			280 24 
+			</title>
+		</label>
+
+		<label>
+			id					lbl_redpoint
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				258 255 63 15
+			<title>
+				color			fff4be3d
+				fontIndex		2
+			</title>
+		</label>
+		<label>
+			id					lbl_tagreduser
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				172 277 72 18
+			<title>
+				color			fff4be3d
+				fontIndex		2
+				text2 			280 25
+			</title>
+		</label>
+		<label>
+			id					lbl_reduser
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				258 277 63 15
+			<title>
+				color			fff4be3d
+				fontIndex		2
+			</title>
+		</label>		
+	</panel>
+	
+	<panel>
+		id					pan_bg_winner
+		enable				true
+		visible				false
+		layer				1
+		rect				45 301 239 58 
+		<image>
+			key				0
+			screen			Partypvp
+			index			5
+		</image>
+		
+		<label>
+			id					lbl_tagwinner
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				99 10 46 15
+			<title>
+				color			fff4be3d
+				fontIndex		2
+				text2 			280 26
+			</title>
+		</label>		
+		<label>
+			id					lbl_tagmoney
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				10 36 75  14
+			<title>
+				color			fff4be3d
+				fontIndex		2
+				text2 			280 27
+			</title>
+		</label>		
+		<label>
+			id				lbl_money
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				92 36 86  15
+			<title>
+				color			ffffffff
+				fontIndex		2
+			</title>
+		</label>		
+		<edit>
+			id				edit_money
+			enable			true
+			visible			true
+			layer			100
+			rect			92 36 86  15
+			maxlength		9
+			font_type		2
+			input_type		2
+			align			right
+			color			ff00ff00
+			multiline   	false
+		</edit>			
+		<label>
+			id					lbl_tagdil
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				185 36 20 15
+			<title>
+				color			fff4be3d
+				fontIndex		2
+				text2 			280 28
+			</title>
+		</label>
+	</panel>
+	
+	<panel>
+		id					pan_observer_display
+		enable				true
+		visible				false
+		layer				1
+		rect				45 301 266 31 
+		<image>
+			key				0
+			screen			Partypvp
+			index			9
+		</image>
+		
+		<label>
+			id					lbl_display
+			enable				true
+			visible				true
+			align 				center
+			layer				108
+			rect				70 10 110 15
+			<title>
+				color			fff4be3d
+				fontIndex		2
+			</title>
+		</label>		
+	</panel>	
+	
+</window>

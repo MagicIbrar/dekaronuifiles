@@ -1,0 +1,89 @@
+window_layer	auto
+window_position	0	0
+window_size	1024	32
+window_visible	true
+
+create_control	panel	base
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	width	32
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_particle
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Particle
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	60	21
+	control_drawpoint	20	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_mesh
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Mesh
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	40	21
+	control_drawpoint	100	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_decal
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Decal
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	50	21
+	control_drawpoint	160	5
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_effect
+	{
+	control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+	control_text	6	4	Effect
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	60	21
+	control_drawpoint	250	5
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_exit
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_winbtn01.dds	92	66	23	22
+	control_drawdiv	xy	1
+	control_drawsize	23	22
+	control_drawpoint	990	5
+	control_enable	true
+	control_visible	true
+	}
+}
+
+create_control	panel	pan_background
+{
+	control_group	0
+	control_alignaxis	left	top
+	control_color	true	255	128	128	128
+	control_drawsize	width	height
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	false
+}

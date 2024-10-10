@@ -1,0 +1,363 @@
+<window>
+	name			superchatinputwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-213 -84 213 181
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 426 181
+		<panel>
+			id			pan_body
+			enable		true
+			visible		true
+			layer		1
+			rect		0 0 426 139
+			<image>
+				key		none
+				screen	megaphone
+				index	1
+			</image>
+
+			<panel>
+				id			pan_megaphone
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 100 56
+				<image>
+					key		none
+					screen	megaphone
+					index	2
+				</image>
+			</panel>
+			<label>
+				id			lbl_title
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		12 34 413 19
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<button>
+				id			btn_exit
+				enable		true
+				visible		true
+				layer		100
+				rect		397 38 13 13
+				<image>
+					key		none
+					screen	item_shop
+					index	71
+				</image>
+				<image>
+					key		over
+					screen	item_shop
+					index	72
+				</image>
+				<image>
+					key		down
+					screen	item_shop
+					index	73
+				</image>
+			</button>
+			<edit>
+				id			edt_input
+				enable		true
+				visible		true
+				layer		110
+				rect		14 59 330 25
+				maxlength	160
+				font_type	2
+				input_type	0
+				align		over
+				color		ffffffff
+				multiline   false
+			</edit>	
+			<button>
+				id			btn_enter
+				enable		true
+				visible		true
+				layer		100
+				blink 		false
+				blinktime	500
+				rect		354 58 53 38
+				<image>
+					key		none
+					screen	megaphone
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	megaphone
+					index	17
+				</image>
+				<image>
+					key		over
+					screen	megaphone
+					index	18
+				</image>
+				<image>
+					key		blink
+					screen	megaphone
+					index	18
+				</image>
+			</button>
+			<button>
+				id			btn_type
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		57 101 33 25
+				<image>
+					key		none
+					screen	megaphone
+					index	11
+				</image>
+				<image>
+					key		down
+					screen	megaphone
+					index	12
+				</image>
+				<image>
+					key		over
+					screen	megaphone
+					index	13
+				</image>
+				<image>
+					key		check
+					screen	megaphone
+					index	14
+				</image>
+				<title>
+					state		none
+					color		FFFFFFFF
+					position	0 5
+					fontIndex	2
+				</title>
+				<title>
+					state		check
+					color		FFFFFFFF
+					fontIndex	4
+				</title>
+			</button>		
+			<button>
+				id			btn_open
+				enable		true
+				visible		true
+				layer		100
+				rect		94 101 33 25
+				<image>
+					key		none
+					screen	megaphone
+					index	4
+				</image>
+			</button>
+			<button>
+				id			btn_left
+				enable		true
+				visible		true
+				layer		100
+				rect		169 109 13 14
+				<image>
+					key		none
+					screen	megaphone
+					index	8
+				</image>
+				<image>
+					key		over
+					screen	megaphone
+					index	9
+				</image>
+								<image>
+					key		down
+					screen	megaphone
+					index	10
+				</image>
+			</button>		
+			<label>
+				id			lbl_repeat
+				enable		true
+				visible		true
+				layer		10
+				align       center
+				rect		188 105 45 16
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<button>
+				id			btn_right
+				enable		true
+				visible		true
+				layer		100
+				rect		243 109 13 14
+				<image>
+					key		none
+					screen	megaphone
+					index	5
+				</image>
+				<image>
+					key		over
+					screen	megaphone
+					index	6
+				</image>
+				<image>
+					key		down
+					screen	megaphone
+					index	7
+				</image>
+
+			</button>		
+		</panel>
+		<panel>
+			id			pan_color
+			enable		true
+			visible		false
+			layer		200
+			rect		0 0 426 181
+			<panel>
+				id			pan_body
+				enable		true
+				visible		true
+				layer		1
+				rect		94 139 82 42
+			<image>
+					key		none
+					screen	megaphone
+					index	4
+			</image>
+				<button>
+					id			btn_color_1
+					enable		true
+					visible		true
+					layer		100
+					rect		1 1 20 20
+					<image>
+						key		none
+					</image>
+					<image>
+						key		over
+						screen	megaphone
+						index	15
+					</image>
+				</button>
+				<button>
+					id			btn_color_2
+					enable		true
+					visible		true
+					layer		100
+					rect		21 1 20 20
+					<image>
+						key		none
+					</image>
+					<image>
+						key		over
+						screen	megaphone
+						index	15
+					</image>
+				</button>
+				<button>
+					id			btn_color_3
+					enable		true
+					visible		true
+					layer		100
+					rect		41 1 20 20
+					<image>
+						key		none
+					</image>
+					<image>
+						key		over
+						screen	megaphone
+						index	15
+					</image>
+				</button>
+				<button>
+					id			btn_color_4
+					enable		true
+					visible		true
+					layer		100
+					rect		61 1 20 20
+					<image>
+						key		none
+					</image>
+					<image>
+						key		over
+						screen	megaphone
+						index	15
+					</image>
+				</button>
+				<button>
+					id			btn_color_5
+					enable		true
+					visible		true
+					layer		100
+					rect		1 21 20 20
+					<image>
+						key		none
+					</image>
+					<image>
+						key		over
+						screen	megaphone
+						index	15
+					</image>
+				</button>
+				<button>
+					id			btn_color_6
+					enable		true
+					visible		true
+					layer		100
+					rect		21 21 20 20
+					<image>
+						key		none
+					</image>
+					<image>
+						key		over
+						screen	megaphone
+						index	15
+					</image>
+				</button>
+				<button>
+					id			btn_color_7
+					enable		true
+					visible		true
+					layer		100
+					rect		41 21 20 20
+					<image>
+						key		none
+					</image>
+					<image>
+						key		over
+						screen	megaphone
+						index	15
+					</image>
+				</button>
+				<button>
+					id			btn_color_8
+					enable		true
+					visible		true
+					layer		100
+					rect		61 21 20 20
+					<image>
+						key		none
+					</image>
+					<image>
+						key		over
+						screen	megaphone
+						index	15
+					</image>
+				</button>
+			</panel>
+		</panel>
+	</panel>
+</window>

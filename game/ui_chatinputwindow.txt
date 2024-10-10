@@ -1,0 +1,30 @@
+window_layer	TOP
+
+create_control	panel	pan_inbase
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\mainbar_01.dds	0	0	398	26	
+	control_drawsize	398	26
+	control_drawpoint	8	675
+	control_enable	true
+	control_visible	true
+
+	create_control	edit	edt_input
+	{
+		control_group	0
+		control_text	0	0	""
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	300	12
+		control_drawpoint	40	7
+		control_enable	true
+		control_visible	true
+		control_build	
+		cedit_length	53
+		cedit_chartype	none
+		cedit_attribute 1
+	}
+}
+
+window_visible	false

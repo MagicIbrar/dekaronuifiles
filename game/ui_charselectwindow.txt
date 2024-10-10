@@ -1,0 +1,526 @@
+window_layer	auto
+window_visible	true
+
+mapbgm	"BGM\bgm_charselect.mp3"
+
+create_control	panel	base
+{
+	control_group	0
+	control_drawsize	0	0
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	button	btn_char_delete
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	0	280	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	825	675
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_char_create
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	0	140	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	825	626
+	control_enable	true
+	control_visible	true
+	}
+		
+	create_control	button	btn_prev
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\trade_message_01.dds	362	282	150	35
+	control_drawdiv	xy	2
+	control_drawsize	150	35
+	control_drawpoint	25	675
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	button	btn_ok
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\Game\theme01\ccs_01.dds	300	0	160	40
+	control_drawdiv	xy	2
+	control_drawsize	160	40
+	control_drawpoint	432	670
+	control_enable	false
+	control_visible	true
+	}
+
+	create_control	panel	pan_title
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_01.dds	0	421	126	21
+	control_drawdiv	xy	2
+	control_drawsize	126	21
+	control_drawpoint	837	41
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_popupbase
+	{
+	control_group	0
+	control_drawsize	0	0
+	control_drawpoint	0	0
+	control_layerdelta -100	
+	control_enable	true
+	control_visible	false
+
+	create_control	panel	pan_popup1
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	0	0	201	58
+	control_drawdiv	xy	2
+	control_drawsize	201	58
+	control_drawpoint	799	71
+	control_enable	true
+	control_visible	true
+	}
+	
+	create_control	panel	pan_popup2
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	0	58	201	45
+	control_drawdiv	xy	2
+	control_drawsize	201	1
+	control_drawpoint	799	129
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_popup3
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	0	107	201	58
+	control_drawdiv	xy	2
+	control_drawsize	201	58
+	control_drawpoint	799	178
+	control_enable	true
+	control_visible	true
+	}	
+	}
+
+	create_control	panel	pan_0_img
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	0	174	45
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	83
+	control_layerdelta -100	
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_1_img
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	0	174	45
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	131
+	control_layerdelta -100	
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_2_img
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	0	174	45
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	179
+	control_layerdelta -100	
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_3_img
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	0	174	45
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	227
+	control_layerdelta -100	
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_4_img
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	0	174	45
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	275
+	control_layerdelta -100	
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_5_img
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	0	174	45
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	323
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_6_img
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	0	174	45
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	371
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_7_img
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	0	174	45
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	419
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_8_img
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	0	174	45
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	467
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_9_img
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\ccs_02.dds	201	0	174	45
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	515
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_fadein
+	{
+	control_group	0
+	control_color	true	0	0	0	0
+	control_drawsize	1024	768
+	control_drawpoint	0	0
+	control_layerdelta -1000
+	control_enable	true
+	control_visible	false
+	}
+	
+	
+	create_control	panel	pan_fadeout
+	{
+	control_group	0
+	control_color	true	255	0	0	0
+	control_drawsize	1024	768
+	control_drawpoint	0	0
+	control_layerdelta -1000
+	control_enable	true
+	control_visible	false
+	}				
+}
+
+create_control	popup	pan_popup
+{
+	control_group	0
+	control_color	true	0	0	0	0
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	812	83
+	control_enable	true
+	control_visible	true
+	popup_color	1	1	1	1
+
+	create_control	panel	pan_0
+	{
+	control_group	0
+	control_color	true	0	0	0	0
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	false
+	
+		create_control	panel	pan_LV0
+		{
+		control_group	0
+		control_color	true	0	0	0	0
+		control_text	0	0	""
+		control_drawdiv	xy	2
+		control_textfont	smallbold
+		control_layerdelta -100	
+		control_drawsize	172	15
+		control_drawpoint	0	30
+		control_enable	true
+		control_visible	true
+		}
+	}
+
+	create_control	panel	pan_1
+	{
+	control_group	0
+	control_color	true	0	0	0	0
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	0	45
+	control_enable	true
+	control_visible	false
+	
+		create_control	panel	pan_LV1
+		{
+		control_group	0
+		control_color	true	0	0	0	0
+		control_text	0	0	""
+		control_drawdiv	xy	2
+		control_textfont	smallbold
+		control_layerdelta -100	
+		control_drawsize	172	15
+		control_drawpoint	0	30
+		control_enable	true
+		control_visible	true
+		}	
+	}
+
+	create_control	panel	pan_2
+	{
+	control_group	0
+	control_color	true	0	0	0	0
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	0	90
+	control_enable	true
+	control_visible	false
+	
+		create_control	panel	pan_LV2
+		{
+		control_group	0
+		control_color	true	0	0	0	0
+		control_text	0	0	""
+		control_drawdiv	xy	2
+		control_textfont	smallbold
+		control_layerdelta -100	
+		control_drawsize	172	15
+		control_drawpoint	0	30
+		control_enable	true
+		control_visible	true
+		}
+	}
+	
+	create_control	panel	pan_3
+	{
+	control_group	0
+	control_color	true	0	0	0	0
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	172	45
+	control_drawpoint	0	135
+	control_enable	true
+	control_visible	false
+	
+		create_control	panel	pan_LV3
+		{
+		control_group	0
+		control_color	true	0	0	0	0
+		control_text	0	0	""
+		control_drawdiv	xy	2
+		control_textfont	smallbold
+		control_layerdelta -100	
+		control_drawsize	172	15
+		control_drawpoint	0	30
+		control_enable	true
+		control_visible	true
+		}	
+	}
+
+	create_control	panel	pan_4
+	{
+	control_group	0
+	control_color	true	0	0	0	0
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	172	48
+	control_drawpoint	0	180
+	control_enable	true
+	control_visible	false
+	
+		create_control	panel	pan_LV4
+		{
+		control_group	0
+		control_color	true	0	0	0	0
+		control_text	0	0	""
+		control_drawdiv	xy	2
+		control_textfont	smallbold
+		control_layerdelta -100	
+		control_drawsize	172	15
+		control_drawpoint	0	30
+		control_enable	true
+		control_visible	true
+		}	
+	}
+
+	create_control	panel	pan_5
+	{
+	control_group	0
+	control_color	true	0	0	0	0
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	172	48
+	control_drawpoint	0	225
+	control_enable	true
+	control_visible	false
+	
+		create_control	panel	pan_LV5
+		{
+		control_group	0
+		control_color	true	0	0	0	0
+		control_text	0	0	""
+		control_drawdiv	xy	2
+		control_textfont	smallbold
+		control_layerdelta -100		
+		control_drawsize	172	15
+		control_drawpoint	0	30
+		control_enable	true
+		control_visible	true
+		}	
+	}
+
+	create_control	panel	pan_6
+	{
+	control_group	0
+	control_color	true	0	0	0	0
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	172	48
+	control_drawpoint	0	270
+	control_enable	true
+	control_visible	false
+	
+		create_control	panel	pan_LV6
+		{
+		control_group	0
+		control_color	true	0	0	0	0
+		control_text	0	0	""
+		control_drawdiv	xy	2
+		control_textfont	smallbold
+		control_layerdelta -100	
+		control_drawsize	172	15
+		control_drawpoint	0	30
+		control_enable	true
+		control_visible	true
+		}	
+	}
+
+	create_control	panel	pan_7
+	{
+	control_group	0
+	control_color	true	100	0	0	0
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	172	48
+	control_drawpoint	0	315
+	control_enable	true
+	control_visible	false
+	
+		create_control	panel	pan_LV7
+		{
+		control_group	0
+		control_color	true	0	0	0	0
+		control_text	0	0	""
+		control_drawdiv	xy	2
+		control_textfont	smallbold
+		control_layerdelta -100	
+		control_drawsize	172	15
+		control_drawpoint	0	30
+		control_enable	true
+		control_visible	true
+		}	
+	}
+
+	create_control	panel	pan_8
+	{
+	control_group	0
+	control_color	true	100	0	0	0
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	172	48
+	control_drawpoint	0	360
+	control_enable	true
+	control_visible	false
+	
+		create_control	panel	pan_LV8
+		{
+		control_group	0
+		control_color	true	0	0	0	0
+		control_text	0	0	""
+		control_drawdiv	xy	2
+		control_textfont	smallbold
+		control_layerdelta -100	
+		control_drawsize	172	15
+		control_drawpoint	0	30
+		control_enable	true
+		control_visible	true
+		}	
+	}
+
+	create_control	panel	pan_9
+	{
+	control_group	0
+	control_color	true	100	0	0	0
+	control_text	10	10	""
+	control_drawdiv	xy	2
+	control_drawsize	200	48
+	control_drawpoint	0	405
+	control_enable	true
+	control_visible	false
+	
+		create_control	panel	pan_LV9
+		{
+		control_group	0
+		control_color	true	0	0	0	0
+		control_text	0	0	""
+		control_drawdiv	xy	2
+		control_textfont	smallbold
+		control_layerdelta -100	
+		control_drawsize	172	15
+		control_drawpoint	0	30
+		control_enable	true
+		control_visible	true
+		}	
+	}
+}
+

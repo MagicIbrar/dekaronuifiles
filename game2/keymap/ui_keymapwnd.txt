@@ -1,0 +1,278 @@
+<window>
+	name			keymap
+	enable			true
+	visible			true
+	layer			100
+	alwaysontop		true
+	modal			true
+	rect			-235 -278 235 278
+	position		center center
+	titlerect		30 2 408 14
+
+	<panel>
+		id		pan_keymap
+		enable		true
+		visible		true
+		layer		100
+		rect		0  0 470 556
+		<image>
+				key	0
+				screen	new_option2
+				index	1
+		</image>
+
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			rect		30 2 408 14
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		2001 80
+			</title>					
+		</label>
+			
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		452 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<button>
+			id			btn_ok
+			enable		true
+			visible		true
+			layer		100
+			rect		22 525 57 19
+			sound  		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	16 3
+				text2 		2000 15
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	16 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	17 4
+			</title>
+		</button>
+		
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			rect		97 525 57 19
+			align		center
+			sound		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		2000 23
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+		</button>
+		<button>
+			id			btn_keyorigin
+			enable		true
+			visible		true
+			layer		100
+			rect		351 525 96 19
+			align		center
+			sound		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		2200 110
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+		</button>
+		<panel>
+			id			pan_keycontrol
+			enable		true
+			visible		true
+			layer		100
+			rect		6 26 458 432
+			align		center
+			<vscroll>
+				id			keymap_scroll
+				enable		true
+				visible		true
+				layer		100
+				rect		446 0 12 432
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			keymap_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id			keymap_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 420 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	14
+					</image>
+				</button>
+				<panel>
+					id			keymap_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					noneimage 	true
+					<image>
+						key		none
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>			
+		</panel>
+		<panel>
+			id			pan_message
+			enable		true
+			visible		true
+			layer		100
+			rect		6 467 458 46
+			align		center
+			
+			<label>
+				id			lbl_message
+				enable		true
+				visible		true
+				layer		10
+				rect		0 0 458 46
+				align		left
+				<title>
+					color		fff4be3d
+					fontIndex	2
+					position	8 15
+				</title>					
+			</label>
+		</panel>
+	</panel>
+</window>

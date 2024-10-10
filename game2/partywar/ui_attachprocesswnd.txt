@@ -1,0 +1,64 @@
+<window>
+	name			attachprocesswnd
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			-103 100 104 160
+	titlerect		0 0 0 0
+	alwaysontop 	true
+	<panel>
+		id			pan_waittime
+		enable		true
+		visible		true
+		layer		99
+		intersect 	false
+		rect		0 0 207 60
+		<image>
+			key 	none
+			screen	siege
+			index 	6
+		</image>
+		
+		<label>
+			id			lbl_name
+			enable		true
+			visible		true
+			layer		100
+			align       center
+			intersect 	false
+			rect		8 13 190 14
+			<title>
+				color		FFFFFFFF
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id			pan_progressBg
+			enable		true
+			visible		true
+			layer		101
+			intersect 	false
+			rect		6 37 194 8
+			<image>
+				key 	none
+				screen	siege
+				index 	10
+			</image>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		101
+				intersect 	false
+				rect		0 1 194 7
+				maxsize     194	
+				<image>
+					key	0
+					screen	siege
+					index	11
+				</image>				
+			</processbar>	
+		</panel>
+	</panel>
+</window>

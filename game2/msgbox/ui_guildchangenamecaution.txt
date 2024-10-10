@@ -1,0 +1,150 @@
+<window>
+	name			guildchangename_caution
+	enable			true
+	visible			true
+	layer			100
+	modal			true
+	rect			-116 -78 116 79
+	titlerect		0  0 211 24
+
+	<panel>
+		id		pan_caution_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			rect		0 5 232 14
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0	
+				text2 		100 45
+			</title>	
+		</label>
+			
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		217 3 13 13
+			<image>
+				key		none
+				screen	item_shop
+				index	71
+			</image>
+			<image>
+				key		over
+				screen	item_shop
+				index	72
+			</image>
+			<image>
+				key		down
+				screen	item_shop
+				index	73
+			</image>
+		</button>
+	
+		<label>
+			id			lbl_static1
+			enable		true
+			visible		true
+			layer		50
+			rect		10 50 212 30
+			align		center
+			<title>
+				color		fffffc00
+				fontIndex	4
+				position	0 0	
+				text2 		130 313
+			</title>					
+		</label>
+
+		<label>
+			id			lbl_text
+			enable		true
+			visible		true
+			layer		50
+			rect		10 80 212 14
+			align		center
+			<title>
+				color		ffff0000
+				fontIndex	4
+				position	0 0	
+				text2 		130 314
+			</title>					
+		</label>
+
+		<button>
+			id			btn_yes
+			enable		true
+			visible		true
+			align		center
+			layer		100
+			rect		40 135 60 18
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 2	
+				text2 		2000 15
+			</title>
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+		</button>
+		
+		<button>
+			id			btn_no
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		130 135 60 18
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 2	
+				text2 		2000 23
+			</title>
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+		</button>	
+	</panel>
+</window>

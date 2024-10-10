@@ -1,0 +1,89 @@
+ <window>
+	name			newpcroomwnd
+	enable			true
+	visible			false
+	layer			100	
+	rect			-325 -365 -44 -327
+	position		center center
+	titlerect		272 2 281 34
+	alwaysontop		true
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 281 38
+		intersect	false
+		<panel>
+			id			pan_back
+			enable		true
+			visible		false
+			layer		1
+			rect		0 0 272 38
+			<image>
+				key		none
+				screen	newMainbar
+				index	92
+			</image>
+		</panel>		
+		<panel>
+			id			pan_title
+			enable		true
+			visible		true
+			noneimage	true
+			layer		10
+			rect		272 2 9 34
+			<image>
+				key		none
+				screen	newMainbar
+				index	93
+			</image>
+			<image>
+				key		over
+				screen	newMainbar
+				index	94
+			</image>
+			<image>
+				key		down
+				screen	newMainbar
+				index	95
+			</image>
+		</panel>
+		<button>
+			id			btn_0
+			enable		true
+			visible		false
+			layer		100
+		</button>
+		<button>
+			id			btn_1
+			enable		true
+			visible		false
+			layer		100
+		</button>
+		<button>
+			id			btn_2
+			enable		true
+			visible		false
+			layer		100
+		</button>
+		<button>
+			id			btn_3
+			enable		true
+			visible		false
+			layer		100
+		</button>
+		<button>
+			id			btn_4
+			enable		true
+			visible		false
+			layer		100
+		</button>
+		<button>
+			id			btn_5
+			enable		true
+			visible		false
+			layer		100
+		</button>
+	</panel>
+</window>

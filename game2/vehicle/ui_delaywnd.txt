@@ -1,0 +1,61 @@
+<window>
+	name			vehicle_delay_wnd
+	enable			true
+	visible			true
+	layer			100
+	modal 			true
+	position		inverse inverse
+	rect			0 0 0 0
+	titlerect		0 0 0 0
+	<panel>
+		id			pan_waittime
+		enable		true
+		visible		false
+		layer		99
+		position	center top
+		rect		-103 100 207 60
+		<image>
+			key 	none
+			screen	siege
+			index 	6
+		</image>
+		
+		<label>
+			id			lbl_waittime
+			enable		true
+			visible		true
+			layer		100
+			align       center
+			rect		8 13 190 14
+			<title>
+				color		FFF9B600
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id			pan_progressBg
+			enable		true
+			visible		true
+			layer		101
+			rect		6 37 194 8
+			<image>
+				key 	none
+				screen	siege
+				index 	10
+			</image>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		101
+				rect		0 1 194 7
+				maxsize     194	
+				<image>
+					key	0
+					screen	siege
+					index	11
+				</image>				
+			</processbar>	
+		</panel>
+	</panel>
+</window>

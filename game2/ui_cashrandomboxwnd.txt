@@ -1,0 +1,115 @@
+<window>
+	name			randombox
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-166 -110 167 110
+	alwaysontop		true
+	titlerect		31 3 300 15
+	
+	<panel>
+		id		pan_bg
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 333 220
+		<image>
+			key	none
+			screen	RandomBox
+			index	2
+		</image>
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		315 2 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		50
+			rect		31 3 269 12
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0	
+				text2 		100 15
+			</title>					
+		</label>
+
+		<button>
+			id			btn_open
+			enable		true
+			visible		true
+			layer		100
+			rect		242 74 48 72
+			sound  0
+			<image>
+				key			0
+				screen		common
+				index		0
+			</image>
+			<image>
+				key			over
+				screen		RandomBox
+				index		4
+			</image>
+			<image>
+				key			down
+				screen		RandomBox
+				index		3
+			</image>
+			<title>
+				state		none
+				color		ffffffff
+				fontIndex	2
+				position	12 30	
+				text2 		2000 47
+			</title>
+		</button>
+
+		<item>
+			id				item_cashrandombox
+			enable			true
+			visible			true
+			layer			100
+			rect			66 56 33 33
+			cellsize		33 33
+		</item>	
+
+		<item>
+			id				item_key
+			enable			true
+			visible			true
+			layer			100
+			rect			161 56 33 33
+			cellsize		33 33
+		</item>	
+	</panel>
+</window>

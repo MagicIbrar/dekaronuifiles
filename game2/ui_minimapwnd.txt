@@ -1,0 +1,403 @@
+<window>
+	name			minimap_win
+	enable			true
+	visible			true
+	layer			100
+	position		right top
+	rect			-199 0 0 230
+	titlerect		0 0 0 0
+	layertype		normal
+	<panel>
+		id			pan_top
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 199 73
+		<image>
+			key		0
+			screen	mainbar_minimap
+			index	40
+		</image>
+		<panel>
+			id			pan_time
+			enable		true
+			visible		true
+			layer		100
+			rect		23 0 61 62
+			<panel>
+				id			pan_time_border
+				enable		true
+				visible		true
+				layer		300
+				rect		0 0 57 61
+				<image>
+					key		0
+					screen	mainbar_minimap
+					index	70
+				</image>
+			</panel>
+			<panel>
+				id			pan_time_rect
+				enable		true
+				visible		true
+				layer		50
+				rect		5 6 45 45
+				<panel>
+					id			pan_timebar1
+					enable		true
+					visible		true
+					layer		50
+					rect		0 0 512 45
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	90
+					</image>
+				</panel>
+				<panel>
+					id			pan_timebar2
+					enable		true
+					visible		true
+					layer		51
+					rect		0 0 512 45
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	91
+					</image>
+				</panel>
+				<panel>
+					id			pan_time_sun
+					enable		true
+					visible		false
+					layer		100
+					rect		0 0 42 34
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	71
+					</image>
+				</panel>
+				<panel>
+					id			pan_time_moon
+					enable		true
+					visible		false
+					layer		100
+					rect		0 0 36 34
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	72
+					</image>
+				</panel>
+			</panel>
+		</panel>
+		
+		<label>
+			id			lbl_mapName
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		87 8 104 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		40 25
+			</title>
+		</label>
+		<label>
+			id			lbl_position
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		85 36 61 15
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		40 26
+			</title>
+		</label>
+		
+		<button>
+			id			btn_bigmap_show
+			enable		true
+			visible		true
+			layer		500
+			type		0
+			rect		155 34 19 20
+			<image>
+				key		none
+				screen	mainbar_minimap
+				index	60
+			</image>
+		</button>
+		<button>
+			id			btn_bigmap_hide
+			enable		true
+			visible		false
+			layer		500
+			type		0
+			rect		155 34 19 20
+			<image>
+				key		none
+				screen	mainbar_minimap
+				index	61
+			</image>
+		</button>
+		<button>
+			id			btn_minimap_show
+			enable		true
+			visible		false
+			layer		500
+			type		0
+			rect		178 34 19 20
+			<image>
+				key		none
+				screen	mainbar_minimap
+				index	20
+			</image>
+			<image>
+				key		over
+				screen	mainbar_minimap
+				index	21
+			</image>
+			<image>
+				key		down
+				screen	mainbar_minimap
+				index	22
+			</image>
+			<image>
+				key		disable
+				screen	mainbar_minimap
+				index	23
+			</image>
+		</button>
+		<button>
+			id			btn_minimap_hide
+			enable		true
+			visible		true
+			layer		500
+			type		0
+			rect		178 34 19 20
+			<image>
+				key		none
+				screen	mainbar_minimap
+				index	10
+			</image>
+			<image>
+				key		over
+				screen	mainbar_minimap
+				index	11
+			</image>
+			<image>
+				key		down
+				screen	mainbar_minimap
+				index	12
+			</image>
+			<image>
+				key		disable
+				screen	mainbar_minimap
+				index	13
+			</image>
+		</button>
+	</panel>
+	<panel>
+		id			pan_minimap
+		enable		true
+		visible		true
+		layer		100
+		rect		27 58 172 172
+		<panel>
+			id			pan_minimap_border
+			enable		true
+			visible		true
+			layer		300
+			intersect 	false
+			rect		0 0 172 172
+			<image>
+				key		0
+				screen	mainbar_minimap
+				index	50
+			</image>
+			<panel>
+				id			pan_pointArrow
+				enable		true
+				visible		true
+				layer		100
+				rect		79 75 14 21
+				<image>
+					key		0
+					screen	mainbar_minimap
+					index	30
+				</image>
+			</panel>
+		</panel>
+		<panel>
+			id			pan_minimap_bg
+			enable		true
+			visible		true
+			layer		50
+			rect		6 6 160 160
+			<image>
+				key		0
+				screen	mainbar_minimap
+				index	110
+			</image>
+			<panel>
+				id			pan_map
+				enable		true
+				visible		true
+				layer		50
+				rect		0 0 512 512
+				<panel>
+					id			pan_party_0
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 10 10
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	126
+					</image>
+				</panel>
+				<panel>
+					id			pan_party_1
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 10 10
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	126
+					</image>
+				</panel>
+				<panel>
+					id			pan_party_2
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 10 10
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	126
+					</image>
+				</panel>
+				<panel>
+					id			pan_party_3
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 10 10
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	126
+					</image>
+				</panel>
+				<panel>
+					id			pan_party_4
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 10 10
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	126
+					</image>
+				</panel>
+				<panel>
+					id			pan_party_5
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 10 10
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	126
+					</image>
+				</panel>
+				
+				//
+				<panel>
+					id			pan_partyindicate_0
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 14 21
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	140
+					</image>
+				</panel>
+				<panel>
+					id			pan_partyindicate_1
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 14 21
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	140
+					</image>
+				</panel>
+				<panel>
+					id			pan_partyindicate_2
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 14 21
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	140
+					</image>
+				</panel>
+				<panel>
+					id			pan_partyindicate_3
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 14 21
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	140
+					</image>
+				</panel>
+				<panel>
+					id			pan_partyindicate_4
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 14 21
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	140
+					</image>
+				</panel>
+				<panel>
+					id			pan_partyindicate_5
+					enable		true
+					visible		false
+					layer		110
+					rect		79 75 14 21
+					<image>
+						key		0
+						screen	mainbar_minimap
+						index	140
+					</image>
+				</panel>
+			</panel>
+		</panel>		
+	</panel>
+</window>

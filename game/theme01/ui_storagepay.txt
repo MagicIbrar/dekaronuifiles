@@ -1,0 +1,79 @@
+window_layer	TOP
+window_size	259	175
+window_position	0	0
+window_visible	false
+
+create_control	panel	pan_request
+{
+	control_group	0
+	control_image	oxxx	UI\Game\message_del_01.dds	0	271	259	175
+	control_drawdiv	xy	2
+	control_drawsize	259	175
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+	
+	create_control	button	btn_ok
+	{
+	control_group	0
+	control_image	oooo	UI\Game\message_del_01.dds	261	289	87	32
+	control_drawdiv	xy	1
+	control_imagedivide	vertical
+	control_drawsize	87	32
+	control_drawpoint	31	120
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_cancel
+	{
+	control_group	0
+	control_image	oooo	UI\Game\message_del_01.dds	348	289	87	32
+	control_drawdiv	xy	1
+	control_imagedivide	vertical
+	control_drawsize	87	32
+	control_drawpoint	142	120
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_edtbase
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\message_del_01.dds	332	257	180	30
+	control_drawdiv	xy	2
+	control_drawsize	180	30
+	control_drawpoint	40	75
+	control_enable	true
+	control_visible	true
+	
+	create_control	edit	edt_money
+	{
+	control_color	true	0	255	255	255
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawsize	139	14
+	control_drawpoint	35	8
+	control_tab	0
+	control_enable	true
+	control_visible	true
+	control_build	
+	cedit_length	20
+	cedit_chartype	numeric
+	cedit_range	0	10000000000000000
+	}	
+	}
+
+	create_control	panel	pan_paybase
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\trade_01.dds	332	135	180	45
+	control_drawdiv	xy	2
+	control_drawsize	180	45
+	control_drawpoint	40	20
+	control_enable	true
+	control_visible	false
+	}
+}
+
+

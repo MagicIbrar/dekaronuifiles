@@ -1,0 +1,579 @@
+<window>
+	name			mainMenuwnd
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	rect			0 0 0 0 
+	alwaysontop		true
+	<panel>
+		id			pan_exp
+		enable		true
+		visible		true
+		layer		1
+		intersect	false
+		position 	left bottom
+		rect 		0 -12 875 12
+		<panel>
+			id			pan_leftbg
+			enable		true
+			visible		true
+			layer		100
+			intersect	false
+			rect		0 0 351 12
+			<image>
+				key		none
+				screen	newMainbar
+				index	61
+			</image>
+		</panel>
+		<panel>
+			id			pan_leftgrid
+			enable		true
+			visible		true
+			layer		1
+			intersect	false
+			rect		0 4 351 7
+			<image>
+				key		none
+				screen	newMainbar
+				index	64
+			</image>
+		</panel>
+		<panel>
+			id			pan_centerbg
+			enable		true
+			visible		true
+			layer		100
+			intersect	false
+			rect		351 0 351 12
+			<image>
+				key		none
+				screen	newMainbar
+				index	62
+			</image>
+		</panel>
+		<panel>
+			id			pan_centergrid
+			enable		true
+			visible		true
+			layer		1
+			intersect	false
+			rect		351 4 351 7
+			<image>
+				key		none
+				screen	newMainbar
+				index	64
+			</image>
+		</panel>
+		<panel>
+			id			pan_rightbg
+			enable		true
+			visible		true
+			layer		100
+			intersect	false
+			rect		702 0 173 12
+			<image>
+				key		none
+				screen	newMainbar
+				index	63
+			</image>
+		</panel>
+		<panel>
+			id			pan_rightgrid
+			enable		true
+			visible		true
+			layer		1
+			intersect	false
+			rect		702 4 173 5
+			<image>
+				key		none
+				screen	newMainbar
+				index	64
+			</image>
+		</panel>
+		<processbar>	
+			id			exp
+			enable		true
+			visible		true
+			layer		50
+			rect		0 3 720 5	
+			maxsize     875	
+			<image>
+				key		0
+				screen	newMainbar
+				index	65
+			</image>				
+		</processbar>
+	</panel>
+	<panel>	
+		id			pan_menu
+		enable		true
+		visible		true
+		layer		1
+		intersect 	false
+		position 	right bottom
+		rect		-79 -319 79 263		
+		<image>
+			key		none
+			screen	new_mainbar
+			index	47
+		</image>		
+		<button>
+			id		btn_vehicle
+			enable		true
+			visible		true
+			layer		100
+			rect		7 8 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	48
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	49
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	50
+			</image>
+			<image>
+				key		check
+				screen	new_mainbar
+				index	96
+			</image>
+		</button>
+		<button>
+			id			btn_petsummon
+			enable		true
+			visible		true
+			layer		100
+			rect		7 39 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	51
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	52
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	53
+			</image>
+			<image>
+				key		check
+				screen	new_mainbar
+				index	97
+			</image>
+		</button>
+		<button>
+			id			btn_petinven
+			enable		true
+			visible		true
+			layer		100
+			rect		7 70 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	54
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	55
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	56
+			</image>
+			<image>
+				key		check
+				screen	new_mainbar
+				index	98
+			</image>
+		</button>
+		<button>
+			id			btn_fishing
+			enable		true
+			visible		true
+			layer		100
+			rect		7 101 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	57
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	58
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	59
+			</image>
+		</button>
+		<button>
+			id			btn_mail
+			enable		true
+			visible		true
+			layer		100
+			rect		7 132 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	60
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	61
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	62
+			</image>
+		</button>
+		<button>
+			id			btn_expedition
+			enable		true
+			visible		true
+			layer		100
+			rect		7 163 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	63
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	64
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	65
+			</image>
+		</button>
+		<button>
+			id			btn_party
+			enable		true
+			visible		true
+			layer		100
+			rect		7 194 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	66
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	67
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	68
+			</image>
+		</button>
+		<button>
+			id			btn_guild
+			enable		true
+			visible		true
+			layer		100
+			rect		7 225 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	69
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	70
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	71
+			</image>
+		</button>	
+		<button>
+			id			btn_inven
+			enable		true
+			visible		true
+			layer		100
+			rect		40 8 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	72
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	73
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	74
+			</image>		
+		</button>		
+		<button>
+			id			btn_character
+			enable		true
+			visible		true
+			layer		100
+			rect		40 39 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	75
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	76
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	77
+			</image>			
+		</button>		
+		<button>
+			id			btn_skill
+			enable		true
+			visible		true
+			layer		100
+			rect		40 70 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	78
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	79
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	80
+			</image>
+		</button>		
+		<button>
+			id			btn_quest
+			enable		true
+			visible		true
+			layer		100
+			rect		40 101 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	81
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	82
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	83
+			</image>	
+		</button>		
+		<button>
+			id			btn_help
+			enable		true
+			visible		true
+			layer		100
+			rect		40 132 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	84
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	85
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	86
+			</image>
+		</button>
+		<button>
+			id			btn_map
+			enable		true
+			visible		true
+			layer		100
+			rect		40 163 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	87
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	88
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	89
+			</image>	
+		</button>
+		<button>
+			id			btn_personalshop
+			enable		true
+			visible		true
+			layer		100
+			rect		40 194 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	90
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	91
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	92
+			</image>	
+		</button>
+		<button>
+			id			btn_escoption
+			enable		true
+			visible		true
+			layer		100
+			rect		40 225 30 31
+			<image>
+				key		none
+				screen	new_mainbar
+				index	93
+			</image>
+			<image>
+				key		down
+				screen	new_mainbar
+				index	94
+			</image>
+			<image>
+				key		over
+				screen	new_mainbar
+				index	95
+			</image>
+		</button>
+	</panel>	
+	<panel>
+			id		pan_menubtnback
+			enable		true
+			visible		true
+			layer		1
+			intersect 	false
+			position 	right bottom
+			rect		-108 -47 108 47
+			<image>
+				key		none
+				screen	new_mainbar
+				index	29
+			</image>
+	</panel>
+	<panel>
+			id		pan_menubtn
+			enable		true
+			visible		true
+			layer		1
+			intersect 	false
+			position 	right bottom
+			rect		-165 -56 165 54
+		<button>
+			id		btn_cashinven
+			enable		false
+			visible		false
+			layer		100
+			rect		2 0 55 55
+			<image>
+				key	none
+				screen	cashinventory
+				index	3
+			</image>
+			<image>
+				key	over
+				screen	cashinventory
+				index	5
+			</image>
+			<image>
+				key	down
+				screen	cashinventory
+				index	4
+			</image>
+		</button>
+		<button>
+			id		btn_cash
+			enable		true
+			visible		true
+			layer		100
+			rect		57 0 47 54
+			<image>
+				key	none
+				screen	new_mainbar
+				index	30
+			</image>
+			<image>
+				key	over
+				screen	new_mainbar
+				index	32
+			</image>
+			<image>
+				key	down
+				screen	new_mainbar
+				index	31
+			</image>
+		</button>
+		<button>
+			id		btn_menu
+			enable		true
+			visible		true
+			layer		100
+			rect		107 0 47 54
+			<image>
+				key	none
+				screen	new_mainbar
+				index	33
+			</image>
+			<image>
+				key	over
+				screen	new_mainbar
+				index	35
+			</image>
+			<image>
+				key	down
+				screen	new_mainbar
+				index	34
+			</image>
+		</button>	
+	</panel>
+</window>

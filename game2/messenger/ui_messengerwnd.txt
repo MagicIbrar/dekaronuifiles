@@ -1,0 +1,502 @@
+<window>
+	name			messengerWnd
+	enable			true
+	visible			true
+	layer			100
+	rect			350 146 660 571
+	titlerect		0 0 232 20
+	<panel>
+		id			pan_main
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 425
+		<image>
+			key		none
+			screen	new_messenger
+			index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align 		center
+			rect		23 4 202 16
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0
+				text2 		1006 9
+			</title>
+		</label>
+	
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		214 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<button>
+			id			btn_tab_0
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		10 25 105 22
+			<image>
+				key		none
+				screen	new_messenger
+				index 	6
+			</image>
+			<image>
+				key		check
+				screen	new_messenger
+				index 	5
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		1006 49
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_1
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		115 25 105 22
+			<image>
+				key		none
+				screen	new_messenger
+				index 	6
+			</image>
+			<image>
+				key		check
+				screen	new_messenger
+				index 	5
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		1006 50
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<label>
+			id			lbl_name
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		18 61 99 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<edit>
+			id			edit_text
+			enable		true
+			visible		true
+			layer		100
+			rect		18 85 143 14	
+			maxlength	20
+			font_type	2
+			input_type	0
+			align		0
+			color		ff00ff00
+			multiline   	false
+			<image>
+				key		none
+				screen	party
+				index	6
+			</image>			
+		</edit>
+		
+		<label>
+			id			lbl_count
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		118 61 99 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		
+		<button>
+			id			btn_add
+			enable		true
+			visible		true
+			layer		100
+			rect		169 84 42 14
+			<title>
+				state 		none
+				color		ffb7b7b7
+				fontIndex	2
+				text2 		1006 51			
+				position	15 2
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	15 2
+			</title>
+			<title>
+				state 		down
+				color		ffb7b7b7
+				fontIndex	2
+				position	15 2
+			</title>
+		</button>
+			
+		<messengertree>
+			id			messenger_tree
+			enable		true
+			visible		true
+			layer		100
+			rect		0 123 232 271
+			nodeheight	20
+			<title>
+				state		over
+				fontIndex	4
+			</title>
+			<title>
+				state		check
+				fontIndex	4
+			</title>
+			<vscroll>
+				id			messenger_tree_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		214 0 12 271
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			messenger_tree_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+				</button>
+				<button>
+					id			messenger_tree_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 259 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+				</button>
+				<panel>
+					id			messenger_tree_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					noneimage 	true
+					<image>
+						key		none
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>
+		</messengertree>
+		
+		<panel>
+			id			pan_noMsg
+			enable		true
+			visible		true
+			layer		110
+			rect		31 400 18 18
+			<image>
+				key		0
+				screen	new_messenger
+				index	8
+			</image>
+		</panel>
+		<panel>
+			id			pan_noMsg_check
+			enable		true
+			visible		true
+			layer		120
+			rect		33 398 18 18
+			intersect	false
+			<image>
+				key		0
+				screen	etc_01
+				index	26
+			</image>
+		</panel>
+		
+		<label>
+			id			lbl_noMsg
+			enable		true
+			visible		true
+			layer		100
+			intersect 	false
+			rect		50 402 170 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+				text2 		1006 47
+			</title>
+		</label>
+
+	</panel>
+	<panel>
+		id			pan_menuPop
+		enable		true
+		visible		false
+		layer		900
+		rect		0 0 101 113
+		<panel>
+			id			pan_menuPop_bgT
+			enable		true
+			visible		true
+			layer		10
+			rect		0 0 101 12
+			<image>
+				key		none
+				screen	guild_02
+				index	81
+			</image>
+		</panel>
+		<panel>
+			id			pan_menuPop_bgB
+			enable		true
+			visible		true
+			layer		10
+			rect		0 0 101 12
+			<image>
+				key		none
+				screen	guild_02
+				index	83
+			</image>
+		</panel>
+		<panel>
+			id			pan_menuPop_bgM
+			enable		true
+			visible		true
+			layer		10
+			rect		0 12 101 10
+			<image>
+				key		none
+				screen	guild_02
+				index	82
+			</image>
+			
+			<button>
+				id			btn_chat
+				enable		true
+				visible		true
+				layer		10
+				rect		13 0 75 16
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	18 2
+					fontIndex	2
+					text2		1006 5
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+				</title>
+			</button>
+			<button>
+				id			btn_sendMsg
+				enable		true
+				visible		true
+				layer		10
+				rect		13 16 75 16
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	28 2
+					fontIndex	2
+					text2		1006 6
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+				</title>
+			</button>
+			<panel>
+				id			pan_seperator_0
+				enable		true
+				visible		true
+				layer		10
+				rect		4 36 93 2
+				<image>
+					key		none
+					screen	guild_02
+					index	100
+				</image>
+			</panel>
+			<button>
+				id			btn_moveGroup
+				enable		true
+				visible		true
+				layer		10
+				rect		13 42 75 16
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	23 2
+					fontIndex	2
+					text2		1006 7
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+				</title>
+			</button>
+			<button>
+				id			btn_delete
+				enable		true
+				visible		true
+				layer		10
+				rect		13 58 75 16
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	18 2
+					fontIndex	2
+					text2		1006 8
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+				</title>
+			</button>
+			<button>
+				id			btn_party
+				enable		true
+				visible		true
+				layer		10
+				rect		13 58 75 16
+				<title>
+					state 		none
+					color 		0xff7D7D7D
+					position	18 2
+					fontIndex	2
+					text2		1006 60
+				</title>
+				<title>
+					state		over
+					color		ffFFFFFF
+					fontIndex	2
+				</title>
+			</button>
+		</panel>
+	</panel>
+</window>

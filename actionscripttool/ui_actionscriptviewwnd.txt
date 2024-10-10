@@ -1,0 +1,167 @@
+window_layer	auto
+window_size	200	500
+window_position	800	200
+window_visible	false
+
+create_control	panel	base
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	200	500
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_title
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	View
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	194	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_model
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	2	2	¸ðµ¨
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	36	15
+		control_drawpoint	20	17
+		control_enable	true
+		control_visible	true
+	}	
+
+	create_control	button	btn_apply
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	2	2	Àû¿ë
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	36	15
+		control_drawpoint	20	150
+		control_enable	true
+		control_visible	true
+	}	
+
+	create_control	text	txt_time
+	{
+		control_text	0	0	"Time Length"
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	80	23
+		control_drawpoint	10	37
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	edit	edt_time
+	{
+		control_color	true	255	255	255	255
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	80	15
+		control_drawpoint	110	37
+		control_enable	true
+		control_visible	true
+		control_build	
+		cedit_length	16
+		cedit_chartype	none
+	}
+
+	create_control	text	txt_speed
+	{
+		control_text	0	0	"Move Speed"
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	80	23
+		control_drawpoint	10	57
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	edit	edt_speed
+	{
+		control_color	true	255	255	255	255
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	80	15
+		control_drawpoint	110	57
+		control_enable	true
+		control_visible	true
+		control_build	
+		cedit_length	16
+		cedit_chartype	none
+	}
+
+	create_control	text	txt_defeat
+	{
+		control_text	0	0	"Defeat Length"
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	80	23
+		control_drawpoint	10	77
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	edit	edt_defeat
+	{
+		control_color	true	255	255	255	255
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	80	15
+		control_drawpoint	110	77
+		control_enable	true
+		control_visible	true
+		control_build	
+		cedit_length	16
+		cedit_chartype	none
+	}
+
+	create_control	text	txt_defaultdefeat
+	{
+		control_text	0	0	""
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	80	23
+		control_drawpoint	10	97
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	text	txt_hit
+	{
+		control_text	0	0	"Hit Timing"
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	80	23
+		control_drawpoint	10	117
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	edit	edt_hit
+	{
+		control_color	true	255	255	255	255
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	80	15
+		control_drawpoint	110	117
+		control_enable	true
+		control_visible	true
+		control_build	
+		cedit_length	16
+		cedit_chartype	none
+	}
+}
+

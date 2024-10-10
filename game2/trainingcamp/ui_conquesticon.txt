@@ -1,0 +1,34 @@
+<window>
+	name			tcampconquest_icon
+	enable			true
+	visible			true
+	alwaysontop		true
+	layer			100
+	position		inverse inverse
+	<panel>
+		id			pan_conquest
+		enable		true
+		visible		true
+		layer		100
+		rect		137 53 83 42
+		position	left top			
+		<button>
+			id			btn_conquest
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 83 42
+			position	left top
+			<image>
+				key		none
+				screen	TrainingCamp
+				index	62
+			</image>
+			<title>
+				color		ff00ffff
+				fontIndex	4
+				position	34 15
+			</title>
+		</button>
+	</panel>
+</window>

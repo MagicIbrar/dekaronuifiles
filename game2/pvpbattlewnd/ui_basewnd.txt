@@ -1,0 +1,17 @@
+<window>
+	name			pvp_base
+	enable			true
+	visible			true
+	layer			110
+	position		center top
+	rect			-6 200 16 220
+	alwaysontop		true	
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 10 10
+		intersect	false
+	</panel>	
+</window>

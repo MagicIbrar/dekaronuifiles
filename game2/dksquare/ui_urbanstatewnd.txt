@@ -1,0 +1,178 @@
+<window>
+	name			loa_occupation_statewnd
+	enable			true
+	visible			true
+	layer			100
+	position		left top
+	rect			0 120 132 262
+	titlerect		0 0 132 142
+
+	<panel>
+		id			pan_base
+		enable		true
+		visible		true
+		layer		10
+		intersect	true
+		rect		0 0 132 142
+		<image>
+			key		0
+			screen	loa_battle
+			index	13
+		</image>
+		<panel>
+			id			pan_occupation_complet_4
+			enable		true
+			visible		true
+			layer		11
+			rect		14 26 27 39
+			<button>
+				id			worldicon
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		1 0 24 24
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+			</button>
+		</panel>
+		<panel>
+			id			pan_occupation_complet_1
+			enable		true
+			visible		true
+			layer		11
+			rect		94 26 27 39
+			<button>
+				id			worldicon
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		1 0 24 24
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+			</button>
+		</panel>
+		<panel>
+			id			pan_occupation_complet_0
+			enable		true
+			visible		true
+			layer		11
+			rect		54 56 27 39
+			<button>
+				id			worldicon
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		1 0 24 24
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+			</button>
+		</panel>
+		<panel>
+			id			pan_occupation_complet_3
+			enable		true
+			visible		true
+			layer		11
+			rect		13 92 27 39
+			<button>
+				id			worldicon
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		1 0 24 24
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+			</button>
+		</panel>
+		<panel>
+			id			pan_occupation_complet_2
+			enable		true
+			visible		true
+			layer		11
+			rect		94 92 27 39
+			<button>
+				id			worldicon
+				enable		true
+				visible		true
+				layer		10
+				intersect	false
+				rect		1 0 24 24
+				<image>
+					key		none
+					color 	0x00000000
+				</image>
+			</button>
+		</panel>
+		<panel>
+			id			pan_occupation_ing_4
+			enable		true
+			visible		false
+			layer		11
+			rect		13 55 24 7
+			<image>
+				key	none
+				screen	State
+				index	7
+			</image>
+		</panel>
+		<panel>
+			id			pan_occupation_ing_1
+			enable		true
+			visible		false
+			layer		11
+			rect		93 55 24 7
+			<image>
+				key	none
+				screen	State
+				index	7
+			</image>
+		</panel>
+		<panel>
+			id			pan_occupation_ing_0
+			enable		true
+			visible		false
+			layer		11
+			rect		54 85 24 7
+			<image>
+				key	none
+				screen	State
+				index	7
+			</image>
+		</panel>
+		<panel>
+			id			pan_occupation_ing_3
+			enable		true
+			visible		false
+			layer		11
+			rect		13 120 24 7
+			<image>
+				key	none
+				screen	State
+				index	7
+			</image>
+		</panel>
+		<panel>
+			id			pan_occupation_ing_2
+			enable		true
+			visible		false
+			layer		11
+			rect		93 120 24 7
+			<image>
+				key	none
+				screen	State
+				index	7
+			</image>
+		</panel>
+	</panel>
+</window>

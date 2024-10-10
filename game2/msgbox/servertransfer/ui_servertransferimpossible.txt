@@ -1,0 +1,88 @@
+<window>
+	<window>
+	name			impossibleservertransfer_msgbox
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0  0 232 157
+	titlerect		0  0 211 24
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key	none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		28 3 174 14
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		275 6
+			</title>
+		</label>
+	</panel>
+
+	<label>
+		id		lbl_errMsg
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		5 55 220 50
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text2		275 7
+		</title>
+	</label>
+
+	<button>
+		id		btn_yes
+		enable		true
+		visible		true
+		layer		101
+		align		center
+		rect		87 132 57 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	4
+			position	0 3
+			text2 		2000 15
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	4
+			position	0 3
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	4
+			position	2 4
+		</title>
+	</button>
+</window>

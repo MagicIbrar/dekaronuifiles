@@ -1,0 +1,215 @@
+<window>
+	name			servant_win
+	enable			true
+	visible			true
+	layer			100
+	position		right bottom
+	rect			-326 -280 -130 -87
+	titlerect		33 160 147 182
+	<panel>
+		id			pan_command
+		enable		true
+		visible		true
+		layer		10
+		rect		164 0 32 160
+		<image>
+			key		0
+			screen	pcpop
+			index	6
+		</image>
+		<button>
+			id			btn_attack
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		1 1 30 30
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	7
+			</image>
+		</button>
+		<button>
+			id			btn_free
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		1 33 30 30
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	7
+			</image>
+		</button>
+		<button>
+			id			btn_call
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		1 65 30 30
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	7
+			</image>
+		</button>
+		<button>
+			id			btn_stop
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		1 97 30 30
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	7
+			</image>
+		</button>
+		<button>
+			id			btn_destroy
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		1 129 30 30
+			<image>
+				key		none
+				color 	0x00000000
+			</image>
+			<image>
+				key		over
+				screen	pcpop
+				index	7
+			</image>
+		</button>
+	</panel>
+	<panel>
+		id			pan_servantinfo
+		enable		true
+		visible		true
+		layer		10
+		rect		0 160 196 33
+		<image>
+			key		0
+			screen	pcpop
+			index	4
+		</image>
+		<panel>
+			id			pan_servant
+			enable		true
+			visible		true
+			layer		100
+			intersect 	false
+			rect		2 2 29 28
+			<image>
+				key		0
+				screen	pcpop
+				index	13
+			</image>
+		</panel>
+		<label>
+			id			lbl_name
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		33 4 114 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<button>
+			id			btn_showcom
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		147 5 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	19
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	20
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	21
+			</image>
+		</button>
+		<button>
+			id			btn_hidecom
+			enable		true
+			visible		false
+			layer		100
+			type		0
+			rect		147 5 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+		</button>
+		<panel>
+			id			pan_curcommand
+			enable		true
+			visible		true
+			layer		100
+			rect		166 2 28 28
+			<image>
+				key		0
+				screen	pcpop
+				index	21
+			</image>
+		</panel>
+		<processbar>	
+			id			bar_hp
+			enable		true
+			visible		true
+			layer		100
+			rect		33 22 126 8
+			maxsize     126	
+			<image>
+				key		0
+				color	ffffffff
+				screen	etc_01
+				index	32
+			</image>				
+		</processbar>	
+	</panel>
+</window>

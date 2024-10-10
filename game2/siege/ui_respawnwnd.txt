@@ -1,0 +1,188 @@
+<window>
+	name			repawnwnd
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	rect			0 0 0 0
+	titlerect		0 0 0 0
+	<panel>
+		id			pan_waittime
+		enable		true
+		visible		true
+		layer		99
+		position	center top
+		rect		-103 100 207 60
+		<image>
+			key 	none
+			screen	siege
+			index 	6
+		</image>
+		
+		<label>
+			id			lbl_waittime
+			enable		true
+			visible		true
+			layer		100
+			align       center
+			rect		8 13 190 14
+			<title>
+				color		FFF9B600
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id			pan_progressBg
+			enable		true
+			visible		true
+			layer		101
+			rect		6 37 194 8
+			<image>
+				key 	none
+				screen	siege
+				index 	10
+			</image>
+			<processbar>	
+				id			processbar
+				enable		true
+				visible		true
+				layer		101
+				rect		0 1 194 7
+				maxsize     194	
+				<image>
+					key	0
+					screen	siege
+					index	11
+				</image>				
+			</processbar>	
+		</panel>
+	</panel>
+	<panel>
+		id			pan_list
+		enable		true
+		visible		false
+		layer		1
+		rect		50 100 283 300
+		<image>
+			key	none
+			screen	talk
+			index	1
+		</image>
+
+		<label>
+			id			title_label
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		28 3 225 14
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		230 39
+			</title>
+		</label>
+		<textbox>
+			id			textbox
+			enable		true
+			visible		true
+			layer		100
+			rect		2 25 275 269
+			lineheight	16
+			margin		21 18
+			fonttype	2
+			color		FFFFFFFF
+			buttonwidth	250
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+			<title>
+				state		0
+				color		ff00FF00
+				fontIndex	2
+			</title>
+			<vscroll>
+				id		textbox_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		263 0 12 269
+				maxvalue	0
+				buttontick  1
+				<button>
+					id		textbox_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+				</button>
+				<button>
+					id			textbox_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 257 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+				</button>
+				<panel>
+					id			textbox_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					noneimage 	true
+					<image>
+						key		none
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+	</panel>
+</window>

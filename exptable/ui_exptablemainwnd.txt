@@ -1,0 +1,4214 @@
+window_layer	auto
+window_size	1024	768
+window_position	0	0
+window_visible	false
+
+create_control	panel	base
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.jpg	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	1020	692
+	control_drawpoint	center	50
+	control_enable	true
+	control_visible	true
+
+	create_control	button	tbl_dup
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window_frame.jpg	0	30	14	14
+	control_drawdiv	xy	2
+	control_drawsize	20	20
+	control_drawpoint	990	32
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	tbl_up
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window_frame.jpg	0	30	14	14
+	control_drawdiv	xy	2
+	control_drawsize	20	20
+	control_drawpoint	990	56
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	tbl_down
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window_frame.jpg	.8	45	14.5	14.5
+	control_drawdiv	xy	1
+	control_drawsize	20	20
+	control_drawpoint	990	576
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	tbl_ddown
+	{
+	control_group	0
+	control_image	oooo	UI\Tool\ui_window_frame.jpg	.8	45	14.5	14.5
+	control_drawdiv	xy	1
+	control_drawsize	20	20
+	control_drawpoint	990	600
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_header1
+	{
+		control_color	true	192	128	128	128
+		control_text	14	0	·¹º§
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	42	12
+		control_drawpoint	10	35
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_level1
+		{
+		control_color	true	64	60	60	255
+		control_text	0	0	""
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	base	base
+		control_drawpoint	0	14
+		control_enable	true
+		control_visible	true
+		}
+
+	create_control	text	txt_level2
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	28
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level3
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	42
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level4
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	56
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level5
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	70
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level6
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	84
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level7
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	98
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level8
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	112
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level9
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	126
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level10
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	140
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level11
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	158
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level12
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	172
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level13
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	186
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level14
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	200
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level15
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	214
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level16
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	228
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level17
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	242
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level18
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	256
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level19
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	270
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level20
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	284
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_separate01
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window02.jpg	7	18	2	2
+	control_drawdiv	xy	1
+	control_drawsize	984	2
+	control_drawpoint	0	298
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level21
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	302
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level22
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	316
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level23
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	330
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level24
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	344
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level25
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	358
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level26
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	372
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level27
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	386
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level28
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	400
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level29
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	414
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level30
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	428
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_separate02
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window02.jpg	7	18	2	2
+	control_drawdiv	xy	1
+	control_drawsize	984	2
+	control_drawpoint	0	442
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level31
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	446
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level32
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	460
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level33
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	474
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level34
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	488
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level35
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	502
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level36
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	516
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level37
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	530
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level38
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	544
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level39
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	558
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	text	txt_level40
+	{
+	control_color	true	64	60	60	255
+	control_text	0	0	""
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	572
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_separate00
+	{
+	control_group	1
+	control_image	oxxx	UI\Tool\ui_window02.jpg	7	18	2	2
+	control_drawdiv	xy	1
+	control_drawsize	984	2
+	control_drawpoint	0	154
+	control_enable	true
+	control_visible	true
+	}
+	}
+
+	create_control	text	txt_header2
+	{
+	control_color	true	192	128	128	128
+	control_text	64	0	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	154	12
+	control_drawpoint	54	35
+	control_enable	true
+	control_visible	true
+
+	create_control	edit	edt_a1
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	14
+	control_tab	1
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a2
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	28
+	control_tab	2
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a3
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	42
+	control_tab	3
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a4
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	56
+	control_tab	4
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a5
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	70
+	control_tab	5
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a6
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	84
+	control_tab	6
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a7
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	98
+	control_tab	7
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a8
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	112
+	control_tab	8
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a9
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	126
+	control_tab	9
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a10
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	140
+	control_tab	10
+	control_enable	true
+	control_visible	true
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a11
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	158
+	control_tab	11
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	4
+	}
+
+	create_control	edit	edt_a12
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	172
+	control_tab	12
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a13
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	186
+	control_tab	13
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a14
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	200
+	control_tab	14
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a15
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	214
+	control_tab	15
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a16
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	228
+	control_tab	16
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a17
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	242
+	control_tab	17
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a18
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	256
+	control_tab	18
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a19
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	270
+	control_tab	19
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a20
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	284
+	control_tab	20
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a21
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	302
+	control_tab	21
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a22
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	316
+	control_tab	22
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a23
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	330
+	control_tab	23
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a24
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	344
+	control_tab	24
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a25
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	358
+	control_tab	25
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a26
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	372
+	control_tab	26
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a27
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	386
+	control_tab	27
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a28
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	400
+	control_tab	28
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a29
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	414
+	control_tab	29
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a30
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	428
+	control_tab	30
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_a31
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	446
+	control_tab	31
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a32
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	460
+	control_tab	32
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a33
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	474
+	control_tab	33
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_a34
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	488
+	control_tab	34
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_a35
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	502
+	control_tab	35
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_a36
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	516
+	control_tab	36
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_a37
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	530
+	control_tab	37
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_a38
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	544
+	control_tab	38
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_a39
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	558
+	control_tab	39
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_a40
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	572
+	control_tab	40
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+	}
+
+	create_control	text	txt_header3
+	{
+	control_color	true	192	128	128	128
+	control_text	48	0	1
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	154	12
+	control_drawpoint	210	35
+	control_enable	true
+	control_visible	true
+
+	create_control	edit	edt_b1
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	14
+	control_tab	41
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_b2
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	28
+	control_tab	42
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_b3
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	42
+	control_tab	43
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_b4
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	56
+	control_tab	44
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_b5
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	70
+	control_tab	45
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_b6
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	84
+	control_tab	46
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_b7
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	98
+	control_tab	47
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_b8
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	112
+	control_tab	48
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_b9
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	126
+	control_tab	49
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_b10
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	140
+	control_tab	50
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+
+		create_control	edit	edt_b11
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	158
+	control_tab	51
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	4
+	}
+
+	create_control	edit	edt_b12
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	172
+	control_tab	52
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b13
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	186
+	control_tab	53
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b14
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	200
+	control_tab	54
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b15
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	214
+	control_tab	55
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b16
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	228
+	control_tab	56
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b17
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	242
+	control_tab	57
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b18
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	256
+	control_tab	58
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b19
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	270
+	control_tab	59
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b20
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	284
+	control_tab	60
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b21
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	302
+	control_tab	61
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b22
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	316
+	control_tab	62
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b23
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	330
+	control_tab	63
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b24
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	344
+	control_tab	64
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b25
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	358
+	control_tab	65
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b26
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	372
+	control_tab	66
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b27
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	386
+	control_tab	67
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b28
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	400
+	control_tab	68
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b29
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	414
+	control_tab	69
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b30
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	428
+	control_tab	70
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_b31
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	446
+	control_tab	71
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_b32
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	460
+	control_tab	72
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_b33
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	474
+	control_tab	73
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_b34
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	488
+	control_tab	74
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_b35
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	502
+	control_tab	75
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_b36
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	516
+	control_tab	76
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_b37
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	530
+	control_tab	77
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_b38
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	544
+	control_tab	78
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_b39
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	558
+	control_tab	79
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_b40
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	572
+	control_tab	80
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+	}
+
+	create_control	text	txt_header4
+	{
+	control_color	true	192	128	128	128
+	control_text	48	0	2
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	154	12
+	control_drawpoint	366	35
+	control_enable	true
+	control_visible	true
+	
+	create_control	edit	edt_c1
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	14
+	control_tab	81
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_c2
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	28
+	control_tab	82
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_c3
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	42
+	control_tab	83
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_c4
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	56
+	control_tab	84
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_c5
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	70
+	control_tab	85
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_c6
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	84
+	control_tab	86
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_c7
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	98
+	control_tab	87
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_c8
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	112
+	control_tab	88
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_c9
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	126
+	control_tab	89
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_c10
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	140
+	control_tab	90
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+
+	create_control	edit	edt_c11
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	158
+	control_tab	91
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	4
+	}
+
+	create_control	edit	edt_c12
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	172
+	control_tab	92
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c13
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	186
+	control_tab	93
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c14
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	200
+	control_tab	94
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c15
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	214
+	control_tab	95
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c16
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	228
+	control_tab	96
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c17
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	242
+	control_tab	97
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c18
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	256
+	control_tab	98
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c19
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	270
+	control_tab	99
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c20
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	284
+	control_tab	100
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c21
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	302
+	control_tab	101
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c22
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	316
+	control_tab	102
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c23
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	330
+	control_tab	103
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c24
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	344
+	control_tab	104
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c25
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	358
+	control_tab	105
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c26
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	372
+	control_tab	106
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c27
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	386
+	control_tab	107
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c28
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	400
+	control_tab	108
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c29
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	414
+	control_tab	109
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c30
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	428
+	control_tab	110
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_c31
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	446
+	control_tab	111
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_c32
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	460
+	control_tab	112
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_c33
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	474
+	control_tab	113
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_c34
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	488
+	control_tab	114
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_c35
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	502
+	control_tab	115
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_c36
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	516
+	control_tab	116
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_c37
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	530
+	control_tab	117
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_c38
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	544
+	control_tab	118
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_c39
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	558
+	control_tab	119
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_c40
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	572
+	control_tab	120
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+	}
+
+	create_control	text	txt_header5
+	{
+	control_color	true	192	128	128	128
+	control_text	48	0	3
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	154	12
+	control_drawpoint	522	35
+	control_enable	true
+	control_visible	true
+
+	create_control	edit	edt_d1
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	14
+	control_tab	121
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_d2
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	28
+	control_tab	122
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_d3
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	42
+	control_tab	123
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_d4
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	56
+	control_tab	124
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_d5
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	70
+	control_tab	125
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_d6
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	84
+	control_tab	126
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_d7
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	98
+	control_tab	127
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_d8
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	112
+	control_tab	128
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_d9
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	126
+	control_tab	129
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_d10
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	140
+	control_tab	130
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+
+	create_control	edit	edt_d11
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	158
+	control_tab	131
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	4
+	}
+
+	create_control	edit	edt_d12
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	172
+	control_tab	132
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d13
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	186
+	control_tab	133
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d14
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	200
+	control_tab	134
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d15
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	214
+	control_tab	135
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d16
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	228
+	control_tab	136
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d17
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	242
+	control_tab	137
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d18
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	256
+	control_tab	138
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d19
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	270
+	control_tab	139
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d20
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	284
+	control_tab	140
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d21
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	302
+	control_tab	141
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d22
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	316
+	control_tab	142
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d23
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	330
+	control_tab	143
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d24
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	344
+	control_tab	144
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d25
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	358
+	control_tab	145
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d26
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	372
+	control_tab	146
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d27
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	386
+	control_tab	147
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d28
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	400
+	control_tab	148
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d29
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	414
+	control_tab	149
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d30
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	428
+	control_tab	150
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_d31
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	446
+	control_tab	151
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_d32
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	460
+	control_tab	152
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_d33
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	474
+	control_tab	153
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_d34
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	488
+	control_tab	154
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_d35
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	502
+	control_tab	155
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_d36
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	516
+	control_tab	156
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_d37
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	530
+	control_tab	157
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_d38
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	544
+	control_tab	158
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_d39
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	558
+	control_tab	159
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_d40
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	572
+	control_tab	160
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+	}
+
+	create_control	text	txt_header6
+	{
+	control_color	true	192	128	128	128
+	control_text	48	0	4
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	154	12
+	control_drawpoint	678	35
+	control_enable	true
+	control_visible	true
+
+	create_control	edit	edt_e1
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	14
+	control_tab	161
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_e2
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	28
+	control_tab	162
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_e3
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	42
+	control_tab	163
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_e4
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	56
+	control_tab	164
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_e5
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	70
+	control_tab	165
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_e6
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	84
+	control_tab	166
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_e7
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	98
+	control_tab	167
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_e8
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	112
+	control_tab	168
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_e9
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	126
+	control_tab	169
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_e10
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	140
+	control_tab	170
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+
+	create_control	edit	edt_e11
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	158
+	control_tab	171
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	4
+	}
+
+	create_control	edit	edt_e12
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	172
+	control_tab	172
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e13
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	186
+	control_tab	173
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e14
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	200
+	control_tab	174
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e15
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	214
+	control_tab	175
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e16
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	228
+	control_tab	176
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e17
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	242
+	control_tab	177
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e18
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	256
+	control_tab	178
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e19
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	270
+	control_tab	179
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e20
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	284
+	control_tab	180
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e21
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	302
+	control_tab	181
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e22
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	316
+	control_tab	182
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e23
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	330
+	control_tab	183
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e24
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	344
+	control_tab	184
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e25
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	358
+	control_tab	185
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e26
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	372
+	control_tab	186
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e27
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	386
+	control_tab	187
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e28
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	400
+	control_tab	188
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e29
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	414
+	control_tab	189
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_e30
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	428
+	control_tab	190
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_e31
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	446
+	control_tab	191
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_e32
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	460
+	control_tab	192
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_e33
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	474
+	control_tab	193
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_e34
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	488
+	control_tab	194
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_e35
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	502
+	control_tab	195
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_e36
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	516
+	control_tab	196
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_e37
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	530
+	control_tab	197
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_e38
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	544
+	control_tab	198
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_e39
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	558
+	control_tab	199
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_e40
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	572
+	control_tab	200
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+	}
+
+	create_control	text	txt_header7
+	{
+	control_color	true	192	128	128	128
+	control_text	48	0	5
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	154	12
+	control_drawpoint	834	35
+	control_enable	true
+	control_visible	true
+	
+	create_control	edit	edt_f1
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	14
+	control_tab	201
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_f2
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	28
+	control_tab	202
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_f3
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	42
+	control_tab	203
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_f4
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	56
+	control_tab	204
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_f5
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	70
+	control_tab	205
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_f6
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	84
+	control_tab	206
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_f7
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	98
+	control_tab	207
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_f8
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	112
+	control_tab	208
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_f9
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	126
+	control_tab	209
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_f10
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	140
+	control_tab	210
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+
+	create_control	edit	edt_f11
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	158
+	control_tab	211
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	4
+	}
+
+	create_control	edit	edt_f12
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	172
+	control_tab	212
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f13
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	186
+	control_tab	213
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f14
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	200
+	control_tab	214
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f15
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	214
+	control_tab	215
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f16
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	228
+	control_tab	216
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f17
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	242
+	control_tab	217
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f18
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	256
+	control_tab	218
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f19
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	270
+	control_tab	219
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f20
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	284
+	control_tab	220
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f21
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	302
+	control_tab	221
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f22
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	316
+	control_tab	222
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f23
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	330
+	control_tab	223
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f24
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	344
+	control_tab	224
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f25
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	358
+	control_tab	225
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f26
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	372
+	control_tab	226
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f27
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	386
+	control_tab	227
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f28
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	400
+	control_tab	228
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f29
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	414
+	control_tab	229
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f30
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	428
+	control_tab	230
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	600
+	}
+
+	create_control	edit	edt_f31
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	446
+	control_tab	231
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_f32
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	460
+	control_tab	232
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_f33
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	474
+	control_tab	233
+	control_enable	true
+	control_visible	true
+	cedit_length	24
+	cedit_chartype	none
+	}
+
+	create_control	edit	edt_f34
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	488
+	control_tab	234
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	10
+	}
+
+	create_control	edit	edt_f35
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	502
+	control_tab	235
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	200
+	}
+
+	create_control	edit	edt_f36
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	516
+	control_tab	236
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	2
+	}
+
+	create_control	edit	edt_f37
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	530
+	control_tab	237
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	4
+	}
+
+	create_control	edit	edt_f38
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	544
+	control_tab	238
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	200
+	}
+
+	create_control	edit	edt_f39
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	558
+	control_tab	239
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	1	1000000000
+	}
+
+	create_control	edit	edt_f40
+	{
+	control_color	true	64	0	128	0
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	base	base
+	control_drawpoint	0	572
+	control_tab	240
+	control_enable	true
+	control_visible	true
+	cedit_length	25
+	cedit_chartype	none
+	cedit_range	0	1000000000
+	}
+	}
+}
+
+	
+

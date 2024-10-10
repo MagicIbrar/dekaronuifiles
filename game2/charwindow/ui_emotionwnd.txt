@@ -1,0 +1,561 @@
+<window>
+	name			emotion
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 308 418
+	titlerect		0 0 273 23
+	<panel>
+		id			pan_emotion
+		enable		true
+		visible		true
+		layer		103
+		rect		0 0  308 418
+		<image>
+			key		0
+			screen	motion
+			index	1
+		</image>
+		<panel>
+			id			pan_title
+			enable		true
+			visible		true
+			layer		104
+			rect		86 6 118 17
+			<image>
+				key		0
+				screen	Skill
+				index	112
+			</image>
+		</panel>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		273 3 21 21
+			sound  0
+			<image>
+				key		0
+				screen	Skill
+				index	60
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	61
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	62
+			</image>
+		</button>
+		<button>
+			id			btn_state
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		10 27 67 26
+			<image>
+				key		0
+				screen	Skill
+				index	80
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	81
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	82
+			</image>
+			<image>
+				key		check
+				screen	Skill
+				index	83
+			</image>
+		</button>
+		<button>
+			id			btn_skill
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		77 27 67 26
+			<image>
+				key		0
+				screen	Skill
+				index	100
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	101
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	102
+			</image>
+			<image>
+				key		check
+				screen	Skill
+				index	103
+			</image>
+		</button>
+		<button>
+			id			btn_action
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		144 27 67 26
+			<image>
+				key		0
+				screen	Skill
+				index	90
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	91
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	92
+			</image>
+			<image>
+				key		check
+				screen	Skill
+				index	93
+			</image>
+		</button>
+		<emoti>
+			id			emo_10
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		33 103 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_10_emoti
+				enable		true
+				visible		true
+				layer		103
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	10
+				</image>
+			</panel>
+		</emoti>
+		<emoti>
+			id			emo_11
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		95 103 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_11_emoti
+				enable		true
+				visible		true
+				layer		103
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	11
+				</image>
+			</panel>
+		</emoti>
+		<emoti>
+			id			emo_12
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		157 103 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_12_emoti
+				enable		true
+				visible		true
+				layer		12
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	13
+				</image>
+			</panel>
+		</emoti>
+		<emoti>
+			id			emo_13
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		217 103 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_13_emoti
+				enable		true
+				visible		true
+				layer		103
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	13
+				</image>
+			</panel>
+		</emoti>
+		<emoti>
+			id			emo_14
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		33 165 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_14_emoti
+				enable		true
+				visible		true
+				layer		103
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	14
+				</image>
+			</panel>
+		</emoti>
+		<emoti>
+			id			emo_15
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		95 165 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_15_emoti
+				enable		true
+				visible		true
+				layer		103
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	15
+				</image>
+			</panel>
+		</emoti>
+		<emoti>
+			id			emo_16
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		157 165 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_16_emoti
+				enable		true
+				visible		true
+				layer		12
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	16
+				</image>
+			</panel>
+		</emoti>
+		<emoti>
+			id			emo_17
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		217 165 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_17_emoti
+				enable		true
+				visible		true
+				layer		103
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	17
+				</image>
+			</panel>
+		</emoti>
+		
+		<emoti>
+			id			emo_18
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		33 227 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_18_emoti
+				enable		true
+				visible		true
+				layer		103
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	18
+				</image>
+			</panel>
+		</emoti>
+		<emoti>
+			id			emo_19
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		95 227 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_19_emoti
+				enable		true
+				visible		true
+				layer		103
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	19
+				</image>
+			</panel>
+		</emoti>
+		<emoti>
+			id			emo_20
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		157 227 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_20_emoti
+				enable		true
+				visible		true
+				layer		12
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	20
+				</image>
+			</panel>
+		</emoti>
+		<emoti>
+			id			emo_21
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		217 227 51 51
+			<image>
+				key		0
+				screen	Skill
+				index	150
+			</image>
+			<image>
+				key		over
+				screen	Skill
+				index	151
+			</image>
+			<image>
+				key		down
+				screen	Skill
+				index	152
+			</image>
+			<panel>
+				id			emo_21_emoti
+				enable		true
+				visible		true
+				layer		103
+				rect		3 3 40 40
+				<image>
+					key		0
+					screen	motion
+					index	21
+				</image>
+			</panel>
+		</emoti>
+	</panel>
+</window>

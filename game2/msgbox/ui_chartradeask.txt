@@ -1,0 +1,139 @@
+<window>
+	name			chartradeask_msgbox
+	enable			true
+	visible			true
+	modal 			true
+	layer			110
+	rect			0  0 232 157
+	titlerect		0 0 211 24
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+				key		none
+				screen	etc_01
+				index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		60
+			rect		28 2 174 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 37
+			</title>
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		209 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+
+	<label>
+		id		lbl_notifylabel
+		enable		true
+		visible		true
+		layer		101
+		multiline	true
+		align		center
+		rect		16 60 215 14
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text2		556 57
+		</title>
+	</label>
+
+	<button>
+		id		btn_no
+		enable		true
+		visible		true
+		layer		101
+		rect		87 132 57 19
+		<image>
+			key			0
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	18 4
+			text2		2000 14
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	18 4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	19 5
+		</title>
+	</button>	
+
+	<panel>
+		id		pan_processBg
+		enable		true
+		visible		true
+		layer		1
+		rect		6 118 220 8
+		<image>
+				key	none
+				screen	etc_01
+				index	28
+		</image>
+
+		<processbar>	
+			id			processbar
+			enable		true
+			visible		true
+			layer		101
+			rect		1 1 218 7
+			maxsize     218	
+			<image>
+				key	0
+				screen	etc_01
+				index	29
+			</image>
+		</processbar>
+	</panel>
+	
+</window>

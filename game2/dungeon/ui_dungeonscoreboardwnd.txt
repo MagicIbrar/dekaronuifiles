@@ -1,0 +1,88 @@
+<window>
+	name			dungeon_scoreboard
+	enable			true
+	visible			true
+	layer			100
+	position		left top
+	rect				130 0 422 78
+	titlerect		0 0 292 78
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 292 78
+		<panel>
+			id		pan_back
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 292 78
+			<image>
+				key	0
+				screen	indun
+				index	7
+			</image>
+		</panel>
+		<processbar>
+			id				processbar
+			enable		true
+			visible		true
+			layer		101
+			rect			95 24 170 27
+			maxsize     	170
+			minsize     	27
+			<image>
+				key	0
+				screen	indun
+				index	9
+			</image>
+		</processbar>
+		<imagenumber>
+			id				number_score
+			enable		false
+			visible		true
+			fonttype	gold
+			numbertype	normal
+			layer		102
+			space		12
+			align		center
+			imagecount 	10
+			rect		95 29 170 27
+			<image>
+				key	0
+				color 	0x00ffffff
+				screen	common
+				index	0
+			</image>
+		</imagenumber>
+		
+		<panel>
+			id		pan_fever
+			enable		true
+			visible		false
+			layer		102
+			rect		20 5 70 69
+			<image>
+				key	0
+				screen	indun
+				index	8
+			</image>
+		</panel>
+		
+		<panel>
+			id		pan_top
+			enable		true
+			visible		true
+			layer		110
+			position	left top
+			rect			95 24 170 27 
+			<image>
+				key	0
+				screen	indun
+				index	10
+			</image>
+		</panel>			
+		
+	</panel>
+</window>

@@ -1,0 +1,178 @@
+<window>
+	name			hpwnd
+	enable			true
+	visible			true
+	layer			100
+	position 		left bottom
+	rect			572 -89 859 -9 
+	titlerect		278 10 287 70
+	alwaysontop		true
+	<panel>
+		id			pan_actgage
+		enable		true
+		visible		false
+		layer		1
+		rect		3 0 279 12
+		<image>
+			key		none
+			screen	newMainbar
+			index	97
+		</image>
+		<processbar>
+			id			actgage
+			enable		true
+			visible		true
+			layer		10
+			rect		5 4 270 5
+			maxsize     270
+			<image>
+				key		0
+				screen	newMainbar
+				index	98
+			</image>				
+		</processbar>
+		<label>
+			id			lbl_actgage
+			enable		true
+			visible		true
+			layer		20
+			align		center
+			intersect 	false
+			rect		0 0 279 12
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+	</panel>
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		1
+		rect		0 10 287 70
+		<image>
+			key		none
+			screen	newMainbar
+			index	3
+		</image>
+		<processbar>
+			id			shield
+			enable		true
+			visible		true
+			layer		101
+			rect		8 7 268 5
+			maxsize     268
+			<image>
+				key		0
+				screen	newMainbar
+				index	11				
+			</image>				
+		</processbar>
+		<processbar>	
+			id			hp
+			enable		true
+			visible		true
+			layer		100
+			rect		43 17 233 10
+			maxsize     233	
+			<image>
+				key		0
+				screen	newMainbar
+				index	12
+			</image>				
+		</processbar>	
+		<processbar>	
+			id			mp
+			enable		true
+			visible		true
+			layer		100
+			rect		43 32 233 10
+			maxsize     233
+			<image>
+				key		0
+				screen	newMainbar
+				index	13
+			</image>				
+		</processbar>
+		<label>
+			id			lbl_hp
+			enable		true
+			visible		true
+			layer		110
+			align		center
+			intersect 	false
+			rect		41 16 233 12
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_mp
+			enable		true
+			visible		true
+			layer		110
+			align		center
+			intersect 	false
+			rect		41 31 233 12
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<panel>
+			id			pan_class
+			enable		true
+			visible		true
+			layer		101
+			rect		9 17 27 25
+			<image>
+				key			0
+				screen		etc_01
+				index		34
+			</image>
+		</panel>
+		<label>
+			id			lbl_pclevel
+			enbale		true
+			visible		true
+			rect		3 50 42 13
+			layer		101
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_pcname
+			enable		true
+			visible		true
+			layer		101
+			rect		58 50 131 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_exp
+			enable		true
+			visible		true
+			layer		101
+			rect		202 50 73 13 
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	1 1
+			</title>
+		</label>
+		<panel>
+			id		pan_alpha
+			enable		true
+			visible		true
+			layer		102
+			rect		0 3 275 68
+		</panel>
+	</panel>
+</window>

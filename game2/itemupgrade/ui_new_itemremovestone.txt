@@ -1,0 +1,565 @@
+<window>
+	name			itemremovestonewnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-371 -304 371 304
+	titlerect		7 3 700 30
+	<panel>
+		id			pan_upgrade
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 380 565
+		<image>
+			key		none
+			screen	itemsocket
+			index	1
+		</image>
+		<label>
+			id		    lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		8 9 340 24
+			<title>
+				state 		title
+				color		FFFFFFFF
+				fontIndex	4
+				text2		100 13
+			</title>
+		</label>		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		351 12 19 19
+			sound 		0
+			<image>
+    				key				0
+    				screen			etc_01
+    				index			315
+	    		</image>
+    			<image>
+    				key				over
+    				screen			etc_01
+    				index			316
+    			</image>
+    			<image>
+    				key				down
+    				screen			etc_01
+    				index			317
+    			</image>
+		</button>
+		<label>
+		 	id				lbl_tagPercent
+			enable			true
+			visible			true
+			layer			100
+		 	align           center
+			rect			260 411 62 14
+			<title>
+	    			color			ffffffff
+    				fontIndex		4
+    				text2 			1001 107
+  	  		</title>
+    		</label>
+		<label>
+			id			lbl_percent
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		310 411 57 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<item>
+			id			upgrade_item
+			enable		true
+			visible		true
+			layer		10
+			rect		158 151 64 127	
+			cellsize 	32 32
+			moveable	true
+			type		suit
+		</item>		
+		<panel>
+			id		pan_effect_socket
+			enable		true
+			visible		true
+			layer		60
+			rect		158 151 64 127		
+		</panel>
+
+		<item>
+			id			stone_socket_item_0
+			enable		true
+			visible		true
+			intersect	false
+			layer		1000
+			rect		21 400 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>	
+		
+		<panel>
+			id			pan_stone_0
+			enable		true
+			visible		true
+			layer		100
+			rect		14 392 48 48
+			<image>
+				key		0
+				screen	itemsocket
+				index	12
+			</image>
+		</panel>
+		<panel>
+			id			pan_stone_0_check
+			enable		true
+			visible		false
+			layer		110
+			rect		14 392 48 48
+			intersect	false
+			<image>
+				key		0
+				screen	itemsocket
+				index	14
+			</image>
+		</panel>
+
+		<label>
+			id			lbl_stone_0
+			enable		true
+			visible		true
+			layer		100
+			multiline	true
+			rect		17 445 127 30
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+
+		<item>
+			id			stone_socket_item_1
+			enable		true
+			visible		true
+			intersect	false
+			layer		1000
+			rect		70 400 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>	
+
+		<panel>
+			id			pan_stone_1
+			enable		true
+			visible		true
+			layer		100
+			rect		62 392 48 48
+			<image>
+				key		0
+				screen	itemsocket
+				index	12
+			</image>
+		</panel>
+		<panel>
+			id			pan_stone_1_check
+			enable		true
+			visible		false
+			layer		110
+			rect		62 392 48 48
+			intersect	false
+			<image>
+				key		0
+				screen	itemsocket
+				index	14
+			</image>
+		</panel>
+		<label>
+			id			lbl_stone_1
+			enable		true
+			visible		true
+			layer		100
+			multiline	true
+			rect		17 445 127 30
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+
+		<item>
+			id			stone_socket_item_2
+			enable		true
+			visible		true
+			intersect	false
+			layer		1000
+			rect		118 400 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>	
+
+		<panel>
+			id			pan_stone_2
+			enable		true
+			visible		true
+			layer		100
+			rect		110 392 48 48
+			<image>
+				key		0
+				screen	itemsocket
+				index	12
+			</image>
+		</panel>
+		<panel>
+			id			pan_stone_2_check
+			enable		true
+			visible		false
+			layer		110
+			rect		110 392 48 48
+			intersect	false
+			<image>
+				key		0
+				screen	itemsocket
+				index	14
+			</image>
+		</panel>
+		<label>
+			id			lbl_stone_2
+			enable		true
+			visible		true
+			layer		100
+			multiline	true
+			rect		17 445 127 30
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+
+		<item>
+			id			stone_socket_item_3
+			enable		true
+			visible		true
+			intersect	false
+			layer		1000
+			rect		166 400 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>	
+
+
+		<panel>
+			id			pan_stone_3
+			enable		true
+			visible		true
+			layer		100
+			rect		158 392 48 48
+			<image>
+				key		0
+				screen	itemsocket
+				index	12
+			</image>
+		</panel>
+		<panel>
+			id			pan_stone_3_check
+			enable		true
+			visible		false
+			layer		110
+			rect		158 392 48 48
+			intersect	false
+			<image>
+				key		0
+				screen	itemsocket
+				index	14
+			</image>
+		</panel>
+		<label>
+			id			lbl_stone_3
+			enable		true
+			visible		true
+			layer		100
+			multiline	true
+			rect		17 445 127 30
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>		
+		<item>
+			id			stone_socket_0
+			enable		true
+			visible		true
+			layer		10
+			rect		54 194 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			pan_socket_0_bg
+			enable		true
+			visible		false
+			layer		1
+			rect		91 208 24 4
+			<image>
+				key		0
+				screen	itemsocket
+				index	7
+			</image>
+		</panel>
+		<item>
+			id			stone_socket_1
+			enable		true
+			visible		true
+			layer		10
+			rect		85 275 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			pan_socket_1_bg
+			enable		true
+			visible		false
+			layer		1
+			rect		115 258 21 20
+			<image>
+				key		0
+				screen	itemsocket
+				index	8
+			</image>
+		</panel>
+		<item>
+			id			stone_socket_2
+			enable		true
+			visible		true
+			layer		10
+			rect		174 313 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			pan_socket_2_bg
+			enable		true
+			visible		false
+			layer		1
+			rect		188 285 4 23
+			<image>
+				key		0
+				screen	itemsocket
+				index	9
+			</image>
+		</panel>
+		<item>
+			id			stone_socket_3
+			enable		true
+			visible		true
+			layer		10
+			rect		265 275 32 32
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			pan_socket_3_bg
+			enable		true
+			visible		false
+			layer		1
+			rect		244 258 23 20
+			<image>
+				key		0
+				screen	itemsocket
+				index	10
+			</image>
+		</panel>
+		<item>
+			id			stone_socket_4
+			enable		true
+			visible		true
+			layer		10
+			rect		294 194 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			pan_socket_4_bg
+			enable		true
+			visible		false
+			layer		1
+			rect		265 208 24 4
+			<image>
+				key		0
+				screen	itemsocket
+				index	11
+			</image>
+		</panel>
+		<item>
+			id			stone_cash_socket
+			enable		true
+			visible		true
+			layer		1000
+			rect		174 72 32 32	
+			cellsize 	32 32
+			moveable	true
+		</item>
+		<panel>
+			id			pan_cash_bg
+			enable		true
+			visible		false
+			layer		1
+			rect		188 114 4 21
+			<image>
+				key		0
+				screen	itemsocket
+				index	6
+			</image>
+		</panel>		
+		<panel>
+			id		pan_effect
+			enable		true
+			visible		true
+			layer		60
+			rect		253 60 48 72	
+		</panel>		
+		<button>
+			id		btn_strength
+			enable		false
+			visible		true
+			align  		center
+			layer		100
+			rect		260 437 98 74
+			sound  0
+			blink		false
+			blinktime	1000
+			<image>
+    				key				0
+    				screen			itemsocket
+    				index			2
+	    		</image>
+    			<image>
+    				key				over
+    				screen			itemsocket
+    				index			3
+    			</image>
+    			<image>
+    				key				down
+				screen			itemsocket
+    				index			4
+    			</image>
+			<image>
+				key			blink				
+				screen			itemsocket
+				index			3
+			</image>
+			<title>
+    				state 		none
+    				color		ff929292
+    				fontIndex	2
+    				position	0 28
+    				text2		1001 96
+    			</title>
+   	 		<title>
+    				state 		over
+    				color		ffffffff
+    				fontIndex	2
+    				position	0 28
+    			</title>
+    			<title>
+    				state 		down
+    				color		ff929292
+    				fontIndex	2
+    				position	0 30
+    			</title>
+		</button>
+		
+		<label>
+			id			lbl_cost
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		291 338 70 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+
+		<label>
+			id			lbl_explanation
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		8 40 364 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+
+		<label>
+			id			lbl_subcashitem
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		13 375 354 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 			1001 160
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			align		center	center
+			rect		158 530 65 20
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	91
+			</image>
+			<image>
+				key 	over
+				screen 	etc_01
+				index 	92
+			</image>
+			<image>
+				key 	down
+				screen 	etc_01
+				index 	93
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				text2		311 8
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 5
+			</title>
+		</button>
+		
+	</panel>
+	
+</window>

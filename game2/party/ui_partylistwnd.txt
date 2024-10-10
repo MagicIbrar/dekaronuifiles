@@ -1,0 +1,392 @@
+<window>
+	name			Partylistwnd
+	enable			true
+	visible			true
+	layer			100
+	rect			-217 -170 218 171
+	position		center center
+	titlerect		28 2 405 16
+	<panel>
+		id		pan_bg
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 435 341
+		<image>
+				key	none
+				screen	DKSquare
+				index	14
+		</image>
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		10
+			rect		28 2 377 14
+			position	0 1
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		70 132
+			</title>
+		</label>
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		417 2 15 15
+
+			<image>
+				key	none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key	over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key	down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<label>
+			id		lbl_desc
+			enable		true
+			visible		true
+			layer		10
+			rect		30 32 200 15
+			align		left
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		70 133
+			</title>
+		</label>
+		<button>
+			id		btn_refresh
+			enable		true
+			visible		true
+			layer		100
+			rect		380 27 26 26
+			<image>
+				key	none
+				screen	DKSquare
+				index	13
+			</image>
+			<image>
+				key	over
+				screen	DKSquare
+				index	13
+			</image>
+			<image>
+				key	down
+				screen	DKSquare
+				index	12
+			</image>
+			<image>
+				key	disable
+				screen	DKSquare
+				index	11
+			</image>
+		</button>
+		<label>
+			id		lbl_msg
+			enable		true
+			visible		true
+			layer		10
+			rect		30 310 250 15
+			align		left
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<panel>
+			id		pan_listwndctrl
+			enable		true
+			visible		true
+			layer		100
+			rect		6 61 422 236
+			align		center
+			<vscroll>
+				id		listwnd_scroll
+				enable		true
+				visible		true
+				layer		100
+				rect		410 0 12 236
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			listwnd_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id			listwnd_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		-2 223 15 15
+
+					type		1
+					<image>
+						key		0
+						screen	etc_01
+						index		327
+
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index		328
+
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index		329
+
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index		326
+
+					</image>
+				</button>
+				<panel>
+					id			listwnd_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					noneimage 	true
+					<image>
+						key		none
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>			
+		</panel>
+	</panel>
+	<freeboardctrl>
+		id		freeboard
+		enable		true
+		visible		true
+		layer		100
+		rect		6 61 410 254
+		nodeheight	18
+		titleheight	18
+		topmargin	0
+		offset		2
+		btnsize		12
+		<title>
+			state		over
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		check
+			color		ffFFFFFF
+			fontIndex	4
+		</title>
+		<title>
+			state		head
+			color		ffFFCA40
+			fontIndex	4
+		</title>
+		<title>
+			state		sub
+			color		ffffffff
+			fontIndex	3
+		</title>
+		<title>
+			state		disable
+			color		ff929292
+			fontIndex	4
+		</title>
+		<title>
+			state		finish
+			color		ffFFB900
+			fontIndex	4
+		</title>
+		<title>
+			state		unknown
+			color		ffBFBFBF
+			fontIndex	4
+		</title>
+		<title>
+			state		complete
+			color		ffEFEFEF
+			fontIndex	4
+		</title>
+		<image>
+			key		0
+			color 		00FFFFFF
+			screen		common
+			index		1
+		</image>
+		<image>
+			key		check
+			screen		questwin
+			index		91
+		</image>
+		<image>
+			key		disable
+			screen	etc_01
+			index	11
+		</image>
+		<image>
+			key		check_over
+			screen	StorePurchase
+			index	10
+		</image>
+		<image>
+			key		over
+			screen	StorePurchase
+			index	11
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	5
+		</image>		
+		<image>
+			key		tab1
+			screen	StorePurchase
+			index	2
+		</image>
+		<image>
+			key		tab2
+			screen	StorePurchase
+			index	3
+		</image>		
+		<node>
+			state		0
+			text2		160 14
+			intersect	false
+			width		20
+			sort		false
+			<Element>
+				type		index
+				id		index
+				align		center
+				intersect	false
+			</Element>
+		</node>
+		<node>
+			state		1
+			text2		70 134
+			intersect	false
+			width		100
+			sort		false
+			<Element>
+				type		string
+				id		mapname
+				align		left
+				intersect	false
+			</Element>
+		</node>
+		<node>
+			state		2
+			text2		160 16
+			intersect	false
+			width		40
+			sort		false
+			<Element>
+				type		index
+				id		usercount
+				align		center
+				intersect	flse
+			</Element>
+		</node>
+		<node>
+			state		3
+			text2		70 135
+			intersect	false
+			width		190
+			sort		false
+			<Element>
+				type		string
+				id		partyname
+				align		left
+				intersect	true
+			</Element>
+		</node>
+		<node>
+			state		4
+			text2		70 143
+			intersect	false
+			width		60
+			sort		false
+			<Element>
+				type		button
+				id		join
+				align		center
+				intersect	false
+				size		56 16
+				<image>
+					key	none
+					screen	etc_01
+					index	2
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	4
+					position	0 3
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+					position	0 3
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+					position	1 4
+				</title>
+			</Element>
+		</node>
+	</freeboardctrl>
+</window>

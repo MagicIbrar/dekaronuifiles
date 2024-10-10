@@ -1,0 +1,1976 @@
+window_layer	auto
+window_size	405	736
+window_position	310	32
+window_visible	false
+
+create_control	panel	base
+{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	7	6	6
+		control_drawdiv	xy	2
+		control_drawsize	405	736
+		control_drawpoint	0	0
+		control_enable	true
+		control_visible	true
+
+	create_control	title	pan_title
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+		control_text	4	1	Item
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	399	13
+		control_drawpoint	3	3
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_new
+	{
+		control_group	0
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	42	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	10	22
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_save
+	{
+		control_group	0
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	84	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	62	22
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_showitemview
+	{
+		control_group	0
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	105	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	114	22
+		control_style		checked
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_showpcclass
+	{
+		control_group	0
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	126	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	140	22
+		control_style		checked
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_prev
+	{
+		control_group	0
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	342	22
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_next
+	{
+		control_group	0
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	368	22
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	edit	edt_findindex1
+	{
+		control_color	true	255	255	255	255
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	30	13
+		control_drawpoint	260	27
+		control_tab	0
+		control_enable	true
+		control_visible	true
+		cedit_length	4
+		cedit_chartype	numeric
+		cedit_range	0	99999
+	}
+}
+
+create_control	text	txt_findindex1
+{
+		control_text	0	0	/
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	40	12
+		control_drawpoint	293	28
+		control_enable	true
+		control_visible	true
+}
+
+create_control	text	txt_header1
+{
+	control_color	true	192	128	128	128
+	control_text	24	0	항목
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawsize	72	12
+	control_drawpoint	10	48
+	control_enable	true
+	control_visible	true
+
+//	create_control	text	txt_pcclassview
+//	{
+//		control_color	true	64	60	60	255
+//		control_textcolor	0	0	0
+//		control_textfont	small
+//		control_drawsize	200	410
+//		control_drawpoint	-220	14
+//		control_enable	true
+//		control_visible	false
+//	}
+
+	create_control	text	txt_index
+	{
+		control_color	true	64	60	60	255
+		control_text	0	0	인덱스
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	base	base
+		control_drawpoint	0	14
+		control_enable	true
+		control_visible	true
+		
+		create_control	text	txt_name
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	이름
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_type
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	대분류
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	28
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_code
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	소분류
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	42
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_rank
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	등급
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	56
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_weight
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	무게
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	70
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_width
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	가로
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	84
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_height
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	세로
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	98
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_reqlevel
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	요구레벨
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	112
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_cost
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	판매
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	126
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_pcclass
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	요구클레스
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	140
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_identify
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	감정치
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	154
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_attribute
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	속성값
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	168
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_value
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	설정값
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	182
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_stackcount
+		{
+			control_color	true	64	60	60	255
+			control_text	0	0	최대개수
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	196
+			control_enable	true
+			control_visible	true
+		}
+	}
+	
+	
+	create_control	panel	pan_separate00
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	7	18	2	2
+		control_drawdiv	xy	1
+		control_drawsize	382	2
+		control_drawpoint	0	230
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	text	txt_attackrange
+	{
+		control_group	2
+		control_color	true	64	60	60	255
+		control_text	0	0	사정거리
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	base	base
+		control_drawpoint	0	238
+		control_enable	true
+		control_visible	true
+		
+		create_control	text	txt_attackspeed
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	스피드
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_attackrating
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	레이팅
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	28
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_criticalrate
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	크리티컬히트
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	42
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_droplevel
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	"드롭시레벨"
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	56
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropoption
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	"드롭시옵션수"
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	70
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropsocket1
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	소켓1개
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	84
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropsocket2
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	소켓2개
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	98
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropsocket3
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	소켓3개
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	112
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropsocket4
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	소켓4개
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	126
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_smondamage
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	"SM 추가력"
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	140
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_nmondamage
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	"NM 추가력"
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	154
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_lmondamage
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	"LM 추가력"
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	168
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_bmondamage
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	"BM 추가력"
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	182
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_umondamage
+		{
+			control_group	2
+			control_color	true	64	60	60	255
+			control_text	0	0	언데드추가력
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	196
+			control_enable	true
+			control_visible	true
+		}
+	}
+
+	create_control	panel	pan_separate10
+	{
+		control_group	2
+		control_image	oxxx	UI\Tool\ui_window02.dds	7	18	2	2
+		control_drawdiv	xy	1
+		control_drawsize	382	2
+		control_drawpoint	0	454
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_levelprev
+	{
+		control_group	3
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	0	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	0	462
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	button	btn_levelnext
+	{
+		control_group	3
+		control_image	oooo	UI\Tool\ui_winbtn04.dds	0	21	25	21
+		control_drawdiv	xy	1
+		control_drawsize	25	21
+		control_drawpoint	26	462
+		control_enable	true
+		control_visible	true
+	}
+		
+	create_control	text	txt_itemlevel
+	{
+		control_group	3
+		control_color	true	64	60	60	255
+		control_text	0	0	아이템레벨
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	base	base
+		control_drawpoint	0	484
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_mindamage
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	최소데미지
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_maxdamage
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	최대데미지
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	28
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_minmagicdamage
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	최소마법데미지
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	42
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_maxmagicdamage
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	최대마법데미지
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	56
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_mindefence
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	최소방어
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	70
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_maxdefence
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	최대방어
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	84
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_blockingRate
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	블러킹
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	98
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_criticaldamagerate
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	critic보너스
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	112
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_reqstr
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	요구힘
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	126
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_reqdex
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	요구민첩
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	140
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_reqspr
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	요구정신
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	154
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_increqadventure
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	감정치증가량
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	168
+			control_enable	true
+		}
+	}
+}
+
+create_control	text	txt_header2
+{
+		control_color	true	192	128	128	128
+		control_text	64	0	적용값
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	164	12
+		control_drawpoint	84	48
+		control_enable	true
+		control_visible	true
+
+	create_control	edit	edt_index
+	{
+		control_color	true	64	0	128	0
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	base	base
+		control_drawpoint	0	14
+		control_enable	true
+		control_visible	true
+		cedit_length	0
+		cedit_chartype	numeric
+		cedit_attribute	1
+
+		create_control	edit	edt_name
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	14
+			control_tab	1
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	none
+		}
+		//
+		create_control	edit	edt_itemtype
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	28
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_itemcode
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	42
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_itemrank
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	56
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	none
+		}
+		//
+		
+		
+
+		create_control	edit	edt_weight
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	70
+			control_tab	2
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	1	200
+		}
+
+		create_control	edit	edt_width
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	84
+			control_tab	3
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	1	2
+		}
+
+		create_control	edit	edt_height
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	98
+			control_tab	4
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	1	4
+		}
+
+		create_control	edit	edt_reqlevel
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	112
+			control_tab	5
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	1	200
+		}
+
+		create_control	edit	edt_cost
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	126
+			control_tab	6
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	1	1000000000
+		}
+
+		create_control	panel	pan_pcclass
+		{
+			control_group	0
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	12
+			control_drawpoint	0	140
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	edit	edt_identify
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	154
+			control_tab	7
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000000000
+		}
+		
+		create_control	edit	edt_itemattribute
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	168
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	none
+		}
+
+		create_control	edit	edt_value
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	182
+			control_tab	8
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	1	6000
+		}
+		
+		create_control	edit	edt_stackcount
+		{
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	196
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	1	6000
+		}
+	}
+
+	create_control	edit	edt_attackrange
+	{
+		control_group	2
+		control_color	true	64	0	128	0
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	base	base
+		control_drawpoint	0	238
+		control_tab	9
+		control_enable	true
+		control_visible	true
+		cedit_length	0
+		cedit_chartype	numeric
+		cedit_range	0	99
+
+		create_control	edit	edt_attackspeed
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	14
+			control_tab	10
+			control_enable	true
+			control_visible	true
+			cedit_length	2
+			cedit_chartype	numeric
+			cedit_range	0	99
+		}
+
+		create_control	edit	edt_attackrating
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	28
+			control_tab	11
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000
+		}
+
+		create_control	edit	edt_criticalrate
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	42
+			control_tab	12
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	100
+		}
+
+		create_control	edit	edt_droplevel
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	56
+			control_tab	13
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	1	10
+		}
+
+		create_control	edit	edt_dropoption
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	70
+			control_tab	14
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	6
+		}
+
+		create_control	edit	edt_dropsocket1
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	84
+			control_tab	15
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	100
+		}
+
+		create_control	edit	edt_dropsocket2
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	98
+			control_tab	16
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	100
+		}
+
+		create_control	edit	edt_dropsocket3
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	112
+			control_tab	17
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	100
+		}
+
+		create_control	edit	edt_dropsocket4
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	126
+			control_tab	18
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	100
+		}
+
+		create_control	edit	edt_smondamage
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	140
+			control_tab	19
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	nosymbol
+			cedit_range	-100	100
+		}
+
+		create_control	edit	edt_nmondamage
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	154
+			control_tab	20
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	nosymbol
+			cedit_range	-100	100
+		}
+
+		create_control	edit	edt_lmondamage
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	168
+			control_tab	21
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	nosymbol
+			cedit_range	-100	100
+		}
+
+		create_control	edit	edt_bmondamage
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	182
+			control_tab	22
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	nosymbol
+			cedit_range	-100	100
+		}
+
+		create_control	edit	edt_umondamage
+		{
+			control_group	2
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	196
+			control_tab	23
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	nosymbol
+			cedit_range	-100	100
+		}
+	}
+
+	create_control	edit	edt_itemlevel
+	{
+		control_group	3
+		control_color	true	64	0	128	0
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	base	base
+		control_drawpoint	0	484
+		control_tab	25
+		control_enable	true
+		control_visible	true
+		cedit_length	0
+		cedit_chartype	numeric
+		cedit_range	0	9
+		
+
+		create_control	edit	edt_mindamage
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	14
+			control_tab	26
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000
+		}
+
+		create_control	edit	edt_maxdamage
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	28
+			control_tab	27
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000
+		}
+
+		create_control	edit	edt_minmagicdamage
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	42
+			control_tab	28
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000
+		}
+
+		create_control	edit	edt_maxmagicdamage
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	56
+			control_tab	29
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000
+		}
+
+		create_control	edit	edt_mindefence
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	70
+			control_tab	30
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000
+		}
+
+		create_control	edit	edt_maxdefence
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	84
+			control_tab	31
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000
+		}
+
+		create_control	edit	edt_blockingRate
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	98
+			control_tab	32
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	100
+		}
+
+		create_control	edit	edt_criticaldamagerate
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	112
+			control_tab	33
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	100
+		}
+
+		create_control	edit	edt_reqstr
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	126
+			control_tab	34
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000
+		}
+
+		create_control	edit	edt_reqdex
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	140
+			control_tab	35
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000
+		}
+
+		create_control	edit	edt_reqspr
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	154
+			control_tab	36
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+			cedit_range	0	1000
+		}
+
+		create_control	edit	edt_increqadventure
+		{
+			control_group	3
+			control_color	true	64	0	128	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	168
+			control_tab	37
+			control_enable	true
+			control_visible	true
+			cedit_length	0
+			cedit_chartype	numeric
+		}
+	}
+}
+
+create_control	text	txt_header3
+{
+		control_color	true	192	128	128	128
+		control_text	48	0	비고
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	140	12
+		control_drawpoint	252	48
+		control_enable	true
+		control_visible	true
+
+	create_control	text	txt_indexd
+	{
+		control_color	true	144	180	180	180
+		control_text	0	0	자동부여
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	base	base
+		control_drawpoint	0	14
+		control_enable	true
+		control_visible	true
+		
+		create_control	text	txt_named
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	영문24자
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_typed
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	일반,
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	28
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_coded
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	공격구->단검..
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	42
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_rankd
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	노말,
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	56
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_weightd
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	1-200
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	70
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_widthd
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	1-2
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	84
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_heightd
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	1-4
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	98
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_reqleveld
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	1-200
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	112
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_costd
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	1-1000000000
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	126
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_pcclassd
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	복수개의
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	140
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_identifyd
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	1-1000000000
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	154
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_attributed
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	물,불..
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	168
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_valued
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	1-6000
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	182
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_stackcounted
+		{
+			control_color	true	144	180	180	180
+			control_text	0	0	"1-250
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	196
+			control_enable	true
+			control_visible	true
+		}
+	}
+
+	create_control	text	txt_attackranged
+	{
+		control_group	2
+		control_color	true	144	180	180	180
+		control_text	0	0	0-99
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	base	base
+		control_drawpoint	0	238
+		control_enable	true
+		control_visible	true
+	
+		create_control	text	txt_attackspeedd
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	0-99
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_attackratingd
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	0-1000
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	28
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_criticalrated
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	0-100
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	42
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropleveld
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	1-10
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	56
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropoptiond
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	0-6
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	70
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropsocket1d
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	0-100
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	84
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropsocket2d
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	0-100
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	98
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropsocket3d
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	0-100
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	112
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_dropsocket4d
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	0-100
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	126
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_smondamaged
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	-100
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	140
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_nmondamaged
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	-100
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	154
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_lmondamaged
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	-100
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	168
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_bmondamaged
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	-100
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	182
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_umondamaged
+		{
+			control_group	2
+			control_color	true	144	180	180	180
+			control_text	0	0	-100
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	196
+			control_enable	true
+			control_visible	true
+		}
+	}
+
+//	create_control	text	txt_numoptions_
+//	{
+//		control_group	2
+//		control_color	true	144	180	180	180
+//		control_text	0	0	0
+//		control_textcolor	0	0	0
+//		control_textfont	small
+//		control_drawsize	base	base
+//		control_drawpoint	0	434
+//		control_enable	true
+//		control_visible	true
+//	}
+
+	create_control	text	txt_itemleveld
+	{
+		control_group	3
+		control_color	true	64	60	60	255
+		control_text	0	0	0
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	base	base
+		control_drawpoint	0	484
+		control_enable	true
+		control_visible	true
+	
+		create_control	text	txt_mindamaged
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_maxdamaged
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	28
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_minmagicdamaged
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	42
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_maxmagicdamaged
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	56
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_mindefenced
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	70
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_maxdefenced
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	84
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_blockingRated
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	98
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_criticaldamagerated
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	112
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_reqstrd
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	126
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_reqdexd
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	140
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_reqsprd
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	154
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_increqadventured
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	0
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	base	base
+			control_drawpoint	0	168
+			control_enable	true
+		}
+	}
+}

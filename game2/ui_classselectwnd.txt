@@ -1,0 +1,1059 @@
+<window>
+	name			class_select_win
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	rect			0 0 0 0
+	titlerect		0 0 0 0
+	<panel>
+		id			pan_widebackup
+		enable		true
+		visible		true
+		layer		99
+		position	inverse top
+		rect		0 0 0 48
+		<image>
+			key	0
+			color	ff010101
+			screen	common
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_widebackup_1
+		enable		true
+		visible		true
+		layer		99
+		position	inverse top
+		rect		0 48 0 32
+		<image>
+			key	0
+			color	ff010101
+			screen	login_wide
+			index	2
+		</image>
+	</panel>
+	<panel>
+		id			pan_widebackdown
+		enable		true
+		visible		true
+		layer		99
+		position	inverse bottom
+		rect		0 -48 0 48
+		<image>
+			key	0
+			color	ff010101
+			screen	common
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_widebackdown_1
+		enable		true
+		visible		true
+		layer		99
+		position	inverse bottom
+		rect		0 -80 0 32
+		<image>
+			key	0
+			color	ff010101
+			screen	login_wide
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_class_Bg
+		enable		true
+		visible		true
+		layer		90
+		rect		28 170 260 2096
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		
+		rect		0 0 215 37
+			<image>   
+				key		none
+				screen	Character
+				index	27
+			</image>
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		
+		rect		0 37 215 38
+			<image>   
+				key		none
+				screen	Character
+				index	28
+			</image>
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		
+		rect		0 75 215 38
+			<image>   
+				key		none
+				screen	Character
+				index	28
+			</image>
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		
+		rect		0 113 215 38
+			<image>   
+				key		none
+				screen	Character
+				index	28
+			</image>
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		
+		rect		0 151 215 38
+			<image>   
+				key		none
+				screen	Character
+				index	28
+			</image>
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		
+		rect		0 189 215 38
+			<image>   
+				key		none
+				screen	Character
+				index	28
+			</image>
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		
+		rect		0 227 215 38
+			<image>   
+				key		none
+				screen	Character
+				index	28
+			</image>
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		
+		rect		0 265 215 100
+			<image>   
+				key		none
+				screen	Character
+				index	29
+			</image>
+		</button>
+		<textbox>
+			id			pan_class_desc
+			enable		true
+			visible		true
+			layer		120
+			rect		5 -3 194 615
+			lineheight	14
+			fonttype	5
+			color		FFFFFFFF
+			multiline	true
+		</textbox>
+	</panel>
+
+	<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		99
+		position	left inverse
+		rect		0 0 263 0
+		<image>
+			key	0
+			color	FFFFFFFF
+			screen	Character
+			index	79
+		</image>
+	</button>	
+	<panel>
+		id			pan_class_arrow
+		enable		true
+		visible		true
+		layer		121
+		intersect   	false
+		position	left top	
+		rect		10 512 243 243
+		<image>   
+			key		0
+			screen	Character
+			index	65
+		</image>
+	</panel>
+
+	<panel>
+		id			pan_class_select
+		enable		true
+		visible		true
+		layer		90
+		position	right top
+		rect		-197 66 194 623
+		<panel>
+			id			pan_class_select1
+			enable		true
+			visible		true
+			layer		120
+			rect		0 0 194 43
+			<image>   
+				key		0
+				screen	Character
+				index	37
+			</image>
+			<label>
+				id			lbl_class_title
+				enable		true
+				visible		true
+				layer		110
+				align       center
+				rect		0 20 194 23
+				<title>
+					color		ffffffff
+					fontIndex	8
+					text2		30 16
+				</title>
+			</label>
+		</panel>
+		<panel>
+			id			pan_class_select2
+			enable		true
+			visible		true
+			layer		100
+			rect		0 43 194 623
+			<image>   
+				key		0
+				screen	Character
+				index	38
+			</image>
+		</panel>
+		<panel>
+			id			pan_class_select3
+			enable		true
+			visible		true
+			layer		100
+			rect		0 666 194 45			
+			<image>   
+				key		0
+				screen	Character
+				index	39
+			</image>
+		</panel>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-177 55 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	51
+			</image>
+		</button>	
+		<button>
+			id			btn_list_1
+			enable		true
+			visible		true
+			layer		120
+			check		true
+			type		0
+			rect		12 50 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-177 123 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	52
+			</image>
+		</button>
+		<button>
+			id			btn_list_2
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		12 121 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-177 194 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	53
+			</image>
+		</button>
+		<button>
+			id			btn_list_3
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		12 192 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-177 265 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	54
+			</image>
+		</button>
+		<button>
+			id			btn_list_4
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		12 263 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-177 335 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	55
+			</image>
+		</button>
+		<button>
+			id			btn_list_5
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		12 333 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-177 405 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	56
+			</image>
+		</button>
+		<button>
+			id			btn_list_6
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		12 403 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-177 475 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	57
+			</image>
+		</button>
+		<button>
+			id			btn_list_7
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		12 473 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-88 265 72 60
+			<image>   
+				key		0
+				screen	Character
+				index	61
+			</image>
+		</button>
+		<button>
+			id			btn_list_8
+			enable		true
+			visible		true
+			layer		120
+			check		true
+			type		0
+			rect		97 263 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-88 335 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	62
+			</image>
+		</button>
+		<button>
+			id			btn_list_9
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		97 333 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-88 194 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	60
+			</image>
+		</button>
+		<button>
+			id			btn_list_10
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		97 192 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-88 405 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	63
+			</image>
+		</button>
+		<button>
+			id			btn_list_11
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		97 403 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-88 55 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	58
+			</image>
+		</button>
+		<button>
+			id			btn_list_12
+			enable		true
+			visible		true
+			layer		120
+			type		0			
+			rect		97 50 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-88 123 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	59
+			</image>
+		</button>
+		<button>
+			id			btn_list_13
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		97 121 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		
+		</button>	
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-177 545 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	633
+			</image>
+		</button>
+		<button>
+			id			btn_list_14
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		12 543 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		</button>
+		
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		-88 475 72 60
+			<image>   
+				key		none
+				screen	Character
+				index	634
+			</image>
+		</button>
+		<button>
+		id			btn_back
+		enable		false
+		visible		true
+		layer		110
+		position	right top
+		rect		97 473 87 70
+			<image>   
+				key		none
+				screen	Character
+				index	40
+			</image>
+		</button>
+		<button>
+			id			btn_list_16
+			enable		true
+			visible		true
+			layer		120
+			type		0
+			rect		97 473 87 70
+			<image>   
+				key		0
+				screen	Character
+				index	40
+			</image>
+			<image>   
+				key		over
+				screen	Character
+				index	41
+			</image>
+			<image>   
+				key		check
+				screen	Character
+				index	42
+			</image>
+		</button>
+	</panel>
+	<panel>
+		id			pan_character_name
+		enable		true
+		visible		true
+		layer		110
+		position	center bottom
+		rect		-155 -167 303 55
+		<image>
+			key		0
+			screen	Character
+			index	30
+		</image>
+		<button>
+			id			btn_turn_left
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		13 10 38 34
+			<image>
+				key		none
+				screen	Character
+				index	31
+			</image>
+			<image>
+				key		over
+				screen	Character
+				index	32
+			</image>
+			<image>
+				key		down
+				screen	Character
+				index	33
+			</image>
+		</button>
+		<edit>
+			id			edit_text
+			enable		true
+			visible		true
+			layer		100
+			rect		76 20 153 14
+			maxlength	20
+			font_type	2
+			input_type	0
+			align		1
+			color		ffffffff
+			multiline   false
+		</edit>	
+		<button>
+			id			btn_turn_right
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		255 10 38 34
+			<image>
+				key		none
+				screen	Character
+				index	34
+			</image>
+			<image>
+				key		over
+				screen	Character
+				index	35
+			</image>
+			<image>
+				key		down
+				screen	Character
+				index	36
+			</image>
+		</button>
+	</panel>
+	<panel>
+		id			pan_classname
+		enable		true
+		visible		true
+		layer		99	
+		position	center top
+		rect		-191 143 383 43
+		
+		<image>
+			key		none
+			screen	Character
+			index	80
+		</image>
+
+		<label>
+			id			lbl_selectchar
+			enable		true
+			visible		true
+			layer		120
+			align       center
+			rect		45 11 300 30
+			<title>
+				color		ffffffff
+				fontIndex	8
+				text2		30 180
+			</title>
+		</label>
+	</panel>
+	<button>
+		id			btn_back
+		enable		true
+		visible		true
+		layer		200
+		type		0
+		position	right bottom
+		rect		-138 -50 125 35
+		align		center
+		<image>
+			key		none
+			screen	Character_4
+			index	17
+		</image>
+		<image>
+			key		over
+			screen	Character_4
+			index	18
+		</image>
+		<image>
+			key		down
+			screen	Character_4
+			index	19
+		</image>
+		<image>
+			key		disable
+			screen	Character_4
+			index	20
+		</image>
+		<title>
+			state		none
+			color		ffffffff
+			fontIndex	8
+			text2		30 18
+			position	0 9
+		</title>
+		<title>
+			state		over
+			color		ffc0e7ff
+			fontIndex	8
+			position	0 9
+            effect		5000 1 1500 1 500
+		</title>
+		<title>
+			state		down
+			color		ffc0e7ff
+			fontIndex	8
+			position	0 11
+			effect          0 0 0 0 0
+		</title>
+		<title>
+			state		disable
+			color		ffa0a0a0
+			fontIndex	8
+			position	0 11
+			effect          0 0 0 0 0
+		</title>
+	</button>
+	<button>
+		id			btn_ok
+		enable		true
+		visible		true
+		layer		200
+		type		0
+		position	right bottom
+		rect		-282 -50 125 35
+		align		center
+		<image>
+			key		none
+			screen	Character_4
+			index	13
+		</image>
+		<image>
+			key		over
+			screen	Character_4
+			index	14
+		</image>
+		<image>
+			key		down
+			screen	Character_4
+			index	15
+		</image>
+		<image>
+			key		disable
+			screen	Character_4
+			index	16
+		</image>
+		<title>
+			state		none
+			color		ffffffff
+			fontIndex	8
+			text2		2000 15
+			position	0 9
+		</title>
+		<title>
+			state		over
+			color		ffc0e7ff
+			fontIndex	8
+			position	0 9
+			effect		5000 1 1500 1 500
+		</title>
+		<title>
+			state		down
+			color		ffc0e7ff
+			fontIndex	8
+			position	0 11
+			effect          0 0 0 0 0
+		</title>
+		<title>
+			state		disable
+			color		ffa0a0a0
+			fontIndex	8
+			position	0 11
+			effect          0 0 0 0 0
+		</title>
+	</button>
+</window>

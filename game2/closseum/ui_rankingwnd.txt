@@ -1,0 +1,269 @@
+<window>
+	name			rankingwnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-440 -236 440 235
+	titlerect		7 7 880 32
+		
+	<panel>
+		id				pan_body
+		enable			true
+		visible			true
+		layer			100
+		rect			0 0 880 471
+		<image>
+			key			none
+			screen		colosseum
+			index		60
+		</image>
+		
+		<label>
+			id			lbl_tagtitle
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		7 7 864 25
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		100 61
+			</title>
+		</label>
+			
+		<button>
+			id			btn_whole
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		700 42 20 20
+			<image>
+				key			0
+				screen		colosseum
+				index		64
+			</image>
+			<image>
+				key			check
+				screen		colosseum
+				index		63
+			</image>
+		</button>
+		
+		<label>
+			id			lbl_tagwhole
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		720 45 20 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		100 61
+			</title>
+		</label>
+		
+		<button>
+			id			btn_week
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		758 42 20 20
+			<image>
+				key			0
+				screen		colosseum
+				index		64
+			</image>
+			<image>
+				key			check
+				screen		colosseum
+				index		63
+			</image>
+		</button>
+		
+		<label>
+			id			lbl_tagweek
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		778 45 20 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		100 61
+			</title>
+		</label>		
+		
+		<button>
+			id			btn_month
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		816 42 20 20
+			<image>
+				key			0
+				screen		colosseum
+				index		64
+			</image>
+			<image>
+				key			check
+				screen		colosseum
+				index		63
+			</image>
+		</button>
+		
+		<label>
+			id			lbl_tagmonth
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		836 45 20 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		100 61
+			</title>
+		</label>	
+		
+		<panel>
+			id				pan_base
+			enable			true
+			visible			true
+			layer			100
+			rect			0 126 868 26
+			<label>
+				id			lbl_rank
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		0 5 80 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<panel>
+				id			pan_class
+				enable		true
+				visible		true
+				layer		100
+				rect		90 6 22 15
+			</panel>
+			<label>
+				id			lbl_name
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		120 5 114 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<label>
+				id			lbl_level
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		234 5 41 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>			
+			<label>
+				id			lbl_server
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		275 5 41 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>	
+			<label>
+				id			lbl_guild
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		316 5 113 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>			
+			<label>
+				id			lbl_content_a
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		429 5 89 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>			
+			<label>
+				id			lbl_content_b
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		518 5 89 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>			
+			<label>
+				id			lbl_content_c
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		607 5 89 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>			
+			<label>
+				id			lbl_content_d
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		696 5 89 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>			
+			<label>
+				id			lbl_content_e
+				enable		true
+				visible		true
+				layer		10
+				align		center
+				rect		785 5 88 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>			
+		</panel>
+</window>

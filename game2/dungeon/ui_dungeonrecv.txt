@@ -1,0 +1,108 @@
+<window>
+	name			dungeonrecv_msgbox
+	enable			true
+	visible			true
+	layer			110
+	position		center center
+	rect			-116 -78 116 79
+	titlerect		0 0 211 26
+	alwaysontop		true
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 157
+		<image>
+			key	none
+			screen	etc_01
+			index	1
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		20 2 202 16
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		2004 12
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		209 2 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+
+	<textbox>
+		id			textbox
+		enable		true
+		visible		true
+		layer		100
+		rect		6 31 203 80
+		lineheight	16
+		margin		10 5
+		fonttype	2
+		color		FFFFFFFF
+	</textbox>
+	
+	<button>
+		id			btn_no
+		enable		true
+		visible		true
+		layer		100
+		align		center
+		rect		87 132 57 19
+		<image>
+			key			0
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state		none
+			color		ff929292
+			fontIndex	4
+			text2		2000 15
+		</title>
+		<title>
+			state		over
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<title>
+			state		down
+			color		ff929292
+			fontIndex	4
+			position	2 2
+		</title>
+	</button>		
+	
+</window>

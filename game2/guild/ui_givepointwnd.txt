@@ -1,0 +1,229 @@
+<window>
+	name			givepointwnd
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	rect			390 226 622 504
+	titlerect		0 0 211 20
+
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 278
+		<image>
+			key		none
+			screen	guild_lvup
+			index	1
+		</image>
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		0 3 232 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		100 47
+			</title>
+		</label>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		211 2 13 13
+			sound  0
+			<image>
+				key		none
+				screen	guild_02
+				index	61
+			</image>
+			<image>
+				key		over
+				screen	guild_02
+				index	62
+			</image>
+			<image>
+				key		down
+				screen	guild_02
+				index	63
+			</image>
+		</button>
+
+		<label>
+			id			lbl_msg
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		0 38 232 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		130 179
+			</title>
+		</label>
+		<label>
+			id			lbl_tagGuildPoint
+			enable		true
+			visible		true
+			layer		100
+			rect		24 76 81 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		130 180
+			</title>
+		</label>
+		<label>
+			id			lbl_guildPoint
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		113 76 91 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_tagAdvan
+			enable		true
+			visible		true
+			layer		100
+			rect		24 100 81 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		130 181
+			</title>
+		</label>
+		<label>
+			id			lbl_advan
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		113 100 91 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		<label>
+			id			lbl_tagGivePoint
+			enable		true
+			visible		true
+			layer		100
+			rect		17 157 99 13
+			<title>
+				color		fff4be3d
+				fontIndex	2
+				text2 		130 182
+			</title>
+		</label>
+		
+		<edit>
+			id			edit_point
+			enable		true
+			visible		true
+			layer		100
+			rect		121 157 51 14	
+			maxlength	5
+			font_type	2
+			input_type	2
+			align		right
+			color		ffffffff
+			multiline   	false	
+			ime 		false				
+		</edit>
+		
+		<label>
+			id			lbl_tagUnit
+			enable		true
+			visible		true
+			layer		100
+			rect		173 157 40 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		130 188
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_msg2
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			multiline	true
+			lineheight 	18
+			rect		0 192 232 40
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		130 183
+			</title>
+		</label>
+		
+		<button>
+			id			btn_givePoint
+			enable		true
+			visible		true
+			layer		100
+			rect		37 253 56 18
+			<title>
+				state		none
+				color		ffb7b7b7
+				fontIndex	4
+				text2		130 178
+				position	0 2
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+			</title>
+			<title>
+				state		down
+				color		ffb7b7b7
+				fontIndex	4
+				position	1 3
+			</title>
+		</button>	
+	
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			rect		138 253 56 18
+			<title>
+				state		none
+				color		ffb7b7b7
+				fontIndex	4
+				text2		2000 23
+				position	15 2
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+			</title>
+			<title>
+				state		down
+				color		ffb7b7b7
+				fontIndex	4
+				position	16 3
+			</title>
+		</button>
+	</panel>
+	
+</window>

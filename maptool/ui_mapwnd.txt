@@ -1,0 +1,269 @@
+<window>
+	name			map_win
+	enable			true
+	visible			true
+	layer			100
+	rect			50 50 800 593
+	titlerect		0 0 470 23
+	<panel>
+		id			pan_body
+		enable		true
+		visible		true
+		intersect 	false
+		layer		100
+		rect		6 25 512 512
+		<panel>
+			id			pan_map_bg
+			enable		true
+			visible		true
+			intersect 	false
+			layer		9
+			rect		0 0 512 512
+			<image>
+				key		0
+				screen	mainbar_minimap
+				index	121
+			</image>
+		</panel>
+		<panel>
+			id			pan_map
+			enable		true
+			visible		true
+			intersect 	true
+			layer		100
+			rect		0 0 512 512
+			<image>
+				key		0
+				screen	minimap
+				index	0
+			</image>			
+		</panel>
+	</panel>
+	<panel>
+		id		pan_type
+		enable		true
+		visible		true
+		layer		10
+		rect		543 0 160 40
+		<combobox>
+			id			com_type
+			enable		true
+			visible		true
+			border 		false
+			layer		90
+			rect		0 0 160 20
+			<image>
+				key		1
+				screen	common
+				index	1
+				color	90FFFFFF
+			</image>		
+			<iteminfo>		
+				rect 	1 1 160 18
+			</iteminfo>			
+			<nodeinfo>
+				selrect		0 1 160 18
+				btnrect		140 1 18 18
+				<image>
+					key		board_body
+					screen	common
+					index	1
+					color	DF707070
+				</image>
+				<image>
+					key		board_tag
+					screen	common
+					index	1
+					color	DF808080
+				</image>
+				<image>
+					key		btn_over
+					screen	common
+					index	1
+					color	90c09090
+				</image>
+				<image>
+					key		btn_none
+					screen	common
+					index	1
+					color	90808080
+				</image>
+				<image>
+					key		btn_down
+					screen	common
+					index	1
+					color	90404040
+				</image>				
+			</nodeinfo>		
+		</combobox>
+	</panel>
+	<panel>
+		id		pan_output
+		enable		true
+		visible		true
+		layer		10
+		rect		543 22 160 520
+		<image>
+			key	0
+			screen	console
+			index	1
+		</image>
+		
+		<textbox>
+			id		text_out
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 160 520
+			lineheight	15
+			margin		2 2
+			fonttype	2
+			autoline 	true
+			color		FFFFFFFF
+		</textbox>
+	</panel>
+	<panel>
+		id			pan_bg
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 543 543
+		<panel>
+			id			pan_bg_LT
+			enable		true
+			visible		true
+			layer		1
+			rect		0 0 512 512
+			<image>
+				key		0
+				screen	bigmap
+				index	1
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_LB
+			enable		true
+			visible		true
+			layer		1
+			rect		0 512 512 31
+			<image>
+				key		0
+				screen	bigmap
+				index	2
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_RT
+			enable		true
+			visible		true
+			layer		1
+			rect		512 0 12 277
+			<image>
+				key		0
+				screen	bigmap
+				index	3
+			</image>
+		</panel>
+		<panel>
+			id			pan_bg_RB
+			enable		true
+			visible		true
+			layer		1
+			rect		512 277 12 266
+			<image>
+				key		0
+				screen	bigmap
+				index	4
+			</image>
+		</panel>
+	</panel>
+	<panel>
+		id			pan_title
+		enable		true
+		visible		true
+		layer		200
+		rect		0 0 543 23
+		<label>
+			id			lbl_mapName
+			enable		true
+			visible		true
+			layer		10
+			align		center
+			rect		0 3 543 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<button>
+			id			btn_minus
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		470 4 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	13
+			</image>
+		</button>
+		<button>
+			id			btn_plus
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		488 4 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	7
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	8
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	9
+			</image>
+		</button>
+		<button>
+			id			btn_close
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		508 3 13 13
+			sound  0
+			<image>
+				key		none
+				screen	etc_01
+				index	3
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	4
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	5
+			</image>
+		</button>
+	</panel>	
+</window>

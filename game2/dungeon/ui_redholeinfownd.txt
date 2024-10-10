@@ -1,0 +1,149 @@
+<window>
+	name			RedHoleInfoWnd
+	enable			true
+	visible			true
+	layer			300
+	alwaysontop		true
+	
+	rect			0 0 160 70
+	titlerect		0 0 160 70
+	
+	align_right		-170
+	align_top		54
+	
+	<panel>
+		id		pan_main
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 160 70
+		<image>
+			key	0
+			screen	indun
+			index	14
+			color	Cf000000
+		</image>
+		
+		<label>
+			id			lbl_title
+			enable		TRUE
+			visible		TRUE
+			layer		10
+			rect		6 8 160 24
+			align		left
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		2004 120
+			</title>
+		</label>
+	</panel>
+	
+	<panel>
+		id		pan_bg_0
+		enable		true
+		visible		true
+		layer		101
+		rect		12 36 26 26
+		<image>
+			key	0
+			screen	indun
+			index	12
+		</image>
+	</panel>
+	
+	<panel>
+		id		pan_light_0
+		enable		true
+		visible		true
+		layer		102
+		rect		14 38 21 21
+		<image>
+			key	0
+			screen	indun
+			index	13
+			color	60000000
+		</image>
+	</panel>
+	
+	<panel>
+		id		pan_bg_1
+		enable		true
+		visible		true
+		layer		101
+		rect		51 36 26 26
+		<image>
+			key	0
+			screen	indun
+			index	12
+		</image>
+	</panel>
+	
+	<panel>
+		id		pan_light_1
+		enable		true
+		visible		true
+		layer		102
+		rect		53 38 21 21
+		<image>
+			key	0
+			screen	indun
+			index	13
+			color	ff000000
+		</image>
+	</panel>
+	
+	<panel>
+		id		pan_bg_2
+		enable		true
+		visible		true
+		layer		101
+		rect		89 36 26 26
+		<image>
+			key	0
+			screen	indun
+			index	12
+		</image>
+	</panel>
+	
+	<panel>
+		id		pan_light_2
+		enable		true
+		visible		true
+		layer		102
+		rect		91 38 21 21
+		<image>
+			key	0
+			screen	indun
+			index	13
+			color	ff000000
+		</image>
+	</panel>
+	
+	<panel>
+		id		pan_bg_3
+		enable		true
+		visible		true
+		layer		101
+		rect		127 36 26 26
+		<image>
+			key	0
+			screen	indun
+			index	12
+		</image>
+	</panel>
+	
+	<panel>
+		id		pan_light_3
+		enable		true
+		visible		true
+		layer		102
+		rect		129 38 21 21
+		<image>
+			key	0
+			screen	indun
+			index	13
+			color	ff000000
+		</image>
+	</panel>
+</window>

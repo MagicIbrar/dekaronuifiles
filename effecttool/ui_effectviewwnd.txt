@@ -1,0 +1,56 @@
+window_layer	auto
+window_size	200	60
+window_position	800	30
+window_visible	false
+
+create_control	panel	base
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	200	60
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_title
+	{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+	control_text	4	1	View
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	194	13
+	control_drawpoint	3	3
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_play
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	2	2	VIEW
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	36	15
+		control_drawpoint	15	17
+		control_enable	true
+		control_visible	true
+	}	
+	
+	create_control	button	btn_model
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	2	2	¸ðµ¨
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	36	15
+		control_drawpoint	90	17
+		control_enable	true
+		control_visible	true
+	}	
+}
+

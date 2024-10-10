@@ -1,0 +1,161 @@
+<window>
+	name			RuneCheckMsgWnd
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	position		center center
+	rect			-116 -40 116 150
+	titlerect		0  0 232 26
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 190
+		<image>
+				key	none
+				screen	etc_01
+				index	87
+		</image>
+	</panel>
+
+	<label>
+		id		lbl_title
+		enable		true
+		visible		true
+		layer		100
+		align 		center
+		rect		0 5 232 18
+		<title>
+			state 		title
+			position	0 4
+			color		FFFFFFFF
+			fontIndex	4
+			text3		101 206
+		</title>
+	</label>
+
+	<label>
+		id		lbl_text
+		enable		true
+		visible		true
+		layer		100
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		5 45 222 50
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text3		101 221
+		</title>
+	</label>	
+	
+	<checkbox>
+		id			checkbox
+		enable		true
+		visible		true
+		layer		110
+		rect		8 125 260 20
+		align		left
+		<image>
+			key			none
+			screen		etc_01
+			index		303
+		</image>
+		<image>
+			key			check
+			screen		etc_01
+			index		304
+		</image>
+		<title>
+			state			none
+			fontindex	2
+			color		ffffffff
+			position	0 6
+			text2		260 28
+		</title>
+		<title>
+			state			over
+			fontindex	2
+			position	0 6
+			color		ff00ff00
+		</title>
+	</checkbox>
+	
+	<panel>
+		id		pan_buttonbox
+		enable		true
+		visible		true
+		layer		110
+		rect		0  140 232 50
+		<button>
+			id		btn_confirm
+			enable		true
+			visible		true
+			layer		20
+			align		center
+			rect		25 21 65 20
+			<image>
+				key		none
+				screen	etc_01
+				index	88
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2 		2000 22
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>		
+		
+		<button>
+			id		btn_cancel
+			enable		true
+			visible		true
+			layer		120
+			align		center
+			rect		142 21 65 20
+			<image>
+				key			0
+				screen		etc_01
+				index		88
+			</image>	
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 3
+				text2		2000 14
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>
+	</panel>
+</window>

@@ -1,0 +1,14 @@
+window_layer	fixed
+window_visible	true
+
+create_control	text	txt_message
+{
+	control_group	0
+	control_drawsize	390	420
+	control_drawpoint	32	250
+	control_enable	true
+	control_visible	true
+	control_textfont	small
+	control_build	
+	ctext_info	1	1	4
+}

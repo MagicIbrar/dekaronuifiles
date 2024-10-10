@@ -1,0 +1,246 @@
+<window>
+	name			contentsnotice
+	enable			true
+	visible			true
+	layer			1
+	position		center center
+	rect			-256 -195 256 195
+	titlerect		10 11 502 35
+	
+	<panel>
+		id		pan_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 512 390
+		<panel>
+			id		pan_top
+			enable		true
+			visible		true
+			layer		20
+			rect		0 0 512 59
+			<image>
+				key				down
+				screen			notice_3
+				index			1
+			</image>
+		</panel>
+		<panel>
+			id		pan_mid
+			enable		true
+			visible		false
+			layer		20
+			rect		0 59 512 23
+			<image>
+				key				down
+				screen			notice_3
+				index			2
+			</image>
+		</panel>
+		<panel>
+			id		pan_bottom
+			enable		true
+			visible		true
+			layer		20
+			rect		0 358 512 32
+			<image>
+				key				down
+				screen			notice_3
+				index			3
+			</image>
+		</panel>
+
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		30
+			align		center
+			rect		10 11 500 35
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 6
+				text2		100 140	
+			</title>
+		</label>
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		40
+			rect		483 16 15 15
+
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+
+		<panel>
+			id		pan_list
+			enable		true
+			visible		true
+			layer		30
+			rect		0 36 512 23
+			<label>
+				id			lbl_time
+				enable		true
+				visible		true
+				layer		40
+				align		center
+				rect		10 0 57 23
+				<title>
+					color		ffffff00
+					fontIndex	4
+					position	0 6
+					text2		1002 49	
+				</title>
+			</label>
+			<label>
+				id			lbl_subject
+				enable		true
+				visible		true
+				layer		40
+				align		center
+				rect		67 0 170 23
+				<title>
+					color		ffffff00
+					fontIndex	4
+					position	0 6
+					text2		1002 50
+				</title>
+			</label>
+			<label>
+				id			lbl_map
+				enable		true
+				visible		true
+				layer		40
+				align		center
+				rect		240 0 179 23
+				<title>
+					color		ffffff00
+					fontIndex	4
+					position	0 6
+					text2		1002 51
+				</title>
+			</label>
+			<label>
+				id			lbl_level
+				enable		true
+				visible		true
+				layer		40
+				align		center
+				rect		422 0 65 23
+				<title>
+					color		ffffff00
+					fontIndex	4
+					position	0 6
+					text2		1002 52
+				</title>
+			</label>
+		</panel>
+		
+		<vscroll>
+			id			vscroll
+			enable		true
+			visible		true
+			layer		1
+			rect		489 38 12 343
+			maxvalue	0
+			buttontick  1
+			<button>
+				id			vscroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	19
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	20
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	21
+				</image>
+				<image>
+					key		disable
+					screen	etc_01
+					index	18
+				</image>
+			</button>
+			<button>
+				id			vscroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 330 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	17
+				</image>
+				<image>
+					key		disable
+					screen	etc_01
+					index	14
+				</image>
+			</button>
+			<panel>
+				id			vscroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 12 19
+				moveable	true
+				noneimage 	true
+				<image>
+					key		none
+					screen	etc_01
+					index	24
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	25
+				</image>
+			</panel>
+		</vscroll>
+		
+	</panel>
+		
+</window>

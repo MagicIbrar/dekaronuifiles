@@ -1,0 +1,192 @@
+<window>
+	name			system
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-78 -128 78 180
+	alwaysontop		true
+	
+	<panel>
+		id			pan_system
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 156 293
+		<image>
+				key	none
+				screen	sungchook
+				index	1
+		</image>
+	<button>
+		id		        btn_option
+		enable		true
+		visible		true
+		layer		20
+		align		center
+		rect		30 58 97 28
+		<image>
+			key		none
+			screen	sungchook
+			index	2
+		</image>
+		<image>
+			key		over
+			screen	sungchook
+			index	3
+		</image>
+		<image>
+			key		down
+			screen	sungchook
+			index	4
+		</image>
+		<image>
+			key		disable
+			screen	sungchook
+			index	8
+		</image>
+		<title>
+			state 		none
+			color		ffffffff
+			fontIndex	2
+			position	0 5
+			text2		2000 10
+		</title>
+	</button>
+	<button>
+		id			btn_server
+		enable		true
+		visible		true
+		layer		20
+		align		center
+		rect		30 103 97 28
+		<image>
+			key		none
+			screen	sungchook
+			index	2
+		</image>
+		<image>
+			key		over
+			screen	sungchook
+			index	3
+		</image>
+		<image>
+			key		down
+			screen	sungchook
+			index	4
+		</image>
+		<image>
+			key		disable
+			screen	sungchook
+			index	8
+		</image>
+		<title>
+			state 		none
+			color		ffffffff
+			fontIndex	2
+			position	0 5
+			text2		30 94
+		</title>
+	</button>
+	<button>
+		id			btn_charselect
+		enable		true
+		visible		true
+		layer		20
+		align		center
+		rect		30 148 97 28
+		<image>
+			key		none
+			screen	sungchook
+			index	2
+		</image>
+		<image>
+			key		over
+			screen	sungchook
+			index	3
+		</image>
+		<image>
+			key		down
+			screen	sungchook
+			index	4
+		</image>
+		<image>
+			key		disable
+			screen	sungchook
+			index	8
+		</image>
+		<title>
+			state 		none
+			color		ffffffff
+			fontIndex	2
+			position	0 5
+			text2		2000 11
+		</title>
+	</button>
+	<button>
+		id			btn_exit
+		enable		true
+		visible		true
+		layer		20
+		align		center
+		rect		30 193 97 28
+		<image>
+			key		none
+			screen	sungchook
+			index	2
+		</image>
+		<image>
+			key		over
+			screen	sungchook
+			index	3
+		</image>
+		<image>
+			key		down
+			screen	sungchook
+			index	4
+		</image>
+		<image>
+			key		disable
+			screen	sungchook
+			index	8
+		</image>
+		<title>
+			state 		none
+			color		ffffffff
+			fontIndex	2
+			position	0 5
+			text2		2000 13
+		</title>
+	</button>
+	<button>
+		id			btn_cancel
+		enable		true
+		visible		true
+		layer		20
+		align		center
+		rect		39 249 81 27
+		<image>
+			key		none
+			screen	sungchook
+			index	2
+		</image>
+		<image>
+			key		over
+			screen	sungchook
+			index	3
+		</image>
+		<image>
+			key		down
+			screen	sungchook
+			index	4
+		</image>
+		<title>
+			state 		none
+			color		ffffffff
+			fontIndex	2
+			position	0 5
+			text2		2000 14
+		</title>
+	  </button>
+	</panel>
+</window>

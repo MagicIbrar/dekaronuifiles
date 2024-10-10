@@ -1,0 +1,194 @@
+<window>
+	name			resultBuy_cashItem
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	rect			0  0 232 210
+	titlerect		0 0 216 24
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 110
+		<image>
+				key		none
+				screen	new_itemshop
+				index	33
+		</image>
+		
+		<label>
+			id			lbl_top
+			enable		true
+			visible		true
+			layer		50
+			rect		70 2 90 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0	
+				text2 		100 89
+			</title>					
+		</label>
+		
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		214 2 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+
+	<panel>
+		id		pan_back_bottom
+		enable		true
+		visible		true
+		layer		1
+		rect		0  110 232 100
+		<image>
+				key		none
+				screen	new_itemshop
+				index	34
+		</image>
+	</panel>
+
+	<label>
+			id			lbl_tag0
+			enable		true
+			visible		true
+			layer		60
+			rect		15 55 75 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				position	0 0	
+				text2 		171 24
+			</title>
+	</label>
+	<label>
+			id			lbl_tag1
+			enable		true
+			visible		true
+			layer		60
+			rect		15 78 75 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				position	0 0	
+				text2 		171 23
+			</title>
+	</label>
+	
+	<label>
+			id			multilbl_0
+			enable		true
+			visible		true
+			layer		60
+			rect		44 32 143 14
+			align 		center
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+			</title>
+	</label>
+
+	<label>
+			id			multilbl_1
+			enable		true
+			visible		true
+			layer		60
+			rect		71 55 143 14
+			align 		right
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+			</title>
+	</label>
+	<label>
+			id			multilbl_2
+			enable		true
+			visible		true
+			layer		60
+			rect		71 78 143 14
+			align 		right
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0	
+			</title>
+	</label>
+	<label>
+			id			lbl_notice
+			enable		true
+			visible		true
+			layer		60
+			rect		17 110 197 60
+			align 		center
+			lineheight 	16
+			multiline 	true
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0	
+				text2 		171 32
+			</title>
+	</label>
+
+	<button>
+		id			btn_yes
+		enable		true
+		visible		true
+		align 		center
+		layer		100
+		rect		87 185 57 19
+		<image>
+			key			none
+			screen		etc_01
+			index		2
+		</image>
+		<title>
+			state		none
+			color		ffb7b7b7
+			fontIndex	4
+			text2		2000 22
+			position	0 3
+		</title>
+		<title>
+			state		over
+			color		ffffffff
+			fontIndex	4
+			position	0 3
+		</title>
+		<title>
+			state		down
+			color		ffb7b7b7
+			fontIndex	4
+			position	2 4
+		</title>
+	</button>	
+</window>

@@ -1,0 +1,35 @@
+<window>
+	name			arrivemail
+	enable			true
+	visible			true
+	alwaysontop		true
+	layer			100
+	rect			25 64 130 140 
+		
+	<panel>
+		id			pan_main
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 87 19
+		<image>
+			key		none
+			screen	messenger_e
+			index	11
+		</image>
+		<label>
+			id			lbl_mailNum
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			intersect 	false
+			rect		21 3 61 13
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>
+		</label>
+	</panel>
+</window>

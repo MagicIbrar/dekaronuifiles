@@ -1,0 +1,81 @@
+<window>
+	name			rankingwait
+	enable			true
+	visible			true
+	modal 			true
+	layer			100
+	position		center center
+	rect			-116 -48 116 49
+	titlerect		0  0 232 26
+	alwaysontop		true
+
+	<panel>
+		id		pan_back
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 232 97
+		<image>
+				key	none
+				screen	etc_01
+				index	87
+		</image>		
+	</panel>
+	
+	<label>
+		id			lbl_title
+		enable		true
+		visible		true
+		layer		10
+		align 		center
+		rect		0 5 232 18
+		<title>
+			state 		title
+			color		FFFFFFFF
+			fontIndex	4
+			text2		100 137
+		</title>
+	</label>
+
+	<label>
+		id		lbl_text
+		enable		true
+		visible		true
+		layer		10
+		align		center
+		multiline	true
+		lineheight 	20
+		rect		5 40 222 20
+		<title>
+			color		ffffffff
+			fontIndex	3
+			text2		360 89
+		</title>
+	</label>
+	
+	<panel>
+		id			pan_progressBg
+		enable		true
+		visible		true
+		layer		101
+		rect		6 60 220 8
+		<image>
+			key 	none
+			screen	etc_01
+			index 	28
+		</image>
+		<processbar>	
+			id			processbar
+			enable		true
+			visible		true
+			layer		101
+			rect		0 1 220 7
+			maxsize     220	
+			<image>
+				key	0
+				screen	etc_01
+				index	29
+			</image>				
+		</processbar>	
+	</panel>		
+</window>

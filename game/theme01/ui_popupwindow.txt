@@ -1,0 +1,29 @@
+window_layer	auto
+window_position	0	0
+window_size	358	125
+window_position	333	524
+window_visible	false
+
+create_control	panel	panel_error
+{
+	control_group	0
+	control_image	oxxx	UI\Game\message_del_01.dds	0	125	258	125
+	control_drawdiv	xy	16
+	control_drawsize	base	base
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	text	PopupMessage
+	{
+	control_group		0
+	control_color		true	0	255	255	255
+	control_text		0	3	""
+	control_textfont	small
+	control_drawsize	275	48
+	control_drawpoint	28	16
+	control_enable		true
+	control_visible		true
+	control_layerdelta	101
+	}
+}

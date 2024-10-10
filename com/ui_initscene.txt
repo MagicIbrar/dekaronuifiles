@@ -1,0 +1,499 @@
+<window>
+	name			auto
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 1024 768
+	
+	<panel>
+		id			category1
+		enable		true
+		visible		true
+		layer		99
+		rect		0 0 1024 768
+		<image>
+			key		0
+			color	ffffffff
+			screen	InitScreen
+			index	5
+		</image>
+	</panel>
+	
+	<panel>
+		id			category1
+		enable		true
+		visible		true
+		layer		100
+		rect		40 160 160 100
+
+		<button>
+			id			btn_game
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 110 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		90000000
+				fontIndex	2
+				text		"µ¥Ä«·Ð(Dekaron)"
+			</title>
+			<title>
+				state		over
+				color		90FFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		6F000000
+				fontIndex	2
+			</title>
+		</button>
+
+		<button>
+			id			btn_demo
+			enable		true
+			visible		true
+			layer		100
+			rect		0 24 40 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"Demo"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+
+
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		0 48 40 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"Exit"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+	</panel>
+	
+	<panel>
+		id			category2
+		enable		true
+		visible		true
+		layer		100
+		rect		40 270 160 100
+		<button>
+			id			btn_maptool
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 60 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"Map tool"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_ObjPacktool
+			enable		true
+			visible		true
+			layer		100
+			rect		0 24 110 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"Object pack tool"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_ceviewer
+			enable		true
+			visible		true
+			layer		100
+			rect		0 48 150 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"Character/Effect viewer"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_effecttool
+			enable		true
+			visible		true
+			layer		100
+			rect		0 72 70 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"EffectTool"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+	</panel>
+	
+	<panel>
+		id			category3
+		enable		true
+		visible		true
+		layer		100
+		rect		40 380 160 200
+		<button>
+			id			btn_itemtable
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 70 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"Item table"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_montable
+			enable		true
+			visible		true
+			layer		100
+			rect		0 24 90 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"Monster table"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_skilltable
+			enable		true
+			visible		true
+			layer		100
+			rect		0 48 70 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"Skill table"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_exptable
+			enable		true
+			visible		true
+			layer		100
+			rect		0 72 70 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"Exp table"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_actionscr
+			enable		true
+			visible		true
+			layer		100
+			rect		0 96 85 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"Action Script"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_charactorInfo
+			enable		true
+			visible		true
+			layer		100
+			rect		0 120 90 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"charactor Info"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_peeragetable
+			enable		true
+			visible		true
+			layer		100
+			rect		0 144 85 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"PeerageTable"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+		<button>
+			id			btn_remotetable
+			enable		true
+			visible		true
+			layer		100
+			rect		0 168 85 15
+			<image>
+				key		0
+				color	ffffffff
+				screen	InitScreen
+				index	1
+			</image>
+			<title>
+				state		none
+				color		FF000000
+				fontIndex	2
+				text		"RemoteTable"
+			</title>
+			<title>
+				state		over
+				color		ffFFB900
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		FF000000
+				fontIndex	2
+			</title>
+		</button>
+	</panel>
+	
+	<panel>
+		id			pan_logo
+		enable		true
+		visible		true
+		layer		100
+		rect		40 40 88 64
+		<image>
+			key		0
+			color	ffffffff
+			screen	InitScreen
+			index	2
+		</image>
+	</panel>
+</window>

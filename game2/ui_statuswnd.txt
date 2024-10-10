@@ -1,0 +1,479 @@
+<window>
+	name			statuswnd
+	enable			true
+	visible			true
+	layer			100
+	position		center bottom
+	rect			-130 -155 130 0 
+	titlerect		0 0 0 0
+	<panel>
+		id			pan_status_0
+		enable		true
+		visible		false
+		layer		100
+		rect		0 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_1
+		enable		true
+		visible		false
+		layer		100
+		rect		21 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_2
+		enable		true
+		visible		false
+		layer		100
+		rect		42 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_3
+		enable		true
+		visible		false
+		layer		100
+		rect		63 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_4
+		enable		true
+		visible		false
+		layer		100
+		rect		84 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_5
+		enable		true
+		visible		false
+		layer		100
+		rect		105 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_6
+		enable		true
+		visible		false
+		layer		100
+		rect		126 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_7
+		enable		true
+		visible		false
+		layer		100
+		rect		147 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_8
+		enable		true
+		visible		false
+		layer		100
+		rect		168 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_9
+		enable		true
+		visible		false
+		layer		100
+		rect		189 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_10
+		enable		true
+		visible		false
+		layer		100
+		rect		210 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_11
+		enable		true
+		visible		false
+		layer		100
+		rect		231 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_12
+		enable		true
+		visible		false
+		layer		100
+		rect		252 44 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	
+	<panel>
+		id			pan_status_13
+		enable		true
+		visible		false
+		layer		100
+		rect		0 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_14
+		enable		true
+		visible		false
+		layer		100
+		rect		21 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_15
+		enable		true
+		visible		false
+		layer		100
+		rect		42 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_16
+		enable		true
+		visible		false
+		layer		100
+		rect		63 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_17
+		enable		true
+		visible		false
+		layer		100
+		rect		84 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_18
+		enable		true
+		visible		false
+		layer		100
+		rect		105 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_19
+		enable		true
+		visible		false
+		layer		100
+		rect		126 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_20
+		enable		true
+		visible		false
+		layer		100
+		rect		147 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_21
+		enable		true
+		visible		false
+		layer		100
+		rect		168 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_22
+		enable		true
+		visible		false
+		layer		100
+		rect		189 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_23
+		enable		true
+		visible		false
+		layer		100
+		rect		210 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_24
+		enable		true
+		visible		false
+		layer		100
+		rect		231 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_25
+		enable		true
+		visible		false
+		layer		100
+		rect		252 22 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	
+	<panel>
+		id			pan_status_26
+		enable		true
+		visible		false
+		layer		100
+		rect		0 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_27
+		enable		true
+		visible		false
+		layer		100
+		rect		21 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_28
+		enable		true
+		visible		false
+		layer		100
+		rect		42 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_29
+		enable		true
+		visible		false
+		layer		100
+		rect		63 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_30
+		enable		true
+		visible		false
+		layer		100
+		rect		84 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_31
+		enable		true
+		visible		false
+		layer		100
+		rect		105 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_32
+		enable		true
+		visible		false
+		layer		100
+		rect		126 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_33
+		enable		true
+		visible		false
+		layer		100
+		rect		147 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_34
+		enable		true
+		visible		false
+		layer		100
+		rect		168 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_35
+		enable		true
+		visible		false
+		layer		100
+		rect		189 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_36
+		enable		true
+		visible		false
+		layer		100
+		rect		210 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_37
+		enable		true
+		visible		false
+		layer		100
+		rect		231 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_status_38
+		enable		true
+		visible		false
+		layer		100
+		rect		252 0 22 22
+		<image>
+			key		none
+			screen	buffer
+			index	1
+		</image>
+	</panel>
+</window>

@@ -1,0 +1,211 @@
+<window>
+	name			matrix
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-135 -100 135 150
+	titlerect		0 0 0 0
+	<panel>
+		id		pan_matrix_type1
+		enable		true
+		visible		false
+		layer		100
+		rect		0 0 252 175
+		<image>
+			key	0
+			color	ffffffff
+			screen	login
+			index	11
+		</image>
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		100
+			rect		28 2 194 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id		lbl_comment
+			enable		true
+			visible		true
+			layer		100
+			multiline	true
+			align		center
+			rect		25 42 201 30
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		30 33
+			</title>
+		</label>
+		<label>
+			id		lbl_ask1
+			enable		true
+			visible		true
+			layer		100
+			rect		33 90 54 13
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<edit>
+			id		edit_text1
+			enable		true
+			visible		true
+			layer		100
+			rect		30 110 54 13
+			maxlength	30
+			font_type	2
+			input_type	0
+			align		over
+			color		ffffffff
+			multiline   	false
+		</edit>
+		<label>
+			id		lbl_ask2
+			enable		true
+			visible		true
+			layer		100
+			rect		99 90 54 13
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<edit>
+			id		edit_text2
+			enable		true
+			visible		true
+			layer		100
+			rect		99 110 54 13
+			maxlength	30
+			font_type	2
+			input_type	0
+			align		over
+			color		ffffffff
+			multiline   	false
+		</edit>
+		<label>
+			id		lbl_ask3
+			enable		true
+			visible		true
+			layer		100
+			rect		165 90 54 13
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<edit>
+			id		edit_text3
+			enable		true
+			visible		true
+			layer		100
+			rect		165 110 54 13
+			maxlength	30
+			font_type	2
+			input_type	0
+			align		over
+			color		ffffffff
+			multiline   	false
+		</edit>
+		<button>
+			id		btn_ok
+			enable		true
+			visible		true
+			layer		100
+			rect		100 150 56 18
+			<image>
+				key		none
+				screen		etc_01
+				index		2
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	4
+				position	12 3
+				text2		2000 22
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	4
+				position	12 3
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	4
+				position	13 4
+			</title>
+			<title>
+				state		check
+				color		ffffffff
+				fontIndex	4
+				position	12 3
+			</title>
+		</button>
+	</panel>
+
+	<panel>
+		id		pan_matrix_type2
+		enable		false
+		visible		false
+		layer		100
+		rect		0 0 252 175
+		<image>
+			key	0
+			color	ffffffff
+			screen	login
+			index	12
+		</image>
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		100
+			rect		28 2 194 14
+		</label>
+		<label>
+			id		lbl_comment
+			enable		true
+			visible		true
+			layer		100
+			rect		25 52 201 13
+		</label>
+		<edit>
+			id		edit_text
+			enable		true
+			visible		true
+			layer		100
+			rect		55 94 141 13
+			maxlength	80
+			font_type	2
+			input_type	0
+			align		over
+			color		ffffffff
+			multiline   	false
+		</edit>
+		<button>
+			id		btn_ok
+			enable		true
+			visible		true
+			layer		100
+			rect		48 150 56 18
+		</button>
+		<button>
+			id		btn_erase
+			enable		true
+			visible		true
+			layer		100
+			rect		154 150 56 18
+		</button>
+	</panel>
+</window>

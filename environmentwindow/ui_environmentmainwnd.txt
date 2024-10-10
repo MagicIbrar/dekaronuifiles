@@ -1,0 +1,2233 @@
+window_layer	auto
+window_size	1000	700
+window_position	0	0
+window_visible	false
+
+create_control	panel	light
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	150	650
+	control_drawpoint	870	100
+	control_enable	true
+	control_visible	true
+
+	create_control	title	pan_title
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+		control_text	4	1	Light
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	139	13
+		control_drawpoint	3	3
+		control_enable	true
+		control_visible	true
+		
+		create_control	button	btn_close
+		{
+			control_image	oooo	UI\Tool\ui_winbtn03.dds	65	11	11	11
+			control_drawdiv	xy	2
+			control_drawsize	11	11
+			control_drawpoint	122	1
+			control_enable	true
+			control_visible	true
+		}
+	}
+
+	create_control	button	btn_camera
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	1	2	Camera
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	35 13
+		control_drawpoint	80 16
+		control_enable	true
+		control_visible	true
+	}
+
+	create_control	text	txt_amb
+	{
+		control_color	true	192	0	180	0
+		control_text	0	0	Amb
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	130	12
+		control_drawpoint	10	30
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_amb_r
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	R
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_amb_g
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	G
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	34
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_amb_b
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	B
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	54
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	slidebar	sld_amb_r
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	19
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_amb_g
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	39
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_amb_b
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	59
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	edit	edt_amb_r
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	14
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_amb_g
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	34
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_amb_b
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	54
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+	}
+
+	create_control	text	txt_dir
+	{
+		control_group	3
+		control_color	true	192	0	180	0
+		control_text	0	0	DirectionalLight
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	130	12
+		control_drawpoint	10	104
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_dir_x
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	H
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_dir_y
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	V
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	34
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_dir_r
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	R
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	54
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_dir_g
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	G
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	74
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_dir_b
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	B
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	94
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_dir_text
+		{
+			control_group	3
+			control_color	true	192	0	180	0
+			control_text	0	0	DirBackLight
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	130	12
+			control_drawpoint	0	114
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_dir_back_x
+		{
+			control_group	3
+			control_color	true	64	60	60	25
+			control_text	0	0	BH
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	13	base
+			control_drawpoint	0	134
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_dir_back_y
+		{
+			control_group	3
+			control_color	true	64	60	60	25
+			control_text	0	0	BV
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	13	base
+			control_drawpoint	0	154
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_dir_back_r
+		{
+			control_group	3
+			control_color	true	64	60	60	25
+			control_text	0	0	BR
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	13	base
+			control_drawpoint	0	174
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_dir_back_g
+		{
+			control_group	3
+			control_color	true	64	60	60	25
+			control_text	0	0	BG
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	13	base
+			control_drawpoint	0	194
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_dir_back_b
+		{
+			control_group	3
+			control_color	true	64	60	60	25
+			control_text	0	0	BB
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	13	base
+			control_drawpoint	0	214
+			control_enable	true
+			control_visible	true
+		}
+		
+//		create_control	text	txt_dir_back_b
+//		{
+//			control_group	3
+//			control_color	true	64	60	60	25
+//			control_text	0	0	BB
+//			control_textcolor	0	0	0
+//			control_textfont	small
+//			control_drawsize	13	base
+//			control_drawpoint	0	234
+//			control_enable	true
+//			control_visible	true
+//		}
+		
+		create_control	slidebar	sld_dir_x
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	19
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	360
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_dir_y
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	39
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	360
+			cslidebar_value	0
+		}
+		
+//		create_control	slidebar	sld_dir_z
+//		{
+//			control_group	3
+//			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+//			control_drawdiv	x	1
+//			control_drawsize	80 2
+//			control_drawpoint	15	59
+//			control_enable	true
+//			control_visible	true
+//			control_build	
+//			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+//			addcontrol_drawsize	12	7
+//			addcontrol_drawpoint	0	3
+//			addcontrol_drawdiv	xy	1
+//			cslidebar_type	vertical
+//			cslidebar_length	360
+//			cslidebar_value	0
+//		}
+		
+		create_control	slidebar	sld_dir_r
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	59
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_dir_g
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	79
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_dir_b
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	99
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_dir_back_x
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	139
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	360
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_dir_back_y
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	159
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	360
+			cslidebar_value	0
+		}
+		
+//		create_control	slidebar	sld_dir_back_z
+//		{
+//			control_group	3
+//			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+//			control_drawdiv	x	1
+//			control_drawsize	80 2
+//			control_drawpoint	15	179
+//			control_enable	true
+//			control_visible	true
+//			control_build	
+//			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+//			addcontrol_drawsize	12	7
+//			addcontrol_drawpoint	0	3
+//			addcontrol_drawdiv	xy	1
+//			cslidebar_type	vertical
+//			cslidebar_length	360
+//			cslidebar_value	0
+//		}
+		
+		create_control	slidebar	sld_dir_back_r
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	179
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_dir_back_g
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	199
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_dir_back_b
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	219
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	edit	edt_dir_x
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	14
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_dir_y
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	34
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+//		create_control	edit	edt_dir_z
+//		{
+//			control_group	3
+//			control_color	true	255	255	255	255
+//			control_textcolor	0	0	0
+//			control_textfont	small
+//			control_drawsize	30 base
+//			control_drawpoint	100	54
+//			control_enable	true
+//			control_visible	true
+//			control_build	
+//			cedit_length	1000
+//			cedit_chartype	none
+//		}
+		
+		create_control	edit	edt_dir_r
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	54
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_dir_g
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	74
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_dir_b
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	94
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_dir_back_x
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	134
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_dir_back_y
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	154
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+//		create_control	edit	edt_dir_back_z
+//		{
+//			control_group	3
+//			control_color	true	255	255	255	255
+//			control_textcolor	0	0	0
+//			control_textfont	small
+//			control_drawsize	30 base
+//			control_drawpoint	100	174
+//			control_enable	true
+//			control_visible	true
+//			control_build	
+//			cedit_length	1000
+//			cedit_chartype	none
+//		}
+		
+		create_control	edit	edt_dir_back_r
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	174
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_dir_back_g
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	194
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_dir_back_b
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	214
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+	}
+	
+	create_control	text	txt_fog
+	{
+		control_group	3
+		control_color	true	192	0	180	0
+		control_text	0	0	Fog
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	130	12
+		control_drawpoint	10	359
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_fog_r
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	R
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_fog_g
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	G
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	34
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_fog_b
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	B
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	54
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_fog_near
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	Near
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	20	base
+			control_drawpoint	0	74
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_fog_far
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	Far
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	20	base
+			control_drawpoint	0	94
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	slidebar	sld_fog_r
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	19
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_fog_g
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	39
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_fog_b
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	59
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	255
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_fog_near
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	70 2
+			control_drawpoint	30	79
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	100
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_fog_far
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	70 2
+			control_drawpoint	30	99
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	200
+			cslidebar_value	0
+		}
+		
+		create_control	edit	edt_fog_r
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	14
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_fog_g
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	34
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_fog_b
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	54
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_fog_near
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	20 base
+			control_drawpoint	105	74
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_fog_far
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	20 base
+			control_drawpoint	105	94
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+	}
+		
+	create_control	text	txt_shade
+	{
+		control_group	3
+		control_color	true	192	0	180	0
+		control_text	0	0	ShadeLight
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	60	12
+		control_drawpoint	10	479
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_shade_dis
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	Dis
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	20	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	slidebar	sld_shade_dis
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	70 2
+			control_drawpoint	30	19
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	1000
+			cslidebar_value	0
+		}
+		
+		create_control	edit	edt_shade_dis
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	20 base
+			control_drawpoint	105	14
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+	}
+	
+	create_control	text	txt_time
+	{
+		control_group	3
+		control_color	true	192	0	180	0
+		control_text	0	0	矫埃
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	40	12
+		control_drawpoint	10	519
+		control_enable	true
+		control_visible	true
+		
+		create_control	edit	edt_time
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	80 base
+			control_drawpoint	52	0
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	1000
+			cedit_chartype	none
+		}
+	}
+	
+	create_control	text	txt_night
+	{
+		control_group	3
+		control_color	true	192	0	180	0
+		control_text	0	0	广撤
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	50	12
+		control_drawpoint	10	539
+		control_enable	true
+		control_visible	true
+		
+		create_control	button	btn_night
+		{
+			control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+			control_drawdiv	xy	2
+			control_drawsize	13	13
+			control_drawpoint	60	0
+			control_style		checked
+			control_enable	true
+			control_visible	true
+		}
+	}
+	
+	create_control	button	btn_listadd
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	1	2	V
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	10 15
+		control_drawpoint	10 559
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	button	btn_del
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	1	2	D
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	10 15
+		control_drawpoint	25 559
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	button	btn_open
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	1	2	Open
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	30 15
+		control_drawpoint	35 559
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	button	btn_save
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	1	2	Save
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	30 15
+		control_drawpoint	80 559
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	button	btn_anim
+	{
+		control_group	1
+		control_image	oooo	UI\Tool\ui_objbtn01.dds	0	110	23	22
+		control_drawdiv	xy	1
+		control_drawsize	20	20
+		control_drawpoint	120	555
+		control_style		checked
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	list	lst_time
+	{
+		control_group	3
+		control_image	oxxx	UI\Tool\ui_window02.dds	7	0	6	6
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	140	60
+		control_drawpoint	5	584
+		control_enable	true
+		control_visible	true
+		control_build		
+		clist_size	1	4
+		clist_columnwidth	80
+		clist_columnheight	0
+		clist_lineheight	14
+		clist_color	select	210	210	210
+		clist_color	grid	100	100	100
+		addcontrol_image	up	UI\Tool\ui_winbtn03.dds	0	21	15	16
+		addcontrol_image	down	UI\Tool\ui_winbtn03.dds	0	38	15	16
+		addcontrol_image	bar	UI\Tool\ui_winbtn03.dds	176	0	15	15
+		addcontrol_image	back	color	255	230	230	230
+	}
+}
+
+create_control	panel	camera
+{
+	control_group	0
+	control_image	oxxx	UI\Tool\ui_window02.dds	0	7	6	6
+	control_drawdiv	xy	2
+	control_drawsize	150	650
+	control_drawpoint	870	100
+	control_enable	true
+	control_visible	false
+
+	create_control	title	pan_camera_title
+	{
+		control_group	0
+		control_image	oxxx	UI\Tool\ui_window02.dds	0	35	6	6
+		control_text	4	1	Light
+		control_textcolor	255	255	255
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	139	13
+		control_drawpoint	3	3
+		control_enable	true
+		control_visible	true
+		
+		create_control	button	btn_camera_close
+		{
+			control_image	oooo	UI\Tool\ui_winbtn03.dds	65	11	11	11
+			control_drawdiv	xy	2
+			control_drawsize	11	11
+			control_drawpoint	122	1
+			control_enable	true
+			control_visible	true
+		}
+	}
+	
+	create_control	button	btn_light
+	{
+		control_image	oooo	UI\Tool\ui_window02.dds	0	42	6	6
+		control_text	1	2	light
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawdiv	xy	2
+		control_drawsize	30 13
+		control_drawpoint	80 16
+		control_enable	true
+		control_visible	true
+	}
+	
+	create_control	text	txt_camera
+	{
+		control_color	true	192	0	180	0
+		control_text	0	0	Camera
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	130	12
+		control_drawpoint	10	30
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_camera_h
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	H
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_camera_v
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	V
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	34
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_camera_d
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	D
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	54
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	slidebar	sld_camera_h
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	19
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	7
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_camera_v
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	39
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	2
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_camera_d
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	59
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	100
+			cslidebar_value	0
+		}
+		
+		create_control	edit	edt_camera_h
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	14
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_camera_v
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	34
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_camera_d
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	54
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+	}
+	
+	create_control	text	txt_camera_near
+	{
+		control_color	true	192	0	180	0
+		control_text	0	0	Near
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	130	12
+		control_drawpoint	10	104
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_camera_near_x
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	D
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_camera_near_y
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	Min
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	34
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_camera_near_z
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	Max
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	54
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_camera_near_h
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	H
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	74
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	slidebar	sld_camera_near_x
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	19
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	100
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_camera_near_y
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	39
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	2
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_camera_near_z
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	59
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	5
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_camera_near_h
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	79
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	100
+			cslidebar_value	0
+		}
+		
+		create_control	edit	edt_camera_near_x
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	14
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_camera_near_y
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	34
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_camera_near_z
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	54
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_camera_near_h
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	74
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+	}
+	
+	create_control	text	txt_camera_far
+	{
+		control_color	true	192	0	180	0
+		control_text	0	0	Far
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	130	12
+		control_drawpoint	10	204
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_camera_far_x
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	D
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_camera_far_y
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	Min
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	34
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_camera_far_z
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	Max
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	54
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	text	txt_camera_far_h
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	H
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	74
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	slidebar	sld_camera_far_x
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	19
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	1000
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_camera_far_y
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	39
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	5
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_camera_far_z
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	59
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	5
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_camera_far_h
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	79
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	100
+			cslidebar_value	0
+		}
+		
+		create_control	edit	edt_camera_far_x
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	14
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_camera_far_y
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	34
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_camera_far_z
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	54
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_camera_far_h
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	74
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+	}
+
+	create_control	text	txt_skybox
+	{
+		control_color	true	192	0	180	0
+		control_text	0	0	skybox
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	130	12
+		control_drawpoint	10	330
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_skybox_type
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	T
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	edit	edt_skybox_type
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	14
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}		
+	
+		create_control	text	txt_skybox_flare_apply
+		{
+			control_group	3
+			control_color	true	192	0	180	0
+			control_text	0	0	利侩
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	50	12
+			control_drawpoint	10	34
+			control_enable	true
+			control_visible	true
+			
+			create_control	button	btn_skybox_flare_apply
+			{
+				control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+				control_drawdiv	xy	2
+				control_drawsize	13	13
+				control_drawpoint	60	0
+				control_style		checked
+				control_enable	true
+				control_visible	true
+			}
+		}		
+	}
+	
+	create_control	text	txt_bloom
+	{
+		control_color	true	192	0	180	0
+		control_text	0	0	Bloom
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	130	12
+		control_drawpoint	10	390
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_bloom_power
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	P
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_bloom_weight
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	W
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	34
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_bloom_tfactor
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	F
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	54
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_bloom_size
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	S
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	74
+			control_enable	true
+			control_visible	true
+		}
+			
+		create_control	slidebar	sld_bloom_power
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	19
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	100
+			cslidebar_value	0
+		}
+		
+		create_control	slidebar	sld_bloom_Weight
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	39
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	100
+			cslidebar_value	0
+		}
+
+		create_control	slidebar	sld_bloom_tfactor
+		{
+			control_group	3
+			control_image	oxxx	UI\Tool\ui_window02.dds	28	18	6	2
+			control_drawdiv	x	1
+			control_drawsize	80 2
+			control_drawpoint	15	59
+			control_enable	true
+			control_visible	true
+			control_build	
+			addcontrol_image	btn	UI\Tool\ui_winbtn03.dds	0	0	12	7
+			addcontrol_drawsize	12	7
+			addcontrol_drawpoint	0	3
+			addcontrol_drawdiv	xy	1
+			cslidebar_type	vertical
+			cslidebar_length	100
+			cslidebar_value	0
+		}
+		
+		create_control	edit	edt_bloom_power
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	14
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_bloom_Weight
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	34
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_bloom_tfactor
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	54
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_bloom_size
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	74
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	text	txt_bloom_apply
+		{
+			control_group	3
+			control_color	true	192	0	180	0
+			control_text	0	0	利侩
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	50	12
+			control_drawpoint	10	94
+			control_enable	true
+			control_visible	true
+			
+			create_control	button	btn_bloom_apply
+			{
+				control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+				control_drawdiv	xy	2
+				control_drawsize	13	13
+				control_drawpoint	60	0
+				control_style		checked
+				control_enable	true
+				control_visible	true
+			}
+		}
+	}
+
+	create_control	text	txt_weather
+	{
+		control_color	true	192	0	180	0
+		control_text	0	0	Weather
+		control_textcolor	0	0	0
+		control_textfont	small
+		control_drawsize	130	12
+		control_drawpoint	10	520
+		control_enable	true
+		control_visible	true
+
+		create_control	text	txt_weather_effectid
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	E
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	14
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_weather_sceneid
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	S
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	34
+			control_enable	true
+			control_visible	true
+		}
+
+		create_control	text	txt_weather_time
+		{
+			control_group	3
+			control_color	true	64	60	60	255
+			control_text	0	0	T
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	10	base
+			control_drawpoint	0	54
+			control_enable	true
+			control_visible	true
+		}
+		
+		create_control	edit	edt_weather_effectid
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	14
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+		
+		create_control	edit	edt_weather_sceneid
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	34
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+
+		create_control	edit	edt_weather_time
+		{
+			control_group	3
+			control_color	true	255	255	255	255
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	30 base
+			control_drawpoint	100	54
+			control_enable	true
+			control_visible	true
+			control_build	
+			cedit_length	255
+			cedit_chartype	none
+		}
+					
+		create_control	text	txt_weather_apply
+		{
+			control_group	3
+			control_color	true	192	0	180	0
+			control_text	0	0	利侩
+			control_textcolor	0	0	0
+			control_textfont	small
+			control_drawsize	50	12
+			control_drawpoint	10	74
+			control_enable	true
+			control_visible	true
+			
+			create_control	button	btn_weather_apply
+			{
+				control_image	oooo	UI\Tool\ui_winbtn03.dds	110	0	13	13
+				control_drawdiv	xy	2
+				control_drawsize	13	13
+				control_drawpoint	60	0
+				control_style		checked
+				control_enable	true
+				control_visible	true
+			}
+		}
+	}
+	
+	create_control	button	btn_camera_anim
+	{
+	control_group	1
+	control_image	oooo	UI\Tool\ui_objbtn01.dds	0	110	23	22
+	control_drawdiv	xy	1
+	control_drawsize	20	20
+	control_drawpoint	120	305
+	control_style		checked
+	control_enable	true
+	control_visible	true
+	}
+}
+

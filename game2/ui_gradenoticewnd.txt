@@ -1,0 +1,66 @@
+<window>
+	name			gradenoticewnd
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	alwaysontop		true
+	rect			0 0 0 0
+
+	<panel>
+		id			pan_map
+		enable		true
+		visible		true
+		layer		99
+		position	inverse inverse
+		rect		0 0 0 0
+
+		<image>
+			key		0
+			screen	loadingmap
+			index	700
+		</image>
+
+		<panel>
+			id			pan_logo
+			enable		true
+			visible		true
+			layer		99
+			rect		0 0 232 238
+			position	left top
+			<image>
+				key		0
+				screen	Loading
+				index	104
+			</image>
+		</panel>
+
+		<panel>
+			id			pan_grade
+			enable		true
+			visible		true
+			layer		99
+			rect		0 0 302 120
+			position	right top
+			<image>
+				key		0
+				screen	Loading
+				index	100
+			</image>
+		</panel>
+
+		<panel>
+			id			pan_gradedesc
+			enable		true
+			visible		true
+			layer		99
+			rect		0 0 1024 205
+			position	center center
+			<image>
+				key		0
+				screen	Loading
+				index	102
+			</image>
+		</panel>
+	</panel>
+</window>

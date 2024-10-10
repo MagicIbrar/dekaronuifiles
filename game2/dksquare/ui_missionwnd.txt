@@ -1,0 +1,63 @@
+<window>
+	name			Waitinginfownd
+	enable			true
+	visible			true
+	layer			100
+	modal			false
+	rect			-189 -290 190 290
+	position		center center
+	titlerect		28 2 349 16
+
+	<panel>
+		id		pan_mission
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 379 580
+		<image>
+				key	0
+				screen	DKSquare
+				index	61
+		</image>
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		10
+			rect		28 2 321 14
+			position	0 1
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		160 120
+			</title>
+		</label>
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		361 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+</window>

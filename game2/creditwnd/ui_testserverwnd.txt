@@ -1,0 +1,36 @@
+<window>
+	name			testserver
+	enable			true
+	visible			true
+	layer			100
+	position		inverse inverse
+	rect			0 0 0 0
+	<panel>
+		id			pan_map2
+		enable		true
+		visible		true
+		layer		99
+		position	inverse inverse
+		rect		0 0 0 0
+		<image>
+			key	0
+			color	ff010101
+			screen	common
+			index	1
+		</image>		
+		<panel>
+			id			pan_map2
+			enable		true
+			visible		true
+			layer		99
+			position	center center
+			rect		-256 -256 512 512
+			<image>
+				key	0
+				color	ffffffff
+				screen	testserver
+				index	0
+			</image>
+		</panel>
+	</panel>
+</window>

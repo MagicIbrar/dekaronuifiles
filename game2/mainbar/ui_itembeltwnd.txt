@@ -1,0 +1,1164 @@
+<window>
+	name			itemBeltwnd
+	enable			true
+	visible			true
+	layer			100
+	position		left bottom
+	rect			941 -476 1170 -320 
+	titlerect 		221 108 231 144
+	alwaysontop		true
+	
+	
+	<panel>
+		id			panel_layer1
+		enable		true
+		visible		false
+		layer		100
+		rect		0 -72 313 191			
+		
+		
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		0 72 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>		
+			<item>
+				id			item11
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key11
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item11
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		36 72 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>		
+			
+			<item>
+				id			item12
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key12
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item12
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		72 72 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>		
+			<item>
+				id			item13
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key13
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item13
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		108 72 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>		
+			<item>
+				id			item14
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key14
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item14
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			
+		
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		144 72 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>	
+			
+			
+			<item>
+				id			item15
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31			
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key15
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item15
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		180 72 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>	
+			
+			
+			<item>
+				id			item16
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31			
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key16
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item16
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>			
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		0 108 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>				
+			<item>
+				id			item17
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key17
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item17
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>		
+		</panel>
+		
+		
+		
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		36 108 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>			
+
+			<item>
+				id			item18
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key18
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item18
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		72 108 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>				
+			<item>
+				id			item19
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key19
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item19
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		108 108 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>				
+			<item>
+				id			item20
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key20
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item20
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+					
+			
+		</panel>	
+		
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		144 108 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>	
+			<item>
+				id			item21
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key21
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item21
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+					
+			
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		180 108 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>	
+			<item>
+				id			item22
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key22
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item22
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>			
+		</panel>		
+	</panel>
+
+	
+	<panel>
+		id			pan_state
+		enable		true
+		visible		true
+		layer		100
+		rect		0 72 313 191	
+		
+		
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		221 36 10 41	
+			<image>
+				key		none
+				screen	newMainbar
+				index	301
+			</image>	
+		</panel>
+		
+		
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		0 0 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>
+			
+			<item>
+				id			item0
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key0
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item0
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			
+		</panel>
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		36 0 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>	
+			<item>
+				id			item1
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key1
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item1
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+		
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		72 0 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>		
+			<item>
+				id			item2
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key2
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item2
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		108 0 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>		
+			
+			<item>
+				id			item3
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31			
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key3
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item3
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		144 0 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>				
+			<item>
+				id			item4
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key4
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item4
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>		
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		0 36 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>	
+
+			<item>
+				id			item5
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key5
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item5
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		36 36 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>		
+			<item>
+				id			item6
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key6
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item6
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		72 36 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>		
+			<item>
+				id			item7
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key7
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item7
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		108 36 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>	
+
+			<item>
+				id			item8
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key8
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item8
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>		
+		</panel>	
+		
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		144 36 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>		
+			<item>
+				id			item9
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key9
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item9
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+		<panel>
+			id			pan_state
+			enable		true
+			visible		true
+			layer		100
+			rect		180 36 41 41		
+			<image>
+				key		none
+				screen	newMainbar
+				index	300
+			</image>		
+			<item>
+				id			item10
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 31
+				cellsize	31 31
+				align 		center
+			</item>
+			<label>
+				id			lbl_key10
+				enable		true
+				visible		true
+				layer		1
+				rect		5 5 31 15
+				<title>
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</label>
+			<label>
+				id			lbl_item10
+				enable		true
+				visible		true
+				layer		1
+				align		right
+				rect		5 24 30 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>	
+	</panel>	
+	
+	<panel>
+		id			pan_state
+		enable		true
+		visible		true
+		layer		101
+		rect		180 72 41 41	
+		
+			
+		<item>
+			id			item23
+			enable		true
+			visible		false
+			layer		1
+			rect		5 0 31 31
+			cellsize	31 31
+			align 		center
+		</item>
+		<label>
+			id			lbl_key23
+			enable		true
+			visible		false
+			layer		1
+			rect		5 20 31 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+		<label>
+			id			lbl_item23
+			enable		true
+			visible		false
+			layer		1
+			align		right
+			rect		5 19 30 11
+			<title>
+				color		ffffffff
+				fontIndex	2
+			</title>
+		</label>
+		
+				
+		<button>
+			id			btn_minimap_hide
+			enable		true
+			visible		true
+			layer		500
+			type		0
+			rect		5 3 35 35
+			<image>
+				key		none
+				screen	newMainbar
+				index	310
+			</image>
+			<image>
+				key		over
+				screen	newMainbar
+				index	311
+			</image>
+			<image>
+				key		down
+				screen	newMainbar
+				index	312
+			</image>
+			<image>
+				key		disable
+				screen	newMainbar
+				index	313
+			</image>
+		</button>
+		
+		
+	</panel>
+
+
+
+
+	
+</window>

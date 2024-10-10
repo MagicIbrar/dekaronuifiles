@@ -1,0 +1,806 @@
+<window>
+	name			skill
+	enable			true
+	visible			true
+	layer			100
+	position		center top	
+	#rect			335 165 639 575
+	rect			-141 10 424 690
+	titlerect		0 0 396 30
+
+	
+	<panel>
+		id		pan_skill
+		enable		true
+		visible		true
+		layer		103
+		rect		0 0 425 678
+		<image>
+			key	0
+			screen	renewalskillwnd
+			index	1
+		</image>
+
+		<label>
+			id		lbl_title_1
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		0 8 425 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		60 2000
+			</title>
+		</label>
+		
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		300
+			type		0
+			rect		404 6 16 16
+	
+			<image>
+				key		0
+				screen	renewalskillwnd
+				index		36
+	
+			</image>
+			<image>
+				key		over
+				screen	renewalskillwnd
+				index		37
+	
+			</image>
+			<image>
+				key		down
+				screen	renewalskillwnd
+				index		38
+	
+			</image>
+		</button>
+
+		<panel>
+			id		pan_skill_bg
+			enable		true
+			visible		true
+			layer		100
+			rect		1 32 103 640			
+			#rect		1 44 103 640
+			<button>
+				id		btn_skill_tab_1
+				enable		true
+				visible		false
+				layer		100
+				rect		0 0 103 30
+				align		center
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	6
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	5
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					position	0 10
+					fontIndex	4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</button>
+			<button>
+				id			btn_skill_tab_2
+				enable		true
+				visible		false
+				layer		100
+				rect		0 30 103 30
+				align		center
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	6
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	5
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					position	0 10
+					fontIndex	4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</button>
+			<button>
+				id			btn_skill_tab_3
+				enable		true
+				visible		false
+				layer		100
+				rect		0 60 103 30
+				align		center
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	6
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	5
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					position	0 10
+					fontIndex	4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</button>
+			<button>
+				id			btn_skill_tab_4
+				enable		true
+				visible		false
+				layer		100
+				rect		0 90 103 30
+				align		center
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	6
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	5
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					position	0 10
+					fontIndex	4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</button>
+			<button>
+				id			btn_skill_tab_5
+				enable		true
+				visible		false
+				layer		100
+				rect		0 120 103 30
+				align		center
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	6
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	5
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					position	0 10
+					fontIndex	4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</button>
+			<button>
+				id			btn_skill_tab_6
+				enable		true
+				visible		false
+				layer		100
+				rect		0 150 103 30
+				align		center
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	6
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	5
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					position	0 10
+					fontIndex	4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</button>
+			<button>
+				id			btn_skill_tab_7
+				enable		true
+				visible		false
+				layer		100
+				rect		0 180 103 30
+				align		center
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	6
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	5
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					position	0 10
+					fontIndex	4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</button>
+			<button>
+				id			btn_skill_tab_8
+				enable		true
+				visible		false
+				layer		100
+				rect		0 210 103 30
+				align		center
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	6
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	5
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					position	0 10
+					fontIndex	4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</button>
+			<button>
+				id			btn_skill_tab_9
+				enable		true
+				visible		false
+				layer		100
+				rect		0 240 103 30
+				align		center
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	6
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	5
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					position	0 10
+					fontIndex	4
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	4
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	4
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	4
+				</title>
+			</button>
+			<panel>
+				id		pan_skill_point
+				enable		true
+				visible		true
+				layer		100
+				rect		0 500 103 42
+				<label>
+					id		lbl_skillpoint
+					enable		true
+					visible		true
+					layer		100
+					align		center
+					rect		0 0 108 14
+					<title>
+						color		ffffffff
+						fontIndex	2
+						position	0 0
+						text2 		60 2003
+					</title>
+				</label>
+				<panel>
+					id		pan_pointbg
+					enable		true
+					visible		true
+					layer		100
+					rect		30 18 47 21
+					moveable	true
+					<image>
+						key		0
+						screen	renewalskillwnd
+						index	10
+					</image>
+				</panel>
+				<label>
+					id		lbl_point
+					enable		true
+					visible		true
+					layer		120
+					align		center
+					rect		35 21 41 17
+					<title>
+						color		ffffffff
+						fontIndex	2
+						position	0 0
+					</title>
+				</label>
+			</panel>
+
+			<panel>
+			id		pan_grand_skill_point
+			enable		true
+			visible		true
+			layer		100
+			rect		0 560 103 42
+				<label>
+					id		lbl_grand_skillpoint
+					enable		true
+					visible		false
+					layer		100
+					align		center
+					rect		0 0 108 14
+					<title>
+						color		ffffffff
+						fontIndex	2
+						position	0 0
+						text2 		60 2006
+					</title>
+				</label>
+				<panel>
+					id		pan_grand_pointbg
+					enable		true
+					visible		false
+					layer		100
+					rect		30 18 47 21
+					moveable	true
+					<image>
+						key		0
+						screen	renewalskillwnd
+						index	10
+					</image>
+				</panel>
+				<label>
+					id		lbl_grand_point
+					enable		true
+					visible		true
+					layer		120
+					align		center
+					rect		35 21 41 17
+					<title>
+						color		ffffffff
+						fontIndex	2
+						position	0 0
+					</title>
+				</label>
+			</panel>
+					
+		</panel>		
+
+		<panel>
+			id		pan_add_sub_skill_tab
+			enable		true
+			visible		false
+			layer		100
+			rect		105 28 320 481
+			<panel>
+				id		pan_sub_skill_tab_line
+				enable		true
+				visible		true
+				layer		101
+				rect		0 29 320 2
+				intersect	false
+				<image>
+					screen	renewalskillwnd
+					index	35
+				</image>
+			</panel>	
+			<button>
+				id		btn_sub_skill_tab_1
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 159 29
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	12
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	11
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	2
+					position	0 12
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	2
+					position	0 12
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	2
+					position	0 12
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	2
+					position	0 10
+				</title>
+			</button>
+			<button>
+				id		btn_sub_skill_tab_2
+				enable		true
+				visible		true
+				layer		100
+				rect		160 0 159 29
+				<image>
+					key		none
+					screen	renewalskillwnd
+					index	12
+				</image>
+				<image>
+					key		check
+					screen	renewalskillwnd
+					index	11
+				</image>
+				<title>
+					state 		none
+					color		ff929292
+					fontIndex	2
+					position	0 12
+				</title>
+				<title>
+					state 		over
+					color		ffffffff
+					fontIndex	2
+					position	0 12
+				</title>
+				<title>
+					state 		down
+					color		ff929292
+					fontIndex	2
+					position	0 12
+				</title>
+				<title>
+					state 		check
+					color		ffffffff
+					fontIndex	2
+					position	0 10
+				</title>
+			</button>	
+			<panel>
+				id		pan_skill_cover
+				enable		true
+				visible		true
+				layer		300
+				rect		8 70 240 55
+				<panel>
+					id		pan_skill_corver_1
+					enable		true
+					visible		true
+					layer		300
+					rect		0 0 10 55	
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	31
+					</image>
+				</panel>
+
+				<panel>
+					id		pan_skill_corver_2
+					enable		true
+					visible		true
+					layer		300
+					rect		10 0 220 55	
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	32
+					</image>
+				</panel>
+
+				<panel>
+					id		pan_skill_corver_3
+					enable		true
+					visible		true
+					layer		300
+					rect		230 0 10 55	
+					<image>
+						key	0
+						screen	renewalskillwnd
+						index	33
+					</image>
+				</panel>
+			</panel>
+			
+			
+			<panel>
+				id		pan_check_box
+				enable		true
+				visible		true
+				layer		300
+				rect		9 36 150 20
+
+				<checkbox>
+					id		check_item
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 150 20
+					align		left				
+					<image>
+						key			none
+						screen		etc_01
+						index		303
+					</image>
+					<image>
+						key			check
+						screen		etc_01
+						index		304
+					</image>
+					<title>
+						state			none
+						fontindex	2
+						color		ffffffff
+						position	5 6
+					</title>
+					<title>
+						state			over
+						fontindex	2
+						position	5 6
+						color		ff00ff00
+					</title>
+				</checkbox>	
+				<label>
+					id		lbl_item_name
+					enable		true
+					visible		true
+					layer		100
+					align		left
+					rect		20 0 150 14
+					<title>
+						color		ffffffff
+						fontIndex	4
+						position	0 6
+						text2 		60 2005
+					</title>
+				</label>
+			</panel>
+		</panel>									
+	</panel>
+	
+	<panel>
+		id		pan_skill_tree_bg
+		enable		true
+		visible		true
+		layer		100
+		rect		86 30 400 616
+		<skilltree>
+			id			skill_tree
+			enable		true
+			visible		true
+			layer		150
+			rect		15 0 400 616
+			<vscroll>
+				id		skill_tree_scroll
+				enable		false
+				visible		false
+				layer		1
+				rect		289 0 13  318
+				maxvalue	2
+				buttontick	1
+				<button>
+					id			skill_tree_scroll_upbtn
+					enable		false
+					visible		false
+					layer		100
+					rect		0 0 13 13
+					type		1
+					<image>
+						key		0
+						screen	renewalskillwnd
+						index	18
+					</image>
+					<image>
+						key		over
+						screen	renewalskillwnd
+						index	19
+					</image>
+					<image>
+						key		down
+						screen	renewalskillwnd
+						index	20
+					</image>
+				</button>
+				<button>
+					id			skill_tree_scroll_downbtn
+					enable		false
+					visible		false
+					layer		100
+					rect		0 305 13 13
+					type		1
+					<image>
+						key		0
+						screen	renewalskillwnd
+						index	21
+					</image>
+					<image>
+						key		over
+						screen	renewalskillwnd
+						index	22
+					</image>
+					<image>
+						key		down
+						screen	renewalskillwnd
+						index	23
+					</image>
+				</button>
+				<panel>
+					id			skill_tree_scroll_bar
+					enable		false
+					visible		false
+					layer		100
+					rect		0 13 13 36
+					moveable	false
+					<image>
+						key		0
+						screen	renewalskillwnd
+						index	24
+					</image>
+				</panel>
+			</vscroll>
+		</skilltree>
+	</panel>
+</window>

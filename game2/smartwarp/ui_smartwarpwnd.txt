@@ -1,0 +1,449 @@
+<window>
+	id		smartwarp_wnd
+	enable		true
+	visible		true
+	layer		100
+	position	center center
+	rect		-181 -152 182 152
+	titlerect	0 11 354 35
+
+	<panel>
+		id		pan_smartwarp_bg_top
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 363 73
+		<image>
+			key	0
+			screen	smartwarp
+			index	1
+		</image>
+	</panel>
+
+	<panel>
+		id		pan_smartwarp_bg_mid
+		enable		true
+		visible		true
+		layer		10
+		rect		0 73 363 171
+		<image>
+			key	0
+			screen	smartwarp
+			index	2
+		</image>
+	</panel>
+
+	<panel>
+		id		pan_smartwarp_bg_bot
+		enable		true
+		visible		true
+		layer		10
+		rect		0 244 363 60
+		<image>
+			key	0
+			screen	smartwarp
+			index	3
+		</image>
+	</panel>
+
+
+	<label>
+		id	lbl_title
+		enable	true
+		visible	true
+		layer	50
+		rect	0 11 354 35
+		align	center
+		<title>
+			state	none
+			color	ffffffff
+			fontindex	4
+			lienheight	0
+			position	0 8
+			text2	6000 0
+		</title>
+	</label>
+
+
+	<button>
+		id	tab_warp_1
+		enable	true
+		visible	true
+		layer	100
+		check	true
+		align	center
+		rect	15 45 165 25
+		<image>
+			key		none
+			screen	smartwarp
+			index	10
+		</image>
+		<image>
+			key		check
+			screen	smartwarp
+			index	9
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 8
+			text2		6000 1
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 8
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	0 8
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	2
+			position	0 8
+		</title>
+	</button>
+
+	<button>
+		id	tab_warp_2
+		enable	true
+		visible	true
+		layer	100
+		align	center
+		rect	183 45 165 25
+		<image>
+			key		none
+			screen	smartwarp
+			index	10
+		</image>
+		<image>
+			key		check
+			screen	smartwarp
+			index	9
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 8
+			text2		6000 2
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 8
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	0 8
+		</title>
+		<title>
+			state 		check
+			color		ffffffff
+			fontIndex	2
+			position	0 8
+		</title>
+	</button>
+
+	<panel>
+		id		pan_line
+		enable		true
+		visible		true
+		layer		100
+		rect		7 70 349 2
+		<image>
+			key	0
+			screen	smartwarp
+			index	4
+		</image>
+	</panel>
+
+	<label>
+		id	lbl_name_text
+		enable	true
+		visible	true
+		layer	50
+		align	        center
+		type		0
+		rect	7 80 349 20
+		<title>
+			state	none
+			color	ffffffff
+			fontindex	7
+			text2	6000 10
+		</title>
+	</label>
+
+	<label>
+		id	lbl_move_text
+		enable	true
+		visible	true
+		layer	50
+		align	        center
+		rect	7 100 349 14
+		<title>
+			state	none
+			color	ffffffff
+			fontindex	3
+			text2	6000 6
+		</title>
+	</label>
+
+
+	<button>
+		id		btn_move_0
+		enable		true
+		visible		true
+		layer		100
+		align	        center
+		rect		58 122 249 28
+		<image>
+			key	none
+			screen	smartwarp
+			index	5
+		</image>
+		<image>
+			key	over
+			screen	smartwarp
+			index	6
+		</image>
+		<image>
+			key	down
+			screen	smartwarp
+			index	7
+		</image>
+		<image>
+			key	disable
+			screen	smartwarp
+			index	8
+		</image>
+		<title>
+    			state 		none
+	    		color		ffffffff
+			position	0 6
+    			fontIndex	4
+    		</title>
+    		<title>
+    			state 		over
+    			color		ffffff00
+			position	0 6
+    			fontIndex	4    		
+    		</title>
+    		<title>
+    			state 		down
+    			color		ffffff00
+			position	0 6
+    			fontIndex	4
+    		</title>
+    		<title>
+    			state 		disable
+    			color		ffffffff
+			position	0 6
+    			fontIndex	4
+    		</title>
+	</button>
+
+	<button>
+		id		btn_move_1
+		enable		true
+		visible		true
+		layer		100
+		align	        center
+		rect		58 156 249 28
+		<image>
+			key	none
+			screen	smartwarp
+			index	5
+		</image>
+		<image>
+			key	over
+			screen	smartwarp
+			index	6
+		</image>
+		<image>
+			key	down
+			screen	smartwarp
+			index	7
+		</image>
+		<image>
+			key	disable
+			screen	smartwarp
+			index	8
+		</image>
+		<title>
+    			state 		none
+	    		color		ffffffff
+			position	0 6
+    			fontIndex	4
+    		</title>
+    		<title>
+    			state 		over
+    			color		ffffff00
+			position	0 6
+    			fontIndex	4    		
+    		</title>
+    		<title>
+    			state 		down
+    			color		ffffff00
+			position	0 6
+    			fontIndex	4
+    		</title>
+    		<title>
+    			state 		disable
+    			color		ffffffff
+			position	0 6
+    			fontIndex	4
+    		</title>
+	</button>
+
+	<button>
+		id		btn_move_2
+		enable		true
+		visible		true
+		layer		100
+		align	        center
+		rect		58 190 249 28
+		<image>
+			key	none
+			screen	smartwarp
+			index	5
+		</image>
+		<image>
+			key	over
+			screen	smartwarp
+			index	6
+		</image>
+		<image>
+			key	down
+			screen	smartwarp
+			index	7
+		</image>
+		<image>
+			key	disable
+			screen	smartwarp
+			index	8
+		</image>
+		<title>
+    			state 		none
+	    		color		ffffffff
+			position	0 6
+    			fontIndex	4
+    		</title>
+    		<title>
+    			state 		over
+    			color		ffffff00
+			position	0 6
+    			fontIndex	4    		
+    		</title>
+    		<title>
+    			state 		down
+    			color		ffffff00
+			position	0 6
+    			fontIndex	4
+    		</title>
+    		<title>
+    			state 		disable
+    			color		ffffffff
+			position	0 6
+    			fontIndex	4
+    		</title>
+	</button>
+
+
+	<label>
+		id	lbl_needitem
+		enable	true
+		visible	true
+		layer	50
+		align	left
+		rect	155 228 140 14
+		<title>
+			state	none
+			color	ffffffff
+			fontindex	3
+			text2	6000 4
+		</title>
+	</label>
+
+	<panel>
+		id		pan_needitem_img
+		enable		true
+		visible		true
+		layer		100
+		rect		291 224 54 26
+		<image>
+			key	0
+			screen	smartwarp
+			index	17
+		</image>
+	</panel>
+
+	<label>
+		id	lbl_needitem_count
+		enable	true
+		visible	true
+		layer	150
+		align	center
+		rect	316 230 25 11
+		<title>
+			state	none
+			color	ffffffff
+			fontindex	3
+			text	1
+		</title>
+	</label>
+
+	<button>
+		id		btn_close
+		enable		true
+		visible		true
+		layer		100
+		align	        center
+		rect		282 261 61 25
+		<image>
+			key	none
+			screen	smartwarp
+			index	11
+		</image>
+		<image>
+			key	over
+			screen	smartwarp
+			index	12
+		</image>
+		<image>
+			key	down
+			screen	smartwarp
+			index	13
+		</image>
+		<title>
+    			state 		none
+	    		color		ffffffff
+    			fontIndex	4
+    			position	0 4
+			text2		6000 3
+    		</title>
+    		<title>
+    			state 		over
+    			color		ffffffff
+    			fontIndex	4
+    			position	0 4
+			text2		6000 3
+    		</title>
+    		<title>
+    			state 		down
+    			color		ffffff00
+    			fontIndex	4
+    			position	0 4
+			text2		6000 3
+    		</title>
+	</button>
+</window>

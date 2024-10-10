@@ -1,0 +1,382 @@
+<window>
+	id	qnotice_info
+	enable	true
+	visible	true
+	layer	100
+	rect	100 100 690 354
+	modal	false
+	alwaysontop	false
+	titlerect	0 0 590 47
+	<panel>
+		id	pan_top
+		enable	true
+		visible	true
+		layer	1
+		rect	0 0 590 47
+		<image>
+			key	none
+			color	ffffffff
+			screen	ConnectRewardwnd
+			index	1
+		</image>
+		<label>
+			id	lbl_title
+			enable	true
+			visible	true
+			layer	50
+			rect	12 15 560 20
+			align	left
+			<title>
+				state	none
+				color	ffffffff
+				fontindex	3
+				lienheight	0
+				text2	5000 0
+			</title>
+		</label>
+		<button>
+			id	btn_close
+			enable	true
+			visible	true
+			layer	100
+			rect		562 15 15 15
+
+			<image>
+				key	none
+				color	ffffffff
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key	over
+				color	ffffffff
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key	down
+				color	ffffffff
+				screen	etc_01
+				index		317
+
+			</image>
+			<image>
+				key	check
+				color	ffffffff
+				screen	etc_01
+				index		316
+
+			</image>
+		</button>
+	</panel>
+	<panel>
+		id	pan_bottom
+		enable	true
+		visible	true
+		layer	1
+		rect	0 227 590 27
+		<image>
+			key	none
+			color	ffffffff
+			screen	ConnectRewardwnd
+			index	3
+		</image>
+		<label>
+			id	lbl_warning
+			enable	true
+			visible	true
+			layer	50
+			rect	12 -4 570 20
+			align	left
+			<title>
+				state	none
+				color	ffffffff
+				fontindex	3
+				lienheight	0
+				text2	5000 12
+			</title>
+		</label>
+	</panel>
+	<panel>
+		id	pan_center
+		enable	true
+		visible	true
+		layer	1
+		rect	0 47 590 180
+		<image>
+			key	none
+			color	ffffffff
+			screen	ConnectRewardwnd
+			index	2
+		</image>
+		<panel>
+			id	pan_line
+			enable	true
+			visible	false
+			layer	1
+			rect	18 50 558 55
+			<image>
+				key	none
+				color	ffffffff
+				screen	ConnectRewardwnd
+				index	4
+			</image>
+			<processbar>
+				id	pan_gauge
+				enable	true
+				visible	false
+				layer	2
+				rect	340 26 143 18
+				maxsize	143
+				<image>
+					key	none
+					color	ffffffff
+					screen	ConnectRewardwnd
+					index	12
+				</image>
+			</processbar>
+			<label>
+				id	lbl_line_title
+				enable	true
+				visible	true
+				layer	50
+				rect	30 9 258 21
+				align	center
+				<title>
+					state	none
+					color	ffffffff
+					fontindex	3
+					lienheight	0
+					text2	5000 1
+				</title>
+			</label>
+			<button>
+				id	btn_complete
+				enable	true
+				visible	true
+				layer	100
+				rect	488 6 61 38
+				align	center
+				<image>
+					key	none
+					color	ffffffff
+					screen	ConnectRewardwnd
+					index	6
+				</image>
+				<image>
+					key	over
+					color	ffffffff
+					screen	ConnectRewardwnd
+					index	7
+				</image>
+				<image>
+					key	down
+					color	ffffffff
+					screen	ConnectRewardwnd
+					index	8
+				</image>
+				<image>
+					key	disable
+					color	ffffffff
+					screen	ConnectRewardwnd
+					index	9
+				</image>
+				<title>
+					state 				none
+					color				ffffffff
+					fontIndex			4
+					position			0 12
+					text2 				5000 13
+				</title>
+			</button>
+			<label>
+				id	lbl_line_subtitle
+				enable	true
+				visible	false
+				layer	50
+				rect	340 10 142 22
+				align	center
+				<title>
+					state	none
+					color	ffffffff
+					fontindex	3
+					lienheight	0
+					text2	5000 7
+				</title>
+			</label>
+			<label>
+				id	lbl_line_memo
+				enable	true
+				visible	true
+				layer	50
+				rect	30 27 258 21
+				align	center
+				<title>
+					state	none
+					color	ffffffff
+					fontindex	3
+					lienheight	0
+					text2	5000 4
+				</title>
+			</label>
+			<label>
+				id	lbl_line_submemo
+				enable	true
+				visible	false
+				layer	50
+				rect	340 28 142 22
+				align	center
+				<title>
+					state	none
+					color	ffffffff
+					fontindex	3
+					lienheight	0
+					text2	5000 11
+				</title>
+			</label>
+			<item>
+				id	item_reward
+				enable	true
+				visible	true
+				layer	10
+				rect	297 8 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<checkbox>
+				id	check_show
+				enable	true
+				visible	true
+				layer	100
+				position	left top
+				rect	7 14 20 20
+				align	left
+				<image>
+					key	none
+					color	ffffffff
+					screen	etc_01
+					index	303
+				</image>
+				<image>
+					key	check
+					color	ffffffff
+					screen	etc_01
+					index	304
+				</image>
+				<title>
+					state	none
+					color	ffffffff
+					fontindex	3
+					lienheight	0
+				</title>
+				<title>
+					state	over
+					color	ff00ff00
+					fontindex	3
+					lienheight	0
+				</title>
+			</checkbox>
+			<item>
+				id	item_require
+				enable	true
+				visible	true
+				layer	10
+				rect	342 8 32 32
+				cellsize	32 32
+				align	center
+				moveable	false
+			</item>
+			<processbar>
+				id	pan_gauge_item
+				enable	true
+				visible	false
+				layer	2
+				rect	376 26 106 18
+				maxsize	106
+				<image>
+					key	none
+					color	ffffffff
+					screen	ConnectRewardwnd
+					index	14
+				</image>
+			</processbar>
+			<label>
+				id	lbl_line_subtitle_item
+				enable	true
+				visible	false
+				layer	50
+				rect	376 10 106 22
+				align	center
+				<title>
+					state	none
+					color	ffffffff
+					fontindex	3
+					lienheight	0
+					text2	5000 7
+				</title>
+			</label>
+			<label>
+				id	lbl_line_submemo_item
+				enable	true
+				visible	false
+				layer	50
+				rect	376 28 106 22
+				align	center
+				<title>
+					state	none
+					color	ffffffff
+					fontindex	3
+					lienheight	0
+					text2	5000 11
+				</title>
+			</label>
+			<panel>
+				id	pan_clear
+				enable	true
+				visible	false
+				layer	200
+				rect	0 0 554 50
+				<image>
+					key	none
+					color	ffffffff
+					screen	ConnectRewardwnd
+					index	11
+				</image>
+			</panel>
+			<panel>
+				id	pan_stamp_dummy
+				enable	true
+				visible	true
+				layer	200
+				rect	316 19 1 1
+			</panel>
+			<label>
+				id	lbl_rewarditem_count
+				enable	true
+				visible	true
+				layer	10
+				align	right
+				rect	297 28 32 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			<label>
+				id	lbl_requireitem_count
+				enable	true
+				visible	true
+				layer	10
+				align	right
+				rect	342 28 32 11
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+	</panel>
+</window>

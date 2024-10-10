@@ -1,0 +1,84 @@
+window_layer	auto
+window_size	256	256
+window_visible	false
+
+create_control	panel	pan_create_ex
+{
+	control_group	0
+	control_image	oxxx	UI\Game\theme01\message_01.dds	0	0	256	256
+	control_drawdiv	xy	2
+	control_drawsize	256	256
+	control_drawpoint	768	306
+	control_enable	true
+	control_visible	true
+
+	create_control	text	txt_ex
+	{
+	control_group	0
+	control_color	true	0	255	255	255
+	control_textcolor	255	255	255
+	control_textfont	small
+	control_drawsize	230	70
+	control_drawpoint	20	90
+	control_enable	true
+	control_visible	true
+	control_build	txt_ex
+	ctext_info	1	1	4
+	}
+
+	create_control	button	btn_end
+	{
+	control_group	0
+	control_image	oooo	UI\Game\button_01.dds	184	0	20	19
+	control_drawdiv	xy	1
+	control_imagedivide	vertical
+	control_drawsize	20	19
+	control_drawpoint	206	41
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	panel	pan_cs_2
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\button_01.dds	132	0	51	17
+	control_drawdiv	xy	2
+	control_drawsize	51	17
+	control_drawpoint	39	42
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_cs_1
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\button_01.dds	132	17	51	17
+	control_drawdiv	xy	2
+	control_drawsize	51	17
+	control_drawpoint	39	42
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_cs_4
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\button_01.dds	132	34	51	17
+	control_drawdiv	xy	2
+	control_drawsize	51	17
+	control_drawpoint	39	42
+	control_enable	true
+	control_visible	false
+	}
+
+	create_control	panel	pan_cs_3
+	{
+	control_group	0
+	control_image	oxxx	UI\Game\button_01.dds	132	51	51	17
+	control_drawdiv	xy	2
+	control_drawsize	51	17
+	control_drawpoint	39	42
+	control_enable	true
+	control_visible	false
+	}
+}

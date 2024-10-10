@@ -1,0 +1,78 @@
+
+#uicontrol_kind			panel
+#uicontrol_kind			button
+#uicontrol_kind			edit
+#uicontrol_kind			text
+#uicontrol_kind			list
+#uicontrol_kind			vscrollbar
+#uicontrol_kind			hscrollbar
+#uicontrol_kind			slidebar
+#uicontrol_kind			combobox
+#uicontrol_kind			grid
+#uicontrol_kind			gridimge
+#uicontrol_kind			popup
+#uicontrol_kind			textbutton
+#uicontrol_kind			grid2
+#uicontrol_kind			tabcontrol
+#uicontrol_kind			progressbar
+#uicontrol_kind			combobox2
+#uicontrol_kind			item
+#uicontrol_kind			normalitem
+#uicontrol_kind			suititem
+#uicontrol_kind			spin
+#uicontrol_kind			title
+#uicontrol_kind			property
+#uicontrol_kind			comboitempanel
+#uicontrol_kind			listitempanel
+#uicontrol_kind			griditem
+#uicontrol_kind			tabbutton
+#uicontrol_kind			combobox2hover
+#uicontrol_kind			combobox2hoveritempanel
+#uicontrol_kind			paneldrag
+#uicontrol_kind			buttonpress
+#uicontrol_kind			listimage
+#uicontrol_kind			anipanel
+#uicontrol_kind			coolingpanel
+#uicontrol_kind			skillpress
+#uicontrol_kind			chatingtext
+
+#uicontrol_style		none
+#uicontrol_style		checked
+#uicontrol_style		radio
+
+#uicontrol_state		normal
+#uicontrol_state		over
+#uicontrol_state		press
+#uicontrol_state		disable
+
+#uicontrol_drawdiv		none
+#uicontrol_drawdiv		x
+#uicontrol_drawdiv		y
+#uicontrol_drawdiv		xy
+
+#uicontrol_fonttype		tiny
+#uicontrol_fonttype		tinybold
+#uicontrol_fonttype		small
+#uicontrol_fonttype		smallbold
+#uicontrol_fonttype		normal
+#uicontrol_fonttype		normalbold
+#uicontrol_fonttype		large
+#uicontrol_fonttype		largebold
+#uicontrol_fonttype		big
+
+#uicontrol_chartype		none
+#uicontrol_chartype		alpha
+#uicontrol_chartype		numeric
+#uicontrol_chartype		alphanumeric
+#uicontrol_chartype		nosymbol
+
+#uicontrol_bartype		none
+#uicontrol_bartype		horizontal
+#uicontrol_bartype		vertical
+
+#uicontrol_movetype		none
+#uicontrol_movetype		area
+#uicontrol_movetype		free
+#uicontrol_movetype		groupfree
+#uicontrol_movetype		windowfree
+

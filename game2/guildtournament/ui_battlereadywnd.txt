@@ -1,0 +1,277 @@
+<window>
+	name			battlereadywnd
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-256 -300 256 300
+	titlerect		5 5 502 30
+	alwaysontop		true
+		
+	<panel>
+		id				pan_head
+		enable			true
+		visible			true
+		layer			1
+		rect			0 0 512 35
+		<image>
+			key			none
+			screen		guildtournament
+			index		26
+		</image>
+
+		<label>
+			id			lbl_title
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		30 13 452 30
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		483 12 15 15
+
+			sound  0
+			<image>
+				key			0
+				screen		etc_01
+				index		315
+
+			</image>
+			<image>
+				key			over
+				screen		etc_01
+				index		316
+
+			</image>
+			<image>
+				key			down
+				screen		etc_01
+				index		317
+
+			</image>
+		</button>
+	</panel>
+
+	<panel>
+		id				pan_middle
+		enable			true
+		visible			true
+		layer			1
+		rect			0 35 512 80
+		<image>
+			key			none
+			screen		guildtournament
+			index		27
+		</image>
+
+		<panel>
+			id				pan_title
+			enable			true
+			visible			true
+			layer			1
+			rect			111 0 290 46
+			<image>
+				key			none
+				screen		guildtournament
+				index		38
+			</image>
+		</panel>
+
+		<panel>
+			id				pan_matchtitle
+			enable			true
+			visible			true
+			layer			1
+			rect			155 35 205 47
+			<image>
+				key			none
+				screen		guildtournament
+				index		32
+			</image>
+		</panel>
+	</panel>
+
+	<panel>
+		id				pan_bottom
+		enable			true
+		visible			true
+		layer			1
+		rect			0 115 512 424
+		<image>
+			key			none
+			screen		guildtournament
+			index		28
+		</image>
+
+		<label>
+			id			lbl_guild_left
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		40 28 155 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<label>
+			id			lbl_guild_right
+			enable		true
+			visible		true
+			layer		50
+			align		center
+			rect		316 28 155 20
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</label>
+
+		<panel>
+			id				pan_entry_
+			enable			false
+			visible			false
+			layer			1
+			rect			44 81 215 30
+			
+			<panel>
+				id				pan_entry_class_
+				enable			true
+				visible			true
+				layer			1
+				rect			5 4 26 20
+				<image>
+					key		none
+					screen	party
+					index	31
+				</image>
+			</panel>
+			
+			<label>
+				id			lbl_entry_name_
+				enable		true
+				visible		true
+				layer		50
+				intersect 	false
+				align		center
+				rect		35 5 100 20
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+			
+			<label>
+				id			lbl_entry_lv_
+				enable		true
+				visible		true
+				layer		50
+				intersect 	false
+				align		center
+				rect		135 5 45 20
+				<title>
+					color		ffffffff
+					fontIndex	2
+				</title>
+			</label>
+		</panel>
+
+		<button>
+			id			btn_leave
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		286 385 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 152
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+
+		<button>
+			id			btn_close
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		398  385 85 25
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				text2 		360 143
+				position	0 4
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+	</panel>
+</window>

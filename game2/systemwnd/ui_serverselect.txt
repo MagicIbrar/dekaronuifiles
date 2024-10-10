@@ -1,0 +1,110 @@
+<window>
+	name			serverselect
+	enable			true
+	visible			true
+	layer			100
+	position		center center
+	rect			-65 -20 65 20
+	alwaysontop		true
+
+	<panel>
+		id		pan_bg
+		enable		true
+		visible		true
+		layer		1
+		rect		0 0 130 100
+		<image>
+			key	0
+			screen	system
+			index	3
+		</image>
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		2 8 108 14
+			<title>
+				state 		title
+				color		ffffff00
+				fontIndex	4
+				text2		30 94
+			</title>
+		</label>
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		108 7 15 15
+
+			sound		0
+			<image>
+				key	0
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key	over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key	down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<button>
+			id		btn_server
+			enable		true
+			visible		true
+			layer		100
+			align     	center
+			rect		15 40 100 23
+			<title>
+				state 		none
+				color		ffffffff
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		over
+				color		ffffff00
+				fontIndex	4
+				position	0 5
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 6
+			</title>
+			<title>
+				state 		disable
+				color		ff929292
+				fontIndex	4
+				position	0 5
+			</title>
+			<image>
+				key		none
+				screen	item_shop_popup
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	item_shop_popup
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	item_shop_popup
+				index	13
+			</image>
+		</button>
+	</panel>
+</window>

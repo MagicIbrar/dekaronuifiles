@@ -1,0 +1,37 @@
+<window>
+	name			credit
+	enable			true
+	visible			true
+	layer			100
+	alwaysontop		true
+	position		inverse inverse
+	rect			0 0 0 0
+	<panel>
+		id			pan_back
+		enable		true
+		visible		true
+		layer		80
+		position	inverse inverse
+		rect		0 0 0 0
+		<image>
+			key		0
+			color	ff010101
+			screen	common
+			index	1
+		</image>
+	</panel>
+	<panel>
+		id			pan_map
+		enable		true
+		visible		true
+		layer		99
+		position	center center
+		rect		-256 -100 512 128
+		<image>
+			key		0
+			color	ffffffff
+			screen	credit
+			index	7
+		</image>
+	</panel>
+</window>

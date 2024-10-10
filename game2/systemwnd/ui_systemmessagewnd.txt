@@ -1,0 +1,29 @@
+<window>
+	name			fishgiveitem
+	enable			true
+	visible			true
+	layer			100
+	position		center top
+	rect			-356 159 357 330
+	alwaysontop		true
+	
+	<label>
+		id			lbl_message
+		enable		true
+		visible		true
+		layer		101
+		multiline	true		
+		rect		0 0 713 18
+		<title>
+			position	1 3
+			color		ffffffff
+			fontIndex	4
+		</title>
+		<image>
+			key		0
+			screen	common
+			index	1
+			color	61010101
+		</image>
+	</label>	
+</window>

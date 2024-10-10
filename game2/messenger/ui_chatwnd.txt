@@ -1,0 +1,265 @@
+<window>
+	name			messenger_chat
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 328 211 
+	titlerect		0 0 262 24
+	<panel>
+		id			pan_main
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 328 211
+		<image>
+			key		none
+			screen	messenger_01
+			index	3
+		</image>
+		
+		<label>
+			id			lbl_userName
+			enable		true
+			visible		true
+			layer		100
+			align		center
+			rect		12 3 241 13
+			<title>
+				color		ffffffff
+				fontIndex	3
+				position	0 0
+			</title>
+		</label>
+		<button>
+			id			btn_save
+			enable		true
+			visible		true
+			layer		100
+			rect		260 2 40 15
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state 		none
+				color		ffffffff
+				fontIndex	4
+				position	6 0
+				text2 		1006 10
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	6 0
+			</title>
+			<title>
+				state 		down
+				color		ffffffff
+				fontIndex	4
+				position	7 1
+			</title>
+		</button>
+		<button>
+			id			btn_minimize
+			enable		true
+			visible		true
+			layer		100
+			rect		301 4 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	13
+			</image>
+		</button>
+		<button>
+			id			btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		312 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+	<label>
+		id			lbl_type
+		enable		true
+		visible		true
+		layer		102
+		align		center
+		rect		7 187 12 14
+		<title>
+			color		ffffffff
+			fontIndex	3
+		</title>
+	</label>
+	<edit>
+		id			edit_text
+		enable		true
+		visible		true
+		layer		100
+		rect		20 188 287 14
+		maxlength	60
+		font_type	2
+		input_type	0
+		align		over
+		color		ffffffff
+		multiline   	false
+	</edit>
+	<button>
+		id			btn_partyInvite
+		enable		true
+		visible		false
+		layer		90
+		align 		center
+		rect		255 186 55 19
+		<image>
+			key		none
+			screen	etc_01
+			index	2
+		</image>
+		<title>
+			state 		none
+			color		ff929292
+			fontIndex	2
+			position	0 4
+			text2 		70 66
+		</title>
+		<title>
+			state 		over
+			color		ffffffff
+			fontIndex	2
+			position	0 4
+		</title>
+		<title>
+			state 		down
+			color		ff929292
+			fontIndex	2
+			position	0 6
+		</title>
+	</button>
+	<textbox>
+		id			textview
+		enable		true
+		visible		true
+		layer		100
+		rect		0 25 322 159
+		lineheight	14
+		margin		8 2
+		fonttype	2
+		chattype	1
+		autoline 	true
+		color		FFFFFFFF
+		<image>
+			key		0
+			screen	common
+			index	1
+			color	00010101
+		</image>
+		<vscroll>
+			id			textview_scroll
+			enable		true
+			visible		true
+			layer		100
+			rect		310 0 12 159
+			maxvalue	0
+			buttontick  1
+			<button>
+				id		textview_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 0 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	19
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	20
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	21
+				</image>
+			</button>
+			<button>
+				id		textview_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		0 147 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	17
+				</image>
+			</button>
+			<panel>
+				id			textview_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		0 12 12 19 
+				moveable	true
+				noneimage 	true
+				<image>
+					key		none
+					screen	etc_01
+					index	24
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	25
+				</image>
+			</panel>
+		</vscroll>
+	</textbox>
+
+	</panel>
+	
+</window>

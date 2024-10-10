@@ -1,0 +1,788 @@
+<window>
+	name			troop_footing
+	enable			true
+	visible			true
+	layer			100
+	rect			200 20 688 647
+	titlerect		0 0 488 24
+
+	<panel>
+		id		pan_left_bg
+		enable		false
+		visible		false
+		layer		50
+		intersect	true
+		rect		0 0 230 490
+		<image>
+			key		0
+			screen	TroopFooting
+			index	1
+		</image>
+		
+		<button>
+			id		btn_confirm
+			enable		true
+			visible		true
+			layer		70
+			align		center	center
+			rect		45 465 57 19
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	2
+				text2		2000 15
+				position	0 4
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+		
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		70
+			align		center	center
+			rect		130 465 57 19
+			<image>
+				key		none
+				screen	etc_01
+				index	2
+			</image>
+			<title>
+				state		none
+				color		ff929292
+				fontIndex	2
+				text2		2000 23
+				position	0 4
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+			<title>
+				state		down
+				color		ff929292
+				fontIndex	2
+				position	0 6
+			</title>
+		</button>
+		
+		<label>
+			id			lbl_level
+			enable		true
+			visible		true
+			layer		70
+			align		center
+			rect		12 28 26 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				text2		555 12
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_job
+			enable		true
+			visible		true
+			layer		70
+			align		center
+			rect		61 28 26 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				text2		555 13
+			</title>
+		</label>
+
+		<label>
+			id			lbl_troopername
+			enable		true
+			visible		true
+			layer		70
+			align		center
+			rect		128 28 26 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				text2		555 14
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_move
+			enable		true
+			visible		true
+			layer		70
+			align		center
+			rect		188 28 26 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				text2		555 15
+			</title>
+		</label>
+
+	</panel>
+	<panel>
+		id			pan_right_bg_Top
+		enable		true
+		visible		true
+		layer		50
+		rect		230 0 258 512
+		<image>
+			key		0
+			screen	TroopFooting
+			index	2
+		</image>
+
+		<label>
+			id		lbl_wndname
+			enable		true
+			visible		true
+			layer		60
+			align		center
+			rect		64 2 128 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2		555 0
+			</title>
+		</label>
+		
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		60
+			align		center
+			rect		240 2 15 15
+
+			sound		0
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+
+		<label>
+			id			lbl_troopname
+			enable		true
+			visible		true
+			layer		60
+			align		center
+			rect		11 29 45 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				text2		555 1
+			</title>
+		</label>
+		
+		<panel>
+			id			pan_troopname
+			enable		true
+			visible		true
+			layer		150
+			align		left
+			rect		74 29 111 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+			</title>
+		</panel>
+
+		<panel>
+			id			pan_right_bg_none
+			enable		false
+			visible		false
+			layer		100
+			rect		60 25 124 45
+			<button>
+				id			btn_troopunion
+				enable		true
+				visible		true
+				layer		80
+				align		center	center
+				rect		44 26 36 19
+				<image>
+					key		none
+					screen	etc_01
+					index	2
+				</image>
+				<title>
+					state		none
+					color		ff929292
+					fontIndex	2
+					text2		555 16
+					position	0 4
+				</title>
+				<title>
+					state		over
+					color		ffffffff
+					fontIndex	2
+					position	0 4
+				</title>
+				<title>
+					state		down
+					color		ff929292
+					fontIndex	2
+					position	0 6
+				</title>
+			</button>	
+		</panel>
+		
+		<panel>
+			id			pan_right_bg_trooper
+			enable		false
+			visible		false
+			layer		100
+			rect		60 25 124 45
+			<button>
+				id			btn_leave
+				enable		true
+				visible		true
+				layer		80
+				align		center	center
+				rect		44 26 36 19
+				<image>
+					key		none
+					screen	etc_01
+					index	2
+				</image>
+				<title>
+					state		none
+					color		ff929292
+					fontIndex	2
+					text2		555 20
+					position	0 4
+				</title>
+				<title>
+					state		over
+					color		ffffffff
+					fontIndex	2
+					position	0 4
+				</title>
+				<title>
+					state		down
+					color		ff929292
+					fontIndex	2
+					position	0 6
+				</title>
+			</button>	
+		</panel>
+		
+		<panel>
+			id			pan_right_bg_leader
+			enable		false
+			visible		false
+			layer		120
+			intersect 	true
+			rect		60 25 190 45
+			<button>
+				id			btn_changeleader
+				enable		true
+				visible		true
+				layer		80
+				align		center center
+				rect		1 26 36 19
+				<image>
+					key		none
+					screen	etc_01
+					index	2
+				</image>
+				<title>
+					state		none
+					color		ff929292
+					fontIndex	2
+					text2		555 8
+					position	0 4
+				</title>
+				<title>
+					state		over
+					color		ffffffff
+					fontIndex	2
+					position	0 4
+				</title>
+				<title>
+					state		down
+					color		ff929292
+					fontIndex	2
+					position	0 6
+				</title>
+			</button>			
+			<button>
+				id			btn_footing
+				enable		true
+				visible		true
+				layer		80
+				align		center center
+				rect		86 26 36 19
+				<image>
+					key		none
+					screen	etc_01
+					index	2
+				</image>
+				<title>
+					state		none
+					color		ff929292
+					fontIndex	2
+					text2		555 7
+					position	0 4
+				</title>
+				<title>
+					state		over
+					color		ffffffff
+					fontIndex	2
+					position	0 4
+				</title>
+				<title>
+					state		down
+					color		ff929292
+					fontIndex	2
+					position	0 6
+				</title>
+			</button>
+			<button>
+				id			btn_allmove
+				enable		true
+				visible		true
+				layer		80
+				align		center center
+				rect		129 26 57 19
+				<image>
+					key		none
+					screen	etc_01
+					index	2
+				</image>
+				<title>
+					state		none
+					color		ff929292
+					fontIndex	2
+					text2		555 6
+					position	0 4
+				</title>
+				<title>
+					state		over
+					color		ffffffff
+					fontIndex	2
+					position	0 4
+				</title>
+				<title>
+					state		down
+					color		ff929292
+					fontIndex	2
+					position	0 6
+				</title>
+			</button>
+			<button>
+				id			btn_editname
+				enable		true
+				visible		true
+				layer		60
+				align		center center
+				rect		129 2 57 19
+				<image>
+					key		none
+					screen	etc_01
+					index	2
+				</image>
+				<title>
+					state		none
+					color		ff929292
+					fontIndex	2
+					text2		555 5
+					position	0 4
+				</title>
+				<title>
+					state		over
+					color		ffffffff
+					fontIndex	2
+					position	0 4
+				</title>
+				<title>
+					state		down
+					color		ff929292
+					fontIndex	2
+					position	0 6
+				</title>
+			</button>
+		</panel>
+
+		<label>
+			id			lbl_corp1
+			enable		true
+			visible		true
+			layer		60
+			rect		15 55 45 14
+			<title>
+				color		FFF478EA
+				fontIndex	2
+				text2		555 2
+			</title>
+
+		</label>
+		
+		<label>
+			id			lbl_corp2
+			enable		true
+			visible		true
+			layer		60
+			rect		15 245 45 14
+			<title>
+				color		FF7BBEE4
+				fontIndex	2
+				text2		555 3
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_corp3
+			enable		true
+			visible		true
+			layer		60
+			align		center
+			rect		15 439 45 14
+			<title>
+				color		FF7EE936
+				fontIndex	2
+				text2		555 4
+			</title>
+		</label>
+	</panel>			
+	<panel>
+		id			pan_right_bg_Bottom
+		enable		true
+		visible		true
+		layer		50
+		rect		230 512 258 115
+		<image>
+			key		0
+			screen	TroopFooting
+			index	3
+		</image>
+	</panel>
+
+
+	<button>
+		id			pan_troop_corp
+		enable			false
+		visible			false
+		layer			300
+		rect			235 75 248 27
+		<image>
+			key		none
+			color 		0x00000000
+		</image>
+		<image>
+			key		over
+			screen		party
+			index		5
+		</image>
+		<image>
+			key		down
+			screen		party
+			index		5
+		</image>
+		<image>
+			key		check
+			screen		party
+			index		5
+		</image>
+		<panel>
+			id		pan_classtype
+			enable		true
+			visible		false
+			layer		100
+			intersect	false
+			rect		2 2 27 24	
+			<image>
+				key	0
+				screen	etc_01
+				index	34
+			</image>
+		</panel>
+		<label>
+			id		pan_pcname
+			enable		true
+			visible		false
+			layer		100
+			intersect	false
+			align		left center
+			rect		29 2 120 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>	
+		</label>
+		<panel>
+			id		pan_hp_background
+			enable		true
+			visible		false
+			layer		50
+			intersect	false
+			rect		29 17 217 8			
+			<image>
+				key		0
+				screen	etc_01
+				index	56
+			</image>		
+		</panel>
+
+		<processbar>	
+			id		progress_hp
+			enable		true
+			visible		false
+			layer		100
+			intersect	false
+			rect		29 18 217 7
+			maxsize     	218
+			<image>
+				key		0
+				screen	etc_01
+				index	57
+			</image>				
+		</processbar>
+		<button>
+			id			btn_forceleave
+			enable			true
+			visible			false
+			layer			100
+			rect		230 2 15 15
+
+			<image>
+				key		none
+				screen	etc_01
+				index		315
+
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index		316
+
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index		317
+
+			</image>
+		</button>
+		<button>
+			id			btn_posmove
+			enable			true
+			visible			false
+			layer			100
+			rect			212 3 30 14		
+			<image>
+				key		none
+				screen	TroopFooting
+				index	8
+			</image>
+			<image>
+				key		over
+				screen	TroopFooting
+				index	9
+			</image>
+			<image>
+				key		down
+				screen	TroopFooting
+				index	8
+			</image>
+		</button>
+	</button>
+
+	<combobox>
+		id				combo_troopitemway
+		enable			true
+		visible			true
+		boader			false
+		layer			400
+		rect			391 75 84 20
+		
+		<iteminfo>		
+			rect 	5 0 74 20
+					
+			<item>
+				index   0
+				data	0
+				string 	70 16
+			</item>
+			<item>
+				index   1
+				data	1
+				string 	70 17
+			</item>
+			<item>
+				index   2
+				data	2
+				string 	70 18
+			</item>
+			<item>
+				index   3
+				data	3
+				string 	70 19
+			</item>
+		</iteminfo>
+
+		<nodeinfo>
+			selrect	0 0 84 20 
+			btnrect	72 3 12 12
+			
+			<image>
+				key	board_body
+				screen	party
+				index	4
+			</image>
+			<image>
+				key		btn_none
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		btn_over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		btn_down
+				screen	etc_01
+				index	17
+			</image>
+		</nodeinfo>	
+	</combobox>
+
+
+	<panel>
+		id			pan_popup
+		enable		true
+		visible		false
+		layer		900
+		rect		0 0 100 105
+		<image>
+			key	none
+			color		ffffffff
+			screen	etc_01
+			index	66
+		</image>
+
+		<button>
+			id			btn_popup_group1
+			enable		true
+			visible		true
+			layer		10
+			align 		center
+			rect		5 5 90 20
+			<title>
+				state 		none
+				color 		ff7D7D7D
+				position	2 2
+				fontIndex	2
+				text2		555 2
+			</title>
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+		</button>
+
+		<button>
+			id			btn_popup_group2
+			enable		true
+			visible		true
+			layer		10
+			align 		center
+			rect		5 30 90 20
+			<title>
+				state 		none
+				color 		ff7D7D7D
+				position	2 2
+				fontIndex	2
+				text2		555 3
+			</title>
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+		</button>
+
+		<button>
+			id			btn_popup_group3
+			enable		true
+			visible		true
+			layer		10
+			align 		center
+			rect		5 55 90 20
+			<title>
+				state 		none
+				color 		ff7D7D7D
+				position	2 2
+				fontIndex	2
+				text2		555 4
+			</title>
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+		</button>
+
+		<button>
+			id			btn_popup_cancel
+			enable		true
+			visible		true
+			layer		10
+			align 		center
+			rect		5 80 90 20
+			<title>
+				state 		none
+				color 		ff7D7D7D
+				position	2 2
+				fontIndex	2
+				text2		2000 23
+			</title>
+			<title>
+				state		over
+				color		ffFFFFFF
+				fontIndex	2
+			</title>
+		</button>
+
+	</panel>
+</window>

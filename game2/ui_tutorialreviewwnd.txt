@@ -1,0 +1,282 @@
+<window>
+	name			tutorialinfo_review_win
+	enable			true
+	visible			true
+	intersect		true
+	layer			100
+	rect			0 0 735 494
+	titlerect		7 8 728 32
+	<panel>
+		id		pan_top_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 0 736 61
+		<image>
+			key	0
+			screen	tutorialwindow
+			index	6
+		</image>
+	</panel>
+	<panel>
+		id		pan_center_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 61 736 339
+		<image>
+			key	0
+			screen	tutorialwindow
+			index	7
+		</image>
+	</panel>
+	<panel>
+		id		pan_bottom_bg
+		enable		true
+		visible		true
+		layer		10
+		rect		0 400 736 94
+		<image>
+			key	0
+			screen	tutorialwindow
+			index	8
+		</image>
+	</panel>
+	
+	<label>
+		id		lbl_title
+		enable		true
+		visible		true
+		layer		60
+		rect		7 11 728 32
+		align 		center
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2 		2500 1
+		</title>
+	</label>
+
+	<button>
+		id		btn_exit
+		enable		true
+		visible		true
+		layer		100
+		rect		711 14 15 15
+
+		<image>
+			key	none
+			screen	etc_01
+			index		315
+
+		</image>
+		<image>
+			key	over
+			screen	etc_01
+			index		316
+
+		</image>
+		<image>
+			key	down
+			screen	etc_01
+			index		317
+
+		</image>
+	</button>	
+	
+	<label>
+		id		lbl_subTitle
+		enable		true
+		visible		true
+		layer		100
+		rect		118 38 729 58
+		align 		center
+		<title>
+			color		FFF4BE3D
+			fontIndex	4
+		</title>
+	</label>
+
+	<textbox>
+		id			textbox
+		enable		true
+		visible		true
+		layer		100
+		rect		218 61 729 410
+		lineheight	16
+		margin		0 0
+		fonttype	2
+		color		FFFFFFFF
+	</textbox>
+
+	<button>
+		id			btn_leftArrow
+		enable		false
+		visible		true
+		layer		100
+		type		0
+		rect		445 470 12 12
+		<image>
+			key		none
+			screen	etc_01
+			index	47
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	48
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	49
+		</image>
+		<image>
+			key		disable
+			screen	etc_01
+			index	46
+		</image>
+	</button>
+
+	<label>
+		id			lbl_pageNum
+		enable		false
+		visible		true
+		layer		100
+		align		center
+		rect		457 470 32 14
+		<title>
+			color		ffffffff
+			fontIndex	2
+			text		"/"
+		</title>
+	</label>
+	<button>
+		id			btn_rightArrow
+		enable		false
+		visible		true
+		layer		100
+		type		0
+		rect		490 470 12 12
+		<image>
+			key		none
+			screen	etc_01
+			index	51
+		</image>
+		<image>
+			key		over
+			screen	etc_01
+			index	52
+		</image>
+		<image>
+			key		down
+			screen	etc_01
+			index	53
+		</image>
+		<image>
+			key		disable
+			screen	etc_01
+			index	50
+		</image>
+	</button>
+
+	<listbox>
+		id		list_tutorial
+		enable		true
+		visible		true
+		layer		500
+		rect		6 35 213 487
+		nodewidth	201
+		nodeheight	14
+		offset		2	
+		<title>
+			state		over
+			color		FF74AEE4
+			fontIndex	4
+		</title>
+		<title>
+			state		check
+			color		FFFFB900
+			fontIndex	4
+		</title>
+		<title>
+			state		none
+			color		FFFFFFFF
+			fontIndex	4
+		</title>
+		<vscroll>
+			id		list_tutorial_scroll
+			enable		true
+			visible		true
+			layer		1
+			rect		0 0 201 487
+			maxvalue	0
+			buttontick  1
+			<button>
+				id		list_tutorial_scroll_upbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		204 0 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	19
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	20
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	21
+				</image>
+			</button>
+			<button>
+				id		list_tutorial_scroll_downbtn
+				enable		true
+				visible		true
+				layer		100
+				rect		204 474 12 12
+				type		1
+				<image>
+					key		0
+					screen	etc_01
+					index	15
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	16
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index	17
+				</image>
+			</button>
+			<panel>
+				id		list_tutorial_scroll_bar
+				enable		true
+				visible		true
+				layer		100
+				rect		204 0 12 12
+				moveable	true
+				noneimage 	true
+				<image>
+					key		none
+					screen	etc_01
+					index	24
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index	25
+				</image>
+			</panel>
+		</vscroll>
+	</listbox>
+</window>

@@ -1,0 +1,40 @@
+window_layer	TOP
+window_size	259	175
+window_position	50	100
+window_visible	false   
+
+create_control	panel	pan_death
+{
+	control_group	0
+	control_image	oxxx	UI\Game\message_del_01.dds	0	271	259	175
+	control_drawdiv	xy	2
+	control_drawsize	259	155
+	control_drawpoint	0	0
+	control_enable	true
+	control_visible	true
+
+	create_control	panel	pan_title
+	{
+	control_group	0
+	control_image	oxxx	UI\game\theme01\trade_01.dds	332	438	57	20
+	control_drawdiv	xy	2
+	control_drawsize	57	20
+	control_drawpoint	41	29
+	control_enable	true
+	control_visible	true
+	}
+
+	create_control	button	btn_rivivetown
+	{
+	control_group	0
+	control_imagedivide	vertical
+	control_image	oooo	UI\game\theme01\trade_01.dds	332	181	179	32
+	control_textcolor	0	0	0
+	control_textfont	small
+	control_drawdiv	xy	2
+	control_drawsize	179	32
+	control_drawpoint	41	70
+	control_enable	true
+	control_visible	true
+	}
+}

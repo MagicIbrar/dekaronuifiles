@@ -1,0 +1,467 @@
+<window>
+	name			party_state
+	enable			true
+	visible			true
+	layer			10
+	position		right top
+	rect			-340 217 7 610
+	<panel>
+		id			state_menu
+		enable		true
+		visible		true
+		layer		100
+		rect		176 0 164 19
+		<image>
+			key		none
+			screen	party
+			index	1
+		</image>
+		<button>
+			id			btn_state_plus
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		129 4 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	7
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	8
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	9
+			</image>
+		</button>
+		<button>
+			id			btn_state_minus
+			enable		true
+			visible		false
+			layer		100
+			type		0
+			rect		129 4 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	11
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	12
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	13
+			</image>
+		</button>
+		<button>
+			id			btn_state_mid
+			enable		true
+			visible		false
+			layer		100
+			type		0
+			rect		129 4 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	80
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	81
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	82
+			</image>
+		</button>
+		<button>
+			id			btn_state_hide
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		147 4 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	19
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	20
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	21
+			</image>
+		</button>
+	</panel>
+	<panel>
+		id			state_menu2
+		enable		true
+		visible		false
+		layer		100
+		rect		176 0 164 19
+		<button>
+			id			btn_state_show
+			enable		true
+			visible		true
+			layer		100
+			type		0
+			rect		147 4 12 12
+			<image>
+				key		none
+				screen	etc_01
+				index	15
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	16
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	17
+			</image>
+		</button>
+	</panel>
+	<panel>	
+		id		pan_state
+		enable		false
+		visible		false
+		layer		100
+		rect		0 19 340 32
+		intersect	false			
+		<panel>
+			id			pan_bg
+			enable		true
+			visible		true
+			layer		20
+			rect		176 0 164 32
+			<image>
+				key		0
+				screen	party
+				index	2
+			</image>	
+		</panel>
+		<panel>
+			id			pan_pcname
+			enable		true
+			visible		true
+			layer		100
+			rect		198 4 122 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0				
+			</title>
+		</panel>		
+		<panel>
+			id			pan_class
+			enable		true
+			visible		true
+			layer		100
+			rect		178 2 18 18
+			noneimage	false
+			<image>
+				key		none
+				screen		etc_01
+				index		200
+			</image>			
+		</panel>
+		<button>
+			id			btn_follow
+			enable		true
+			visible		true
+			layer		100
+			rect		318 2 16 18
+			<image>
+				key		none
+				screen	party
+				index	7
+			</image>
+			<image>
+				key		over
+				screen	party
+				index	8
+			</image>
+			<image>
+				key		down
+				screen	party
+				index	9
+			</image>
+			<image>
+				key		check
+				screen	party
+				index	8
+			</image>
+		</button>				
+		<processbar>
+			id			processbar_shield
+			enable		true
+			visible		true
+			layer		100
+			rect		178 21 160 3
+			maxsize     160
+			<image>
+				key		0
+				color	ffffffff
+				screen	party
+				index	10
+			</image>
+		</processbar>
+		<processbar>
+			id			processbar_hp
+			enable		true
+			visible		true
+			layer		100
+			rect		178 25 160 4
+			maxsize     160
+			<image>
+				key		0
+				color	ffffffff
+				screen	party
+				index	11
+			</image>
+		</processbar>		
+		<panel>
+			id			pan_buffstatus
+			enable		true
+			visible		false
+			layer		100
+			rect		178 32 176 22
+			intersect	false		
+			<panel>
+				id			pan_bufficon_0
+				enable		true
+				visible		false
+				layer		100
+				rect		0 0 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_bufficon_1
+				enable		true
+				visible		false
+				layer		100
+				rect		22 0 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_bufficon_2
+				enable		true
+				visible		false
+				layer		100
+				rect		44 0 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_bufficon_3
+				enable		true
+				visible		false
+				layer		100
+				rect		66 0 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_bufficon_4
+				enable		true
+				visible		false
+				layer		100
+				rect		88 0 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_bufficon_5
+				enable		true
+				visible		false
+				layer		100
+				rect		110 0 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_bufficon_6
+				enable		true
+				visible		false
+				layer		100
+				rect		132 0 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_bufficon_7
+				enable		true
+				visible		false
+				layer		100
+				rect		154 0 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+		</panel>
+		<panel>
+			id			pan_debuffstatus
+			enable		true
+			visible		false
+			layer		100
+			rect		0 2 176 22
+			intersect	false
+			<panel>
+				id			pan_debufficon_0
+				enable		true
+				visible		false
+				layer		100
+				rect		154 2 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_debufficon_1
+				enable		true
+				visible		false
+				layer		100
+				rect		132 2 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_debufficon_2
+				enable		true
+				visible		false
+				layer		100
+				rect		110 2 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_debufficon_3
+				enable		true
+				visible		false
+				layer		100
+				rect		88 2 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_debufficon_4
+				enable		true
+				visible		false
+				layer		100
+				rect		66 2 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_debufficon_5
+				enable		true
+				visible		false
+				layer		100
+				rect		44 2 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_debufficon_6
+				enable		true
+				visible		false
+				layer		100
+				rect		22 2 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+			<panel>
+				id			pan_debufficon_7
+				enable		true
+				visible		false
+				layer		100
+				rect		0 2 22 22
+				intersect	false
+				<image>
+					key		none
+					screen	buffer
+					index	1
+				</image>
+			</panel>
+		</panel>
+	</panel>
+			
+</window>

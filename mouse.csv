@@ -1,0 +1,17 @@
+type,resname
+attack,mouse/cursorattack.tpack
+grip,mouse/cursorgrip.tpack
+restrict,mouse/restrict.tpack
+talk,mouse/cursortalk.tpack
+target,mouse/target.tpack
+input,mouse/input.tpack
+servantnormal,mouse/servantnormal.tpack
+servantrestrict,mouse/servantrestrict.tpack
+servantattack,mouse/servantattack.tpack
+forceattack,mouse/forceattack.tpack
+fishing,mouse/fishing.tpack
+unfishing,mouse/unfishing.tpack
+minimap,mouse/minimap.tpack
+normal,mouse/normal.tpack
+tooltip,mouse/tooltip.tpack
+trigger,mouse/gear_loading.tpack

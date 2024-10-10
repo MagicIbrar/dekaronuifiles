@@ -1,0 +1,308 @@
+<window>
+	name			Waitinginfownd
+	enable			true
+	visible			true
+	layer			100
+	modal			false
+	rect			-217 -170 218 171
+	position		center center
+	titlerect		28 2 405 16
+
+	<panel>
+		id		pan_waitinginfo
+		enable		true
+		visible		true
+		layer		100
+		rect		0 0 435 341
+		<image>
+				key	0
+				screen	TrainingCamp
+				index	1
+		</image>
+		<label>
+			id		lbl_title
+			enable		true
+			visible		true
+			layer		10
+			rect		28 2 377 14
+			position	0 1
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		160 1
+			</title>
+		</label>
+		<button>
+			id		btn_exit
+			enable		true
+			visible		true
+			layer		100
+			rect		419 3 13 13
+			<image>
+				key		none
+				screen	etc_01
+				index	3
+			</image>
+			<image>
+				key		over
+				screen	etc_01
+				index	4
+			</image>
+			<image>
+				key		down
+				screen	etc_01
+				index	5
+			</image>
+		</button>
+		<label>
+			id		lbl_stateinfo
+			enable		true
+			visible		true
+			multiline	true
+			layer		10
+			rect		34 25 317 29
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		160 2
+			</title>
+		</label>
+		<label>
+			id		lbl_number
+			enable		true
+			visible		true
+			layer		10
+			rect		28 78 52 14
+			<title>
+				color		fff4be3d
+				fontIndex	4
+				text2 		160 3
+			</title>
+		</label>
+		<label>
+			id		lbl_inputnumber
+			enable		true
+			visible		true
+			layer		10
+			rect		86 78 64 16
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	3
+			</title>
+		</label>
+		<label>
+			id		lbl_kind
+			enable		true
+			visible		true
+			layer		10
+			rect		160 78 52 14
+			<title>
+				color		fff4be3d
+				fontIndex	4
+				text2 		160 4
+			</title>
+		</label>
+		<label>
+			id		lbl_inputkind
+			enable		true
+			visible		true
+			layer		10
+			rect		218 78 186 16
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	3
+			</title>
+		</label>
+		<label>
+			id		lbl_people
+			enable		true
+			visible		true
+			layer		10
+			rect		28 108 52 14
+			<title>
+				color		fff4be3d
+				fontIndex	4
+				text2 		160 5
+			</title>
+		</label>
+		<label>
+			id		lbl_inputpeople
+			enable		true
+			visible		true
+			layer		10
+			rect		86 109 122 16
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	3
+			</title>
+		</label>
+		<label>
+			id		lbl_introcount
+			enable		true
+			visible		true
+			layer		10
+			rect		224 108 52 14
+			<title>
+				color		fff4be3d
+				fontIndex	4
+				text2 		160 6
+			</title>
+		</label>
+		<label>
+			id		lbl_inputintrocount
+			enable		true
+			visible		true
+			layer		10
+			rect		282 109 122 16
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	3
+			</title>
+		</label>
+		<label>
+			id		lbl_runtime
+			enable		true
+			visible		true
+			layer		10
+			rect		28 139 52 14
+			<title>
+				color		fff4be3d
+				fontIndex	4
+				text2 		160 7
+			</title>
+		</label>
+		<label>
+			id		lbl_inputruntime
+			enable		true
+			visible		true
+			layer		10
+			rect		86 140 122 16
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	3
+			</title>
+		</label>
+		<label>
+			id		lbl_startpeople
+			enable		true
+			visible		true
+			layer		10
+			rect		224 139 52 14
+			<title>
+				color		fff4be3d
+				fontIndex	4
+				text2 		160 8
+			</title>
+		</label>
+		<label>
+			id		lbl_inputstartpeople
+			enable		true
+			visible		true
+			layer		10
+			rect		282 140 122 16
+			align		center
+			<title>
+				color		ffffffff
+				fontIndex	3
+			</title>
+		</label>
+		<label>
+			id		lbl_mainmission
+			enable		true
+			visible		true
+			layer		10
+			rect		28 170 52 14
+			<title>
+				color		fff4be3d
+				fontIndex	4
+				text2 		160 9
+			</title>
+		</label>
+		<label>
+			id		lbl_inputmainmission
+			enable		true
+			visible		true
+			layer		10
+			rect		86 171 318 16
+			<title>
+				color		ffffffff
+				fontIndex	3
+			</title>
+		</label>
+		<label>
+			id		lbl_submission
+			enable		true
+			visible		true
+			layer		10
+			rect		28 201 52 14
+			<title>
+				color		fff4be3d
+				fontIndex	4
+				text2 		160 10
+			</title>
+		</label>
+		<label>
+			id		lbl_inputsubmission
+			enable		true
+			visible		true
+			layer		10
+			rect		86 199 318 86
+			multiline	true
+			<title>
+				color		ffffffff
+				fontIndex	3
+			</title>
+		</label>		
+		<label>
+			id		lbl_notice
+			enable		true
+			visible		true
+			layer		10
+			rect		34 312 250 20
+			<title>
+				color		ffffffff
+				fontIndex	2
+				text2 		160 12
+			</title>
+		</label>
+		<button>
+			id			btn_cancel
+			enable		true
+			visible		true
+			layer		100
+			rect		313 310 85 18
+			align		center
+			sound		0
+			<image>
+				key 	none
+				screen 	etc_01
+				index 	2
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	4
+				position	0 3
+				text2 		160 11
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	4
+				position	0 3
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	4
+				position	1 4
+			</title>
+		</button>
+	</panel>
+</window>

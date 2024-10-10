@@ -1,0 +1,38 @@
+<window>
+	id	privatesupply_alarm
+	enable	true
+	visible	true
+	layer	100
+	position	inverse inverse
+	modal	false
+	titlerect	0 0 0 0
+	<button>
+		id	btn_alarm
+		enable	true
+		visible	true
+		layer	100
+		rect	50 100 30 30
+		blink	false
+		blinktime	1000
+		tooltip		96 101
+
+		<image>
+			key	none
+			color	ffffffff
+			screen	privatesupply
+			index	23
+		</image>
+		<image>
+			key	over
+			color	ffffffff
+			screen	privatesupply
+			index	24
+		</image>
+		<image>
+			key	down
+			color	ffffffff
+			screen	privatesupply
+			index	25
+		</image>
+	</button>
+</window>

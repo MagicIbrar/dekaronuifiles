@@ -1,0 +1,681 @@
+<window>
+	name			cashShopWnd
+	enable			true
+	visible			true
+	layer			100
+	rect			0 0 732 426
+	titlerect		0 0 716 24
+	<panel>
+		id			pan_left
+		enable		true
+		visible		true
+		layer		1
+		rect		0  0 409 426
+		<image>
+			key		none
+			screen	new_itemshop
+			index	1
+		</image>
+		<button>
+			id			btn_tab_0
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		9 23 70 22
+			<image>
+				key		none
+				screen	etc_01
+				index 	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index 	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		900 51
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_1
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		79 23 70 22
+			<image>
+				key		none
+				screen	etc_01
+				index 	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index 	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		900 52
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_2
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		149 23 70 22
+			<image>
+				key		none
+				screen	etc_01
+				index 	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index 	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		900 53
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<button>
+			id			btn_tab_3
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		219 23 70 22
+			<image>
+				key		none
+				screen	etc_01
+				index 	55
+			</image>
+			<image>
+				key		check
+				screen	etc_01
+				index 	54
+			</image>
+			<title>
+				state 		none
+				color		ff929292
+				fontIndex	2
+				position	0 6
+				text2 		900 54
+			</title>
+			<title>
+				state 		over
+				color		ffffffff
+				fontIndex	2
+				position	0 6
+			</title>
+			<title>
+				state 		down
+				color		ff929292
+				fontIndex	2
+				position	1 7
+			</title>
+			<title>
+				state 		check
+				color		ffffffff
+				fontIndex	2
+				position	0 4
+			</title>
+		</button>
+		<label>
+			id			lbl_tagName
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		11 49 165 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		900 60
+			</title>
+		</label>
+		<label>
+			id			lbl_tagPrice
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		189 49 80 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		900 55
+			</title>
+		</label>
+		<label>
+			id			lbl_tagCate
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		282 49 115 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				text2 		900 56
+			</title>
+		</label>
+		<panel>
+			id			pan_itemList
+			enable		true
+			visible		true
+			layer		1
+			rect		6  69 397 309
+		</panel>
+		<panel>
+			id			pan_pageNum
+			enable		true
+			visible		true
+			layer		100
+			rect		166 391 77 14
+			<button>
+				id			btn_leftArrow
+				enable		true
+				visible		true
+				layer		100
+				rect		0 2 12 12
+				<image>
+					key		none
+					screen	etc_01
+					index 	47
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index 	48
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index 	49
+				</image>
+				<image>
+					key		disable
+					screen	etc_01
+					index 	46
+				</image>
+			</button>
+			<label>
+				id			lbl_pageNum
+				enable		true
+				visible		true
+				layer		100
+				align		center
+				rect		12 0 53 14
+				<title>
+					color		ffffffff
+					fontIndex	2
+					position	0 0
+				</title>
+			</label>
+			<button>
+				id			btn_rightArrow
+				enable		true
+				visible		true
+				layer		100
+				rect		65 2 12 12
+				<image>
+					key		none
+					screen	etc_01
+					index 	51
+				</image>
+				<image>
+					key		over
+					screen	etc_01
+					index 	52
+				</image>
+				<image>
+					key		down
+					screen	etc_01
+					index 	53
+				</image>
+				<image>
+					key		disable
+					screen	etc_01
+					index 	50
+				</image>
+			</button>
+		</panel>
+	</panel>
+	<label>
+		id			lbl_title
+		enable		true
+		visible		true
+		layer		100
+		align 		center
+		rect		28 2 674 14
+		<title>
+			color		ffffffff
+			fontIndex	4
+			text2 		900 50
+		</title>
+	</label>
+	<button>
+		id			btn_exit
+		enable		true
+		visible		true
+		layer		100
+		rect		716 3 13 13
+		sound  0
+		<image>
+			key			0
+			screen		etc_01
+			index		3
+		</image>
+		<image>
+			key			over
+			screen		etc_01
+			index		4
+		</image>
+		<image>
+			key			down
+			screen		etc_01
+			index		5
+		</image>
+	</button>
+	
+	<panel>
+		id			pan_right
+		enable		true
+		visible		true
+		layer		1
+		rect		409 0 323 426
+		<image>
+			key		none
+			screen	new_itemshop
+			index 	4
+		</image>
+		
+		<item>
+			id			select_item
+			enable		true
+			visible		true
+			layer		1
+			rect		45 68 64 128	
+			cellsize 	32 32
+			moveable	true
+			align 		center
+		</item>	
+		<label>
+			id			lbl_tagInfo
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		98 27 126 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				position	0 0
+				text2 		900 57
+			</title>
+		</label>
+		
+		<label>
+			id			lbl_itemName
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		136 68 143 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>
+		</label>
+			
+		<label>
+			id			lbl_cash
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		136 90 119 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>
+		</label>
+		<label>
+			id			lbl_tagDeca
+			enable		true
+			visible		true
+			layer		100
+			rect		258 90 50 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0
+				text2 		900 59
+			</title>
+		</label>
+		<button>
+			id			btn_buy
+			enable		true
+			visible		true
+			align 		center
+			layer		100
+			rect		181 122 65 18
+			<title>
+				state		none
+				color		ffb7b7b7
+				fontIndex	2
+				text2		900 101
+				position	0 3
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state		down
+				color		ffb7b7b7
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>
+		<button>
+			id			btn_giftItem
+			enable		true
+			visible		true
+			align 		center
+			layer		100
+			rect		181 150 65 18
+			<title>
+				state		none
+				color		ffb7b7b7
+				fontIndex	2
+				text2		900 103
+				position	0 3
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state		down
+				color		ffb7b7b7
+				fontIndex	2
+				position	2 4
+			</title>
+		</button>
+		<button>
+			id			btn_preView
+			enable		true
+			visible		true
+			align 		center
+			layer		100
+			rect		181 178 65 18
+			<title>
+				state		none
+				color		ffb7b7b7
+				fontIndex	2
+				text2		900 104
+				position	0 3
+			</title>
+			<title>
+				state		over
+				color		ffffffff
+				fontIndex	2
+				position	0 3
+			</title>
+			<title>
+				state		down
+				color		ffb7b7b7
+				fontIndex	2
+				position	2 4
+			</title>
+			<title>
+				state		disable
+				color		ff828282
+				fontIndex	2
+				position	0 3
+			</title>
+		</button>
+		<label>
+			id			lbl_tagDesc
+			enable		true
+			visible		true
+			layer		100
+			align 		center
+			rect		117 223 88 14
+			<title>
+				color		FFF4BE3D
+				fontIndex	4
+				position	0 0
+				text2 		900 58
+			</title>
+		</label>
+		<textbox>
+			id			itemDesc
+			enable		true
+			visible		true
+			layer		100
+			rect		3 242 314 135
+			lineheight	14
+			margin		13 8
+			fonttype	2
+			color		FFFFFFFF
+			<vscroll>
+				id			itemDesc_scroll
+				enable		true
+				visible		true
+				layer		1
+				rect		302 0 12 135
+				maxvalue	0
+				buttontick  1
+				<button>
+					id			itemDesc_scroll_upbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	19
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	20
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	21
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	18
+					</image>
+				</button>
+				<button>
+					id			itemDesc_scroll_downbtn
+					enable		true
+					visible		true
+					layer		100
+					rect		0 123 12 12
+					<image>
+						key		0
+						screen	etc_01
+						index	15
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	16
+					</image>
+					<image>
+						key		down
+						screen	etc_01
+						index	17
+					</image>
+					<image>
+						key		disable
+						screen	etc_01
+						index	14
+					</image>
+				</button>
+				<panel>
+					id			itemDesc_scroll_bar
+					enable		true
+					visible		true
+					layer		100
+					rect		0 0 12 19
+					moveable	true
+					<image>
+						key		0
+						screen	etc_01
+						index	24
+					</image>
+					<image>
+						key		over
+						screen	etc_01
+						index	25
+					</image>
+				</panel>
+			</vscroll>
+		</textbox>
+		
+		<button>
+			id			btn_buyInfo
+			enable		true
+			visible		true
+			align 		center
+			layer		100
+			blink 		true
+			blinktime	1000
+			rect		31 390 83 18
+			<title>
+				state		none
+				color		FFFFFFFF
+				fontIndex	2
+				position 	0 3
+				text2 		900 105		
+			</title>
+			<title>
+				state		over
+				color		ff76f856
+				fontIndex	2
+			</title>
+			<title>
+				state		down
+				color		ff76f856
+				fontIndex	2
+				position 	2 4
+			</title>
+			<title>
+				state		blink
+				color		FFB7B7B7
+				fontIndex	2
+			</title>
+		</button>
+		
+		<label>
+			id			lbl_curMycash
+			enable		true
+			visible		true
+			layer		100
+			align		right
+			rect		147 391 119 14
+			<title>
+				color		ffffffff
+				fontIndex	2
+				position	0 0
+			</title>
+		</label>
+		<label>
+			id			lbl_tagDeca2
+			enable		true
+			visible		true
+			layer		100
+			rect		269 391 45 14
+			<title>
+				color		ffffffff
+				fontIndex	4
+				position	0 0
+				text2 		900 59
+			</title>
+		</label>
+	</panel>
+</window>
